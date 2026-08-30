@@ -1,0 +1,95 @@
+name: Game PM Morning Brief
+
+on:
+  schedule:
+    - cron: "10 23 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "preview does not send Slack or Notion"
+        required: true
+        default: preview
+        type: choice
+        options:
+          - preview
+          - collect
+          - signal-test
+          - test
+          - automatic
+
+concurrency:
+  group: game-pm-morning-brief
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout application
+        uses: actions/checkout@v4
+        with:
+          path: app-repo
+
+      - name: Checkout state branch
+        uses: actions/checkout@v4
+        with:
+          ref: state
+          path: runtime-state
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Resolve run mode
+        id: mode
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            echo "value=automatic" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=${{ inputs.mode }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Validate and run
+        working-directory: app-repo
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_PARENT_PAGE_ID: ${{ vars.NOTION_PARENT_PAGE_ID }}
+        shell: bash
+        run: |
+          if [ "${{ steps.mode.outputs.value }}" = "signal-test" ]; then
+            python -m app.run --mode collect --state-dir ../runtime-state/state --output-dir output
+            python -m app.run --mode analyze-collection --collection-file output/market_signal_collection.json --output-dir output
+          else
+            python -m app.run --mode "${{ steps.mode.outputs.value }}" --state-dir ../runtime-state/state --output-dir output
+          fi
+
+      - name: Save changed state
+        if: ${{ always() && steps.mode.outputs.value != 'preview' }}
+        working-directory: runtime-state
+        shell: bash
+        run: |
+          if [ -n "$(git status --porcelain -- state)" ]; then
+            git config user.name "game-pm-brief-bot"
+            git config user.email "game-pm-brief-bot@users.noreply.github.com"
+            git add state
+            git commit -m "state: update morning brief runtime"
+            git push origin HEAD:state
+          fi
+
+      - name: Upload preview and brief
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: game-pm-morning-brief-${{ github.run_id }}
+          path: app-repo/output/
+          if-no-files-found: ignore
+          retention-days: 14

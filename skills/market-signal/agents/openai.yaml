@@ -1,0 +1,4 @@
+interface:
+  display_name: "Market Signal Scout"
+  short_description: "Collect and normalize official live-game signals"
+  default_prompt: "Use $market-signal to collect and structure recent official game market signals."

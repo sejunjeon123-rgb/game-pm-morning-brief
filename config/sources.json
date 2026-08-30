@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-08-30T00:00:00+09:00",
+  "verification_policy": "Publisher-operated pages or links exposed by an official publisher/game page only; never infer URLs.",
+  "source_policy": {
+    "priority": ["OFFICIAL_HOMEPAGE", "OFFICIAL_COMMUNITY", "OFFICIAL_YOUTUBE"],
+    "official_community_must_be_linked_by": "OFFICIAL_HOMEPAGE",
+    "retain_all_valid_evidence": true,
+    "surface_material_source_differences": true,
+    "difference_output_label_ko": "⚠️ 출처 차이"
+  },
+  "sources": [
+    {"game_id": "mabinogi-mobile", "homepage": "https://mabinogimobile.nexon.com/Main", "notices": "https://mabinogimobile.nexon.com/News/Notice", "notice_adapter": "nexon-static-html", "notice_adapter_status": "active", "youtube": "https://www.youtube.com/@mabinogimobile_official", "youtube_channel_id": "UCuvBRRZmmVF2BEHzdL3pPvA", "youtube_scope": "dedicated_game_channel"},
+    {"game_id": "black-desert-mobile", "homepage": "https://www.blackdesertm.com/", "notices": "https://forum.blackdesertm.com/Board?boardNo=6", "notice_adapter": "black-desert-forum-html", "notice_adapter_status": "active", "youtube": "https://www.youtube.com/@BlackDesertMobile", "youtube_channel_id": "UCV7KRdPM53MeBVcpVXkniSA", "youtube_scope": "dedicated_game_channel"},
+    {"game_id": "odin-valhalla-rising", "homepage": "https://odin.kakaogames.com/odin/", "notices": "https://odin.kakaogames.com/odin/", "notice_adapter": "odin-official-homepage-index", "notice_adapter_status": "active", "youtube": "https://www.youtube.com/@odin_kr", "youtube_channel_id": "UCIKRPbfa2ilASTik6L_W3rQ", "youtube_scope": "dedicated_game_channel"},
+    {"game_id": "lineage-m", "homepage": "https://lineagem.plaync.com/", "notices": "https://lineagem.plaync.com/board/notice/list", "notice_adapter": "plaync-official-community-api", "notice_adapter_status": "active", "youtube": "https://www.youtube.com/@nclineagem", "youtube_channel_id": "UCs4zYuMKbsEjRultr9J51rA", "youtube_scope": "dedicated_game_channel"},
+    {"game_id": "seven-knights-rebirth", "homepage": "https://skre.netmarble.com/", "notices": "https://forum.netmarble.com/sena_rebirth", "notice_adapter": "netmarble-official-forum-api", "notice_adapter_status": "active", "youtube": "https://www.youtube.com/@sena_rebirth", "youtube_channel_id": "UCp6-Gf6Bl6WjE6C6kLUaU4g", "youtube_scope": "dedicated_game_channel"},
+    {"game_id": "nikke", "homepage": "https://nikke-kr.com/", "notices": "https://game.naver.com/lounge/nikke/home", "notice_adapter": "naver-game-official-lounge-api", "notice_adapter_status": "active", "youtube": "https://www.youtube.com/@nikkekr", "youtube_channel_id": "UCzoVPjV8FF2om0Zj3XRPwVw", "youtube_scope": "dedicated_game_channel"},
+    {"game_id": "trickcal-revive", "homepage": "https://www.trickcal.com/", "notices": "https://cafe.naver.com/trickcal", "notice_adapter": "naver-official-cafe-api", "notice_adapter_status": "active", "youtube": "https://www.youtube.com/@epidgames6350", "youtube_channel_id": "UCI37oS0O5OlmQNeiyIywEAQ", "youtube_scope": "developer_channel_filter_by_game", "youtube_filter_terms": ["트릭컬", "Trickcal"]},
+    {"game_id": "epic-seven", "homepage": "https://epic7.onstove.com/ko/brand", "notices": "https://page.onstove.com/epicseven/kr", "notice_adapter": "stove-official-community-api", "notice_adapter_status": "active", "youtube": "https://www.youtube.com/@EpicSevenKR", "youtube_channel_id": "UC4dV8Fy1GiqjxU4OQ6ZoKWw", "youtube_scope": "dedicated_game_channel"}
+  ]
+}

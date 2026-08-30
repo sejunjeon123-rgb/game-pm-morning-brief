@@ -1,0 +1,4 @@
+interface:
+  display_name: "Player & Live Watch"
+  short_description: "Analyze player reaction and live-service risks"
+  default_prompt: "Use $player-live-watch to analyze player reactions and live-service risks around recent game signals."

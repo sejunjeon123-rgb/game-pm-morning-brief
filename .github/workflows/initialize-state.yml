@@ -1,0 +1,29 @@
+name: Initialize state branch
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  initialize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create state branch if missing
+        shell: bash
+        run: |
+          if git ls-remote --exit-code --heads origin state >/dev/null 2>&1; then
+            echo "state branch already exists"
+            exit 0
+          fi
+          git switch --orphan state
+          git rm -rf .
+          mkdir -p state/delivery state/runs
+          touch state/delivery/.gitkeep state/runs/.gitkeep
+          git config user.name "game-pm-brief-bot"
+          git config user.email "game-pm-brief-bot@users.noreply.github.com"
+          git add state
+          git commit -m "state: initialize runtime branch"
+          git push origin state

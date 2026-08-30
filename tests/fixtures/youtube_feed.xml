@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <entry>
+    <id>yt:video:abc123</id><yt:videoId>abc123</yt:videoId><yt:channelId>UCexample</yt:channelId>
+    <title>트릭컬 리바이브 신규 이벤트 안내</title>
+    <link rel="alternate" href="https://www.youtube.com/watch?v=abc123"/>
+    <published>2026-08-29T01:00:00+00:00</published>
+    <media:group><media:description>공식 이벤트 영상을 공개합니다.</media:description></media:group>
+  </entry>
+  <entry>
+    <id>yt:video:other</id><yt:videoId>other</yt:videoId><yt:channelId>UCexample</yt:channelId>
+    <title>다른 게임 영상</title>
+    <link rel="alternate" href="https://www.youtube.com/watch?v=other"/>
+    <published>2026-08-29T02:00:00+00:00</published>
+    <media:group><media:description>다른 프로젝트입니다.</media:description></media:group>
+  </entry>
+</feed>

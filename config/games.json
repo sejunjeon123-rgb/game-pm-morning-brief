@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "games": [
+    {"id": "mabinogi-mobile", "name_ko": "마비노기 모바일", "genre_tags": ["MMORPG"]},
+    {"id": "black-desert-mobile", "name_ko": "검은사막 모바일", "genre_tags": ["MMORPG"]},
+    {"id": "odin-valhalla-rising", "name_ko": "오딘: 발할라 라이징", "genre_tags": ["MMORPG"]},
+    {"id": "lineage-m", "name_ko": "리니지M", "genre_tags": ["MMORPG"]},
+    {"id": "seven-knights-rebirth", "name_ko": "세븐나이츠 리버스", "genre_tags": ["수집형RPG"]},
+    {"id": "nikke", "name_ko": "승리의 여신: 니케", "genre_tags": ["수집형RPG"]},
+    {"id": "trickcal-revive", "name_ko": "트릭컬 리바이브", "genre_tags": ["수집형RPG"]},
+    {"id": "epic-seven", "name_ko": "에픽세븐", "genre_tags": ["수집형RPG"]}
+  ]
+}

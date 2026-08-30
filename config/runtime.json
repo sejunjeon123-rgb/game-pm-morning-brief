@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "timezone": "Asia/Seoul",
+  "schedule": {
+    "provider": "github-actions",
+    "local_time": "08:10",
+    "cron_utc": "10 23 * * *",
+    "every_day": true
+  },
+  "delivery": {
+    "providers": ["slack-incoming-webhook", "notion-api"],
+    "mode": "automatic",
+    "live_delivery_enabled": false,
+    "slack": {
+      "enabled": true,
+      "app": "game-pm-dedicated",
+      "channel_name": "게임-사업pm-브리핑",
+      "secret_env": "SLACK_WEBHOOK_URL"
+    },
+    "notion": {
+      "enabled": true,
+      "destination": "child-page",
+      "token_secret_env": "NOTION_TOKEN",
+      "parent_page_id_env": "NOTION_PARENT_PAGE_ID",
+      "api_version": "2026-03-11"
+    }
+  },
+  "state": {
+    "backend": "git-branch-json",
+    "branch": "state",
+    "directory": "state",
+    "commit_only_on_change": true
+  },
+  "player_live": {
+    "scan_all_core_games_daily": true,
+    "approved_platforms": [
+      "인벤",
+      "디시인사이드",
+      "네이버 공식카페",
+      "YouTube",
+      "치지직",
+      "아카라이브"
+    ]
+  },
+  "game_radar": {
+    "enabled": true,
+    "max_games_per_run": 3,
+    "min_independent_sources": 2
+  }
+}

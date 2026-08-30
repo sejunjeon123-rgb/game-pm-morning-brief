@@ -1,0 +1,4 @@
+interface:
+  display_name: "PM Decision Lead"
+  short_description: "Prioritize signals and produce PM morning briefs"
+  default_prompt: "Use $pm-decision-lead to prioritize scout findings and produce an evidence-based PM morning brief."
