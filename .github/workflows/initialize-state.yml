@@ -10,7 +10,7 @@ jobs:
   initialize:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Create state branch if missing
         shell: bash
         run: |
@@ -19,7 +19,7 @@ jobs:
             exit 0
           fi
           git switch --orphan state
-          git rm -rf .
+          git rm -rf --ignore-unmatch .
           mkdir -p state/delivery state/runs
           touch state/delivery/.gitkeep state/runs/.gitkeep
           git config user.name "game-pm-brief-bot"
