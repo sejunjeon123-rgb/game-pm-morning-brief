@@ -30,6 +30,7 @@ The operating policy is fixed in `config/runtime.json`; implementation and deplo
 
 - Read `config/games.json` for game scope and genre tags.
 - Read `config/sources.json` for verified official Market Signal sources.
+- Read `config/player_live_sources.json` for verified game-specific Player Live pages, evidence roles, and adapter readiness. An approved platform without a verified game-specific URL is not an active source.
 - Apply the official source priority in `config/sources.json`: official homepage, homepage-linked official community, then official YouTube. If one source is unavailable or empty, record that source-level gap and continue with the next configured priority. Do not use an external relay or fail the whole game solely because a higher-priority source is unavailable. Priority chooses representative wording; it does not erase valid evidence or unresolved differences.
 - Read `config/runtime.json` for schedule, delivery, state, Player Live, and Game Radar policy.
 - Read `shared/schemas.py` for allowed enums, validation, and cross-skill payloads.
@@ -92,10 +93,11 @@ The delivery adapter is infrastructure, not a fourth analytical skill.
 
 1. Invoke `player-live-watch` for all mandatory deep dives.
 2. Run the independent Player Live scan for all eight configured games every day.
-3. Run Game Radar for out-of-scope games. Admit at most three games per run, each supported by evidence from at least two independent source hosts. Do not add Radar games to `config/games.json` during a run.
-4. Validate every `PlayerLiveInsight` against the shared schema.
-5. Preserve disagreement between official facts and player reports.
-6. Return a coverage gap when evidence cannot be accessed or is insufficient; do not substitute unsupported conclusions.
+3. Use only verified active pages in `config/player_live_sources.json`. Follow the configured evidence priority; a source marked `ADAPTER_PENDING` is not collectable until its adapter passes fixture and live-read validation.
+4. Run Game Radar for out-of-scope games. Admit at most three games per run, each supported by evidence from at least two independent source hosts. Do not add Radar games to `config/games.json` during a run.
+5. Validate every `PlayerLiveInsight` against the shared schema.
+6. Preserve disagreement between official facts and player reports.
+7. Return a coverage gap when evidence cannot be accessed or is insufficient; do not substitute unsupported conclusions.
 
 ### 4. Decision phase
 

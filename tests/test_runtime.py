@@ -31,13 +31,40 @@ class RuntimeTests(unittest.TestCase):
         self.assertFalse(config.source_policy["external_relay_allowed"])
         self.assertEqual(
             config.runtime["player_live"]["evidence_priority"],
-            ["OFFICIAL_HOMEPAGE", "OFFICIAL_COMMUNITY", "OFFICIAL_YOUTUBE", "PUBLIC_CREATOR_YOUTUBE"],
+            [
+                "OFFICIAL_HOMEPAGE",
+                "OFFICIAL_COMMUNITY",
+                "OFFICIAL_YOUTUBE",
+                "PUBLIC_COMMUNITY",
+                "PUBLIC_CREATOR_YOUTUBE",
+                "PUBLIC_LIVE_PLATFORM",
+            ],
         )
         self.assertEqual(
             config.runtime["player_live"]["public_creator_youtube_classification"],
             "PLAYER_CLAIM_OR_CREATOR_ANALYSIS",
         )
         self.assertEqual(SourceType.PUBLIC_CREATOR_YOUTUBE.value, "PUBLIC_CREATOR_YOUTUBE")
+        self.assertEqual(SourceType.PUBLIC_LIVE_PLATFORM.value, "PUBLIC_LIVE_PLATFORM")
+        self.assertEqual(len(config.player_live_sources), 8)
+        self.assertEqual(
+            {item["game_id"] for item in config.player_live_sources},
+            set(config.game_ids),
+        )
+        self.assertTrue(
+            all(
+                any(source["source_type"] == "OFFICIAL_YOUTUBE" for source in item["sources"])
+                for item in config.player_live_sources
+            )
+        )
+        self.assertTrue(
+            all(
+                source["status"] == "VERIFIED"
+                and source["collection_status"] in {"RSS_READY", "ADAPTER_PENDING"}
+                for item in config.player_live_sources
+                for source in item["sources"]
+            )
+        )
 
     def test_slack_payload_has_header(self) -> None:
         brief = brief_as_dict(build_preview_brief(load_project_config(ROOT)))

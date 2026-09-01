@@ -9,7 +9,8 @@
 - State target: 전용 `state` 브랜치의 JSON
 - Delivery target: 전용 Slack 앱 + Notion
 - Implemented: Market Signal 공식 공지/YouTube 수집, 변경 감지, 게임별 bounded batch 분석, One Event + Multiple Evidence 병합, 입력 완전성 검증, state branch 분석 캐시, OpenAI Structured Outputs 기반 Signal 변환
-- Foundation only: Player & Live 실제 수집, PM Decision 전체 파이프라인, 자동 발송은 아직 활성화되지 않았습니다.
+- Player Live source foundation: 8개 게임별 검증 URL과 evidence role을 `config/player_live_sources.json`에 등록했습니다. 공식 YouTube는 `RSS_READY`, 커뮤니티는 실제 수집 어댑터 구현 전까지 `ADAPTER_PENDING`입니다.
+- Foundation only: Player & Live 게시물 수집·군집 분석, PM Decision 전체 파이프라인, 자동 발송은 아직 활성화되지 않았습니다.
 
 ## Skills
 

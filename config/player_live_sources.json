@@ -1,0 +1,331 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-09-01T00:00:00+09:00",
+  "verification_policy": "Record only a publicly accessible game-specific page whose identity was directly confirmed. Do not infer or probe missing URLs.",
+  "collection_policy": {
+    "lookback_days": 7,
+    "on_source_unavailable": "CONTINUE_LOWER_PRIORITY",
+    "on_all_sources_empty": "REPORT_COVERAGE_GAP",
+    "external_relay_allowed": false,
+    "creator_youtube_requires_separate_discovery": true
+  },
+  "games": [
+    {
+      "game_id": "mabinogi-mobile",
+      "sources": [
+        {
+          "source_id": "mabinogi-mobile-official-youtube",
+          "platform": "YouTube",
+          "source_type": "OFFICIAL_YOUTUBE",
+          "url": "https://www.youtube.com/@mabinogimobile_official",
+          "verified_name_ko": "마비노기 모바일 공식 YouTube",
+          "evidence_role": "OFFICIAL_FACT",
+          "status": "VERIFIED",
+          "collection_status": "RSS_READY"
+        },
+        {
+          "source_id": "mabinogi-mobile-inven",
+          "platform": "인벤",
+          "source_type": "PUBLIC_COMMUNITY",
+          "url": "https://www.inven.co.kr/board/mabimo/6259",
+          "verified_name_ko": "마비노기 모바일 인벤 자유 게시판",
+          "evidence_role": "PLAYER_REACTION",
+          "status": "VERIFIED",
+          "collection_status": "ADAPTER_PENDING"
+        },
+        {
+          "source_id": "mabinogi-mobile-dcinside",
+          "platform": "디시인사이드",
+          "source_type": "PUBLIC_COMMUNITY",
+          "url": "https://gall.dcinside.com/mgallery/board/lists/?id=mabinogimobile",
+          "verified_name_ko": "마비노기 모바일 마이너 갤러리",
+          "evidence_role": "PLAYER_REACTION",
+          "status": "VERIFIED",
+          "collection_status": "ADAPTER_PENDING"
+        }
+      ]
+    },
+    {
+      "game_id": "black-desert-mobile",
+      "sources": [
+        {
+          "source_id": "black-desert-mobile-official-community",
+          "platform": "게임사 공식 커뮤니티",
+          "source_type": "OFFICIAL_COMMUNITY",
+          "url": "https://forum.blackdesertm.com/Board?boardNo=12",
+          "verified_name_ko": "검은사막 모바일 공식 포럼 자유게시판",
+          "evidence_role": "OFFICIAL_COMMUNITY_REACTION",
+          "status": "VERIFIED",
+          "collection_status": "ADAPTER_PENDING"
+        },
+        {
+          "source_id": "black-desert-mobile-official-youtube",
+          "platform": "YouTube",
+          "source_type": "OFFICIAL_YOUTUBE",
+          "url": "https://www.youtube.com/@BlackDesertMobile",
+          "verified_name_ko": "검은사막 모바일 공식 YouTube",
+          "evidence_role": "OFFICIAL_FACT",
+          "status": "VERIFIED",
+          "collection_status": "RSS_READY"
+        },
+        {
+          "source_id": "black-desert-mobile-dcinside",
+          "platform": "디시인사이드",
+          "source_type": "PUBLIC_COMMUNITY",
+          "url": "https://gall.dcinside.com/board/lists/?id=blackdesertmobile",
+          "verified_name_ko": "검은사막 모바일 갤러리",
+          "evidence_role": "PLAYER_REACTION",
+          "status": "VERIFIED",
+          "collection_status": "ADAPTER_PENDING"
+        }
+      ]
+    },
+    {
+      "game_id": "odin-valhalla-rising",
+      "sources": [
+        {
+          "source_id": "odin-valhalla-rising-official-youtube",
+          "platform": "YouTube",
+          "source_type": "OFFICIAL_YOUTUBE",
+          "url": "https://www.youtube.com/@odin_kr",
+          "verified_name_ko": "오딘: 발할라 라이징 공식 YouTube",
+          "evidence_role": "OFFICIAL_FACT",
+          "status": "VERIFIED",
+          "collection_status": "RSS_READY"
+        },
+        {
+          "source_id": "odin-valhalla-rising-inven",
+          "platform": "인벤",
+          "source_type": "PUBLIC_COMMUNITY",
+          "url": "https://www.inven.co.kr/odin/",
+          "verified_name_ko": "오딘: 발할라 라이징 인벤",
+          "evidence_role": "PLAYER_REACTION",
+          "status": "VERIFIED",
+          "collection_status": "ADAPTER_PENDING"
+        },
+        {
+          "source_id": "odin-valhalla-rising-dcinside",
+          "platform": "디시인사이드",
+          "source_type": "PUBLIC_COMMUNITY",
+          "url": "https://gall.dcinside.com/mgallery/board/lists/?id=vhr",
+          "verified_name_ko": "오딘 발할라 라이징 마이너 갤러리",
+          "evidence_role": "PLAYER_REACTION",
+          "status": "VERIFIED",
+          "collection_status": "ADAPTER_PENDING"
+        }
+      ]
+    },
+    {
+      "game_id": "lineage-m",
+      "sources": [
+        {
+          "source_id": "lineage-m-official-youtube",
+          "platform": "YouTube",
+          "source_type": "OFFICIAL_YOUTUBE",
+          "url": "https://www.youtube.com/@nclineagem",
+          "verified_name_ko": "리니지M 공식 YouTube",
+          "evidence_role": "OFFICIAL_FACT",
+          "status": "VERIFIED",
+          "collection_status": "RSS_READY"
+        },
+        {
+          "source_id": "lineage-m-inven",
+          "platform": "인벤",
+          "source_type": "PUBLIC_COMMUNITY",
+          "url": "https://www.inven.co.kr/board/lineagem/5019",
+          "verified_name_ko": "리니지M 인벤 자유 게시판",
+          "evidence_role": "PLAYER_REACTION",
+          "status": "VERIFIED",
+          "collection_status": "ADAPTER_PENDING"
+        },
+        {
+          "source_id": "lineage-m-dcinside",
+          "platform": "디시인사이드",
+          "source_type": "PUBLIC_COMMUNITY",
+          "url": "https://gall.dcinside.com/board/lists/?id=lineagem",
+          "verified_name_ko": "리니지M 갤러리",
+          "evidence_role": "PLAYER_REACTION",
+          "status": "VERIFIED",
+          "collection_status": "ADAPTER_PENDING"
+        }
+      ]
+    },
+    {
+      "game_id": "seven-knights-rebirth",
+      "sources": [
+        {
+          "source_id": "seven-knights-rebirth-official-community",
+          "platform": "게임사 공식 커뮤니티",
+          "source_type": "OFFICIAL_COMMUNITY",
+          "url": "https://forum.netmarble.com/sena_rebirth",
+          "verified_name_ko": "세븐나이츠 리버스 공식 포럼",
+          "evidence_role": "OFFICIAL_COMMUNITY_REACTION",
+          "status": "VERIFIED",
+          "collection_status": "ADAPTER_PENDING"
+        },
+        {
+          "source_id": "seven-knights-rebirth-official-youtube",
+          "platform": "YouTube",
+          "source_type": "OFFICIAL_YOUTUBE",
+          "url": "https://www.youtube.com/@sena_rebirth",
+          "verified_name_ko": "세븐나이츠 리버스 공식 YouTube",
+          "evidence_role": "OFFICIAL_FACT",
+          "status": "VERIFIED",
+          "collection_status": "RSS_READY"
+        },
+        {
+          "source_id": "seven-knights-rebirth-inven",
+          "platform": "인벤",
+          "source_type": "PUBLIC_COMMUNITY",
+          "url": "https://www.inven.co.kr/board/sena/6379",
+          "verified_name_ko": "세븐나이츠 리버스 인벤 통합 게시판",
+          "evidence_role": "PLAYER_REACTION",
+          "status": "VERIFIED",
+          "collection_status": "ADAPTER_PENDING"
+        },
+        {
+          "source_id": "seven-knights-rebirth-dcinside",
+          "platform": "디시인사이드",
+          "source_type": "PUBLIC_COMMUNITY",
+          "url": "https://gall.dcinside.com/mgallery/board/lists/?id=sevennightsrebirth",
+          "verified_name_ko": "세븐나이츠 리버스 마이너 갤러리",
+          "evidence_role": "PLAYER_REACTION",
+          "status": "VERIFIED",
+          "collection_status": "ADAPTER_PENDING"
+        }
+      ]
+    },
+    {
+      "game_id": "nikke",
+      "sources": [
+        {
+          "source_id": "nikke-official-community",
+          "platform": "네이버 공식카페",
+          "source_type": "OFFICIAL_COMMUNITY",
+          "url": "https://game.naver.com/lounge/nikke/home",
+          "verified_name_ko": "승리의 여신: 니케 공식 라운지",
+          "evidence_role": "OFFICIAL_COMMUNITY_REACTION",
+          "status": "VERIFIED",
+          "collection_status": "ADAPTER_PENDING"
+        },
+        {
+          "source_id": "nikke-official-youtube",
+          "platform": "YouTube",
+          "source_type": "OFFICIAL_YOUTUBE",
+          "url": "https://www.youtube.com/@nikkekr",
+          "verified_name_ko": "승리의 여신: 니케 공식 YouTube",
+          "evidence_role": "OFFICIAL_FACT",
+          "status": "VERIFIED",
+          "collection_status": "RSS_READY"
+        },
+        {
+          "source_id": "nikke-inven",
+          "platform": "인벤",
+          "source_type": "PUBLIC_COMMUNITY",
+          "url": "https://www.inven.co.kr/board/nikke/5972",
+          "verified_name_ko": "승리의 여신: 니케 인벤 자유 게시판",
+          "evidence_role": "PLAYER_REACTION",
+          "status": "VERIFIED",
+          "collection_status": "ADAPTER_PENDING"
+        },
+        {
+          "source_id": "nikke-dcinside",
+          "platform": "디시인사이드",
+          "source_type": "PUBLIC_COMMUNITY",
+          "url": "https://gall.dcinside.com/mgallery/board/lists/?id=gov",
+          "verified_name_ko": "니케 마이너 갤러리",
+          "evidence_role": "PLAYER_REACTION",
+          "status": "VERIFIED",
+          "collection_status": "ADAPTER_PENDING"
+        }
+      ]
+    },
+    {
+      "game_id": "trickcal-revive",
+      "sources": [
+        {
+          "source_id": "trickcal-revive-official-community",
+          "platform": "네이버 공식카페",
+          "source_type": "OFFICIAL_COMMUNITY",
+          "url": "https://cafe.naver.com/trickcal",
+          "verified_name_ko": "트릭컬 리바이브 공식 카페",
+          "evidence_role": "OFFICIAL_COMMUNITY_REACTION",
+          "status": "VERIFIED",
+          "collection_status": "ADAPTER_PENDING"
+        },
+        {
+          "source_id": "trickcal-revive-official-youtube",
+          "platform": "YouTube",
+          "source_type": "OFFICIAL_YOUTUBE",
+          "url": "https://www.youtube.com/@epidgames6350",
+          "verified_name_ko": "에피드게임즈 공식 YouTube",
+          "evidence_role": "OFFICIAL_FACT",
+          "status": "VERIFIED",
+          "collection_status": "RSS_READY"
+        },
+        {
+          "source_id": "trickcal-revive-dcinside",
+          "platform": "디시인사이드",
+          "source_type": "PUBLIC_COMMUNITY",
+          "url": "https://gall.dcinside.com/mgallery/board/lists/?id=rollthechess",
+          "verified_name_ko": "트릭컬 마이너 갤러리",
+          "evidence_role": "PLAYER_REACTION",
+          "status": "VERIFIED",
+          "collection_status": "ADAPTER_PENDING"
+        }
+      ]
+    },
+    {
+      "game_id": "epic-seven",
+      "sources": [
+        {
+          "source_id": "epic-seven-official-community",
+          "platform": "게임사 공식 커뮤니티",
+          "source_type": "OFFICIAL_COMMUNITY",
+          "url": "https://page.onstove.com/epicseven/kr",
+          "verified_name_ko": "에픽세븐 STOVE 공식 커뮤니티",
+          "evidence_role": "OFFICIAL_COMMUNITY_REACTION",
+          "status": "VERIFIED",
+          "collection_status": "ADAPTER_PENDING"
+        },
+        {
+          "source_id": "epic-seven-official-youtube",
+          "platform": "YouTube",
+          "source_type": "OFFICIAL_YOUTUBE",
+          "url": "https://www.youtube.com/@EpicSevenKR",
+          "verified_name_ko": "에픽세븐 공식 YouTube",
+          "evidence_role": "OFFICIAL_FACT",
+          "status": "VERIFIED",
+          "collection_status": "RSS_READY"
+        },
+        {
+          "source_id": "epic-seven-dcinside",
+          "platform": "디시인사이드",
+          "source_type": "PUBLIC_COMMUNITY",
+          "url": "https://gall.dcinside.com/mgallery/board/lists/?id=epicseven",
+          "verified_name_ko": "에픽세븐 마이너 갤러리",
+          "evidence_role": "PLAYER_REACTION",
+          "status": "VERIFIED",
+          "collection_status": "ADAPTER_PENDING"
+        }
+      ]
+    }
+  ],
+  "unconfigured_discovery": [
+    {
+      "platform": "YouTube",
+      "source_type": "PUBLIC_CREATOR_YOUTUBE",
+      "reason": "개인 YouTube는 고정 채널을 임의 선정하지 않고 별도 검색·검증 단계에서 후보를 찾는다."
+    },
+    {
+      "platform": "치지직",
+      "source_type": "PUBLIC_LIVE_PLATFORM",
+      "reason": "게임별 공개 고정 URL을 이번 검증에서 확인하지 못했다."
+    },
+    {
+      "platform": "아카라이브",
+      "source_type": "PUBLIC_COMMUNITY",
+      "reason": "게임별 공개 고정 URL을 이번 검증에서 확인하지 못했다."
+    }
+  ]
+}

@@ -37,10 +37,13 @@
       "OFFICIAL_HOMEPAGE",
       "OFFICIAL_COMMUNITY",
       "OFFICIAL_YOUTUBE",
-      "PUBLIC_CREATOR_YOUTUBE"
+      "PUBLIC_COMMUNITY",
+      "PUBLIC_CREATOR_YOUTUBE",
+      "PUBLIC_LIVE_PLATFORM"
     ],
     "public_creator_youtube_classification": "PLAYER_CLAIM_OR_CREATOR_ANALYSIS",
     "approved_platforms": [
+      "게임사 공식 커뮤니티",
       "인벤",
       "디시인사이드",
       "네이버 공식카페",
