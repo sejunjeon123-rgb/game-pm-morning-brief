@@ -29,8 +29,8 @@ from shared.time_utils import parse_iso_kst
 
 
 ANALYZER_VERSION = "market-signal-batch-v2"
-MAX_DOCUMENTS_PER_BATCH = 12
-MAX_BATCH_CHARACTERS = 90_000
+MAX_DOCUMENTS_PER_BATCH = 6
+MAX_BATCH_CHARACTERS = 50_000
 MAX_PARALLEL_REQUESTS = 3
 MAX_DOCUMENT_CHARACTERS = 20_000
 _EVENT_KEY = re.compile(r"^[a-z0-9][a-z0-9-]{0,127}$")

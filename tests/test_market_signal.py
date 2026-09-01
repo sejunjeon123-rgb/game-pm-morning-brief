@@ -267,7 +267,7 @@ class MarketSignalTests(unittest.TestCase):
         )
         client = FakeClient()
         outcome = analyze_notices_with_report(client, notices)  # type: ignore[arg-type]
-        self.assertEqual(client.calls, 2)
+        self.assertEqual(client.calls, 3)
         self.assertEqual(len(outcome.signals), 1)
         self.assertEqual(len(outcome.signals[0].evidence), 13)
 

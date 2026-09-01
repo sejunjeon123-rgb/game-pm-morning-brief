@@ -73,7 +73,7 @@ jobs:
           fi
 
       - name: Save changed state
-        if: ${{ always() && steps.mode.outputs.value != 'preview' }}
+        if: ${{ success() && steps.mode.outputs.value != 'preview' }}
         working-directory: runtime-state
         shell: bash
         run: |
