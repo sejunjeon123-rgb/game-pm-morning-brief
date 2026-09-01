@@ -1,0 +1,1723 @@
+{
+  "version": "market-signal-batch-v2",
+  "games": {
+    "black-desert-mobile": {
+      "fingerprint": "fc7137d44e91ed219f6589804c4a6f3ca156e633058c3e6530f39145e6b59a88",
+      "signals": [
+        {
+          "signal_id": "sig-db71c0f225d3ed82",
+          "event_key": "2026-09-01-update-maintenance",
+          "game_id": "black-desert-mobile",
+          "title": "September 1, 2026 update maintenance completed (09:00–12:30)",
+          "summary": "Official notice that the 2026-09-01 update maintenance was scheduled and completed. Maintenance window: 2026-09-01 09:00–12:30 (game and official site/forum inaccessible during window). A forced update was applied and a list of forced-update compensation items was delivered (e.g., 영지 관리인: 아이린 (3일), time extensions for duration items, daily pearl benefits, various combat/life buffs, auto-quest tickets, appearance change tickets). Some content/item use was restricted 30 minutes prior to maintenance as listed.",
+          "category": "MAINTENANCE",
+          "severity": "LOW",
+          "observed_at": "2026-08-31T00:00:00+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-18bef3c047ab8cdc",
+              "source_type": "OFFICIAL_HOMEPAGE",
+              "url": "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=662045&pageNo=1",
+              "title": "전체공지",
+              "published_at": "2026-08-31T00:00:00+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "f4cf50b58ce18981fed888efab6cf86f20c93e7f76732124c7b112a7c13371c9",
+              "modified_at": null,
+              "previous_content_hash": "f4cf50b58ce18981fed888efab6cf86f20c93e7f76732124c7b112a7c13371c9"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "Routine scheduled update/maintenance that temporarily made the game and official sites inaccessible for a defined window (09:00–12:30); compensation items were delivered to players.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-14dd946090fad666",
+          "event_key": "2026-09-confirmed-issues",
+          "game_id": "black-desert-mobile",
+          "title": "September 2026 confirmed issues and recent fixes",
+          "summary": "Monthly 'confirmed issues' bulletin listing ongoing and intermittent issues found as of September 2026 and a recent fix. Reported issues include: (1) UI — in the 'Land of Darkness' the adventurer's phantom name and score intermittently not displayed (noted 2026-05-14); (2) System — in 'Night of the Origin' and 'Black Sun', score gained from defeating an adventurer's phantom intermittently appears as 0 points (noted 2026-06-26). The bulletin also records a resolved issue (updated 09/01 13:03): character selection screen's [BDM 테스트 서버] application was not working and has been fixed.",
+          "category": "NOTICE",
+          "severity": "MEDIUM",
+          "observed_at": "2026-09-01T00:00:00+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-eabddc3da2bbdeca",
+              "source_type": "OFFICIAL_HOMEPAGE",
+              "url": "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=662062&pageNo=1",
+              "title": "전체공지",
+              "published_at": "2026-09-01T00:00:00+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "609a56587165e951025d5ca05fd21e9618b47d0f3c9f0c274ce98d67eda30a9f",
+              "modified_at": null,
+              "previous_content_hash": "609a56587165e951025d5ca05fd21e9618b47d0f3c9f0c274ce98d67eda30a9f"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "Issues affect visibility and scoring for specific game modes/content (intermittent display of phantom name/score and occasional 0-point score awards), which can impact player experience and correctness of score-based content; one UI-related bug was marked as fixed on 2026-09-01.",
+            "final_router": "pm-decision-lead"
+          }
+        }
+      ],
+      "excluded_inputs": []
+    },
+    "epic-seven": {
+      "fingerprint": "fcecef0d61afa07eba18e648cde046c16eaaa1e2bc76b100b8dcf270dd0510ff",
+      "signals": [
+        {
+          "signal_id": "sig-23daad8d70678dca",
+          "event_key": "2026-08-28-no-maintenance-patch-chaos-call",
+          "game_id": "epic-seven",
+          "title": "8/28 무점검 패치(서버 안정화) 및 혼돈의 부름 전투 종료 오류 안내",
+          "summary": "8/28(금) 19:30~21:00 무점검 패치로 서버 안정화가 진행되며 해당 시간 동안 로비 이벤트 접근 및 일부 PvP(월드 아레나 드래프트/월드 보스/기사단 전쟁 등) 이용이 제한됩니다. 동일 기간 전후로 '혼돈의 부름'에서 전투 포기 시 경기가 정상 종료되지 않는 현상이 보고되었으며, 운영측이 패치와 함께 보상을(무료 성약 소환 20회(7일) 등) 지급한다고 안내했습니다.",
+          "category": "UPDATE",
+          "severity": "MEDIUM",
+          "observed_at": "2026-08-28T22:38:25.133000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-486ea961e14d050a",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://page.onstove.com/epicseven/kr/view/14452785",
+              "title": "8/28(금) 현재 확인된 문제점 안내",
+              "published_at": "2026-08-28T22:38:25.133000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "2e20d0afaa94558936537b68a750ef4d8085c3dfbf7c935f0cafe00fe53495b5",
+              "modified_at": null,
+              "previous_content_hash": "2e20d0afaa94558936537b68a750ef4d8085c3dfbf7c935f0cafe00fe53495b5"
+            },
+            {
+              "evidence_id": "ev-0eb055bcb8126210",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://page.onstove.com/epicseven/kr/view/14450614",
+              "title": "8/28(금) 무점검 패치 진행 안내(보상 추가)",
+              "published_at": "2026-08-28T18:30:10.406000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "823e61a8f43234797f05faa2cb30b9e0819e892bdbc67bb83a1fbfb765b472c4",
+              "modified_at": null,
+              "previous_content_hash": "823e61a8f43234797f05faa2cb30b9e0819e892bdbc67bb83a1fbfb765b472c4"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "무점검 패치로 게임 접속/특정 콘텐츠 접근이 일시 제한되며(로비 이벤트, PvP 모드 등) 이용 불편에 대한 보상이 공지되어 있음.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-ebae47b3b7675467",
+          "event_key": "2026-08-31-no-maintenance-patch",
+          "game_id": "epic-seven",
+          "title": "8/31 무점검 패치(서버 안정화 및 다수 버그 수정) 안내",
+          "summary": "8/31(월) 23:00~00:00 무점검 패치가 예정되어 있으며, 패치 동안 게임 접속 불안정 및 월드 아레나/혼돈의 부름/월드 보스/기사단 전쟁 등 일부 콘텐츠 이용 불가가 공지되었습니다. 공지에는 혼돈의 부름 매칭/아이콘/스킬 피해량 등 여러 전투 관련 버그 수정 항목이 열거되어 있습니다.",
+          "category": "UPDATE",
+          "severity": "MEDIUM",
+          "observed_at": "2026-08-31T21:34:52.634000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-2cd26497b48f18ea",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://page.onstove.com/epicseven/kr/view/14481248",
+              "title": "8/31(월) 무점검 패치 진행 안내",
+              "published_at": "2026-08-31T21:34:52.634000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "ce30542f3ce72261c1752418ea477c8874ac93b0203779826f61007e6e30f79a",
+              "modified_at": null,
+              "previous_content_hash": "ce30542f3ce72261c1752418ea477c8874ac93b0203779826f61007e6e30f79a"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "패치 적용 시간 동안 접속 불안정 및 다수 PvP 관련 콘텐츠 이용 불가가 명시되어 있음.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-da0ca24515d0107b",
+          "event_key": "2026-09-01-content-suspension-exclusive-equipment-bug",
+          "game_id": "epic-seven",
+          "title": "9/1 일부 전용 장비 효과 미적용 확인 및 PvP 콘텐츠 접근 일시 중단",
+          "summary": "9/1(화) 일부 영웅의 전용 장비 효과가 적용되지 않는 문제가 확인되었으며, 운영진은 오류 수정 및 콘텐츠 시스템 점검을 위해 9/1 01:00부터 [월드 아레나], [혼돈의 부름], [아레나], [루키 아레나] 등 일부 PvP 콘텐츠의 이용을 일시 중단한다고 안내했습니다(중단 종료 시점: 추후 안내).",
+          "category": "MAINTENANCE",
+          "severity": "HIGH",
+          "observed_at": "2026-09-01T01:08:33.887000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-8bbac8b6bc52b072",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://page.onstove.com/epicseven/kr/view/14484875",
+              "title": "9/1(화) 콘텐츠 일시 중단 안내",
+              "published_at": "2026-09-01T01:08:33.887000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "5dd87121e34c7140d66706e488e709c3a8e2accb2849074f435ddb751d550f44",
+              "modified_at": null,
+              "previous_content_hash": "5dd87121e34c7140d66706e488e709c3a8e2accb2849074f435ddb751d550f44"
+            },
+            {
+              "evidence_id": "ev-5af61a17985a7c96",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://page.onstove.com/epicseven/kr/view/14484769",
+              "title": "9/1(화) 현재 확인된 문제점 안내",
+              "published_at": "2026-09-01T00:41:25.795000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "aa1681f54f3b59d461d499b73cab3bd92bde04cbce37d36e200fd64a28178d89",
+              "modified_at": null,
+              "previous_content_hash": "aa1681f54f3b59d461d499b73cab3bd92bde04cbce37d36e200fd64a28178d89"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "player-live-watch",
+            "deep_dive_required": true,
+            "reason": "여러 경쟁·대전형 콘텐츠가 '추후 안내'까지 이용 중단되는 무기한(未定) 중단이 공지됨 — 서비스 접근성에 즉각적이고 광범위한 영향이 있음.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-8f36356c6641cd30",
+          "event_key": "2026-08-28-749-account-bans",
+          "game_id": "epic-seven",
+          "title": "8/28 불량 이용자(부정행위) 제재 안내 - 749계정 영구 제한",
+          "summary": "운영진은 8/28일 불법 프로그램 사용 및 버그 악용 등 운영 정책 위반 이용자 749개 계정에 대해 영구 제한(계정 영구 정지)을 진행했다고 공지했습니다. 제재 대상 목록은 첨부 파일로 안내된다고 밝혔습니다.",
+          "category": "NOTICE",
+          "severity": "MEDIUM",
+          "observed_at": "2026-08-28T18:00:01.841000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-77ce093f9a806f03",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://page.onstove.com/epicseven/kr/view/14450348",
+              "title": "8/28(금) 불량이용자 제재 안내",
+              "published_at": "2026-08-28T18:00:01.841000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "307bd66e038b437b43786c72acd6c42c934a0f159885631263172f180431222f",
+              "modified_at": null,
+              "previous_content_hash": "307bd66e038b437b43786c72acd6c42c934a0f159885631263172f180431222f"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "대규모(749계정) 영구 제재가 공지되어 운영 정책 집행 및 게임 공정성 관련 영향이 명시됨.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-c32977c22b0c0d16",
+          "event_key": "8th-anniversary-update-server-instability",
+          "game_id": "epic-seven",
+          "title": "8th-anniversary update — server instability, content suspension, bug reports and compensation",
+          "summary": "After the 8th-anniversary update, the developer announced widespread server connection instability and ongoing stabilization work. They temporarily suspended access to certain content (announcement names World Arena and '혼돈의 부름' / 'Chaos Call'), identified gameplay bugs (misstated debuff probability in an episode, two characters incorrectly included in a popularity vote list, and a revival-related bug with Riezette), and later issued an apology plus compensation: Free Covenant Summon +20 (7 days), 10 Spectral Cores (분광 코어), and 20 Legendary Equipment Enhancement Stones. Reopening of the affected content will occur after fixes; timing to be announced.",
+          "category": "MAINTENANCE",
+          "severity": "HIGH",
+          "observed_at": "2026-08-28T00:21:44.841000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-71e5b89fc5dced02",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://page.onstove.com/epicseven/kr/view/14443720",
+              "title": "8주년 업데이트 이용 불편에 대한 사과 및 보상 안내",
+              "published_at": "2026-08-28T00:21:44.841000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "8815b10827a67d40fe3f1f22dca89b21ccd02f900c43ab88010993417127793b",
+              "modified_at": null,
+              "previous_content_hash": "8815b10827a67d40fe3f1f22dca89b21ccd02f900c43ab88010993417127793b"
+            },
+            {
+              "evidence_id": "ev-097b2e2f4f15fd6b",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://page.onstove.com/epicseven/kr/view/14442209",
+              "title": "8/27(목) 접속 불안정 현상 관련 추가 안내",
+              "published_at": "2026-08-27T22:43:48.439000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "7ee6b660792e2f54d764ff73d537cc8d9495f34df739a7b666158ce0776bda93",
+              "modified_at": null,
+              "previous_content_hash": "7ee6b660792e2f54d764ff73d537cc8d9495f34df739a7b666158ce0776bda93"
+            },
+            {
+              "evidence_id": "ev-7cbd68b2ef873868",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://page.onstove.com/epicseven/kr/view/14440906",
+              "title": "8/27(목) 현재 확인된 문제점 안내 (8/28 16:45 추가)",
+              "published_at": "2026-08-27T20:14:48.473000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "b3251ab518e40650d53e91076d23df14fa904f708962afa11e64318694cba808",
+              "modified_at": null,
+              "previous_content_hash": "b3251ab518e40650d53e91076d23df14fa904f708962afa11e64318694cba808"
+            },
+            {
+              "evidence_id": "ev-1b292b5b7536c19a",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://page.onstove.com/epicseven/kr/view/14440834",
+              "title": "8/27(목) 서버 접속 불안정 현상 안내 (추가)",
+              "published_at": "2026-08-27T20:08:22.903000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "dd33afb0e8f785f4a4d2e58a8be71a3438d6bfc5771352ee049ef713789a3707",
+              "modified_at": null,
+              "previous_content_hash": "dd33afb0e8f785f4a4d2e58a8be71a3438d6bfc5771352ee049ef713789a3707"
+            }
+          ],
+          "source_conflicts": [
+            "doc-acb5c7d41cbad27611a8 explicitly states both World Arena and '혼돈의 부름' were suspended from 2026-08-27 21:20 until further notice; doc-e13feb96af2530df2199 focuses on '혼돈의 부름' as generating additional server load and describes pausing that content but does not explicitly repeat World Arena suspension.",
+            "doc-ca293629c5edebf59cdc lists specific gameplay bugs (incorrect debuff probability in a specific episode, two characters incorrectly included in a popularity vote, and a Riezette revival bug) that are not enumerated with the same detail in the other notices."
+          ],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "player-live-watch",
+            "deep_dive_required": true,
+            "reason": "Official notices report prolonged connection instability after a major update, temporary suspension of gameplay content, confirmed gameplay bugs, and issuance of compensation—indicating material service disruption affecting content access.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-86b6ca090a1a5cef",
+          "event_key": "8th-anniversary-online-events-goldenbell-zep",
+          "game_id": "epic-seven",
+          "title": "8th-anniversary '영속의 계승제' — Golden Bell live stream & ZEP metaverse online events (8/29)",
+          "summary": "The developer announced online participation options for the 8th-anniversary '영속의 계승제' on 2026-08-29. A Golden Bell live streaming program (YouTube) runs 15:00–19:00 KST with a viewing-certification mini-event (15:00–18:00) where participants submit screenshots for entry: 10 winners receive 1,000 Sky Stones (하늘석) and all participants receive 2 Life Leaves (생명의 잎사귀). A ZEP metaverse space (14:30–20:00) will host additional English-only events and hidden treasure boxes/mini-games with rewards (Sky Stones, Life Leaves, enhancement stones) to be announced; ZEP requires in-game nickname for entry and enforces one reward claim per account.",
+          "category": "WEB_EVENT",
+          "severity": "LOW",
+          "observed_at": "2026-08-28T18:00:01.006000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-8319453604822b1d",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://page.onstove.com/epicseven/kr/view/14449525",
+              "title": "「영속의 계승제」 온라인으로 함께 즐겨요! 특별 온라인 이벤트 안내",
+              "published_at": "2026-08-28T18:00:01.006000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "5b275785059db3ed6c69bcf0c4d7fa3d9707ba8ba21ce5567fd37983c5f57941",
+              "modified_at": null,
+              "previous_content_hash": "5b275785059db3ed6c69bcf0c4d7fa3d9707ba8ba21ce5567fd37983c5f57941"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "Planned community/web events with scheduled streaming and in-app reward distribution; no service-impacting issues reported in this notice.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-dc3c32d5765f5303",
+          "event_key": "8th-anniversary-triple-meet-broadcast",
+          "game_id": "epic-seven",
+          "title": "8th-anniversary '삼자대면' guest broadcast with viewing drops (8/30)",
+          "summary": "A special 8th-anniversary broadcast featuring three guests (샘웨, 휘뜨, 김츠유) is scheduled for 2026-08-30 18:00 KST on the CHZZK channel. The developer announced viewing drop rewards (Life Leaf x3 and Superior Equipment Enhancement Stone x2) to viewers.",
+          "category": "WEB_EVENT",
+          "severity": "LOW",
+          "observed_at": "2026-08-28T15:00:00.586000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-1fcb979794eb257d",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://page.onstove.com/epicseven/kr/view/14448085",
+              "title": "특별한 손님들과 함께하는 에픽세븐 8주년! 에픽세븐 삼자대면 방송 안내",
+              "published_at": "2026-08-28T15:00:00.586000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "d2a0547f8e60ba60d29882328a3cc3607e6bfd5347baec109f9fb521d4e1652f",
+              "modified_at": null,
+              "previous_content_hash": "d2a0547f8e60ba60d29882328a3cc3607e6bfd5347baec109f9fb521d4e1652f"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "Promotional livestream with viewer-drop rewards; no operational or gameplay issues reported.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-779ace5d991de6ad",
+          "event_key": "update-2026-08-27-rizette",
+          "game_id": "epic-seven",
+          "title": "8/27 업데이트(점검 완료) — 신규 ★5 영웅 '리제트' 추가, 혼돈의 부름 등 대형 콘텐츠 업데이트 및 소환/확률 변경",
+          "summary": "8/27 점검을 통해 대규모 업데이트가 적용되었습니다. 주요 내용으로는 신규 ★5 영웅 '리제트'의 등장(성약/월광/신비 소환 포함, 신비 소환 기간 8/27 점검 후 ~ 9/17 11:59), 리제트 관련 기억 각인·전용 재료 및 구매 제한(순백의 성흔, 계정당 구매 가능 횟수), 영웅 체험/미리보기 이벤트(보상: 생명의 잎사귀), ★5 공용 아티팩트 '빛이 머무는 땅' 추가, 전설 스킨 출시(신월의 루나 - 마제스틱 바니걸, 8주년 패키지 통해 수령), 신규 월드 아레나 모드 '혼돈의 부름' 추가(전용 규칙·시즌 운영), 시즌 전투 콘텐츠·에픽패스(아스트리움 패스) 등 다수의 콘텐츠 업데이트 및 편의성 개선이 포함됩니다. 점검 공지에는 점검 일정 연장 및 점검 완료 안내가 포함되며, 점검 완료 보상으로 생명의 잎사귀 7개가 지급됩니다.\n\n또한, '리제트' 추가에 따른 확률표 갱신(성약/월광/소환권 등 항목별 개수 및 개별 확률 조정)이 사전 안내되었고(8/27 업데이트 이후 인게임에서 확인 가능), 별도 공지로 진행되는 '도적 직업 소환 & 아티팩트 악몽의 주인 소환 확률 UP' 이벤트(기간: 8/27 점검 후 ~ 9/3 11:59)도 상세 확률표와 누적 소환 보상(예: 일정 횟수 달성 시 악몽의 주인 지급 등)을 포함하여 안내되었습니다. 해당 소환 이벤트의 공지에는 소환 확률 분배(예: ★5 도적 영웅 등장 확률 1%, ★5 악몽의 주인 1.05% 등)와 확정 소환 시스템(확정 소환 카운트 최대 120회)도 명시되어 있습니다.",
+          "category": "UPDATE",
+          "severity": "MEDIUM",
+          "observed_at": "2026-08-27T17:00:01.615000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-be5879ff6d8a9bc7",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://page.onstove.com/epicseven/kr/view/14439378",
+              "title": "8/27(목) 일부 콘텐츠 확률 변경 사전 안내",
+              "published_at": "2026-08-27T17:00:01.615000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "b96b84ce691f3e9fa00d61e27c30790a743a644817f3dc3f465ae700fd2e8083",
+              "modified_at": null,
+              "previous_content_hash": "b96b84ce691f3e9fa00d61e27c30790a743a644817f3dc3f465ae700fd2e8083"
+            },
+            {
+              "evidence_id": "ev-9ad41f78ef7aa4f5",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://page.onstove.com/epicseven/kr/view/14429122",
+              "title": "8월 4주차 업데이트 안내 (8/27 14:01 수정)",
+              "published_at": "2026-08-26T19:30:10.032000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "2d09e6e931a6661256ec83acfbd298eec312cef6782ad8f1aa0c1e37f010be23",
+              "modified_at": null,
+              "previous_content_hash": "2d09e6e931a6661256ec83acfbd298eec312cef6782ad8f1aa0c1e37f010be23"
+            },
+            {
+              "evidence_id": "ev-f3c6854874bef9ee",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://page.onstove.com/epicseven/kr/view/14427602",
+              "title": "8/27(목) 업데이트 점검 안내 (완료)",
+              "published_at": "2026-08-26T19:30:02.431000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "6d3005ddd1b3d1211554ad96245035fd875b3a6bd5a4c4cf176a0eb07d2be9df",
+              "modified_at": null,
+              "previous_content_hash": "6d3005ddd1b3d1211554ad96245035fd875b3a6bd5a4c4cf176a0eb07d2be9df"
+            },
+            {
+              "evidence_id": "ev-e57e968b22746186",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://page.onstove.com/epicseven/kr/view/14427561",
+              "title": "도적 직업 소환 & 악몽의 주인 소환 확률 UP!",
+              "published_at": "2026-08-26T19:30:02.185000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "e91598543f76df11c9cd8826bba9d3b360e9b02b9a586b54ab2ad10542a0e074",
+              "modified_at": null,
+              "previous_content_hash": "e91598543f76df11c9cd8826bba9d3b360e9b02b9a586b54ab2ad10542a0e074"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [
+              "PU"
+            ],
+            "rationale": "신규 ★5 영웅 추가와 소환 라인업·확률 변경 및 기간 한정 픽업(도적 직업 소환)은 픽업 성능과 소환 매출에 직접적으로 연관되므로 PU(픽업) 모니터링이 필요합니다.",
+            "verification_needed": true
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "신규 최고 등급 영웅 추가 및 월드 아레나 신규 모드, 주요 가챠 확률 변경과 기간 한정 픽업이 동시에 적용되어 콘텐츠 접근성·가챠 구성에 영향이 큼.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-75abca99584b97f0",
+          "event_key": "8th-ost-blooming-stars-streaming-event-2026-08",
+          "game_id": "epic-seven",
+          "title": "에픽세븐 8주년 OST 'BL∞MING STARS' 공개 및 스트리밍 인증 이벤트",
+          "summary": "8주년 기념 OST 'BL∞MING STARS' Full ver. 음원이 국내외 주요 플랫폼(Genie, Melon, Spotify, Apple 등)에 공개되었습니다. 이를 기념해 8/27 ~ 9/2 23:59(한국시간) 기간 동안 스트리밍 인증 이벤트를 진행합니다(참여 방식: 스트리밍 인증샷 및 댓글 양식 제출). 참가상으로 전원 '생명의 잎사귀 3개' 지급, 추첨 당첨자 30명에게는 상급 아티팩트 강화석 3개 지급 예정이며 당첨자 발표 및 보상 지급은 9/11에 예정되어 있습니다.",
+          "category": "MARKETING",
+          "severity": "LOW",
+          "observed_at": "2026-08-27T12:00:01.095000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-786802c3e713e47e",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://page.onstove.com/epicseven/kr/view/14437225",
+              "title": "에픽세븐 8주년 OST - 「BL∞MING STARS」 스트리밍 인증 이벤트",
+              "published_at": "2026-08-27T12:00:01.095000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "1c8f7b1c0db02f722059bd1d4e96048f4e7502894f771cf35e470b0f6387da1b",
+              "modified_at": null,
+              "previous_content_hash": "1c8f7b1c0db02f722059bd1d4e96048f4e7502894f771cf35e470b0f6387da1b"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "마케팅/홍보 목적의 스트리밍 인증 이벤트로 보상은 소액(참가상)이며 운영·서비스 구조에는 제한적 영향만 있음.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-9bce75d2b7e0b2ea",
+          "event_key": "rizette-skill-screenshot-event-2026-08-27",
+          "game_id": "epic-seven",
+          "title": "리제트 스킬 컷신 캡처 이벤트 (댓글 인증 보상)",
+          "summary": "리제트 스킬 컷신 중 인상적인 장면을 캡처해 커뮤니티 댓글 양식(닉네임/서버명/스크린샷)을 제출하면 참가자 전원에게 '생명의 잎사귀 2개'를 지급하는 커뮤니티 이벤트가 8/27 ~ 9/2 23:59(한국시간) 동안 진행됩니다. 보상은 9/4 내 우편으로 지급되며, 닉네임·서버 미기재 시 제외될 수 있음.",
+          "category": "EVENT",
+          "severity": "LOW",
+          "observed_at": "2026-08-27T19:00:00.580000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-2bf5be573b840014",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://page.onstove.com/epicseven/kr/view/14437761",
+              "title": "리제트 스킬 영상 속 최고의 순간을 포착해 주세요! 이벤트",
+              "published_at": "2026-08-27T19:00:00.580000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "d76721d9f18acb90eb0e89b49fe07ef59bfe70d6f564f0f36f28148dc2cbed32",
+              "modified_at": null,
+              "previous_content_hash": "d76721d9f18acb90eb0e89b49fe07ef59bfe70d6f564f0f36f28148dc2cbed32"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "소액 보상 참여형 커뮤니티 이벤트로 게임 운영/재무에 미치는 영향은 제한적임.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-4069b2b0366a2f83",
+          "event_key": "infinity-8th-anniversary",
+          "game_id": "epic-seven",
+          "title": "에픽세븐 8주년 기념! INFINITY∞ 이벤트",
+          "summary": "8주년 기념 INFINITY∞ 이벤트: 2026-08-27 점검 후 ~ 2026-10-29 11:59 KST. 매일 접속 시 무료 성약 소환 20회(일일 보상, 일일 1회 획득 가능)를 반복 지급하고 프로필 카드용 벨체 SD 스티커 최초 1회 지급. 별도 웹이벤트(투표)로 8주년 기념 주화를 모아 교환소에서 머라고라, ★5 영웅/아티팩트 소환권, 마석 선택 상자, 서사의 책갈피, 강화석 등 아이템과 교환 가능. 교환소는 이벤트 종료 시 즉시 닫힘.",
+          "category": "EVENT",
+          "severity": "LOW",
+          "observed_at": "2026-08-26T19:30:01.964000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-085a59ede805c208",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://page.onstove.com/epicseven/kr/view/14427510",
+              "title": "에픽세븐 8주년 기념! INFINITY∞ 이벤트 안내",
+              "published_at": "2026-08-26T19:30:01.964000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "d6999b856895624845c7ed70cd4e3a34b0cd1d61412997154c7027db3ccab5c3",
+              "modified_at": null,
+              "previous_content_hash": "d6999b856895624845c7ed70cd4e3a34b0cd1d61412997154c7027db3ccab5c3"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [
+              "DAU",
+              "Retention"
+            ],
+            "rationale": "일일 접속 보상(무료 소환 반복 지급) 및 웹 투표 보상은 일간 로그인/재방문을 유도하므로 DAU·Retention 모니터링이 합리적임.",
+            "verification_needed": true
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "예정된 기념 이벤트 공지로, 게임 운영 영향(점검·강제 종료 등)이나 긴급성 없는 통상적인 라이브 이벤트임.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-50d66c8fe64c23b8",
+          "event_key": "shining-moments-8th-anniversary",
+          "game_id": "epic-seven",
+          "title": "8주년 축제 「빛나는 순간들」 이벤트",
+          "summary": "8주년 축제 '빛나는 순간들' 이벤트: 2026-08-27 점검 후 ~ 2026-10-29 11:59 KST. 모험·전투·아레나 플레이를 통해 포인트를 획득하여 누적 포인트 보상을 획득하는 이벤트. 분광 코어 사용, 행동력 소모에 따라 포인트 부여(분광 코어 1개 소모 = 160포인트, 아레나/드래프트/월드 아레나 1회 = 80포인트). 일일 최대 800포인트 한도. 모든 보상 획득 시 즉시 이벤트 종료.",
+          "category": "EVENT",
+          "severity": "LOW",
+          "observed_at": "2026-08-26T19:30:01.720000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-20791c6a81eab512",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://page.onstove.com/epicseven/kr/view/14427467",
+              "title": "8주년 축제 「빛나는 순간들」 이벤트!",
+              "published_at": "2026-08-26T19:30:01.720000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "842d9c0973beff1a7a72ef06ff6b1b9f42f50e961f0e929d5522ad8cb06a088a",
+              "modified_at": null,
+              "previous_content_hash": "842d9c0973beff1a7a72ef06ff6b1b9f42f50e961f0e929d5522ad8cb06a088a"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [
+              "DAU",
+              "Retention"
+            ],
+            "rationale": "플레이 행동(모험/전투/아레나) 기반 누적 보상은 일간 활동 및 재접속(DAU·Retention)에 직접적인 영향을 줄 가능성이 있어 모니터링 대상임.",
+            "verification_needed": true
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "정기적 프로모션성 이벤트 공지로 서비스 중단이나 긴급 변경을 포함하지 않으므로 낮은 심각도로 분류함.",
+            "final_router": "pm-decision-lead"
+          }
+        }
+      ],
+      "excluded_inputs": []
+    },
+    "lineage-m": {
+      "fingerprint": "6d17462364f50923b6358a59c85842a940dc8b054d577ce6c9b0efb845835a81",
+      "signals": [
+        {
+          "signal_id": "sig-c83de235e626cdea",
+          "event_key": "giran-heine-prechar-additional-open",
+          "game_id": "lineage-m",
+          "title": "기란&하이네 사전 캐릭터 생성 - 추가 오픈(여러 차수)",
+          "summary": "리니지M이 신서버 '기란' 및 '하이네'의 사전 캐릭터 생성(선점) 수량을 증설하여 추가 오픈을 공지. 두 건의 공지에서 각각 추가 오픈 일정을 안내함: 2026-08-27 13:00(기란/하이네 01~10 서버) 및 2026-08-28 15:00(기란/하이네 01~10 서버). 참가 제한: 계정당 1회 등 주의사항 포함.",
+          "category": "CHARACTER",
+          "severity": "LOW",
+          "observed_at": "2026-08-28T13:23:17.001000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-e216cdd562c4ac06",
+              "source_type": "OFFICIAL_HOMEPAGE",
+              "url": "https://lineagem.plaync.com/board/notice/view?articleId=65d4391518e3a8502765c8d6",
+              "title": "[안내] ‘기란&하이네 사전 캐릭터 생성’ 이벤트 3차 오픈 안내",
+              "published_at": "2026-08-28T13:23:17.001000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "f90e4d54a9f6a62f20d33f52c6391679b84c133e465fcf951fabaa4f8b5114b6",
+              "modified_at": null,
+              "previous_content_hash": "f90e4d54a9f6a62f20d33f52c6391679b84c133e465fcf951fabaa4f8b5114b6"
+            },
+            {
+              "evidence_id": "ev-ba707bde3ef7dac0",
+              "source_type": "OFFICIAL_HOMEPAGE",
+              "url": "https://lineagem.plaync.com/board/notice/view?articleId=6a8f9ead6b722c561dc6a2a8",
+              "title": "[안내] ‘기란&하이네 사전 캐릭터 생성’ 이벤트 추가 오픈 안내",
+              "published_at": "2026-08-27T11:19:25.134000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "43b50a9056e8c104783186429825f4cca3b3edb2f3748317b602bead908a021a",
+              "modified_at": null,
+              "previous_content_hash": "43b50a9056e8c104783186429825f4cca3b3edb2f3748317b602bead908a021a"
+            }
+          ],
+          "source_conflicts": [
+            "두 공지는 동일한 이벤트(기란&하이네 사전 캐릭터 생성 추가 오픈)를 안내하나, 추가 오픈 일정이 문서별로 다름: doc-b23ea67f...은 2026-08-27 13:00 추가 오픈, doc-8ba3eb2...은 2026-08-28 15:00 추가 오픈—문서들은 서로 다른 차수의 추가 오픈을 공지하고 있음."
+          ],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "이벤트 안내 및 추가 오픈 공지로 서비스 중단이나 정책 변경 등 운영 리스크가 아닌 마케팅/이벤트 공지에 해당하므로 Low로 분류.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-0b0fb5eeb0f99e42",
+          "event_key": "customer-center-phone-outage-20260828",
+          "game_id": "lineage-m",
+          "title": "고객센터 전화상담 시스템 점검 및 정상화 안내 (2026-08-28)",
+          "summary": "2026-08-28 오전 고객센터 전화상담 시스템 점검으로 인해 전화 상담 서비스가 일시 중단되었으며(점검 시작 10:00), 이후 점검이 완료되어 11:56부터 전화상담 서비스가 정상화되었음을 공지함. 점검 기간 동안은 홈페이지 문의하기로 접수 안내.",
+          "category": "MAINTENANCE",
+          "severity": "MEDIUM",
+          "observed_at": "2026-08-28T10:19:00.001000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-6d400295cab87aeb",
+              "source_type": "OFFICIAL_HOMEPAGE",
+              "url": "https://lineagem.plaync.com/board/notice/view?articleId=6a90e1376b722c561dc6a2c3",
+              "title": "[안내] 고객센터 시스템 점검으로 인한 전화 상담 서비스 이용 불가 안내 (정상화)",
+              "published_at": "2026-08-28T10:19:00.001000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "f74981d032c06c98c84c8eb9ccb107eb73ebb19ec53e743acce9bb0e12667ca8",
+              "modified_at": null,
+              "previous_content_hash": "f74981d032c06c98c84c8eb9ccb107eb73ebb19ec53e743acce9bb0e12667ca8"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "고객 응대 채널(전화상담)이 일시적으로 불가한 서비스 장애성 안내로, 사용자 불편과 지원 프로세스 영향을 주므로 Medium으로 분류.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-a0561f70ce5e6515",
+          "event_key": "regular-maintenance-prenotice-20260902",
+          "game_id": "lineage-m",
+          "title": "정기점검 사전안내 (2026-09-02 예정)",
+          "summary": "리니지M이 2026-09-02(수) 정기점검이 예정되어 있음을 사전 안내. 상세 일정 및 업데이트 내용은 2026-09-01(화) 중 별도 공지 예정.",
+          "category": "MAINTENANCE",
+          "severity": "LOW",
+          "observed_at": "2026-08-31T20:00:00.891000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-f14fd0c02c18165a",
+              "source_type": "OFFICIAL_HOMEPAGE",
+              "url": "https://lineagem.plaync.com/board/notice/view?articleId=6a955eb0a279104f7d9d595a",
+              "title": "[안내] 리니지M 정기점검 사전안내",
+              "published_at": "2026-08-31T20:00:00.891000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "ea9d1bba6b7df3ad8cf2f0172a489c5e2361d61d2908995da300ba0a85ddc4ae",
+              "modified_at": null,
+              "previous_content_hash": "ea9d1bba6b7df3ad8cf2f0172a489c5e2361d61d2908995da300ba0a85ddc4ae"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "사전 안내 수준의 공지로 서비스 영향은 점검 예정 시점에 발생하므로 현재로서는 Low로 분류.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-b65d27034de331d3",
+          "event_key": "credit-card-no-interest-sep2026",
+          "game_id": "lineage-m",
+          "title": "2026년 9월 일반 신용카드 무이자 할부 이벤트 안내",
+          "summary": "2026년 9월 한 달간 시행되는 일반 신용카드 무이자 할부 이벤트를 안내. 카드사별 적용 기준 및 기간(2026.9.1~2026.9.30), 제외 대상 및 유의사항을 명시(사업자/체크/선불 등 제외, 카드사 사정에 따라 변경 가능).",
+          "category": "MARKETING",
+          "severity": "LOW",
+          "observed_at": "2026-08-31T14:00:00.001000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-62e8010175bdab72",
+              "source_type": "OFFICIAL_HOMEPAGE",
+              "url": "https://lineagem.plaync.com/board/notice/view?articleId=6a911832a279104f7d9d5962",
+              "title": "[안내] 2026년 9월 일반 신용카드 무이자 할부 이벤트 (퍼플-PC)",
+              "published_at": "2026-08-31T14:00:00.001000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "e5c4859052f51c55ba779adf2a2db33f13e8d183b3ae4d80af0d9ad977b6a413",
+              "modified_at": null,
+              "previous_content_hash": "e5c4859052f51c55ba779adf2a2db33f13e8d183b3ae4d80af0d9ad977b6a413"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "결제 프로모션 안내로 직접적인 서비스 중단이 아니며 영업/마케팅성 공지이므로 Low로 분류.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-e7c99f1366ea645a",
+          "event_key": "halpas-special-card-supply-sale-20260829-0902",
+          "game_id": "lineage-m",
+          "title": "할파스의 스페셜 카드 보급 상자 상품 판매 안내 (2026-08-29~09-02)",
+          "summary": "할파스의 스페셜 카드 보급 상자(및 리부트 버전), 합성 포인트 지원 상자 등 유료 상품의 판매를 안내. 판매 기간은 2026-08-29 00:00 ~ 2026-09-02 정기점검 전. 상품 구성(뽑기팩, 제작 티켓, 드래곤의 다이아몬드 등), 구매 제한(계정당 횟수), 구성품 삭제일 및 제작/획득 기한, 주의사항을 상세히 기재.",
+          "category": "BM",
+          "severity": "LOW",
+          "observed_at": "2026-08-28T20:00:00.921000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-b09454659ffe0e5f",
+              "source_type": "OFFICIAL_HOMEPAGE",
+              "url": "https://lineagem.plaync.com/board/notice/view?articleId=6a916a306b722c561dc6a2ca",
+              "title": "[안내] 8월 29일(토) 할파스의 스페셜 카드 보급 상자 상품 안내",
+              "published_at": "2026-08-28T20:00:00.921000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "6e35d685096b455ad3793d9cb5f8dbd601321c3d2ce1f51fde064d9abeb75eea",
+              "modified_at": null,
+              "previous_content_hash": "6e35d685096b455ad3793d9cb5f8dbd601321c3d2ce1f51fde064d9abeb75eea"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [
+            "GACHA",
+            "CURRENCY"
+          ],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "유료 상품 판매 공지로 직접적인 서비스 영향은 없으나 BM(유료 아이템) 관련이므로 Low로 분류.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-feea15c69715bd0a",
+          "event_key": "2026-08-26-regular-maintenance-complete",
+          "game_id": "lineage-m",
+          "title": "[완료] 8월 26일 정기점검 안내",
+          "summary": "8월 26일(수) 정기점검이 진행되어 06:10부터 정상 접속 가능. 점검 예정 시간은 04:30~06:20이며 게임 업데이트가 적용되었음. 일부 기간성 이벤트 종료 일정이 공지됨.",
+          "category": "MAINTENANCE",
+          "severity": "LOW",
+          "observed_at": "2026-08-25T20:00:00.252000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-11c7f7de5ea2f54b",
+              "source_type": "OFFICIAL_HOMEPAGE",
+              "url": "https://lineagem.plaync.com/board/notice/view?articleId=6a8d75b06b722c561dc6a1cc",
+              "title": "[안내][완료] 8월 26일(수) 리니지M 정기점검 안내",
+              "published_at": "2026-08-25T20:00:00.252000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "c16051ef1bfa8b5e0c581dbc568f34c7e2440ba9fbf7cd3083eaaa280c043ab8",
+              "modified_at": null,
+              "previous_content_hash": "c16051ef1bfa8b5e0c581dbc568f34c7e2440ba9fbf7cd3083eaaa280c043ab8"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "정기점검(예정/완료) 안내로, 서비스 중단은 계획된 점검 시간에 한정되어 있으며 문서에 오류/장애 발생 내용은 포함되지 않음.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-e40cb16c2e2d4af4",
+          "event_key": "2026-08-26-known-issues-favorites-inventory",
+          "game_id": "lineage-m",
+          "title": "8월 26일 알려진 현상 안내 (지도 즐겨찾기 초기화·상자 개봉 수량 표시 오류)",
+          "summary": "기존 저장된 '지도 내 즐겨찾기' 정보 중 일부가 초기화되는 현상이 확인되었으며, 초기화된 즐겨찾기는 1회 재등록하면 정상 이용 가능. 또한 다량의 상자를 한 번에 개봉할 때 간헐적으로 획득한 아이템의 인벤토리 보유 수량이 정상 표기되지 않는 현상이 있으나 획득 자체는 정상이며 재접속 또는 던전 이동 시 정상 표기됨. 수정 완료 시 별도 공지 예정.",
+          "category": "MAINTENANCE",
+          "severity": "MEDIUM",
+          "observed_at": "2026-08-26T07:55:12.077000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-9bdae5ac13c7af34",
+              "source_type": "OFFICIAL_HOMEPAGE",
+              "url": "https://lineagem.plaync.com/board/notice/view?articleId=6a8e1d506b722c561dc6a273",
+              "title": "[안내] 8월 26일(수) 알려진 현상 안내 (수정)",
+              "published_at": "2026-08-26T07:55:12.077000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "bbc4965d206b7fd48ae50c273e0e5a2bd7968ca2ca66b88776b9066bc203601f",
+              "modified_at": null,
+              "previous_content_hash": "bbc4965d206b7fd48ae50c273e0e5a2bd7968ca2ca66b88776b9066bc203601f"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "공식문서에 따라 사용자 데이터(지도 즐겨찾기 일부)가 초기화되는 현상과 인벤토리 수량 표기 오류가 보고되어 사용자 영향이 발생하므로 중간 수준의 중요도로 분류.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-eff4fc4dc333dad9",
+          "event_key": "halphas-combat-stone-package-2026-08-26",
+          "game_id": "lineage-m",
+          "title": "할파스의 전투 스톤 패키지 상품 안내",
+          "summary": "판매 기간 2026-08-26 정기점검 후 ~ 2026-09-23 정기점검 전. 여러 구성(할파스의 전투 스톤 주머니/상자, 세계수의 카드 뽑기팩 제작 티켓 상자, 종합 코인 선택 상자 등)과 제작 리스트 및 제작 가능 기간·제한을 포함한 상점 상품 안내. 일부 아이템은 레거시/리부트 월드 등 서버 구분 및 제작 제한이 명시됨.",
+          "category": "BM",
+          "severity": "LOW",
+          "observed_at": "2026-08-26T04:30:00.001000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-4171d1df13733c84",
+              "source_type": "OFFICIAL_HOMEPAGE",
+              "url": "https://lineagem.plaync.com/board/notice/view?articleId=6a8ded38fa34c1011d627438",
+              "title": "[안내] 8월 26일(수) 할파스의 전투 스톤 패키지 상품 안내",
+              "published_at": "2026-08-26T04:30:00.001000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "91599a3d339c3e54655eb4d2c9a0576cc33ff8dc891621ad0a46c12867935a4e",
+              "modified_at": null,
+              "previous_content_hash": "91599a3d339c3e54655eb4d2c9a0576cc33ff8dc891621ad0a46c12867935a4e"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [
+              "Sales"
+            ],
+            "rationale": "기간 한정·구매 제한이 있는 상점 패키지 공지로 매출(구매수량·구매제한) 모니터링과 관련성이 있어 Sales 지표 점검이 적절함.",
+            "verification_needed": true
+          },
+          "bm_item_types": [
+            "GROWTH",
+            "GACHA",
+            "CURRENCY"
+          ],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "신규/기간 상품 판매 공지로 서비스 장애가 아닌 상거래(판매) 안내이므로 낮은 심각도로 분류.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-00bfa74ccf222c28",
+          "event_key": "halphas-growth-stone-supply-box-2026-08-26",
+          "game_id": "lineage-m",
+          "title": "할파스의 성장 스톤 보급 상자 상품 안내",
+          "summary": "판매 기간 2026-08-26 정기점검 후 ~ 2027-02-17 정기점검 전. 여러 가격대의 상자 및 주머니(할파스의 성장 스톤 주머니 등), 세계수의 카드 뽑기팩 제작 티켓 상자, 종합 코인 선택 상자 등 구성과 제작 가능 항목 및 제작 기한·제한이 상세 안내됨. 월별/서버별 구매 제한과 주의사항 포함.",
+          "category": "BM",
+          "severity": "LOW",
+          "observed_at": "2026-08-26T04:30:00.001000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-6f0614b6009773f3",
+              "source_type": "OFFICIAL_HOMEPAGE",
+              "url": "https://lineagem.plaync.com/board/notice/view?articleId=6a8ded38fa34c1011d627436",
+              "title": "[안내] 8월 26일(수) 할파스의 성장 스톤 보급 상자 상품 안내",
+              "published_at": "2026-08-26T04:30:00.001000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "f8242214fba99a401d42ef88709f16528193fc0e86810af8707a001e34777734",
+              "modified_at": null,
+              "previous_content_hash": "f8242214fba99a401d42ef88709f16528193fc0e86810af8707a001e34777734"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [
+              "Sales"
+            ],
+            "rationale": "기간·구매제한이 명시된 상점 상품 공지로 매출 및 구매 제한 소진 모니터링과 연관되어 있으므로 Sales 점검 필요.",
+            "verification_needed": true
+          },
+          "bm_item_types": [
+            "GROWTH",
+            "GACHA",
+            "CURRENCY"
+          ],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "상품 판매 안내로 운영 리스크나 장애 보고가 아닌 판매 정보 공지이므로 낮은 심각도로 분류.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-8fd714b109744528",
+          "event_key": "pre-event-special-shop-equipment-package-2026-08-26",
+          "game_id": "lineage-m",
+          "title": "전야제 특별 상점 장비 패키지 상품 안내",
+          "summary": "판매 기간 2026-08-26 정기점검 후 ~ 2026-09-09 정기점검 전. 전야제 특별 상점 장비 패키지(레거시 및 리부트 버전) 판매 안내로, 전야제 특별 상점 장비 선택 상자·세계수의 최상급 재화 선택 상자 등 구성과 월/주 단위 구매 제한 및 관련 제작 리스트가 상세 기재됨.",
+          "category": "BM",
+          "severity": "LOW",
+          "observed_at": "2026-08-26T04:30:00.001000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-d8659710a1dc5a30",
+              "source_type": "OFFICIAL_HOMEPAGE",
+              "url": "https://lineagem.plaync.com/board/notice/view?articleId=6a8ded38fa34c1011d627434",
+              "title": "[안내] 8월 26일(수) 전야제 특별 상점 장비 패키지 상품 안내",
+              "published_at": "2026-08-26T04:30:00.001000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "dd6d8eb40340e267af87d717a055f19140f2c98ff4fdfcda56271be575a512e4",
+              "modified_at": null,
+              "previous_content_hash": "dd6d8eb40340e267af87d717a055f19140f2c98ff4fdfcda56271be575a512e4"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [
+              "Sales"
+            ],
+            "rationale": "기간 한정 패키지·주간 구매 제한 등이 포함된 판매 공지로 매출·구매제한 소진 추적에 영향이 있으므로 Sales 관련 모니터링을 권장.",
+            "verification_needed": true
+          },
+          "bm_item_types": [
+            "EQUIPMENT",
+            "CONVENIENCE",
+            "GACHA"
+          ],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "상거래(상품 출시) 공지로 서비스 영향이 적어 낮은 심각도로 분류.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-a4b96937c33de4a8",
+          "event_key": "giran-merchant-trade-goods-2026-08-26",
+          "game_id": "lineage-m",
+          "title": "기란성 상인의 교역품 상품 안내",
+          "summary": "판매 기간 2026-08-26 정기점검 후 ~ 2026-09-09 정기점검 전. 유료 패키지(55,000원 기준)로 세계수의 카드 뽑기팩 제작 티켓·빛나는 명예 주화 상자·드래곤의 다이아몬드·기란성 상인의 증표 등 구성 및 관련 제작 리스트·아이템 설명과 주간 구매 제한 등이 안내됨.",
+          "category": "BM",
+          "severity": "LOW",
+          "observed_at": "2026-08-26T04:30:00.001000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-eef41ab1a214d708",
+              "source_type": "OFFICIAL_HOMEPAGE",
+              "url": "https://lineagem.plaync.com/board/notice/view?articleId=6a8ded38fa34c1011d627432",
+              "title": "[안내] 8월 26일(수) 기란성 상인의 교역품 상품 안내",
+              "published_at": "2026-08-26T04:30:00.001000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "347e106573070bc03e6114816a1baf63192d4b7f8d6424612c8e21f576b47ef1",
+              "modified_at": null,
+              "previous_content_hash": "347e106573070bc03e6114816a1baf63192d4b7f8d6424612c8e21f576b47ef1"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [
+              "Sales"
+            ],
+            "rationale": "유료 패키지(현금 결제)로 가격·구매 제한이 명시되어 있어 매출·구매 패턴 점검(Sales)이 적절함.",
+            "verification_needed": true
+          },
+          "bm_item_types": [
+            "CURRENCY",
+            "GACHA",
+            "OTHER"
+          ],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "상품 판매 안내문으로 기술적 장애가 아님, 운영상 낮은 심각도로 분류.",
+            "final_router": "pm-decision-lead"
+          }
+        }
+      ],
+      "excluded_inputs": []
+    },
+    "nikke": {
+      "fingerprint": "ff84beede2a1368dc54fda8c9c99877f4a57c445ebffd6fa291ab016d9668b05",
+      "signals": [
+        {
+          "signal_id": "sig-a26fd62deec5e20b",
+          "event_key": "2026-09-03-update-great-villain-union",
+          "game_id": "nikke",
+          "title": "9/3(목) 업데이트: 신규 패치 시스템 및 'GREAT VILLAIN UNION' 이벤트(드레이크 픽업) 론칭",
+          "summary": "2026-09-03 점검(11:00~18:00) 후 대규모 업데이트가 적용됩니다. 업데이트에는 신규 패치(리소스) 시스템 적용으로 전체 패치 데이터 재다운로드가 발생하고(업데이트 이후 일부 불필요 리소스 삭제 기능 추가), 스토리 이벤트 'GREAT VILLAIN UNION' 오픈(9/3 점검 완료 후 ~ 9/17 04:59), SSR '드레이크 : 그레이트 빌런' 특수 모집(픽업, 9/3 점검 완료 후 ~ 9/17 04:59, SSR 확률 4% 중 드레이크 2%) 및 임시 합류 기능, 아카이브 추가(Arcane Archive), 7일 로그인 이벤트, 유니온 레이드(기간: 9/4 05:00 ~ 9/10 04:59), 챔피언 아레나(BETA 시즌/오픈 일정) 관련 항목 등 다수 콘텐츠·편의성 업데이트가 포함됩니다. 패치/클라이언트 다운로드를 위해 기기별 권장 여유 저장공간(최소 17GB 권장, 신규 설치자 22GB 권장) 확보가 안내되었습니다.",
+          "category": "UPDATE",
+          "severity": "MEDIUM",
+          "observed_at": "2026-08-31T17:02:17+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-31d76e0c5de8f9aa",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://game.naver.com/lounge/nikke/board/detail/8128188",
+              "title": "[점검&업데이트] 9월 3일(목) 업데이트 소식 사전 안내",
+              "published_at": "2026-08-31T17:02:17+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "d565a2a8876bdfbdc21a4a8ab9a30bbc37ddc0daa28d7c49a8029a6d5e48aa30",
+              "modified_at": null,
+              "previous_content_hash": "d565a2a8876bdfbdc21a4a8ab9a30bbc37ddc0daa28d7c49a8029a6d5e48aa30"
+            },
+            {
+              "evidence_id": "ev-912110d7a444200a",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://game.naver.com/lounge/nikke/board/detail/8126982",
+              "title": "😈 GREAT VILLAIN UNION 😈",
+              "published_at": "2026-08-31T11:00:41+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "08e9fbf3b8173680d977f8bcec93183a31d2d2f2419f70ea07408637d4488779",
+              "modified_at": null,
+              "previous_content_hash": "08e9fbf3b8173680d977f8bcec93183a31d2d2f2419f70ea07408637d4488779"
+            },
+            {
+              "evidence_id": "ev-e572bb94bb053fda",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://game.naver.com/lounge/nikke/board/detail/8118236",
+              "title": "⭐️ Pick Up 모집 안내 - 「드레이크 : 그레이트 빌런」 ⭐️",
+              "published_at": "2026-08-29T10:00:35+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "abdb61fce7bd60a465a7129816e071daa54957c30c79788e116ab196f4489d10",
+              "modified_at": null,
+              "previous_content_hash": "abdb61fce7bd60a465a7129816e071daa54957c30c79788e116ab196f4489d10"
+            },
+            {
+              "evidence_id": "ev-ddf20da6f7798d02",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://game.naver.com/lounge/nikke/board/detail/8114974",
+              "title": "【개발자 노트】 2026년 8월",
+              "published_at": "2026-08-28T15:31:20+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "2365f7be2c8bf48bae53da5ba22166f80e7b80fa06c9f04482e8ae8b975cdebb",
+              "modified_at": null,
+              "previous_content_hash": "2365f7be2c8bf48bae53da5ba22166f80e7b80fa06c9f04482e8ae8b975cdebb"
+            },
+            {
+              "evidence_id": "ev-8f5c321727deec9c",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://game.naver.com/lounge/nikke/board/detail/8110709",
+              "title": "유니온 레이드 오픈 사전 안내",
+              "published_at": "2026-08-27T17:00:43+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "77edf34770aa9539ea08424d4408c013a3beeb5922a7a5b85c34b8002a9931d9",
+              "modified_at": null,
+              "previous_content_hash": "77edf34770aa9539ea08424d4408c013a3beeb5922a7a5b85c34b8002a9931d9"
+            }
+          ],
+          "source_conflicts": [
+            "점검/업데이트 일정 및 상세 안내: doc-7a9b9ce44ff86c8bed69은 점검 일시(9/3 11:00~18:00)와 구체적 클라이언트 다운로드 권장 저장공간(최소 17GB, 신규 설치자 22GB)을 명시. doc-13a53467ff12104f6a78(개발자 노트)은 리소스 구조 변경과 전체 재다운로드 필요성을 언급하나 점검 시간 및 구체적 저장공간 수치는 제시하지 않음.",
+            "챔피언 아레나 관련 설명 차이: doc-7a9b9ce44ff86c8bed69 공지에서는 '챔피언 아레나 오픈(BETA 시즌 38)'으로 오픈 일시(9/10)를 안내. doc-13a53467ff12104f6a78 개발자 노트는 챔피언 아레나를 베타에서 정식으로 전환하고 진출 조건을 '스페셜 아레나 4위 이내 → 8위 이내로 완화'하는 변경 및 일부 시즌 미진행(10월 말 시즌 제외) 계획을 별도로 설명하고 있어 공지 간 기술적/운영적 세부 내용 제공 수준이 다름.",
+            "이벤트·모집 상세 공개 차이: doc-7a9b9ce44ff86c8bed69과 doc-0bb7fd41c1cbafa9f7b5는 '드레이크 : 그레이트 빌런' 모집 확률(특수 모집 SSR 4%, 드레이크 2%) 및 마일리지 티켓(200개로 교환 가능) 등 세부 모집 규정과 임시 합류 기간을 명시. doc-13a53467ff12104f6a78는 이벤트 존재와 시기(9월 초)를 설명하되 모집 확률·마일리지 등 상세 수치는 제공하지 않음."
+          ],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "클라이언트 리소스 구조 변경으로 전체 패치 데이터의 재다운로드가 발생하고(사용자 쪽 저장공간·네트워크 영향), 동시 다수의 유료/확률형 요소(드레이크 픽업 모집, 기간 한정 패키지 등)와 주요 콘텐츠(유니온 레이드, 챔피언 아레나 등)가 업데이트 일정과 함께 론칭되므로 운영·접속·구매 관련 영향 가능성이 있어 중간 수준으로 분류.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-fc89322ac73b422e",
+          "event_key": "2026-08-28-persona-on-frontline-coop",
+          "game_id": "nikke",
+          "title": "협동작전 'PERSONA ON FRONTLINE' (진행: 8/28 12:00 ~ 8/30 23:59)",
+          "summary": "협동작전 이벤트가 2026-08-28 12:00부터 8/30 23:59까지 진행됩니다. 참여자는 '게이트 키퍼 III'를 공략해 '부서진 코어' 등을 획득할 수 있으며, 도전 모드 랭킹에 따른 추가 보상이 안내되었습니다. 진입: 로비 → 이벤트 → PERSONA ON FRONTLINE → 협동작전.",
+          "category": "EVENT",
+          "severity": "LOW",
+          "observed_at": "2026-08-28T12:00:43+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-40e28ca3e575a9eb",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://game.naver.com/lounge/nikke/board/detail/8114097",
+              "title": "협동작전 진행 중!",
+              "published_at": "2026-08-28T12:00:43+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "52d51a146dbcc4eb09d03c36873afeca27174906ccb8cf717f6b7ed613fd4079",
+              "modified_at": null,
+              "previous_content_hash": "52d51a146dbcc4eb09d03c36873afeca27174906ccb8cf717f6b7ed613fd4079"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "단기(3일) 이벤트로 기존 이벤트 프로모션 형태이며 문서상 특별한 운영 이슈나 긴급 공지가 없음.",
+            "final_router": "pm-decision-lead"
+          }
+        }
+      ],
+      "excluded_inputs": []
+    },
+    "odin-valhalla-rising": {
+      "fingerprint": "3bf7e8b72b104cee31584ad581ba8171e6682c02e261f01aa8b2cd95ce54f2df",
+      "signals": [
+        {
+          "signal_id": "sig-4b87739cd8443667",
+          "event_key": "update-2026-08-26",
+          "game_id": "odin-valhalla-rising",
+          "title": "8/26(수) 업데이트 상세 내역 안내",
+          "summary": "Official homepage post titled '8/26(수) 업데이트 상세 내역 안내' published 2026-08-26. Supplied document contains only the headline/announcement title; no detailed patch notes or content descriptions were provided in the supplied text.",
+          "category": "UPDATE",
+          "severity": "LOW",
+          "observed_at": "2026-08-26T00:00:00+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-cd79ea10982c0f99",
+              "source_type": "OFFICIAL_HOMEPAGE",
+              "url": "https://odin.kakaogames.com/odin/",
+              "title": "8/26(수) 업데이트 상세 내역 안내",
+              "published_at": "2026-08-26T00:00:00+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "051f0fad8a698081f9c62733addc1a2382aa7cfd750abc1c92f24c55223a1e78",
+              "modified_at": null,
+              "previous_content_hash": "051f0fad8a698081f9c62733addc1a2382aa7cfd750abc1c92f24c55223a1e78"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "Document is an update announcement but the supplied content includes only the headline with no information indicating major content changes, downtime, or other high-impact items.",
+            "final_router": "pm-decision-lead"
+          }
+        }
+      ],
+      "excluded_inputs": []
+    },
+    "seven-knights-rebirth": {
+      "fingerprint": "bcf7af57f19de7bd7434d597613d0ce74dd34b2d2808035f8ded5ddc08dfdca2",
+      "signals": [
+        {
+          "signal_id": "sig-6d1140313bc25d96",
+          "event_key": "inactive-account-nickname-reset",
+          "game_id": "seven-knights-rebirth",
+          "title": "Advance notice — nickname reset for long-unused accounts",
+          "summary": "Official notice that the developer will perform nickname initialization (reset) for long-term inactive accounts. Players who do not want their current nickname changed are instructed to follow the provided guidance and take action before the reset time.",
+          "category": "NOTICE",
+          "severity": "MEDIUM",
+          "observed_at": "2026-08-31T18:00:04.887000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-c172de948a1927f2",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://forum.netmarble.com/sena_rebirth/view/20/1989",
+              "title": "장기 미사용 계정 닉네임 조치 관련 사전 안내",
+              "published_at": "2026-08-31T18:00:04.887000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "808c23ec617b95247fc85735dfa57dc4ae0019a764d02c7674c39be03db2e452",
+              "modified_at": null,
+              "previous_content_hash": "808c23ec617b95247fc85735dfa57dc4ae0019a764d02c7674c39be03db2e452"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "This action changes account-visible identity (nicknames) for affected inactive accounts; it is non-service-disruptive but can materially affect affected users' account presentation.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-ee197e80e33cc039",
+          "event_key": "senari-live-2026-08-31",
+          "game_id": "seven-knights-rebirth",
+          "title": "8/31 official '세나리 라이브' (Senari Live) — announcement and updated details",
+          "summary": "Announcements that the official Seven Knights Rebirth live broadcast ('세나리 라이브') will be held on August 31 (UTC+9) to present the September update and a new hero. One post is an initial schedule notice and the other is a later, detailed notice that includes an edit/correction.",
+          "category": "EVENT",
+          "severity": "LOW",
+          "observed_at": "2026-08-30T18:00:17.234000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-1aad8e61713d2e0e",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://forum.netmarble.com/sena_rebirth/view/20/1984",
+              "title": "8월 31일(월) [세나리 라이브] 진행 상세 안내 [8/31 20:00 수정]",
+              "published_at": "2026-08-30T18:00:17.234000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "e1326904d5d55d43e4d012a01e7ac16f81193124f15026ee92b6af0a9b786fdb",
+              "modified_at": null,
+              "previous_content_hash": "e1326904d5d55d43e4d012a01e7ac16f81193124f15026ee92b6af0a9b786fdb"
+            },
+            {
+              "evidence_id": "ev-bbccf688f107ac21",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://forum.netmarble.com/sena_rebirth/view/20/1983",
+              "title": "8월 31일(월) [세나리 라이브] 진행 예정 안내",
+              "published_at": "2026-08-27T18:00:14.135000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "3fee3adf9efb2b0ee255b0ac793f1b49c505a7b876390d354147afea7b5e8b93",
+              "modified_at": null,
+              "previous_content_hash": "3fee3adf9efb2b0ee255b0ac793f1b49c505a7b876390d354147afea7b5e8b93"
+            }
+          ],
+          "source_conflicts": [
+            "doc-85197f850292dc6b005d is a later, detailed/updated post (title includes '[8/31 20:00 수정]') while doc-5141caf0b3ee0de2249e is an earlier 'scheduled' announcement. The later post contains corrections/expanded details compared to the earlier announcement."
+          ],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "Public-facing livestream/communication event with no direct service impact.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-342d75e7a8e0d183",
+          "event_key": "official-partner-creator-recruitment-aug-2026",
+          "game_id": "seven-knights-rebirth",
+          "title": "Official partner creator recruitment",
+          "summary": "Announcement recruiting creators to be official partners for Seven Knights Rebirth; previous applicants who were not selected may reapply.",
+          "category": "MARKETING",
+          "severity": "LOW",
+          "observed_at": "2026-08-29T09:00:09.789000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-7fcfc1e7bbae6148",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://forum.netmarble.com/sena_rebirth/view/20/1986",
+              "title": "세븐나이츠 리버스 공식 파트너 크리에이터 모집 안내",
+              "published_at": "2026-08-29T09:00:09.789000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "0257b9e37564ac61cbc0b966095a02fe9e437055a9a667407e5e5d5c28325877",
+              "modified_at": null,
+              "previous_content_hash": "0257b9e37564ac61cbc0b966095a02fe9e437055a9a667407e5e5d5c28325877"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "Routine marketing/partner recruitment announcement with no operational impact.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-d415ed6f9585706c",
+          "event_key": "2026-09-03-maintenance-sales-and-welcome-wish-end",
+          "game_id": "seven-knights-rebirth",
+          "title": "Scheduled maintenance on Sep 3 — certain product sales end and 'Welcome Wish' summon ends",
+          "summary": "Two notices stating that, after the scheduled maintenance on September 3 (UTC+9), (1) certain in-game products will be removed from sale and (2) the 'Welcome Wish' summon for new players will be terminated. Players are directed to check the detailed lists and timing in each notice.",
+          "category": "MAINTENANCE",
+          "severity": "LOW",
+          "observed_at": "2026-08-26T18:00:22.905000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-208fe29c8d8370cf",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://forum.netmarble.com/sena_rebirth/view/20/1981",
+              "title": "9월 3일(목) 판매 종료 예정 상품 안내",
+              "published_at": "2026-08-26T18:00:22.905000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "d795313e3681393623b326be311bac64ee121832c7c1b70746157375d1568835",
+              "modified_at": null,
+              "previous_content_hash": "d795313e3681393623b326be311bac64ee121832c7c1b70746157375d1568835"
+            },
+            {
+              "evidence_id": "ev-6412faa2ff90c9b2",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://forum.netmarble.com/sena_rebirth/view/20/1980",
+              "title": "9월 3일(목) 웰컴 위시 소환 종료 예정 안내",
+              "published_at": "2026-08-26T18:00:22.882000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "94d63bb88f18a119097baa56033b0f45c7871ba35b55fc1cf0647342e89df3e5",
+              "modified_at": null,
+              "previous_content_hash": "94d63bb88f18a119097baa56033b0f45c7871ba35b55fc1cf0647342e89df3e5"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "Routine maintenance that changes availability of purchasable products and a gacha event; does not indicate service outage.",
+            "final_router": "pm-decision-lead"
+          }
+        }
+      ],
+      "excluded_inputs": []
+    },
+    "trickcal-revive": {
+      "fingerprint": "066716bb9f97975fbb968ff50498c40cdcdd3d1b255c125edd32b8b088db15ff",
+      "signals": [
+        {
+          "signal_id": "sig-b1619873f869132c",
+          "event_key": "2026-08-27-regular-maintenance-update",
+          "game_id": "trickcal-revive",
+          "title": "8월 27일(목) 정기점검 및 업데이트 예정 안내",
+          "summary": "8월 27일 정기점검 및 업데이트 예정 공지. 정기점검 일시로 8/27 11:00~16:00이 안내되며(접속 불가), 업데이트 상세 내용은 별도 공지를 통해 안내 예정. 공지 내에는 8월 트릭컬 패스 적용 기간(09/01 03:59 종료 등) 관련 안내가 포함되어 있음.",
+          "category": "UPDATE",
+          "severity": "LOW",
+          "observed_at": "2026-08-26T17:01:32.263000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-eebd526430a0d2f7",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/208286?boardtype=L&menuid=67&referrerAllArticles=false",
+              "title": "8월 27일(목) 업데이트 예정 내역 안내",
+              "published_at": "2026-08-26T17:01:32.263000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "415f4bb5befd28bc00a5bb4a3c64b688fcdef87a5aea920ff3ec0e234aa93208",
+              "modified_at": null,
+              "previous_content_hash": "415f4bb5befd28bc00a5bb4a3c64b688fcdef87a5aea920ff3ec0e234aa93208"
+            },
+            {
+              "evidence_id": "ev-56bf92a752fa6e0b",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/208285?boardtype=L&menuid=66&referrerAllArticles=false",
+              "title": "8월 27일(목) 정기점검 예정 안내(완료)",
+              "published_at": "2026-08-26T17:01:15.403000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "05d13c979f690497e1e906af9f34b10cec184c7a935da8f45f9154ac5a1d5a63",
+              "modified_at": null,
+              "previous_content_hash": "05d13c979f690497e1e906af9f34b10cec184c7a935da8f45f9154ac5a1d5a63"
+            }
+          ],
+          "source_conflicts": [
+            "doc-2f5a3c2cfdbc70163f05은 점검 창(11:00~16:00)만을 안내하는 점검 공지이며, doc-e76d977b701b2c283c81는 업데이트 예정 내역(예: 8월 트릭컬 패스 종료 시각)을 포함한 상세 안내를 제공함 — 두 문서는 상호 보완적이며 일정/내용의 불일치는 없으나 하나는 창 공지, 다른 하나는 세부 항목 공지 형태임."
+          ],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "업데이트 일정/점검 공지로, 문서에 별도의 KPI나 지표가 명시되지 않아 내부 PM 지표 항목을 포함하지 않음.",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "사전 공지된 정기 점검(서비스 일시 중단 시간 명시)으로 통상적인 유지보수 성격이며 즉각적 위험·장기적 장애를 시사하지 않음.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-eab75c597bae740b",
+          "event_key": "2026-08-27-known-issues",
+          "game_id": "trickcal-revive",
+          "title": "8월 27일(목) 확인된 문제 현상 안내(수정)(추가)",
+          "summary": "공식 공지에서 확인된 문제 현상 목록을 안내함. 주요 항목: (1) 보드 가이드 > 트릭컬 노트 진입 시 일부 기기에서 비정상 노출 발생(조사 중), (2) 이전 시즌 리버리 카드 구매 프리셋이 유지되는 현상(조사 중), (3) 개쩜 패스 구매 시 테마극장 상점의 '염원하는 오로라 피규어'를 구매할 수 없는 현상(조사 중). 공지는 수정에 시간이 소요될 수 있음을 명시.",
+          "category": "MAINTENANCE",
+          "severity": "MEDIUM",
+          "observed_at": "2026-08-27T16:48:16.513000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-f21f4b18d44921c4",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/208417?boardtype=L&menuid=66&referrerAllArticles=false",
+              "title": "8월 27일(목) 확인된 문제 현상 안내(수정)(추가)",
+              "published_at": "2026-08-27T16:48:16.513000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "82b60954d0c1de2b70c73b8ec01dd049fb3fa025b094ef2665bf8dbde64aeb1c",
+              "modified_at": null,
+              "previous_content_hash": "82b60954d0c1de2b70c73b8ec01dd049fb3fa025b094ef2665bf8dbde64aeb1c"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "문제 현상 안내 문서로, 문서 자체에 내부 KPI 언급이 없어 PM 용어는 포함하지 않음.",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "결제/상점 관련 항목(특정 아이템 구매 불가) 및 UI 노출 이상 등 정상 게임 이용에 영향을 주는 항목이 포함되어 있어 주목도가 중간 수준으로 판단됨.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-2a3bfbf6a9f168a4",
+          "event_key": "elias-orchestra-concert-2026",
+          "game_id": "trickcal-revive",
+          "title": "트릭컬 리바이브 3주년 오케스트라 콘서트 사전 안내",
+          "summary": "3주년 기념 오케스트라 콘서트 '엘리아스 학예회' 사전 안내. 공연 일정은 10/03(토) 및 10/04(일) (회차별 1~4회차로 안내)이며, 장소는 경희대학교 평화의 전당. 티켓 예매는 09/04(금)부터 진행될 예정이라고 공지함. 세부 내용은 별도 공지 참조.",
+          "category": "EVENT",
+          "severity": "LOW",
+          "observed_at": "2026-08-27T13:00:19.270000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-be020aa4946858f6",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/208387?boardtype=L&menuid=14&referrerAllArticles=false",
+              "title": "트릭컬 리바이브 3주년 오케스트라 콘서트 사전 안내",
+              "published_at": "2026-08-27T13:00:19.270000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "cbf2edf04e25661e88c54eddd4003820b37bfda45343fadd1890081626cbb60e",
+              "modified_at": null,
+              "previous_content_hash": "cbf2edf04e25661e88c54eddd4003820b37bfda45343fadd1890081626cbb60e"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "오프라인 행사 사전 안내로 문서 내에 KPI 관련 언급이 없음.",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "오프라인 행사 예고로 서비스 안정성에 대한 즉각적 리스크가 없음.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-0580c5cb64c82c8d",
+          "event_key": "wwelias-regular-season-open-2026-08",
+          "game_id": "trickcal-revive",
+          "title": "주말 콘텐츠 「WWElias」 정규 시즌 오픈 안내",
+          "summary": "주말 콘텐츠 'WWElias' 정규 시즌 오픈 안내. 해당 콘텐츠는 특정 진행 조건(예: 순한맛 4-10 클리어 등) 충족 시 활성화되며, 경기 승부 예측을 통해 보상을 획득하는 형식으로 운영됨. 공지에는 테스트 환경 스크린샷 사용 및 실제 업데이트 시 연출이 달라질 수 있다는 안내도 포함.",
+          "category": "EVENT",
+          "severity": "LOW",
+          "observed_at": "2026-08-26T17:01:48.630000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-556a3362b7f3db26",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/208287?boardtype=L&menuid=67&referrerAllArticles=false",
+              "title": "주말 콘텐츠 「WWElias」 정규 시즌 오픈 안내",
+              "published_at": "2026-08-26T17:01:48.630000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "bcf9d5b3b298e90ab5df87064efab78a9ae5ba438e33b1b7f319351bb1684be1",
+              "modified_at": null,
+              "previous_content_hash": "bcf9d5b3b298e90ab5df87064efab78a9ae5ba438e33b1b7f319351bb1684be1"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [],
+            "rationale": "콘텐츠 오픈 안내로 문서에 KPI/지표가 명시되지 않아 PM 용어는 포함하지 않음.",
+            "verification_needed": false
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "신규/정규 콘텐츠 오픈 공지로 서비스 위험도는 낮음.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-a1270d7e99879bcb",
+          "event_key": "september-attendance-event-2026",
+          "game_id": "trickcal-revive",
+          "title": "9월 출석 이벤트 진행 예정 안내(~10월 1일)",
+          "summary": "9월 출석 이벤트 '믿습니다 교주님' 진행 예정 공지. 이벤트 기간은 09/01 04:00 ~ 10/01 03:59이며, 기간 내 누적 접속 일수에 따라 보상을 지급(총 21일, 21일차 보상 포함). 상세 보상은 공지 참조.",
+          "category": "EVENT",
+          "severity": "LOW",
+          "observed_at": "2026-08-25T17:02:26.493000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-0a543b1661d57d47",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/208166?boardtype=L&menuid=14&referrerAllArticles=false",
+              "title": "9월 출석 이벤트 진행 예정 안내(~10월 1일)",
+              "published_at": "2026-08-25T17:02:26.493000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "36a63d1f66bfae515f19856ef11f12ed4e056e37718c04a960ec0b47be736cbb",
+              "modified_at": null,
+              "previous_content_hash": "36a63d1f66bfae515f19856ef11f12ed4e056e37718c04a960ec0b47be736cbb"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [
+              "DAU",
+              "Retention"
+            ],
+            "rationale": "출석 이벤트는 접속 유도 및 유저 유지(DAU·Retention)에 직접적 영향을 줄 가능성이 있어 해당 PM 지표를 점검 대상으로 포함함.",
+            "verification_needed": true
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "정기 출석 이벤트 공지로 서비스 안정성에 즉각적 위험은 낮음.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-2e6877bd42aa4620",
+          "event_key": "aurora-pickup",
+          "game_id": "trickcal-revive",
+          "title": "신규 픽업 사도 '오로라' 픽업 모집",
+          "summary": "신규 사도 '오로라'의 픽업 모집이 2026-08-27(정기점검 이후)부터 2026-09-10 10:59까지 진행됩니다. 픽업 기간 동안 '오로라'의 출현 확률이 상향됩니다.",
+          "category": "CHARACTER",
+          "severity": "LOW",
+          "observed_at": "2026-08-25T17:02:01.513000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-a5608de4924dcaca",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/208164?boardtype=L&menuid=14&referrerAllArticles=false",
+              "title": "신규 픽업 사도 모집 진행 예정 안내(~9월 10일)",
+              "published_at": "2026-08-25T17:02:01.513000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "1e97d023df9189e0e5fb3df6ad0c69d74543f64b5d2ccdafb24f957fc0f4e1a1",
+              "modified_at": null,
+              "previous_content_hash": "1e97d023df9189e0e5fb3df6ad0c69d74543f64b5d2ccdafb24f957fc0f4e1a1"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [
+              "PU",
+              "Gross"
+            ],
+            "rationale": "Pick-up increases appearance rate for a specific character (PU) which plausibly affects gacha pull behaviour and monetization metrics.",
+            "verification_needed": true
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "Routine limited-time character pickup announcement; no operational disruption.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-f72abd537c2c8cce",
+          "event_key": "aurora-theme-theater",
+          "game_id": "trickcal-revive",
+          "title": "테마극장 <심연으로 밝히는 너의 오로라> 오픈",
+          "summary": "테마극장 '<심연으로 밝히는 너의 오로라>'가 2026-08-27(정기점검 이후)부터 2026-09-10 10:59까지 오픈됩니다. 이벤트 기간 동안 오로라의 특별 스토리를 확인할 수 있습니다.",
+          "category": "EVENT",
+          "severity": "LOW",
+          "observed_at": "2026-08-25T17:01:45.510000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-cc3ec924eb2cf9ee",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/208163?boardtype=L&menuid=14&referrerAllArticles=false",
+              "title": "< 심연으로 밝히는 너의 오로라> 오픈 예정 안내(~9월 10일)",
+              "published_at": "2026-08-25T17:01:45.510000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "83aca79041e06e664018d32fd71ef572dce887e9918a1e68b9bc3b548072315d",
+              "modified_at": null,
+              "previous_content_hash": "83aca79041e06e664018d32fd71ef572dce887e9918a1e68b9bc3b548072315d"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [
+              "CU"
+            ],
+            "rationale": "New limited-time story/content access event likely relevant to content engagement/usage metrics.",
+            "verification_needed": true
+          },
+          "bm_item_types": [],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "Standard limited-time content release; informational for players.",
+            "final_router": "pm-decision-lead"
+          }
+        },
+        {
+          "signal_id": "sig-8207c7d32565e1c1",
+          "event_key": "spectacle-card-gacha",
+          "game_id": "trickcal-revive",
+          "title": "신규 스펙타클 카드 뽑기 안내",
+          "summary": "신규 스펙타클 카드 뽑기가 2026-08-27(정기점검 이후)부터 2026-09-10 10:59까지 진행됩니다. 이벤트 기간 중 카드 10회 뽑기 시 지정된 스펙타클 카드 1종을 확정 획득할 수 있습니다.",
+          "category": "BM",
+          "severity": "LOW",
+          "observed_at": "2026-08-25T17:02:13.337000+09:00",
+          "evidence": [
+            {
+              "evidence_id": "ev-b562b380f4f92a61",
+              "source_type": "OFFICIAL_COMMUNITY",
+              "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/208165?boardtype=L&menuid=14&referrerAllArticles=false",
+              "title": "신규 스펙타클 카드 뽑기 예정 안내(~9월 10일)",
+              "published_at": "2026-08-25T17:02:13.337000+09:00",
+              "collected_at": "2026-09-01T14:37:31.919055+09:00",
+              "content_hash": "7f1d7aba71ff06f4461aa8b923e55406842f0fa910182cfec08769eba358352c",
+              "modified_at": null,
+              "previous_content_hash": "7f1d7aba71ff06f4461aa8b923e55406842f0fa910182cfec08769eba358352c"
+            }
+          ],
+          "source_conflicts": [],
+          "pm_metric_context": {
+            "terms": [
+              "Gross"
+            ],
+            "rationale": "Limited-time gacha with a 10-pull guarantee is directly relevant to gacha purchase behavior and monetization performance.",
+            "verification_needed": true
+          },
+          "bm_item_types": [
+            "GACHA"
+          ],
+          "routing": {
+            "target": "NONE",
+            "deep_dive_required": false,
+            "reason": "Standard monetization/gacha event announcement; no reported issues.",
+            "final_router": "pm-decision-lead"
+          }
+        }
+      ],
+      "excluded_inputs": []
+    }
+  }
+}
