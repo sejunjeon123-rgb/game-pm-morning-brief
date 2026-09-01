@@ -45,7 +45,8 @@ Never fabricate, estimate, or imply unavailable KPI values or movements. Phrase 
 - Keep facts, interpretation, uncertainty, and internal verification needs distinguishable.
 - Preserve material official-source differences as concise Korean text; never silently resolve them from source priority alone.
 - Prefer omission to speculation. Never infer official URLs, KPI values, player sentiment, or commercial outcomes.
+- Assign every collected input ID exactly once to a Signal event or to an explicit exclusion with a factual reason. Fail closed on missing, duplicated, or unknown IDs.
 
 ## V1 deterministic scripts
 
-Use `scripts/run.py` for the deterministic collection path. The `collect` mode scans all eight configured official YouTube feeds and the implemented official-notice adapters. If a public page does not expose stable notice links in HTML, return a source-level coverage gap rather than guessing an internal endpoint. Add a new site adapter only after verifying its official URL and fixture behavior.
+Use `scripts/run.py` for the deterministic collection path. The `collect` mode scans all eight configured official YouTube feeds and the implemented official-notice adapters. Analyze documents in bounded per-game batches so related official notices and videos can become One Event + Multiple Evidence without dropping any collected input. Reuse a validated per-game analysis only when its analyzer version, model, URLs, titles, and content hashes still match. Limit concurrent OpenAI requests to the implementation's bounded worker count and retain timing, batch, API-call, and cache-hit metrics in the analysis report. If a public page does not expose stable notice links in HTML, return a source-level coverage gap rather than guessing an internal endpoint. Add a new site adapter only after verifying its official URL and fixture behavior.

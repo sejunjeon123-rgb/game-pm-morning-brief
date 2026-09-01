@@ -92,6 +92,46 @@ def extract_text_from_class(html: str, class_name: str) -> str:
     return normalize_text("\n".join(parser.values))
 
 
+class AttributeTextExtractor(HTMLParser):
+    """Extract text from elements carrying a verified marker attribute."""
+
+    VOID_TAGS = ClassTextExtractor.VOID_TAGS
+
+    def __init__(self, attribute_name: str) -> None:
+        super().__init__(convert_charrefs=True)
+        self.attribute_name = attribute_name
+        self._scope_depth = 0
+        self._ignored = 0
+        self.values: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        attributes = dict(attrs)
+        if self._scope_depth and tag not in self.VOID_TAGS:
+            self._scope_depth += 1
+        elif self.attribute_name in attributes:
+            self._scope_depth = 1
+        if tag in {"script", "style", "noscript", "svg"}:
+            self._ignored += 1
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag in {"script", "style", "noscript", "svg"} and self._ignored:
+            self._ignored -= 1
+        if self._scope_depth:
+            self._scope_depth -= 1
+
+    def handle_data(self, data: str) -> None:
+        if self._scope_depth and not self._ignored:
+            text = normalize_text(data)
+            if text:
+                self.values.append(text)
+
+
+def extract_text_from_attribute(html: str, attribute_name: str) -> str:
+    parser = AttributeTextExtractor(attribute_name)
+    parser.feed(html)
+    return normalize_text("\n".join(parser.values))
+
+
 def content_hash(value: str) -> str:
     return hashlib.sha256(normalize_text(value).encode("utf-8")).hexdigest()
 

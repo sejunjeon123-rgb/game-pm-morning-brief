@@ -8,7 +8,7 @@ from typing import Any
 from app.config import ProjectConfig
 from market_signal.listing_parser import parse_listing
 from market_signal.models import CollectedNotice
-from market_signal.normalize import content_hash, extract_text, extract_text_from_class
+from market_signal.normalize import content_hash, extract_text, extract_text_from_attribute, extract_text_from_class
 from market_signal.official_board_adapters import ADAPTER_SPECS, OfficialDocument, collect_official_board
 from shared.http_client import HttpClient, HttpClientError
 from shared.state_store import StateStore
@@ -102,7 +102,12 @@ def _collect_html_documents(game_id: str, candidates: tuple[Any, ...], http: Htt
     documents: list[OfficialDocument] = []
     for candidate in candidates:
         detail_html = http.get(candidate.url).text()
-        normalized = extract_text_from_class(detail_html, "contents_area") if game_id == "black-desert-mobile" else extract_text(detail_html)
+        if game_id == "black-desert-mobile":
+            normalized = extract_text_from_class(detail_html, "contents_area")
+        elif game_id == "mabinogi-mobile":
+            normalized = extract_text_from_attribute(detail_html, "data-blockcontent")
+        else:
+            normalized = extract_text(detail_html)
         if normalized:
             documents.append(OfficialDocument(game_id, candidate.url, candidate.title, candidate.published_at, normalized, "OFFICIAL_HOMEPAGE"))
     return tuple(documents)

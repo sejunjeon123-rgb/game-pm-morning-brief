@@ -8,6 +8,12 @@ from shared.openai_client import OpenAIClientError, OpenAIResponsesClient
 
 
 class OpenAIResponsesClientTests(unittest.TestCase):
+    def test_retry_delay_respects_numeric_retry_after_and_cap(self) -> None:
+        client = OpenAIResponsesClient("test-key", "test-model", backoff=2)
+        self.assertEqual(client._retry_delay("3", 0), 3)
+        self.assertEqual(client._retry_delay("999", 0), 20)
+        self.assertEqual(client._retry_delay(None, 2), 8)
+
     def test_finds_structured_output_text(self) -> None:
         result = {
             "status": "completed",

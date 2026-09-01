@@ -8,7 +8,7 @@
 - Schedule target: 매일 08:10 KST (GitHub Actions)
 - State target: 전용 `state` 브랜치의 JSON
 - Delivery target: 전용 Slack 앱 + Notion
-- Implemented: Market Signal 공식 공지/YouTube 수집, 변경 감지, OpenAI Structured Outputs 기반 Signal 변환
+- Implemented: Market Signal 공식 공지/YouTube 수집, 변경 감지, 게임별 bounded batch 분석, One Event + Multiple Evidence 병합, 입력 완전성 검증, state branch 분석 캐시, OpenAI Structured Outputs 기반 Signal 변환
 - Foundation only: Player & Live 실제 수집, PM Decision 전체 파이프라인, 자동 발송은 아직 활성화되지 않았습니다.
 
 ## Skills
@@ -26,7 +26,7 @@ GitHub 저장소의 `Settings > Secrets and variables > Actions`에 다음 값�
 - Secret: `OPENAI_API_KEY`
 - Variable: `OPENAI_MODEL`
 
-그다음 `Actions > Game PM Morning Brief > Run workflow`에서 `signal-test`를 선택하면 공식 자료를 수집하고 OpenAI Signal JSON을 artifact로 생성합니다. 이 모드는 Slack과 Notion에 발송하지 않습니다.
+그다음 `Actions > Game PM Morning Brief > Run workflow`에서 `signal-test`를 선택하면 공식 자료를 수집하고 OpenAI Signal JSON을 artifact로 생성합니다. 이 모드는 Slack과 Notion에 발송하지 않습니다. 결과의 `analysis_metrics`에서 입력 수, 배치 수, 실제 API 호출 수, 캐시 적중 게임, 분석 시간을 확인할 수 있습니다.
 
 ## Security
 

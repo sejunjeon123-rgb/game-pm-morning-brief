@@ -33,7 +33,7 @@ def main() -> int:
     args = _arguments()
     config = load_project_config(args.root.resolve())
     if args.mode == "analyze-collection":
-        result = analyze_collection_file(args.collection_file)
+        result = analyze_collection_file(args.collection_file, StateStore(args.state_dir))
         args.output_dir.mkdir(parents=True, exist_ok=True)
         destination = args.output_dir / "market_signal_signals.json"
         destination.write_text(dumps(result) + "\n", encoding="utf-8")

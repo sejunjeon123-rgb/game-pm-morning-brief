@@ -6,10 +6,11 @@ import os
 import json
 from dataclasses import asdict
 from pathlib import Path
+from datetime import datetime
 from typing import Any
 
 from app.config import ProjectConfig
-from market_signal.analyzer import analyze_notices
+from market_signal.analyzer import analyze_notices_with_report
 from market_signal.collector import collect_official_notices
 from market_signal.models import CollectedNotice
 from market_signal.youtube_collector import collect_official_youtube
@@ -43,27 +44,16 @@ def run_market_signal(
     if not api_key or not model:
         report["analysis_status"] = "blocked_missing_openai_configuration"
         return report
-    notices = tuple(
-        CollectedNotice(
-            game_id=item["game_id"],
-            url=item["url"],
-            title=item["title"],
-            published_at=parse_iso_kst(item["published_at"].isoformat() if hasattr(item["published_at"], "isoformat") else item["published_at"]),
-            collected_at=parse_iso_kst(item["collected_at"].isoformat() if hasattr(item["collected_at"], "isoformat") else item["collected_at"]),
-            normalized_text=item["normalized_text"],
-            content_hash=item["content_hash"],
-            previous_content_hash=item.get("previous_content_hash"),
-            source_type=item.get("source_type", "OFFICIAL_NOTICE"),
-        )
-        for item in report["notices"] + report["videos"]
-    )
-    signals = analyze_notices(OpenAIResponsesClient(api_key, model), notices)
-    report["signals"] = [asdict(item) for item in signals]
+    notices = _notices_from_items(report["notices"] + report["videos"])
+    outcome = analyze_notices_with_report(OpenAIResponsesClient(api_key, model), notices, state=state)
+    report["signals"] = [asdict(item) for item in outcome.signals]
+    report["excluded_inputs"] = list(outcome.excluded_inputs)
+    report["analysis_metrics"] = outcome.metrics
     report["analysis_status"] = "completed"
     return report
 
 
-def analyze_collection_file(path: Path) -> dict[str, Any]:
+def analyze_collection_file(path: Path, state: StateStore | None = None) -> dict[str, Any]:
     """Analyze a saved collection without recollecting or mutating source state."""
     raw = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(raw, dict):
@@ -80,13 +70,27 @@ def analyze_collection_file(path: Path) -> dict[str, Any]:
             "input_count": len(items),
             "signals": [],
         }
-    notices = tuple(
+    notices = _notices_from_items(items)
+    outcome = analyze_notices_with_report(OpenAIResponsesClient(api_key, model), notices, state=state)
+    return {
+        "analysis_status": "completed",
+        "input_file": str(path),
+        "input_count": len(items),
+        "signal_count": len(outcome.signals),
+        "excluded_inputs": list(outcome.excluded_inputs),
+        "analysis_metrics": outcome.metrics,
+        "signals": [asdict(item) for item in outcome.signals],
+    }
+
+
+def _notices_from_items(items: list[dict[str, Any]]) -> tuple[CollectedNotice, ...]:
+    return tuple(
         CollectedNotice(
             game_id=item["game_id"],
             url=item["url"],
             title=item["title"],
-            published_at=parse_iso_kst(item["published_at"]),
-            collected_at=parse_iso_kst(item["collected_at"]),
+            published_at=_parse_timestamp(item["published_at"]),
+            collected_at=_parse_timestamp(item["collected_at"]),
             normalized_text=item["normalized_text"],
             content_hash=item["content_hash"],
             previous_content_hash=item.get("previous_content_hash"),
@@ -94,11 +98,7 @@ def analyze_collection_file(path: Path) -> dict[str, Any]:
         )
         for item in items
     )
-    signals = analyze_notices(OpenAIResponsesClient(api_key, model), notices)
-    return {
-        "analysis_status": "completed",
-        "input_file": str(path),
-        "input_count": len(items),
-        "signal_count": len(signals),
-        "signals": [asdict(item) for item in signals],
-    }
+
+
+def _parse_timestamp(value: object) -> datetime:
+    return parse_iso_kst(value.isoformat() if isinstance(value, datetime) else str(value))

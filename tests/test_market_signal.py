@@ -8,12 +8,13 @@ from datetime import datetime
 from pathlib import Path
 
 from market_signal.listing_parser import parse_listing
-from market_signal.analyzer import analyze_notices
+from market_signal.analyzer import analyze_notices, analyze_notices_with_report
 from market_signal.runner import analyze_collection_file
 from market_signal.models import CollectedNotice
-from market_signal.normalize import content_hash, extract_text, extract_text_from_class
+from market_signal.normalize import content_hash, extract_text, extract_text_from_attribute, extract_text_from_class
 from market_signal.official_board_adapters import parse_naver_cafe_articles, parse_naver_lounge_feeds, parse_netmarble_articles, parse_odin_homepage, parse_plaync_article, parse_stove_article
 from market_signal.youtube_collector import _parse_feed
+from shared.state_store import StateStore
 from shared.time_utils import KST
 
 
@@ -27,6 +28,16 @@ class MarketSignalTests(unittest.TestCase):
         self.assertEqual(len(items), 2)
         self.assertEqual(items[0].title, "8/27(목) 신규 패키지 안내")
         self.assertEqual(items[0].published_at, datetime(2026, 8, 27, tzinfo=KST))
+
+    def test_mabinogi_verified_thread_markup_parser(self) -> None:
+        html = '''<ul><li class="item" data-threadid="3532703">
+        <a href="/News/Notice/3532703"><span>신규 패키지 안내</span></a>
+        <div><span>마비노기모바일</span><span>0</span><span>2026.08.26</span></div>
+        </li></ul>'''
+        items = parse_listing("mabinogi-mobile", "https://mabinogimobile.nexon.com/News/Notice", html)
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0].url, "https://mabinogimobile.nexon.com/News/Notice/3532703")
+        self.assertEqual(items[0].published_at, datetime(2026, 8, 26, tzinfo=KST))
 
     def test_black_desert_listing_parser(self) -> None:
         html = (FIXTURES / "black_desert_notice_list.html").read_text(encoding="utf-8")
@@ -53,6 +64,10 @@ class MarketSignalTests(unittest.TestCase):
         html = '<div class="view-count">101</div><div class="contents_area ck-content"><p>공식 본문<br><img src="x"></p></div><div class="replyItem">동적 댓글</div>'
         text = extract_text_from_class(html, "contents_area")
         self.assertEqual(text, "공식 본문")
+
+    def test_attribute_scoped_extraction_uses_visible_nexon_body(self) -> None:
+        html = '<div data-blockmsg>차단 문구</div><div data-blockcontent><p>공식 본문</p></div><div>댓글</div>'
+        self.assertEqual(extract_text_from_attribute(html, "data-blockcontent"), "공식 본문")
 
     def test_change_type(self) -> None:
         now = datetime(2026, 8, 27, tzinfo=KST)
@@ -140,17 +155,25 @@ class MarketSignalTests(unittest.TestCase):
 
     def test_structured_analysis_builds_valid_routed_signal(self) -> None:
         class FakeClient:
-            def structured(self, **_: object) -> dict[str, object]:
+            model = "test-model"
+
+            def structured(self, **kwargs: object) -> dict[str, object]:
+                input_id = json.loads(str(kwargs["input_text"]))["documents"][0]["input_id"]
                 return {
-                    "event_key": "new-package-2026-08-27",
-                    "title": "신규 패키지 안내",
-                    "summary": "공식 아이템샵에 신규 패키지가 추가됐다.",
-                    "category": "BM",
-                    "severity": "HIGH",
-                    "bm_item_types": ["GROWTH", "CURRENCY"],
-                    "pm_terms": ["NPU", "PUR", "ARPPU"],
-                    "pm_rationale": "신규 상품의 결제 진입과 객단가 관련 내부 지표 확인이 필요하다.",
-                    "severity_reason": "한정 판매 상품 구조로 Player Live 반응 확인이 필요하다.",
+                    "events": [{
+                        "event_key": "new-package-2026-08-27",
+                        "input_ids": [input_id],
+                        "title": "신규 패키지 안내",
+                        "summary": "공식 아이템샵에 신규 패키지가 추가됐다.",
+                        "category": "BM",
+                        "severity": "HIGH",
+                        "bm_item_types": ["GROWTH", "CURRENCY"],
+                        "pm_terms": ["NPU", "PUR", "ARPPU"],
+                        "pm_rationale": "신규 상품의 결제 진입과 객단가 관련 내부 지표 확인이 필요하다.",
+                        "severity_reason": "한정 판매 상품 구조로 Player Live 반응 확인이 필요하다.",
+                        "source_conflicts": [],
+                    }],
+                    "excluded_inputs": [],
                 }
 
         now = datetime(2026, 8, 27, tzinfo=KST)
@@ -162,6 +185,123 @@ class MarketSignalTests(unittest.TestCase):
         self.assertEqual(signal.category.value, "BM")
         self.assertTrue(signal.routing.deep_dive_required)
         self.assertEqual(signal.routing.target.value, "player-live-watch")
+
+    def test_batch_analysis_merges_multiple_evidence_and_accounts_for_every_input(self) -> None:
+        class FakeClient:
+            model = "test-model"
+            calls = 0
+
+            def structured(self, **kwargs: object) -> dict[str, object]:
+                self.calls += 1
+                documents = json.loads(str(kwargs["input_text"]))["documents"]
+                return {
+                    "events": [{
+                        "event_key": "summer-update-2026-08-27",
+                        "input_ids": [item["input_id"] for item in documents],
+                        "title": "여름 업데이트",
+                        "summary": "공식 공지와 영상이 같은 업데이트를 안내했다.",
+                        "category": "UPDATE",
+                        "severity": "MEDIUM",
+                        "bm_item_types": [],
+                        "pm_terms": ["Retention", "TS"],
+                        "pm_rationale": "콘텐츠 이용 변화를 내부 지표로 확인할 필요가 있다.",
+                        "severity_reason": "주요 콘텐츠 업데이트다.",
+                        "source_conflicts": [],
+                    }],
+                    "excluded_inputs": [],
+                }
+
+        now = datetime(2026, 8, 27, tzinfo=KST)
+        notices = (
+            CollectedNotice("mabinogi-mobile", "https://example.com/notice/1", "여름 업데이트", now, now, "업데이트 상세", content_hash("업데이트 상세"), source_type="OFFICIAL_HOMEPAGE"),
+            CollectedNotice("mabinogi-mobile", "https://youtube.com/watch?v=1", "여름 업데이트 영상", now, now, "업데이트 영상", content_hash("업데이트 영상"), source_type="OFFICIAL_YOUTUBE"),
+        )
+        client = FakeClient()
+        outcome = analyze_notices_with_report(client, notices)  # type: ignore[arg-type]
+        self.assertEqual(client.calls, 1)
+        self.assertEqual(outcome.metrics["input_count"], 2)
+        self.assertEqual(len(outcome.signals), 1)
+        self.assertEqual(len(outcome.signals[0].evidence), 2)
+
+    def test_batch_analysis_fails_closed_when_an_input_is_missing(self) -> None:
+        class FakeClient:
+            model = "test-model"
+
+            def structured(self, **_: object) -> dict[str, object]:
+                return {"events": [], "excluded_inputs": []}
+
+        now = datetime(2026, 8, 27, tzinfo=KST)
+        notice = CollectedNotice("mabinogi-mobile", "https://example.com/1", "공지", now, now, "본문", content_hash("본문"))
+        with self.assertRaisesRegex(ValueError, "completeness gate failed"):
+            analyze_notices_with_report(FakeClient(), (notice,))  # type: ignore[arg-type]
+
+    def test_same_event_key_merges_across_bounded_batches(self) -> None:
+        class FakeClient:
+            model = "test-model"
+
+            def __init__(self) -> None:
+                self.calls = 0
+
+            def structured(self, **kwargs: object) -> dict[str, object]:
+                self.calls += 1
+                documents = json.loads(str(kwargs["input_text"]))["documents"]
+                return {
+                    "events": [{
+                        "event_key": "shared-update-2026-08-27",
+                        "input_ids": [item["input_id"] for item in documents],
+                        "title": "공통 업데이트", "summary": "여러 공식 문서가 같은 업데이트를 다룬다.",
+                        "category": "UPDATE", "severity": "MEDIUM", "bm_item_types": [],
+                        "pm_terms": [], "pm_rationale": "", "severity_reason": "업데이트 안내다.",
+                        "source_conflicts": [],
+                    }],
+                    "excluded_inputs": [],
+                }
+
+        now = datetime(2026, 8, 27, tzinfo=KST)
+        notices = tuple(
+            CollectedNotice(
+                "epic-seven", f"https://example.com/{index}", f"공지 {index}", now, now,
+                f"본문 {index}", content_hash(f"본문 {index}"),
+            )
+            for index in range(13)
+        )
+        client = FakeClient()
+        outcome = analyze_notices_with_report(client, notices)  # type: ignore[arg-type]
+        self.assertEqual(client.calls, 2)
+        self.assertEqual(len(outcome.signals), 1)
+        self.assertEqual(len(outcome.signals[0].evidence), 13)
+
+    def test_analysis_cache_reuses_unchanged_game(self) -> None:
+        class FakeClient:
+            model = "test-model"
+
+            def __init__(self) -> None:
+                self.calls = 0
+
+            def structured(self, **kwargs: object) -> dict[str, object]:
+                self.calls += 1
+                document = json.loads(str(kwargs["input_text"]))["documents"][0]
+                return {
+                    "events": [{
+                        "event_key": "notice-2026-08-27", "input_ids": [document["input_id"]],
+                        "title": "공지", "summary": "공식 공지다.", "category": "NOTICE", "severity": "LOW",
+                        "bm_item_types": [], "pm_terms": [], "pm_rationale": "", "severity_reason": "일반 안내다.",
+                        "source_conflicts": [],
+                    }],
+                    "excluded_inputs": [],
+                }
+
+        now = datetime(2026, 8, 27, tzinfo=KST)
+        notice = CollectedNotice("mabinogi-mobile", "https://example.com/1", "공지", now, now, "본문", content_hash("본문"))
+        client = FakeClient()
+        with tempfile.TemporaryDirectory() as directory:
+            state = StateStore(Path(directory))
+            first = analyze_notices_with_report(client, (notice,), state=state)  # type: ignore[arg-type]
+            second = analyze_notices_with_report(client, (notice,), state=state)  # type: ignore[arg-type]
+        self.assertEqual(client.calls, 1)
+        self.assertEqual(first.metrics["api_call_count"], 1)
+        self.assertEqual(second.metrics["api_call_count"], 0)
+        self.assertEqual(second.metrics["cache_hit_games"], ["mabinogi-mobile"])
 
     def test_saved_collection_analysis_fails_closed_without_openai_config(self) -> None:
         now = "2026-08-27T08:00:00+09:00"

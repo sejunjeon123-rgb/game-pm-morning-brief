@@ -67,7 +67,7 @@ jobs:
         run: |
           if [ "${{ steps.mode.outputs.value }}" = "signal-test" ]; then
             python -m app.run --mode collect --state-dir ../runtime-state/state --output-dir output
-            python -m app.run --mode analyze-collection --collection-file output/market_signal_collection.json --output-dir output
+            python -m app.run --mode analyze-collection --collection-file output/market_signal_collection.json --state-dir ../runtime-state/state --output-dir output
           else
             python -m app.run --mode "${{ steps.mode.outputs.value }}" --state-dir ../runtime-state/state --output-dir output
           fi
