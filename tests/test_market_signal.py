@@ -9,7 +9,8 @@ from pathlib import Path
 
 from market_signal.listing_parser import parse_listing
 from market_signal.analyzer import analyze_notices, analyze_notices_with_report
-from market_signal.collector import _collect_html_documents
+from app.config import ProjectConfig
+from market_signal.collector import _collect_html_documents, collect_official_notices
 from market_signal.runner import analyze_collection_file
 from market_signal.models import CollectedNotice, NoticeCandidate
 from market_signal.normalize import content_hash, extract_text, extract_text_from_attribute, extract_text_from_class
@@ -90,6 +91,36 @@ class MarketSignalTests(unittest.TestCase):
         self.assertEqual(documents[0].url, candidates[0].url)
         self.assertEqual(len(gaps), 1)
         self.assertIn(candidates[1].url, gaps[0]["reason"])
+
+    def test_mabinogi_listing_uses_public_query_fallback_when_base_is_empty(self) -> None:
+        listing = (FIXTURES / "mabinogi_notice_list.html").read_bytes()
+
+        class FallbackClient:
+            def get(self, url: str, *, headers: object = None) -> HttpResponse:
+                if "?directionType=" in url:
+                    return HttpResponse(url, 200, {"Content-Type": "text/html; charset=utf-8"}, listing)
+                if url.rstrip("/").endswith("/News/Notice"):
+                    return HttpResponse(url, 200, {"Content-Type": "text/html; charset=utf-8"}, b"<html><body></body></html>")
+                body = "<div data-blockcontent>공식 공지 본문입니다.</div>".encode("utf-8")
+                return HttpResponse(url, 200, {"Content-Type": "text/html; charset=utf-8"}, body)
+
+        config = ProjectConfig(
+            root=Path("."), runtime={}, games=(),
+            sources=({
+                "game_id": "mabinogi-mobile",
+                "homepage": "https://mabinogimobile.nexon.com/Main",
+                "notices": "https://mabinogimobile.nexon.com/News/Notice",
+            },),
+            source_policy={},
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            report = collect_official_notices(
+                config, StateStore(Path(directory)), ("mabinogi-mobile",),
+                client=FallbackClient(), max_details_per_game=2,  # type: ignore[arg-type]
+            )
+        self.assertEqual(len(report["notices"]), 1)
+        self.assertEqual(report["notices"][0]["title"], "8/27(목) 신규 패키지 안내")
+        self.assertEqual(report["coverage_gaps"], [])
 
     def test_pm_metric_semantics_reject_pickup_and_content_usage_aliases(self) -> None:
         terms, rationale = sanitize_pm_metric_context(

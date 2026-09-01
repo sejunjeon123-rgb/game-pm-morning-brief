@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from dataclasses import asdict
 from typing import Any
+from urllib.parse import urlencode
 
 from app.config import ProjectConfig
 from market_signal.listing_parser import parse_listing
@@ -45,8 +46,36 @@ def collect_official_notices(
                 documents = tuple(item for item in collect_official_board(game_id, http, rows=max_details_per_game) if is_recent(item.published_at))
             else:
                 list_url = source["notices"]
-                listing = http.get(list_url).text()
-                candidates = tuple(item for item in parse_listing(game_id, list_url, listing) if is_recent(item.published_at))
+                candidates: tuple[Any, ...] = ()
+                listing_diagnostics: list[str] = []
+                request_urls = (list_url,)
+                if game_id == "mabinogi-mobile":
+                    request_urls += (
+                        f"{list_url}?{urlencode({'directionType': 'DEFAULT', 'headlineId': 0, 'pageno': 1})}",
+                    )
+                for request_url in request_urls:
+                    listing = http.get(
+                        request_url,
+                        headers={
+                            "Accept-Language": "ko-KR,ko;q=0.9",
+                            "Referer": source["homepage"],
+                        },
+                    ).text()
+                    parsed = parse_listing(game_id, list_url, listing)
+                    candidates = tuple(item for item in parsed if is_recent(item.published_at))
+                    listing_diagnostics.append(
+                        f"length={len(listing)}, threads={listing.lower().count('data-threadid')}, "
+                        f"notice_links={listing.lower().count('/news/notice/')}, parsed={len(parsed)}, recent={len(candidates)}"
+                    )
+                    if candidates:
+                        break
+                if not candidates:
+                    coverage_gaps.append({
+                        "game_id": game_id,
+                        "source": "OFFICIAL_NOTICE",
+                        "reason": "official notice listing exposed no recent candidates; " + " | ".join(listing_diagnostics),
+                    })
+                    continue
                 documents, detail_gaps = _collect_html_documents(game_id, candidates[:max_details_per_game], http)
                 coverage_gaps.extend(detail_gaps)
         except (HttpClientError, KeyError, TypeError, ValueError) as exc:
