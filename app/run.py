@@ -11,6 +11,7 @@ from pathlib import Path
 from app.config import load_project_config
 from app.pipeline import brief_as_dict, build_preview_brief
 from market_signal.runner import analyze_collection_file, run_market_signal
+from player_live_watch.collector import collect_dcinside_posts
 from shared.json_utils import dumps
 from shared.notion_client import NotionDeliveryError, create_page, format_notion_page
 from shared.slack_client import SlackDeliveryError, format_brief, post_webhook
@@ -19,7 +20,11 @@ from shared.state_store import StateStore
 
 def _arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="GAME PM Morning Brief runtime")
-    parser.add_argument("--mode", choices=("preview", "collect", "analyze-collection", "test", "automatic"), default="preview")
+    parser.add_argument(
+        "--mode",
+        choices=("preview", "collect", "player-live-collect", "analyze-collection", "test", "automatic"),
+        default="preview",
+    )
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument("--state-dir", type=Path, default=Path("state"))
     parser.add_argument("--output-dir", type=Path, default=Path("output"))
@@ -50,6 +55,17 @@ def main() -> int:
         destination = args.output_dir / "market_signal_collection.json"
         destination.write_text(dumps(report) + "\n", encoding="utf-8")
         print(f"collection report written to {destination.resolve()}")
+        return 0
+    if args.mode == "player-live-collect":
+        report = collect_dcinside_posts(
+            config,
+            StateStore(args.state_dir),
+            tuple(args.games) if args.games else config.game_ids,
+        )
+        args.output_dir.mkdir(parents=True, exist_ok=True)
+        destination = args.output_dir / "player_live_collection.json"
+        destination.write_text(dumps(report) + "\n", encoding="utf-8")
+        print(f"Player Live collection report written to {destination.resolve()}")
         return 0
     brief = brief_as_dict(build_preview_brief(config))
     payload = format_brief(brief)

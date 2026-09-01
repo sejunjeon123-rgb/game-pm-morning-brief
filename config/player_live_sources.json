@@ -41,7 +41,7 @@
           "verified_name_ko": "마비노기 모바일 마이너 갤러리",
           "evidence_role": "PLAYER_REACTION",
           "status": "VERIFIED",
-          "collection_status": "ADAPTER_PENDING"
+          "collection_status": "ADAPTER_READY"
         }
       ]
     },
@@ -76,7 +76,7 @@
           "verified_name_ko": "검은사막 모바일 갤러리",
           "evidence_role": "PLAYER_REACTION",
           "status": "VERIFIED",
-          "collection_status": "ADAPTER_PENDING"
+          "collection_status": "ADAPTER_READY"
         }
       ]
     },
@@ -111,7 +111,7 @@
           "verified_name_ko": "오딘 발할라 라이징 마이너 갤러리",
           "evidence_role": "PLAYER_REACTION",
           "status": "VERIFIED",
-          "collection_status": "ADAPTER_PENDING"
+          "collection_status": "ADAPTER_READY"
         }
       ]
     },
@@ -146,7 +146,7 @@
           "verified_name_ko": "리니지M 갤러리",
           "evidence_role": "PLAYER_REACTION",
           "status": "VERIFIED",
-          "collection_status": "ADAPTER_PENDING"
+          "collection_status": "ADAPTER_READY"
         }
       ]
     },
@@ -191,7 +191,7 @@
           "verified_name_ko": "세븐나이츠 리버스 마이너 갤러리",
           "evidence_role": "PLAYER_REACTION",
           "status": "VERIFIED",
-          "collection_status": "ADAPTER_PENDING"
+          "collection_status": "ADAPTER_READY"
         }
       ]
     },
@@ -236,7 +236,7 @@
           "verified_name_ko": "니케 마이너 갤러리",
           "evidence_role": "PLAYER_REACTION",
           "status": "VERIFIED",
-          "collection_status": "ADAPTER_PENDING"
+          "collection_status": "ADAPTER_READY"
         }
       ]
     },
@@ -271,7 +271,7 @@
           "verified_name_ko": "트릭컬 마이너 갤러리",
           "evidence_role": "PLAYER_REACTION",
           "status": "VERIFIED",
-          "collection_status": "ADAPTER_PENDING"
+          "collection_status": "ADAPTER_READY"
         }
       ]
     },
@@ -306,7 +306,7 @@
           "verified_name_ko": "에픽세븐 마이너 갤러리",
           "evidence_role": "PLAYER_REACTION",
           "status": "VERIFIED",
-          "collection_status": "ADAPTER_PENDING"
+          "collection_status": "ADAPTER_READY"
         }
       ]
     }

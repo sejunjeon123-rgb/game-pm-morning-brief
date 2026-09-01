@@ -60,10 +60,18 @@ class RuntimeTests(unittest.TestCase):
         self.assertTrue(
             all(
                 source["status"] == "VERIFIED"
-                and source["collection_status"] in {"RSS_READY", "ADAPTER_PENDING"}
+                and source["collection_status"] in {"RSS_READY", "ADAPTER_READY", "ADAPTER_PENDING"}
                 for item in config.player_live_sources
                 for source in item["sources"]
             )
+        )
+        self.assertEqual(
+            sum(
+                source["collection_status"] == "ADAPTER_READY"
+                for item in config.player_live_sources
+                for source in item["sources"]
+            ),
+            8,
         )
 
     def test_slack_payload_has_header(self) -> None:

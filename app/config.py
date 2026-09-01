@@ -99,7 +99,7 @@ def load_project_config(root: Path) -> ProjectConfig:
                 raise ValueError(f"invalid Player Live source type: {source.get('source_type')}")
             if source.get("status") != "VERIFIED":
                 raise ValueError(f"only verified Player Live sources may be configured: {source_id}")
-            if source.get("collection_status") not in {"RSS_READY", "ADAPTER_PENDING"}:
+            if source.get("collection_status") not in {"RSS_READY", "ADAPTER_READY", "ADAPTER_PENDING"}:
                 raise ValueError(f"invalid Player Live collection status: {source_id}")
             if source.get("evidence_role") not in {
                 "OFFICIAL_FACT",

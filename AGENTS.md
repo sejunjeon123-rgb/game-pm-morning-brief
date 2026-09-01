@@ -94,6 +94,7 @@ The delivery adapter is infrastructure, not a fourth analytical skill.
 1. Invoke `player-live-watch` for all mandatory deep dives.
 2. Run the independent Player Live scan for all eight configured games every day.
 3. Use only verified active pages in `config/player_live_sources.json`. Follow the configured evidence priority; a source marked `ADAPTER_PENDING` is not collectable until its adapter passes fixture and live-read validation.
+   The DCInside adapter must not retain writer nicknames, IDs, IP fragments, profile links, or comment-author data. Its engagement counts remain source-specific observations and must not be treated as population sentiment.
 4. Run Game Radar for out-of-scope games. Admit at most three games per run, each supported by evidence from at least two independent source hosts. Do not add Radar games to `config/games.json` during a run.
 5. Validate every `PlayerLiveInsight` against the shared schema.
 6. Preserve disagreement between official facts and player reports.

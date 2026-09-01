@@ -41,6 +41,8 @@ If a higher-priority source is unavailable or has no recent evidence, continue w
 
 Do not invent creator channels or game-specific URLs during a run. Sources listed under `unconfigured_discovery` are candidates for a separate discovery and verification step, not active collection targets. For `odin-valhalla-rising`, do not use the former Daum cafe; use only the sources explicitly registered in `config/player_live_sources.json`.
 
+For deterministic DCInside collection, use `player_live_watch.collector.collect_dcinside_posts` or `python -m app.run --mode player-live-collect`. The adapter scans bounded listing pages, excludes fixed notices, surveys, and ads, never reads or stores writer fields, and fetches a bounded mix of newest and source-engaged post bodies. Treat view, recommendation, and comment counts only as source-specific selection metadata. A bounded scan that does not reach the full seven-day window must return a coverage gap rather than imply complete coverage.
+
 Never collect private groups, login-restricted personal data, deleted-content mirrors, direct messages, or personally identifying information. Do not identify, profile, or score individual users. Quote minimally and paraphrase by default.
 
 Treat views, likes, comments, rankings, post counts, and reaction ratios as source-specific observations. Do not convert them into DAU, Retention, revenue, or population-wide sentiment.
