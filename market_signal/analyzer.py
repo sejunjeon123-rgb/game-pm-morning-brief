@@ -179,7 +179,7 @@ def analyze_notices_with_report(
         pending[game_id] = game_notices
 
     batches = _build_batches(pending)
-    batch_results = _run_batches(client, batches)
+    batch_results, validation_retry_count = _run_batches(client, batches)
     analyzed_events: list[_AnalyzedEvent] = []
     analyzed_exclusions: list[dict[str, str]] = []
     for batch in batches:
@@ -206,7 +206,8 @@ def analyze_notices_with_report(
         "input_count": len(notices),
         "game_count": len(grouped),
         "batch_count": len(batches),
-        "api_call_count": len(batches),
+        "api_call_count": len(batches) + validation_retry_count,
+        "validation_retry_count": validation_retry_count,
         "cache_hit_games": sorted(cache_hits),
         "analyzed_games": sorted(pending),
         "max_parallel_requests": min(MAX_PARALLEL_REQUESTS, len(batches)),
@@ -260,29 +261,50 @@ def _build_batches(grouped: Mapping[str, tuple[CollectedNotice, ...]]) -> tuple[
     return tuple(batches)
 
 
-def _run_batches(client: OpenAIResponsesClient, batches: tuple[_Batch, ...]) -> dict[int, dict[str, Any]]:
+def _run_batches(
+    client: OpenAIResponsesClient,
+    batches: tuple[_Batch, ...],
+) -> tuple[dict[int, dict[str, Any]], int]:
     if not batches:
-        return {}
+        return {}, 0
 
-    def run(batch: _Batch) -> dict[str, Any]:
+    def request(batch: _Batch, instructions: str) -> dict[str, Any]:
         payload = {
             "game_id": batch.game_id,
             "documents": [_document_payload(input_id, notice) for input_id, notice in batch.documents],
         }
         return client.structured(
-            instructions=INSTRUCTIONS,
+            instructions=instructions,
             input_text=dumps(payload, indent=None),
             name="market_signal_game_batch",
             schema=ANALYSIS_SCHEMA,
         )
 
+    def run(batch: _Batch) -> tuple[dict[str, Any], int]:
+        result = request(batch, INSTRUCTIONS)
+        try:
+            _validate_batch_result(batch, result)
+            return result, 0
+        except ValueError as exc:
+            correction = (
+                f"\n\nYour previous response failed deterministic validation: {exc}. "
+                "Return the complete corrected result for the same supplied documents. "
+                "Do not omit, duplicate, or invent an input_id, and keep every explanatory field in Korean."
+            )
+            corrected = request(batch, INSTRUCTIONS + correction)
+            _validate_batch_result(batch, corrected)
+            return corrected, 1
+
     results: dict[int, dict[str, Any]] = {}
+    validation_retry_count = 0
     workers = min(MAX_PARALLEL_REQUESTS, len(batches))
     with ThreadPoolExecutor(max_workers=workers, thread_name_prefix="market-signal") as executor:
         futures = {executor.submit(run, batch): batch.index for batch in batches}
         for future in as_completed(futures):
-            results[futures[future]] = future.result()
-    return results
+            result, retries = future.result()
+            results[futures[future]] = result
+            validation_retry_count += retries
+    return results, validation_retry_count
 
 
 def _validate_batch_result(batch: _Batch, result: Mapping[str, Any]) -> tuple[list[_AnalyzedEvent], list[dict[str, str]]]:

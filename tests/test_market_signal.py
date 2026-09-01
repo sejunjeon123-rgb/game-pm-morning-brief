@@ -277,6 +277,37 @@ class MarketSignalTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "completeness gate failed"):
             analyze_notices_with_report(FakeClient(), (notice,))  # type: ignore[arg-type]
 
+    def test_batch_analysis_retries_once_for_completeness_correction(self) -> None:
+        class FakeClient:
+            model = "test-model"
+
+            def __init__(self) -> None:
+                self.calls = 0
+
+            def structured(self, **kwargs: object) -> dict[str, object]:
+                self.calls += 1
+                document = json.loads(str(kwargs["input_text"]))["documents"][0]
+                if self.calls == 1:
+                    return {"events": [], "excluded_inputs": []}
+                return {
+                    "events": [{
+                        "event_key": "corrected-notice", "input_ids": [document["input_id"]],
+                        "title": "공식 공지 안내", "summary": "누락된 공식 공지를 교정 응답에 포함했다.",
+                        "category": "NOTICE", "severity": "LOW", "bm_item_types": [],
+                        "pm_terms": [], "pm_rationale": "", "severity_reason": "일반적인 공식 안내다.",
+                        "source_conflicts": [],
+                    }],
+                    "excluded_inputs": [],
+                }
+
+        now = datetime(2026, 8, 27, tzinfo=KST)
+        notice = CollectedNotice("mabinogi-mobile", "https://example.com/1", "공지", now, now, "본문", content_hash("본문"))
+        client = FakeClient()
+        outcome = analyze_notices_with_report(client, (notice,))  # type: ignore[arg-type]
+        self.assertEqual(client.calls, 2)
+        self.assertEqual(outcome.metrics["validation_retry_count"], 1)
+        self.assertEqual(outcome.metrics["api_call_count"], 2)
+
     def test_batch_analysis_fails_closed_on_english_generated_prose(self) -> None:
         class FakeClient:
             model = "test-model"
