@@ -41,11 +41,12 @@ def _selected_candidates(candidates: tuple[PlayerPostCandidate, ...], limit: int
     return tuple(sorted(selected.values(), key=lambda item: item.published_at, reverse=True))
 
 
-def _collect_detail(http: HttpClient, candidate: PlayerPostCandidate, referer: str) -> tuple[PlayerPostCandidate, str]:
+def _collect_detail(http: HttpClient, candidate: PlayerPostCandidate, referer: str) -> tuple[PlayerPostCandidate, str, bool]:
     response = http.get(candidate.url, headers=DC_BROWSER_HEADERS | {"Referer": referer})
     if len(response.body) > 4_000_000:
         raise ValueError("post detail exceeds response size limit")
-    return candidate, parse_body(response.text())
+    html = response.text()
+    return candidate, parse_body(html), "write_div" in html
 
 
 def collect_dcinside_posts(
@@ -86,6 +87,8 @@ def collect_dcinside_posts(
         source = sources[0]
         candidates: dict[str, PlayerPostCandidate] = {}
         pages_read = 0
+        parsed_count = 0
+        listing_marker_count = 0
         window_truncated = False
         try:
             for page in range(1, max_listing_pages + 1):
@@ -93,7 +96,10 @@ def collect_dcinside_posts(
                 response = http.get(page_url, headers=DC_BROWSER_HEADERS | {"Referer": source["url"]})
                 if len(response.body) > 2_000_000:
                     raise ValueError("listing exceeds response size limit")
-                parsed = parse_listing(game_id, source["source_id"], source["url"], response.text())
+                listing_html = response.text()
+                listing_marker_count += listing_html.count("ub-content us-post")
+                parsed = parse_listing(game_id, source["source_id"], source["url"], listing_html)
+                parsed_count += len(parsed)
                 pages_read += 1
                 if not parsed:
                     break
@@ -107,11 +113,20 @@ def collect_dcinside_posts(
                     window_truncated = True
         except (HttpClientError, KeyError, TypeError, ValueError, UnicodeError) as exc:
             gaps.append({"game_id": game_id, "source": source["source_id"], "reason": f"DCInside listing collection failed: {type(exc).__name__}"})
-            metrics[game_id] = {"pages_read": pages_read, "candidate_count": len(candidates), "detail_count": 0, "window_truncated": window_truncated}
+            metrics[game_id] = {
+                "pages_read": pages_read,
+                "listing_marker_count": listing_marker_count,
+                "parsed_count": parsed_count,
+                "candidate_count": len(candidates),
+                "detail_count": 0,
+                "body_marker_count": 0,
+                "title_only_count": 0,
+                "window_truncated": window_truncated,
+            }
             continue
 
         selected = _selected_candidates(tuple(sorted(candidates.values(), key=lambda item: item.published_at, reverse=True)), max_details_per_game)
-        detail_results: list[tuple[PlayerPostCandidate, str]] = []
+        detail_results: list[tuple[PlayerPostCandidate, str, bool]] = []
         with ThreadPoolExecutor(max_workers=detail_workers) as executor:
             futures = {executor.submit(_collect_detail, http, candidate, source["url"]): candidate for candidate in selected}
             for future in as_completed(futures):
@@ -121,7 +136,7 @@ def collect_dcinside_posts(
                 except (HttpClientError, TypeError, ValueError, UnicodeError) as exc:
                     gaps.append({"game_id": game_id, "source": source["source_id"], "reason": f"DCInside detail collection failed for {candidate.url}: {type(exc).__name__}"})
 
-        for candidate, body in sorted(detail_results, key=lambda item: item[0].published_at, reverse=True):
+        for candidate, body, _ in sorted(detail_results, key=lambda item: item[0].published_at, reverse=True):
             normalized = normalize_text(f"{candidate.title}\n{body}")
             digest = content_hash(normalized)
             previous = records.get(candidate.url, {})
@@ -158,8 +173,12 @@ def collect_dcinside_posts(
             gaps.append({"game_id": game_id, "source": source["source_id"], "reason": "no recent public posts were exposed by the verified listing"})
         metrics[game_id] = {
             "pages_read": pages_read,
+            "listing_marker_count": listing_marker_count,
+            "parsed_count": parsed_count,
             "candidate_count": len(candidates),
             "detail_count": len(detail_results),
+            "body_marker_count": sum(marker_present for _, _, marker_present in detail_results),
+            "title_only_count": sum(not body for _, body, _ in detail_results),
             "window_truncated": window_truncated,
         }
 
@@ -172,4 +191,3 @@ def collect_dcinside_posts(
         "coverage_gaps": gaps,
         "metrics": metrics,
     }
-

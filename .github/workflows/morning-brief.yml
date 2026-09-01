@@ -17,6 +17,11 @@ on:
           - signal-test
           - test
           - automatic
+      games:
+        description: "optional space-separated core game IDs for collection tests"
+        required: false
+        default: ""
+        type: string
 
 concurrency:
   group: game-pm-morning-brief
@@ -69,13 +74,19 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_PARENT_PAGE_ID: ${{ vars.NOTION_PARENT_PAGE_ID }}
+          GAME_IDS: ${{ inputs.games }}
         shell: bash
         run: |
+          game_args=()
+          if [ -n "$GAME_IDS" ]; then
+            read -r -a selected_games <<< "$GAME_IDS"
+            game_args=(--games "${selected_games[@]}")
+          fi
           if [ "${{ steps.mode.outputs.value }}" = "signal-test" ]; then
-            python -m app.run --mode collect --state-dir ../runtime-state/state --output-dir output
+            python -m app.run --mode collect --state-dir ../runtime-state/state --output-dir output "${game_args[@]}"
             python -m app.run --mode analyze-collection --collection-file output/market_signal_collection.json --state-dir ../runtime-state/state --output-dir output
           else
-            python -m app.run --mode "${{ steps.mode.outputs.value }}" --state-dir ../runtime-state/state --output-dir output
+            python -m app.run --mode "${{ steps.mode.outputs.value }}" --state-dir ../runtime-state/state --output-dir output "${game_args[@]}"
           fi
 
       - name: Save changed state
