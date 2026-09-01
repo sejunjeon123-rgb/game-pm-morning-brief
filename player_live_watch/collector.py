@@ -42,11 +42,14 @@ def _selected_candidates(candidates: tuple[PlayerPostCandidate, ...], limit: int
 
 
 def _collect_detail(http: HttpClient, candidate: PlayerPostCandidate, referer: str) -> tuple[PlayerPostCandidate, str, bool]:
-    response = http.get(candidate.url, headers=DC_BROWSER_HEADERS | {"Referer": referer})
-    if len(response.body) > 4_000_000:
-        raise ValueError("post detail exceeds response size limit")
-    html = response.text()
-    return candidate, parse_body(html), "write_div" in html
+    for _ in range(2):
+        response = http.get(candidate.url, headers=DC_BROWSER_HEADERS | {"Referer": referer})
+        if len(response.body) > 4_000_000:
+            raise ValueError("post detail exceeds response size limit")
+        html = response.text()
+        if "write_div" in html:
+            return candidate, parse_body(html), True
+    raise ValueError("post detail body marker is missing after semantic retry")
 
 
 def collect_dcinside_posts(
@@ -89,16 +92,25 @@ def collect_dcinside_posts(
         pages_read = 0
         parsed_count = 0
         listing_marker_count = 0
+        semantic_retry_count = 0
         window_truncated = False
         try:
             for page in range(1, max_listing_pages + 1):
                 page_url = listing_page_url(source["url"], page)
-                response = http.get(page_url, headers=DC_BROWSER_HEADERS | {"Referer": source["url"]})
-                if len(response.body) > 2_000_000:
-                    raise ValueError("listing exceeds response size limit")
-                listing_html = response.text()
-                listing_marker_count += listing_html.count("ub-content us-post")
-                parsed = parse_listing(game_id, source["source_id"], source["url"], listing_html)
+                parsed: tuple[PlayerPostCandidate, ...] = ()
+                marker_count = 0
+                for semantic_attempt in range(2):
+                    response = http.get(page_url, headers=DC_BROWSER_HEADERS | {"Referer": source["url"]})
+                    if len(response.body) > 2_000_000:
+                        raise ValueError("listing exceeds response size limit")
+                    listing_html = response.text()
+                    marker_count = listing_html.count("ub-content us-post")
+                    parsed = parse_listing(game_id, source["source_id"], source["url"], listing_html)
+                    if parsed or marker_count:
+                        break
+                    if semantic_attempt == 0:
+                        semantic_retry_count += 1
+                listing_marker_count += marker_count
                 parsed_count += len(parsed)
                 pages_read += 1
                 if not parsed:
@@ -117,6 +129,7 @@ def collect_dcinside_posts(
                 "pages_read": pages_read,
                 "listing_marker_count": listing_marker_count,
                 "parsed_count": parsed_count,
+                "semantic_retry_count": semantic_retry_count,
                 "candidate_count": len(candidates),
                 "detail_count": 0,
                 "body_marker_count": 0,
@@ -175,6 +188,7 @@ def collect_dcinside_posts(
             "pages_read": pages_read,
             "listing_marker_count": listing_marker_count,
             "parsed_count": parsed_count,
+            "semantic_retry_count": semantic_retry_count,
             "candidate_count": len(candidates),
             "detail_count": len(detail_results),
             "body_marker_count": sum(marker_present for _, _, marker_present in detail_results),

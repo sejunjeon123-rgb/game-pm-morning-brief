@@ -54,9 +54,15 @@ class DCInsideAdapterTests(unittest.TestCase):
         detail = (FIXTURES / "dcinside_detail.html").read_bytes()
 
         class FixtureClient:
+            listing_attempts = 0
+
             def get(self, url: str, *, headers: object = None) -> HttpResponse:
                 if "/board/lists/" in url:
-                    body = b"<html></html>" if "page=2" in url else listing
+                    if "page=2" in url:
+                        body = b"<html></html>"
+                    else:
+                        self.listing_attempts += 1
+                        body = b"<html><body>temporary shell</body></html>" if self.listing_attempts == 1 else listing
                     return HttpResponse(url, 200, {"Content-Type": "text/html; charset=utf-8"}, body)
                 return HttpResponse(url, 200, {"Content-Type": "text/html; charset=utf-8"}, detail)
 
@@ -76,6 +82,7 @@ class DCInsideAdapterTests(unittest.TestCase):
         self.assertEqual(report["coverage_gaps"], [])
         self.assertEqual(report["posts"][0]["source_type"], "PUBLIC_COMMUNITY")
         self.assertEqual(report["posts"][0]["content_availability"], "FULL_TEXT")
+        self.assertEqual(report["metrics"]["mabinogi-mobile"]["semantic_retry_count"], 2)
         self.assertNotIn("private-writer", str(report))
 
 
