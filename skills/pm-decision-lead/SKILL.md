@@ -69,7 +69,7 @@ Return one `PMDecisionItem` per distinct decision with:
 - `title`, `executive_summary`, `priority`, `disposition`, and `confidence`,
 - separate `observed_facts`, `interpretation`, `unknowns`, and `conflicts`,
 - `business_impact` containing only supported impact dimensions,
-- `pm_metric_context` and specific `metric_checks`,
+- `pm_metric_context` and specific `metric_checks`, using the canonical meanings in `shared/pm_metrics.py`,
 - `recommended_actions` with suggested role, timing, dependency, and reassessment condition,
 - `watch_conditions` and `decision_rationale`,
 - `evidence` retaining the underlying public provenance.

@@ -37,6 +37,10 @@ Use a term only when the observed signal has a reasonable business relationship 
 
 Never fabricate, estimate, or imply unavailable KPI values or movements. Phrase unmeasured implications as a verification task, for example: `NPU 및 PUR 변화와 함께 확인할 필요가 있다.` Keep `terms` empty when no metric relationship is useful.
 
+Treat `shared/pm_metrics.py` as the canonical meaning and semantic-validation contract. In particular, `PU` means daily paying users and never pick-up; `CU` means concurrent users and never content usage. `PUR` is `PU / DAU`, `MPUR` is `MPU / MAU`, `ARPPU` is `Sales / PU`, and `ARPDAU` is `Sales / DAU`. Do not turn learning notes, numerical benchmarks, fixed platform-fee percentages, or personal rules of thumb into definitions or assumptions. Contract terms such as `RS`, `LF`, `MG`, and `MOU` vary by agreement; use them only when the public evidence actually concerns that contract concept.
+
+Write all generated explanatory prose in Korean, including `title`, `summary`, `pm_metric_context.rationale`, routing reasons, exclusions, and `source_conflicts`. Proper nouns, IDs, enum values, and approved PM terms may remain in their defined form.
+
 ## Quality gates
 
 - Reject naive datetimes, non-HTTP evidence URLs, unknown categories, unknown BM types, and unapproved PM terms.

@@ -52,7 +52,7 @@ Treat views, likes, comments, rankings, post counts, and reaction ratios as sour
 8. Assess intensity as `LOW`, `MEDIUM`, `HIGH`, or `CRITICAL` using recurrence, source diversity, persistence, operational impact, and escalation signs. Never use post volume alone.
 9. Determine trend as `EMERGING`, `RISING`, `STABLE`, `FADING`, `RESOLVED`, or `UNKNOWN` only when time-separated evidence supports it.
 10. Separate `observed_facts`, `player_claims`, `analysis`, and `unknowns`. A repeated player report remains a claim until official confirmation or independently observable evidence supports it.
-11. Add `pm_metric_context` only when a relevant internal metric should be checked. Never infer the value or direction of an unavailable KPI.
+11. Add `pm_metric_context` only when a relevant internal metric should be checked. Follow the canonical meanings and semantic validation in `shared/pm_metrics.py`. Never infer the value or direction of an unavailable KPI.
 12. Route the completed insight to `pm-decision-lead`, which owns final priority, action, and Morning Brief inclusion.
 
 ## Severity guidance

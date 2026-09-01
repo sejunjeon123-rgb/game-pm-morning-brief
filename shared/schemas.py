@@ -8,6 +8,8 @@ from enum import StrEnum
 from typing import Any
 from urllib.parse import urlsplit
 
+from shared.pm_metrics import APPROVED_PM_TERMS, invalid_pm_term_meanings, is_pm_verification_rationale
+
 
 class SignalCategory(StrEnum):
     UPDATE = "UPDATE"
@@ -122,14 +124,6 @@ class AnalysisScope(StrEnum):
     GAME_RADAR = "GAME_RADAR"
 
 
-APPROVED_PM_TERMS = frozenset({
-    "DAU", "NRU", "Gross", "Sales", "Net gross", "Net sales", "PU", "BU",
-    "NPU", "MPU", "PUR", "BUR", "MPUR", "ARPPU", "ARPDAU", "Retention",
-    "Organic", "Non organic", "CU", "MCU", "UV", "TS", "KPI", "LTV", "PLC",
-    "BEP", "ROI", "CAC", "CRC", "RS", "LF", "MG", "MOU",
-})
-
-
 def _require_aware(value: datetime, field_name: str) -> None:
     if value.tzinfo is None or value.utcoffset() is None:
         raise ValueError(f"{field_name} must be timezone-aware")
@@ -170,6 +164,12 @@ class PMMetricContext:
         unknown = set(self.terms) - APPROVED_PM_TERMS
         if unknown:
             raise ValueError(f"unapproved PM metric terms: {sorted(unknown)}")
+        if self.terms:
+            if not self.rationale or not is_pm_verification_rationale(self.rationale):
+                raise ValueError("PM metric rationale must be Korean verification prose without asserted KPI movement")
+            invalid = invalid_pm_term_meanings(self.terms, self.rationale)
+            if invalid:
+                raise ValueError(f"PM metric terms do not match their rationale: {list(invalid)}")
 
 
 @dataclass(frozen=True, slots=True)

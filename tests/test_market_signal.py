@@ -9,13 +9,17 @@ from pathlib import Path
 
 from market_signal.listing_parser import parse_listing
 from market_signal.analyzer import analyze_notices, analyze_notices_with_report
+from market_signal.collector import _collect_html_documents
 from market_signal.runner import analyze_collection_file
-from market_signal.models import CollectedNotice
+from market_signal.models import CollectedNotice, NoticeCandidate
 from market_signal.normalize import content_hash, extract_text, extract_text_from_attribute, extract_text_from_class
 from market_signal.official_board_adapters import parse_naver_cafe_articles, parse_naver_lounge_feeds, parse_netmarble_articles, parse_odin_homepage, parse_plaync_article, parse_stove_article
 from market_signal.youtube_collector import _parse_feed
 from shared.state_store import StateStore
+from shared.schemas import PMMetricContext
 from shared.time_utils import KST
+from shared.http_client import HttpClientError, HttpResponse
+from shared.pm_metrics import sanitize_pm_metric_context
 
 
 FIXTURES = Path(__file__).parent / "fixtures"
@@ -68,6 +72,44 @@ class MarketSignalTests(unittest.TestCase):
     def test_attribute_scoped_extraction_uses_visible_nexon_body(self) -> None:
         html = '<div data-blockmsg>차단 문구</div><div data-blockcontent><p>공식 본문</p></div><div>댓글</div>'
         self.assertEqual(extract_text_from_attribute(html, "data-blockcontent"), "공식 본문")
+
+    def test_mabinogi_detail_failure_does_not_discard_successful_notices(self) -> None:
+        class PartialClient:
+            def get(self, url: str) -> HttpResponse:
+                if url.endswith("/2"):
+                    raise HttpClientError("simulated detail failure")
+                return HttpResponse(url, 200, {"Content-Type": "text/html; charset=utf-8"}, b"<div data-blockcontent>official body</div>")
+
+        published = datetime(2026, 8, 27, tzinfo=KST)
+        candidates = (
+            NoticeCandidate("mabinogi-mobile", "https://mabinogimobile.nexon.com/News/Notice/1", "공지 1", published),
+            NoticeCandidate("mabinogi-mobile", "https://mabinogimobile.nexon.com/News/Notice/2", "공지 2", published),
+        )
+        documents, gaps = _collect_html_documents("mabinogi-mobile", candidates, PartialClient())  # type: ignore[arg-type]
+        self.assertEqual(len(documents), 1)
+        self.assertEqual(documents[0].url, candidates[0].url)
+        self.assertEqual(len(gaps), 1)
+        self.assertIn(candidates[1].url, gaps[0]["reason"])
+
+    def test_pm_metric_semantics_reject_pickup_and_content_usage_aliases(self) -> None:
+        terms, rationale = sanitize_pm_metric_context(
+            ("PU", "CU", "Sales"),
+            "픽업 캐릭터와 신규 콘텐츠가 매출에 미칠 영향은 내부 Sales 지표로 확인할 필요가 있다.",
+        )
+        self.assertEqual(terms, ("Sales",))
+        self.assertTrue(rationale)
+
+    def test_pm_metric_semantics_accept_canonical_verification_context(self) -> None:
+        terms, rationale = sanitize_pm_metric_context(
+            ("PU", "PUR", "ARPPU"),
+            "신규 상품 출시 후 일간 결제 사용자 수, 결제율, 결제 사용자당 객단가를 내부 지표로 확인할 필요가 있다.",
+        )
+        self.assertEqual(terms, ("PU", "PUR", "ARPPU"))
+        self.assertIn("확인", rationale)
+
+    def test_pm_metric_context_rejects_unsupported_measured_direction(self) -> None:
+        with self.assertRaisesRegex(ValueError, "without asserted KPI movement"):
+            PMMetricContext(("DAU",), "공개 이벤트 이후 DAU가 증가했다고 확인했다.", True)
 
     def test_change_type(self) -> None:
         now = datetime(2026, 8, 27, tzinfo=KST)
@@ -233,6 +275,28 @@ class MarketSignalTests(unittest.TestCase):
         now = datetime(2026, 8, 27, tzinfo=KST)
         notice = CollectedNotice("mabinogi-mobile", "https://example.com/1", "공지", now, now, "본문", content_hash("본문"))
         with self.assertRaisesRegex(ValueError, "completeness gate failed"):
+            analyze_notices_with_report(FakeClient(), (notice,))  # type: ignore[arg-type]
+
+    def test_batch_analysis_fails_closed_on_english_generated_prose(self) -> None:
+        class FakeClient:
+            model = "test-model"
+
+            def structured(self, **kwargs: object) -> dict[str, object]:
+                document = json.loads(str(kwargs["input_text"]))["documents"][0]
+                return {
+                    "events": [{
+                        "event_key": "english-output", "input_ids": [document["input_id"]],
+                        "title": "English title", "summary": "English-only generated summary.",
+                        "category": "NOTICE", "severity": "LOW", "bm_item_types": [],
+                        "pm_terms": [], "pm_rationale": "", "severity_reason": "Routine notice.",
+                        "source_conflicts": [],
+                    }],
+                    "excluded_inputs": [],
+                }
+
+        now = datetime(2026, 8, 27, tzinfo=KST)
+        notice = CollectedNotice("mabinogi-mobile", "https://example.com/1", "공지", now, now, "본문", content_hash("본문"))
+        with self.assertRaisesRegex(ValueError, "must be Korean prose"):
             analyze_notices_with_report(FakeClient(), (notice,))  # type: ignore[arg-type]
 
     def test_same_event_key_merges_across_bounded_batches(self) -> None:

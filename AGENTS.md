@@ -33,6 +33,7 @@ The operating policy is fixed in `config/runtime.json`; implementation and deplo
 - Apply the official source priority in `config/sources.json`: official homepage, homepage-linked official community, then official YouTube. Priority chooses representative wording; it does not erase valid evidence or unresolved differences.
 - Read `config/runtime.json` for schedule, delivery, state, Player Live, and Game Radar policy.
 - Read `shared/schemas.py` for allowed enums, validation, and cross-skill payloads.
+- Read `shared/pm_metrics.py` for canonical PM term meanings and semantic validation. Parenthetical benchmarks and personal rules of thumb are not runtime assumptions.
 - Read only the selected skill's `SKILL.md` for its task-specific procedure.
 - Use `Asia/Seoul` and timezone-aware timestamps throughout.
 - Default to the most recent seven days unless the run request states otherwise.

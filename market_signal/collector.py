@@ -47,7 +47,8 @@ def collect_official_notices(
                 list_url = source["notices"]
                 listing = http.get(list_url).text()
                 candidates = tuple(item for item in parse_listing(game_id, list_url, listing) if is_recent(item.published_at))
-                documents = _collect_html_documents(game_id, candidates[:max_details_per_game], http)
+                documents, detail_gaps = _collect_html_documents(game_id, candidates[:max_details_per_game], http)
+                coverage_gaps.extend(detail_gaps)
         except (HttpClientError, KeyError, TypeError, ValueError) as exc:
             coverage_gaps.append({"game_id": game_id, "source": "OFFICIAL_NOTICE", "reason": f"notice list collection failed: {type(exc).__name__}"})
             continue
@@ -98,16 +99,35 @@ def collect_official_notices(
     }
 
 
-def _collect_html_documents(game_id: str, candidates: tuple[Any, ...], http: HttpClient) -> tuple[OfficialDocument, ...]:
+def _collect_html_documents(
+    game_id: str,
+    candidates: tuple[Any, ...],
+    http: HttpClient,
+) -> tuple[tuple[OfficialDocument, ...], tuple[dict[str, str], ...]]:
     documents: list[OfficialDocument] = []
+    gaps: list[dict[str, str]] = []
     for candidate in candidates:
-        detail_html = http.get(candidate.url).text()
-        if game_id == "black-desert-mobile":
-            normalized = extract_text_from_class(detail_html, "contents_area")
-        elif game_id == "mabinogi-mobile":
-            normalized = extract_text_from_attribute(detail_html, "data-blockcontent")
-        else:
-            normalized = extract_text(detail_html)
+        try:
+            detail_html = http.get(candidate.url).text()
+            if game_id == "black-desert-mobile":
+                normalized = extract_text_from_class(detail_html, "contents_area")
+            elif game_id == "mabinogi-mobile":
+                normalized = extract_text_from_attribute(detail_html, "data-blockcontent")
+            else:
+                normalized = extract_text(detail_html)
+        except (HttpClientError, TypeError, ValueError, UnicodeError) as exc:
+            gaps.append({
+                "game_id": game_id,
+                "source": "OFFICIAL_NOTICE",
+                "reason": f"notice detail collection failed for {candidate.url}: {type(exc).__name__}",
+            })
+            continue
         if normalized:
             documents.append(OfficialDocument(game_id, candidate.url, candidate.title, candidate.published_at, normalized, "OFFICIAL_HOMEPAGE"))
-    return tuple(documents)
+        else:
+            gaps.append({
+                "game_id": game_id,
+                "source": "OFFICIAL_NOTICE",
+                "reason": f"notice detail exposed no normalized body: {candidate.url}",
+            })
+    return tuple(documents), tuple(gaps)

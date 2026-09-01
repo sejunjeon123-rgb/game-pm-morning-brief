@@ -13,6 +13,7 @@ from typing import Any, Iterable, Mapping
 from market_signal.models import CollectedNotice
 from shared.json_utils import dumps
 from shared.openai_client import OpenAIResponsesClient
+from shared.pm_metrics import PM_TERM_DEFINITIONS, is_korean_prose, sanitize_pm_metric_context
 from shared.schemas import (
     BMItemType,
     Evidence,
@@ -28,7 +29,7 @@ from shared.state_store import StateStore
 from shared.time_utils import parse_iso_kst
 
 
-ANALYZER_VERSION = "market-signal-batch-v2"
+ANALYZER_VERSION = "market-signal-batch-v3"
 MAX_DOCUMENTS_PER_BATCH = 6
 MAX_BATCH_CHARACTERS = 50_000
 MAX_PARALLEL_REQUESTS = 3
@@ -108,7 +109,19 @@ relevant; otherwise use an empty list. event_key must be a stable lowercase ASCI
 Record material differences between official sources in source_conflicts. Every supplied
 input_id must appear exactly once, either in one event or in excluded_inputs. Exclude an
 input only when it is not a discrete market signal, and state the factual reason. Before
-returning, re-scan the input list for completeness."""
+returning, re-scan the input list for completeness.
+
+Write title, summary, pm_rationale, severity_reason, source_conflicts, and exclusion
+reasons in Korean. Proper nouns and approved acronyms may remain in their original
+form, but the explanatory prose must be Korean.
+
+The canonical PM meanings are: """ + "; ".join(
+    f"{term}={definition}" for term, definition in PM_TERM_DEFINITIONS.items()
+) + """. Parenthetical benchmarks, fixed fee percentages, and personal rules of thumb
+are not definitions and must not be assumed. PU means paying users, never pick-up. CU
+means concurrent users, never content usage. Include a PM term only when pm_rationale
+states in Korean which internal metric should be checked or compared. Never state that
+an unavailable KPI increased, decreased, improved, or worsened."""
 
 
 @dataclass(frozen=True, slots=True)
@@ -287,6 +300,15 @@ def _validate_batch_result(batch: _Batch, result: Mapping[str, Any]) -> tuple[li
         if event_key in seen_event_keys:
             raise ValueError(f"duplicate event_key within batch: {event_key}")
         seen_event_keys.add(event_key)
+        for field in ("title", "summary", "severity_reason"):
+            if not is_korean_prose(str(event.get(field, ""))):
+                raise ValueError(f"analysis {field} must be Korean prose")
+        pm_terms = tuple(str(value) for value in event.get("pm_terms", []))
+        if pm_terms and not is_korean_prose(str(event.get("pm_rationale", ""))):
+            raise ValueError("analysis pm_rationale must be Korean prose when PM terms are present")
+        for conflict in event.get("source_conflicts", []):
+            if not is_korean_prose(str(conflict)):
+                raise ValueError("analysis source_conflicts must be Korean prose")
         input_ids = [str(value) for value in event.get("input_ids", [])]
         if not input_ids:
             raise ValueError("batch event requires input_ids")
@@ -300,6 +322,8 @@ def _validate_batch_result(batch: _Batch, result: Mapping[str, Any]) -> tuple[li
         input_id, reason = str(item.get("input_id", "")), str(item.get("reason", "")).strip()
         if not reason:
             raise ValueError("excluded input requires a reason")
+        if not is_korean_prose(reason):
+            raise ValueError("excluded input reason must be Korean prose")
         assigned.append(input_id)
         exclusions.append({"input_id": input_id, "game_id": batch.game_id, "reason": reason})
 
@@ -327,8 +351,9 @@ def _merge_events(events: Iterable[_AnalyzedEvent]) -> tuple[Signal, ...]:
         severity = max((Severity(item.result["severity"]) for item in items), key=_SEVERITY_PRIORITY.__getitem__)
         documents = _unique_documents(document for item in items for document in item.documents)
         evidence = tuple(_evidence(document) for document in sorted(documents, key=_document_rank))
-        pm_terms = _ordered_unique(str(term) for item in items for term in item.result["pm_terms"])
+        raw_pm_terms = _ordered_unique(str(term) for item in items for term in item.result["pm_terms"])
         pm_rationales = _ordered_unique(str(item.result["pm_rationale"]).strip() for item in items if str(item.result["pm_rationale"]).strip())
+        pm_terms, pm_rationale = sanitize_pm_metric_context(raw_pm_terms, " / ".join(pm_rationales))
         bm_types = _ordered_unique(str(value) for item in items for value in item.result["bm_item_types"])
         if category is not SignalCategory.BM:
             bm_types = ()
@@ -353,7 +378,7 @@ def _merge_events(events: Iterable[_AnalyzedEvent]) -> tuple[Signal, ...]:
                 source_conflicts=conflicts,
                 pm_metric_context=PMMetricContext(
                     terms=pm_terms,
-                    rationale=" / ".join(pm_rationales),
+                    rationale=pm_rationale,
                     verification_needed=bool(pm_terms),
                 ),
                 bm_item_types=tuple(BMItemType(value) for value in bm_types),
