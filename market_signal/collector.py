@@ -11,13 +11,17 @@ from market_signal.listing_parser import parse_listing
 from market_signal.models import CollectedNotice
 from market_signal.normalize import content_hash, extract_text, extract_text_from_attribute, extract_text_from_class
 from market_signal.official_board_adapters import ADAPTER_SPECS, OfficialDocument, collect_official_board
-from shared.http_client import HttpClient, HttpClientError
+from shared.http_client import DEFAULT_USER_AGENT, HttpClient, HttpClientError
 from shared.state_store import StateStore
 from shared.time_utils import is_recent, now_kst
 
 
 HTML_GAMES = frozenset({"mabinogi-mobile", "black-desert-mobile"})
 SUPPORTED_GAMES = HTML_GAMES | frozenset(ADAPTER_SPECS)
+NEXON_BROWSER_USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+)
 
 
 def collect_official_notices(
@@ -52,6 +56,7 @@ def collect_official_notices(
                 if game_id == "mabinogi-mobile":
                     request_urls += (
                         f"{list_url}?{urlencode({'directionType': 'DEFAULT', 'headlineId': 0, 'pageno': 1})}",
+                        f"{list_url.rstrip('/').rsplit('/', 1)[0]}/notice/",
                     )
                 for request_url in request_urls:
                     listing = http.get(
@@ -59,6 +64,7 @@ def collect_official_notices(
                         headers={
                             "Accept-Language": "ko-KR,ko;q=0.9",
                             "Referer": source["homepage"],
+                            "User-Agent": NEXON_BROWSER_USER_AGENT if game_id == "mabinogi-mobile" else DEFAULT_USER_AGENT,
                         },
                     ).text()
                     parsed = parse_listing(game_id, list_url, listing)
