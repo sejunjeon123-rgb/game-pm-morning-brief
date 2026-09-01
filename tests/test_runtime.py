@@ -8,6 +8,7 @@ from pathlib import Path
 from app.config import load_project_config
 from app.pipeline import brief_as_dict, build_preview_brief
 from shared.notion_client import format_notion_page
+from shared.schemas import SourceType
 from shared.slack_client import format_brief
 from shared.state_store import StateStore
 
@@ -25,6 +26,18 @@ class RuntimeTests(unittest.TestCase):
         self.assertEqual(set(brief["game_scope"]), set(brief["no_material_signal_games"]))
         self.assertTrue(all(item.get("youtube_channel_id", "").startswith("UC") for item in config.sources))
         self.assertEqual(config.source_policy["priority"], ["OFFICIAL_HOMEPAGE", "OFFICIAL_COMMUNITY", "OFFICIAL_YOUTUBE"])
+        self.assertEqual(config.source_policy["on_source_unavailable"], "CONTINUE_LOWER_PRIORITY")
+        self.assertEqual(config.source_policy["on_all_sources_empty"], "REPORT_COVERAGE_GAP")
+        self.assertFalse(config.source_policy["external_relay_allowed"])
+        self.assertEqual(
+            config.runtime["player_live"]["evidence_priority"],
+            ["OFFICIAL_HOMEPAGE", "OFFICIAL_COMMUNITY", "OFFICIAL_YOUTUBE", "PUBLIC_CREATOR_YOUTUBE"],
+        )
+        self.assertEqual(
+            config.runtime["player_live"]["public_creator_youtube_classification"],
+            "PLAYER_CLAIM_OR_CREATOR_ANALYSIS",
+        )
+        self.assertEqual(SourceType.PUBLIC_CREATOR_YOUTUBE.value, "PUBLIC_CREATOR_YOUTUBE")
 
     def test_slack_payload_has_header(self) -> None:
         brief = brief_as_dict(build_preview_brief(load_project_config(ROOT)))

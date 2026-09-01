@@ -44,9 +44,25 @@ def load_project_config(root: Path) -> ProjectConfig:
         raise ValueError("every core game must have exactly one source entry")
     if source_policy.get("priority") != ["OFFICIAL_HOMEPAGE", "OFFICIAL_COMMUNITY", "OFFICIAL_YOUTUBE"]:
         raise ValueError("official source priority does not match the project contract")
+    if source_policy.get("on_source_unavailable") != "CONTINUE_LOWER_PRIORITY":
+        raise ValueError("unavailable official sources must fall through to the next configured priority")
+    if source_policy.get("on_all_sources_empty") != "REPORT_COVERAGE_GAP":
+        raise ValueError("empty official-source results must be reported as a coverage gap")
+    if source_policy.get("external_relay_allowed") is not False:
+        raise ValueError("external source relays are disabled by project policy")
     if runtime.get("timezone") != "Asia/Seoul":
         raise ValueError("runtime timezone must be Asia/Seoul")
     radar = runtime.get("game_radar", {})
     if radar.get("max_games_per_run") != 3 or radar.get("min_independent_sources") != 2:
         raise ValueError("Game Radar policy does not match the root contract")
+    player_live = runtime.get("player_live", {})
+    if player_live.get("evidence_priority") != [
+        "OFFICIAL_HOMEPAGE",
+        "OFFICIAL_COMMUNITY",
+        "OFFICIAL_YOUTUBE",
+        "PUBLIC_CREATOR_YOUTUBE",
+    ]:
+        raise ValueError("Player Live evidence priority does not match the project contract")
+    if player_live.get("public_creator_youtube_classification") != "PLAYER_CLAIM_OR_CREATOR_ANALYSIS":
+        raise ValueError("public creator YouTube evidence must remain a claim or creator analysis")
     return ProjectConfig(root=root, runtime=runtime, games=games, sources=sources, source_policy=source_policy)

@@ -30,7 +30,7 @@ The operating policy is fixed in `config/runtime.json`; implementation and deplo
 
 - Read `config/games.json` for game scope and genre tags.
 - Read `config/sources.json` for verified official Market Signal sources.
-- Apply the official source priority in `config/sources.json`: official homepage, homepage-linked official community, then official YouTube. Priority chooses representative wording; it does not erase valid evidence or unresolved differences.
+- Apply the official source priority in `config/sources.json`: official homepage, homepage-linked official community, then official YouTube. If one source is unavailable or empty, record that source-level gap and continue with the next configured priority. Do not use an external relay or fail the whole game solely because a higher-priority source is unavailable. Priority chooses representative wording; it does not erase valid evidence or unresolved differences.
 - Read `config/runtime.json` for schedule, delivery, state, Player Live, and Game Radar policy.
 - Read `shared/schemas.py` for allowed enums, validation, and cross-skill payloads.
 - Read `shared/pm_metrics.py` for canonical PM term meanings and semantic validation. Parenthetical benchmarks and personal rules of thumb are not runtime assumptions.
@@ -52,6 +52,8 @@ Do not interpret public player sentiment, make the final business priority, or s
 Own public player-reaction and live-operation evidence analysis. Scan all eight core games every day, consume required Market Signal deep dives, and independently surface material live issues missed by official-source monitoring. Run Game Radar for games outside the core scope, with no more than three qualifying games per run and at least two independent source hosts per game. Produce one `PlayerLiveInsight` per distinct issue cluster.
 
 Do not treat community samples as the whole population, convert public engagement into internal KPI values, set final PM priority, or send Slack messages. Preserve facts, player claims, analysis, unknowns, trend, confidence, and evidence separately.
+
+After official homepage, official community, and official YouTube evidence, Player Live may use public creator YouTube videos as lower-priority reaction evidence. Label them as player claims or creator analysis, never as official facts or substitutes for missing official confirmation.
 
 ### `pm-decision-lead`
 
@@ -83,7 +85,8 @@ The delivery adapter is infrastructure, not a fourth analytical skill.
 3. Merge evidence for the same event and retain source provenance.
 4. Record material differences between official sources as concise source-conflict text; do not silently pick one version.
 5. Record games with no material official signal rather than inventing an event.
-6. Queue every `HIGH` and `CRITICAL` Signal for mandatory Player Live deep dive.
+6. When one official source is unavailable or empty, retain its source-level coverage gap and continue through the lower-priority configured official sources. If all official sources are empty, report the game as having no accessible official evidence; do not add a proxy, guessed URL, or fabricated Signal.
+7. Queue every `HIGH` and `CRITICAL` Signal for mandatory Player Live deep dive.
 
 ### 3. Player & Live phase
 
@@ -178,7 +181,8 @@ When a change appears necessary, produce a reviewable proposal containing the pr
 
 ## Failure and recovery
 
-- Continue unaffected games when one source fails, but mark the failed game and source as a coverage gap.
+- Continue the same game through its lower-priority configured sources, and continue unaffected games, when one source fails. Mark the failed source as a coverage gap without treating that gap as proof that no event exists.
+- Do not introduce an external relay or scraping proxy. When all allowed sources are empty or inaccessible, preserve an explicit coverage gap and complete the remaining scope.
 - Do not use an unverified substitute URL when an official source fails.
 - Do not downgrade a missing mandatory deep dive into `no material signal`.
 - Preserve the last successful brief separately; never overwrite it with a failed or partial run.

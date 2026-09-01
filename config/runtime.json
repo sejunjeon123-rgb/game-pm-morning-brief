@@ -33,6 +33,13 @@
   },
   "player_live": {
     "scan_all_core_games_daily": true,
+    "evidence_priority": [
+      "OFFICIAL_HOMEPAGE",
+      "OFFICIAL_COMMUNITY",
+      "OFFICIAL_YOUTUBE",
+      "PUBLIC_CREATOR_YOUTUBE"
+    ],
+    "public_creator_youtube_classification": "PLAYER_CLAIM_OR_CREATOR_ANALYSIS",
     "approved_platforms": [
       "인벤",
       "디시인사이드",

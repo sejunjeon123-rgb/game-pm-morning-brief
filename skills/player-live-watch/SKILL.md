@@ -33,8 +33,11 @@ Use only publicly accessible material that can be cited by URL and collection ti
 
 1. official notices, known-issue posts, maintenance updates, and developer communications,
 2. official community replies and public platform discussions,
-3. repeated public player reports from identifiable community threads,
-4. public observable live indicators such as service status or disclosed rankings when available.
+3. official YouTube uploads,
+4. public creator YouTube videos and repeated public player reports from identifiable community threads,
+5. public observable live indicators such as service status or disclosed rankings when available.
+
+If a higher-priority source is unavailable or has no recent evidence, continue with the next allowed source. Public creator YouTube is a lower-priority Player Live source only: classify its content as `player_claims` or creator analysis, never as `observed_facts` merely because it appears in a video. Preserve missing official confirmation in `unknowns`. If every allowed source is empty, return a coverage gap and continue the other games instead of manufacturing an insight.
 
 Never collect private groups, login-restricted personal data, deleted-content mirrors, direct messages, or personally identifying information. Do not identify, profile, or score individual users. Quote minimally and paraphrase by default.
 

@@ -5,6 +5,9 @@
   "source_policy": {
     "priority": ["OFFICIAL_HOMEPAGE", "OFFICIAL_COMMUNITY", "OFFICIAL_YOUTUBE"],
     "official_community_must_be_linked_by": "OFFICIAL_HOMEPAGE",
+    "on_source_unavailable": "CONTINUE_LOWER_PRIORITY",
+    "on_all_sources_empty": "REPORT_COVERAGE_GAP",
+    "external_relay_allowed": false,
     "retain_all_valid_evidence": true,
     "surface_material_source_differences": true,
     "difference_output_label_ko": "⚠️ 출처 차이"
