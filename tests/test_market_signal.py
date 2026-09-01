@@ -299,6 +299,30 @@ class MarketSignalTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "must be Korean prose"):
             analyze_notices_with_report(FakeClient(), (notice,))  # type: ignore[arg-type]
 
+    def test_batch_analysis_normalizes_safe_event_key_separators(self) -> None:
+        class FakeClient:
+            model = "test-model"
+
+            def structured(self, **kwargs: object) -> dict[str, object]:
+                document = json.loads(str(kwargs["input_text"]))["documents"][0]
+                return {
+                    "events": [{
+                        "event_key": "content_issues 2026-08-28_to-2026-09-01",
+                        "input_ids": [document["input_id"]],
+                        "title": "콘텐츠 문제 및 패치 안내",
+                        "summary": "공식 공지에서 콘텐츠 문제와 수정 패치를 안내했다.",
+                        "category": "NOTICE", "severity": "LOW", "bm_item_types": [],
+                        "pm_terms": [], "pm_rationale": "", "severity_reason": "일반적인 문제 현상 안내다.",
+                        "source_conflicts": [],
+                    }],
+                    "excluded_inputs": [],
+                }
+
+        now = datetime(2026, 8, 27, tzinfo=KST)
+        notice = CollectedNotice("epic-seven", "https://example.com/1", "공지", now, now, "본문", content_hash("본문"))
+        signal = analyze_notices_with_report(FakeClient(), (notice,)).signals[0]  # type: ignore[arg-type]
+        self.assertEqual(signal.event_key, "content-issues-2026-08-28-to-2026-09-01")
+
     def test_same_event_key_merges_across_bounded_batches(self) -> None:
         class FakeClient:
             model = "test-model"

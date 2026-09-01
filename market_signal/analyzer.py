@@ -48,7 +48,7 @@ EVENT_SCHEMA: dict[str, Any] = {
     "type": "object",
     "additionalProperties": False,
     "properties": {
-        "event_key": {"type": "string", "minLength": 1},
+        "event_key": {"type": "string", "minLength": 1, "pattern": "^[a-z0-9][a-z0-9-]{0,127}$"},
         "input_ids": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
         "title": {"type": "string", "minLength": 1},
         "summary": {"type": "string", "minLength": 1},
@@ -294,7 +294,7 @@ def _validate_batch_result(batch: _Batch, result: Mapping[str, Any]) -> tuple[li
     for event in result.get("events", []):
         if not isinstance(event, Mapping):
             raise ValueError("batch event must be an object")
-        event_key = str(event.get("event_key", ""))
+        event_key = _normalize_event_key(str(event.get("event_key", "")))
         if not _EVENT_KEY.fullmatch(event_key):
             raise ValueError(f"invalid event_key: {event_key!r}")
         if event_key in seen_event_keys:
@@ -313,7 +313,9 @@ def _validate_batch_result(batch: _Batch, result: Mapping[str, Any]) -> tuple[li
         if not input_ids:
             raise ValueError("batch event requires input_ids")
         assigned.extend(input_ids)
-        events.append(_AnalyzedEvent(batch.game_id, event, tuple(notice_by_id[value] for value in input_ids if value in notice_by_id)))
+        normalized_event = dict(event)
+        normalized_event["event_key"] = event_key
+        events.append(_AnalyzedEvent(batch.game_id, normalized_event, tuple(notice_by_id[value] for value in input_ids if value in notice_by_id)))
 
     exclusions: list[dict[str, str]] = []
     for item in result.get("excluded_inputs", []):
@@ -411,6 +413,12 @@ def _unique_documents(documents: Iterable[CollectedNotice]) -> tuple[CollectedNo
 
 def _ordered_unique(values: Iterable[str]) -> tuple[str, ...]:
     return tuple(dict.fromkeys(value for value in values if value))
+
+
+def _normalize_event_key(value: str) -> str:
+    normalized = re.sub(r"[_\s]+", "-", value.strip().lower())
+    normalized = re.sub(r"[^a-z0-9-]+", "-", normalized)
+    return re.sub(r"-+", "-", normalized).strip("-")[:128].rstrip("-")
 
 
 def _evidence(notice: CollectedNotice) -> Evidence:
