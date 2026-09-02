@@ -474,6 +474,30 @@ class MarketSignalTests(unittest.TestCase):
         self.assertEqual(result["analysis_status"], "blocked_missing_openai_configuration")
         self.assertEqual(result["input_count"], 1)
 
+    def test_saved_empty_collection_is_a_successful_coverage_gap(self) -> None:
+        payload = {
+            "notices": [],
+            "videos": [],
+            "coverage_gaps": [{"game_id": "mabinogi-mobile", "reason": "no recent evidence"}],
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "collection.json"
+            path.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+            old_key, old_model = os.environ.pop("OPENAI_API_KEY", None), os.environ.pop("OPENAI_MODEL", None)
+            try:
+                result = analyze_collection_file(path)
+            finally:
+                if old_key is not None:
+                    os.environ["OPENAI_API_KEY"] = old_key
+                if old_model is not None:
+                    os.environ["OPENAI_MODEL"] = old_model
+
+        self.assertEqual(result["analysis_status"], "completed_no_evidence")
+        self.assertEqual(result["input_count"], 0)
+        self.assertEqual(result["signal_count"], 0)
+        self.assertEqual(result["analysis_metrics"]["api_call_count"], 0)
+        self.assertEqual(result["coverage_gaps"], payload["coverage_gaps"])
+
 
 if __name__ == "__main__":
     unittest.main()

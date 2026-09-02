@@ -58,7 +58,7 @@ def main() -> int:
         destination = args.output_dir / "market_signal_signals.json"
         destination.write_text(dumps(result) + "\n", encoding="utf-8")
         print(f"signal analysis report written to {destination.resolve()}")
-        return 0 if result["analysis_status"] == "completed" else 2
+        return 0 if result["analysis_status"].startswith("completed") else 2
     if args.mode == "player-live-analyze":
         result = analyze_player_live_collection_file(
             args.player_live_collection_file,

@@ -39,12 +39,17 @@ def run_market_signal(
     report["analysis_status"] = "not_requested"
     if not analyze:
         return report
+    notices = _notices_from_items(report["notices"] + report["videos"])
+    if not notices:
+        report["analysis_status"] = "completed_no_evidence"
+        report["excluded_inputs"] = []
+        report["analysis_metrics"] = _empty_analysis_metrics()
+        return report
     api_key = os.environ.get("OPENAI_API_KEY", "")
     model = os.environ.get("OPENAI_MODEL", "")
     if not api_key or not model:
         report["analysis_status"] = "blocked_missing_openai_configuration"
         return report
-    notices = _notices_from_items(report["notices"] + report["videos"])
     outcome = analyze_notices_with_report(OpenAIResponsesClient(api_key, model), notices, state=state)
     report["signals"] = [asdict(item) for item in outcome.signals]
     report["excluded_inputs"] = list(outcome.excluded_inputs)
@@ -60,7 +65,16 @@ def analyze_collection_file(path: Path, state: StateStore | None = None) -> dict
         raise ValueError("collection file must contain a JSON object")
     items = raw.get("notices", []) + raw.get("videos", [])
     if not items:
-        raise ValueError("collection file contains no notices or videos")
+        return {
+            "analysis_status": "completed_no_evidence",
+            "input_file": str(path),
+            "input_count": 0,
+            "signal_count": 0,
+            "excluded_inputs": [],
+            "analysis_metrics": _empty_analysis_metrics(),
+            "coverage_gaps": raw.get("coverage_gaps", []),
+            "signals": [],
+        }
     api_key = os.environ.get("OPENAI_API_KEY", "")
     model = os.environ.get("OPENAI_MODEL", "")
     if not api_key or not model:
@@ -80,6 +94,21 @@ def analyze_collection_file(path: Path, state: StateStore | None = None) -> dict
         "excluded_inputs": list(outcome.excluded_inputs),
         "analysis_metrics": outcome.metrics,
         "signals": [asdict(item) for item in outcome.signals],
+    }
+
+
+def _empty_analysis_metrics() -> dict[str, Any]:
+    """Return a stable zero-work report when collection found no evidence."""
+    return {
+        "input_count": 0,
+        "game_count": 0,
+        "batch_count": 0,
+        "api_call_count": 0,
+        "validation_retry_count": 0,
+        "cache_hit_games": [],
+        "analyzed_games": [],
+        "max_parallel_requests": 0,
+        "elapsed_seconds": 0.0,
     }
 
 
