@@ -5,6 +5,8 @@ from __future__ import annotations
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import asdict
 from datetime import datetime
+from threading import Lock
+from time import monotonic, sleep
 from typing import Any
 
 from app.config import ProjectConfig
@@ -24,6 +26,24 @@ DC_BROWSER_HEADERS = {
         "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
     ),
 }
+
+
+class _PacedHttpClient:
+    """Serialize bursty community requests while preserving the injected client API."""
+
+    def __init__(self, client: Any, minimum_interval_seconds: float) -> None:
+        self.client = client
+        self.minimum_interval_seconds = minimum_interval_seconds
+        self._lock = Lock()
+        self._last_started = 0.0
+
+    def get(self, url: str, *, headers: Any = None) -> Any:
+        with self._lock:
+            wait_seconds = self.minimum_interval_seconds - (monotonic() - self._last_started)
+            if wait_seconds > 0:
+                sleep(wait_seconds)
+            self._last_started = monotonic()
+            return self.client.get(url, headers=headers)
 
 
 def _selected_candidates(candidates: tuple[PlayerPostCandidate, ...], limit: int) -> tuple[PlayerPostCandidate, ...]:
@@ -52,6 +72,39 @@ def _collect_detail(http: HttpClient, candidate: PlayerPostCandidate, referer: s
     raise ValueError("post detail body marker is missing after semantic retry")
 
 
+def _collect_listing_page(
+    http: Any,
+    *,
+    game_id: str,
+    source: dict[str, Any],
+    page: int,
+) -> tuple[tuple[PlayerPostCandidate, ...], int, int]:
+    page_url = listing_page_url(source["url"], page)
+    semantic_retries = 0
+    parsed: tuple[PlayerPostCandidate, ...] = ()
+    marker_count = 0
+    for semantic_attempt in range(2):
+        response = http.get(
+            page_url,
+            headers=DC_BROWSER_HEADERS | {"Referer": source["url"]},
+        )
+        if len(response.body) > 2_000_000:
+            raise ValueError("listing exceeds response size limit")
+        listing_html = response.text()
+        marker_count = listing_html.count("ub-content us-post")
+        parsed = parse_listing(
+            game_id,
+            source["source_id"],
+            source["url"],
+            listing_html,
+        )
+        if parsed or marker_count:
+            break
+        if semantic_attempt == 0:
+            semantic_retries += 1
+    return parsed, marker_count, semantic_retries
+
+
 def collect_dcinside_posts(
     config: ProjectConfig,
     state: StateStore,
@@ -65,7 +118,11 @@ def collect_dcinside_posts(
 ) -> dict[str, Any]:
     if max_listing_pages <= 0 or max_details_per_game <= 0 or detail_workers <= 0:
         raise ValueError("collection bounds must be positive")
-    http = client or HttpClient(timeout=20, retries=2, backoff=1)
+    base_http = client or HttpClient(timeout=20, retries=2, backoff=1)
+    http = _PacedHttpClient(
+        base_http,
+        0.8 if client is None else 0.0,
+    )
     observed_at = collected_at or now_kst()
     window_start, _ = recent_window(now=observed_at)
     source_entries = {
@@ -82,6 +139,26 @@ def collect_dcinside_posts(
     gaps: list[dict[str, str]] = []
     metrics: dict[str, dict[str, int | bool]] = {}
 
+    # Secure one current listing per game before any burst of detail reads can
+    # cause the public site to return an empty throttling shell.
+    prefetched_first_pages: dict[
+        str,
+        tuple[tuple[PlayerPostCandidate, ...], int, int] | Exception,
+    ] = {}
+    for game_id in game_ids:
+        sources = source_entries.get(game_id, ())
+        if not sources:
+            continue
+        try:
+            prefetched_first_pages[game_id] = _collect_listing_page(
+                http,
+                game_id=game_id,
+                source=sources[0],
+                page=1,
+            )
+        except (HttpClientError, KeyError, TypeError, ValueError, UnicodeError) as exc:
+            prefetched_first_pages[game_id] = exc
+
     for game_id in game_ids:
         sources = source_entries.get(game_id, ())
         if not sources:
@@ -96,20 +173,19 @@ def collect_dcinside_posts(
         window_truncated = False
         try:
             for page in range(1, max_listing_pages + 1):
-                page_url = listing_page_url(source["url"], page)
-                parsed: tuple[PlayerPostCandidate, ...] = ()
-                marker_count = 0
-                for semantic_attempt in range(2):
-                    response = http.get(page_url, headers=DC_BROWSER_HEADERS | {"Referer": source["url"]})
-                    if len(response.body) > 2_000_000:
-                        raise ValueError("listing exceeds response size limit")
-                    listing_html = response.text()
-                    marker_count = listing_html.count("ub-content us-post")
-                    parsed = parse_listing(game_id, source["source_id"], source["url"], listing_html)
-                    if parsed or marker_count:
-                        break
-                    if semantic_attempt == 0:
-                        semantic_retry_count += 1
+                if page == 1:
+                    first_page = prefetched_first_pages[game_id]
+                    if isinstance(first_page, Exception):
+                        raise first_page
+                    parsed, marker_count, page_retries = first_page
+                else:
+                    parsed, marker_count, page_retries = _collect_listing_page(
+                        http,
+                        game_id=game_id,
+                        source=source,
+                        page=page,
+                    )
+                semantic_retry_count += page_retries
                 listing_marker_count += marker_count
                 parsed_count += len(parsed)
                 pages_read += 1
@@ -148,6 +224,7 @@ def collect_dcinside_posts(
                     detail_results.append(future.result())
                 except (HttpClientError, TypeError, ValueError, UnicodeError) as exc:
                     gaps.append({"game_id": game_id, "source": source["source_id"], "reason": f"DCInside detail collection failed for {candidate.url}: {type(exc).__name__}"})
+                    detail_results.append((candidate, "", False))
 
         for candidate, body, _ in sorted(detail_results, key=lambda item: item[0].published_at, reverse=True):
             normalized = normalize_text(f"{candidate.title}\n{body}")

@@ -20,7 +20,7 @@ from player_live_watch.models import (
 )
 from player_live_watch.runner import analyze_player_live_collection_file
 from player_live_watch.youtube_adapter import parse_official_youtube_feed
-from shared.http_client import HttpResponse
+from shared.http_client import HttpClientError, HttpResponse
 from shared.state_store import StateStore
 from shared.time_utils import KST
 
@@ -148,6 +148,87 @@ class DCInsideAdapterTests(unittest.TestCase):
         self.assertEqual(report["posts"][0]["content_availability"], "FULL_TEXT")
         self.assertEqual(report["metrics"]["mabinogi-mobile"]["semantic_retry_count"], 2)
         self.assertNotIn("private-writer", str(report))
+
+    def test_collector_prefetches_each_game_before_detail_reads(self) -> None:
+        listing = (FIXTURES / "dcinside_listing.html").read_bytes()
+        detail = (FIXTURES / "dcinside_detail.html").read_bytes()
+
+        class OrderedClient:
+            def __init__(self) -> None:
+                self.urls: list[str] = []
+
+            def get(self, url: str, *, headers: object = None) -> HttpResponse:
+                self.urls.append(url)
+                if "/board/lists/" in url:
+                    body = (
+                        listing.replace(b"mabinogimobile", b"blackdesertmobile")
+                        if "blackdesertmobile" in url
+                        else listing
+                    )
+                    return HttpResponse(
+                        url,
+                        200,
+                        {"Content-Type": "text/html; charset=utf-8"},
+                        body,
+                    )
+                return HttpResponse(
+                    url,
+                    200,
+                    {"Content-Type": "text/html; charset=utf-8"},
+                    detail,
+                )
+
+        client = OrderedClient()
+        config = load_project_config(ROOT)
+        with tempfile.TemporaryDirectory() as directory:
+            report = collect_dcinside_posts(
+                config,
+                StateStore(Path(directory)),
+                ("mabinogi-mobile", "black-desert-mobile"),
+                client=client,  # type: ignore[arg-type]
+                max_listing_pages=1,
+                max_details_per_game=1,
+                detail_workers=1,
+                collected_at=datetime(2026, 9, 1, 8, 10, tzinfo=KST),
+            )
+
+        self.assertTrue(all("/board/lists/" in url for url in client.urls[:2]))
+        self.assertEqual({post["game_id"] for post in report["posts"]}, {
+            "mabinogi-mobile",
+            "black-desert-mobile",
+        })
+
+    def test_collector_preserves_title_when_detail_is_unavailable(self) -> None:
+        listing = (FIXTURES / "dcinside_listing.html").read_bytes()
+
+        class TitleOnlyClient:
+            def get(self, url: str, *, headers: object = None) -> HttpResponse:
+                if "/board/lists/" in url:
+                    return HttpResponse(
+                        url,
+                        200,
+                        {"Content-Type": "text/html; charset=utf-8"},
+                        listing,
+                    )
+                raise HttpClientError("detail unavailable")
+
+        config = load_project_config(ROOT)
+        with tempfile.TemporaryDirectory() as directory:
+            report = collect_dcinside_posts(
+                config,
+                StateStore(Path(directory)),
+                ("mabinogi-mobile",),
+                client=TitleOnlyClient(),  # type: ignore[arg-type]
+                max_listing_pages=1,
+                max_details_per_game=1,
+                detail_workers=1,
+                collected_at=datetime(2026, 9, 1, 8, 10, tzinfo=KST),
+            )
+
+        self.assertEqual(len(report["posts"]), 1)
+        self.assertEqual(report["posts"][0]["content_availability"], "TITLE_ONLY")
+        self.assertEqual(report["metrics"]["mabinogi-mobile"]["title_only_count"], 1)
+        self.assertIn("detail collection failed", report["coverage_gaps"][0]["reason"])
 
     def test_official_youtube_is_fact_not_player_reaction(self) -> None:
         xml = (FIXTURES / "youtube_feed.xml").read_text(encoding="utf-8")
