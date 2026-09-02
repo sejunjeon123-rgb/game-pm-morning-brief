@@ -32,7 +32,7 @@ from shared.state_store import StateStore
 from shared.time_utils import parse_iso_kst
 
 
-ANALYZER_VERSION = "player-live-insight-batch-v2"
+ANALYZER_VERSION = "player-live-insight-batch-v3"
 MAX_EVIDENCE_PER_BATCH = 12
 MAX_BATCH_CHARACTERS = 50_000
 MAX_EVIDENCE_CHARACTERS = 12_000
@@ -435,11 +435,26 @@ def _run_batches(
             _validate_batch_result(batch, result)
             return result, 0
         except ValueError as exc:
+            classifications = sorted(
+                {item.classification.value for item in batch.evidence}
+            )
+            boundary_correction = (
+                " No OFFICIAL_FACT evidence is present, so observed_facts must be an empty array."
+                if EvidenceClassification.OFFICIAL_FACT.value not in classifications
+                else " Preserve the supplied OFFICIAL_FACT evidence in observed_facts."
+            )
+            boundary_correction += (
+                " No PLAYER_CLAIM evidence is present, so player_claims must be an empty array and reaction must be UNCLEAR."
+                if EvidenceClassification.PLAYER_CLAIM.value not in classifications
+                else " Preserve the supplied PLAYER_CLAIM evidence in player_claims."
+            )
             correction = (
                 f"\n\nYour previous response failed deterministic validation: {exc}. "
                 "Return the complete corrected result for the same evidence. Preserve "
                 "the OFFICIAL_FACT versus PLAYER_CLAIM boundary, account for every "
-                "input_id exactly once, and keep explanatory prose in Korean. The only "
+                "input_id exactly once, and write every explanatory field, including "
+                "live_risk, in Korean. The supplied evidence classifications are "
+                f"{classifications}.{boundary_correction} The only "
                 "permitted source_signal_ids are: "
                 f"{sorted(str(item.get('signal_id', '')) for item in batch.source_signals if item.get('signal_id'))}. "
                 "When this list is empty, return source_signal_ids as an empty array."

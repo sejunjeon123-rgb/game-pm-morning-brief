@@ -51,12 +51,36 @@ def analyze_player_live_collection_file(
             "insights": [],
         }
     evidence = _evidence_from_items(raw_evidence)
-    outcome = analyze_player_evidence(
-        OpenAIResponsesClient(api_key, model),
-        evidence,
-        source_signals=source_signals,
-        state=state,
-    )
+    try:
+        outcome = analyze_player_evidence(
+            OpenAIResponsesClient(api_key, model),
+            evidence,
+            source_signals=source_signals,
+            state=state,
+        )
+    except ValueError:
+        analysis_gaps = [
+            {
+                "game_id": game_id,
+                "source": "PLAYER_LIVE_ANALYSIS",
+                "reason": "OpenAI output did not pass the bounded deterministic validation retries",
+            }
+            for game_id in sorted({item.game_id for item in evidence})
+        ]
+        return {
+            "analysis_status": "completed_with_analysis_gap",
+            "input_file": str(path),
+            "input_count": len(evidence),
+            "insight_count": 0,
+            "excluded_inputs": [],
+            "analysis_metrics": {
+                "input_count": len(evidence),
+                "game_count": len(analysis_gaps),
+                "analysis_failure_count": len(analysis_gaps),
+            },
+            "coverage_gaps": list(raw.get("coverage_gaps", [])) + analysis_gaps,
+            "insights": [],
+        }
     return {
         "analysis_status": "completed",
         "input_file": str(path),

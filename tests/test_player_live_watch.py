@@ -4,6 +4,7 @@ import json
 import os
 import tempfile
 import unittest
+from unittest.mock import patch
 from datetime import datetime
 from pathlib import Path
 
@@ -469,6 +470,56 @@ class PlayerLiveAnalyzerTests(unittest.TestCase):
                     os.environ["OPENAI_MODEL"] = old_model
         self.assertEqual(result["analysis_status"], "blocked_missing_openai_configuration")
         self.assertEqual(result["input_count"], 1)
+
+    def test_saved_collection_records_analysis_gap_after_bounded_validation_failure(self) -> None:
+        item = self.claim
+        payload = {
+            "evidence": [{
+                "evidence_id": item.evidence_id,
+                "game_id": item.game_id,
+                "source_id": item.source_id,
+                "platform": item.platform,
+                "source_type": item.source_type,
+                "evidence_role": item.evidence_role,
+                "classification": item.classification.value,
+                "url": item.url,
+                "source_host": item.source_host,
+                "title": item.title,
+                "published_at": item.published_at.isoformat(),
+                "collected_at": item.collected_at.isoformat(),
+                "normalized_text": item.normalized_text,
+                "content_hash": item.content_hash,
+                "content_availability": item.content_availability,
+            }],
+            "coverage_gaps": [],
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "player_live_collection.json"
+            path.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+            old_key = os.environ.get("OPENAI_API_KEY")
+            old_model = os.environ.get("OPENAI_MODEL")
+            os.environ["OPENAI_API_KEY"] = "test-key"
+            os.environ["OPENAI_MODEL"] = "test-model"
+            try:
+                with patch(
+                    "player_live_watch.runner.analyze_player_evidence",
+                    side_effect=ValueError("invalid model output"),
+                ):
+                    result = analyze_player_live_collection_file(path)
+            finally:
+                if old_key is None:
+                    os.environ.pop("OPENAI_API_KEY", None)
+                else:
+                    os.environ["OPENAI_API_KEY"] = old_key
+                if old_model is None:
+                    os.environ.pop("OPENAI_MODEL", None)
+                else:
+                    os.environ["OPENAI_MODEL"] = old_model
+
+        self.assertEqual(result["analysis_status"], "completed_with_analysis_gap")
+        self.assertEqual(result["insight_count"], 0)
+        self.assertEqual(result["coverage_gaps"][0]["source"], "PLAYER_LIVE_ANALYSIS")
+        self.assertNotIn("invalid model output", str(result))
 
 
 if __name__ == "__main__":
