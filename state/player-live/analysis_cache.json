@@ -1,227 +1,16 @@
 {
-  "version": "player-live-insight-batch-v3",
+  "version": "player-live-insight-batch-v4",
   "games": {
     "mabinogi-mobile": {
-      "fingerprint": "34503f77677f8889299988f2b5968da0babcf4cead5cd76d10e5e77db4c079ff",
+      "fingerprint": "023954bacbe0ff3690f4584975f4d1c2a4ab4364084a4b22b9ccfb719d95d935",
       "insights": [
         {
-          "insight_id": "pli-e8f239dbaaa046ca",
-          "issue_key": "build-and-onboarding-questions",
+          "insight_id": "pli-536bca5152df69bc",
+          "issue_key": "automation-complaints-in-abyss",
           "game_id": "mabinogi-mobile",
-          "title": "초심자·빌드 관련 질문 및 가이드 부족",
-          "summary": "여러 게시글에서 신규·복귀 유저와 기존 유저들이 스킬 특화, 장비 배치, 2줄(사제) 구성 등 기본 빌드 문의와 '신규 모험가 패키지' 구매 여부를 묻고 있으며, 실험적 빌드(풀오토 기사) 공유도 존재함. 이는 온보딩·빌드 정보 접근성에 대한 필요를 시사함.",
-          "topic": "GAMEPLAY",
-          "reaction": "UNCLEAR",
-          "intensity": "LOW",
-          "trend": "UNKNOWN",
-          "confidence": "MEDIUM",
-          "observed_at": "2026-09-02T11:21:10+09:00",
-          "evidence": [
-            {
-              "evidence_id": "ple-2ececff6743b97ec6499",
-              "source_type": "PUBLIC_COMMUNITY",
-              "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2171368",
-              "title": "빙결술사 용사냥꾼 넣을 자리 알려줘~ 고수 빙결 모집",
-              "published_at": "2026-09-02T11:21:10+09:00",
-              "collected_at": "2026-09-02T15:43:21.083544+09:00",
-              "content_hash": "f99c2b97c543afc1583dcdff32c40ae3e8e6bf794b6461e1a389c1d38f90d777",
-              "modified_at": null,
-              "previous_content_hash": null
-            },
-            {
-              "evidence_id": "ple-e0e6c85a6efe306c5c78",
-              "source_type": "PUBLIC_COMMUNITY",
-              "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2171367",
-              "title": "뉴비 궁수 스킬특화 궁금한게 있습니다.",
-              "published_at": "2026-09-02T08:17:07+09:00",
-              "collected_at": "2026-09-02T15:43:21.083544+09:00",
-              "content_hash": "e4dac09c0dd8299e28ab6a17c10192f545e1a6ae9d2644d82e52dd07ee76e3fa",
-              "modified_at": null,
-              "previous_content_hash": null
-            },
-            {
-              "evidence_id": "ple-6ca56e3a99722029536f",
-              "source_type": "PUBLIC_COMMUNITY",
-              "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2171361",
-              "title": "님들 처음하는데 질문이욤",
-              "published_at": "2026-09-01T19:03:57+09:00",
-              "collected_at": "2026-09-02T15:43:21.083544+09:00",
-              "content_hash": "508605c08da5cc9d56114aa92c10e73fe1612a02dce52d24d17abdaca1721bfb",
-              "modified_at": null,
-              "previous_content_hash": "508605c08da5cc9d56114aa92c10e73fe1612a02dce52d24d17abdaca1721bfb"
-            },
-            {
-              "evidence_id": "ple-5e8db809878c8a5dd6eb",
-              "source_type": "PUBLIC_COMMUNITY",
-              "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2171360",
-              "title": "사제 2줄 알려주세영",
-              "published_at": "2026-09-01T16:19:25+09:00",
-              "collected_at": "2026-09-02T15:43:21.083544+09:00",
-              "content_hash": "81075967de3f3b498f6221060738dfb1697d719669045eb99a4f63fd037641cc",
-              "modified_at": null,
-              "previous_content_hash": "81075967de3f3b498f6221060738dfb1697d719669045eb99a4f63fd037641cc"
-            },
-            {
-              "evidence_id": "ple-bc156ff33e9cd1a6ac72",
-              "source_type": "PUBLIC_COMMUNITY",
-              "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2171358",
-              "title": "재미로 돌려본 마구 후리기 기사",
-              "published_at": "2026-08-31T21:16:56+09:00",
-              "collected_at": "2026-09-02T15:43:21.083544+09:00",
-              "content_hash": "d45d0e11d1c72f14d27b857a3e92ab515d3dcd4154558c258fcb60b1052c7503",
-              "modified_at": null,
-              "previous_content_hash": "d45d0e11d1c72f14d27b857a3e92ab515d3dcd4154558c258fcb60b1052c7503"
-            }
-          ],
-          "source_signal_ids": [],
-          "observed_facts": [],
-          "player_claims": [
-            "\"빙결술사 용사냥꾼 넣을 자리 알려줘~ 고수 빙결 모집\" — 장비(무기·엠블럼·장신구) 교체 관련 조언 요청",
-            "\"뉴비 궁수 스킬특화 궁금한게 있습니다.\" — 스킬 특화/스킬 배치 관련 초보 질문",
-            "\"사제 2줄 알려주세영\" — 특정 직업의 추천 빌드(2줄) 요청",
-            "\"신규 모험가 환영 패키지? 3300원 하는거 같은데 이거 하나 정도는 살만한가요?\" — 초심자 패키지 구매 여부 문의",
-            "\"재미로 돌려본 마구 후리기 기사\" — 실험적 풀오토·빌드 공유 (재미 목적)"
-          ],
-          "analysis": [
-            "여러 게시글이 '무엇을 어떻게 맞춰야 하는지'에 대한 직접적 질문을 포함하고 있어, 인게임·공식 가이드 또는 초심자 안내가 유저 기대를 충분히 충족시키지 못할 가능성이 있음.",
-            "신규 패키지 구매 문의는 상점 문구·패키지 구성의 명확성(신규 전용 여부·장기적 가치)에 따라 구매전환에 영향을 받을 수 있음.",
-            "실험적 빌드 공유는 커뮤니티 참여 신호이나, 혼란을 줄 수 있어 공식 추천 빌드·예시가 있으면 초심자 유입에 긍정적일 수 있음."
-          ],
-          "unknowns": [
-            "이 질문이 커뮤니티의 일부 사용자에 국한된지 아니면 온보딩 전반에서 빈번하게 발생하는지",
-            "게임 내(또는 공식) 빌드 가이드 존재 여부 및 접근성(인게임 링크, 튜토리얼 등)",
-            "신규 패키지 설명과 실제 가치(초심자 전환에 미치는 영향)",
-            "이들 질문이 실제로 신규유저 이탈로 이어지는지"
-          ],
-          "pm_metric_context": {
-            "terms": [
-              "Retention",
-              "NRU",
-              "CAC"
-            ],
-            "rationale": "초심자 안내·상점 메시지는 NRU 전환 및 Retention/ARPPU에 직결됩니다. 신규 패키지 유무와 설명이 구매 전환(CAC 대비 ROI)에 미치는 영향을 확인해야 함.",
-            "verification_needed": true
-          },
-          "live_risk": "온보딩 혼란으로 인한 신규 전환·유지 저하 위험",
-          "recommended_checks": [
-            "신규 사용자 퍼널(가입→튜토리얼 완료→7일 Retention)과 신규 패키지 구매 전환률 분석",
-            "인게임 튜토리얼·스킬·장비 설명 텍스트 및 접근성(초심자 전용 가이드 링크 등) 감사",
-            "상점에 표시된 '신규 패키지' 문구·구성 검토(가치 제시 명확성)",
-            "커뮤니티에서 반복되는 빌드 질문을 모아 FAQ/인게임 추천 빌드로 반영 가능성 검토"
-          ],
-          "routing": {
-            "target": "NONE",
-            "deep_dive_required": false,
-            "reason": "온보딩 혼란으로 인한 신규 전환·유지 저하 위험",
-            "final_router": "pm-decision-lead"
-          },
-          "analysis_scope": "CORE"
-        },
-        {
-          "insight_id": "pli-2ae3b5b29c70b35c",
-          "issue_key": "guilds-and-community-activity",
-          "game_id": "mabinogi-mobile",
-          "title": "길드 모집·커뮤니티 활동 게시글 다수 — 활성화 신호",
-          "summary": "길드원 모집 게시글(여러 글)과 복귀·도전글(우정주머니 수집) 등 커뮤니티 활동 게시물이 다수 관찰됨. 이는 서버 내 길드 활동과 커뮤니티 기반의 참여가 활발함을 시사함.",
-          "topic": "COMMUNICATION",
-          "reaction": "POSITIVE",
-          "intensity": "MEDIUM",
-          "trend": "UNKNOWN",
-          "confidence": "MEDIUM",
-          "observed_at": "2026-09-02T12:18:19+09:00",
-          "evidence": [
-            {
-              "evidence_id": "ple-82e08ef8fc6020a01fc1",
-              "source_type": "PUBLIC_COMMUNITY",
-              "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2171369",
-              "title": "우정주머니 1000개 모으기 도전 중",
-              "published_at": "2026-09-02T12:18:19+09:00",
-              "collected_at": "2026-09-02T15:43:21.083544+09:00",
-              "content_hash": "090c60844713f97631eb3520d62ba53b8e310398a7c52bf96becb64c74487ba0",
-              "modified_at": null,
-              "previous_content_hash": null
-            },
-            {
-              "evidence_id": "ple-864a0f7ef1a6c61626cd",
-              "source_type": "PUBLIC_COMMUNITY",
-              "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2171364",
-              "title": "[던컨] <맘삣삐> 길원 모집 중이야",
-              "published_at": "2026-09-01T21:14:32+09:00",
-              "collected_at": "2026-09-02T15:43:21.083544+09:00",
-              "content_hash": "80d3e15c724c30f56b6e1c3dc7dccef049778eb0cf768a65de332a93a6c070ed",
-              "modified_at": null,
-              "previous_content_hash": "80d3e15c724c30f56b6e1c3dc7dccef049778eb0cf768a65de332a93a6c070ed"
-            },
-            {
-              "evidence_id": "ple-de5498e137cd790d9211",
-              "source_type": "PUBLIC_COMMUNITY",
-              "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2171362",
-              "title": "던컨) 말하기전에생각했나요 모붕이 두명 자리있어요 (34/36)",
-              "published_at": "2026-09-01T19:40:50+09:00",
-              "collected_at": "2026-09-02T15:43:21.083544+09:00",
-              "content_hash": "5ad3ae2ead38e8d0817846ce438bcefafbfdcef41e58d5e7a97e80e4df66f73f",
-              "modified_at": null,
-              "previous_content_hash": "5ad3ae2ead38e8d0817846ce438bcefafbfdcef41e58d5e7a97e80e4df66f73f"
-            },
-            {
-              "evidence_id": "ple-47f51b570af048521a14",
-              "source_type": "PUBLIC_COMMUNITY",
-              "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2171359",
-              "title": "로오마 ㅅㅅ",
-              "published_at": "2026-09-01T02:31:25+09:00",
-              "collected_at": "2026-09-02T15:43:21.083544+09:00",
-              "content_hash": "917aaa5639ebb300488d2c3fc18744b7366c5a4fdc147728bd82c7e57489617a",
-              "modified_at": null,
-              "previous_content_hash": "917aaa5639ebb300488d2c3fc18744b7366c5a4fdc147728bd82c7e57489617a"
-            }
-          ],
-          "source_signal_ids": [],
-          "observed_facts": [],
-          "player_claims": [
-            "길드 모집 게시글: 길드 소개, 규칙, 레이드 시간(예: 월요일 21시), 뉴비 환영 등 길드 홍보 내용 다수 게시",
-            "\"우정주머니 1000개 모으기 도전 중\" — 복귀 후 이벤트/수집 도전 글",
-            "\"로오마 ㅅㅅ\" 등 짧은 커뮤니케이션·흥분 표현 게시물 존재"
-          ],
-          "analysis": [
-            "여러 길드 모집글은 자발적 커뮤니티 유지·확장 활동을 보여주며, 길드 기반 콘텐츠(길드 레이드·협력)가 활성화되어 있음을 시사함.",
-            "복귀 유저의 도전글(수집)은 복귀 유저 유입과 재참여가 이루어지고 있음을 암시할 수 있음.",
-            "커뮤니티 게시글이 많다는 점은 소셜 기능(길드, 채팅)이 DAU 유지에 긍정적 역할을 할 가능성이 있음."
-          ],
-          "unknowns": [
-            "길드 가입 후 실제 활동 지속성(가입 후 잔존율)",
-            "길드 간·길드 내 갈등이나 텃세 등으로 인한 이탈 문제 존재 여부",
-            "현재 길드 활동이 전체 DAU 대비 어느 정도 비중인지"
-          ],
-          "pm_metric_context": {
-            "terms": [
-              "DAU",
-              "Retention"
-            ],
-            "rationale": "길드·커뮤니티 활동은 DAU와 Retention에 직접적 영향을 줌. 길드 가입·활성 지표와 CU/MCU 변화를 확인해 커뮤니티 기능의 효과를 판단해야 함.",
-            "verification_needed": true
-          },
-          "live_risk": "길드·커뮤니티 활성도 저하 시 장기적 유지력 약화",
-          "recommended_checks": [
-            "길드 가입률·길드 내부 활동(길드 레이드 참가율, 길드 채팅 활성) 지표 확인",
-            "복귀 유저(reactivated users)의 Retention 비교 분석",
-            "길드 관련 UX(가입 프로세스·길드 찾기) 및 길드 운영 가이드 제공 가능성 검토",
-            "길드 내 분쟁·규정 위반 신고 로그 및 모니터링 체계 점검"
-          ],
-          "routing": {
-            "target": "NONE",
-            "deep_dive_required": false,
-            "reason": "길드·커뮤니티 활성도 저하 시 장기적 유지력 약화",
-            "final_router": "pm-decision-lead"
-          },
-          "analysis_scope": "CORE"
-        },
-        {
-          "insight_id": "pli-1a865a1147280057",
-          "issue_key": "automation-and-autoplay-mentions",
-          "game_id": "mabinogi-mobile",
-          "title": "어비스 등에서 오토(자동플레이)·비매너 플레이 언급",
-          "summary": "어비스(시즌형 컨텐츠)에서 '오토 만났다고 징징대는' 사례가 있다는 게시글이 올라옴. 일부 유저는 혼자 플레이하면 문제 없다고 의견 표명함. 자동 플레이(오토) 사용자와 관련한 불만/논쟁이 존재함.",
-          "topic": "GAMEPLAY",
+          "title": "어비스에서 자동화(오토) 관련 불만 제기",
+          "summary": "어비스(시즌2) 플레이 중 자동화 이용(오토) 문제로 불만이 제기되는 게시물이 관찰됨. 일부는 혼자 플레이하면 문제 없다고 주장하는 등 논쟁적 반응도 존재.",
+          "topic": "OTHER",
           "reaction": "NEGATIVE",
           "intensity": "MEDIUM",
           "trend": "UNKNOWN",
@@ -234,7 +23,7 @@
               "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2171363",
               "title": "어비스 우만 해놓고 오토 만났다고 징징댈 이유 있음?",
               "published_at": "2026-09-01T20:55:18+09:00",
-              "collected_at": "2026-09-02T15:43:21.083544+09:00",
+              "collected_at": "2026-09-02T16:00:10.470431+09:00",
               "content_hash": "f5c367fc6bcc947be9f1130a3718b1ad4f4d6daed1d8b4edeb1194dbdd73d801",
               "modified_at": null,
               "previous_content_hash": "f5c367fc6bcc947be9f1130a3718b1ad4f4d6daed1d8b4edeb1194dbdd73d801"
@@ -243,456 +32,49 @@
           "source_signal_ids": [],
           "observed_facts": [],
           "player_claims": [
-            "\"어비스 우만 해놓고 오토 만났다고 징징댈 이유 있음?\" — 어비스에서 자동플레이 만남에 대한 불만·논쟁 제기",
-            "\"혼자하기만 하면 되잖아 시즌1도 아니고... 오토만났다고 징징대는 애들 개많네\" — 자동플레이에 대한 상반된 의견 존재"
+            "어비스에서 오토를 만났다고 불평하는 글이 많다고 주장하며 시즌2에서도 자동화 관련 불만이 이어진다고 표현함."
           ],
           "analysis": [
-            "게시글은 자동 플레이(오토)를 만난 경험을 둘러싼 불만과 논쟁을 보여줌. 자동화 여부가 게임 경험(특히 파티형·시즌 컨텐츠)에서 마찰을 유발할 가능성이 있음.",
-            "운영·매치메이킹 관점에서 자동화 사용량이 높다면 파티 품질 저하·유저 불만으로 이어질 수 있음.",
-            "반면 일부 유저는 솔로 플레이로 회피 가능하다고 언급해 영향을 받는 유저 집단이 제한적일 수 있음."
+            "자동화에 대한 불만은 게임 플레이 경험(매칭·보상 분배 등)에 직접적 영향을 줄 수 있어 모니터링이 필요함.",
+            "게시물은 자동화 자체의 확산을 직접 증명하지는 않지만 커뮤니티 내 불편감·논쟁 존재를 시사함.",
+            "운영의 단속·탐지·제재 현황과 커뮤니케이션이 명확하지 않으면 불만이 확대될 수 있음."
           ],
           "unknowns": [
-            "오토(자동화) 사용 비율, 자동화가 서버/컨텐츠에 미치는 빈도와 규모",
-            "오토 사용이 TOS 위반인지, 탐지·제재가 이루어지고 있는지",
-            "어비스 매치메이킹 구조상 자동화가 얼마나 빈번히 노출되는지",
-            "자동화로 인해 실제 이탈(Churn)이 발생하고 있는지"
-          ],
-          "pm_metric_context": {
-            "terms": [
-              "CU",
-              "Retention"
-            ],
-            "rationale": "자동화는 동시접속(CU) 환경과 매칭 품질에 영향을 줄 수 있으며, 매칭 관련 불만은 Retention 저하로 이어질 수 있음. 자동화 탐지 로그와 매칭 통계를 확인해야 함.",
-            "verification_needed": true
-          },
-          "live_risk": "매치 품질 저하로 인한 불만·이탈 확산 위험",
-          "recommended_checks": [
-            "게임 서버 로그에서 비정상적 플레이 패턴(길이·반복 행동·입출력 속도 등) 탐지",
-            "어비스 파티 매칭 로그·매칭 실패·재매칭 빈도 분석",
-            "자동화 관련 신고 건수 및 제재 이력 확인",
-            "필요 시 탐지 규칙 강화·임시 제재·공지로 정책 명확화 및 커뮤니케이션"
-          ],
-          "routing": {
-            "target": "NONE",
-            "deep_dive_required": false,
-            "reason": "매치 품질 저하로 인한 불만·이탈 확산 위험",
-            "final_router": "pm-decision-lead"
-          },
-          "analysis_scope": "CORE"
-        },
-        {
-          "insight_id": "pli-8330ff5816284f78",
-          "issue_key": "content-difficulty-and-balance-feedback",
-          "game_id": "mabinogi-mobile",
-          "title": "심매(심연) 난이도 하향에 대한 불만",
-          "summary": "게시글에서 '심매(심연?)이 너무 쉬워진 것이 아쉽다'는 불만 제기. 예전의 가끔 죽는 난이도가 재미 요소였다는 의견.",
-          "topic": "BALANCE",
-          "reaction": "NEGATIVE",
-          "intensity": "LOW",
-          "trend": "UNKNOWN",
-          "confidence": "MEDIUM",
-          "observed_at": "2026-08-31T11:55:28+09:00",
-          "evidence": [
-            {
-              "evidence_id": "ple-7168beddad7b3e366ea1",
-              "source_type": "PUBLIC_COMMUNITY",
-              "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2171353",
-              "title": "심매 너무 쉬워진게 아쉽다",
-              "published_at": "2026-08-31T11:55:28+09:00",
-              "collected_at": "2026-09-02T15:43:21.083544+09:00",
-              "content_hash": "4b64589ea0828e2dbd58b20e1e2e259995e98e6e45ccd752c500190808044d18",
-              "modified_at": null,
-              "previous_content_hash": "4b64589ea0828e2dbd58b20e1e2e259995e98e6e45ccd752c500190808044d18"
-            }
-          ],
-          "source_signal_ids": [],
-          "observed_facts": [],
-          "player_claims": [
-            "\"심매 너무 쉬워진게 아쉽다 가끔씩 죽는 정도의 난이도가 재미있었는데\" — 난이도 하향에 대한 개인적 불만 제기"
-          ],
-          "analysis": [
-            "한두 건의 불만 제기지만, 난이도 완화가 고난이도 플레이를 즐기던 유저의 만족도를 낮출 수 있음.",
-            "난이도 변화는 특정 유저 세그먼트의 플레이타임·재방문(Retention)에 영향을 줄 수 있으므로 패치 전후 지표 분석 필요.",
-            "난이도 자체를 낮춘 의도(접근성 향상, 신규 유저 부담 완화 등)가 있었을 가능성이 있음."
-          ],
-          "unknowns": [
-            "난이도 조정이 언제·어떤 패치로 이루어졌는지(패치노트 근거)",
-            "동일한 불만이 커뮤니티 전반에 확산되어 있는지",
-            "난이도 변경의 목표(접근성 개선 vs 밸런스 조정)가 무엇이었는지",
-            "난이도 변화가 Retention·플레이타임에 미친 영향"
+            "실제 자동화 사용 비율과 특정 컨텐츠(어비스)에서의 영향 범위.",
+            "최근 자동화 단속·제재 로그와 조치 결과, 커뮤니티 공지 이력."
           ],
           "pm_metric_context": {
             "terms": [
               "Retention"
             ],
-            "rationale": "난이도 조정은 평균 플레이타임(TS)과 특정 코호트의 Retention에 직접 영향. 패치 전후 지표 비교 필요.",
+            "rationale": "자동화로 인한 플레이 경험 악화가 Retention에 미치는 영향을 확인하고, 탐지·제재의 실효성을 점검해 달라.",
             "verification_needed": true
           },
-          "live_risk": "상위·고난이도 유저의 이탈 가속화 가능성",
+          "live_risk": "자동화 확산 또는 단속 불명확성은 중장기적 사용자 불만·이탈로 연결될 위험(중간).",
           "recommended_checks": [
-            "최근 패치노트·밸런스 로그 확인(심매 관련 변경 내용 파악)",
-            "심매(심연) 클리어율·평균 사망률·클리어 시간의 패치 전후 비교",
-            "상위 유저(고난이도 선호) 코호트의 Retention·TS 변화 분석",
-            "필요 시 난이도 선택지(모드) 제공 또는 보상 재검토 검토"
+            "어비스 관련 플레이 로그에서 비정상 반복 행동 탐지 지표 점검(자동화 특이 패턴).",
+            "최근 단속·제재 건수 및 처리 결과, 커뮤니티 공지 이력 확인.",
+            "어비스 매칭·보상 구조가 자동화에 취약한지 기술·설계적 검토."
           ],
           "routing": {
             "target": "NONE",
             "deep_dive_required": false,
-            "reason": "상위·고난이도 유저의 이탈 가속화 가능성",
+            "reason": "자동화 확산 또는 단속 불명확성은 중장기적 사용자 불만·이탈로 연결될 위험(중간).",
             "final_router": "pm-decision-lead"
           },
           "analysis_scope": "CORE"
         },
         {
-          "insight_id": "pli-82883dd3f702fa7c",
-          "issue_key": "chat-channel-moderation-and-drama",
+          "insight_id": "pli-34ca4b6b118dd2cc",
+          "issue_key": "market-volatility-item-pricing",
           "game_id": "mabinogi-mobile",
-          "title": "월챗 등 채팅 채널에서의 분쟁·소란 보고",
-          "summary": "게시글에서 '월쳇 왜 불타는겁니까 아줌마는 뭐고 모래킬은 뭐야... 잠수이별도..'라며 채팅 채널(월챗)에서 소란·분쟁이 발생함을 호소함. 채팅으로 인한 스트레스 표현이 존재함.",
-          "topic": "COMMUNICATION",
-          "reaction": "NEGATIVE",
-          "intensity": "MEDIUM",
-          "trend": "UNKNOWN",
-          "confidence": "MEDIUM",
-          "observed_at": "2026-08-31T13:23:10+09:00",
-          "evidence": [
-            {
-              "evidence_id": "ple-ef4f9903619d832fe30b",
-              "source_type": "PUBLIC_COMMUNITY",
-              "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2171354",
-              "title": "월쳇 왜 불타는겁니까",
-              "published_at": "2026-08-31T13:23:10+09:00",
-              "collected_at": "2026-09-02T15:43:21.083544+09:00",
-              "content_hash": "e4aca09dea2d09e7a1e2e21d806c00c8fdc41eb3a038d2763deec5543617507c",
-              "modified_at": null,
-              "previous_content_hash": "e4aca09dea2d09e7a1e2e21d806c00c8fdc41eb3a038d2763deec5543617507c"
-            }
-          ],
-          "source_signal_ids": [],
-          "observed_facts": [],
-          "player_claims": [
-            "\"월쳇 왜 불타는겁니까 아줌마는 뭐고 모래킬은 뭐야... 잠수이별도.. 도와줘요 스피드웨건!!\" — 채팅 채널에서 분쟁·논쟁으로 보이는 상황에 대한 불쾌감 표출"
-          ],
-          "analysis": [
-            "해당 게시글은 특정 공용 채널에서 비방·분란·논쟁이 발생하고 있으며 일부 유저에게 스트레스를 주는 상황임을 시사함.",
-            "공용 채널 분쟁은 신규·복귀 유저의 경험을 저해하고 커뮤니티 이미지를 손상시킬 수 있음.",
-            "운영 측의 모니터링·신고·제재 체계가 있더라도 실시간 분쟁은 확산 속도가 빠르므로 대응 우선순위가 필요함."
-          ],
-          "unknowns": [
-            "해당 분쟁의 원인(특정 사건·유저·정책 반발 여부)",
-            "분쟁 확산 범위(채널 단위인지 서버 전체인지)",
-            "현재 신고 처리 속도·제재 이력 및 커뮤니티 가이드라인의 충분성"
-          ],
-          "pm_metric_context": {
-            "terms": [
-              "Retention",
-              "CRC"
-            ],
-            "rationale": "채팅 내 분쟁은 Retention에 부정적이며, 모니터링·운영 리소스(CRC) 배분의 필요성을 시사함. 신고·제재 로그와 리소스 소요를 확인해야 함.",
-            "verification_needed": true
-          },
-          "live_risk": "공용 채널에서의 분쟁 확산으로 인한 사용자 경험 저하·이탈 위험",
-          "recommended_checks": [
-            "해당 채팅 로그·신고 이력 조사(시기·원인·주체 파악)",
-            "신고 처리 속도와 제재 정책 검토(자동 필터·임시 차단 등)",
-            "커뮤니티 가이드·신고 UI 노출 개선 검토",
-            "긴급한 경우 운영 공지·임시 제재로 불법·비매너 행위 제어"
-          ],
-          "routing": {
-            "target": "NONE",
-            "deep_dive_required": false,
-            "reason": "공용 채널에서의 분쟁 확산으로 인한 사용자 경험 저하·이탈 위험",
-            "final_router": "pm-decision-lead"
-          },
-          "analysis_scope": "CORE"
-        },
-        {
-          "insight_id": "pli-f7117a05f6716160",
-          "issue_key": "small-spender-conversion",
-          "game_id": "mabinogi-mobile",
-          "title": "소과금(월정액·패스) 유입 및 유지 가능성 문의",
-          "summary": "커뮤니티에서 월정액이나 패스 수준의 소과금 유입자가 현재 콘텐츠를 따라오거나 충분히 즐길 수 있는지에 대한 문의·논의가 관찰됨. 주로 메인 콘텐츠 진척 가능성과 소과금자 접근성에 대한 불확실성 제기.",
+          "title": "거래소/아이템 시세 변동성 및 매집 우려(해연 반지·데카 세공기 등)",
+          "summary": "플레이어가 특정 시즌 전후로 일부 아이템(해연 반지, 데카 세공기 등)의 가격 급등을 예측하며 지금 매수하라는 거래·시세 조언을 공유. 과금러·대량 매집에 따른 시세 급변 우려 제기.",
           "topic": "BM",
-          "reaction": "UNCLEAR",
+          "reaction": "NEGATIVE",
           "intensity": "MEDIUM",
           "trend": "UNKNOWN",
-          "confidence": "LOW",
-          "observed_at": "2026-08-31T11:49:15+09:00",
-          "evidence": [
-            {
-              "evidence_id": "ple-74cac6e17e756d3c63f1",
-              "source_type": "PUBLIC_COMMUNITY",
-              "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2171352",
-              "title": "현실적으로 소과금 유입 어디까지 가능함?",
-              "published_at": "2026-08-31T11:49:15+09:00",
-              "collected_at": "2026-09-02T15:43:21.083544+09:00",
-              "content_hash": "a25c700463e39d6a7c175f86c23083e62283c977637001089232ef21fb6f8bdd",
-              "modified_at": null,
-              "previous_content_hash": null
-            }
-          ],
-          "source_signal_ids": [],
-          "observed_facts": [],
-          "player_claims": [
-            "현실적으로 소과금 유입 어디까지 가능함? 월정액이나 패스 정도만 과금한다 치면 지금 유입한 뉴비가 어디까지 따라가고 어느정도 즐기기 가능? 악기연주같은 소셜기능 제외 실제 주력으로 돌아가는 컨텐츠에 한해서 ㅇㅇ"
-          ],
-          "analysis": [
-            "게시글은 신규/복귀 유저가 월정액·패스 수준의 소과금으로 주요 콘텐츠를 소화할 수 있는지 불확실하다고 호소함. 이는 소과금층 유입과 초기 유지에 관한 우려를 반영.",
-            "유저 질문은 과금 장벽(전투력·장비·강화 등)과 콘텐츠 난이도/파워 커브가 소과금 유저에게 얼마나 관대(또는 가혹)한지에 대한 실무 검토가 필요함을 시사.",
-            "운영·상품 기획 측면에서는 패스·월정액이 신규 유입의 진입 장벽을 낮추는지, 그리고 해당 상품이 Retention/ARPPU에 어떻게 기여하는지 점검할 필요가 있음."
-          ],
-          "unknowns": [
-            "월정액·패스 상품이 제공하는 정확한 파워/아이템 차이(예: 장비·강화·재화 지급량)가 신규 유저의 콘텐츠 진입성을 얼마나 개선하는가?",
-            "소과금 유입자(NRU→Retention 코호트)가 실제로 핵심 콘텐츠(레이드·시즌 보스 등)를 어느 수준까지 소화하는지에 대한 데이터",
-            "현재 패스/월정액 가입자 비율과 이들의 PU/ARPPU/Retention 특성"
-          ],
-          "pm_metric_context": {
-            "terms": [
-              "DAU"
-            ],
-            "rationale": "소과금 유입·유지에 관한 플레이어 불안이 관찰됨. DAU·PU·ARPPU·레텐션 코호트별 분석을 통해 패스/월정액의 경제적·플레이어 여정 영향을 확인하고, 필요 시 상품 구성·진입 난이도 완화가 필요함.",
-            "verification_needed": true
-          },
-          "live_risk": "중간(MEDIUM): 소과금 유입·유지가 부진하면 신규 유입 대비 빠른 이탈이 발생해 장기 매출 성장과 커뮤니티 활력이 저하될 위험이 있음.",
-          "recommended_checks": [
-            "패스/월정액 가입자 코호트의 Retention(1/7/30일) 및 PU·ARPPU 비교 분석",
-            "패스 제공 보상(파워 기여도)와 주요 콘텐츠 요구 파워 비교(신규 계정 기준 시뮬레이션)",
-            "신규/복귀 유저 대상 콘텐츠 소화 난이도(튜토리얼→컨텐츠 파워 커브) 점검",
-            "상품 페이지·인게임 안내가 신규 유저 기대를 과대/과소포장하고 있지 않은지 검토"
-          ],
-          "routing": {
-            "target": "NONE",
-            "deep_dive_required": false,
-            "reason": "중간(MEDIUM): 소과금 유입·유지가 부진하면 신규 유입 대비 빠른 이탈이 발생해 장기 매출 성장과 커뮤니티 활력이 저하될 위험이 있음.",
-            "final_router": "pm-decision-lead"
-          },
-          "analysis_scope": "CORE"
-        },
-        {
-          "insight_id": "pli-4d4fcef0f616e899",
-          "issue_key": "engrave-voucher-compatibility",
-          "game_id": "mabinogi-mobile",
-          "title": "8성 +12 각인강화 이용권과 이후 룬 각인 간의 유지·호환성 문의",
-          "summary": "플레이어가 8성 +12 각인강화 이용권을 사용한 후, 추후 10성 룬을 받아 룬각인을 해도 +12 상태가 유지되는지 묻고 있음. 시스템 이해 부족에서 비롯된 질문.",
-          "topic": "GAMEPLAY",
-          "reaction": "UNCLEAR",
-          "intensity": "LOW",
-          "trend": "UNKNOWN",
-          "confidence": "LOW",
-          "observed_at": "2026-08-29T03:34:06+09:00",
-          "evidence": [
-            {
-              "evidence_id": "ple-1450fe5e1f8751792026",
-              "source_type": "PUBLIC_COMMUNITY",
-              "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2171330",
-              "title": "늅 질문좀..!!",
-              "published_at": "2026-08-29T03:34:06+09:00",
-              "collected_at": "2026-09-02T15:43:21.083544+09:00",
-              "content_hash": "67649ecd698aa0a2d48bb7d794d8dc86c77e6723f9e7ed3531951652340e0a9f",
-              "modified_at": null,
-              "previous_content_hash": "67649ecd698aa0a2d48bb7d794d8dc86c77e6723f9e7ed3531951652340e0a9f"
-            }
-          ],
-          "source_signal_ids": [],
-          "observed_facts": [],
-          "player_claims": [
-            "늅 질문좀..!! 8성 +12각인강화 이용권 이거 나중에 10성룬 받아서 룬각인해도 +12성으로 유지되는건가??? - dc official App"
-          ],
-          "analysis": [
-            "해당 게시글은 각인·룬·강화 관련 시스템의 규칙이 명확히 전달되지 않아 플레이어가 구매·사용을 망설일 수 있음을 시사.",
-            "게임 내 장비·강화 관련 복잡한 규칙은 BM(구매) 결정에 직접적인 영향을 줄 수 있어 문서화·UI 개선이 필요할 가능성이 있음."
-          ],
-          "unknowns": [
-            "현재 게임 내에서 '8성 +12 각인강화 이용권' 사용 후 룬 각인 시 강화 수치 유지 여부(설계 규칙)",
-            "해당 아이템에 대한 명시적 인게임 설명(툴팁/상세)이 존재하는지 여부",
-            "고객센터·공지에서 이와 관련해 이미 안내된 내용이 있는지"
-          ],
-          "pm_metric_context": {
-            "terms": [],
-            "rationale": "",
-            "verification_needed": false
-          },
-          "live_risk": "낮음(LOW): 단건 규칙 혼동으로 인한 불만·환불 요청이 발생할 수 있으나, 시스템 변경을 요구할 수준의 광범위한 위험은 아님.",
-          "recommended_checks": [
-            "해당 이용권과 룬 각인간 상호작용 규칙(설계 문서) 확인",
-            "인게임 툴팁·상세 설명이 규칙을 정확히 전달하는지 점검 및 필요 시 문구 수정",
-            "자주 묻는 질문(FAQ)·고객센터 답변 템플릿을 준비하여 동일 문의에 대응"
-          ],
-          "routing": {
-            "target": "NONE",
-            "deep_dive_required": false,
-            "reason": "낮음(LOW): 단건 규칙 혼동으로 인한 불만·환불 요청이 발생할 수 있으나, 시스템 변경을 요구할 수준의 광범위한 위험은 아님.",
-            "final_router": "pm-decision-lead"
-          },
-          "analysis_scope": "CORE"
-        },
-        {
-          "insight_id": "pli-d00260affdedc593",
-          "issue_key": "eternity-release-interest",
-          "game_id": "mabinogi-mobile",
-          "title": "마비노기 이터니티(후속작) 출시 시기 문의 및 복귀 의향 언급",
-          "summary": "플레이어가 '마비노기 이터니티' 출시 시기를 묻고 있으며, 해당 타이틀 전환 시 복귀 의사가 있음을 언급. 이는 대형 업데이트·신작 정보가 복귀·재유입에 영향을 줄 수 있음을 시사.",
-          "topic": "COMMUNICATION",
-          "reaction": "UNCLEAR",
-          "intensity": "MEDIUM",
-          "trend": "UNKNOWN",
-          "confidence": "LOW",
-          "observed_at": "2026-08-29T03:30:52+09:00",
-          "evidence": [
-            {
-              "evidence_id": "ple-cee1df3bfee355626f9b",
-              "source_type": "PUBLIC_COMMUNITY",
-              "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2171329",
-              "title": "마비노기 이터니티 출시언제함??",
-              "published_at": "2026-08-29T03:30:52+09:00",
-              "collected_at": "2026-09-02T15:43:21.083544+09:00",
-              "content_hash": "34bce2bfef1d268e55a25127b5a49e1e2e42ec64597fa5c75df1eb199b050a58",
-              "modified_at": null,
-              "previous_content_hash": "34bce2bfef1d268e55a25127b5a49e1e2e42ec64597fa5c75df1eb199b050a58"
-            }
-          ],
-          "source_signal_ids": [],
-          "observed_facts": [],
-          "player_claims": [
-            "마비노기 이터니티 출시언제함?? 저거로 바뀌면 다시 시작해보려는데"
-          ],
-          "analysis": [
-            "유저들은 신작·대규모 리뉴얼 정보를 복귀 트리거로 보고 있으며, 공식 발표·타이밍에 따라 DAU/NRU 변동이 발생할 수 있음.",
-            "공식 커뮤니케이션이 미흡할 경우 소문·추측이 확산되어 기대 조정 실패나 불만으로 이어질 수 있음."
-          ],
-          "unknowns": [
-            "마비노기 이터니티의 공식 출시일·로드맵(현재 회사 내부 일정)",
-            "출시 발표가 있을 경우 예상되는 신규 유입(예상 NRU) 및 재유입 규모",
-            "출시와 동시 대비해야 할 서버/기술적 준비(인프라 여력)"
-          ],
-          "pm_metric_context": {
-            "terms": [
-              "DAU",
-              "NRU",
-              "KPI"
-            ],
-            "rationale": "신작·대형 업데이트는 DAU/NRU에 큰 변동을 줄 수 있음. 출시 전후 유입 예측과 KPI(캠페인 목표), 인프라 준비 여부 확인이 필요함.",
-            "verification_needed": true
-          },
-          "live_risk": "중간(MEDIUM): 공식 발표·출시 전후로 유입 변동과 기술적 부하가 발생할 수 있으며, 커뮤니케이션 실패 시 기대 하락 또는 반작용 우려.",
-          "recommended_checks": [
-            "마케팅/PR 일정과 메시지 정렬 여부 확인(출시 전 커뮤니케이션 플랜 점검)",
-            "출시 가정 시 DAU·동시접속(CU) 추정과 서버 용량·스케일링 계획 검토",
-            "복귀 유저를 위한 온보딩·보상(리타게팅 캠페인) 전략 준비"
-          ],
-          "routing": {
-            "target": "NONE",
-            "deep_dive_required": false,
-            "reason": "중간(MEDIUM): 공식 발표·출시 전후로 유입 변동과 기술적 부하가 발생할 수 있으며, 커뮤니케이션 실패 시 기대 하락 또는 반작용 우려.",
-            "final_router": "pm-decision-lead"
-          },
-          "analysis_scope": "CORE"
-        },
-        {
-          "insight_id": "pli-00e47dfa0441b6fb",
-          "issue_key": "community-cosmetic-sharing",
-          "game_id": "mabinogi-mobile",
-          "title": "커뮤니티 내 코스튬·이미지·닉네임 공유 활동",
-          "summary": "갤러리에서 코스튬(백설공주 느낌), 캐릭터 이미지(몰리 짤), 선정적 이미지 모음, 희귀 닉네임 공유 등 커뮤니티형 UGC가 다수 관찰됨. 소셜·비주얼 요소에 대한 관심이 높음.",
-          "topic": "CONTENT",
-          "reaction": "POSITIVE",
-          "intensity": "LOW",
-          "trend": "UNKNOWN",
-          "confidence": "LOW",
-          "observed_at": "2026-08-27T17:27:30+09:00",
-          "evidence": [
-            {
-              "evidence_id": "ple-c4b62cb086380d9028de",
-              "source_type": "PUBLIC_COMMUNITY",
-              "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2171317",
-              "title": "나오 옷으로 백설공주 느낌으로 꾸며봤어~!",
-              "published_at": "2026-08-27T17:27:30+09:00",
-              "collected_at": "2026-09-02T15:43:21.083544+09:00",
-              "content_hash": "7d0df5f3426bbade1f7ca5f4367a21d01fa26a05ad13cd2d9de6c6f9b2b30473",
-              "modified_at": null,
-              "previous_content_hash": "7d0df5f3426bbade1f7ca5f4367a21d01fa26a05ad13cd2d9de6c6f9b2b30473"
-            },
-            {
-              "evidence_id": "ple-0e7f79be3f3150735c66",
-              "source_type": "PUBLIC_COMMUNITY",
-              "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2171315",
-              "title": "몰리 짤 모음",
-              "published_at": "2026-08-27T15:56:26+09:00",
-              "collected_at": "2026-09-02T15:43:21.083544+09:00",
-              "content_hash": "2df8435eb2d3957fdaf8f34a5c3b199fd98f9eb62d1bf16dbba9d849a4fb011a",
-              "modified_at": null,
-              "previous_content_hash": "2df8435eb2d3957fdaf8f34a5c3b199fd98f9eb62d1bf16dbba9d849a4fb011a"
-            },
-            {
-              "evidence_id": "ple-96db144fae226f2c1a7e",
-              "source_type": "PUBLIC_COMMUNITY",
-              "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2171310",
-              "title": "가슴 큰 애들 모음",
-              "published_at": "2026-08-27T10:43:11+09:00",
-              "collected_at": "2026-09-02T15:43:21.083544+09:00",
-              "content_hash": "14a6853de8e678d6cf6b3bf0c68c566d94003fc1ecc15270910e51a2ceebf429",
-              "modified_at": null,
-              "previous_content_hash": "14a6853de8e678d6cf6b3bf0c68c566d94003fc1ecc15270910e51a2ceebf429"
-            },
-            {
-              "evidence_id": "ple-45698e816d6726f12272",
-              "source_type": "PUBLIC_COMMUNITY",
-              "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2171309",
-              "title": "희귀닉 둘",
-              "published_at": "2026-08-27T10:28:04+09:00",
-              "collected_at": "2026-09-02T15:43:21.083544+09:00",
-              "content_hash": "e47e80d651bd2a22235194ea1d8f2b87246be31dab85d4bfe6f404b20404e360",
-              "modified_at": null,
-              "previous_content_hash": null
-            }
-          ],
-          "source_signal_ids": [],
-          "observed_facts": [],
-          "player_claims": [
-            "나오 옷으로 백설공주 느낌으로 꾸며봤어~!",
-            "몰리 짤 모음 인터넷 짤 줍 모음입니다 삭제요청시 삭제 몰리홀리몰리",
-            "가슴 큰 애들 모음 가슴 큰 여캐들 모음 누가 젤 크노? 하아... ㄴ옆에 쪼깐한 새1끼가 슬쩍슬쩍 내 가슴 훔쳐봄 ㅡㅡ 1명만 고를 수 있다면 누구임? 빨리 고르셈 선착순임",
-            "희귀닉 둘 부러우면 말해라"
-          ],
-          "analysis": [
-            "커뮤니티에서 게임 내 코스튬·이미지·닉네임 관련 UGC가 활발함. 코스튬·외형 요소가 플레이어 참여 동기(자랑·공유)에 기여하고 있음을 시사.",
-            "일부 게시물은 선정적 표현을 포함하므로 커뮤니티 가이드라인·모더레이션 관점에서 관리 필요성이 존재."
-          ],
-          "unknowns": [
-            "인게임 내 유사 UGC(스샷 공유·코스튬 콘테스트) 참여율 및 트래픽",
-            "커뮤니티 활동이 인게임 경제(BM 코스튬 구매)에 미치는 실증적 영향",
-            "현재 커뮤니티 가이드라인·모더레이션 정책의 적용 상태"
-          ],
-          "pm_metric_context": {
-            "terms": [],
-            "rationale": "",
-            "verification_needed": false
-          },
-          "live_risk": "낮음(LOW): 일반적 긍정적 사용자 생성 콘텐츠지만 선정적 게시물은 브랜드·커뮤니티 규정 위반으로 리스크가 될 수 있음.",
-          "recommended_checks": [
-            "인게임·외부 커뮤니티에서의 코스튬·UGC 캠페인 기회 탐색(이벤트·공유 기능 강화)",
-            "커뮤니티 가이드라인·모더레이션 정책 검토 및 필요 시 강화(선정적 콘텐츠 대응 프로세스 포함)",
-            "코스튬 관련 구매 데이터(판매 상위 스킨 등)와 커뮤니티 게시물 연관성 분석"
-          ],
-          "routing": {
-            "target": "NONE",
-            "deep_dive_required": false,
-            "reason": "낮음(LOW): 일반적 긍정적 사용자 생성 콘텐츠지만 선정적 게시물은 브랜드·커뮤니티 규정 위반으로 리스크가 될 수 있음.",
-            "final_router": "pm-decision-lead"
-          },
-          "analysis_scope": "CORE"
-        },
-        {
-          "insight_id": "pli-4e841a3b7bd3f914",
-          "issue_key": "market-price-speculation",
-          "game_id": "mabinogi-mobile",
-          "title": "인게임 장터(해연반지·데카 세공기) 시세·투자 타이밍 관련 조언 및 전망",
-          "summary": "플레이어가 특정 아이템(해연 반지, 데카 세공기)의 현 시세와 시즌 진입 후 가격 상승 전망을 근거로 매매 타이밍을 조언하는 글을 게시. 게임 내 거래·시세 변동에 대한 플레이어 전략이 관찰됨.",
-          "topic": "BALANCE",
-          "reaction": "UNCLEAR",
-          "intensity": "MEDIUM",
-          "trend": "UNKNOWN",
-          "confidence": "LOW",
+          "confidence": "MEDIUM",
           "observed_at": "2026-08-26T16:40:36+09:00",
           "evidence": [
             {
@@ -701,7 +83,7 @@
               "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2171304",
               "title": "여기 갤사람들 한테만 알려주자면",
               "published_at": "2026-08-26T16:40:36+09:00",
-              "collected_at": "2026-09-02T15:43:21.083544+09:00",
+              "collected_at": "2026-09-02T16:00:10.470431+09:00",
               "content_hash": "359fb5cc22a84f94cc687f14c8e4d40ae5203c314488bd9edc4670ee8b590c3e",
               "modified_at": null,
               "previous_content_hash": "359fb5cc22a84f94cc687f14c8e4d40ae5203c314488bd9edc4670ee8b590c3e"
@@ -710,39 +92,134 @@
           "source_signal_ids": [],
           "observed_facts": [],
           "player_claims": [
-            "여기 갤사람들 한테만 알려주자면 해연 반지가 만데카 언저리면 지금 부캐들 사주는게 좋음 3시즌 들어가면 또다시 폭등할텐데 그때는 지금처럼 잠깐 뜨고 지는 수준이 아니라 과금러들이 부랴부랴 부캐들 한테 제일 가성비 좋은 해연반지 사주겠다고 사실상 싹슬이 될꺼임 무소과금, 쌀먹도 마찬가지라 이때 차라리 데카 세공기 보는게 맞음 일시적으로 나마 세공기 사는 사람이 적어질꺼라 진짜 눈꼽만큼, 한 200데카 정도는 될꺼임 (데카 쌀먹새끼들이 200데카 아래로 내려가면 지들이 사서 시세올리거든) 물론 데카 세공기를 150데카보다 비싸게 사는건 언제나 호구가 맞음 150데카도 세공패키지 대비 3배 손해 깡캐시로 사는거 보다도 1.5 손해인거 기억해"
+            "해연 반지 시세가 지금 만데카(저가) 근처라면 지금 부캐들에 사주는 게 맞다. 시즌 3 시작하면 과금러들이 싹쓸이해 가격 폭등할 것이다.",
+            "일시적으로 데카 세공기 수요가 줄면 200데카 정도로 내려갈 수 있으니 그때 사두라고 권유한다."
           ],
           "analysis": [
-            "게시글은 플레이어 간 시장 정보·심리(시즌 전 매수 권장)를 반영하고 있으며, 이는 플레이어 주도 시세 변동과 투기적 거래가 발생하고 있음을 시사.",
-            "운영 측면에서는 시즌 전후 수요 급증이 예상되는 아이템(반지·세공기)에 대해 공급·획득 경로를 검토할 필요가 있음."
+            "플레이어들 사이의 시세 예측과 매수 권유는 거래소 유동성·심리적 가격 형성에 영향을 줄 수 있음.",
+            "대규모 매집이 실제로 발생하면 일반 플레이어의 접근성이 떨어지고 불만과 경제 불균형이 심화될 수 있음.",
+            "운영은 거래소 로그·거래량·상위 구매자 행동을 모니터링해 비정상적 매집과 RMT 가능성을 검토할 필요가 있음."
           ],
           "unknowns": [
-            "향후 3시즌(게시글 언급) 내용이 실제로 해당 아이템 수요를 증가시킬지 여부",
-            "현재 장터·경매장 데이터(거래량·시세 변동)의 실측치",
-            "운영이 의도적으로 시장에 개입할 예정(이벤트 지급·획득처 변경 등)인지 여부"
+            "최근 해당 아이템들의 시세·거래량 추이(기간별 히스토리)가 어떠한가?",
+            "상위 계정(혹은 소수 유저)의 대량 매수 패턴이 존재하는가?",
+            "현재 거래소에 적용된 세금·수수료·거래 제한 정책으로 과도한 매집을 억제할 수 있는가?"
           ],
           "pm_metric_context": {
             "terms": [],
             "rationale": "",
             "verification_needed": false
           },
-          "live_risk": "중간(MEDIUM): 특정 아이템의 급격한 시세 변동은 신규·무과금 플레이어의 불만, 불공정성 인식, 시장 조작 우려를 낳아 커뮤니티 신뢰와 장기 유지에 부정적 영향이 있을 수 있음.",
+          "live_risk": "중간~높음: 방치 시 일반 플레이어 불만·시장 왜곡·RMT 유입 촉진으로 경제 안정성이 훼손될 수 있음.",
           "recommended_checks": [
-            "장터·경매장 거래 데이터(최근 30/90일 거래량·중위가·스프레드) 분석",
-            "해당 아이템의 공급원·획득처(이벤트·제작·상점)와 향후 시즌 계획 비교 검토",
-            "필요 시 아이템 획득/소모 밸런스 조정 또는 공개 안내(예정된 시즌 영향에 대한 투명한 커뮤니케이션)",
-            "시장 조작·봇 거래 탐지 로직 점검"
+            "거래소·경매장 해당 아이템의 가격·거래량 히스토리(최근 30/90일) 분석",
+            "상위 구매 계정의 거래 패턴·동시성 확인(대량 매수 탐지)",
+            "RMT/자동화 매집 탐지 규칙 적용 여부 및 이상거래 차단 로그 검토",
+            "아이템 공급·획득 통로 점검(특정 콘텐츠 보상으로 집중 지급되는지 여부)",
+            "거래 수수료·거래 제한 정책으로 완화 가능한지 시뮬레이션",
+            "커뮤니티 오피셜 가이드 공지로 정상 거래를 유도하고 불확실성 해소"
           ],
           "routing": {
             "target": "NONE",
             "deep_dive_required": false,
-            "reason": "중간(MEDIUM): 특정 아이템의 급격한 시세 변동은 신규·무과금 플레이어의 불만, 불공정성 인식, 시장 조작 우려를 낳아 커뮤니티 신뢰와 장기 유지에 부정적 영향이 있을 수 있음.",
+            "reason": "중간~높음: 방치 시 일반 플레이어 불만·시장 왜곡·RMT 유입 촉진으로 경제 안정성이 훼손될 수 있음.",
             "final_router": "pm-decision-lead"
           },
           "analysis_scope": "CORE"
         }
       ],
-      "excluded_inputs": []
+      "excluded_inputs": [
+        {
+          "input_id": "plei-df2126cbf93fb55f25ad",
+          "game_id": "mabinogi-mobile",
+          "reason": "개인 도전·일상 복귀 소감에 해당하는 순수 소셜 게시물로 운영·접속·결제·버그·밸런스 같은 실무 리스크를 제시하지 않음."
+        },
+        {
+          "input_id": "plei-be4d2aa78a1edb3a23d8",
+          "game_id": "mabinogi-mobile",
+          "reason": "길드원 모집 공지로 순수 커뮤니티 모집 글이며, 반복적 마찰이나 운영 리스크를 드러내지 않음."
+        },
+        {
+          "input_id": "plei-69ee1f5addf504abf7d6",
+          "game_id": "mabinogi-mobile",
+          "reason": "길드 모집·홍보 게시물로 실무적 위험 제시가 없어 제외."
+        },
+        {
+          "input_id": "plei-152aaa5af06e48d994b5",
+          "game_id": "mabinogi-mobile",
+          "reason": "의미가 불명확한 짧은 게시물로 실무적 인사이트나 반복적 이슈를 제공하지 않음."
+        },
+        {
+          "input_id": "plei-707c4be4c9dcffe6445c",
+          "game_id": "mabinogi-mobile",
+          "reason": "월챗(채팅) 내 사건·밈 관련 감정적 표현으로, 특정 운영·기술 리스크를 제기하지 않아 제외."
+        },
+        {
+          "input_id": "plei-e07acf1f91b23c87b8f7",
+          "game_id": "mabinogi-mobile",
+          "reason": "의상·코디 공유(비매니지먼트형 콘텐츠) — 커뮤니티 쇼케이스로 운영·라이브 위험 제기 없음"
+        },
+        {
+          "input_id": "plei-f2491f38f2f8db287b3e",
+          "game_id": "mabinogi-mobile",
+          "reason": "이미지·짤 모음(밈·유머 공유) — 제품·운영 리스크를 드러내지 않음"
+        },
+        {
+          "input_id": "plei-3c0f63bd8b92c84f560c",
+          "game_id": "mabinogi-mobile",
+          "reason": "비속·성희롱성 소셜 게시물(유머/선정적 콘텐츠) — 라이브 운영 이슈 아님"
+        },
+        {
+          "input_id": "plei-be7c8c916d9139c694a0",
+          "game_id": "mabinogi-mobile",
+          "reason": "닉네임 자랑(희귀닉) — 게임 운영·경제·접근성 위험을 제기하지 않음"
+        },
+        {
+          "input_id": "plei-fa824502af2b50be757b",
+          "game_id": "mabinogi-mobile",
+          "reason": "단순 잡담·일회성 질문 또는 낮은 영향의 활동으로 PM 의사결정 승격 기준을 충족하지 않았다."
+        },
+        {
+          "input_id": "plei-b901b9a3dce55bd9cc29",
+          "game_id": "mabinogi-mobile",
+          "reason": "단순 잡담·일회성 질문 또는 낮은 영향의 활동으로 PM 의사결정 승격 기준을 충족하지 않았다."
+        },
+        {
+          "input_id": "plei-256d06ea559db6b2c7f5",
+          "game_id": "mabinogi-mobile",
+          "reason": "단순 잡담·일회성 질문 또는 낮은 영향의 활동으로 PM 의사결정 승격 기준을 충족하지 않았다."
+        },
+        {
+          "input_id": "plei-4bfc7433d6151817aafc",
+          "game_id": "mabinogi-mobile",
+          "reason": "단순 잡담·일회성 질문 또는 낮은 영향의 활동으로 PM 의사결정 승격 기준을 충족하지 않았다."
+        },
+        {
+          "input_id": "plei-4b4158dd1b9604338876",
+          "game_id": "mabinogi-mobile",
+          "reason": "단순 잡담·일회성 질문 또는 낮은 영향의 활동으로 PM 의사결정 승격 기준을 충족하지 않았다."
+        },
+        {
+          "input_id": "plei-40c39a36d6167334a816",
+          "game_id": "mabinogi-mobile",
+          "reason": "단순 잡담·일회성 질문 또는 낮은 영향의 활동으로 PM 의사결정 승격 기준을 충족하지 않았다."
+        },
+        {
+          "input_id": "plei-943c8c2001b2f149bf1a",
+          "game_id": "mabinogi-mobile",
+          "reason": "단순 잡담·일회성 질문 또는 낮은 영향의 활동으로 PM 의사결정 승격 기준을 충족하지 않았다."
+        },
+        {
+          "input_id": "plei-e79dcbd0c8acb6b80245",
+          "game_id": "mabinogi-mobile",
+          "reason": "단순 잡담·일회성 질문 또는 낮은 영향의 활동으로 PM 의사결정 승격 기준을 충족하지 않았다."
+        },
+        {
+          "input_id": "plei-340eeb847ddef1059a14",
+          "game_id": "mabinogi-mobile",
+          "reason": "단순 잡담·일회성 질문 또는 낮은 영향의 활동으로 PM 의사결정 승격 기준을 충족하지 않았다."
+        }
+      ]
     }
   }
 }
