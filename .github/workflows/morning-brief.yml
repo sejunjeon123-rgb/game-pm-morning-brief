@@ -15,6 +15,7 @@ on:
           - collect
           - player-live-collect
           - player-live-test
+          - decision-test
           - signal-test
           - test
           - automatic
@@ -86,11 +87,14 @@ jobs:
           if [ "${{ steps.mode.outputs.value }}" = "signal-test" ]; then
             python -m app.run --mode collect --state-dir ../runtime-state/state --output-dir output "${game_args[@]}"
             python -m app.run --mode analyze-collection --collection-file output/market_signal_collection.json --state-dir ../runtime-state/state --output-dir output
-          elif [ "${{ steps.mode.outputs.value }}" = "player-live-test" ]; then
+          elif [ "${{ steps.mode.outputs.value }}" = "player-live-test" ] || [ "${{ steps.mode.outputs.value }}" = "decision-test" ]; then
             python -m app.run --mode collect --state-dir ../runtime-state/state --output-dir output "${game_args[@]}"
             python -m app.run --mode analyze-collection --collection-file output/market_signal_collection.json --state-dir ../runtime-state/state --output-dir output
             python -m app.run --mode player-live-collect --state-dir ../runtime-state/state --output-dir output "${game_args[@]}"
             python -m app.run --mode player-live-analyze --player-live-collection-file output/player_live_collection.json --signal-file output/market_signal_signals.json --state-dir ../runtime-state/state --output-dir output
+            if [ "${{ steps.mode.outputs.value }}" = "decision-test" ]; then
+              python -m app.run --mode pm-decision --signal-file output/market_signal_signals.json --player-live-insight-file output/player_live_insights.json --state-dir ../runtime-state/state --output-dir output
+            fi
           else
             python -m app.run --mode "${{ steps.mode.outputs.value }}" --state-dir ../runtime-state/state --output-dir output "${game_args[@]}"
           fi

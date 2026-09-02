@@ -59,10 +59,41 @@ def format_notion_page(brief: dict[str, Any], parent_page_id: str) -> dict[str, 
         for item in decisions[:20]:
             children.append(_heading(f"[{item['priority']}] {item['title']}", 3))
             children.append(_paragraph(str(item.get("executive_summary", ""))))
+            sections = (
+                ("✅ 확인된 사실", item.get("observed_facts", [])),
+                ("🗣️ 이용자 보고", item.get("player_claims", [])),
+                ("💡 해석", item.get("interpretation", [])),
+                ("❓ 확인 필요", item.get("unknowns", [])),
+            )
+            for label, values in sections:
+                if values:
+                    children.append(_heading(label, 3))
+                    children.extend(_bullet(str(value)) for value in values[:10])
             conflicts = item.get("conflicts", [])
             if conflicts:
                 children.append(_heading("⚠️ 출처 차이", 3))
                 children.extend(_bullet(str(conflict)) for conflict in conflicts[:10])
+            metric_checks = item.get("metric_checks", [])
+            if metric_checks:
+                children.append(_heading("📊 내부 KPI 확인", 3))
+                children.extend(
+                    _bullet(
+                        f"{check.get('term')}: {check.get('question')}"
+                        + (f" · 비교: {check.get('comparison_period')}" if check.get("comparison_period") else "")
+                        + (f" · 구간: {check.get('segment')}" if check.get("segment") else "")
+                    )
+                    for check in metric_checks[:10]
+                )
+            actions = item.get("recommended_actions", [])
+            if actions:
+                children.append(_heading("🧭 권장 액션", 3))
+                children.extend(
+                    _bullet(
+                        f"{action.get('action')} · 역할: {action.get('suggested_role')} · 시점: {action.get('timing')}"
+                        f" · 재평가: {action.get('reassessment_condition')}"
+                    )
+                    for action in actions[:10]
+                )
             for evidence in item.get("evidence", [])[:10]:
                 url = str(evidence.get("url", ""))
                 if url.startswith(("https://", "http://")):
@@ -78,7 +109,7 @@ def format_notion_page(brief: dict[str, Any], parent_page_id: str) -> dict[str, 
     children.append(_heading("📡 Game Radar"))
     children.extend(_bullet(str(game)) for game in radar) if radar else children.append(_paragraph("등재된 외부 게임이 없습니다."))
 
-    gaps = brief.get("coverage_gaps", [])
+    gaps = list(brief.get("coverage_gaps", [])) + list(brief.get("data_gaps", []))
     children.append(_heading("⚠️ Coverage & Data Gaps"))
     children.extend(_bullet(str(gap)) for gap in gaps) if gaps else children.append(_paragraph("보고된 coverage gap이 없습니다."))
 

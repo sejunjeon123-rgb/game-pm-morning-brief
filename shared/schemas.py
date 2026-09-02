@@ -300,6 +300,7 @@ class PMDecisionItem:
     source_signal_ids: tuple[str, ...] = ()
     source_insight_ids: tuple[str, ...] = ()
     observed_facts: tuple[str, ...] = ()
+    player_claims: tuple[str, ...] = ()
     interpretation: tuple[str, ...] = ()
     unknowns: tuple[str, ...] = ()
     conflicts: tuple[str, ...] = ()

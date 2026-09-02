@@ -62,6 +62,8 @@ Never fabricate values, baselines, targets, changes, formulas, or causal conclus
 
 ## Output contract
 
+For file-based V1 synthesis, use `pm_decision_lead.runner.build_morning_brief_from_files` or `python -m app.run --mode pm-decision --signal-file output/market_signal_signals.json --player-live-insight-file output/player_live_insights.json`. The runtime must account for every Scout input exactly once, retry one deterministic validation failure at most once, and derive decision evidence only from supplied Scout provenance. This mode creates `morning_brief.json`, `slack_preview.json`, and `notion_preview.json` without sending either destination.
+
 Return one `PMDecisionItem` per distinct decision with:
 
 - stable `decision_id` and `decision_key`,

@@ -13,6 +13,7 @@ from app.pipeline import brief_as_dict, build_preview_brief
 from market_signal.runner import analyze_collection_file, run_market_signal
 from player_live_watch.common_collector import collect_player_live_evidence
 from player_live_watch.runner import analyze_player_live_collection_file
+from pm_decision_lead.runner import build_morning_brief_from_files
 from shared.json_utils import dumps
 from shared.notion_client import NotionDeliveryError, create_page, format_notion_page
 from shared.slack_client import SlackDeliveryError, format_brief, post_webhook
@@ -28,6 +29,7 @@ def _arguments() -> argparse.Namespace:
             "collect",
             "player-live-collect",
             "player-live-analyze",
+            "pm-decision",
             "analyze-collection",
             "test",
             "automatic",
@@ -46,12 +48,36 @@ def _arguments() -> argparse.Namespace:
         default=Path("output/player_live_collection.json"),
     )
     parser.add_argument("--signal-file", type=Path)
+    parser.add_argument("--player-live-insight-file", type=Path, default=Path("output/player_live_insights.json"))
     return parser.parse_args()
 
 
 def main() -> int:
     args = _arguments()
     config = load_project_config(args.root.resolve())
+    if args.mode == "pm-decision":
+        result = build_morning_brief_from_files(
+            args.signal_file or args.collection_file.with_name("market_signal_signals.json"),
+            args.player_live_insight_file,
+            game_scope=config.game_ids,
+        )
+        args.output_dir.mkdir(parents=True, exist_ok=True)
+        destination = args.output_dir / "pm_decision_report.json"
+        destination.write_text(dumps(result) + "\n", encoding="utf-8")
+        if result.get("decision_status") == "completed":
+            brief = result["brief"]
+            (args.output_dir / "morning_brief.json").write_text(dumps(brief) + "\n", encoding="utf-8")
+            (args.output_dir / "slack_preview.json").write_text(
+                dumps(format_brief(brief)) + "\n", encoding="utf-8"
+            )
+            (args.output_dir / "notion_preview.json").write_text(
+                dumps(format_notion_page(brief, "00000000000000000000000000000000")) + "\n",
+                encoding="utf-8",
+            )
+            print(f"PM decision report and delivery previews written to {args.output_dir.resolve()}")
+            return 0
+        print(f"PM decision is blocked: {result.get('decision_status')}", file=sys.stderr)
+        return 2
     if args.mode == "analyze-collection":
         result = analyze_collection_file(args.collection_file, StateStore(args.state_dir))
         args.output_dir.mkdir(parents=True, exist_ok=True)
