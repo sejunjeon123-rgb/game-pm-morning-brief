@@ -14,6 +14,7 @@ on:
           - preview
           - collect
           - player-live-collect
+          - player-live-test
           - signal-test
           - test
           - automatic
@@ -85,6 +86,11 @@ jobs:
           if [ "${{ steps.mode.outputs.value }}" = "signal-test" ]; then
             python -m app.run --mode collect --state-dir ../runtime-state/state --output-dir output "${game_args[@]}"
             python -m app.run --mode analyze-collection --collection-file output/market_signal_collection.json --state-dir ../runtime-state/state --output-dir output
+          elif [ "${{ steps.mode.outputs.value }}" = "player-live-test" ]; then
+            python -m app.run --mode collect --state-dir ../runtime-state/state --output-dir output "${game_args[@]}"
+            python -m app.run --mode analyze-collection --collection-file output/market_signal_collection.json --state-dir ../runtime-state/state --output-dir output
+            python -m app.run --mode player-live-collect --state-dir ../runtime-state/state --output-dir output "${game_args[@]}"
+            python -m app.run --mode player-live-analyze --player-live-collection-file output/player_live_collection.json --signal-file output/market_signal_signals.json --state-dir ../runtime-state/state --output-dir output
           else
             python -m app.run --mode "${{ steps.mode.outputs.value }}" --state-dir ../runtime-state/state --output-dir output "${game_args[@]}"
           fi

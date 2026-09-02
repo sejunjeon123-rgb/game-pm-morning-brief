@@ -11,7 +11,8 @@ from pathlib import Path
 from app.config import load_project_config
 from app.pipeline import brief_as_dict, build_preview_brief
 from market_signal.runner import analyze_collection_file, run_market_signal
-from player_live_watch.collector import collect_dcinside_posts
+from player_live_watch.common_collector import collect_player_live_evidence
+from player_live_watch.runner import analyze_player_live_collection_file
 from shared.json_utils import dumps
 from shared.notion_client import NotionDeliveryError, create_page, format_notion_page
 from shared.slack_client import SlackDeliveryError, format_brief, post_webhook
@@ -22,7 +23,15 @@ def _arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="GAME PM Morning Brief runtime")
     parser.add_argument(
         "--mode",
-        choices=("preview", "collect", "player-live-collect", "analyze-collection", "test", "automatic"),
+        choices=(
+            "preview",
+            "collect",
+            "player-live-collect",
+            "player-live-analyze",
+            "analyze-collection",
+            "test",
+            "automatic",
+        ),
         default="preview",
     )
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
@@ -31,6 +40,12 @@ def _arguments() -> argparse.Namespace:
     parser.add_argument("--games", nargs="+")
     parser.add_argument("--analyze", action="store_true")
     parser.add_argument("--collection-file", type=Path, default=Path("output/market_signal_collection.json"))
+    parser.add_argument(
+        "--player-live-collection-file",
+        type=Path,
+        default=Path("output/player_live_collection.json"),
+    )
+    parser.add_argument("--signal-file", type=Path)
     return parser.parse_args()
 
 
@@ -44,6 +59,17 @@ def main() -> int:
         destination.write_text(dumps(result) + "\n", encoding="utf-8")
         print(f"signal analysis report written to {destination.resolve()}")
         return 0 if result["analysis_status"] == "completed" else 2
+    if args.mode == "player-live-analyze":
+        result = analyze_player_live_collection_file(
+            args.player_live_collection_file,
+            state=StateStore(args.state_dir),
+            signal_file=args.signal_file,
+        )
+        args.output_dir.mkdir(parents=True, exist_ok=True)
+        destination = args.output_dir / "player_live_insights.json"
+        destination.write_text(dumps(result) + "\n", encoding="utf-8")
+        print(f"Player Live insight report written to {destination.resolve()}")
+        return 0 if result["analysis_status"].startswith("completed") else 2
     if args.mode == "collect":
         report = run_market_signal(
             config,
@@ -57,7 +83,7 @@ def main() -> int:
         print(f"collection report written to {destination.resolve()}")
         return 0
     if args.mode == "player-live-collect":
-        report = collect_dcinside_posts(
+        report = collect_player_live_evidence(
             config,
             StateStore(args.state_dir),
             tuple(args.games) if args.games else config.game_ids,
@@ -75,7 +101,7 @@ def main() -> int:
     (args.output_dir / "slack_preview.json").write_text(dumps(payload) + "\n", encoding="utf-8")
     (args.output_dir / "notion_preview.json").write_text(dumps(notion_preview) + "\n", encoding="utf-8")
 
-    if args.mode == "preview":
+    if args.mode in {"preview", "test"}:
         print(f"preview written to {args.output_dir.resolve()}")
         return 0
 

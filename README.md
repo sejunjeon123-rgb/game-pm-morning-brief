@@ -10,8 +10,9 @@
 - Delivery target: 전용 Slack 앱 + Notion
 - Implemented: Market Signal 공식 공지/YouTube 수집, 변경 감지, 게임별 bounded batch 분석, One Event + Multiple Evidence 병합, 입력 완전성 검증, state branch 분석 캐시, OpenAI Structured Outputs 기반 Signal 변환
 - Player Live source foundation: 8개 게임별 검증 URL과 evidence role을 `config/player_live_sources.json`에 등록했습니다. 공식 YouTube는 `RSS_READY`, 디시인사이드 8개는 `ADAPTER_READY`, 나머지 커뮤니티는 `ADAPTER_PENDING`입니다.
-- Implemented Player Live collection: 디시인사이드 8개 갤러리 공통 목록·본문 파싱, 최근 7일 bounded scan, 최신·반응 게시물 선택, 작성자 비수집, 변경 해시, coverage gap.
-- Foundation only: Player Live OpenAI 군집 분석, 인벤·공식 커뮤니티 수집, Game Radar, PM Decision 전체 파이프라인, 자동 발송은 아직 활성화되지 않았습니다.
+- Implemented Player Live collection: 공식 YouTube RSS를 `OFFICIAL_FACT`, 디시인사이드 게시물을 `PLAYER_CLAIM`으로 분리하는 공통 Evidence 수집 계층, 최근 7일 bounded scan, 작성자 비수집, 변경 해시, 출처별 coverage gap.
+- Implemented Player Live analysis: 게임별 bounded OpenAI Structured Outputs 군집화, 입력 완전성 검증, 공식 팩트·이용자 주장 경계 검증, 한국어 출력 검증, PM 지표 의미 검증, 1회 교정 재시도, 게임별 분석 캐시, `PlayerLiveInsight` 생성.
+- Foundation only: 인벤·공식 커뮤니티 수집, Game Radar, PM Decision 전체 파이프라인, 자동 발송은 아직 활성화되지 않았습니다.
 
 ## Skills
 
@@ -29,6 +30,8 @@ GitHub 저장소의 `Settings > Secrets and variables > Actions`에 다음 값�
 - Variable: `OPENAI_MODEL`
 
 그다음 `Actions > Game PM Morning Brief > Run workflow`에서 `signal-test`를 선택하면 공식 자료를 수집하고 OpenAI Signal JSON을 artifact로 생성합니다. 이 모드는 Slack과 Notion에 발송하지 않습니다. 결과의 `analysis_metrics`에서 입력 수, 배치 수, 실제 API 호출 수, 캐시 적중 게임, 분석 시간을 확인할 수 있습니다.
+
+Player Live 공통 Evidence 수집과 `PlayerLiveInsight` 생성을 함께 검증하려면 같은 화면에서 `player-live-test`를 선택합니다. 이 모드도 Slack과 Notion에는 발송하지 않으며 결과는 workflow artifact에 저장됩니다.
 
 ## Security
 
