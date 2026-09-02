@@ -228,7 +228,8 @@ class DCInsideAdapterTests(unittest.TestCase):
         self.assertEqual(len(report["posts"]), 1)
         self.assertEqual(report["posts"][0]["content_availability"], "TITLE_ONLY")
         self.assertEqual(report["metrics"]["mabinogi-mobile"]["title_only_count"], 1)
-        self.assertIn("detail collection failed", report["coverage_gaps"][0]["reason"])
+        self.assertIn("1 of 1 selected DCInside detail bodies", report["coverage_gaps"][0]["reason"])
+        self.assertNotIn("/board/view/", report["coverage_gaps"][0]["reason"])
 
     def test_official_youtube_is_fact_not_player_reaction(self) -> None:
         xml = (FIXTURES / "youtube_feed.xml").read_text(encoding="utf-8")

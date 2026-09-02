@@ -216,6 +216,7 @@ def collect_dcinside_posts(
 
         selected = _selected_candidates(tuple(sorted(candidates.values(), key=lambda item: item.published_at, reverse=True)), max_details_per_game)
         detail_results: list[tuple[PlayerPostCandidate, str, bool]] = []
+        detail_failure_types: list[str] = []
         with ThreadPoolExecutor(max_workers=detail_workers) as executor:
             futures = {executor.submit(_collect_detail, http, candidate, source["url"]): candidate for candidate in selected}
             for future in as_completed(futures):
@@ -223,8 +224,21 @@ def collect_dcinside_posts(
                 try:
                     detail_results.append(future.result())
                 except (HttpClientError, TypeError, ValueError, UnicodeError) as exc:
-                    gaps.append({"game_id": game_id, "source": source["source_id"], "reason": f"DCInside detail collection failed for {candidate.url}: {type(exc).__name__}"})
+                    detail_failure_types.append(type(exc).__name__)
                     detail_results.append((candidate, "", False))
+
+        if detail_failure_types:
+            failure_types = ", ".join(sorted(set(detail_failure_types)))
+            gaps.append(
+                {
+                    "game_id": game_id,
+                    "source": source["source_id"],
+                    "reason": (
+                        f"{len(detail_failure_types)} of {len(selected)} selected DCInside detail bodies "
+                        f"were unavailable; TITLE_ONLY evidence was preserved ({failure_types})"
+                    ),
+                }
+            )
 
         for candidate, body, _ in sorted(detail_results, key=lambda item: item[0].published_at, reverse=True):
             normalized = normalize_text(f"{candidate.title}\n{body}")
