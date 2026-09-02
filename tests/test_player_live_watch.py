@@ -363,6 +363,45 @@ class PlayerLiveAnalyzerTests(unittest.TestCase):
         self.assertEqual(client.calls, 2)
         self.assertEqual(outcome.metrics["validation_retry_count"], 1)
 
+    def test_optional_metric_context_and_unknown_signal_link_are_sanitized(self) -> None:
+        class NoisyClient:
+            model = "test-model"
+
+            def __init__(self) -> None:
+                self.calls = 0
+
+            def structured(self, **kwargs: object) -> dict[str, object]:
+                self.calls += 1
+                input_id = json.loads(str(kwargs["input_text"]))["evidence"][0]["input_id"]
+                return {
+                    "issues": [{
+                        "issue_key": "combat-freeze-claim",
+                        "input_ids": [input_id],
+                        "source_signal_ids": ["invented-signal"],
+                        "title": "전투 멈춤 경험 주장",
+                        "summary": "이용자 게시글에서 전투 멈춤 경험이 보고됐다.",
+                        "topic": "BUG", "reaction": "NEGATIVE", "intensity": "LOW",
+                        "trend": "UNKNOWN", "confidence": "MEDIUM",
+                        "observed_facts": [],
+                        "player_claims": ["이용자가 전투 중 멈춤을 경험했다고 주장했다."],
+                        "analysis": ["공개 게시글만으로 실제 발생 범위를 판단할 수 없다."],
+                        "unknowns": ["공식 확인 여부와 재현 조건은 알 수 없다."],
+                        "pm_terms": ["ARPPU"],
+                        "pm_rationale": "전투 오류와 관련된 내부 지표를 확인할 필요가 있다.",
+                        "live_risk": "반복될 경우 플레이 경험에 영향을 줄 가능성이 있다.",
+                        "recommended_checks": ["오류 로그와 공식 확인 내용을 점검한다."],
+                    }],
+                    "excluded_inputs": [],
+                }
+
+        client = NoisyClient()
+        outcome = analyze_player_evidence(client, (self.claim,))  # type: ignore[arg-type]
+
+        self.assertEqual(client.calls, 1)
+        self.assertEqual(outcome.insights[0].source_signal_ids, ())
+        self.assertEqual(outcome.insights[0].pm_metric_context.terms, ())
+        self.assertEqual(outcome.insights[0].pm_metric_context.rationale, "")
+
     def test_analysis_cache_reuses_unchanged_game(self) -> None:
         test_case = self
 

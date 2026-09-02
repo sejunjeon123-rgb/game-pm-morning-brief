@@ -32,7 +32,7 @@ from shared.state_store import StateStore
 from shared.time_utils import parse_iso_kst
 
 
-ANALYZER_VERSION = "player-live-insight-batch-v1"
+ANALYZER_VERSION = "player-live-insight-batch-v2"
 MAX_EVIDENCE_PER_BATCH = 12
 MAX_BATCH_CHARACTERS = 50_000
 MAX_EVIDENCE_CHARACTERS = 12_000
@@ -439,7 +439,10 @@ def _run_batches(
                 f"\n\nYour previous response failed deterministic validation: {exc}. "
                 "Return the complete corrected result for the same evidence. Preserve "
                 "the OFFICIAL_FACT versus PLAYER_CLAIM boundary, account for every "
-                "input_id exactly once, and keep explanatory prose in Korean."
+                "input_id exactly once, and keep explanatory prose in Korean. The only "
+                "permitted source_signal_ids are: "
+                f"{sorted(str(item.get('signal_id', '')) for item in batch.source_signals if item.get('signal_id'))}. "
+                "When this list is empty, return source_signal_ids as an empty array."
             )
             corrected = request(batch, INSTRUCTIONS + correction)
             _validate_batch_result(batch, corrected)
@@ -493,12 +496,13 @@ def _validate_batch_result(
         documents = tuple(
             evidence_by_id[value] for value in input_ids if value in evidence_by_id
         )
-        signal_ids = tuple(str(value) for value in issue.get("source_signal_ids", []))
-        unknown_signal_ids = set(signal_ids) - allowed_signal_ids
-        if unknown_signal_ids:
-            raise ValueError(
-                f"analysis invented source_signal_ids: {sorted(unknown_signal_ids)}"
+        signal_ids = tuple(
+            dict.fromkeys(
+                str(value)
+                for value in issue.get("source_signal_ids", [])
+                if str(value) in allowed_signal_ids
             )
+        )
 
         _validate_issue_prose(issue)
         _validate_evidence_boundary(issue, documents)
@@ -515,13 +519,11 @@ def _validate_batch_result(
             pm_terms,
             pm_rationale,
         )
-        if valid_terms != tuple(dict.fromkeys(pm_terms)) or (
-            pm_terms and valid_rationale != " ".join(pm_rationale.split())
-        ):
-            raise ValueError("PM metric context is unsupported or semantically mismatched")
-
         normalized = dict(issue)
         normalized["issue_key"] = issue_key
+        normalized["source_signal_ids"] = list(signal_ids)
+        normalized["pm_terms"] = list(valid_terms)
+        normalized["pm_rationale"] = valid_rationale
         issues.append(_AnalyzedIssue(batch.game_id, normalized, documents))
 
     exclusions: list[dict[str, str]] = []
