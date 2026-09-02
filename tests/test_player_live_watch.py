@@ -381,7 +381,7 @@ class PlayerLiveAnalyzerTests(unittest.TestCase):
                         "source_signal_ids": ["invented-signal"],
                         "title": "전투 멈춤 경험 주장",
                         "summary": "이용자 게시글에서 전투 멈춤 경험이 보고됐다.",
-                        "topic": "BUG", "reaction": "NEGATIVE", "intensity": "LOW",
+                        "topic": "BUG", "reaction": "NEGATIVE", "intensity": "MEDIUM",
                         "trend": "UNKNOWN", "confidence": "MEDIUM",
                         "observed_facts": [],
                         "player_claims": ["이용자가 전투 중 멈춤을 경험했다고 주장했다."],
@@ -402,6 +402,59 @@ class PlayerLiveAnalyzerTests(unittest.TestCase):
         self.assertEqual(outcome.insights[0].source_signal_ids, ())
         self.assertEqual(outcome.insights[0].pm_metric_context.terms, ())
         self.assertEqual(outcome.insights[0].pm_metric_context.rationale, "")
+
+    def test_low_value_single_source_chatter_is_excluded(self) -> None:
+        class ChatterClient:
+            model = "test-model"
+
+            def structured(self, **kwargs: object) -> dict[str, object]:
+                input_id = json.loads(str(kwargs["input_text"]))["evidence"][0]["input_id"]
+                return {
+                    "issues": [{
+                        "issue_key": "costume-sharing",
+                        "input_ids": [input_id],
+                        "source_signal_ids": [],
+                        "title": "코스튬 이미지 공유",
+                        "summary": "이용자가 코스튬 이미지를 공유했다.",
+                        "topic": "CONTENT", "reaction": "POSITIVE", "intensity": "LOW",
+                        "trend": "UNKNOWN", "confidence": "LOW",
+                        "observed_facts": [],
+                        "player_claims": ["이용자가 꾸민 캐릭터 이미지를 게시했다."],
+                        "analysis": ["일회성 이미지 공유 활동으로 확인된다."],
+                        "unknowns": ["다른 이용자의 반응은 확인되지 않았다."],
+                        "pm_terms": [], "pm_rationale": "",
+                        "live_risk": "현재 공개 근거에서는 운영 위험이 확인되지 않았다.",
+                        "recommended_checks": ["추가 조치 없이 관찰 대상으로만 유지한다."],
+                    }],
+                    "excluded_inputs": [],
+                }
+
+        outcome = analyze_player_evidence(ChatterClient(), (self.claim,))  # type: ignore[arg-type]
+
+        self.assertEqual(outcome.insights, ())
+        self.assertEqual(len(outcome.excluded_inputs), 1)
+        self.assertIn("승격 기준", outcome.excluded_inputs[0]["reason"])
+
+    def test_attribution_style_player_quote_fails_validation(self) -> None:
+        test_case = self
+
+        class QuotingClient:
+            model = "test-model"
+
+            def structured(self, **kwargs: object) -> dict[str, object]:
+                inputs = json.loads(str(kwargs["input_text"]))["evidence"]
+                result = test_case._valid_result([item["input_id"] for item in inputs])
+                result["issues"][0]["player_claims"] = [
+                    '"점검 후에도 멈췄다" — 이용자 게시글 원문'
+                ]
+                return result
+
+        with self.assertRaisesRegex(ValueError, "must be paraphrased"):
+            analyze_player_evidence(
+                QuotingClient(),  # type: ignore[arg-type]
+                (self.official, self.claim),
+                source_signals=({"signal_id": "sig-maintenance", "game_id": "mabinogi-mobile"},),
+            )
 
     def test_analysis_cache_reuses_unchanged_game(self) -> None:
         test_case = self

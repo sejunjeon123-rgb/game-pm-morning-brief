@@ -45,7 +45,7 @@ For deterministic active-source collection, use `player_live_watch.common_collec
 
 For bounded OpenAI clustering of a saved common Evidence payload, use `player_live_watch.runner.analyze_player_live_collection_file` or `python -m app.run --mode player-live-analyze --player-live-collection-file <path>`. The analyzer must account for every input exactly once, retry one deterministic validation failure at most once, cache unchanged games, and reject any output that promotes `PLAYER_CLAIM` to `observed_facts` or treats official-only evidence as player reaction.
 
-Never collect private groups, login-restricted personal data, deleted-content mirrors, direct messages, or personally identifying information. Do not identify, profile, or score individual users. Quote minimally and paraphrase by default.
+Never collect private groups, login-restricted personal data, deleted-content mirrors, direct messages, or personally identifying information. Do not identify, profile, or score individual users. Paraphrase player claims; do not reproduce post bodies, profanity, or attribution-style direct quotations in an insight.
 
 Treat views, likes, comments, rankings, post counts, and reaction ratios as source-specific observations. Do not convert them into DAU, Retention, revenue, or population-wide sentiment.
 
@@ -56,6 +56,7 @@ Treat views, likes, comments, rankings, post counts, and reaction ratios as sour
 3. Collect reaction evidence before interpreting it. Preserve source, title, observed time, collection time, content hash, and the relevant paraphrased claim.
 4. Remove exact duplicates, reposts, quoted copies, obvious spam, and repeated posts by the same account when assessing recurrence. Preserve them only as propagation evidence when that distinction matters.
 5. Cluster posts by the underlying player issue, not by matching keywords alone. Keep separate concerns separate even when they relate to the same update.
+   Exclude pure social chatter, memes, image or costume sharing, nickname showcases, guild recruitment, off-topic posts, and isolated ordinary questions unless they show recurring material friction or a concrete operational, BM, access, performance, economy, balance, payment, account, or data risk. Preserve collection coverage and the exclusion reason; do not convert them into `PlayerLiveInsight` merely to fill the brief.
 6. Classify each cluster with one primary topic: `GAMEPLAY`, `BALANCE`, `BM`, `REWARD`, `CONTENT`, `CHARACTER`, `BUG`, `PERFORMANCE`, `ACCESS`, `MAINTENANCE`, `COMMUNICATION`, `EVENT`, `COLLAB`, or `OTHER`.
 7. Classify the dominant reaction as `POSITIVE`, `MIXED`, `NEGATIVE`, or `UNCLEAR`. Record meaningful minority reactions instead of forcing consensus.
 8. Assess intensity as `LOW`, `MEDIUM`, `HIGH`, or `CRITICAL` using recurrence, source diversity, persistence, operational impact, and escalation signs. Never use post volume alone.
@@ -99,6 +100,8 @@ Represent confidence as `LOW`, `MEDIUM`, or `HIGH`; do not use a fabricated prec
 ## Quality gates
 
 - Require at least one citable public evidence item.
+- Require `LOW` community-only observations without a matching Signal to remain excluded from `PlayerLiveInsight`. A `MEDIUM` single-host observation must concern an actionable operating topic, show negative or mixed risk, or have independent corroboration.
+- Require concise paraphrases in `player_claims`; reject copied post bodies, profanity, attribution-style quotations, and claim or analysis list items over 300 characters.
 - Require more than one independent evidence item before describing a reaction as widespread or representative.
 - Require at least two independent source hosts for every `GAME_RADAR` insight.
 - Reject naive timestamps, unsupported trend labels, unapproved PM terms, and KPI estimates.
