@@ -546,22 +546,25 @@ def _validate_batch_result(
             )
         )
 
-        _validate_issue_prose(issue)
-        _validate_evidence_boundary(issue, documents)
-        _validate_trend(issue, documents)
-        _validate_confidence_and_population_language(issue, documents)
-        if Severity(str(issue.get("intensity"))) is Severity.CRITICAL and not _CRITICAL_RISK.search(
-            str(issue.get("live_risk", ""))
+        normalized = dict(issue)
+        if Severity(str(normalized.get("intensity"))) is Severity.CRITICAL and not _CRITICAL_RISK.search(
+            str(normalized.get("live_risk", ""))
         ):
-            raise ValueError("CRITICAL intensity lacks an immediate integrity or access risk")
+            # Intensity is a downstream interpretation, not source evidence. Preserve
+            # the issue while deterministically capping an unsupported CRITICAL label.
+            normalized["intensity"] = Severity.HIGH.value
 
-        pm_terms = tuple(str(value) for value in issue.get("pm_terms", []))
-        pm_rationale = str(issue.get("pm_rationale", "")).strip()
+        _validate_issue_prose(normalized)
+        _validate_evidence_boundary(normalized, documents)
+        _validate_trend(normalized, documents)
+        _validate_confidence_and_population_language(normalized, documents)
+
+        pm_terms = tuple(str(value) for value in normalized.get("pm_terms", []))
+        pm_rationale = str(normalized.get("pm_rationale", "")).strip()
         valid_terms, valid_rationale = sanitize_pm_metric_context(
             pm_terms,
             pm_rationale,
         )
-        normalized = dict(issue)
         normalized["issue_key"] = issue_key
         normalized["source_signal_ids"] = list(signal_ids)
         normalized["pm_terms"] = list(valid_terms)

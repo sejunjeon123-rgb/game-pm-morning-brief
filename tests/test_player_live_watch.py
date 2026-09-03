@@ -363,6 +363,27 @@ class PlayerLiveAnalyzerTests(unittest.TestCase):
         self.assertEqual(insight.routing.final_router, "pm-decision-lead")
         self.assertEqual(insight.pm_metric_context.terms, ("Retention", "TS"))
 
+    def test_caps_unsupported_critical_intensity_without_discarding_issue(self) -> None:
+        test_case = self
+
+        class OverstatingClient:
+            model = "test-model"
+
+            def structured(self, **kwargs: object) -> dict[str, object]:
+                inputs = json.loads(str(kwargs["input_text"]))["evidence"]
+                result = test_case._valid_result([item["input_id"] for item in inputs])
+                result["issues"][0]["intensity"] = "CRITICAL"
+                return result
+
+        outcome = analyze_player_evidence(
+            OverstatingClient(),  # type: ignore[arg-type]
+            (self.official, self.claim),
+            source_signals=({"signal_id": "sig-maintenance", "game_id": "mabinogi-mobile"},),
+        )
+
+        self.assertEqual(len(outcome.insights), 1)
+        self.assertEqual(outcome.insights[0].intensity.value, "HIGH")
+
     def test_claim_only_cannot_be_promoted_to_observed_fact(self) -> None:
         class BadClient:
             model = "test-model"
