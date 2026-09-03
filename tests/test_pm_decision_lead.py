@@ -131,6 +131,17 @@ class PMDecisionLeadTests(unittest.TestCase):
         )
         self.assertEqual(client.calls, 2)
 
+    def test_drops_metric_check_when_metric_context_is_semantically_invalid(self) -> None:
+        result = valid_result()
+        result["decisions"][0]["pm_rationale"] = "관련 수치는 내부에서 확인할 필요가 있습니다."
+        brief = synthesize_morning_brief(
+            FakeClient([result]), game_scope=GAME_SCOPE,
+            signals=(signal(),), insights=(insight(),),
+        )
+        decision = brief.decisions[0]
+        self.assertEqual(decision.pm_metric_context.terms, ())
+        self.assertEqual(decision.metric_checks, ())
+
     def test_high_signal_requires_deep_dive_or_gap(self) -> None:
         with self.assertRaisesRegex(ValueError, "deep dive"):
             synthesize_morning_brief(

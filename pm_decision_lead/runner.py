@@ -32,13 +32,20 @@ def build_morning_brief_from_files(
         item for item in market.get("coverage_gaps", []) + player.get("coverage_gaps", [])
         if isinstance(item, dict)
     )
-    brief = synthesize_morning_brief(
-        OpenAIResponsesClient(api_key, model),
-        game_scope=game_scope,
-        signals=tuple(item for item in market.get("signals", []) if isinstance(item, dict)),
-        insights=tuple(item for item in player.get("insights", []) if isinstance(item, dict)),
-        coverage_gaps=gaps,
-    )
+    try:
+        brief = synthesize_morning_brief(
+            OpenAIResponsesClient(api_key, model),
+            game_scope=game_scope,
+            signals=tuple(item for item in market.get("signals", []) if isinstance(item, dict)),
+            insights=tuple(item for item in player.get("insights", []) if isinstance(item, dict)),
+            coverage_gaps=gaps,
+        )
+    except ValueError as exc:
+        return {
+            "decision_status": "blocked_validation",
+            "reason": str(exc),
+            "decisions": [],
+        }
     return {"decision_status": "completed", "brief": asdict(brief)}
 
 

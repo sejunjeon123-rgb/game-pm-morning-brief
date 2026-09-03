@@ -301,9 +301,11 @@ def _validate_and_build(
             (str(value) for value in raw.get("pm_terms", [])),
             str(raw.get("pm_rationale", "")),
         )
-        checks = tuple(_metric_check(value) for value in raw.get("metric_checks", []))
-        if set(check.term for check in checks) - set(terms):
-            raise ValueError("metric check term is absent from pm_metric_context")
+        checks = tuple(
+            check
+            for check in (_metric_check(value) for value in raw.get("metric_checks", []))
+            if check.term in set(terms)
+        )
         actions = tuple(_action(value) for value in raw.get("recommended_actions", []))
         evidence = _evidence_for(signal_ids, insight_ids, allowed_signals, allowed_insights)
         decision_id = "decision-" + hashlib.sha256(f"{game_id}|{key}".encode()).hexdigest()[:16]
