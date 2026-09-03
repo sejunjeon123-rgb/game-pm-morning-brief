@@ -631,7 +631,7 @@ def _validate_issue_prose(issue: Mapping[str, Any]) -> None:
             if _ABUSIVE_EXPRESSION.search(rendered):
                 raise ValueError(f"analysis {field} contains an abusive expression")
             if field == "player_claims" and (
-                rendered.startswith(('"', "'", "“", "‘")) or " — " in rendered
+                rendered.startswith(('"', "'", "“", "‘"))
             ):
                 raise ValueError("analysis player_claims must be paraphrased")
             prose.append(rendered)

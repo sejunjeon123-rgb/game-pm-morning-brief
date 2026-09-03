@@ -538,6 +538,27 @@ class PlayerLiveAnalyzerTests(unittest.TestCase):
                 source_signals=({"signal_id": "sig-maintenance", "game_id": "mabinogi-mobile"},),
             )
 
+    def test_unquoted_em_dash_summary_is_not_treated_as_direct_quote(self) -> None:
+        test_case = self
+
+        class DashClient:
+            model = "test-model"
+
+            def structured(self, **kwargs: object) -> dict[str, object]:
+                inputs = json.loads(str(kwargs["input_text"]))["evidence"]
+                result = test_case._valid_result([item["input_id"] for item in inputs])
+                result["issues"][0]["player_claims"] = [
+                    "일부 게시물에서 전투 멈춤 — 점검 이후 재발 가능성이 보고됐다."
+                ]
+                return result
+
+        outcome = analyze_player_evidence(
+            DashClient(),  # type: ignore[arg-type]
+            (self.official, self.claim),
+            source_signals=({"signal_id": "sig-maintenance", "game_id": "mabinogi-mobile"},),
+        )
+        self.assertEqual(len(outcome.insights), 1)
+
     def test_analysis_cache_reuses_unchanged_game(self) -> None:
         test_case = self
 
