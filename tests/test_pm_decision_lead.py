@@ -142,6 +142,20 @@ class PMDecisionLeadTests(unittest.TestCase):
         self.assertEqual(decision.pm_metric_context.terms, ())
         self.assertEqual(decision.metric_checks, ())
 
+    def test_drops_non_korean_optional_checks_and_actions(self) -> None:
+        result = valid_result()
+        result["decisions"][0]["metric_checks"][0]["question"] = "Check DAU after update"
+        result["decisions"][0]["recommended_actions"][0]["suggested_role"] = "Live Ops"
+        client = FakeClient([result])
+
+        brief = synthesize_morning_brief(
+            client, game_scope=GAME_SCOPE, signals=(signal(),), insights=(insight(),),
+        )
+
+        self.assertEqual(client.calls, 1)
+        self.assertEqual(brief.decisions[0].metric_checks, ())
+        self.assertEqual(brief.decisions[0].recommended_actions, ())
+
     def test_high_signal_requires_deep_dive_or_gap(self) -> None:
         with self.assertRaisesRegex(ValueError, "deep dive"):
             synthesize_morning_brief(

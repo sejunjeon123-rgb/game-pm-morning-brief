@@ -301,12 +301,17 @@ def _validate_and_build(
             (str(value) for value in raw.get("pm_terms", [])),
             str(raw.get("pm_rationale", "")),
         )
+        valid_terms = set(terms)
         checks = tuple(
-            check
-            for check in (_metric_check(value) for value in raw.get("metric_checks", []))
-            if check.term in set(terms)
+            _metric_check(value)
+            for value in raw.get("metric_checks", [])
+            if _is_valid_metric_check(value) and str(value.get("term", "")) in valid_terms
         )
-        actions = tuple(_action(value) for value in raw.get("recommended_actions", []))
+        actions = tuple(
+            _action(value)
+            for value in raw.get("recommended_actions", [])
+            if _is_valid_action(value)
+        )
         evidence = _evidence_for(signal_ids, insight_ids, allowed_signals, allowed_insights)
         decision_id = "decision-" + hashlib.sha256(f"{game_id}|{key}".encode()).hexdigest()[:16]
         built.append(PMDecisionItem(
@@ -394,16 +399,21 @@ def _validate_korean_fields(raw: Mapping[str, Any]) -> None:
         raise ValueError("decision explanatory prose must be Korean and non-empty")
     if any(_UNSUPPORTED_KPI_MOVEMENT.search(value) for value in prose):
         raise ValueError("public evidence asserted unsupported KPI movement")
-    supporting_prose = [
-        *[str(value.get("question", "")) for value in raw.get("metric_checks", [])],
-        *[
-            str(value.get(field, ""))
-            for value in raw.get("recommended_actions", [])
-            for field in ("action", "suggested_role", "timing", "reassessment_condition")
-        ],
-    ]
-    if any(not value.strip() or not is_korean_prose(value) for value in supporting_prose):
-        raise ValueError("metric checks and actions must be Korean and non-empty")
+
+
+def _is_valid_metric_check(value: Mapping[str, Any]) -> bool:
+    """Keep only Korean, actionable checks; optional model extras may be discarded."""
+
+    question = str(value.get("question", "")).strip()
+    return bool(question and is_korean_prose(question))
+
+
+def _is_valid_action(value: Mapping[str, Any]) -> bool:
+    """Keep only complete Korean recommendations without weakening core validation."""
+
+    required = ("action", "suggested_role", "timing", "reassessment_condition")
+    prose = tuple(str(value.get(field, "")).strip() for field in required)
+    return all(text and is_korean_prose(text) for text in prose)
 
 
 def _require_exact_accounting(expected: list[str], assigned: list[str], label: str) -> None:
