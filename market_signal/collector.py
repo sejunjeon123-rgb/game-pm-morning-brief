@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import asdict
+from datetime import datetime
 from typing import Any
 from urllib.parse import urlencode
 
@@ -13,7 +14,7 @@ from market_signal.normalize import content_hash, extract_text, extract_text_fro
 from market_signal.official_board_adapters import ADAPTER_SPECS, OfficialDocument, collect_official_board
 from shared.http_client import DEFAULT_USER_AGENT, HttpClient, HttpClientError
 from shared.state_store import StateStore
-from shared.time_utils import is_recent, now_kst
+from shared.time_utils import ensure_kst, is_recent, now_kst
 
 
 HTML_GAMES = frozenset({"mabinogi-mobile", "black-desert-mobile"})
@@ -31,10 +32,11 @@ def collect_official_notices(
     *,
     client: HttpClient | None = None,
     max_details_per_game: int = 20,
+    now: datetime | None = None,
 ) -> dict[str, Any]:
     http = client or HttpClient(timeout=20, retries=2, backoff=1)
     source_by_game = {item["game_id"]: item for item in config.sources}
-    collected_at = now_kst()
+    collected_at = ensure_kst(now) if now is not None else now_kst()
     notices: list[CollectedNotice] = []
     coverage_gaps: list[dict[str, str]] = []
     next_state = state.read("market-signal/notice_hashes", {"notices": {}})
@@ -47,7 +49,11 @@ def collect_official_notices(
         source = source_by_game[game_id]
         try:
             if game_id in ADAPTER_SPECS:
-                documents = tuple(item for item in collect_official_board(game_id, http, rows=max_details_per_game) if is_recent(item.published_at))
+                documents = tuple(
+                    item
+                    for item in collect_official_board(game_id, http, rows=max_details_per_game)
+                    if is_recent(item.published_at, now=collected_at)
+                )
             else:
                 list_url = source["notices"]
                 candidates: tuple[Any, ...] = ()
@@ -68,7 +74,9 @@ def collect_official_notices(
                         },
                     ).text()
                     parsed = parse_listing(game_id, list_url, listing)
-                    candidates = tuple(item for item in parsed if is_recent(item.published_at))
+                    candidates = tuple(
+                        item for item in parsed if is_recent(item.published_at, now=collected_at)
+                    )
                     listing_diagnostics.append(
                         f"length={len(listing)}, threads={listing.lower().count('data-threadid')}, "
                         f"notice_links={listing.lower().count('/news/notice/')}, parsed={len(parsed)}, recent={len(candidates)}"

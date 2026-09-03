@@ -117,6 +117,7 @@ class MarketSignalTests(unittest.TestCase):
             report = collect_official_notices(
                 config, StateStore(Path(directory)), ("mabinogi-mobile",),
                 client=FallbackClient(), max_details_per_game=2,  # type: ignore[arg-type]
+                now=datetime(2026, 9, 2, 8, 0, tzinfo=KST),
             )
         self.assertEqual(len(report["notices"]), 1)
         self.assertEqual(report["notices"][0]["title"], "8/27(목) 신규 패키지 안내")
