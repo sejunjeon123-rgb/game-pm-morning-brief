@@ -654,6 +654,7 @@ class PlayerLiveAnalyzerTests(unittest.TestCase):
         self.assertEqual(result["analysis_status"], "completed_with_analysis_gap")
         self.assertEqual(result["insight_count"], 0)
         self.assertEqual(result["coverage_gaps"][0]["source"], "PLAYER_LIVE_ANALYSIS")
+        self.assertIn("UNKNOWN_VALIDATION_ERROR", result["coverage_gaps"][0]["reason"])
         self.assertNotIn("invalid model output", str(result))
 
 

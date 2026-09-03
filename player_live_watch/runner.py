@@ -58,12 +58,16 @@ def analyze_player_live_collection_file(
             source_signals=source_signals,
             state=state,
         )
-    except ValueError:
+    except ValueError as exc:
+        validation_code = _validation_error_code(exc)
         analysis_gaps = [
             {
                 "game_id": game_id,
                 "source": "PLAYER_LIVE_ANALYSIS",
-                "reason": "OpenAI output did not pass the bounded deterministic validation retries",
+                "reason": (
+                    "OpenAI output did not pass the bounded deterministic validation retries "
+                    f"({validation_code})"
+                ),
             }
             for game_id in sorted({item.game_id for item in evidence})
         ]
@@ -103,6 +107,34 @@ def _load_signal_context(path: Path | None) -> tuple[Mapping[str, Any], ...]:
     if not isinstance(signals, list):
         raise ValueError("Market Signal file signals must be an array")
     return tuple(item for item in signals if isinstance(item, Mapping))
+
+
+def _validation_error_code(exc: ValueError) -> str:
+    """Return a controlled diagnostic without retaining untrusted model prose."""
+
+    message = str(exc)
+    categories = (
+        ("completeness gate", "INPUT_ACCOUNTING"),
+        ("referenced no known evidence", "UNKNOWN_EVIDENCE"),
+        ("Korean prose", "NON_KOREAN_PROSE"),
+        ("concise output limit", "OUTPUT_TOO_LONG"),
+        ("abusive expression", "ABUSIVE_EXPRESSION"),
+        ("must be paraphrased", "DIRECT_QUOTE"),
+        ("unavailable KPI movement", "UNSUPPORTED_KPI_MOVEMENT"),
+        ("observed_facts require", "OFFICIAL_FACT_WITHOUT_EVIDENCE"),
+        ("OFFICIAL_FACT evidence must remain visible", "OFFICIAL_FACT_NOT_PRESERVED"),
+        ("player_claims require", "PLAYER_CLAIM_WITHOUT_EVIDENCE"),
+        ("PLAYER_CLAIM evidence must remain visible", "PLAYER_CLAIM_NOT_PRESERVED"),
+        ("reaction must be UNCLEAR", "REACTION_WITHOUT_PLAYER_CLAIM"),
+        ("time-separated evidence", "UNSUPPORTED_TREND"),
+        ("population-wide reaction language", "POPULATION_OVERREACH"),
+        ("HIGH confidence requires", "UNSUPPORTED_HIGH_CONFIDENCE"),
+        ("CRITICAL intensity lacks", "UNSUPPORTED_CRITICAL"),
+    )
+    for fragment, code in categories:
+        if fragment in message:
+            return code
+    return "UNKNOWN_VALIDATION_ERROR"
 
 
 def _evidence_from_items(
