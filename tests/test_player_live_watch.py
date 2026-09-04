@@ -64,6 +64,36 @@ def _evidence(
 
 
 class DCInsideAdapterTests(unittest.TestCase):
+    def test_eight_games_keep_page_one_when_page_two_fails(self):
+        from urllib.parse import parse_qs, urlsplit
+        listing = (FIXTURES / "dcinside_listing.html").read_bytes()
+        detail = (FIXTURES / "dcinside_detail.html").read_bytes()
+        class Client:
+            def get(self, url, *, headers=None):
+                query = parse_qs(urlsplit(url).query)
+                if query.get("page") == ["2"]:
+                    raise HttpClientError("unavailable", code="HTTP_503")
+                body = listing.replace(b"mabinogimobile", query["id"][0].encode()) if "/lists/" in url else detail
+                return HttpResponse(url, 200, {}, body)
+        config = load_project_config(ROOT)
+        with tempfile.TemporaryDirectory() as directory:
+            report = collect_dcinside_posts(config, StateStore(Path(directory)), config.game_ids,
+                client=Client(), max_listing_pages=2, max_details_per_game=1, detail_workers=1,
+                collected_at=datetime(2026, 9, 1, 8, 10, tzinfo=KST))
+        self.assertEqual({p["game_id"] for p in report["posts"]}, set(config.game_ids))
+        self.assertEqual(sum(g.get("code") == "HTTP_503" for g in report["coverage_gaps"]), 8)
+
+    def test_empty_response_is_not_no_recent_reaction(self):
+        class Client:
+            def get(self, url, *, headers=None):
+                return HttpResponse(url, 200, {}, b"<html>empty shell</html>")
+        config = load_project_config(ROOT)
+        with tempfile.TemporaryDirectory() as directory:
+            report = collect_dcinside_posts(config, StateStore(Path(directory)), config.game_ids,
+                client=Client(), max_listing_pages=1, max_details_per_game=1)
+        self.assertEqual(len(report["coverage_gaps"]), 8)
+        self.assertTrue(all(g["code"] == "DC_LISTING_UNAVAILABLE" for g in report["coverage_gaps"]))
+
     def test_configured_roles_define_evidence_boundary(self) -> None:
         self.assertEqual(
             classification_for_role("OFFICIAL_FACT"),
@@ -143,7 +173,7 @@ class DCInsideAdapterTests(unittest.TestCase):
                 collected_at=datetime(2026, 9, 1, 8, 10, tzinfo=KST),
             )
         self.assertEqual(len(report["posts"]), 1)
-        self.assertEqual(report["coverage_gaps"], [])
+        self.assertEqual(report["coverage_gaps"][0]["code"], "DC_LISTING_UNAVAILABLE")
         self.assertEqual(report["posts"][0]["source_type"], "PUBLIC_COMMUNITY")
         self.assertEqual(report["posts"][0]["content_availability"], "FULL_TEXT")
         self.assertEqual(report["metrics"]["mabinogi-mobile"]["semantic_retry_count"], 2)

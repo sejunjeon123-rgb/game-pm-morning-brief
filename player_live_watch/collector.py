@@ -5,6 +5,7 @@ from __future__ import annotations
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import asdict
 from datetime import datetime
+import re
 from threading import Lock
 from time import monotonic, sleep
 from typing import Any
@@ -91,7 +92,10 @@ def _collect_listing_page(
         if len(response.body) > 2_000_000:
             raise ValueError("listing exceeds response size limit")
         listing_html = response.text()
-        marker_count = listing_html.count("ub-content us-post")
+        marker_count = sum(
+            {"ub-content", "us-post"}.issubset(classes.split())
+            for classes in re.findall(r'<tr\b[^>]*\bclass=[\"\']([^\"\']*)', listing_html, re.I)
+        )
         parsed = parse_listing(
             game_id,
             source["source_id"],
@@ -116,6 +120,7 @@ def collect_dcinside_posts(
     detail_workers: int = 4,
     collected_at: datetime | None = None,
     minimum_interval_seconds: float | None = None,
+    detail_limits: dict[str, int] | None = None,
 ) -> dict[str, Any]:
     if max_listing_pages <= 0 or max_details_per_game <= 0 or detail_workers <= 0:
         raise ValueError("collection bounds must be positive")
@@ -191,6 +196,10 @@ def collect_dcinside_posts(
                 parsed_count += len(parsed)
                 pages_read += 1
                 if not parsed:
+                    gaps.append({"game_id": game_id, "source": source["source_id"],
+                                 "code": "DC_LISTING_PARSE_GAP" if marker_count else "DC_LISTING_UNAVAILABLE",
+                                 "reason": "listing rows could not be parsed" if marker_count else
+                                 "response exposed no public post rows; this is not evidence of no player reaction"})
                     break
                 for candidate in parsed:
                     if is_recent(candidate.published_at, now=observed_at):
@@ -201,7 +210,9 @@ def collect_dcinside_posts(
                 if candidates and min(item.published_at for item in candidates.values()) > window_start:
                     window_truncated = True
         except (HttpClientError, KeyError, TypeError, ValueError, UnicodeError) as exc:
-            gaps.append({"game_id": game_id, "source": source["source_id"], "reason": f"DCInside listing collection failed: {type(exc).__name__}"})
+            gaps.append({"game_id": game_id, "source": source["source_id"],
+                         "code": exc.code if isinstance(exc, HttpClientError) else "DC_LISTING_PARSE_GAP",
+                         "reason": f"DCInside listing collection failed: {type(exc).__name__}; earlier candidates preserved"})
             metrics[game_id] = {
                 "pages_read": pages_read,
                 "listing_marker_count": listing_marker_count,
@@ -213,9 +224,11 @@ def collect_dcinside_posts(
                 "title_only_count": 0,
                 "window_truncated": window_truncated,
             }
-            continue
+            if not candidates:
+                continue
 
-        selected = _selected_candidates(tuple(sorted(candidates.values(), key=lambda item: item.published_at, reverse=True)), max_details_per_game)
+        limit = min(max_details_per_game, max(1, (detail_limits or {}).get(game_id, max_details_per_game)))
+        selected = _selected_candidates(tuple(sorted(candidates.values(), key=lambda item: item.published_at, reverse=True)), limit)
         detail_results: list[tuple[PlayerPostCandidate, str, bool]] = []
         detail_failure_types: list[str] = []
         with ThreadPoolExecutor(max_workers=detail_workers) as executor:
@@ -240,6 +253,11 @@ def collect_dcinside_posts(
                     ),
                 }
             )
+
+        if any(marker and not body for _, body, marker in detail_results):
+            gaps.append({"game_id": game_id, "source": source["source_id"],
+                         "code": "DC_TITLE_ONLY",
+                         "reason": "a selected post exposed no readable body text; only its title is evidence"})
 
         for candidate, body, _ in sorted(detail_results, key=lambda item: item[0].published_at, reverse=True):
             normalized = normalize_text(f"{candidate.title}\n{body}")
@@ -274,8 +292,10 @@ def collect_dcinside_posts(
             }
         if window_truncated:
             gaps.append({"game_id": game_id, "source": source["source_id"], "reason": f"recent listing window exceeded the bounded {max_listing_pages}-page scan"})
-        if not candidates:
-            gaps.append({"game_id": game_id, "source": source["source_id"], "reason": "no recent public posts were exposed by the verified listing"})
+        if not candidates and parsed_count:
+            gaps.append({"game_id": game_id, "source": source["source_id"],
+                         "code": "DC_NO_RECENT_POSTS",
+                         "reason": "dated public posts were parsed, but none fell within the recent window"})
         metrics[game_id] = {
             "pages_read": pages_read,
             "listing_marker_count": listing_marker_count,

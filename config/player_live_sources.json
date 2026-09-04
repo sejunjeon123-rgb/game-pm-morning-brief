@@ -42,6 +42,42 @@
           "evidence_role": "PLAYER_REACTION",
           "status": "VERIFIED",
           "collection_status": "ADAPTER_READY"
+        },
+        {
+          "source_id": "mabinogi-mobile-creator-UCt_Uacs4q6jMI0sosgTZDNg",
+          "platform": "YouTube",
+          "source_type": "PUBLIC_CREATOR_YOUTUBE",
+          "url": "https://www.youtube.com/@morning2studio",
+          "youtube_channel_id": "UCt_Uacs4q6jMI0sosgTZDNg",
+          "verified_name_ko": "모닝이 게임영상",
+          "evidence_role": "CREATOR_ANALYSIS",
+          "status": "VERIFIED",
+          "collection_status": "RSS_READY",
+          "verified_at": "2026-09-04",
+          "game_filter_terms": [
+            "마비노기 모바일",
+            "마비노기모바일",
+            "마비모바일",
+            "마모"
+          ]
+        },
+        {
+          "source_id": "mabinogi-mobile-creator-UCqjlms7qGL3wXQ7d5keGGAQ",
+          "platform": "YouTube",
+          "source_type": "PUBLIC_CREATOR_YOUTUBE",
+          "url": "https://www.youtube.com/@%ED%99%A9%EC%82%B0%EA%B0%88%EB%A7%A4%EA%B8%B0",
+          "youtube_channel_id": "UCqjlms7qGL3wXQ7d5keGGAQ",
+          "verified_name_ko": "황산갈매기",
+          "evidence_role": "CREATOR_ANALYSIS",
+          "status": "VERIFIED",
+          "collection_status": "RSS_READY",
+          "verified_at": "2026-09-04",
+          "game_filter_terms": [
+            "마비노기 모바일",
+            "마비노기모바일",
+            "마비모바일",
+            "마모"
+          ]
         }
       ]
     },
@@ -77,6 +113,40 @@
           "evidence_role": "PLAYER_REACTION",
           "status": "VERIFIED",
           "collection_status": "ADAPTER_READY"
+        },
+        {
+          "source_id": "black-desert-mobile-creator-UCuB6SbkriMAcmxdnBdOKznw",
+          "platform": "YouTube",
+          "source_type": "PUBLIC_CREATOR_YOUTUBE",
+          "url": "https://www.youtube.com/@eongdingpangpang",
+          "youtube_channel_id": "UCuB6SbkriMAcmxdnBdOKznw",
+          "verified_name_ko": "엉딩팡팡",
+          "evidence_role": "CREATOR_ANALYSIS",
+          "status": "VERIFIED",
+          "collection_status": "RSS_READY",
+          "verified_at": "2026-09-04",
+          "game_filter_terms": [
+            "검은사막 모바일",
+            "검은사막모바일",
+            "검사모"
+          ]
+        },
+        {
+          "source_id": "black-desert-mobile-creator-UCGAWXMV_rGoLJJMibQLTFdg",
+          "platform": "YouTube",
+          "source_type": "PUBLIC_CREATOR_YOUTUBE",
+          "url": "https://www.youtube.com/@IRIS_Fenrir",
+          "youtube_channel_id": "UCGAWXMV_rGoLJJMibQLTFdg",
+          "verified_name_ko": "아이리스",
+          "evidence_role": "CREATOR_ANALYSIS",
+          "status": "VERIFIED",
+          "collection_status": "RSS_READY",
+          "verified_at": "2026-09-04",
+          "game_filter_terms": [
+            "검은사막 모바일",
+            "검은사막모바일",
+            "검사모"
+          ]
         }
       ]
     },
@@ -147,6 +217,38 @@
           "evidence_role": "PLAYER_REACTION",
           "status": "VERIFIED",
           "collection_status": "ADAPTER_READY"
+        },
+        {
+          "source_id": "lineage-m-creator-UCkoc3bthodCIo_o1Z6Y5Kow",
+          "platform": "YouTube",
+          "source_type": "PUBLIC_CREATOR_YOUTUBE",
+          "url": "https://www.youtube.com/@%EB%AC%B4%EA%B3%BC%EA%B8%88%EC%95%84%EC%A3%A0%EC%94%A8",
+          "youtube_channel_id": "UCkoc3bthodCIo_o1Z6Y5Kow",
+          "verified_name_ko": "무과금아죠씨",
+          "evidence_role": "CREATOR_ANALYSIS",
+          "status": "VERIFIED",
+          "collection_status": "RSS_READY",
+          "verified_at": "2026-09-04",
+          "game_filter_terms": [
+            "리니지m",
+            "리니지 m"
+          ]
+        },
+        {
+          "source_id": "lineage-m-creator-UCkiZxJRs4jFz50eIGlPJOWA",
+          "platform": "YouTube",
+          "source_type": "PUBLIC_CREATOR_YOUTUBE",
+          "url": "https://www.youtube.com/@Linvest-e3p",
+          "youtube_channel_id": "UCkiZxJRs4jFz50eIGlPJOWA",
+          "verified_name_ko": "린베TV [Linvest]",
+          "evidence_role": "CREATOR_ANALYSIS",
+          "status": "VERIFIED",
+          "collection_status": "RSS_READY",
+          "verified_at": "2026-09-04",
+          "game_filter_terms": [
+            "리니지m",
+            "리니지 m"
+          ]
         }
       ]
     },
@@ -192,6 +294,40 @@
           "evidence_role": "PLAYER_REACTION",
           "status": "VERIFIED",
           "collection_status": "ADAPTER_READY"
+        },
+        {
+          "source_id": "seven-knights-rebirth-creator-UC0CC-kdWFxDM2NJDNOgbnsA",
+          "platform": "YouTube",
+          "source_type": "PUBLIC_CREATOR_YOUTUBE",
+          "url": "https://www.youtube.com/@%EC%9A%B1%EC%BA%90%EB%A6%AC",
+          "youtube_channel_id": "UC0CC-kdWFxDM2NJDNOgbnsA",
+          "verified_name_ko": "욱캐리",
+          "evidence_role": "CREATOR_ANALYSIS",
+          "status": "VERIFIED",
+          "collection_status": "RSS_READY",
+          "verified_at": "2026-09-04",
+          "game_filter_terms": [
+            "세븐나이츠 리버스",
+            "세븐나이츠리버스",
+            "세나리"
+          ]
+        },
+        {
+          "source_id": "seven-knights-rebirth-creator-UC3OYurQopKhpZchEMn0wG6Q",
+          "platform": "YouTube",
+          "source_type": "PUBLIC_CREATOR_YOUTUBE",
+          "url": "https://www.youtube.com/@%EB%AC%B4%EB%B9%99",
+          "youtube_channel_id": "UC3OYurQopKhpZchEMn0wG6Q",
+          "verified_name_ko": "무빙TV",
+          "evidence_role": "CREATOR_ANALYSIS",
+          "status": "VERIFIED",
+          "collection_status": "RSS_READY",
+          "verified_at": "2026-09-04",
+          "game_filter_terms": [
+            "세븐나이츠 리버스",
+            "세븐나이츠리버스",
+            "세나리"
+          ]
         }
       ]
     },
@@ -237,6 +373,22 @@
           "evidence_role": "PLAYER_REACTION",
           "status": "VERIFIED",
           "collection_status": "ADAPTER_READY"
+        },
+        {
+          "source_id": "nikke-creator-UC3fPolJUNODqYKC5qvSCTwg",
+          "platform": "YouTube",
+          "source_type": "PUBLIC_CREATOR_YOUTUBE",
+          "url": "https://www.youtube.com/@Sperando_TV",
+          "youtube_channel_id": "UC3fPolJUNODqYKC5qvSCTwg",
+          "verified_name_ko": "Sperando 스페란도 GAME TV",
+          "evidence_role": "CREATOR_ANALYSIS",
+          "status": "VERIFIED",
+          "collection_status": "RSS_READY",
+          "verified_at": "2026-09-04",
+          "game_filter_terms": [
+            "니케",
+            "nikke"
+          ]
         }
       ]
     },
@@ -272,6 +424,38 @@
           "evidence_role": "PLAYER_REACTION",
           "status": "VERIFIED",
           "collection_status": "ADAPTER_READY"
+        },
+        {
+          "source_id": "trickcal-revive-creator-UCr07llmfk-lM0IuGAVSLeww",
+          "platform": "YouTube",
+          "source_type": "PUBLIC_CREATOR_YOUTUBE",
+          "url": "https://www.youtube.com/@%EB%93%9C%EB%A6%BD%EC%9F%81%EC%9D%B4",
+          "youtube_channel_id": "UCr07llmfk-lM0IuGAVSLeww",
+          "verified_name_ko": "드립쟁이",
+          "evidence_role": "CREATOR_ANALYSIS",
+          "status": "VERIFIED",
+          "collection_status": "RSS_READY",
+          "verified_at": "2026-09-04",
+          "game_filter_terms": [
+            "트릭컬",
+            "trickcal"
+          ]
+        },
+        {
+          "source_id": "trickcal-revive-creator-UCJjE0EfkM_KS1-1tsrmGyjA",
+          "platform": "YouTube",
+          "source_type": "PUBLIC_CREATOR_YOUTUBE",
+          "url": "https://www.youtube.com/@game-doritang",
+          "youtube_channel_id": "UCJjE0EfkM_KS1-1tsrmGyjA",
+          "verified_name_ko": "겜도리탕",
+          "evidence_role": "CREATOR_ANALYSIS",
+          "status": "VERIFIED",
+          "collection_status": "RSS_READY",
+          "verified_at": "2026-09-04",
+          "game_filter_terms": [
+            "트릭컬",
+            "trickcal"
+          ]
         }
       ]
     },
@@ -307,6 +491,22 @@
           "evidence_role": "PLAYER_REACTION",
           "status": "VERIFIED",
           "collection_status": "ADAPTER_READY"
+        },
+        {
+          "source_id": "epic-seven-creator-UCz7zN6v1EGbQIXEZQtq_IEw",
+          "platform": "YouTube",
+          "source_type": "PUBLIC_CREATOR_YOUTUBE",
+          "url": "https://www.youtube.com/@user-%EA%B0%9C%EB%A0%89%ED%84%B0",
+          "youtube_channel_id": "UCz7zN6v1EGbQIXEZQtq_IEw",
+          "verified_name_ko": "개렉터",
+          "evidence_role": "CREATOR_ANALYSIS",
+          "status": "VERIFIED",
+          "collection_status": "RSS_READY",
+          "verified_at": "2026-09-04",
+          "game_filter_terms": [
+            "에픽세븐",
+            "epic seven"
+          ]
         }
       ]
     }

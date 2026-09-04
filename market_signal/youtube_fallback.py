@@ -64,7 +64,7 @@ def parse_watch(html, game_id, channel_id, video_id, now, filter_terms=()):
                            source_type="OFFICIAL_YOUTUBE")
 
 
-def collect_channel_fallback(http, source, now):
+def collect_channel_fallback(http, source, now, *, max_videos=3):
     channel_id = source["youtube_channel_id"]
     data = channel_data(http, source["youtube"], channel_id)
     for tab in values_for(data.get("contents", {}), "tabRenderer"):
@@ -76,7 +76,7 @@ def collect_channel_fallback(http, source, now):
     else:
         raise ValueError("verified video tab missing")
     ids = list(dict.fromkeys(v for v in values_for(data.get("contents", {}), "videoId")
-                            if isinstance(v, str) and re.fullmatch(r"[A-Za-z0-9_-]{11}", v)))[:3]
+                            if isinstance(v, str) and re.fullmatch(r"[A-Za-z0-9_-]{11}", v)))[:max_videos]
     items = []
     for video_id in ids:
         try:

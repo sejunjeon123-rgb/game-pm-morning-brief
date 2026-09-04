@@ -12,6 +12,7 @@ from market_signal.collector import collect_official_notices
 from market_signal.youtube_collector import collect_official_youtube
 from player_live_watch.collector import collect_dcinside_posts
 from player_live_watch.common_collector import _normalize_dcinside_evidence
+from player_live_watch.creator_youtube import collect_creator_youtube, creator_sources
 from shared.http_client import HttpClient
 from shared.json_utils import dumps
 from shared.openai_client import OpenAIClientError
@@ -47,6 +48,8 @@ INSTRUCTIONS = """게임 사업 PM의 간결한 일일 보고서를 작성한다
 facts는 OFFICIAL_FACT 근거만, claims는 PLAYER_CLAIM 근거만 사용한다.
 공식 홈페이지 공지, 홈페이지 연결 공식 커뮤니티, 공식 YouTube 순으로 대표 문구를 선택하되 상이한 내용은 버리지 않는다.
 CREATOR_ANALYSIS는 interpretation에서만 사용한다. 각 문장에 실제 evidence_ids를 붙인다.
+TITLE_ONLY 근거는 제목에서 제기한 주장만 다룬다. 본문이나 영상 내용을 읽었다고 쓰지 않는다.
+개인 유튜브 제목·설명·자막은 제작자의 견해이며 전체 유저 반응이 아니다. 자막 미확보 시 영상 발언을 추정하지 않는다.
 공식 발표와 이용자 경험 주장은 서로 다르며, 공식 확인 없는 주장을 사실로 만들지 않는다.
 출처 간 중요한 차이는 conflicts로 기록한다. 근거 없는 내용은 unknowns에 명시한다.
 각 문장은 한국어 180자 이내, 제목은 60자 이내. 원문 인용, 욕설, 개인 식별정보를 쓰지 않는다.
@@ -67,17 +70,19 @@ def collect_daily(config, state, game_ids):
         max_details_per_game=limits["max_official_details_per_game"],
     )
     youtube = collect_official_youtube(config, state, game_ids, client=official_http)
+    creators = collect_creator_youtube(config, game_ids, client=http)
     players = collect_dcinside_posts(
         config, state, game_ids, client=http,
         max_listing_pages=limits["max_listing_pages"],
         max_details_per_game=limits["max_player_details_per_game"], detail_workers=1,
         minimum_interval_seconds=0.8,
+        detail_limits={g: limits["max_player_details_per_game"] - len(creator_sources(config, g)) for g in game_ids},
     )
     return {
         "game_scope": list(game_ids),
         "official": official["notices"] + youtube["videos"],
-        "players": _normalize_dcinside_evidence(config, players),
-        "coverage_gaps": official["coverage_gaps"] + youtube["coverage_gaps"] + players["coverage_gaps"],
+        "players": _normalize_dcinside_evidence(config, players) + creators["evidence"],
+        "coverage_gaps": official["coverage_gaps"] + youtube["coverage_gaps"] + players["coverage_gaps"] + creators["coverage_gaps"],
     }
 
 
@@ -131,11 +136,14 @@ def validate_summary(result, documents):
                     raise ValueError("evidence boundary violation")
                 used.update(ids)
                 item[field].append({"text": _text(value["text"]), "evidence_ids": list(dict.fromkeys(ids))})
-        if not item["facts"] and not item["claims"]:
+        creator_only = item["interpretation"] and any(by_id[k]["classification"] == "CREATOR_ANALYSIS" for k in used)
+        if not item["facts"] and not item["claims"] and not creator_only:
             raise ValueError("no reportable facts or claims")
         if not isinstance(raw["unknowns"], list) or len(raw["unknowns"]) > 3:
             raise ValueError("invalid unknowns")
         item["unknowns"] = [_text(v) for v in raw["unknowns"]]
+        if any(by_id[k]["classification"] == "CREATOR_ANALYSIS" for k in used):
+            item["unknowns"].append("개인 영상의 제목·설명에 근거한 제작자 견해입니다. 자막·영상 발언과 전체 이용자 반응은 확인하지 않았습니다.")
         item["evidence"] = [by_id[k] for k in sorted(used)]
         output.append(item)
     return output
@@ -202,6 +210,7 @@ def build_daily(config, state, collection, client=None, *, now=None):
         payload = [{"evidence_id": v["evidence_id"], "classification": v["classification"],
                     "source_type": v.get("source_type", "OFFICIAL_NOTICE"), "url": v["url"],
                     "title": str(v["title"])[:180], "published_at": v["published_at"],
+                    "content_availability": v.get("content_availability", "SOURCE_TEXT"),
                     "public_text": str(v.get("normalized_text", ""))[:limits["max_text_characters"]]}
                    for v in selected]
         try:
@@ -257,7 +266,7 @@ def _decision(game, item, now, game_name):
     claims = tuple(v["text"] for v in item["claims"])
     return PMDecisionItem(
         decision_id=f"daily-{key}", decision_key=key, game_id=game,
-        title=f"{game_name} · {item['title']}", executive_summary=("확인됨: " + facts[0]) if facts else ("보고됨: " + claims[0]),
+        title=f"{game_name} · {item['title']}", executive_summary=("확인됨: " + facts[0]) if facts else ("보고됨: " + claims[0]) if claims else ("제작자 견해: " + item["interpretation"][0]["text"]),
         priority=DecisionPriority.P2 if facts else DecisionPriority.P3,
         disposition=DecisionDisposition.VERIFY, confidence=Confidence.LOW,
         decided_at=now, evidence=evidence, observed_facts=facts, player_claims=claims,

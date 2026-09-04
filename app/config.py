@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -123,6 +124,14 @@ def load_project_config(root: Path) -> ProjectConfig:
                 raise ValueError(f"Player Live source URL must be absolute HTTPS: {source_id}")
             if source.get("source_type") == "OFFICIAL_YOUTUBE" and url != official_youtube_by_game[game_entry["game_id"]]:
                 raise ValueError(f"official YouTube source mismatch: {source_id}")
+            if source.get("source_type") == "PUBLIC_CREATOR_YOUTUBE":
+                terms = source.get("game_filter_terms")
+                if (source.get("evidence_role") != "CREATOR_ANALYSIS"
+                    or not url.startswith("https://www.youtube.com/@")
+                    or not re.fullmatch(r"UC[A-Za-z0-9_-]{22}", source.get("youtube_channel_id", ""))
+                    or not isinstance(terms, list) or not terms
+                    or any(not isinstance(t, str) or not t.strip() for t in terms)):
+                    raise ValueError("creator source requires verified channel, game filters and creator-only role")
     return ProjectConfig(
         root=root,
         runtime=runtime,

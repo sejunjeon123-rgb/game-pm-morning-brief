@@ -174,6 +174,7 @@ class DailyTests(unittest.TestCase):
 
     def test_collector_uses_small_bounds_and_single_youtube_pass(self):
         with patch("app.daily.collect_official_notices", return_value={"notices": [], "coverage_gaps": []}) as official, \
+             patch("app.daily.collect_creator_youtube", return_value={"evidence": [], "coverage_gaps": []}), \
              patch("app.daily.collect_official_youtube", return_value={"videos": [], "coverage_gaps": []}) as youtube, \
              patch("app.daily.collect_dcinside_posts", return_value={"posts": [], "coverage_gaps": []}) as players:
             collect_daily(self.config, self.state, self.config.game_ids)
@@ -182,6 +183,8 @@ class DailyTests(unittest.TestCase):
         self.assertEqual(official.call_args.kwargs["client"].retries, 1)
         self.assertIs(youtube.call_args.kwargs["client"], official.call_args.kwargs["client"])
         self.assertEqual(players.call_args.kwargs["client"].retries, 0)
+        self.assertEqual(players.call_args.kwargs["detail_limits"]["mabinogi-mobile"], 3)
+        self.assertEqual(players.call_args.kwargs["detail_limits"]["odin-valhalla-rising"], 5)
         self.assertEqual(players.call_args.kwargs["max_details_per_game"], 5)
         youtube.assert_called_once()
 
