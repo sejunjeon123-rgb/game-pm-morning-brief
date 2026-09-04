@@ -2195,6 +2195,51 @@
       "first_seen_at": "2026-09-03T16:17:51.743900+09:00",
       "last_seen_at": "2026-09-03T16:17:51.743900+09:00",
       "published_at": "2026-09-03T16:02:27+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2175465": {
+      "game_id": "mabinogi-mobile",
+      "source_id": "mabinogi-mobile-dcinside",
+      "title": "음유는 쿨감 반토막 내지 않는이상 절대 뒤질수가 없음",
+      "content_hash": "6510047e1cdac5e13270a6c13117a82feb32a95edba2d52bc05842766da1cf6f",
+      "first_seen_at": "2026-09-04T14:23:25.141655+09:00",
+      "last_seen_at": "2026-09-04T14:23:25.141655+09:00",
+      "published_at": "2026-09-04T14:22:58+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2175464": {
+      "game_id": "mabinogi-mobile",
+      "source_id": "mabinogi-mobile-dcinside",
+      "title": "진지하게 이 겜 위기라고 느끼는 이유",
+      "content_hash": "12a8b0c2f809b05942af0390ea07e7dba410949c763dd27d4f11936fabe46190",
+      "first_seen_at": "2026-09-04T14:23:25.141655+09:00",
+      "last_seen_at": "2026-09-04T14:23:25.141655+09:00",
+      "published_at": "2026-09-04T14:22:35+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2175449": {
+      "game_id": "mabinogi-mobile",
+      "source_id": "mabinogi-mobile-dcinside",
+      "title": "데카 쌀먹 거래 꿀통 발견ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+      "content_hash": "d2d1ba0eff8bacba2214e35c5f2014f08e1aa0e64036a6d27573b36ac35fa6c6",
+      "first_seen_at": "2026-09-04T14:23:25.141655+09:00",
+      "last_seen_at": "2026-09-04T14:23:25.141655+09:00",
+      "published_at": "2026-09-04T14:15:58+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2175415": {
+      "game_id": "mabinogi-mobile",
+      "source_id": "mabinogi-mobile-dcinside",
+      "title": "혹시 주딱 지능이 많이 모자람??",
+      "content_hash": "96041bad71019b1470556cbf3b6011d4e1c6b2e9f51fc76d095e081972544b10",
+      "first_seen_at": "2026-09-04T14:23:25.141655+09:00",
+      "last_seen_at": "2026-09-04T14:23:25.141655+09:00",
+      "published_at": "2026-09-04T13:55:16+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2175390": {
+      "game_id": "mabinogi-mobile",
+      "source_id": "mabinogi-mobile-dcinside",
+      "title": "갑자기 고스트 플레이 보상 파바바박 들어오는 이유",
+      "content_hash": "aaae3d2c08b3c27c3ede090cced523d8b14ee708b5cde07099217f0e5b85c9a3",
+      "first_seen_at": "2026-09-04T14:23:25.141655+09:00",
+      "last_seen_at": "2026-09-04T14:23:25.141655+09:00",
+      "published_at": "2026-09-04T13:40:49+09:00"
     }
   }
 }
