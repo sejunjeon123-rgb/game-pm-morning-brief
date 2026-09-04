@@ -13,6 +13,27 @@ class SlackDeliveryError(RuntimeError):
 
 
 def format_brief(brief: dict[str, Any], *, notion_url: str | None = None) -> dict[str, Any]:
+    if brief.get("report_mode") == "compact-v1":
+        blocks = [{"type": "header", "text": {"type": "plain_text", "text": f"🎮 게임 사업 PM · {brief['brief_date_kst']}"}}]
+        def section(text):
+            blocks.append({"type": "section", "text": {"type": "mrkdwn", "text": text}})
+        section("새 글·수정 글 중심입니다. 유저 반응은 일부 공개 표본이며 긴급도 확정 판정은 포함하지 않습니다.")
+        for item in brief.get("decisions", []):
+            lines = [f"🎮 *{item['title']}*", item["executive_summary"]]
+            if item.get("observed_facts") and item.get("player_claims"):
+                lines.append("🗣️ 보고됨: " + item["player_claims"][0])
+            lines.extend("⚠️ 출처 차이: " + v for v in item.get("conflicts", []))
+            lines.extend("❓ 확인 필요: " + v for v in item.get("unknowns", []))
+            if item.get("evidence"):
+                lines.append(f"<{item['evidence'][0]['url']}|근거 보기>")
+            section("\n".join(lines))
+        for game in brief.get("coverage_gaps", []):
+            section(f"⚠️ {game}: 수집 또는 분석 공백이 있습니다. 전체 보고서에서 확인해 주세요.")
+        if brief.get("no_material_signal_games"):
+            section("👀 추가 중요 변경 없음: " + ", ".join(brief["no_material_signal_games"]))
+        if notion_url:
+            section(f"📚 <{notion_url}|Notion 전체 보고서>")
+        return {"text": f"게임 사업 PM 보고서 {brief['brief_date_kst']}", "blocks": blocks}
     date_label = brief["brief_date_kst"]
     summary = brief.get("executive_summary") or ["오늘 확인된 긴급 사안은 없습니다."]
     decisions = brief.get("decisions", [])

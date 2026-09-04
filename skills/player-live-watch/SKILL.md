@@ -5,6 +5,16 @@ description: Analyze player reactions and live-service risk for the Korean games
 
 # Player & Live Watch
 
+## Default compact daily profile
+
+For `compact-v1`, follow root AGENTS.md and `app/daily.py`. Scan the eight core games
+with at most two listing pages and five selected bodies per game. Reuse official
+YouTube evidence collected by Market Signal rather than fetching it again.
+Own the player-claim boundary in the single combined game summary; do not run a
+separate AI clustering pass. Do not generate sentiment, trend or severity labels.
+Record sampling and access gaps. Game Radar is disabled pending basic delivery
+stability. The detailed insight/deep-dive workflow below is manual diagnostics only.
+
 ## Scope
 
 Analyze what players publicly react to and what that reaction may mean for live operation. Consume `Signal` objects from `market-signal`, with mandatory deep dives for `HIGH` and `CRITICAL` signals. Also surface an independent live issue when repeated public evidence shows material risk even if Market Signal Scout did not detect a matching official event.

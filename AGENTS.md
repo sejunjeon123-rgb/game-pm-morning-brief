@@ -1,7 +1,7 @@
 ---
 project: GAME PM Morning Brief Self-Org-gent
 document_role: root-orchestration-contract
-version: 1.2.0
+version: 1.3.0
 status: foundation
 timezone: Asia/Seoul
 default_lookback_days: 7
@@ -19,6 +19,46 @@ game_radar_min_independent_sources: 2
 # GAME PM Morning Brief agent contract
 
 ## Purpose
+
+### Default runtime: compact-v1 (user-approved 2026-09-04)
+
+The daily operating profile below supersedes the detailed three-analysis procedure
+for `daily`, `daily-saved`, and `automatic`. The detailed procedure remains available
+only through explicitly selected legacy diagnostic modes; never invoke it as a fallback.
+
+- Keep three domain responsibilities, not three separate AI passes. Collect official
+  sources and daily player samples, then summarize changed evidence once per game.
+- `app/daily.py` owns the compact summary schema and evidence validation; existing
+  `shared/schemas.py` MorningBrief/PMDecisionItem remain the delivery contract.
+- Maximum one paid request per game per KST date (eight total), no API or correction
+  retries. Persist attempts, successful content fingerprints, and validated summaries
+  separately. A failed attempt never marks its evidence analyzed; retry next day.
+- Scan a seven-day window; analyze only new or modified content. Reuse same-day
+  validated summaries on rerun, not last week's conclusions as today's findings.
+- Official details: eight per game. Player details: five per game, two listing pages.
+  Official YouTube is collected once. Cap input text and output tokens per runtime.json.
+  Report collection bounds and omitted inputs as limitations, not complete coverage.
+- Summaries separate cited official facts, sampled player claims, interpretation,
+  unknowns, and conflicts. Keep category/BM taxonomy, but omit generated sentiment,
+  trend, severity, KPI values, metric questions, and operational recommendations.
+  Empty pm_metric_context is intentional, not a request to invent terminology.
+- PM Decision Lead is deterministic assembly: official findings P2, claim-only P3,
+  VERIFY, LOW confidence. Compact mode does not assign P0/P1 or certify urgency.
+  Mandatory HIGH/CRITICAL deep dives apply only to legacy detailed Signal mode.
+- Game Radar is deferred and disabled; retain its two-host/three-game rules for future use.
+- Invalid summaries become per-game coverage gaps without discarding other games.
+  Source identity, fact/claim boundaries, freshness, secret protection and provenance
+  remain mandatory. Never bypass these gates to manufacture a report.
+- `automatic` uses real compact results, never preview data. While live delivery is
+  disabled, scheduled runs exit before collection and paid calls.
+- Daily delivery identity is KST date plus destination. Checkpoint before each send;
+  uncertain outcomes require manual verification (no automatic resend). Create Notion
+  first; hold Slack if Notion is not confirmed. Preserve delivery checkpoints and
+  attempt budgets even on failure, separately from last-success metadata.
+- Development verification uses fixtures and saved evidence first. Do not repeatedly
+  run paid collection/analysis cycles to repair formatting or schema errors.
+
+See `docs/compact-runtime.md` for commands, migration, limitations and rollback.
 
 Operate a three-skill morning-brief workflow for the eight games in `config/games.json`. Collect official market events, examine public player and live-operation reactions, synthesize evidence into PM priorities, and prepare one traceable Morning Brief.
 

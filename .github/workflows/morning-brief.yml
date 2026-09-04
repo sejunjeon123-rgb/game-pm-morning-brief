@@ -12,6 +12,7 @@ on:
         type: choice
         options:
           - preview
+          - daily
           - collect
           - player-live-collect
           - player-live-test
@@ -100,7 +101,8 @@ jobs:
           fi
 
       - name: Save changed state
-        if: ${{ success() && steps.mode.outputs.value != 'preview' }}
+        # Keep per-day call budget and delivery checkpoints even on partial failure.
+        if: ${{ always() && steps.mode.outputs.value != 'preview' && steps.mode.outputs.value != '' }}
         working-directory: runtime-state
         shell: bash
         run: |

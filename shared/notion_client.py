@@ -54,6 +54,28 @@ def format_notion_page(brief: dict[str, Any], parent_page_id: str) -> dict[str, 
     children.extend(_bullet(str(item)) for item in summaries)
 
     decisions = brief.get("decisions", [])
+    if brief.get("report_mode") == "compact-v1":
+        # Nested item blocks retain all games, evidence and caveats without the
+        # legacy 100-top-level-block truncation.
+        for item in decisions:
+            detail = []
+            for label, field in (("✅ 확인됨", "observed_facts"), ("🗣️ 보고됨", "player_claims"),
+                                 ("💡 가능성", "interpretation"), ("❓ 확인 필요", "unknowns"),
+                                 ("⚠️ 출처 차이", "conflicts")):
+                if item.get(field):
+                    detail.append(_paragraph(label + "\n" + "\n".join(item[field])))
+            for source in item.get("evidence", []):
+                detail.append({"object": "block", "type": "paragraph", "paragraph": {
+                    "rich_text": _rich_text(source["title"], link=source["url"])}})
+            children.append({"object": "block", "type": "toggle", "toggle": {
+                "rich_text": _rich_text(f"[{item['priority']}] {item['title']}"), "children": detail}})
+        children.append(_heading("⚠️ 수집·분석 공백"))
+        children.extend(_bullet(v) for v in brief.get("data_gaps", []))
+        children.append(_paragraph("추가 중요 변경 없음: " + ", ".join(brief.get("no_material_signal_games", []))))
+        children.append(_paragraph("Game Radar는 초기 안정화를 위해 보류 중입니다."))
+        return {"parent": {"type": "page_id", "page_id": parent_page_id},
+                "icon": {"type": "emoji", "emoji": "🎮"},
+                "properties": {"title": {"type": "title", "title": _rich_text(title)}}, "children": children}
     children.append(_heading("🎯 PM Decisions"))
     if decisions:
         for item in decisions[:20]:

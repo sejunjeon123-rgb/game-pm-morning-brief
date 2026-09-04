@@ -5,6 +5,16 @@ description: Collect, normalize, deduplicate, and assess public official signals
 
 # Market Signal Scout
 
+## Default compact daily profile
+
+For `compact-v1` in `config/runtime.json`, follow the root AGENTS.md compact profile
+and `app/daily.py`. Own official collection, source priority, content hashes and the
+official-fact fields of one combined game summary. Do not call the legacy Signal
+analyzer during a daily run. Summarize new/modified evidence once per game per day;
+retain category/BM taxonomy and source differences. KPI context is empty by default.
+The detailed Signal workflow below is for explicitly requested legacy diagnostics,
+not a second pass or automatic fallback. No new skill or external relay is required.
+
 ## Scope
 
 Run only the `market-signal` responsibility in the three-skill system. Treat `player-live-watch` as the deep-dive consumer and `pm-decision-lead` as the final router and decision owner. Read `config/games.json`, `config/sources.json`, and `shared/schemas.py` before collecting.

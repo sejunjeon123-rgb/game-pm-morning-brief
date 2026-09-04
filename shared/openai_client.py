@@ -16,7 +16,7 @@ class OpenAIClientError(RuntimeError):
 class OpenAIResponsesClient:
     endpoint = "https://api.openai.com/v1/responses"
 
-    def __init__(self, api_key: str, model: str, *, timeout: float = 90.0, retries: int = 2, backoff: float = 1.0) -> None:
+    def __init__(self, api_key: str, model: str, *, timeout: float = 90.0, retries: int = 2, backoff: float = 1.0, max_output_tokens: int | None = None) -> None:
         if not api_key or not model:
             raise ValueError("api_key and model are required")
         if timeout <= 0 or retries < 0 or backoff < 0:
@@ -26,6 +26,8 @@ class OpenAIResponsesClient:
         self.timeout = timeout
         self.retries = retries
         self.backoff = backoff
+        self.max_output_tokens = max_output_tokens
+        self.usage_records: list[dict[str, int]] = []
 
     def structured(self, *, instructions: str, input_text: str, name: str, schema: dict[str, Any]) -> dict[str, Any]:
         payload = {
@@ -35,6 +37,8 @@ class OpenAIResponsesClient:
             "store": False,
             "text": {"format": {"type": "json_schema", "name": name, "strict": True, "schema": schema}},
         }
+        if self.max_output_tokens is not None:
+            payload["max_output_tokens"] = self.max_output_tokens
         request = Request(
             self.endpoint,
             data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
@@ -64,6 +68,8 @@ class OpenAIResponsesClient:
             if isinstance(last_error, HTTPError):
                 raise OpenAIClientError(f"OpenAI API HTTP {last_error.code} after bounded retries") from last_error
             raise OpenAIClientError("OpenAI API request failed after bounded retries") from last_error
+        usage = result.get("usage") or {}
+        self.usage_records.append({key: int(usage.get(key, 0)) for key in ("input_tokens", "output_tokens", "total_tokens")})
         status = result.get("status")
         if status != "completed":
             raise OpenAIClientError(f"OpenAI response was not completed (status={status or 'unknown'})")

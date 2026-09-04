@@ -1,5 +1,17 @@
 {
   "schema_version": 1,
+  "daily": {
+    "engine": "compact-v1",
+    "max_official_details_per_game": 8,
+    "max_player_details_per_game": 5,
+    "max_listing_pages": 2,
+    "max_documents_per_game": 13,
+    "max_text_characters": 1800,
+    "max_output_tokens": 2500,
+    "http_timeout_seconds": 10,
+    "api_timeout_seconds": 60,
+    "api_retries": 0
+  },
   "timezone": "Asia/Seoul",
   "schedule": {
     "provider": "github-actions",
@@ -53,7 +65,7 @@
     ]
   },
   "game_radar": {
-    "enabled": true,
+    "enabled": false,
     "max_games_per_run": 3,
     "min_independent_sources": 2
   }

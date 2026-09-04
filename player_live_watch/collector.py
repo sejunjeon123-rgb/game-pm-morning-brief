@@ -115,13 +115,14 @@ def collect_dcinside_posts(
     max_details_per_game: int = 20,
     detail_workers: int = 4,
     collected_at: datetime | None = None,
+    minimum_interval_seconds: float | None = None,
 ) -> dict[str, Any]:
     if max_listing_pages <= 0 or max_details_per_game <= 0 or detail_workers <= 0:
         raise ValueError("collection bounds must be positive")
     base_http = client or HttpClient(timeout=20, retries=2, backoff=1)
     http = _PacedHttpClient(
         base_http,
-        0.8 if client is None else 0.0,
+        minimum_interval_seconds if minimum_interval_seconds is not None else (0.8 if client is None else 0.0),
     )
     observed_at = collected_at or now_kst()
     window_start, _ = recent_window(now=observed_at)

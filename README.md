@@ -2,7 +2,16 @@
 
 게임 사업 PM을 위한 일일 브리핑 자동화 프로젝트입니다. 공식 Market Signal, 공개 Player & Live 반응, PM 의사결정을 세 개의 Skill로 분리하고 근거 추적이 가능한 브리핑을 생성하는 구조를 지향합니다.
 
-## Current status
+## 기본 실행: compact-v1
+
+수집 → 게임별 변경 자료 한 번 요약 → 코드로 보고서 조립 → Notion·Slack 순서입니다.
+3 Skill의 역할은 유지하지만 AI 분석을 세 번 반복하지 않습니다. Game Radar는 보류 중입니다.
+실제 발송이 꺼져 있어 정기 실행은 수집·유료 API 호출 없이 종료합니다.
+
+[간소화 실행 안내](docs/compact-runtime.md)에서 예산, 테스트, 롤백 방법을 확인할 수 있습니다.
+아래의 상세 분석 모드는 명시적으로 선택하는 수동 진단용입니다.
+
+## Detailed components (manual diagnostics)
 
 - Core games: 8
 - Schedule target: 매일 08:10 KST (GitHub Actions)

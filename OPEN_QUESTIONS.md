@@ -1,5 +1,13 @@
 # Open questions for the automation phase
 
+## 2026-09-04 compact daily decision
+
+The user approved compact-v1: eight fixed games, one combined summary call/game/day,
+no paid retries, five player bodies/game, deferred Game Radar, deterministic report
+assembly, Slack compact + Notion full detail. See docs/compact-runtime.md.
+Older questions below are future detailed-mode options, not blockers for compact V1.
+Actual external delivery still requires separate activation approval and verification.
+
 The decisions already approved by the user are recorded in `config/runtime.json`. Only the remaining implementation choices below require confirmation.
 
 ## Resolved operating decisions

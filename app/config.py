@@ -32,6 +32,15 @@ def _read_json(path: Path) -> dict[str, Any]:
 
 def load_project_config(root: Path) -> ProjectConfig:
     runtime = _read_json(root / "config" / "runtime.json")
+    daily = runtime.get("daily", {})
+    if daily.get("engine") != "compact-v1" or daily.get("api_retries") != 0:
+        raise ValueError("daily engine requires compact-v1 without paid retries")
+    bounds = {"max_official_details_per_game": 8, "max_player_details_per_game": 5,
+              "max_listing_pages": 2, "max_documents_per_game": 13,
+              "max_text_characters": 1800, "max_output_tokens": 2500,
+              "http_timeout_seconds": 10, "api_timeout_seconds": 60}
+    if any(type(daily.get(k)) is not int or not 0 < daily[k] <= limit for k, limit in bounds.items()):
+        raise ValueError("daily collection or API bounds exceed the compact budget")
     games_doc = _read_json(root / "config" / "games.json")
     sources_doc = _read_json(root / "config" / "sources.json")
     player_live_doc = _read_json(root / "config" / "player_live_sources.json")

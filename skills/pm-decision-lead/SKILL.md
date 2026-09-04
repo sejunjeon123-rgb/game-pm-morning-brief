@@ -5,6 +5,17 @@ description: Integrate Market Signal and Player Live findings into evidence-base
 
 # PM Decision Lead
 
+## Default compact daily profile
+
+For `compact-v1`, use `app/daily.py` deterministic assembly, not the legacy AI
+synthesis below. Receive cited, validated game summaries; sort official findings P2
+and claim-only observations P3, with VERIFY/LOW. Preserve unknowns and conflicts.
+Do not invent P0/P1, owners, actions or KPI context. This is a daily evidence report,
+not an emergency detector. Produce the existing MorningBrief payload plus
+`report_mode: compact-v1`; delivery adapters render one compact Slack report and
+full Notion evidence details. Missing or failed games remain explicit coverage gaps.
+The workflow below applies only to explicitly requested detailed diagnostic modes.
+
 ## Scope
 
 Act as the final reasoning and routing layer in the three-skill system. Consume `Signal` objects from `market-signal` and `PlayerLiveInsight` objects from `player-live-watch`. Produce `PMDecisionItem` objects and one `MorningBrief`.

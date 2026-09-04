@@ -5,11 +5,14 @@ from __future__ import annotations
 import argparse
 import hashlib
 import os
+import json
 import sys
 from pathlib import Path
 
 from app.config import load_project_config
 from app.pipeline import brief_as_dict, build_preview_brief
+from app.daily import build_daily, collect_daily
+from shared.openai_client import OpenAIResponsesClient
 from market_signal.runner import analyze_collection_file, run_market_signal
 from player_live_watch.common_collector import collect_player_live_evidence
 from player_live_watch.runner import analyze_player_live_collection_file
@@ -33,6 +36,8 @@ def _arguments() -> argparse.Namespace:
             "analyze-collection",
             "test",
             "automatic",
+            "daily",
+            "daily-saved",
         ),
         default="preview",
     )
@@ -55,6 +60,15 @@ def _arguments() -> argparse.Namespace:
 def main() -> int:
     args = _arguments()
     config = load_project_config(args.root.resolve())
+    if args.mode == "automatic":
+        if not config.runtime["delivery"].get("live_delivery_enabled", False):
+            print("Live delivery is disabled; scheduled run skipped without collection or API calls")
+            return 0
+        if args.games:
+            raise ValueError("automatic delivery requires all eight games")
+        if any(not os.environ.get(name) for name in ("OPENAI_API_KEY", "OPENAI_MODEL", "SLACK_WEBHOOK_URL", "NOTION_TOKEN", "NOTION_PARENT_PAGE_ID")):
+            print("Required automatic configuration is missing", file=sys.stderr)
+            return 2
     if args.mode == "pm-decision":
         result = build_morning_brief_from_files(
             args.signal_file or args.collection_file.with_name("market_signal_signals.json"),
@@ -119,7 +133,26 @@ def main() -> int:
         destination.write_text(dumps(report) + "\n", encoding="utf-8")
         print(f"Player Live collection report written to {destination.resolve()}")
         return 0
-    brief = brief_as_dict(build_preview_brief(config))
+    if args.mode in {"daily", "daily-saved", "automatic"}:
+        state = StateStore(args.state_dir)
+        games = tuple(args.games) if args.games else config.game_ids
+        if not set(games) <= set(config.game_ids):
+            raise ValueError("unknown game ID")
+        if args.mode == "daily-saved":
+            collection = json.loads(args.collection_file.read_text(encoding="utf-8"))
+        else:
+            collection = collect_daily(config, state, games)
+        args.output_dir.mkdir(parents=True, exist_ok=True)
+        (args.output_dir / "daily_collection.json").write_text(dumps(collection) + "\n", encoding="utf-8")
+        limits = config.runtime["daily"]
+        key, model = os.environ.get("OPENAI_API_KEY"), os.environ.get("OPENAI_MODEL")
+        client = OpenAIResponsesClient(key, model, timeout=limits["api_timeout_seconds"], retries=0,
+                                       max_output_tokens=limits["max_output_tokens"]) if key and model else None
+        result = build_daily(config, state, collection, client)
+        brief = result["brief"]
+        (args.output_dir / "daily_report.json").write_text(dumps(result) + "\n", encoding="utf-8")
+    else:
+        brief = brief_as_dict(build_preview_brief(config))
     payload = format_brief(brief)
     notion_preview = format_notion_page(brief, "00000000000000000000000000000000")
     args.output_dir.mkdir(parents=True, exist_ok=True)
@@ -127,7 +160,7 @@ def main() -> int:
     (args.output_dir / "slack_preview.json").write_text(dumps(payload) + "\n", encoding="utf-8")
     (args.output_dir / "notion_preview.json").write_text(dumps(notion_preview) + "\n", encoding="utf-8")
 
-    if args.mode in {"preview", "test"}:
+    if args.mode in {"preview", "test", "daily", "daily-saved"}:
         print(f"preview written to {args.output_dir.resolve()}")
         return 0
 
@@ -155,7 +188,8 @@ def main() -> int:
         return 2
 
     rendered_brief = dumps(brief, indent=None)
-    brief_fingerprint = hashlib.sha256(rendered_brief.encode("utf-8")).hexdigest()
+    # A rerun's generated_at changes; it must not cause a second daily delivery.
+    brief_fingerprint = str(brief["brief_date_kst"])
     state = StateStore(args.state_dir)
     notion_delivery_id = hashlib.sha256(f"notion|{brief_fingerprint}".encode("utf-8")).hexdigest()
     slack_delivery_id = hashlib.sha256(f"slack|게임-사업pm-브리핑|{brief_fingerprint}".encode("utf-8")).hexdigest()
@@ -165,30 +199,41 @@ def main() -> int:
     slack_sent_ids = set(slack_ledger.get("delivery_ids", []))
     errors: list[str] = []
 
+    pending_key = f"delivery/pending-{brief_fingerprint}"
+    pending = state.read(pending_key, {"destinations": []})
+    if pending["destinations"]:
+        print("Delivery outcome uncertain; manual verification required before retry", file=sys.stderr)
+        return 4
+
     notion_url = notion_records.get(notion_delivery_id, {}).get("page_url")
     if notion_url:
         print("Notion delivery skipped: idempotency record already exists")
     else:
         try:
+            state.write(pending_key, {"destinations": ["notion"]})
             notion_payload = format_notion_page(brief, notion_parent_page_id)
-            result = create_page(notion_token, notion_payload)
+            result = create_page(notion_token, notion_payload, retries=0)
             notion_url = result["page_url"]
             notion_records[notion_delivery_id] = result | {"brief_date_kst": str(brief["brief_date_kst"])}
             state.write("delivery/notion_sent_briefs", {"records": notion_records})
+            state.write(pending_key, {"destinations": []})
             print("Notion delivery completed")
         except NotionDeliveryError as exc:
-            errors.append(str(exc))
+            print("Notion delivery not confirmed; Slack held for recovery", file=sys.stderr)
+            return 4
 
     if slack_delivery_id in slack_sent_ids:
         print("Slack delivery skipped: idempotency record already exists")
     else:
         try:
+            state.write(pending_key, {"destinations": ["slack"]})
             post_webhook(webhook_url, format_brief(brief, notion_url=notion_url))
             slack_sent_ids.add(slack_delivery_id)
             state.write("delivery/slack_sent_briefs", {"delivery_ids": sorted(slack_sent_ids)})
+            state.write(pending_key, {"destinations": []})
             print("Slack delivery completed")
         except SlackDeliveryError as exc:
-            errors.append(str(exc))
+            errors.append("Slack delivery not confirmed; manual verification required")
 
     if errors:
         print("; ".join(errors), file=sys.stderr)
