@@ -3,7 +3,7 @@ from dataclasses import asdict
 from xml.etree import ElementTree
 
 from market_signal.youtube_collector import _parse_feed, YT
-from market_signal.youtube_fallback import collect_channel_fallback
+from market_signal.youtube_fallback import collect_channel_fallback, fallback_summary
 from shared.http_client import HttpClient, HttpClientError
 from shared.time_utils import now_kst
 
@@ -29,12 +29,16 @@ def collect_creator_youtube(config, game_ids, *, client=None, now=None):
             except (HttpClientError, ElementTree.ParseError, ValueError):
                 gaps.append({"game_id": game, "source": source["source_id"],
                              "code": "CREATOR_RSS_GAP", "reason": "creator RSS unavailable or invalid; bounded HTML fallback attempted"})
+                stats = {}
                 try:
                     items = collect_channel_fallback(http, {
                         "game_id": game, "youtube": source["url"], "youtube_channel_id": channel,
-                        "youtube_filter_terms": source["game_filter_terms"]}, now, max_videos=1)
+                        "youtube_filter_terms": source["game_filter_terms"]}, now, max_videos=1, diagnostics=stats)
                 except (HttpClientError, ValueError, KeyError, TypeError, AttributeError):
                     items = ()
+                    stats["channel_failed"] = 1
+                gaps.append({"game_id": game, "source": source["source_id"],
+                             "code": "CREATOR_HTML_DIAGNOSTIC", "reason": fallback_summary(stats)})
             for item in sorted(items, key=lambda x: x.published_at, reverse=True)[:1]:
                 evidence.append(asdict(item) | {
                     "source_id": source["source_id"], "source_type": "PUBLIC_CREATOR_YOUTUBE",

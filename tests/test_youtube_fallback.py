@@ -48,7 +48,7 @@ class FallbackTests(unittest.TestCase):
         home = {"metadata": metadata, "contents": {"tabRenderer": {"endpoint": {
             "browseEndpoint": {"browseId": "official"},
             "commandMetadata": {"webCommandMetadata": {"url": "/@official/videos"}}}}}}
-        listing = {"metadata": metadata, "contents": [{"videoId": v} for v in
+        listing = {"metadata": metadata, "contents": [{"videoRenderer": {"videoId": v}} for v in
                    ("abcdefghijk", "abcdefghijk", "bcdefghijkl", "cdefghijklm", "defghijklmn")]}
         http = Mock()
         def get(url):
@@ -58,6 +58,38 @@ class FallbackTests(unittest.TestCase):
         http.get.side_effect = get
         self.assertEqual(len(collect_channel_fallback(http, source, self.now)), 1)
         self.assertEqual(http.get.call_count, 5)
+
+    def test_modern_selected_video_tab_avoids_duplicate_request(self):
+        source = {"game_id": "game", "youtube": "https://www.youtube.com/@official/videos",
+                  "youtube_channel_id": "official"}
+        tab = {"selected": True, "endpoint": {
+            "browseEndpoint": {"browseId": "official"},
+            "commandMetadata": {"webCommandMetadata": {"url": "/@official/videos"}}},
+            "content": [{"lockupViewModel": {"contentId": "abcdefghijk",
+                         "contentType": "LOCKUP_CONTENT_TYPE_VIDEO"}},
+                        {"watchEndpoint": {"videoId": "unrelated01"}},
+                        {"lockupViewModel": {"contentId": "playlist001",
+                         "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"}}]}
+        listing = {"metadata": {"channelMetadataRenderer": {"externalId": "official"}},
+                   "contents": {"tabRenderer": tab}}
+        http = Mock()
+        http.get.side_effect = [HttpResponse(source["youtube"], 200, {},
+            ("var ytInitialData = " + json.dumps(listing)).encode()),
+            HttpResponse("https://www.youtube.com/watch?v=abcdefghijk", 200, {}, self.watch().encode())]
+        stats = {}
+        self.assertEqual(len(collect_channel_fallback(http, source, self.now, diagnostics=stats)), 1)
+        self.assertEqual(http.get.call_count, 2)
+        self.assertEqual(stats, {"candidates": 1, "accepted": 1})
+
+    def test_old_video_is_not_reported_as_access_failure(self):
+        stats = {}
+        self.assertIsNone(parse_watch(self.watch("2026-08-01T00:00:00Z"), "game",
+                                     "official", "abcdefghijk", self.now, diagnostics=stats))
+        self.assertEqual(stats, {"outside_window": 1})
+
+    def test_request_budget_cannot_be_expanded(self):
+        with self.assertRaises(ValueError):
+            collect_channel_fallback(Mock(), {}, self.now, max_videos=4)
 
     def test_diagnostics_do_not_expose_server_text_or_redirect(self):
         response = HttpResponse("https://other.example/?token=secret", 200, {}, b"<html><title>secret</title></html>")
