@@ -64,6 +64,13 @@ class FallbackTests(unittest.TestCase):
         result = response_metadata(response, "https://example.com")
         self.assertNotIn("secret", json.dumps(result))
         self.assertFalse(result["same_host"])
+        self.assertEqual(result["final_path"], "REDACTED")
+
+    def test_diagnostic_same_host_route_excludes_query(self):
+        response = HttpResponse("https://example.com/Error/Region?token=secret", 200, {}, b"<html></html>")
+        result = response_metadata(response, "https://example.com/News/Notice")
+        self.assertEqual(result["final_path"], "/Error/Region")
+        self.assertNotIn("secret", json.dumps(result))
 
     def test_rss_failure_keeps_gap_and_fallback_success(self):
         config = SimpleNamespace(sources=[{"game_id": "game", "youtube_channel_id": "official"}])
