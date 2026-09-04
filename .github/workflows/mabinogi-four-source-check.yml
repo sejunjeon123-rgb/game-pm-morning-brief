@@ -1,0 +1,16 @@
+name: Mabinogi four-source check (read only)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check supplied URLs and homepage source link
+        run: python -m market_signal.four_source_diagnostic
