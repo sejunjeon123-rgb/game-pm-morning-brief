@@ -7,10 +7,13 @@ import time
 from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
+from shared.http_client import transport_error_code
 
 
 class OpenAIClientError(RuntimeError):
-    pass
+    def __init__(self, message: str, *, code: str = "API_ERROR") -> None:
+        super().__init__(message)
+        self.code = code
 
 
 class OpenAIResponsesClient:
@@ -59,29 +62,35 @@ class OpenAIResponsesClient:
                 last_error = exc
                 retry_after = exc.headers.get("Retry-After") if exc.headers else None
                 if exc.code != 429 and exc.code < 500:
-                    raise OpenAIClientError(f"OpenAI API HTTP {exc.code}") from exc
+                    raise OpenAIClientError(f"OpenAI API HTTP {exc.code}", code=f"HTTP_{exc.code}") from exc
             except (URLError, TimeoutError, json.JSONDecodeError) as exc:
                 last_error = exc
             if attempt < self.retries:
                 time.sleep(self._retry_delay(retry_after, attempt))
         if result is None:
             if isinstance(last_error, HTTPError):
-                raise OpenAIClientError(f"OpenAI API HTTP {last_error.code} after bounded retries") from last_error
-            raise OpenAIClientError("OpenAI API request failed after bounded retries") from last_error
+                raise OpenAIClientError(f"OpenAI API HTTP {last_error.code} after bounded retries", code=f"HTTP_{last_error.code}") from last_error
+            code = "INVALID_JSON" if isinstance(last_error, json.JSONDecodeError) else transport_error_code(last_error)
+            raise OpenAIClientError("OpenAI API request failed after bounded retries", code=code) from last_error
+        if not isinstance(result, dict):
+            raise OpenAIClientError("Invalid response envelope", code="INVALID_JSON")
         usage = result.get("usage") or {}
         self.usage_records.append({key: int(usage.get(key, 0)) for key in ("input_tokens", "output_tokens", "total_tokens")})
+        self.usage_records[-1]["reasoning_tokens"] = int((usage.get("output_tokens_details") or {}).get("reasoning_tokens", 0))
         status = result.get("status")
         if status != "completed":
-            raise OpenAIClientError(f"OpenAI response was not completed (status={status or 'unknown'})")
+            reason = (result.get("incomplete_details") or {}).get("reason")
+            code = "OUTPUT_TOKEN_LIMIT" if status == "incomplete" and reason == "max_output_tokens" else "INCOMPLETE_RESPONSE"
+            raise OpenAIClientError("OpenAI response was not completed", code=code)
         output_text = result.get("output_text") or self._find_output_text(result)
         if not output_text:
-            raise OpenAIClientError("OpenAI response did not contain output text")
+            raise OpenAIClientError("OpenAI response did not contain output text", code="EMPTY_OUTPUT")
         try:
             value = json.loads(output_text)
         except json.JSONDecodeError as exc:
-            raise OpenAIClientError("OpenAI structured output was not valid JSON") from exc
+            raise OpenAIClientError("OpenAI structured output was not valid JSON", code="INVALID_JSON") from exc
         if not isinstance(value, dict):
-            raise OpenAIClientError("OpenAI structured output must be a JSON object")
+            raise OpenAIClientError("OpenAI structured output must be a JSON object", code="INVALID_JSON")
         return value
 
     def _retry_delay(self, retry_after: str | None, attempt: int) -> float:
@@ -97,7 +106,7 @@ class OpenAIResponsesClient:
         for item in result.get("output", []):
             for content in item.get("content", []):
                 if content.get("type") == "refusal":
-                    raise OpenAIClientError("OpenAI response was refused")
+                    raise OpenAIClientError("OpenAI response was refused", code="REFUSAL")
                 if content.get("type") == "output_text" and isinstance(content.get("text"), str):
                     return content["text"]
         return ""

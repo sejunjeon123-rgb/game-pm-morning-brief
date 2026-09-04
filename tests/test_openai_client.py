@@ -5,11 +5,38 @@ from __future__ import annotations
 import unittest
 import json
 from unittest.mock import patch, MagicMock
+from urllib.error import URLError, HTTPError
 
 from shared.openai_client import OpenAIClientError, OpenAIResponsesClient
 
 
 class OpenAIResponsesClientTests(unittest.TestCase):
+    def test_incomplete_response_records_reason_without_paid_retry(self):
+        client = OpenAIResponsesClient("test-key", "test-model", retries=0, max_output_tokens=2500)
+        response = MagicMock()
+        response.__enter__.return_value.read.return_value = json.dumps({
+            "status": "incomplete", "incomplete_details": {"reason": "max_output_tokens"},
+            "usage": {"input_tokens": 50, "output_tokens": 2500, "total_tokens": 2550,
+                      "output_tokens_details": {"reasoning_tokens": 2300}},
+        }).encode()
+        with patch("shared.openai_client.urlopen", return_value=response) as request:
+            with self.assertRaises(OpenAIClientError) as error:
+                client.structured(instructions="test", input_text="test", name="test", schema={})
+        self.assertEqual(error.exception.code, "OUTPUT_TOKEN_LIMIT")
+        self.assertEqual(client.usage_records[0]["reasoning_tokens"], 2300)
+        request.assert_called_once()
+
+    def test_transport_and_format_errors_are_distinct_and_sanitized(self):
+        for error, code in ((URLError(TimeoutError("secret")), "NETWORK_TIMEOUT"),
+                            (URLError("secret"), "NETWORK_ERROR"),
+                            (HTTPError("https://secret", 429, "secret", {}, None), "HTTP_429")):
+            with self.subTest(code=code), patch("shared.openai_client.urlopen", side_effect=error) as request:
+                with self.assertRaises(OpenAIClientError) as caught:
+                    OpenAIResponsesClient("test", "test", retries=0).structured(instructions="t", input_text="t", name="t", schema={})
+                self.assertEqual(caught.exception.code, code)
+                self.assertNotIn("secret", str(caught.exception))
+                request.assert_called_once()
+
     def test_output_cap_and_usage_are_recorded_without_real_api(self):
         client = OpenAIResponsesClient("test-key", "test-model", retries=0, max_output_tokens=2500)
         response = MagicMock()
@@ -23,6 +50,17 @@ class OpenAIResponsesClientTests(unittest.TestCase):
         self.assertEqual(payload["max_output_tokens"], 2500)
         self.assertEqual(client.usage_records[0]["total_tokens"], 20)
         request.assert_called_once()
+
+    def test_completed_but_malformed_output_is_not_token_limit(self):
+        response = MagicMock()
+        response.__enter__.return_value.read.return_value = json.dumps({
+            "status": "completed", "output_text": "not json",
+            "usage": {"output_tokens": 2500},
+        }).encode()
+        with patch("shared.openai_client.urlopen", return_value=response):
+            with self.assertRaises(OpenAIClientError) as error:
+                OpenAIResponsesClient("test", "test", retries=0).structured(instructions="t", input_text="t", name="t", schema={})
+        self.assertEqual(error.exception.code, "INVALID_JSON")
 
     def test_retry_delay_respects_numeric_retry_after_and_cap(self) -> None:
         client = OpenAIResponsesClient("test-key", "test-model", backoff=2)

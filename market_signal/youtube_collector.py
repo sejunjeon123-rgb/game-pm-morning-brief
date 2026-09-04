@@ -80,7 +80,7 @@ def collect_official_youtube(
         try:
             parsed = _parse_feed(game_id, http.get(feed_url).text(), collected_at, filter_terms)
         except (HttpClientError, ElementTree.ParseError, ValueError) as exc:
-            coverage_gaps.append({"game_id": game_id, "source": "OFFICIAL_YOUTUBE", "reason": f"YouTube feed collection failed: {type(exc).__name__}"})
+            coverage_gaps.append({"game_id": game_id, "source": "OFFICIAL_YOUTUBE", "code": exc.code if isinstance(exc, HttpClientError) else "FEED_PARSE_ERROR", "reason": f"YouTube feed collection failed: {type(exc).__name__}"})
             continue
         for video in parsed:
             previous = records.get(video.url, {})

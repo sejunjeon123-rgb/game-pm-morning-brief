@@ -87,13 +87,14 @@ def collect_official_notices(
                     coverage_gaps.append({
                         "game_id": game_id,
                         "source": "OFFICIAL_NOTICE",
+                        "code": "LISTING_NO_LINKS" if not parsed else "NO_RECENT_NOTICES",
                         "reason": "official notice listing exposed no recent candidates; " + " | ".join(listing_diagnostics),
                     })
                     continue
                 documents, detail_gaps = _collect_html_documents(game_id, candidates[:max_details_per_game], http)
                 coverage_gaps.extend(detail_gaps)
         except (HttpClientError, KeyError, TypeError, ValueError) as exc:
-            coverage_gaps.append({"game_id": game_id, "source": "OFFICIAL_NOTICE", "reason": f"notice list collection failed: {type(exc).__name__}"})
+            coverage_gaps.append({"game_id": game_id, "source": "OFFICIAL_NOTICE", "code": exc.code if isinstance(exc, HttpClientError) else "NOTICE_PARSE_ERROR", "reason": f"notice list collection failed: {type(exc).__name__}"})
             continue
         if not documents:
             coverage_gaps.append({"game_id": game_id, "source": "OFFICIAL_NOTICE", "reason": "no recent official notice documents were exposed by the verified adapter"})

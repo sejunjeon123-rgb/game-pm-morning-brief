@@ -38,7 +38,8 @@ def load_project_config(root: Path) -> ProjectConfig:
     bounds = {"max_official_details_per_game": 8, "max_player_details_per_game": 5,
               "max_listing_pages": 2, "max_documents_per_game": 13,
               "max_text_characters": 1800, "max_output_tokens": 2500,
-              "http_timeout_seconds": 10, "api_timeout_seconds": 60}
+              "http_timeout_seconds": 10, "api_timeout_seconds": 60,
+              "official_http_timeout_seconds": 20, "official_http_retries": 1}
     if any(type(daily.get(k)) is not int or not 0 < daily[k] <= limit for k, limit in bounds.items()):
         raise ValueError("daily collection or API bounds exceed the compact budget")
     games_doc = _read_json(root / "config" / "games.json")

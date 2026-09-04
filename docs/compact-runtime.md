@@ -4,6 +4,14 @@
 
 ## 변경과 한계
 
+보완: 공식 공지/공식 YouTube HTTP는 대기 20초, 일시적 오류 재시도 1회로 분리했다.
+커뮤니티 HTTP는 10초/재시도 0회, 유료 AI 재시도는 여전히 0회다.
+공지 링크 추출 실패(LISTING_NO_LINKS), 최근 공지 없음(NO_RECENT_NOTICES),
+HTTP 상태, 시간초과, XML 파싱 실패를 구분한다. 빈 HTML을 받는 문제는 재시도 복원만으로
+해결됐다고 간주하지 않는다. 출력 상한은 요청 1회 기준 2,500토큰이며 일일 계정 한도가 아니다.
+AI 보고서에는 OUTPUT_TOKEN_LIMIT/NETWORK_TIMEOUT/INVALID_JSON/SUMMARY_VALIDATION_FAILED
+등과 응답에 포함된 추론 토큰 수를 기록한다. 이전 실행의 원인은 소급 확정할 수 없다.
+
 - 기존 어댑터와 3 Skill 역할은 유지하고 기본 분석을 `app/daily.py`로 통합했다.
 - 공식 본문 최대 8건, 커뮤니티 본문 최대 5건/게임, 목록 최대 2페이지.
 - 공식 YouTube 중복 수집 제거. 최근 7일 내 새 글·수정 글만 분석.

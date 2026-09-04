@@ -15,6 +15,20 @@ DEFAULT_USER_AGENT = "game-pm-morning-brief/1.0 (+public GitHub portfolio)"
 class HttpClientError(RuntimeError):
     """Raised when a request cannot be completed within the retry policy."""
 
+    def __init__(self, message: str, *, code: str = "HTTP_REQUEST_FAILED") -> None:
+        super().__init__(message)
+        self.code = code
+
+
+def transport_error_code(exc: Exception | None) -> str:
+    """Return only controlled metadata, never URLs or exception text."""
+    if isinstance(exc, HTTPError):
+        return f"HTTP_{exc.code}"
+    cause = exc.reason if isinstance(exc, URLError) else exc
+    if isinstance(cause, TimeoutError):
+        return "NETWORK_TIMEOUT"
+    return "NETWORK_ERROR"
+
 
 @dataclass(frozen=True, slots=True)
 class HttpResponse:
@@ -64,7 +78,8 @@ class HttpClient:
                 last_error = exc
             if attempt < self.retries:
                 time.sleep(self.backoff * (2**attempt))
-        raise HttpClientError(f"GET failed for {url}: {last_error}") from last_error
+        code = transport_error_code(last_error)
+        raise HttpClientError(f"GET failed ({code})", code=code) from last_error
 
     def get_json(self, url: str, *, headers: Mapping[str, str] | None = None) -> Any:
         return self.get(url, headers=headers).json()

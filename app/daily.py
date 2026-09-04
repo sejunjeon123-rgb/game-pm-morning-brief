@@ -60,11 +60,13 @@ def collect_daily(config, state, game_ids):
     """Reuse proven adapters; collect official YouTube once, not in both Scouts."""
     limits = config.runtime["daily"]
     http = HttpClient(timeout=limits["http_timeout_seconds"], retries=0)
+    official_http = HttpClient(timeout=limits["official_http_timeout_seconds"],
+                               retries=limits["official_http_retries"])
     official = collect_official_notices(
-        config, state, game_ids, client=http,
+        config, state, game_ids, client=official_http,
         max_details_per_game=limits["max_official_details_per_game"],
     )
-    youtube = collect_official_youtube(config, state, game_ids, client=http)
+    youtube = collect_official_youtube(config, state, game_ids, client=official_http)
     players = collect_dcinside_posts(
         config, state, game_ids, client=http,
         max_listing_pages=limits["max_listing_pages"],
@@ -164,7 +166,10 @@ def build_daily(config, state, collection, client=None, *, now=None):
         gaps.append(f"{game}: {reason}")
     for value in collection.get("coverage_gaps", []):
         if value.get("game_id") in config.game_ids:
-            gap(value["game_id"], f"{value.get('source', '수집')} 출처 접근 또는 수집 범위에 공백이 있습니다.")
+            code = value.get("code", "COLLECTION_GAP")
+            if not isinstance(code, str) or not re.fullmatch(r"[A-Z_0-9]{1,40}", code):
+                code = "COLLECTION_GAP"
+            gap(value["game_id"], f"{value.get('source', '수집')} 출처 접근 또는 수집 범위에 공백이 있습니다. [{code}]")
     decisions = []
     game_reports = {}
     calls = 0
@@ -202,9 +207,15 @@ def build_daily(config, state, collection, client=None, *, now=None):
         try:
             result = client.structured(instructions=INSTRUCTIONS, input_text=dumps(payload), name="daily_game", schema=SCHEMA)
             items = validate_summary(result, selected)
-        except (OpenAIClientError, ValueError, KeyError, TypeError):
-            gap(game, "요약 검증 또는 API 요청에 실패했습니다. 유료 재시도 없이 다음 실행일에 확인합니다.")
-            game_reports[game] = {"status": "analysis_gap", "input_count": len(selected)}
+        except (OpenAIClientError, ValueError, KeyError, TypeError) as exc:
+            code = exc.code if isinstance(exc, OpenAIClientError) else "SUMMARY_VALIDATION_FAILED"
+            labels = {"OUTPUT_TOKEN_LIMIT": "요청 1회 출력 상한에 도달했습니다(일일 사용 한도 아님).",
+                      "NETWORK_TIMEOUT": "AI 응답 대기시간을 초과했습니다.",
+                      "NETWORK_ERROR": "AI 통신에 실패했습니다.",
+                      "INVALID_JSON": "AI 응답 JSON 형식이 올바르지 않습니다.",
+                      "SUMMARY_VALIDATION_FAILED": "요약의 근거·한국어·필드 검증을 통과하지 못했습니다."}
+            gap(game, labels.get(code, "AI 응답을 완료하지 못했습니다.") + f" [{code}] 유료 재시도 없이 다음 실행일에 확인합니다.")
+            game_reports[game] = {"status": "analysis_gap", "input_count": len(selected), "error_code": code}
             continue
         # Cache only validated paraphrases and provenance, never scraped bodies.
         cache["games"][game] = [{**item, "evidence": [

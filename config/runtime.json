@@ -9,6 +9,8 @@
     "max_text_characters": 1800,
     "max_output_tokens": 2500,
     "http_timeout_seconds": 10,
+    "official_http_timeout_seconds": 20,
+    "official_http_retries": 1,
     "api_timeout_seconds": 60,
     "api_retries": 0
   },

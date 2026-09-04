@@ -96,6 +96,15 @@ class DailyTests(unittest.TestCase):
         self.assertEqual(result["brief"]["decisions"], ())
         self.assertIn(game, result["brief"]["coverage_gaps"])
 
+    def test_api_error_code_is_preserved_in_report_without_raw_exception(self):
+        from shared.openai_client import OpenAIClientError
+        client = FakeClient()
+        with patch.object(client, "structured", side_effect=OpenAIClientError("private payload", code="OUTPUT_TOKEN_LIMIT")):
+            result = build_daily(self.config, self.state, self.collection, client, now=NOW)
+        self.assertEqual(result["games"][self.config.game_ids[0]]["error_code"], "OUTPUT_TOKEN_LIMIT")
+        self.assertIn("일일 사용 한도 아님", str(result["brief"]["data_gaps"]))
+        self.assertNotIn("private payload", str(result))
+
     def test_stale_and_unscanned_games_are_not_reported_as_clear(self):
         self.collection["game_scope"] = [self.config.game_ids[0]]
         for d in self.collection["official"]:
@@ -169,6 +178,10 @@ class DailyTests(unittest.TestCase):
              patch("app.daily.collect_dcinside_posts", return_value={"posts": [], "coverage_gaps": []}) as players:
             collect_daily(self.config, self.state, self.config.game_ids)
         self.assertEqual(official.call_args.kwargs["max_details_per_game"], 8)
+        self.assertEqual(official.call_args.kwargs["client"].timeout, 20)
+        self.assertEqual(official.call_args.kwargs["client"].retries, 1)
+        self.assertIs(youtube.call_args.kwargs["client"], official.call_args.kwargs["client"])
+        self.assertEqual(players.call_args.kwargs["client"].retries, 0)
         self.assertEqual(players.call_args.kwargs["max_details_per_game"], 5)
         youtube.assert_called_once()
 
