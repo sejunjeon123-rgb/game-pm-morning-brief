@@ -10,6 +10,7 @@ from xml.etree import ElementTree
 from app.config import ProjectConfig
 from market_signal.models import CollectedNotice
 from market_signal.normalize import content_hash, normalize_text
+from market_signal.youtube_fallback import collect_channel_fallback
 from shared.http_client import HttpClient, HttpClientError
 from shared.state_store import StateStore
 from shared.time_utils import ensure_kst, is_recent, now_kst
@@ -81,7 +82,13 @@ def collect_official_youtube(
             parsed = _parse_feed(game_id, http.get(feed_url).text(), collected_at, filter_terms)
         except (HttpClientError, ElementTree.ParseError, ValueError) as exc:
             coverage_gaps.append({"game_id": game_id, "source": "OFFICIAL_YOUTUBE", "code": exc.code if isinstance(exc, HttpClientError) else "FEED_PARSE_ERROR", "reason": f"YouTube feed collection failed: {type(exc).__name__}"})
-            continue
+            try:
+                parsed = collect_channel_fallback(http, source, collected_at)
+            except (HttpClientError, ValueError, KeyError, TypeError, AttributeError):
+                parsed = ()
+            coverage_gaps.append({"game_id": game_id, "source": "OFFICIAL_YOUTUBE",
+                                  "code": "BOUNDED_HTML_FALLBACK",
+                                  "reason": f"RSS unavailable; fallback limit=3 video details; verified recent videos={len(parsed)}; undated/unavailable videos excluded; Shorts/live not covered"})
         for video in parsed:
             previous = records.get(video.url, {})
             with_previous = CollectedNotice(
