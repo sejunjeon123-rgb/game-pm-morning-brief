@@ -218,8 +218,14 @@ def create_page(token: str, payload: dict[str, Any], *, timeout: float = 20.0, r
                 result = json.loads(response.read().decode("utf-8"))
                 page_id = result.get("id")
                 page_url = result.get("url")
-                if not isinstance(page_id, str) or not isinstance(page_url, str):
-                    raise NotionDeliveryError("Notion response did not contain page id and URL")
+                if not isinstance(page_id, str) or not _NOTION_ID.fullmatch(page_id.replace("-", "")):
+                    # Field names are safe to log; response values may contain user data.
+                    fields = ",".join(sorted(str(key) for key in result))[:200]
+                    raise NotionDeliveryError(f"Notion response did not contain a valid page id; fields={fields}")
+                if not isinstance(page_url, str) or not page_url.startswith("https://"):
+                    # A newly created page can be opened by its stable UUID even when a
+                    # least-privilege response omits the convenience URL field.
+                    page_url = f"https://www.notion.so/{page_id.replace('-', '')}"
                 return {"page_id": page_id, "page_url": page_url}
         except HTTPError as exc:
             last_error = exc
