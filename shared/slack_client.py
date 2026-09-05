@@ -27,7 +27,8 @@ def format_connection_test() -> dict[str, Any]:
 
 def format_brief(brief: dict[str, Any], *, notion_url: str | None = None) -> dict[str, Any]:
     if brief.get("report_mode") == "compact-v1":
-        blocks = [{"type": "header", "text": {"type": "plain_text", "text": f"🎮 게임 사업 PM · {brief['brief_date_kst']}"}}]
+        prefix = "[테스트] " if brief.get("test_mode") else ""
+        blocks = [{"type": "header", "text": {"type": "plain_text", "text": f"🎮 {prefix}게임 사업 PM · {brief['brief_date_kst']}"}}]
         def section(text):
             blocks.append({"type": "section", "text": {"type": "mrkdwn", "text": text}})
         section("새 글·수정 글 중심입니다. 유저 반응은 일부 공개 표본이며 긴급도 확정 판정은 포함하지 않습니다.")
@@ -45,7 +46,7 @@ def format_brief(brief: dict[str, Any], *, notion_url: str | None = None) -> dic
                 section(_compact_item(item))
         if notion_url:
             section(f"📚 <{notion_url}|Notion 전체 보고서>")
-        return {"text": f"게임 사업 PM 보고서 {brief['brief_date_kst']}", "blocks": blocks}
+        return {"text": f"{prefix}게임 사업 PM 보고서 {brief['brief_date_kst']}", "blocks": blocks}
     return _legacy_format(brief, notion_url)
 
 

@@ -84,6 +84,7 @@ def format_notion_page(brief: dict[str, Any], parent_page_id: str) -> dict[str, 
 
     decisions = brief.get("decisions", [])
     if brief.get("report_mode") == "compact-v1":
+        test_prefix = "[테스트] " if brief.get("test_mode") else ""
         children = [
             _paragraph(f"📅 기준일 {date_label}  ·  🕒 KST / 최근 7일  ·  🎮 8게임"),
             _paragraph(f"작성 기준 시각  {brief['generated_at']}"),
@@ -128,7 +129,7 @@ def format_notion_page(brief: dict[str, Any], parent_page_id: str) -> dict[str, 
         children.append(_callout(COLLECTION_SCOPE_NOTICE, "🛡️"))
         return {"parent": {"type": "page_id", "page_id": parent_page_id},
                 "icon": {"type": "emoji", "emoji": "🎮"},
-                "properties": {"title": {"type": "title", "title": _rich_text(f"게임 사업 동향 보고서 | {date_label}")}}, "children": children}
+                "properties": {"title": {"type": "title", "title": _rich_text(f"{test_prefix}게임 사업 동향 보고서 | {date_label}")}}, "children": children}
     children.append(_heading("🎯 PM Decisions"))
     if decisions:
         for item in decisions[:20]:
