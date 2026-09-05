@@ -52,6 +52,23 @@ def _callout(content: str, icon: str, color: str = "gray_background") -> dict[st
         "rich_text": _rich_text(content), "icon": {"type": "emoji", "emoji": icon}, "color": color}}
 
 
+def format_connection_test_page(parent_page_id: str, generated_at: str) -> dict[str, Any]:
+    """Minimal page used only by the manually dispatched Notion connection test."""
+    normalized_parent = parent_page_id.replace("-", "")
+    if not _NOTION_ID.fullmatch(normalized_parent):
+        raise NotionDeliveryError("NOTION_PARENT_PAGE_ID must be a Notion page ID")
+    day = generated_at[:10]
+    return {
+        "parent": {"type": "page_id", "page_id": parent_page_id},
+        "icon": {"type": "emoji", "emoji": "✅"},
+        "properties": {"title": {"type": "title", "title": _rich_text(f"연결 테스트 | {day}")}},
+        "children": [
+            _callout("Notion 연결과 자식 페이지 생성 권한이 정상적으로 확인되었습니다.", "✅", "green_background"),
+            _paragraph(f"확인 시각: {generated_at} · 게임 수집, OpenAI 호출 및 Slack 발송 없음"),
+        ],
+    }
+
+
 def format_notion_page(brief: dict[str, Any], parent_page_id: str) -> dict[str, Any]:
     normalized_parent = parent_page_id.replace("-", "")
     if not _NOTION_ID.fullmatch(normalized_parent):

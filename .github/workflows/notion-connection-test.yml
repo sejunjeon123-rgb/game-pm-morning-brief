@@ -1,0 +1,28 @@
+name: Notion connection test (one page, no AI or Slack)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: game-pm-notion-connection-test
+  cancel-in-progress: false
+
+jobs:
+  create-test-page:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Offline tests
+        run: python -m unittest discover -s tests -p 'test_*.py'
+      - name: Create one Notion test page
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_PARENT_PAGE_ID: ${{ vars.NOTION_PARENT_PAGE_ID }}
+        run: python -m app.notion_connection_test
