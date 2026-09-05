@@ -19,17 +19,20 @@ class OpenAIClientError(RuntimeError):
 class OpenAIResponsesClient:
     endpoint = "https://api.openai.com/v1/responses"
 
-    def __init__(self, api_key: str, model: str, *, timeout: float = 90.0, retries: int = 2, backoff: float = 1.0, max_output_tokens: int | None = None) -> None:
+    def __init__(self, api_key: str, model: str, *, timeout: float = 90.0, retries: int = 2, backoff: float = 1.0, max_output_tokens: int | None = None, reasoning_effort: str | None = None) -> None:
         if not api_key or not model:
             raise ValueError("api_key and model are required")
         if timeout <= 0 or retries < 0 or backoff < 0:
             raise ValueError("invalid OpenAI request settings")
+        if reasoning_effort not in {None, "minimal", "low", "medium", "high"}:
+            raise ValueError("invalid OpenAI reasoning effort")
         self.api_key = api_key
         self.model = model
         self.timeout = timeout
         self.retries = retries
         self.backoff = backoff
         self.max_output_tokens = max_output_tokens
+        self.reasoning_effort = reasoning_effort
         self.usage_records: list[dict[str, int]] = []
 
     def structured(self, *, instructions: str, input_text: str, name: str, schema: dict[str, Any]) -> dict[str, Any]:
@@ -42,6 +45,8 @@ class OpenAIResponsesClient:
         }
         if self.max_output_tokens is not None:
             payload["max_output_tokens"] = self.max_output_tokens
+        if self.reasoning_effort is not None:
+            payload["reasoning"] = {"effort": self.reasoning_effort}
         request = Request(
             self.endpoint,
             data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),

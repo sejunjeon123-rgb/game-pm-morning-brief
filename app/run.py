@@ -147,7 +147,8 @@ def main() -> int:
         limits = config.runtime["daily"]
         key, model = os.environ.get("OPENAI_API_KEY"), os.environ.get("OPENAI_MODEL")
         client = OpenAIResponsesClient(key, model, timeout=limits["api_timeout_seconds"], retries=0,
-                                       max_output_tokens=limits["max_output_tokens"]) if key and model else None
+                                       max_output_tokens=limits["max_output_tokens"],
+                                       reasoning_effort=limits["reasoning_effort"]) if key and model else None
         result = build_daily(config, state, collection, client)
         brief = result["brief"]
         (args.output_dir / "daily_report.json").write_text(dumps(result) + "\n", encoding="utf-8")

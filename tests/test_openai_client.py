@@ -12,7 +12,7 @@ from shared.openai_client import OpenAIClientError, OpenAIResponsesClient
 
 class OpenAIResponsesClientTests(unittest.TestCase):
     def test_incomplete_response_records_reason_without_paid_retry(self):
-        client = OpenAIResponsesClient("test-key", "test-model", retries=0, max_output_tokens=2500)
+        client = OpenAIResponsesClient("test-key", "test-model", retries=0, max_output_tokens=4000, reasoning_effort="low")
         response = MagicMock()
         response.__enter__.return_value.read.return_value = json.dumps({
             "status": "incomplete", "incomplete_details": {"reason": "max_output_tokens"},
@@ -38,7 +38,7 @@ class OpenAIResponsesClientTests(unittest.TestCase):
                 request.assert_called_once()
 
     def test_output_cap_and_usage_are_recorded_without_real_api(self):
-        client = OpenAIResponsesClient("test-key", "test-model", retries=0, max_output_tokens=2500)
+        client = OpenAIResponsesClient("test-key", "test-model", retries=0, max_output_tokens=4000, reasoning_effort="low")
         response = MagicMock()
         response.__enter__.return_value.read.return_value = json.dumps({
             "status": "completed", "output_text": '{"items": []}',
@@ -47,7 +47,8 @@ class OpenAIResponsesClientTests(unittest.TestCase):
         with patch("shared.openai_client.urlopen", return_value=response) as request:
             client.structured(instructions="test", input_text="test", name="test", schema={})
         payload = json.loads(request.call_args.args[0].data)
-        self.assertEqual(payload["max_output_tokens"], 2500)
+        self.assertEqual(payload["max_output_tokens"], 4000)
+        self.assertEqual(payload["reasoning"], {"effort": "low"})
         self.assertEqual(client.usage_records[0]["total_tokens"], 20)
         request.assert_called_once()
 
