@@ -6,6 +6,7 @@ import json
 from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
+from shared.report_layout import report_games, empty_status, group_title
 
 
 class SlackDeliveryError(RuntimeError):
@@ -18,22 +19,39 @@ def format_brief(brief: dict[str, Any], *, notion_url: str | None = None) -> dic
         def section(text):
             blocks.append({"type": "section", "text": {"type": "mrkdwn", "text": text}})
         section("새 글·수정 글 중심입니다. 유저 반응은 일부 공개 표본이며 긴급도 확정 판정은 포함하지 않습니다.")
-        for item in brief.get("decisions", []):
+        ordered = []
+        for game, items in report_games(brief):
+            ordered.append((game, items))
+        last_group = None
+        for game, items in ordered:
+            if game.get("report_group") != last_group:
+                last_group = game.get("report_group")
+                section(f"*{group_title(last_group)}*")
+            if not items:
+                section(f"🎮 *{game.get('report_name', game['name_ko'])}*\n" + empty_status(brief, game["id"]))
+            for item in items:
+                section(_compact_item(item))
+        if brief.get("coverage_gaps"):
+            section("⚠️ 일부 출처의 수집·분석 공백이 있습니다. Notion 전체 보고서에서 범위와 한계를 확인해 주세요.")
+        if notion_url:
+            section(f"📚 <{notion_url}|Notion 전체 보고서>")
+        return {"text": f"게임 사업 PM 보고서 {brief['brief_date_kst']}", "blocks": blocks}
+    return _legacy_format(brief, notion_url)
+
+
+def _compact_item(item):
             lines = [f"🎮 *{item['title']}*", item["executive_summary"]]
             if item.get("observed_facts") and item.get("player_claims"):
                 lines.append("🗣️ 보고됨: " + item["player_claims"][0])
             lines.extend("⚠️ 출처 차이: " + v for v in item.get("conflicts", []))
             lines.extend("❓ 확인 필요: " + v for v in item.get("unknowns", []))
             if item.get("evidence"):
-                lines.append(f"<{item['evidence'][0]['url']}|근거 보기>")
-            section("\n".join(lines))
-        for game in brief.get("coverage_gaps", []):
-            section(f"⚠️ {game}: 수집 또는 분석 공백이 있습니다. 전체 보고서에서 확인해 주세요.")
-        if brief.get("no_material_signal_games"):
-            section("👀 추가 중요 변경 없음: " + ", ".join(brief["no_material_signal_games"]))
-        if notion_url:
-            section(f"📚 <{notion_url}|Notion 전체 보고서>")
-        return {"text": f"게임 사업 PM 보고서 {brief['brief_date_kst']}", "blocks": blocks}
+                source = next((e for e in item['evidence'] if e['source_type'].startswith('OFFICIAL')), item['evidence'][0])
+                lines.append(f"<{source['url']}|근거 보기>")
+            return "\n".join(lines)
+
+
+def _legacy_format(brief, notion_url=None):
     date_label = brief["brief_date_kst"]
     summary = brief.get("executive_summary") or ["오늘 확인된 긴급 사안은 없습니다."]
     decisions = brief.get("decisions", [])
