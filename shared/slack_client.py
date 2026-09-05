@@ -13,6 +13,18 @@ class SlackDeliveryError(RuntimeError):
     pass
 
 
+def format_connection_test() -> dict[str, Any]:
+    return {
+        "text": "Game PM Morning Brief Slack 연결 테스트",
+        "blocks": [
+            {"type": "header", "text": {"type": "plain_text", "text": "✅ Game PM Morning Brief 연결 테스트", "emoji": True}},
+            {"type": "section", "text": {"type": "mrkdwn", "text":
+                "Slack Webhook과 전용 채널 연결이 정상적으로 확인되었습니다.\n"
+                "게임 수집·OpenAI 호출·Notion 생성 없이 수행한 연결 시험입니다."}},
+        ],
+    }
+
+
 def format_brief(brief: dict[str, Any], *, notion_url: str | None = None) -> dict[str, Any]:
     if brief.get("report_mode") == "compact-v1":
         blocks = [{"type": "header", "text": {"type": "plain_text", "text": f"🎮 게임 사업 PM · {brief['brief_date_kst']}"}}]

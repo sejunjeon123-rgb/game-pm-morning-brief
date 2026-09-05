@@ -1,0 +1,27 @@
+name: Slack connection test (one message, no AI or Notion)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: game-pm-slack-connection-test
+  cancel-in-progress: false
+
+jobs:
+  send-test-message:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Offline tests
+        run: python -m unittest discover -s tests -p 'test_*.py'
+      - name: Send one Slack test message
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: python -m app.slack_connection_test
