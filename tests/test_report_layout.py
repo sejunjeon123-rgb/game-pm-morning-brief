@@ -22,3 +22,17 @@ class LayoutTests(unittest.TestCase):
         self.assertIn('🛡️ 03 · 수집 범위와 보고 한계', str(notion))
         self.assertIn('근거 부족', str(notion))
         self.assertLessEqual(len(notion['children']), 100)
+
+    def test_youtube_diagnostics_are_not_repeated_in_reader_formats(self):
+        brief = {"report_mode": "compact-v1", "brief_date_kst": "2026-09-05",
+                 "generated_at": "2026-09-05T08:10:00+09:00", "decisions": [],
+                 "executive_summary": ["검토용 요약"],
+                 "coverage_gaps": ["mabinogi-mobile"],
+                 "data_gaps": ["mabinogi-mobile: OFFICIAL_YOUTUBE HTTP_404 메타데이터 오류 3건"]}
+        slack_text = str(format_brief(brief))
+        notion_text = str(format_notion_page(brief, '0' * 32))
+        for avoided in ("YouTube 수집 실패", "HTTP_404", "메타데이터 오류"):
+            self.assertNotIn(avoided, slack_text)
+            self.assertNotIn(avoided, notion_text)
+        self.assertIn("YouTube는 게시일과 출처가 확인된 영상만 반영", notion_text)
+        self.assertNotIn("수집 범위와 보고 한계", slack_text)

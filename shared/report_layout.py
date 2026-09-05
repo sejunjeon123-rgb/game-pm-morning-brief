@@ -21,7 +21,14 @@ def report_games(brief):
 
 def empty_status(brief, game):
     if game in brief.get("coverage_gaps", []):
-        return "근거 부족 · 수집 또는 분석 공백으로 주요 소식을 확정하지 못했습니다."
+        return "근거 부족 · 공식 자료와 공개 커뮤니티 표본을 모두 확보하지 못했습니다."
     if game in brief.get("no_material_signal_games", []):
         return "확보한 자료에서 추가 중요 변경이 확인되지 않았습니다."
     return "이번 보고서에 포함된 분석 항목이 없습니다."
+
+
+COLLECTION_SCOPE_NOTICE = (
+    "최근 7일의 공식 공지와 공개 이용자 반응을 중심으로 작성했습니다. "
+    "YouTube는 게시일과 출처가 확인된 영상만 반영했으며, "
+    "공개 반응은 전체 이용자를 대표하지 않습니다."
+)

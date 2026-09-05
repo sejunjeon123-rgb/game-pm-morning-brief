@@ -22,3 +22,14 @@ production API result or a delivered Notion page. Markdown preview approximates
 Notion blocks; exact fonts and page width depend on Notion. No live send or upload.
 Rollback: revert report_layout.py, formatter changes and game presentation metadata.
 No payload or persistent state migration; legacy detailed report path unchanged.
+
+## API-free source presentation policy
+
+In compact-v1, official homepages and official communities are the core fact sources,
+DCInside is a sampled player-reaction source, and YouTube is supplementary. Accept a
+video only when its channel and exact publication timestamp are verified. Keep HTTP,
+RSS and metadata failure details in diagnostic artifacts; do not repeat them in Slack
+or per-game Notion content. Notion shows one consolidated collection-scope notice.
+A game receives a separate evidence-gap card only when neither core official material
+nor a public-community sample is available. This presentation rule does not erase or
+alter internal collection diagnostics.

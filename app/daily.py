@@ -167,17 +167,19 @@ def build_daily(config, state, collection, client=None, *, now=None):
     docs = [_document(v, "OFFICIAL_FACT") for v in collection.get("official", [])]
     docs += [_document(v, v["classification"]) for v in collection.get("players", [])]
     docs = [v for v in docs if v["game_id"] in config.game_ids and is_recent(_timestamp(v["published_at"]), now=now)]
+    # Detailed source failures remain in collection diagnostics. The reader-facing
+    # report treats YouTube as supplementary and marks a game empty only when both
+    # core official evidence and a sampled public-community item are unavailable.
+    core_evidence_games = {v["game_id"] for v in docs if v["classification"] == "OFFICIAL_FACT"
+                           or v.get("source_type") == "PUBLIC_COMMUNITY"}
     gaps = []
     gap_games = set()
     def gap(game, reason):
         gap_games.add(game)
         gaps.append(f"{game}: {reason}")
-    for value in collection.get("coverage_gaps", []):
-        if value.get("game_id") in config.game_ids:
-            code = value.get("code", "COLLECTION_GAP")
-            if not isinstance(code, str) or not re.fullmatch(r"[A-Z_0-9]{1,40}", code):
-                code = "COLLECTION_GAP"
-            gap(value["game_id"], f"{value.get('source', '수집')} 출처 접근 또는 수집 범위에 공백이 있습니다. [{code}]")
+    for game in config.game_ids:
+        if game in collection.get("game_scope", config.game_ids) and game not in core_evidence_games:
+            gap(game, "공식 자료와 공개 커뮤니티 표본을 확보하지 못했습니다.")
     decisions = []
     game_reports = {}
     calls = 0

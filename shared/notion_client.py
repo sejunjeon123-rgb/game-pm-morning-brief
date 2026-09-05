@@ -8,7 +8,7 @@ import time
 from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
-from shared.report_layout import report_games, empty_status, group_title
+from shared.report_layout import COLLECTION_SCOPE_NOTICE, report_games, empty_status, group_title
 
 
 NOTION_API_VERSION = "2026-03-11"
@@ -108,8 +108,7 @@ def format_notion_page(brief: dict[str, Any], parent_page_id: str) -> dict[str, 
                     "rich_text": _rich_text("📝 상세 보고 · " + item['title']), "children": detail}})
         children.append({"object": "block", "type": "divider", "divider": {}})
         children.append(_heading("🛡️ 03 · 수집 범위와 보고 한계"))
-        children.extend(_bullet(v) for v in brief.get("data_gaps", []))
-        children.append(_callout("Game Radar 보류 · 개인 영상은 확보된 근거가 있을 때만 반영 · 공개 반응은 전체 이용자를 대표하지 않습니다.", "📡"))
+        children.append(_callout(COLLECTION_SCOPE_NOTICE, "🛡️"))
         return {"parent": {"type": "page_id", "page_id": parent_page_id},
                 "icon": {"type": "emoji", "emoji": "🎮"},
                 "properties": {"title": {"type": "title", "title": _rich_text(f"게임 사업 동향 보고서 | {date_label}")}}, "children": children}

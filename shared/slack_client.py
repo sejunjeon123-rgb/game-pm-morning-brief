@@ -31,8 +31,6 @@ def format_brief(brief: dict[str, Any], *, notion_url: str | None = None) -> dic
                 section(f"🎮 *{game.get('report_name', game['name_ko'])}*\n" + empty_status(brief, game["id"]))
             for item in items:
                 section(_compact_item(item))
-        if brief.get("coverage_gaps"):
-            section("⚠️ 일부 출처의 수집·분석 공백이 있습니다. Notion 전체 보고서에서 범위와 한계를 확인해 주세요.")
         if notion_url:
             section(f"📚 <{notion_url}|Notion 전체 보고서>")
         return {"text": f"게임 사업 PM 보고서 {brief['brief_date_kst']}", "blocks": blocks}

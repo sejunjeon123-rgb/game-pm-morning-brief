@@ -96,6 +96,22 @@ class DailyTests(unittest.TestCase):
         self.assertEqual(result["brief"]["decisions"], ())
         self.assertIn(game, result["brief"]["coverage_gaps"])
 
+    def test_youtube_gap_does_not_mark_game_missing_when_core_evidence_exists(self):
+        game = self.config.game_ids[0]
+        self.collection["coverage_gaps"] = [{"game_id": game, "source": "OFFICIAL_YOUTUBE",
+                                               "code": "HTTP_404", "reason": "private diagnostic"}]
+        result = build_daily(self.config, self.state, self.collection, FakeClient(), now=NOW)
+        self.assertNotIn(game, result["brief"]["coverage_gaps"])
+        self.assertNotIn("HTTP_404", str(result["brief"]))
+
+    def test_game_without_official_or_public_community_gets_one_clean_gap(self):
+        game = self.config.game_ids[0]
+        self.collection["official"] = [v for v in self.collection["official"] if v["game_id"] != game]
+        result = build_daily(self.config, self.state, self.collection, FakeClient(), now=NOW)
+        self.assertIn(game, result["brief"]["coverage_gaps"])
+        self.assertEqual(sum(v.startswith(game + ":") for v in result["brief"]["data_gaps"]), 1)
+        self.assertIn("공식 자료와 공개 커뮤니티 표본", str(result["brief"]))
+
     def test_api_error_code_is_preserved_in_report_without_raw_exception(self):
         from shared.openai_client import OpenAIClientError
         client = FakeClient()
@@ -105,13 +121,13 @@ class DailyTests(unittest.TestCase):
         self.assertIn("일일 사용 한도 아님", str(result["brief"]["data_gaps"]))
         self.assertNotIn("private payload", str(result))
 
-    def test_stale_and_unscanned_games_are_not_reported_as_clear(self):
+    def test_stale_and_unscanned_games_are_reported_as_evidence_gaps(self):
         self.collection["game_scope"] = [self.config.game_ids[0]]
         for d in self.collection["official"]:
             d["published_at"] = (NOW - timedelta(days=8)).isoformat()
         result = build_daily(self.config, self.state, self.collection, FakeClient(), now=NOW)
         self.assertEqual(result["metrics"]["api_call_count"], 0)
-        self.assertEqual(len(result["brief"]["coverage_gaps"]), 7)
+        self.assertEqual(len(result["brief"]["coverage_gaps"]), 8)
 
     def test_disabled_automatic_does_not_collect_or_call_api(self):
         with patch("sys.argv", ["run", "--mode", "automatic"]), patch("app.run.collect_daily") as collect:
