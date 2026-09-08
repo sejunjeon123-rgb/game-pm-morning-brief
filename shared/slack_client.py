@@ -6,7 +6,7 @@ import json
 from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
-from shared.report_layout import report_games, empty_status, group_title
+from shared.report_layout import report_games, empty_status, game_headline_summaries, group_title
 
 
 class SlackDeliveryError(RuntimeError):
@@ -32,6 +32,8 @@ def format_brief(brief: dict[str, Any], *, notion_url: str | None = None) -> dic
         def section(text):
             blocks.append({"type": "section", "text": {"type": "mrkdwn", "text": text}})
         section("새 글·수정 글 중심입니다. 유저 반응은 일부 공개 표본이며 긴급도 확정 판정은 포함하지 않습니다.")
+        headline_summaries = game_headline_summaries(brief, limit=4)
+        section("*📋 핵심 요약*\n" + "\n".join(f"• {summary}" for summary in headline_summaries))
         ordered = []
         for game, items in report_games(brief):
             ordered.append((game, items))

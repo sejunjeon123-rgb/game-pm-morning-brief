@@ -8,7 +8,7 @@ import time
 from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
-from shared.report_layout import COLLECTION_SCOPE_NOTICE, report_games, empty_status, group_title
+from shared.report_layout import COLLECTION_SCOPE_NOTICE, report_games, empty_status, game_headline_summaries, group_title
 
 
 NOTION_API_VERSION = "2026-03-11"
@@ -85,6 +85,7 @@ def format_notion_page(brief: dict[str, Any], parent_page_id: str) -> dict[str, 
     decisions = brief.get("decisions", [])
     if brief.get("report_mode") == "compact-v1":
         test_prefix = "[테스트] " if brief.get("test_mode") else ""
+        headline_summaries = game_headline_summaries(brief, detailed=True)
         children = [
             _paragraph(f"📅 기준일 {date_label}  ·  🕒 KST / 최근 7일  ·  🎮 8게임"),
             _paragraph(f"작성 기준 시각  {brief['generated_at']}"),
@@ -92,7 +93,7 @@ def format_notion_page(brief: dict[str, Any], parent_page_id: str) -> dict[str, 
                 "rich_text": _rich_text("공식 발표 / 이용자 주장 / 해석을 구분합니다. P2·P3는 검토 구분이며, 긴급도 확정 판정이나 내부 성과 측정이 아닙니다."),
                 "icon": {"type": "emoji", "emoji": "📌"}, "color": "gray_background"}},
             _heading("📋 01 · 핵심 요약"),
-            *[_bullet(str(v)) for v in summaries],
+            *[_bullet(str(v)) for v in headline_summaries],
             _heading("🗂️ 02 · 장르별 게임 보고"),
         ]
         last_group = None

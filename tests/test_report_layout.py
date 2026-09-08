@@ -1,10 +1,36 @@
 import unittest
 from shared.slack_client import format_brief
 from shared.notion_client import format_notion_page
-from shared.report_layout import report_games
+from shared.report_layout import game_headline_summaries, report_games
 
 
 class LayoutTests(unittest.TestCase):
+    def test_headline_summary_is_game_specific_and_conclusion_first(self):
+        brief = {"game_scope": ["mabinogi-mobile", "black-desert-mobile"],
+                 "decisions": [{"game_id": "black-desert-mobile", "title": "검은사막 모바일 · 신규 이벤트 확인",
+                                "executive_summary": "확인됨: 신규 이벤트 일정이 안내됐습니다.",
+                                "interpretation": ["참여 동선의 실제 반응을 확인할 필요가 있습니다."], "unknowns": []}],
+                 "no_material_signal_games": ["mabinogi-mobile"], "coverage_gaps": []}
+        summaries = game_headline_summaries(brief, detailed=True)
+        self.assertTrue(summaries[0].startswith("마비노기 모바일 — 주요 변화 없음:"))
+        self.assertIn("검은사막 모바일 — 신규 이벤트 확인:", summaries[1])
+        self.assertIn("사업 관점 해석:", summaries[1])
+
+    def test_slack_headlines_prioritize_four_games_with_decisions(self):
+        decisions = [{"game_id": game, "title": f"{game} · 핵심 변화", "executive_summary": "확인됨: 공식 변경입니다.",
+                      "priority": "P2", "confidence": "LOW", "observed_facts": [], "player_claims": [],
+                      "interpretation": [], "unknowns": [], "conflicts": [], "evidence": []}
+                     for game in ("black-desert-mobile", "odin-valhalla-rising", "lineage-m",
+                                  "seven-knights-rebirth", "epic-seven")]
+        brief = {"report_mode": "compact-v1", "brief_date_kst": "2026-09-08",
+                 "generated_at": "2026-09-08T08:10:00+09:00", "decisions": decisions,
+                 "game_scope": ["mabinogi-mobile", "black-desert-mobile", "odin-valhalla-rising", "lineage-m",
+                                "seven-knights-rebirth", "epic-seven"], "coverage_gaps": []}
+        text = str(format_brief(brief))
+        self.assertIn("📋 핵심 요약", text)
+        self.assertNotIn("마비노기 모바일 —", text.split("생활형 MMORPG")[0])
+        self.assertNotIn("에픽세븐 — 핵심 변화", text.split("생활형 MMORPG")[0])
+
     def test_compact_platform_item_caps(self):
         decisions = []
         for index in range(3):

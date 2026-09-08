@@ -22,6 +22,7 @@ from shared.schemas import (
     Evidence, MorningBrief, PMDecisionItem, SourceType,
 )
 from shared.time_utils import now_kst, parse_iso_kst, is_recent
+from shared.report_layout import game_headline_summaries
 
 VERSION = "compact-v1"
 ANALYSIS_VERSION = "compact-v1-relevance-v2"
@@ -338,7 +339,9 @@ def build_daily(config, state, collection, client=None, *, now=None):
         data_gaps=tuple(dict.fromkeys(gaps)), coverage_gaps=tuple(g for g in config.game_ids if g in gap_games),
         no_material_signal_games=tuple(g for g in config.game_ids if g not in gap_games | decided_games),
     )
-    return {"brief": {**asdict(brief), "report_mode": VERSION}, "games": game_reports, "metrics": {
+    brief_output = {**asdict(brief), "report_mode": VERSION}
+    brief_output["executive_summary"] = tuple(game_headline_summaries(brief_output, detailed=True))
+    return {"brief": brief_output, "games": game_reports, "metrics": {
         "engine": VERSION, "api_call_count": calls, "max_daily_calls": len(config.game_ids),
         "validation_retry_count": 0, "elapsed_seconds": round(perf_counter() - started, 3),
         "relevance_filtered_count": sum(_player_relevance(v) == 0 for v in all_docs),
