@@ -170,7 +170,11 @@ class DailyTests(unittest.TestCase):
         self.assertEqual(len(result["brief"]["coverage_gaps"]), 8)
 
     def test_disabled_automatic_does_not_collect_or_call_api(self):
-        with patch("sys.argv", ["run", "--mode", "automatic"]), patch("app.run.collect_daily") as collect:
+        config = deepcopy(self.config)
+        config.runtime["delivery"]["live_delivery_enabled"] = False
+        with patch("sys.argv", ["run", "--mode", "automatic"]), \
+             patch("app.run.load_project_config", return_value=config), \
+             patch("app.run.collect_daily") as collect:
             self.assertEqual(main(), 0)
             collect.assert_not_called()
 

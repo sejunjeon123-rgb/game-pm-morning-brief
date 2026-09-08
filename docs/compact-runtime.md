@@ -59,9 +59,11 @@ Notion은 접기 블록에 게임별 사실·주장·해석·공백·출처를 �
 
 ## 전송 및 상태
 
-live_delivery_enabled=false 유지. automatic은 이 상태에서 수집/API 호출 없이 종료한다.
-실발송 활성화는 별도 승인 및 1회 통합 검증 후 진행한다. 스위치를 켜면 실제 compact
-보고서가 사용되며 미리보기 보고서는 발송하지 않는다.
+2026-09-08 사용자 승인으로 `live_delivery_enabled=true` 전환. 예약 `automatic`은
+매일 08:10 KST에 실제 수집·분석 후 Notion을 먼저 생성하고, 성공 시 링크를 포함해
+Slack으로 전송한다. 날짜·목적지별 전송 장부로 중복 발송을 차단한다.
+실발송은 사용자 승인과 1회 통합 검증을 거쳐 활성화했다. 실제 compact 보고서만
+발송하며 미리보기 보고서는 발송하지 않는다.
 
 새 상태 namespace daily/는 기존 detailed 분석 캐시와 독립적이다.
 analyzed: 성공한 내용 지문, attempts: 날짜별 호출 예산, summaries: 당일 검증된
@@ -77,7 +79,7 @@ config 예산, root/Skill 실행 계약. 기존 MorningBrief/PMDecisionItem 필�
 compact summary는 내부 새 계약이며 기존 Signal/Insight JSON 변환을 강제하지 않는다.
 
 기존 collect/signal-test/player-live-test/decision-test/pm-decision 모드는 보존했다.
-롤백 시 live_delivery_enabled=false를 유지하고 이 변경을 Git revert한 뒤 기존 수동
+롤백 시 `live_delivery_enabled=false`로 되돌리고 이 변경을 Git revert한 뒤 기존 수동
 진단 모드를 사용한다. daily/ 상태는 무시 가능하며 기존 상태를 지우거나 변환할 필요 없다.
 스케줄·URL·비밀키 이름·8게임 목록은 변경하지 않았다.
 

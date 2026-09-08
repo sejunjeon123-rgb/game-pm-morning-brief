@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 class RuntimeTests(unittest.TestCase):
     def test_config_and_preview_cover_eight_games(self) -> None:
         config = load_project_config(ROOT)
-        self.assertFalse(config.runtime["delivery"]["live_delivery_enabled"])
+        self.assertTrue(config.runtime["delivery"]["live_delivery_enabled"])
         self.assertEqual(config.runtime["delivery"]["providers"], ["slack-incoming-webhook", "notion-api"])
         brief = brief_as_dict(build_preview_brief(config))
         self.assertEqual(len(brief["game_scope"]), 8)

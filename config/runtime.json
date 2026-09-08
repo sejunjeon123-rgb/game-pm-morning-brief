@@ -25,7 +25,7 @@
   "delivery": {
     "providers": ["slack-incoming-webhook", "notion-api"],
     "mode": "automatic",
-    "live_delivery_enabled": false,
+    "live_delivery_enabled": true,
     "slack": {
       "enabled": true,
       "app": "game-pm-dedicated",
