@@ -1,0 +1,64 @@
+name: Deliver saved brief once (no collection or AI)
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "Successful Game PM Morning Brief run ID"
+        required: true
+        type: string
+
+concurrency:
+  group: game-pm-morning-brief
+  cancel-in-progress: false
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  deliver:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout application
+        uses: actions/checkout@v5
+        with:
+          path: app-repo
+
+      - name: Checkout state branch
+        uses: actions/checkout@v5
+        with:
+          ref: state
+          path: runtime-state
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Download the selected validated artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ inputs.run_id }}
+        run: gh run download "$RUN_ID" --repo "$GITHUB_REPOSITORY" --name "game-pm-morning-brief-$RUN_ID" --dir saved-artifact
+
+      - name: Deliver Notion then Slack exactly once
+        working-directory: app-repo
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_PARENT_PAGE_ID: ${{ vars.NOTION_PARENT_PAGE_ID }}
+        run: python -m app.run --mode deliver-saved --brief-file ../saved-artifact/morning_brief.json --state-dir ../runtime-state/state --output-dir output
+
+      - name: Save delivery checkpoints
+        if: always()
+        working-directory: runtime-state
+        run: |
+          if [ -n "$(git status --porcelain -- state)" ]; then
+            git config user.name "game-pm-brief-bot"
+            git config user.email "game-pm-brief-bot@users.noreply.github.com"
+            git add state
+            git commit -m "state: record saved brief delivery"
+            git push origin HEAD:state
+          fi

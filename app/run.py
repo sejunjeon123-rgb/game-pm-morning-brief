@@ -38,6 +38,7 @@ def _arguments() -> argparse.Namespace:
             "automatic",
             "daily",
             "daily-saved",
+            "deliver-saved",
         ),
         default="preview",
     )
@@ -47,6 +48,7 @@ def _arguments() -> argparse.Namespace:
     parser.add_argument("--games", nargs="+")
     parser.add_argument("--analyze", action="store_true")
     parser.add_argument("--collection-file", type=Path, default=Path("output/market_signal_collection.json"))
+    parser.add_argument("--brief-file", type=Path, default=Path("output/morning_brief.json"))
     parser.add_argument(
         "--player-live-collection-file",
         type=Path,
@@ -133,7 +135,11 @@ def main() -> int:
         destination.write_text(dumps(report) + "\n", encoding="utf-8")
         print(f"Player Live collection report written to {destination.resolve()}")
         return 0
-    if args.mode in {"daily", "daily-saved", "automatic"}:
+    if args.mode == "deliver-saved":
+        brief = json.loads(args.brief_file.read_text(encoding="utf-8"))
+        if brief.get("report_mode") != "compact-v1" or set(brief.get("game_scope", [])) != set(config.game_ids):
+            raise ValueError("saved brief is not a complete compact eight-game artifact")
+    elif args.mode in {"daily", "daily-saved", "automatic"}:
         state = StateStore(args.state_dir)
         games = tuple(args.games) if args.games else config.game_ids
         if not set(games) <= set(config.game_ids):

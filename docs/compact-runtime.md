@@ -45,6 +45,11 @@ python -m app.run --mode daily-saved --collection-file output/daily_collection.j
 ```
 
 daily-saved는 재수집하지 않으며 daily와 같은 일일 호출 예산을 공유한다.
+
+사용자가 특정 성공 artifact의 발송을 명시적으로 승인한 경우에만
+`Deliver saved brief once (no collection or AI)` 워크플로를 사용한다. 이 경로는
+수집과 OpenAI 호출 없이 저장된 8게임 compact 보고서를 Notion 다음 Slack 순서로
+전송하며, 날짜별 전송 장부로 중복을 차단한다.
 로컬 단위 테스트는 가짜 API 응답을 사용하므로 외부 호출/비용이 없다.
 부분 게임 검증에서는 나머지 게임을 '변경 없음'이 아니라 '미조사'로 표시한다.
 
