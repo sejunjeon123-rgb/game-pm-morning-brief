@@ -19,7 +19,7 @@ from shared.openai_client import OpenAIClientError
 from shared.pm_metrics import is_korean_prose
 from shared.schemas import (
     BMItemType, SignalCategory, Confidence, DecisionDisposition, DecisionPriority,
-    Evidence, MorningBrief, PMDecisionItem, SourceType,
+    Evidence, MetricCheck, MorningBrief, PMDecisionItem, PMMetricContext, SourceType,
 )
 from shared.time_utils import now_kst, parse_iso_kst, is_recent
 from shared.report_layout import game_headline_summaries
@@ -87,6 +87,43 @@ _BUSINESS_PLAYER_PATTERNS = (
     r"제재|운영정책|불법\s*프로그램|어뷰징|랭킹|공정성|공지|운영진",
 )
 
+_CATEGORY_METRICS = {
+    "UPDATE": ("DAU", "Retention", "TS"),
+    "CHARACTER": ("DAU", "Retention"),
+    "EVENT": ("DAU", "Retention", "TS"),
+    "WEB_EVENT": ("UV", "DAU"),
+    "COLLAB": ("Organic", "Non organic", "NRU", "DAU"),
+    "MARKETING": ("Organic", "Non organic", "NRU", "CAC"),
+    "MAINTENANCE": ("DAU", "CU", "MCU", "TS"),
+}
+_BM_METRICS = {
+    "GROWTH": ("NPU", "PUR", "ARPPU"),
+    "GACHA": ("NPU", "PUR", "ARPPU", "Sales"),
+    "CURRENCY": ("PU", "ARPPU", "Sales"),
+    "EQUIPMENT": ("PU", "ARPPU", "Sales"),
+    "CHARACTER": ("NPU", "PUR", "ARPPU", "Sales"),
+    "CONVENIENCE": ("PU", "PUR", "Retention"),
+    "CONTENT_ACCESS": ("PU", "PUR", "Retention"),
+    "COSMETIC": ("PU", "ARPPU", "Sales"),
+}
+_METRIC_CHECKS = {
+    "DAU": ("일간 활성 사용자 수", "변경 전후 DAU의 일간 활성 사용자 수를 확인합니다."),
+    "NRU": ("신규 등록 사용자 수", "기간 중 NRU의 신규 등록 사용자 수를 확인합니다."),
+    "Sales": ("게임에서 발생한 매출", "대상 기간 Sales의 게임 매출을 확인합니다."),
+    "PU": ("일간 결제 사용자 수", "대상 기간 PU의 일간 결제 사용자 수를 확인합니다."),
+    "NPU": ("신규 결제 사용자 수", "대상 기간 NPU의 신규 결제 사용자 수를 확인합니다."),
+    "PUR": ("DAU 중 일간 결제 사용자 비율", "대상 기간 PUR의 DAU 대비 일간 결제 사용자 비율을 확인합니다."),
+    "ARPPU": ("결제 사용자 1인당 평균 매출", "대상 기간 ARPPU의 결제 사용자 1인당 평균 매출을 확인합니다."),
+    "Retention": ("기준 코호트의 재방문 비율", "변경 전후 Retention의 기준 코호트 재방문 비율을 확인합니다."),
+    "Organic": ("마케팅 기여 없는 자연 유입", "기간 중 Organic의 마케팅 기여 없는 자연 유입을 확인합니다."),
+    "Non organic": ("광고·캠페인 기여 유입", "기간 중 Non organic의 광고·캠페인 기여 유입을 확인합니다."),
+    "CU": ("특정 시점의 동시 접속 사용자 수", "점검 전후 CU의 동시 접속 사용자 수를 확인합니다."),
+    "MCU": ("측정 기간의 최고 동시 접속 사용자 수", "점검 전후 MCU의 최고 동시 접속 사용자 수를 확인합니다."),
+    "UV": ("웹 자산의 중복 제거 방문 사용자 수", "이벤트 기간 UV의 웹 순방문 사용자 수를 확인합니다."),
+    "TS": ("사용자의 게임 이용 시간", "변경 전후 TS의 게임 이용 시간을 확인합니다."),
+    "CAC": ("사용자 1인 획득 비용", "캠페인 기간 CAC의 사용자 1인 획득 비용을 확인합니다."),
+}
+
 
 def _player_relevance(document):
     """Return a deterministic relevance score; zero means keep only in raw collection."""
@@ -102,6 +139,22 @@ def _player_relevance(document):
                   or int(document.get("recommendation_count") or 0) >= 5
                   or int(document.get("view_count") or 0) >= 500)
     return 20 + matches * 10 + (5 if engagement else 0)
+
+
+def _metric_context(item):
+    """Map validated event types to internal checks without asserting KPI movement."""
+    terms = list(_CATEGORY_METRICS.get(item["category"], ()))
+    if item["category"] == "BM":
+        for bm_type in item["bm_types"]:
+            terms.extend(_BM_METRICS.get(bm_type, ()))
+    terms = list(dict.fromkeys(terms))[:4]
+    if not terms:
+        return PMMetricContext(), ()
+    rationale = " ".join(_METRIC_CHECKS[term][1] for term in terms)
+    context = PMMetricContext(tuple(terms), rationale, True)
+    checks = tuple(MetricCheck(term=term, question=_METRIC_CHECKS[term][1],
+                               comparison_period="변경 전후 또는 이벤트 기간") for term in terms)
+    return context, checks
 
 
 def collect_daily(config, state, game_ids):
@@ -359,6 +412,7 @@ def _decision(game, item, now, game_name):
     key = hashlib.sha256((game + "|" + "|".join(e.evidence_id for e in evidence)).encode()).hexdigest()[:20]
     facts = tuple(v["text"] for v in item["facts"])
     claims = tuple(v["text"] for v in item["claims"])
+    metric_context, metric_checks = _metric_context(item)
     return PMDecisionItem(
         decision_id=f"daily-{key}", decision_key=key, game_id=game,
         title=f"{game_name} · {item['title']}", executive_summary=("확인됨: " + facts[0]) if facts else ("보고됨: " + claims[0]) if claims else ("제작자 견해: " + item["interpretation"][0]["text"]),
@@ -367,5 +421,6 @@ def _decision(game, item, now, game_name):
         decided_at=now, evidence=evidence, observed_facts=facts, player_claims=claims,
         interpretation=tuple(v["text"] for v in item["interpretation"]),
         unknowns=tuple(item["unknowns"]), conflicts=tuple(v["text"] for v in item["conflicts"]),
+        pm_metric_context=metric_context, metric_checks=metric_checks,
         decision_rationale="간소화 모드: 공식 변경은 확인 대상으로, 공개 반응은 관찰 대상으로 분류합니다. 내부 KPI 및 긴급도는 별도 확인이 필요합니다.",
     )

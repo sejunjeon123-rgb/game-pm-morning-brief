@@ -1,7 +1,7 @@
 ---
 project: GAME PM Morning Brief Self-Org-gent
 document_role: root-orchestration-contract
-version: 1.3.0
+version: 1.4.0
 status: foundation
 timezone: Asia/Seoul
 default_lookback_days: 7
@@ -40,8 +40,9 @@ only through explicitly selected legacy diagnostic modes; never invoke it as a f
   Report collection bounds and omitted inputs as limitations, not complete coverage.
 - Summaries separate cited official facts, sampled player claims, interpretation,
   unknowns, and conflicts. Keep category/BM taxonomy, but omit generated sentiment,
-  trend, severity, KPI values, metric questions, and operational recommendations.
-  Empty pm_metric_context is intentional, not a request to invent terminology.
+  trend, severity, KPI values, and operational recommendations. Deterministically map
+  validated event categories to at most four relevant internal KPI verification questions;
+  never assert their value, direction, magnitude, or causality from public evidence.
 - PM Decision Lead is deterministic assembly: official findings P2, claim-only P3,
   VERIFY, LOW confidence. Compact mode does not assign P0/P1 or certify urgency.
   Mandatory HIGH/CRITICAL deep dives apply only to legacy detailed Signal mode.

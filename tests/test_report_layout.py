@@ -49,6 +49,23 @@ class LayoutTests(unittest.TestCase):
         self.assertIn("마비노기 항목 2", notion_text)
         self.assertNotIn("마비노기 항목 3", notion_text)
 
+    def test_compact_formats_show_bounded_internal_kpi_checks(self):
+        decision = {"game_id": "mabinogi-mobile", "title": "마비노기 모바일 · 업데이트 확인",
+                    "executive_summary": "확인됨: 신규 업데이트가 안내됐습니다.", "priority": "P2",
+                    "confidence": "LOW", "observed_facts": [], "player_claims": [], "interpretation": [],
+                    "unknowns": [], "conflicts": [], "evidence": [],
+                    "pm_metric_context": {"terms": ["DAU", "Retention", "TS"]},
+                    "metric_checks": [{"term": "DAU", "question": "변경 전후 DAU의 일간 활성 사용자 수를 확인합니다."}]}
+        brief = {"report_mode": "compact-v1", "brief_date_kst": "2026-09-08",
+                 "generated_at": "2026-09-08T08:10:00+09:00", "decisions": [decision],
+                 "game_scope": ["mabinogi-mobile"], "coverage_gaps": []}
+        slack_text = str(format_brief(brief))
+        notion_text = str(format_notion_page(brief, "0" * 32))
+        self.assertIn("내부 KPI 확인", slack_text)
+        self.assertIn("DAU, Retention, TS", slack_text)
+        self.assertIn("내부 KPI 확인 포인트", notion_text)
+        self.assertIn("실제 값·증감·인과관계", notion_text)
+
     def test_fixed_order_including_missing_games(self):
         brief = {"report_mode": "compact-v1", "brief_date_kst": "2026-09-04",
                  "generated_at": "2026-09-04T15:00:00+09:00", "decisions": [],

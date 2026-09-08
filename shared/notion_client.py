@@ -118,6 +118,13 @@ def format_notion_page(brief: dict[str, Any], parent_page_id: str) -> dict[str, 
                 ):
                     detail.append(_label(label))
                     detail.extend(_bullet(v) for v in item.get(field, []) or [missing])
+                metric_checks = item.get("metric_checks") or []
+                detail.append(_label("📊 내부 KPI 확인 포인트"))
+                if metric_checks:
+                    detail.extend(_bullet(f"{check['term']}: {check['question']}") for check in metric_checks)
+                    detail.append(_paragraph("공개 자료만으로 각 지표의 실제 값·증감·인과관계는 판단하지 않습니다."))
+                else:
+                    detail.append(_paragraph("이번 사안에는 공개 근거와 직접 연결되는 내부 KPI 확인 항목을 지정하지 않았습니다."))
                 detail.append({"object": "block", "type": "divider", "divider": {}})
                 detail.append(_label("🔗 근거 자료 · 게시일 / 출처 유형"))
                 for source in item.get("evidence", []):

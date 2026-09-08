@@ -8,7 +8,7 @@ from unittest.mock import patch
 from zoneinfo import ZoneInfo
 
 from app.config import load_project_config
-from app.daily import build_daily, collect_daily, _document, _player_relevance, validate_summary_items
+from app.daily import build_daily, collect_daily, _document, _metric_context, _player_relevance, validate_summary_items
 from app.run import main
 from shared.state_store import StateStore
 from shared.slack_client import format_brief
@@ -68,6 +68,17 @@ class DailyTests(unittest.TestCase):
         self.assertEqual(len(second["brief"]["decisions"]), 8)
         self.assertEqual(second["metrics"]["api_call_count"], 0)
         self.assertNotIn("normalized_text", json.dumps(self.state.read("daily/summaries")))
+        first_decision = first["brief"]["decisions"][0]
+        self.assertEqual(first_decision["pm_metric_context"]["terms"], ("DAU", "Retention", "TS"))
+        self.assertEqual(len(first_decision["metric_checks"]), 3)
+
+    def test_metric_mapping_is_bounded_and_business_relevant(self):
+        context, checks = _metric_context({"category": "BM", "bm_types": ["GACHA", "CHARACTER"]})
+        self.assertEqual(context.terms, ("NPU", "PUR", "ARPPU", "Sales"))
+        self.assertEqual(len(checks), 4)
+        empty, empty_checks = _metric_context({"category": "NOTICE", "bm_types": []})
+        self.assertEqual(empty.terms, ())
+        self.assertEqual(empty_checks, ())
 
     def test_unchanged_next_day_free_modified_reanalyzed(self):
         client = FakeClient()

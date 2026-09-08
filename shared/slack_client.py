@@ -59,6 +59,10 @@ def _compact_item(item):
                 lines.append("🗣️ 보고됨: " + item["player_claims"][0])
             lines.extend("⚠️ 출처 차이: " + v for v in item.get("conflicts", []))
             lines.extend("❓ 확인 필요: " + v for v in item.get("unknowns", []))
+            metric_context = item.get("pm_metric_context") or {}
+            terms = metric_context.get("terms") or []
+            if terms:
+                lines.append("📊 내부 KPI 확인: " + ", ".join(terms) + " · 실제 값과 증감은 내부 데이터 확인 필요")
             if item.get("evidence"):
                 source = next((e for e in item['evidence'] if e['source_type'].startswith('OFFICIAL')), item['evidence'][0])
                 lines.append(f"<{source['url']}|근거 보기>")
