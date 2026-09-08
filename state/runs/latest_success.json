@@ -1,0 +1,9 @@
+{
+  "brief_date_kst": "2026-09-08",
+  "generated_at": "2026-09-08T13:06:42.347309+09:00",
+  "mode": "deliver-saved",
+  "destinations": [
+    "slack",
+    "notion"
+  ]
+}
