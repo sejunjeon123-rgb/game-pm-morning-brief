@@ -104,7 +104,8 @@ def format_notion_page(brief: dict[str, Any], parent_page_id: str) -> dict[str, 
             children.append(_heading("🎮 " + game.get("report_name", game["name_ko"]), 3))
             if not items:
                 children.append(_callout(empty_status(brief, game["id"]), "🔎"))
-            for item in items:
+            # Notion keeps more context than Slack while remaining bounded.
+            for item in items[:2]:
                 children.append(_callout(item["executive_summary"], "📌", "blue_background"))
                 detail = [_paragraph(f"🏷️ 검토 구분 {item['priority']}  ·  판단 신뢰도 {item.get('confidence', 'LOW')}")]
                 for label, field, missing in (

@@ -5,6 +5,24 @@ from shared.report_layout import report_games
 
 
 class LayoutTests(unittest.TestCase):
+    def test_compact_platform_item_caps(self):
+        decisions = []
+        for index in range(3):
+            decisions.append({"game_id": "mabinogi-mobile", "title": f"마비노기 항목 {index + 1}",
+                              "executive_summary": "확인됨: 검토 항목입니다.", "priority": "P2",
+                              "confidence": "LOW", "observed_facts": [], "player_claims": [],
+                              "interpretation": [], "unknowns": [], "conflicts": [], "evidence": []})
+        brief = {"report_mode": "compact-v1", "brief_date_kst": "2026-09-08",
+                 "generated_at": "2026-09-08T08:10:00+09:00", "decisions": decisions,
+                 "executive_summary": ["검토용 요약"], "game_scope": ["mabinogi-mobile"]}
+        slack_text = str(format_brief(brief))
+        notion_text = str(format_notion_page(brief, "0" * 32))
+        self.assertIn("마비노기 항목 1", slack_text)
+        self.assertNotIn("마비노기 항목 2", slack_text)
+        self.assertIn("마비노기 항목 1", notion_text)
+        self.assertIn("마비노기 항목 2", notion_text)
+        self.assertNotIn("마비노기 항목 3", notion_text)
+
     def test_fixed_order_including_missing_games(self):
         brief = {"report_mode": "compact-v1", "brief_date_kst": "2026-09-04",
                  "generated_at": "2026-09-04T15:00:00+09:00", "decisions": [],

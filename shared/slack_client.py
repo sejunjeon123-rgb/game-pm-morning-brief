@@ -42,7 +42,8 @@ def format_brief(brief: dict[str, Any], *, notion_url: str | None = None) -> dic
                 section(f"*{group_title(last_group)}*")
             if not items:
                 section(f"🎮 *{game.get('report_name', game['name_ko'])}*\n" + empty_status(brief, game["id"]))
-            for item in items:
+            # Slack is the scan view: one representative decision per core game.
+            for item in items[:1]:
                 section(_compact_item(item))
         if notion_url:
             section(f"📚 <{notion_url}|Notion 전체 보고서>")

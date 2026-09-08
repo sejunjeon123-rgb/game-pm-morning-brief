@@ -8,11 +8,12 @@ from unittest.mock import patch
 from zoneinfo import ZoneInfo
 
 from app.config import load_project_config
-from app.daily import build_daily, collect_daily
+from app.daily import build_daily, collect_daily, _document, _player_relevance, validate_summary_items
 from app.run import main
 from shared.state_store import StateStore
 from shared.slack_client import format_brief
 from shared.notion_client import format_notion_page
+from shared.report_layout import report_games
 
 ROOT = Path(__file__).resolve().parents[1]
 NOW = datetime(2026, 9, 4, 8, 10, tzinfo=ZoneInfo("Asia/Seoul"))
@@ -95,6 +96,45 @@ class DailyTests(unittest.TestCase):
         result = build_daily(self.config, self.state, self.collection, FakeClient(boundary_error=True), now=NOW)
         self.assertEqual(result["brief"]["decisions"], ())
         self.assertIn(game, result["brief"]["coverage_gaps"])
+
+    def test_business_relevance_excludes_personal_and_build_posts(self):
+        base = document(self.config.game_ids[0], role="PLAYER_CLAIM")
+        base.update({"comment_count": 20, "view_count": 1000, "recommendation_count": 20})
+        for title, text in (("힘든 개인 이야기", "곧 자살할 것 같다"),
+                            ("기사 세팅 공유", "레이드 빌드와 룬 세팅 공략 공유"),
+                            ("길드원 모집", "친목 길드 가입 안내")):
+            with self.subTest(title=title):
+                candidate = {**base, "title": title, "normalized_text": text}
+                self.assertEqual(_player_relevance(candidate), 0)
+
+    def test_business_relevance_keeps_operational_and_payment_issues(self):
+        base = document(self.config.game_ids[0], role="PLAYER_CLAIM")
+        for text in ("업데이트 이후 서버 접속 오류가 반복된다.",
+                     "결제 상품 가격과 보상 누락 문제를 문의한다.",
+                     "랭킹 어뷰징 제재와 공정성 문제를 제기한다."):
+            with self.subTest(text=text):
+                self.assertGreater(_player_relevance({**base, "normalized_text": text}), 0)
+
+    def test_safe_validation_code_is_reported(self):
+        game = self.config.game_ids[0]
+        bad = FakeClient()
+        def invalid(**kwargs):
+            docs = json.loads(kwargs["input_text"])
+            return {"items": [{"title": "English only", "category": "UPDATE", "bm_types": [],
+                                "facts": [{"text": "English only", "evidence_ids": [docs[0]["evidence_id"]]}],
+                                "claims": [], "interpretation": [], "unknowns": [], "conflicts": []}]}
+        bad.structured = invalid
+        result = build_daily(self.config, self.state, self.collection, bad, now=NOW)
+        self.assertEqual(result["games"][game]["error_code"], "INVALID_KOREAN_PROSE")
+        self.assertNotIn("English only", str(result["brief"]))
+
+    def test_valid_item_survives_independent_invalid_item(self):
+        doc = _document(document(self.config.game_ids[0], role="OFFICIAL_FACT"), "OFFICIAL_FACT")
+        valid = FakeClient().structured(input_text=json.dumps([doc]))["items"][0]
+        invalid = {**valid, "title": "English only"}
+        items, warnings = validate_summary_items({"items": [valid, invalid]}, [doc])
+        self.assertEqual(len(items), 1)
+        self.assertEqual(warnings, ["INVALID_KOREAN_PROSE"])
 
     def test_youtube_gap_does_not_mark_game_missing_when_core_evidence_exists(self):
         game = self.config.game_ids[0]
@@ -180,9 +220,13 @@ class DailyTests(unittest.TestCase):
         brief = report["brief"]
         slack = format_brief(brief)
         notion = format_notion_page(brief, "0" * 32)
-        for decision in brief["decisions"]:
-            self.assertIn(decision["title"], str(slack))
-            self.assertIn(decision["title"], str(notion))
+        for game, items in report_games(brief):
+            if items:
+                self.assertIn(items[0]["title"], str(slack))
+                if len(items) > 1:
+                    self.assertNotIn(items[1]["title"], str(slack))
+                for item in items[:2]:
+                    self.assertIn(item["title"], str(notion))
         self.assertLessEqual(len(slack["blocks"]), 50)
         self.assertLessEqual(len(notion["children"]), 100)
         for block in slack["blocks"]:
