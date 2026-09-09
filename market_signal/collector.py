@@ -5,7 +5,6 @@ from __future__ import annotations
 from dataclasses import asdict
 from datetime import datetime
 from typing import Any
-from urllib.parse import urlencode
 
 from app.config import ProjectConfig
 from market_signal.listing_parser import parse_listing
@@ -59,11 +58,6 @@ def collect_official_notices(
                 candidates: tuple[Any, ...] = ()
                 listing_diagnostics: list[str] = []
                 request_urls = (list_url,)
-                if game_id == "mabinogi-mobile":
-                    request_urls += (
-                        f"{list_url}?{urlencode({'directionType': 'DEFAULT', 'headlineId': 0, 'pageno': 1})}",
-                        f"{list_url.rstrip('/').rsplit('/', 1)[0]}/notice/",
-                    )
                 for request_url in request_urls:
                     listing = http.get(
                         request_url,
@@ -79,7 +73,7 @@ def collect_official_notices(
                     )
                     listing_diagnostics.append(
                         f"length={len(listing)}, threads={listing.lower().count('data-threadid')}, "
-                        f"notice_links={listing.lower().count('/news/notice/')}, parsed={len(parsed)}, recent={len(candidates)}"
+                        f"erin_news={listing.lower().count('data-mm-mainnewsdata')}, parsed={len(parsed)}, recent={len(candidates)}"
                     )
                     if candidates:
                         break

@@ -44,6 +44,16 @@ class MarketSignalTests(unittest.TestCase):
         self.assertEqual(items[0].url, "https://mabinogimobile.nexon.com/News/Notice/3532703")
         self.assertEqual(items[0].published_at, datetime(2026, 8, 26, tzinfo=KST))
 
+    def test_mabinogi_homepage_erin_news_parser(self) -> None:
+        html = (FIXTURES / "mabinogi_erin_news.html").read_text(encoding="utf-8")
+        items = parse_listing("mabinogi-mobile", "https://mabinogimobile.nexon.com/Main", html)
+        self.assertEqual(len(items), 2)
+        self.assertEqual(items[0].title, "9월 업데이트 안내")
+        self.assertEqual(items[0].url, "https://mabinogimobile.nexon.com/News/Update/3537999")
+        self.assertEqual(items[0].published_at, datetime(2026, 9, 8, tzinfo=KST))
+        self.assertEqual(items[1].url, "https://mabinogimobile.nexon.com/News/Events/3537013")
+        self.assertTrue(all("/Community/" not in item.url for item in items))
+
     def test_black_desert_listing_parser(self) -> None:
         html = (FIXTURES / "black_desert_notice_list.html").read_text(encoding="utf-8")
         items = parse_listing("black-desert-mobile", "https://forum.blackdesertm.com/Board?boardNo=6", html)
@@ -92,15 +102,16 @@ class MarketSignalTests(unittest.TestCase):
         self.assertEqual(len(gaps), 1)
         self.assertIn(candidates[1].url, gaps[0]["reason"])
 
-    def test_mabinogi_listing_uses_public_query_fallback_when_base_is_empty(self) -> None:
-        listing = (FIXTURES / "mabinogi_notice_list.html").read_bytes()
+    def test_mabinogi_collection_uses_homepage_erin_news_without_listing_fallbacks(self) -> None:
+        listing = (FIXTURES / "mabinogi_erin_news.html").read_bytes()
 
-        class FallbackClient:
+        class ErinNewsClient:
+            requested_urls: list[str] = []
+
             def get(self, url: str, *, headers: object = None) -> HttpResponse:
-                if "?directionType=" in url:
+                self.requested_urls.append(url)
+                if url.rstrip("/").endswith("/Main"):
                     return HttpResponse(url, 200, {"Content-Type": "text/html; charset=utf-8"}, listing)
-                if url.rstrip("/").endswith("/News/Notice"):
-                    return HttpResponse(url, 200, {"Content-Type": "text/html; charset=utf-8"}, b"<html><body></body></html>")
                 body = "<div data-blockcontent>공식 공지 본문입니다.</div>".encode("utf-8")
                 return HttpResponse(url, 200, {"Content-Type": "text/html; charset=utf-8"}, body)
 
@@ -109,19 +120,21 @@ class MarketSignalTests(unittest.TestCase):
             sources=({
                 "game_id": "mabinogi-mobile",
                 "homepage": "https://mabinogimobile.nexon.com/Main",
-                "notices": "https://mabinogimobile.nexon.com/News/Notice",
+                "notices": "https://mabinogimobile.nexon.com/Main",
             },),
             source_policy={},
         )
+        client = ErinNewsClient()
         with tempfile.TemporaryDirectory() as directory:
             report = collect_official_notices(
                 config, StateStore(Path(directory)), ("mabinogi-mobile",),
-                client=FallbackClient(), max_details_per_game=2,  # type: ignore[arg-type]
-                now=datetime(2026, 9, 2, 8, 0, tzinfo=KST),
+                client=client, max_details_per_game=2,  # type: ignore[arg-type]
+                now=datetime(2026, 9, 8, 8, 0, tzinfo=KST),
             )
-        self.assertEqual(len(report["notices"]), 1)
-        self.assertEqual(report["notices"][0]["title"], "8/27(목) 신규 패키지 안내")
+        self.assertEqual(len(report["notices"]), 2)
+        self.assertEqual(report["notices"][0]["title"], "9월 업데이트 안내")
         self.assertEqual(report["coverage_gaps"], [])
+        self.assertFalse(any("directionType=" in url or "/News/notice/" in url for url in client.requested_urls))
 
     def test_pm_metric_semantics_reject_pickup_and_content_usage_aliases(self) -> None:
         terms, rationale = sanitize_pm_metric_context(

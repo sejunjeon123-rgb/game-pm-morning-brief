@@ -74,7 +74,7 @@ flowchart TD
 
 | 게임 | 공식 홈페이지 | 공지 수집 시작점 | 공식 YouTube | 어댑터 방식 |
 |---|---|---|---|---|
-| 마비노기 모바일 | [홈](https://mabinogimobile.nexon.com/Main) | [공지](https://mabinogimobile.nexon.com/News/Notice) | [공식 채널](https://www.youtube.com/@mabinogimobile_official) | Nexon HTML |
+| 마비노기 모바일 | [홈](https://mabinogimobile.nexon.com/Main) | [에린 소식](https://mabinogimobile.nexon.com/Main) | [공식 채널](https://www.youtube.com/@mabinogimobile_official) | 공식 메인 `에린 소식` HTML |
 | 검은사막 모바일 | [홈](https://www.blackdesertm.com/) | [공식 포럼 공지](https://forum.blackdesertm.com/Board?boardNo=6) | [공식 채널](https://www.youtube.com/@BlackDesertMobile) | 포럼 HTML |
 | 오딘 | [홈](https://odin.kakaogames.com/odin/) | [홈페이지 소식](https://odin.kakaogames.com/odin/) | [공식 채널](https://www.youtube.com/@odin_kr) | 홈페이지 목록 |
 | 리니지M | [홈](https://lineagem.plaync.com/) | [공지](https://lineagem.plaync.com/board/notice/list) | [공식 채널](https://www.youtube.com/@nclineagem) | PLAYNC 공식 API |
@@ -83,7 +83,7 @@ flowchart TD
 | 니케 | [홈](https://nikke-kr.com/) | [공식 라운지](https://game.naver.com/lounge/nikke/home) | [공식 채널](https://www.youtube.com/@nikkekr) | Naver Game 공식 라운지 API |
 | 트릭컬 리바이브 | [홈](https://www.trickcal.com/) | [공식 카페](https://cafe.naver.com/trickcal) | [에피드게임즈](https://www.youtube.com/@epidgames6350) | Naver 공식 카페 API |
 
-트릭컬은 개발사 채널이므로 게임명 필터를 적용한다. 오딘의 다음 카페는 수집하지 않는다. 마비노기 `cafe.naver.com/nicolaksn`은 공식 홈페이지 연결을 확인하지 못했으므로 공식 출처로 추가하지 않았다. 마비노기 이벤트 페이지는 별도 접근 진단에 포함했지만 정규 공지 수집 설정에 추가한 것은 아니다.
+트릭컬은 개발사 채널이므로 게임명 필터를 적용한다. 오딘의 다음 카페는 수집하지 않는다. 마비노기 모바일은 공식 메인 페이지의 `에린 소식` 영역만 정규 주 정보원으로 읽으며, 카드에 공식적으로 노출된 게시판 경로와 글 번호로 상세 페이지를 확인한다. 마비노기 `cafe.naver.com/nicolaksn`은 공식 홈페이지 연결을 확인하지 못했으므로 공식 출처로 추가하지 않았다.
 
 ## 5. 💬 공개 반응 출처 목록
 

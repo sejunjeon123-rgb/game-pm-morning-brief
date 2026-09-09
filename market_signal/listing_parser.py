@@ -95,10 +95,87 @@ class NexonNoticeListingParser(HTMLParser):
                 self._anchor_text.append(text)
 
 
+class MabinogiErinNewsParser(HTMLParser):
+    """Parse only the official homepage's ``에린 소식`` cards.
+
+    The cards do not expose an ``href``. The publisher supplies both the board
+    action path and numeric thread ID in the card markup, so the canonical
+    detail URL is assembled from those two first-party values.
+    """
+
+    _VOID_TAGS = frozenset({
+        "area", "base", "br", "col", "embed", "hr", "img", "input",
+        "link", "meta", "source", "track", "wbr",
+    })
+    _THREAD_ID = re.compile(r"Thread\.link\(\s*(\d+)\s*,")
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.items: list[tuple[str, str, str]] = []
+        self._depth = 0
+        self._scope_depth: int | None = None
+        self._item_depth: int | None = None
+        self._anchor_depth: int | None = None
+        self._detail_path: str | None = None
+        self._anchor_text: list[str] = []
+        self._item_text: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        attributes = dict(attrs)
+        if tag not in self._VOID_TAGS:
+            self._depth += 1
+        if self._scope_depth is None and "data-mm-mainnewsdata" in attributes:
+            self._scope_depth = self._depth
+            return
+        if self._scope_depth is None:
+            return
+        if tag == "li" and self._item_depth is None and "item" in (attributes.get("class") or "").split():
+            self._item_depth = self._depth
+            self._detail_path = None
+            self._anchor_text = []
+            self._item_text = []
+            return
+        if self._item_depth is None or tag != "a":
+            return
+        board_path = attributes.get("data-boardactionpath") or ""
+        thread_match = self._THREAD_ID.search(attributes.get("onclick") or "")
+        if board_path.startswith("/News/") and thread_match:
+            self._detail_path = f"{board_path.rstrip('/')}/{thread_match.group(1)}"
+            self._anchor_depth = self._depth
+
+    def handle_endtag(self, tag: str) -> None:
+        if self._scope_depth is not None:
+            if tag == "a" and self._anchor_depth == self._depth:
+                self._anchor_depth = None
+            if tag == "li" and self._item_depth == self._depth:
+                if self._detail_path:
+                    self.items.append((
+                        self._detail_path,
+                        normalize_text(" ".join(self._anchor_text)),
+                        normalize_text(" ".join(self._item_text)),
+                    ))
+                self._item_depth = None
+                self._detail_path = None
+                self._anchor_depth = None
+            if self._scope_depth == self._depth:
+                self._scope_depth = None
+        if tag not in self._VOID_TAGS and self._depth:
+            self._depth -= 1
+
+    def handle_data(self, data: str) -> None:
+        if self._item_depth is None:
+            return
+        value = normalize_text(data)
+        if value:
+            self._item_text.append(value)
+            if self._anchor_depth is not None:
+                self._anchor_text.append(value)
+
+
 def _allowed_notice(game_id: str, url: str) -> bool:
     lowered = url.lower()
     if game_id == "mabinogi-mobile":
-        return "/news/notice" in lowered and ("thread" in lowered or lowered.rstrip("/").split("/")[-1].isdigit())
+        return bool(re.search(r"/news/(notice|events|update|devnote)/\d+/?$", lowered))
     if game_id == "lineage-m":
         return "/board/notice/" in lowered and ("view" in lowered or "article" in lowered)
     if game_id == "black-desert-mobile":
@@ -111,6 +188,20 @@ def parse_listing(game_id: str, base_url: str, html: str) -> tuple[NoticeCandida
     parser.feed(html)
     candidates: dict[str, NoticeCandidate] = {}
     if game_id == "mabinogi-mobile":
+        erin_news = MabinogiErinNewsParser()
+        erin_news.feed(html)
+        for path, title, item_text in erin_news.items:
+            match = _DATE.search(item_text)
+            if not match or len(title) < 3:
+                continue
+            url = canonical_url(base_url, path)
+            if _allowed_notice(game_id, url):
+                candidates[url] = NoticeCandidate(
+                    game_id,
+                    url,
+                    title,
+                    datetime(*(int(part) for part in match.groups()), tzinfo=KST),
+                )
         nexon = NexonNoticeListingParser()
         nexon.feed(html)
         for href, title, item_text in nexon.items:
