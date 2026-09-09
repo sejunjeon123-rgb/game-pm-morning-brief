@@ -1,7 +1,7 @@
 {
-  "brief_date_kst": "2026-09-08",
-  "generated_at": "2026-09-08T13:06:42.347309+09:00",
-  "mode": "deliver-saved",
+  "brief_date_kst": "2026-09-09",
+  "generated_at": "2026-09-09T10:14:49.587104+09:00",
+  "mode": "automatic",
   "destinations": [
     "slack",
     "notion"

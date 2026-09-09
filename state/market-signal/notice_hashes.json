@@ -26,13 +26,13 @@
     },
     "https://odin.kakaogames.com/odin/": {
       "game_id": "odin-valhalla-rising",
-      "title": "9/2(수) 업데이트 상세 내역 안내",
-      "content_hash": "be0e83b503f06dae46b6a61e00d26670f19c01f097878478ace72ae1645df506",
+      "title": "9/9(수) 업데이트 상세 내역 안내",
+      "content_hash": "e6b90bb73576e028fd6ba6c0e8dcdd17a1d693830075d6a6a4909093202d8f9f",
       "first_seen_at": "2026-08-30T16:17:21.854834+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
-      "published_at": "2026-09-02T00:00:00+09:00",
-      "modified_at": "2026-09-02T16:05:55.327374+09:00",
-      "previous_content_hash": "051f0fad8a698081f9c62733addc1a2382aa7cfd750abc1c92f24c55223a1e78"
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "published_at": "2026-09-09T00:00:00+09:00",
+      "modified_at": "2026-09-09T10:12:53.529757+09:00",
+      "previous_content_hash": "be0e83b503f06dae46b6a61e00d26670f19c01f097878478ace72ae1645df506"
     },
     "https://lineagem.plaync.com/board/notice/view?articleId=6a916a306b722c561dc6a2ca": {
       "game_id": "lineage-m",
@@ -651,7 +651,7 @@
       "title": "전체공지",
       "content_hash": "f89c0ea4976d31d950ea13a485964697c6dc4960f57a41a02dd47b8ee8370a65",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-04T00:00:00+09:00"
     },
     "https://lineagem.plaync.com/board/notice/view?articleId=6a9aa4b0eea53f5d6dbcf5f3": {
@@ -691,7 +691,7 @@
       "title": "공식 파트너 크리에이터 발표 안내",
       "content_hash": "1ca223f35bbf80c9ea6c5807685247d9fdbebeb2abdd1e45d35c0eeaa8802541",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-04T10:00:18.702000+09:00"
     },
     "https://forum.netmarble.com/sena_rebirth/view/20/2013": {
@@ -699,7 +699,7 @@
       "title": "[모험가의 길(신규)] 콘텐츠 일부 미션 클리어 불가 현상 조치 및 재접속 안내",
       "content_hash": "31aa92355c36708d16428e6519743ddab2ac41241223a9211603cd23ee9af5e3",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-03T19:06:54.698000+09:00"
     },
     "https://forum.netmarble.com/sena_rebirth/view/15/2009": {
@@ -707,15 +707,15 @@
       "title": "세나리 신규 모험가 첫걸음 공략 이벤트 안내",
       "content_hash": "39601e1df5fa09758e0ffc94766b979ffeb81a7b3bf430c510a11f472c2b69cd",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-03T18:00:13.736000+09:00"
     },
     "https://forum.netmarble.com/sena_rebirth/view/11/2010": {
       "game_id": "seven-knights-rebirth",
-      "title": "9/3(목) 업데이트 후 확인된 현상 안내 [9/8 12:26 수정]",
+      "title": "9/3(목) 업데이트 후 확인된 현상 안내 [9/8 17:36 수정]",
       "content_hash": "14cb713e3eae40ba75e7e006e1c649f8d724dec1c55db3ceee57d5ea17f43723",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-03T14:00:07.705000+09:00"
     },
     "https://forum.netmarble.com/sena_rebirth/view/20/2008": {
@@ -723,7 +723,7 @@
       "title": "세븐나이츠 리버스 갤럭시 스토어 정식 출시 안내",
       "content_hash": "2930201718c8a6310f0816d9ed5254ca23e275334e3a5883567dcdb621295bdf",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-03T14:00:07.561000+09:00"
     },
     "https://forum.netmarble.com/sena_rebirth/view/15/1998": {
@@ -731,7 +731,7 @@
       "title": "전용 장비 지원 이벤트 안내",
       "content_hash": "e95f19eb2780ac134e3d62a53985e161970f056edb365886b4c4ec22306037b2",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-02T20:00:19.343000+09:00"
     },
     "https://forum.netmarble.com/sena_rebirth/view/20/2007": {
@@ -755,7 +755,7 @@
       "title": "혼돈의 부름에 응답하라! 크리에이터 챌린지 안내",
       "content_hash": "d5c254c3a22c35cf5082187da9d3b5e018adb11993a135f5493a4fe57cf9b57d",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-04T19:00:00.580000+09:00"
     },
     "https://page.onstove.com/epicseven/kr/view/14493796": {
@@ -763,7 +763,7 @@
       "title": "9/4(금) 불량이용자 제재 안내",
       "content_hash": "a26f14b6db6b0798ffd7ecb99cc0ee7e96189263f68a035317f3000344c80e46",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-04T18:00:03.523000+09:00"
     },
     "https://page.onstove.com/epicseven/kr/view/14491570": {
@@ -771,7 +771,7 @@
       "title": "09/17(목) 밸런스 조정 사전 안내 (9/4 19:04 수정)",
       "content_hash": "5dc249ed2383c8c0016361f862d5bef2786c5c06d557595cb245c6301084ea6a",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-04T18:00:01.492000+09:00"
     },
     "https://page.onstove.com/epicseven/kr/view/14488750": {
@@ -779,7 +779,7 @@
       "title": "8주년의 추억 속, 계승자님의 가장 빛나는 순간은 언제인가요?",
       "content_hash": "c29d0cd829f11c3d4575196f170505a92043cda1cc981afb051a2a616ef972da",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-03T19:00:00.582000+09:00"
     },
     "https://page.onstove.com/epicseven/kr/view/14491509": {
@@ -787,7 +787,7 @@
       "title": "8주년 기념 콜라보 카페 실낙원 시즌 후기 이벤트",
       "content_hash": "a6e17361c2bb9cb877a57d4724ff4e9ed3ef126bdd9a68301c76b8a7b7d98f24",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-03T18:00:04.025000+09:00"
     },
     "https://page.onstove.com/epicseven/kr/view/14486621": {
@@ -795,7 +795,7 @@
       "title": "8/27(목) 업데이트 이후 발생 중인 오류 현상에 대해 사과드립니다. (9/3 12:07 추가)",
       "content_hash": "49b28fef79345959d5018a21510b4dac87d7e9d884b60008879a2d937b73d721",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-03T11:00:00.796000+09:00"
     },
     "https://page.onstove.com/epicseven/kr/view/14488679": {
@@ -803,7 +803,7 @@
       "title": "9/3(목) 일부 콘텐츠 확률 변경 사전 안내 (9/3 10:00 추가)",
       "content_hash": "1462b27930b13e3e46dd0c68e2881fe86afb941ab65eb4a22e1b52419ed9ddcf",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-02T18:00:02.993000+09:00"
     },
     "https://page.onstove.com/epicseven/kr/view/14488672": {
@@ -819,7 +819,7 @@
       "title": "불법 프로그램 및 비정상 플레이 대응 안내",
       "content_hash": "1f5b6218a45a8d32f3bc16abb2ef7ad5f66849a396525ce36a65833cdbaa9145",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-04T17:55:17+09:00"
     },
     "https://game.naver.com/lounge/nikke/board/detail/8143799": {
@@ -827,7 +827,7 @@
       "title": "📢 Pick Up 모집 기간 안내 - 「드레이크 : 그레이트 빌런」",
       "content_hash": "37dc96db0d90e6341bbd8a204f9495dd1cbaf8e9c86cf4f7d5016fad76ad6779",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-03T18:05:21+09:00"
     },
     "https://game.naver.com/lounge/nikke/board/detail/8143771": {
@@ -835,7 +835,7 @@
       "title": "9월 3일(목) 알려진 이슈 안내",
       "content_hash": "7d2db736b007b8ef97285d9ac2ede1cb4ebbde80fa15934aebf1946257ba9e46",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-03T18:00:44+09:00"
     },
     "https://game.naver.com/lounge/nikke/board/detail/8143754": {
@@ -843,7 +843,7 @@
       "title": "9월 3일(목) 업데이트 개선사항 안내",
       "content_hash": "9b2c20bcb6461401149749aad5d834e66a6025700db23a1b68e3ca9eb58b71d4",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-03T18:00:12+09:00"
     },
     "https://game.naver.com/lounge/nikke/board/detail/8138246": {
@@ -851,7 +851,7 @@
       "title": "솔로 레이드 - 사치스러운 거미 비정상 데이터 처리 및 대응 결과 안내",
       "content_hash": "053dd4c288a1f49280609a8d7e6f103580bdf1fb16ba7d7f7f4c3b2f0d77c853",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-02T20:49:03+09:00"
     },
     "https://cafe.naver.com/f-e/cafes/30131231/articles/209465?boardtype=L&menuid=15&referrerAllArticles=false": {
@@ -859,7 +859,7 @@
       "title": "교주님의 의견을 들려주세요! 설문조사 이벤트 당첨자 안내",
       "content_hash": "5314dac483f9be841ae579f159d2bdea94a77b49479c3eb2446727ab82d6ce1a",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-04T17:00:11.627000+09:00"
     },
     "https://cafe.naver.com/f-e/cafes/30131231/articles/209443?boardtype=L&menuid=66&referrerAllArticles=false": {
@@ -867,7 +867,7 @@
       "title": "9월 4일(금) 확인된 문제 현상 안내",
       "content_hash": "a045cbccc07b08eb0aa79da710e854a475c5ab71b7da3abdda8c2df5f6409e68",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-04T14:32:44.677000+09:00"
     },
     "https://cafe.naver.com/f-e/cafes/30131231/articles/209086?boardtype=L&menuid=67&referrerAllArticles=false": {
@@ -875,7 +875,7 @@
       "title": "신규 상품 [디아나(왕년)] 사복 패스 판매 상세 안내",
       "content_hash": "ec84aae02788411cde18b7e2410c811e3214bb4204bad04cf0cce077c8a1822c",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-02T17:02:26.977000+09:00"
     },
     "https://cafe.naver.com/f-e/cafes/30131231/articles/209085?boardtype=L&menuid=67&referrerAllArticles=false": {
@@ -883,7 +883,7 @@
       "title": "9월 3일(목) 업데이트 예정 내역 안내",
       "content_hash": "3b72966d3dfa17682845ce80629d5f2594f5d2c29295e4f9537514ca09b64c7c",
       "first_seen_at": "2026-09-05T14:16:18.257087+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-02T17:02:15.830000+09:00"
     },
     "https://cafe.naver.com/f-e/cafes/30131231/articles/209084?boardtype=L&menuid=66&referrerAllArticles=false": {
@@ -904,10 +904,10 @@
     },
     "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=662256&pageNo=1": {
       "game_id": "black-desert-mobile",
-      "title": "전체공지",
+      "title": "[점검] 9월 8일(화) 업데이트 점검 안내 (11:00, 점검 완료)",
       "content_hash": "74176d6a329138da2a42fc75e21b74480ad39720a3941b37d1e789d3ed8231c2",
       "first_seen_at": "2026-09-08T13:04:05.769048+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-07T00:00:00+09:00"
     },
     "https://lineagem.plaync.com/board/notice/view?articleId=6a9e9930fa34c1011d6275d3": {
@@ -939,24 +939,138 @@
       "title": "[세나리 x 갤럭시 스토어] 위클리 출석체크! 이벤트 안내",
       "content_hash": "63a712d2941f423a11e827256837e7fb08ec046d7cb24954159023a2e7f889fe",
       "first_seen_at": "2026-09-08T13:04:05.769048+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-07T14:50:15.840000+09:00"
     },
     "https://page.onstove.com/epicseven/kr/view/14499960": {
       "game_id": "epic-seven",
-      "title": "ABOUT E7WC 2026! 대회 일정 및 참가 안내",
-      "content_hash": "c9d997e2605a912d3742c81b763d96306cbc66abf36c4cfd6fdbe4b06d3221dd",
+      "title": "ABOUT E7WC 2026! 대회 일정 및 참가 안내 (추가)",
+      "content_hash": "3a14dfa7a8a8ada3a96c2203e03c875f970ea5caa59590f90741f3ae8a369f41",
       "first_seen_at": "2026-09-08T13:04:05.769048+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
-      "published_at": "2026-09-08T11:00:00.868000+09:00"
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "published_at": "2026-09-08T11:00:00.868000+09:00",
+      "modified_at": "2026-09-09T10:12:53.529757+09:00",
+      "previous_content_hash": "c9d997e2605a912d3742c81b763d96306cbc66abf36c4cfd6fdbe4b06d3221dd"
     },
     "https://game.naver.com/lounge/nikke/board/detail/8164265": {
       "game_id": "nikke",
       "title": "콜라보 종료 임박",
       "content_hash": "c3d359b20048ecc0cc7ec762977d7879a1382b5ddb9371f766cc30b88d0d3b6f",
       "first_seen_at": "2026-09-08T13:04:05.769048+09:00",
-      "last_seen_at": "2026-09-08T13:32:09.346263+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
       "published_at": "2026-09-08T12:00:49+09:00"
+    },
+    "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=662348&pageNo=1": {
+      "game_id": "black-desert-mobile",
+      "title": "[안내] 9월 운영정책 위반(비매너 채팅)에 따른 조치 사항 안내",
+      "content_hash": "47058b7b662a74833666f085f0fca806001bf11d8373695576ca1120517773c9",
+      "first_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "published_at": "2026-09-08T00:00:00+09:00"
+    },
+    "https://lineagem.plaync.com/board/notice/view?articleId=6aa06238fa34c1011d627658": {
+      "game_id": "lineage-m",
+      "title": "[안내] 9월 23일(수) 캐릭터 삭제 티켓 상품 판매 종료 안내",
+      "content_hash": "02dc52e540c8d3ef42c68827efe5335090d00690c87624822647182ceb07a275",
+      "first_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "published_at": "2026-09-09T04:30:00.001000+09:00"
+    },
+    "https://lineagem.plaync.com/board/notice/view?articleId=6aa06238fa34c1011d627656": {
+      "game_id": "lineage-m",
+      "title": "[안내] 9월 9일(수) 오렌성 상인의 교역품 상품 안내",
+      "content_hash": "8522e79c8b813cceef979d14833b3e645cc6b30567990a4c265d3971335a053a",
+      "first_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "published_at": "2026-09-09T04:30:00.001000+09:00"
+    },
+    "https://lineagem.plaync.com/board/notice/view?articleId=6aa06238fa34c1011d627654": {
+      "game_id": "lineage-m",
+      "title": "[안내] 9월 9일(수) 클래스 체인지 지원 상자 상품 안내",
+      "content_hash": "d4d14b6a0a68905e845cfc6edd9dd2f9a451e6daf2fd92a9f7ac556db550d674",
+      "first_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "published_at": "2026-09-09T04:30:00.001000+09:00"
+    },
+    "https://lineagem.plaync.com/board/notice/view?articleId=6aa06238fa34c1011d627652": {
+      "game_id": "lineage-m",
+      "title": "[안내] 9월 9일(수) 에피소드 특별 제작 증표 상품 안내",
+      "content_hash": "ec5d80fe469bf2c89b3d2590706f175fdb7376be81061fcc0fe8d6c4db67fc90",
+      "first_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "published_at": "2026-09-09T04:30:00.001000+09:00"
+    },
+    "https://lineagem.plaync.com/board/notice/view?articleId=6aa06238fa34c1011d627650": {
+      "game_id": "lineage-m",
+      "title": "[안내] 9월 9일(수) 아덴성 상인의 교역품 상품 안내",
+      "content_hash": "1ae233c77cff82c26626496c44734c809427931433a2e2eccc4791cbd8f22661",
+      "first_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "published_at": "2026-09-09T04:30:00.001000+09:00"
+    },
+    "https://lineagem.plaync.com/board/notice/view?articleId=6aa06238fa34c1011d62764e": {
+      "game_id": "lineage-m",
+      "title": "[안내] 9월 9일(수) [시즌 패스] 및 [프리미엄 시즌 패스] GOLDEN AGE 상품 안내",
+      "content_hash": "f049232c6f3f58712f29d5fa14394a6955b6df9fa8baef7552f66c1743e0910c",
+      "first_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "published_at": "2026-09-09T04:30:00.001000+09:00"
+    },
+    "https://lineagem.plaync.com/board/notice/view?articleId=6aa06238fa34c1011d62764c": {
+      "game_id": "lineage-m",
+      "title": "[안내] 9월 9일(수) 혈맹 유니크 스킬 지원 상자 상품 안내",
+      "content_hash": "205d478249925424c3e99d4522e058f7199d7ac858aede169af70012f84472a8",
+      "first_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "published_at": "2026-09-09T04:30:00.001000+09:00"
+    },
+    "https://lineagem.plaync.com/board/notice/view?articleId=6aa06238fa34c1011d62764a": {
+      "game_id": "lineage-m",
+      "title": "[안내] 9월 9일(수) 출석체크 주간 보너스 상품 안내",
+      "content_hash": "aa6cc2a55b53e86670a12e823426c69e89f9cca102d9c6ee02de19f83b4b7997",
+      "first_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "published_at": "2026-09-09T04:30:00.001000+09:00"
+    },
+    "https://forum.netmarble.com/sena_rebirth/view/20/2020": {
+      "game_id": "seven-knights-rebirth",
+      "title": "8월 31일(월) [세나리 라이브] 무엇이든 물어보세나 및 Q&A 안내",
+      "content_hash": "d4c5a0afd96b85cc62b2dd5e3aaf748a6aa9ed30d08f04eb7865693a78142dba",
+      "first_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "published_at": "2026-09-08T16:00:17.964000+09:00"
+    },
+    "https://cafe.naver.com/f-e/cafes/30131231/articles/209899?boardtype=L&menuid=14&referrerAllArticles=false": {
+      "game_id": "trickcal-revive",
+      "title": "요약 스토리 특별관 오픈 예정 안내(~10월 22일)",
+      "content_hash": "596a9a7605542f484094d4c0328702a791387d0ac897e0b6853f0c198b449394",
+      "first_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "published_at": "2026-09-08T17:02:17.890000+09:00"
+    },
+    "https://cafe.naver.com/f-e/cafes/30131231/articles/209898?boardtype=L&menuid=14&referrerAllArticles=false": {
+      "game_id": "trickcal-revive",
+      "title": "신규 스펙타클 카드 뽑기 예정 안내(~9월 24일)",
+      "content_hash": "86e34a464dc30d23a4ecf7f6ff73df1fe889b3af89cce176c381affe14a40bd1",
+      "first_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "published_at": "2026-09-08T17:02:05.630000+09:00"
+    },
+    "https://cafe.naver.com/f-e/cafes/30131231/articles/209897?boardtype=L&menuid=14&referrerAllArticles=false": {
+      "game_id": "trickcal-revive",
+      "title": "신규 픽업 사도 모집 진행 예정 안내(~9월 24일)",
+      "content_hash": "38a6788a88dc52443a676243017b1c63ffbc4317353d180e8413e50b5a8c8a88",
+      "first_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "published_at": "2026-09-08T17:01:54.847000+09:00"
+    },
+    "https://cafe.naver.com/f-e/cafes/30131231/articles/209896?boardtype=L&menuid=14&referrerAllArticles=false": {
+      "game_id": "trickcal-revive",
+      "title": "< 후회냐? 미련이냐? 다시 돌아올 석양을 향해> 오픈 예정 안내(~9월 24일)",
+      "content_hash": "25940760b289f8600d1456988fcea6d68f8847a6cdf1b1f21e2b324be3dc24bd",
+      "first_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "last_seen_at": "2026-09-09T10:12:53.529757+09:00",
+      "published_at": "2026-09-08T17:01:41.263000+09:00"
     }
   }
 }
