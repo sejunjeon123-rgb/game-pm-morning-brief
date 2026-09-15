@@ -1,207 +1,336 @@
 {
-  "date": "2026-09-14",
+  "date": "2026-09-15",
   "version": "compact-v1-relevance-v2",
   "games": {
-    "mabinogi-mobile": [],
-    "black-desert-mobile": [
+    "lineage-m": [
       {
-        "title": "유저 감소 및 거래소 거래량 감소 주장",
-        "category": "NOTICE",
+        "title": "9월16일 리니지M 정기점검 예정 안내",
+        "category": "MAINTENANCE",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "리니지M은 2026년 9월 16일 정기점검이 예정되어 있으며, 상세 일정과 업데이트 내용은 9월 15일 중 별도 공지로 안내한다고 공지했다.",
+            "evidence_ids": [
+              "61f0c4c845b0f0ad4f3e4fa8d3814be754b92e45dd9cfc0fecf469fdabf7fdfa"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "운영 측은 점검 일시와 업데이트 세부사항을 하루 전(9/15)에 추가 공지하겠다고 밝혀 향후 공지로 문제 수정 또는 콘텐츠 변경 여부를 확인해야 한다.",
+            "evidence_ids": [
+              "61f0c4c845b0f0ad4f3e4fa8d3814be754b92e45dd9cfc0fecf469fdabf7fdfa"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "9월15일 공지에 점검 범위나 버그 수정 항목이 포함될지 여부",
+          "점검 예정 시간이 게임 이용자 영향 시간대와 겹치는지 여부"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "61f0c4c845b0f0ad4f3e4fa8d3814be754b92e45dd9cfc0fecf469fdabf7fdfa",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6aa7d3b0eea53f5d6dbcf730",
+            "published_at": "2026-09-14T20:00:00.581000+09:00",
+            "collected_at": "2026-09-15T10:23:27.972700+09:00",
+            "content_hash": "12afb8978df4723afe403eebcd097eeb70e728a5e7839a66711deebc37f48197",
+            "source_type": "OFFICIAL_HOMEPAGE"
+          }
+        ]
+      },
+      {
+        "title": "이용자 신고: 게임 내 몹이 비정상적으로 죽음 발생 주장",
+        "category": "MAINTENANCE",
         "bm_types": [],
         "facts": [],
         "claims": [
           {
-            "text": "작성자는 거래소 물량이 너무 적고 예전보다 유저가 줄어든 것 같다고 주장한다.",
+            "text": "한 이용자가 오늘 몬스터가 자꾸 비정상적으로 죽는 현상이 발생한다며 버그로 의심된다고 게시했다.",
             "evidence_ids": [
-              "89acb2bae4c517f6d8ffbd3f3806ef92ff6ba67ad445bcf611688466e7d51385"
+              "51962432969754a7764a857bc7e4b868ec3b315be99c1d3d6f2221eb5d16b51b"
             ]
           }
         ],
         "interpretation": [
           {
-            "text": "해당 글은 개별 이용자 체감 기반의 불만 제기로, 공식 통계나 회사 발표와는 별개인 이용자 경험을 보고한 것이다.",
+            "text": "이용자 제보는 단건 게시물로, 증상의 범위·원인·재현성은 불명하며 공식 확인이 없는 상태다; 9월15일 공지에서 관련 내용이 나오면 연계 확인이 필요하다.",
             "evidence_ids": [
-              "89acb2bae4c517f6d8ffbd3f3806ef92ff6ba67ad445bcf611688466e7d51385"
+              "51962432969754a7764a857bc7e4b868ec3b315be99c1d3d6f2221eb5d16b51b",
+              "61f0c4c845b0f0ad4f3e4fa8d3814be754b92e45dd9cfc0fecf469fdabf7fdfa"
             ]
           }
         ],
-        "conflicts": [],
+        "conflicts": [
+          {
+            "text": "이용자 제보는 현재 '버그'로 단정하는 반면, 운영 공지는 점검 일정만 안내하고 있어 양측의 주장에 직접적인 일치점이 없다.",
+            "evidence_ids": [
+              "51962432969754a7764a857bc7e4b868ec3b315be99c1d3d6f2221eb5d16b51b",
+              "61f0c4c845b0f0ad4f3e4fa8d3814be754b92e45dd9cfc0fecf469fdabf7fdfa"
+            ]
+          }
+        ],
         "unknowns": [
-          "실제 유저수·활성 사용자 변화량과 거래소 거래량의 공식 통계 여부",
-          "언제부터 유저가 줄었다고 느꼈는지에 대한 구체적 기간"
+          "해당 현상이 다수 이용자에게 발생하는지 여부",
+          "원인이 클라이언트·서버·콘텐츠 설계 중 어디에 해당하는지",
+          "운영 측에서 이미 인지하여 조치 계획이 있는지 여부"
         ],
         "evidence": [
           {
-            "evidence_id": "89acb2bae4c517f6d8ffbd3f3806ef92ff6ba67ad445bcf611688466e7d51385",
+            "evidence_id": "51962432969754a7764a857bc7e4b868ec3b315be99c1d3d6f2221eb5d16b51b",
             "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/board/view/?id=blackdesertmobile&no=334275",
-            "published_at": "2026-09-14T02:46:19+09:00",
-            "collected_at": "2026-09-14T10:00:42.263542+09:00",
-            "content_hash": "1e443dae03931c41fa7217c4680f4f81f21ec13cc9f68e7612cba4bc5a80a82c",
+            "url": "https://gall.dcinside.com/board/view/?id=lineagem&no=401568",
+            "published_at": "2026-09-15T10:12:05+09:00",
+            "collected_at": "2026-09-15T10:24:43.733830+09:00",
+            "content_hash": "1bb5c4bad6cb57ac436391cf7f517f2af69ababe5e3123a12dc25372ccf3887e",
             "source_type": "PUBLIC_COMMUNITY"
-          }
-        ]
-      }
-    ],
-    "lineage-m": [
-      {
-        "title": "신서버 사전예약쿠폰 중고거래 주장 보고",
-        "category": "BM",
-        "bm_types": [
-          "CONVENIENCE"
-        ],
-        "facts": [],
-        "claims": [
+          },
           {
-            "text": "사용자 게시글에서 신서버 사전예약쿠폰이 1만원에 판매·거래된다고 주장함.",
-            "evidence_ids": [
-              "82c2ea6ccf3d25b4cba42ff36a5d811a347f1cb66bd0dc2f1aebb0f88ca725f0"
-            ]
-          }
-        ],
-        "interpretation": [
-          {
-            "text": "게시글은 쿠폰의 중고거래 행위를 지적하므로 2차 유통과 관련된 운영·정책 영향 가능성을 시사함.",
-            "evidence_ids": [
-              "82c2ea6ccf3d25b4cba42ff36a5d811a347f1cb66bd0dc2f1aebb0f88ca725f0"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [
-          "해당 거래의 진위 여부와 거래가 지속적·대량인지 여부",
-          "해당 쿠폰의 이용약관상 양도·판매가 허용되는지 여부",
-          "운영(공식)에서 해당 사례를 확인했는지 또는 제재·회수 조치가 있었는지"
-        ],
-        "evidence": [
-          {
-            "evidence_id": "82c2ea6ccf3d25b4cba42ff36a5d811a347f1cb66bd0dc2f1aebb0f88ca725f0",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/board/view/?id=lineagem&no=401485",
-            "published_at": "2026-09-14T09:52:19+09:00",
-            "collected_at": "2026-09-14T10:00:42.263542+09:00",
-            "content_hash": "f754ff4b9ca4e42db2b381396721dcac1fb45682479acb280d38b9e46f17ee1e",
-            "source_type": "PUBLIC_COMMUNITY"
+            "evidence_id": "61f0c4c845b0f0ad4f3e4fa8d3814be754b92e45dd9cfc0fecf469fdabf7fdfa",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6aa7d3b0eea53f5d6dbcf730",
+            "published_at": "2026-09-14T20:00:00.581000+09:00",
+            "collected_at": "2026-09-15T10:23:27.972700+09:00",
+            "content_hash": "12afb8978df4723afe403eebcd097eeb70e728a5e7839a66711deebc37f48197",
+            "source_type": "OFFICIAL_HOMEPAGE"
           }
         ]
       }
     ],
     "seven-knights-rebirth": [
       {
-        "title": "CM메이 긴급 속보 영상 공개 예고",
-        "category": "UPDATE",
+        "title": "총력전 보상 미지급 주장(참여율 관련)",
+        "category": "EVENT",
         "bm_types": [],
-        "facts": [
-          {
-            "text": "공식 카페에 9월 14일(09:00)에 CM메이의 긴급 속보 영상을 공개한다고 예고했다.",
-            "evidence_ids": [
-              "c7e27ff81d42c1b9bc2902f0f841e3e2b537b7dbeb8e228d95e98281420449a3"
-            ]
-          },
-          {
-            "text": "공식 유튜브에 ‘메이의 긴급 속보’ 영상이 2026-09-14 08:55에 게시되었다고 공지되어 있다.",
-            "evidence_ids": [
-              "a3b2c730f691a81b7a6119dd92105d6e386c3f3b2c1ce22e91b01fcf411241af"
-            ]
-          }
-        ],
+        "facts": [],
         "claims": [
           {
-            "text": "커뮤니티 게시글은 긴급 속보가 귀멸의 칼날 콜라보(캐릭터·일정·사전등록)를 발표했다고 요약하고 있다.",
+            "text": "총력보상이 사람 부족으로 1% 보상을 받지 못했다는 주장",
             "evidence_ids": [
-              "8c4d24d2c0ac451a62d2b81b847067690eb95bd410e44fff16fdedf002b7c641"
+              "1bbdd854fcaab75694f928b6bf0eff7ba7e6cb64019e3ceddc917a1725d27e7f"
             ]
           }
         ],
         "interpretation": [
           {
-            "text": "공식 채널은 긴급 소식을 예고·게시했으며, 일부 커뮤니티는 해당 영상이 콜라보 발표라는 해석을 공유하고 있다.",
+            "text": "커뮤니티 게시글은 특정 유저가 참여율 저조로 인해 상위 1% 보상을 수령하지 못했다고 주장하고 있음을 나타낸다.",
             "evidence_ids": [
-              "c7e27ff81d42c1b9bc2902f0f841e3e2b537b7dbeb8e228d95e98281420449a3",
-              "a3b2c730f691a81b7a6119dd92105d6e386c3f3b2c1ce22e91b01fcf411241af",
-              "8c4d24d2c0ac451a62d2b81b847067690eb95bd410e44fff16fdedf002b7c641"
+              "1bbdd854fcaab75694f928b6bf0eff7ba7e6cb64019e3ceddc917a1725d27e7f"
+            ]
+          },
+          {
+            "text": "해당 게시글은 플레이어의 경험과 주장만 게시되어 있으며 공식 공지·검증 자료는 제시되어 있지 않다.",
+            "evidence_ids": [
+              "1bbdd854fcaab75694f928b6bf0eff7ba7e6cb64019e3ceddc917a1725d27e7f"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "총력전 보상 지급 기준(참여율 기준 충족 여부)에 대한 공식 확인 여부",
+          "실제 이벤트 참여자 수와 상위 1% 산정 결과",
+          "운영 측의 보상 미지급 사유 공지 여부 및 구체 내용"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "1bbdd854fcaab75694f928b6bf0eff7ba7e6cb64019e3ceddc917a1725d27e7f",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1335238",
+            "published_at": "2026-09-15T10:24:21+09:00",
+            "collected_at": "2026-09-15T10:24:43.733830+09:00",
+            "content_hash": "a89cc862a669cf29d66dede21797441aa6f4ff3d1bc68925abe832cea4b48ea7",
+            "source_type": "PUBLIC_COMMUNITY"
+          }
+        ]
+      }
+    ],
+    "nikke": [
+      {
+        "title": "9월 17일(목) 점검·클라이언트 업데이트 공지",
+        "category": "MAINTENANCE",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "9월 17일 11:00~18:00 서버 점검 예정이며 점검 중 접속 불가, 보상은 추후 안내 예정이라고 공지됨.",
+            "evidence_ids": [
+              "13c596274dcdc566513867c0c65f9f1d0885373479f4c603c954ecf60b66efcb"
+            ]
+          },
+          {
+            "text": "업데이트 후 최신 클라이언트 다운로드 필요하며, 신규 설치시 최소 20GB 권장(일반 권장 16GB)이라고 안내됨.",
+            "evidence_ids": [
+              "13c596274dcdc566513867c0c65f9f1d0885373479f4c603c954ecf60b66efcb"
+            ]
+          },
+          {
+            "text": "점검 후 특수 모집으로 SSR [길티 : 마이티 바니]가 합류하며 특수 모집 SSR 확률은 4%, 해당 캐릭터 획득 확률은 2%로 공지됨.",
+            "evidence_ids": [
+              "13c596274dcdc566513867c0c65f9f1d0885373479f4c603c954ecf60b66efcb"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "공식 공지는 점검 일정·클라이언트 용량·신규 모집 확률 등 운영상 변경을 포함해 사전 안내를 제공하고 있다.",
+            "evidence_ids": [
+              "13c596274dcdc566513867c0c65f9f1d0885373479f4c603c954ecf60b66efcb"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "13c596274dcdc566513867c0c65f9f1d0885373479f4c603c954ecf60b66efcb",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://game.naver.com/lounge/nikke/board/detail/8189601",
+            "published_at": "2026-09-14T18:00:46+09:00",
+            "collected_at": "2026-09-15T10:23:27.972700+09:00",
+            "content_hash": "e930e368d8bb24ed6fbedd126f8fff855ade4083fe92decd86e556aa433fb6fc",
+            "source_type": "OFFICIAL_COMMUNITY"
+          }
+        ]
+      },
+      {
+        "title": "COIN RUSH SHOWDOWN 풀보이스 스토리 이벤트 일정",
+        "category": "EVENT",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "COIN RUSH SHOWDOWN 풀 보이스 스토리 이벤트가 9/17 점검 후~10/8 04:59까지 진행된다고 공지됨.",
+            "evidence_ids": [
+              "dff0c0e079d8fb15016dd64015887140afa041e33536cc4783aef1e67c061094"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "공식 일정은 점검 완료 시점부터 이벤트가 시작되며 인앱 구매 항목이 포함될 수 있음을 명시하고 있다.",
+            "evidence_ids": [
+              "dff0c0e079d8fb15016dd64015887140afa041e33536cc4783aef1e67c061094"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "dff0c0e079d8fb15016dd64015887140afa041e33536cc4783aef1e67c061094",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://game.naver.com/lounge/nikke/board/detail/8188271",
+            "published_at": "2026-09-14T10:30:31+09:00",
+            "collected_at": "2026-09-15T10:23:27.972700+09:00",
+            "content_hash": "77418f7babd1f367497863165a3679267c09ea23e18a7cb0bc032ac2ee4af720",
+            "source_type": "OFFICIAL_COMMUNITY"
+          }
+        ]
+      },
+      {
+        "title": "이용자협회장·커뮤니티의 응답 기한 요청",
+        "category": "NOTICE",
+        "bm_types": [],
+        "facts": [],
+        "claims": [
+          {
+            "text": "게임이용자협회장(개인 명의)이 운영사에 대해 18일 또는 21일까지의 응답을 기다려 보자고 커뮤니티에 호소했다.",
+            "evidence_ids": [
+              "141485d6982fe1685996444e7b57e114a8da38fe9230da24f08e19f380c47e77"
+            ]
+          },
+          {
+            "text": "작성자는 문제 해결이 없을 경우 '진심 모드'로 적극 대응하겠다는 향후 행동 의사를 표명했다.",
+            "evidence_ids": [
+              "141485d6982fe1685996444e7b57e114a8da38fe9230da24f08e19f380c47e77"
+            ]
+          },
+          {
+            "text": "일부 커뮤니티 이용자는 공지·대응 시점을 회사 공지와 연계해 29일 리마스터·추가 공지 여부를 언급하며 반응을 보이고 있다.",
+            "evidence_ids": [
+              "e84016defc97701e175771be01c4f421ef2d083fbd0615aacd662aea2a6527ed"
+            ]
+          }
+        ],
+        "interpretation": [
+          {
+            "text": "공식 공지와 별개로 일부 영향력 있는 이용자·단체가 회사의 추가 설명을 요구하며 공개적 시간표를 제시하고 있어 향후 커뮤니티 공론화 가능성이 있다.",
+            "evidence_ids": [
+              "141485d6982fe1685996444e7b57e114a8da38fe9230da24f08e19f380c47e77",
+              "e84016defc97701e175771be01c4f421ef2d083fbd0615aacd662aea2a6527ed"
             ]
           }
         ],
         "conflicts": [
           {
-            "text": "공식 예고·영상은 긴급 소식을 알렸으나 영상·공지 자체에서 콜라보 세부를 명시하지 않아 커뮤니티 요약과 내용 차이가 있다.",
+            "text": "커뮤니티 요구(18·21일 기한)와 공식 업데이트 공지의 내용·시점은 출처별로 다르며 회사가 해당 기한에 맞춰 별도 답변을 약속한 근거는 없음.",
             "evidence_ids": [
-              "c7e27ff81d42c1b9bc2902f0f841e3e2b537b7dbeb8e228d95e98281420449a3",
-              "a3b2c730f691a81b7a6119dd92105d6e386c3f3b2c1ce22e91b01fcf411241af",
-              "8c4d24d2c0ac451a62d2b81b847067690eb95bd410e44fff16fdedf002b7c641"
+              "13c596274dcdc566513867c0c65f9f1d0885373479f4c603c954ecf60b66efcb",
+              "141485d6982fe1685996444e7b57e114a8da38fe9230da24f08e19f380c47e77"
             ]
           }
         ],
         "unknowns": [
-          "공식 발표 본문에서 콜라보 세부 내용(파트너, 캐릭터, 일정, 보상 등)은 명시되지 않았다.",
-          "공식 채널이 커뮤니티 요약에 언급된 구체적 일정·캐릭터·보상 정보를 확인해준 바는 없다."
+          "작성자가 언급한 '답변·조치'의 구체적 범위와 회사의 예정 대응 내용 여부는 공식 공지에서 확인되지 않음."
         ],
         "evidence": [
           {
-            "evidence_id": "8c4d24d2c0ac451a62d2b81b847067690eb95bd410e44fff16fdedf002b7c641",
+            "evidence_id": "13c596274dcdc566513867c0c65f9f1d0885373479f4c603c954ecf60b66efcb",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://game.naver.com/lounge/nikke/board/detail/8189601",
+            "published_at": "2026-09-14T18:00:46+09:00",
+            "collected_at": "2026-09-15T10:23:27.972700+09:00",
+            "content_hash": "e930e368d8bb24ed6fbedd126f8fff855ade4083fe92decd86e556aa433fb6fc",
+            "source_type": "OFFICIAL_COMMUNITY"
+          },
+          {
+            "evidence_id": "141485d6982fe1685996444e7b57e114a8da38fe9230da24f08e19f380c47e77",
             "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1333793",
-            "published_at": "2026-09-14T09:19:16+09:00",
-            "collected_at": "2026-09-14T10:00:42.263542+09:00",
-            "content_hash": "3ddd077a6e0046d9ca4101b2ebd9dfc2546028cbf63eadd71d0be24db655efcc",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=gov&no=6160352",
+            "published_at": "2026-09-12T01:18:10+09:00",
+            "collected_at": "2026-09-15T10:24:43.733830+09:00",
+            "content_hash": "7205cb69d12724bd4c3871c1cc2f5b62d1f92d5b494706006e187889631318fd",
             "source_type": "PUBLIC_COMMUNITY"
           },
           {
-            "evidence_id": "a3b2c730f691a81b7a6119dd92105d6e386c3f3b2c1ce22e91b01fcf411241af",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=7FI4OPVqjp8",
-            "published_at": "2026-09-14T08:55:06+09:00",
-            "collected_at": "2026-09-14T10:00:18.801779+09:00",
-            "content_hash": "a90c2439347711b269c132f5da2d7661b91ff0e273781f945f571763722cbf02",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "c7e27ff81d42c1b9bc2902f0f841e3e2b537b7dbeb8e228d95e98281420449a3",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://forum.netmarble.com/sena_rebirth/view/15/2028",
-            "published_at": "2026-09-14T09:00:00.713000+09:00",
-            "collected_at": "2026-09-14T09:59:40.331505+09:00",
-            "content_hash": "fa9c0db770d0d23559e62ada53e3b069568fc2482d29140d500e71825bb80bec",
-            "source_type": "OFFICIAL_COMMUNITY"
+            "evidence_id": "e84016defc97701e175771be01c4f421ef2d083fbd0615aacd662aea2a6527ed",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=gov&no=6177375",
+            "published_at": "2026-09-15T10:23:41+09:00",
+            "collected_at": "2026-09-15T10:24:43.733830+09:00",
+            "content_hash": "9b0914f9d3342a3d001dc078600cb7f78b35a7b90e181b0828d9764ceebbc09c",
+            "source_type": "PUBLIC_COMMUNITY"
           }
         ]
       }
     ],
-    "epic-seven": [],
-    "nikke": [
+    "trickcal-revive": [
       {
-        "title": "MINIKKE 작은 동화집 스노우 화이트(상·하) 영상 공개",
-        "category": "UPDATE",
+        "title": "트릭컬 리바이브 3주년 사전예약 오픈",
+        "category": "WEB_EVENT",
         "bm_types": [],
         "facts": [
           {
-            "text": "공식 유튜브에 ‘MINIKKE 작은 동화집’ 스노우 화이트 편 상 영상이 공개되었다.",
+            "text": "3주년 기념 사전예약 홈페이지가 오픈되었으며 사전예약 기간은 09/14 공지 이후 ~ 10/22 10:59로 안내되었습니다.",
             "evidence_ids": [
-              "f37cad9fdd7abf9a54be9521804a03c120bb1b2cfe26e86167e7056cf71c301f"
+              "cbea523f0834fe3cc1b4cd46660c02841f70c2c115e5594cdc155471c644a2a1"
             ]
           },
           {
-            "text": "공식 유튜브에 ‘MINIKKE 작은 동화집’ 스노우 화이트 편 하 영상이 공개되었다.",
+            "text": "사전예약 참여 시 한정 보상이 포함된 특별 쿠폰(예: 전설 펫)을 제공한다고 공지했습니다.",
             "evidence_ids": [
-              "f7c84d19e36b045a5c7f4fedfea4e3bac1fee02d3596e86bec784cfacb5348a5"
+              "cbea523f0834fe3cc1b4cd46660c02841f70c2c115e5594cdc155471c644a2a1"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "상·하 두 편 공개는 동일 IP의 스토리형 홍보 영상 시리즈 확장으로 판단된다.",
+            "text": "사전예약 오픈은 3주년 관련 유저 유입·홍보 목적의 공식 프로모션으로 해석됩니다.",
             "evidence_ids": [
-              "f37cad9fdd7abf9a54be9521804a03c120bb1b2cfe26e86167e7056cf71c301f",
-              "f7c84d19e36b045a5c7f4fedfea4e3bac1fee02d3596e86bec784cfacb5348a5"
-            ]
-          },
-          {
-            "text": "영상 설명에 인앱 구매(확률형 아이템 포함) 문구가 포함되어 있어 마케팅 연계 가능성이 있다.",
-            "evidence_ids": [
-              "f37cad9fdd7abf9a54be9521804a03c120bb1b2cfe26e86167e7056cf71c301f",
-              "f7c84d19e36b045a5c7f4fedfea4e3bac1fee02d3596e86bec784cfacb5348a5"
+              "cbea523f0834fe3cc1b4cd46660c02841f70c2c115e5594cdc155471c644a2a1"
             ]
           }
         ],
@@ -209,50 +338,34 @@
         "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "f37cad9fdd7abf9a54be9521804a03c120bb1b2cfe26e86167e7056cf71c301f",
+            "evidence_id": "cbea523f0834fe3cc1b4cd46660c02841f70c2c115e5594cdc155471c644a2a1",
             "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=lEbU6InyGL0",
-            "published_at": "2026-09-13T20:00:28+09:00",
-            "collected_at": "2026-09-14T10:00:18.801779+09:00",
-            "content_hash": "0e716b06dfed7ae4ac90fc038d477b8592b7ecd6cee1c92cf801c696b89f9b4f",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "f7c84d19e36b045a5c7f4fedfea4e3bac1fee02d3596e86bec784cfacb5348a5",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=2-ePhm1l_nc",
-            "published_at": "2026-09-13T20:00:39+09:00",
-            "collected_at": "2026-09-14T10:00:18.801779+09:00",
-            "content_hash": "86644acf7a9ae9c312017153fb028e7fc8a6c120a9d1adcf8ac291912855ff05",
-            "source_type": "OFFICIAL_YOUTUBE"
+            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/210794?boardtype=L&menuid=14&referrerAllArticles=false",
+            "published_at": "2026-09-14T18:02:32.503000+09:00",
+            "collected_at": "2026-09-15T10:23:27.972700+09:00",
+            "content_hash": "faebe7a7b3b584348c2b50f63f0a9dcde2a469bea0c52e1f50d43d7a5eddb7bc",
+            "source_type": "OFFICIAL_COMMUNITY"
           }
         ]
       },
       {
-        "title": "캐릭터 프로필 숏 영상 2종(신·길티 바니) 공개",
-        "category": "CHARACTER",
+        "title": "3주년 개발자 노트 공개",
+        "category": "UPDATE",
         "bm_types": [],
         "facts": [
           {
-            "text": "공식 유튜브 숏에 ‘신 : 스위프트 바니’ 캐릭터 프로필 영상이 공개되었다.",
+            "text": "개발팀이 3주년을 맞아 개발자 노트를 공개하며 향후 방향성과 콘텐츠 의도를 설명하는 글을 게시했습니다.",
             "evidence_ids": [
-              "97c8c0543011c0c28424ba370a6f631e80d0296e8c985c1cca5a332788f7f2ea"
-            ]
-          },
-          {
-            "text": "공식 유튜브 숏에 ‘길티 : 마이티 바니’ 캐릭터 프로필 영상이 공개되었다.",
-            "evidence_ids": [
-              "34925b2823f236b3d0b939fa012219933aa32fc33e50325c7b2e21fb73663590"
+              "7a778fd8aeec62de71a5d724c1a3b1f253d0d84fad5295c542b38e41121d5991"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "짧은 프로필 영상 공개는 캐릭터 소개 중심의 노출로, 캐릭터 인지도·수집 욕구 제고 목적으로 보인다.",
+            "text": "개발자 노트는 업데이트 철학과 감성적 콘셉트를 공유해 유저 기대치를 형성하려는 의도로 보입니다.",
             "evidence_ids": [
-              "97c8c0543011c0c28424ba370a6f631e80d0296e8c985c1cca5a332788f7f2ea",
-              "34925b2823f236b3d0b939fa012219933aa32fc33e50325c7b2e21fb73663590"
+              "7a778fd8aeec62de71a5d724c1a3b1f253d0d84fad5295c542b38e41121d5991"
             ]
           }
         ],
@@ -260,22 +373,79 @@
         "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "34925b2823f236b3d0b939fa012219933aa32fc33e50325c7b2e21fb73663590",
+            "evidence_id": "7a778fd8aeec62de71a5d724c1a3b1f253d0d84fad5295c542b38e41121d5991",
             "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/49QtFJIWmFE",
-            "published_at": "2026-09-13T11:00:32+09:00",
-            "collected_at": "2026-09-14T10:00:18.801779+09:00",
-            "content_hash": "cf702eab3e836a84fc1ffad8bb8b132c5e9172f3d0af850c974b5c6ab6e5260b",
-            "source_type": "OFFICIAL_YOUTUBE"
+            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/210723?boardtype=L&menuid=68&referrerAllArticles=false",
+            "published_at": "2026-09-14T17:00:26.490000+09:00",
+            "collected_at": "2026-09-15T10:23:27.972700+09:00",
+            "content_hash": "8f5b73cad62412df8381ca8e8efec15d19f5556b8813c52c56d99304bf4c9f15",
+            "source_type": "OFFICIAL_COMMUNITY"
+          }
+        ]
+      },
+      {
+        "title": "골든 크레마 콜라보 카페 진행 및 방문 인증 이벤트",
+        "category": "COLLAB",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "트릭컬 리바이브 × 골든 크레마 콜라보 카페가 09/27부터 진행된다고 공지했습니다.",
+            "evidence_ids": [
+              "a184517eb885adf3e6f777c50c52311f40b424a2d214a7bc9e75f7a8fdbfd086"
+            ]
           },
           {
-            "evidence_id": "97c8c0543011c0c28424ba370a6f631e80d0296e8c985c1cca5a332788f7f2ea",
+            "text": "콜라보 카페에서의 방문 인증 이벤트와 구매 특전, 별도 인증 게시판 신설 예정 등을 안내했습니다.",
+            "evidence_ids": [
+              "a184517eb885adf3e6f777c50c52311f40b424a2d214a7bc9e75f7a8fdbfd086",
+              "a39e6390aa57dbcd2110e61526e84292bb4ae9a400d1c92b24f73be4613d4769"
+            ]
+          },
+          {
+            "text": "방문 인증 이벤트 관련 경품 안내(예: 장패드, 가디건, 미니 아크릴 등)를 별도 공지에 게시했습니다.",
+            "evidence_ids": [
+              "a39e6390aa57dbcd2110e61526e84292bb4ae9a400d1c92b24f73be4613d4769"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "콜라보 카페와 방문 인증 이벤트는 브랜드 노출과 팬 행사 성격의 오프라인 프로모션으로 판단됩니다.",
+            "evidence_ids": [
+              "a184517eb885adf3e6f777c50c52311f40b424a2d214a7bc9e75f7a8fdbfd086",
+              "a39e6390aa57dbcd2110e61526e84292bb4ae9a400d1c92b24f73be4613d4769"
+            ]
+          }
+        ],
+        "conflicts": [
+          {
+            "text": "콜라보 카페의 종료일(공식 공지)이 게시물별로 상이하게 표기되어 일정 혼선 가능성이 있습니다.",
+            "evidence_ids": [
+              "a184517eb885adf3e6f777c50c52311f40b424a2d214a7bc9e75f7a8fdbfd086",
+              "a39e6390aa57dbcd2110e61526e84292bb4ae9a400d1c92b24f73be4613d4769"
+            ]
+          }
+        ],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "a184517eb885adf3e6f777c50c52311f40b424a2d214a7bc9e75f7a8fdbfd086",
             "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/V5Rg3qn5Tyg",
-            "published_at": "2026-09-13T18:00:32+09:00",
-            "collected_at": "2026-09-14T10:00:18.801779+09:00",
-            "content_hash": "3db8c48569fcac7bede471731f6a24a50abdb8029997550b6ef22a2fd82a9235",
-            "source_type": "OFFICIAL_YOUTUBE"
+            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/210797?boardtype=L&menuid=14&referrerAllArticles=false",
+            "published_at": "2026-09-14T18:03:18.463000+09:00",
+            "collected_at": "2026-09-15T10:23:27.972700+09:00",
+            "content_hash": "798b91d3190417062444d88afe900528c8f4c86bb63e9d089a5c4eb9ad626122",
+            "source_type": "OFFICIAL_COMMUNITY"
+          },
+          {
+            "evidence_id": "a39e6390aa57dbcd2110e61526e84292bb4ae9a400d1c92b24f73be4613d4769",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/210798?boardtype=L&menuid=14&referrerAllArticles=false",
+            "published_at": "2026-09-14T18:03:29.673000+09:00",
+            "collected_at": "2026-09-15T10:23:27.972700+09:00",
+            "content_hash": "b325a4812db2668a600694e5ba00dca9918371d52efb59d3ffca58e17f6a3b11",
+            "source_type": "OFFICIAL_COMMUNITY"
           }
         ]
       }
