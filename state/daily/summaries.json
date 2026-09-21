@@ -1,219 +1,56 @@
 {
-  "date": "2026-09-20",
+  "date": "2026-09-21",
   "version": "compact-v1-relevance-v2",
   "games": {
-    "mabinogi-mobile": [
-      {
-        "title": "추석 이벤트 '추석맞이 송편 교환소' 및 한복 패션 출시",
-        "category": "EVENT",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "추석 이벤트 '추석맞이 송편 교환소'가 진행되며 오색 빛깔 송편으로 한가위 한복 세트 등 보상을 획득할 수 있다.",
-            "evidence_ids": [
-              "773809965bfbc2053e50893d4d5de7671c0a8fc6c1c68a3e5bd32587eb531d89"
-            ]
-          },
-          {
-            "text": "추석 신규 패션 장비 세트 '달빛 서고&별빛 서고 한복'이 이벤트와 캐시샵에서 만나볼 수 있도록 안내되었다.",
-            "evidence_ids": [
-              "b07de34c213fc83fcdac06a31e2c8966ee2998e938c94208222fa9a33c46779f"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "공식 발표는 이벤트 보상과 캐시샵 판매를 동시에 안내하여 유저 유입과 유료 상품 노출을 병행하고 있다.",
-            "evidence_ids": [
-              "773809965bfbc2053e50893d4d5de7671c0a8fc6c1c68a3e5bd32587eb531d89",
-              "b07de34c213fc83fcdac06a31e2c8966ee2998e938c94208222fa9a33c46779f"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "773809965bfbc2053e50893d4d5de7671c0a8fc6c1c68a3e5bd32587eb531d89",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=vVRKGof6RzE",
-            "published_at": "2026-09-17T13:20:51+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "64b6fd3ccb35aecfeb056416ea79188f8007dc4ce412178a104c82158ff8ed21",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "b07de34c213fc83fcdac06a31e2c8966ee2998e938c94208222fa9a33c46779f",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/sl4QB50BUC4",
-            "published_at": "2026-09-17T13:22:10+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "1984e9f3ba0718ea311c8bf094b791b40e997d7be411dda40ad6e82431d20216",
-            "source_type": "OFFICIAL_YOUTUBE"
-          }
-        ]
-      },
-      {
-        "title": "신규 모험가 패스 '마일드 하베스트' 패션 장비 공개",
-        "category": "BM",
-        "bm_types": [
-          "GROWTH",
-          "COSMETIC"
-        ],
-        "facts": [
-          {
-            "text": "신규 모험가 패스 '마일드 하베스트'의 패션 장비 세트가 공식적으로 공개되었다.",
-            "evidence_ids": [
-              "c31e1f6919875a2870da6f6984d13edfcf461dcbe12c77172dfcfeea9b476ad5"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "모험가 패스 형태로 패션 장비가 제공되므로 유료 패스(성장형 상품)와 연계된 코스메틱 판매로 분류할 수 있다.",
-            "evidence_ids": [
-              "c31e1f6919875a2870da6f6984d13edfcf461dcbe12c77172dfcfeea9b476ad5"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "c31e1f6919875a2870da6f6984d13edfcf461dcbe12c77172dfcfeea9b476ad5",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/R05AoSbFa7U",
-            "published_at": "2026-09-17T13:22:06+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "04da583658e229c80ecd71d2b195006fcfa0671911bc25e264876fdbe4d0ace9",
-            "source_type": "OFFICIAL_YOUTUBE"
-          }
-        ]
-      },
-      {
-        "title": "9월 17일 업데이트: 미니게임·신규 패션·탈것 예고",
-        "category": "UPDATE",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "9월 17일 업데이트와 함께 신규 패션과 탈것 '동키'가 출시될 예정이라고 공식 예고되었다.",
-            "evidence_ids": [
-              "b42872264466365a2381d8918c4a3503c1dce8dfb8a0d2c88ccf512106fb65ee"
-            ]
-          },
-          {
-            "text": "업데이트 핵심으로 타이밍 기반 점수 경쟁 미니게임 '팽이치기' 관련 콘텐츠를 소개했다.",
-            "evidence_ids": [
-              "fa84fad818e629a51bec5b3f080a36c819efc3d91a8dd729f25b8a4370aa838c"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "공식은 UI·콘텐츠 하이라이트(미니게임)와 신상품(패션·탈것)을 함께 홍보해 업데이트 당일 플레이어 관심을 유도하려는 의도를 보인다.",
-            "evidence_ids": [
-              "b42872264466365a2381d8918c4a3503c1dce8dfb8a0d2c88ccf512106fb65ee",
-              "fa84fad818e629a51bec5b3f080a36c819efc3d91a8dd729f25b8a4370aa838c"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "b42872264466365a2381d8918c4a3503c1dce8dfb8a0d2c88ccf512106fb65ee",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/k2VpchUAxng",
-            "published_at": "2026-09-16T18:01:04+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "492c439579150c4792e05c695858f22b8787f9196fc18aac1dcb79680acd111a",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "fa84fad818e629a51bec5b3f080a36c819efc3d91a8dd729f25b8a4370aa838c",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/GnT0RAncCUA",
-            "published_at": "2026-09-17T14:12:00+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "be964663200e50174cbe968c6343df88645c18402e27c913f835984fe70db5c2",
-            "source_type": "OFFICIAL_YOUTUBE"
-          }
-        ]
-      }
-    ],
-    "black-desert-mobile": [],
+    "odin-valhalla-rising": [],
     "lineage-m": [
       {
-        "title": "투사의 모험 이벤트(3년 만) 시작",
-        "category": "EVENT",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "공식 YouTube에 '3년 만에 돌아온 투사의 모험' 시작을 알리며 이벤트 진행과 보상 안내(확률형 아이템 포함)를 게시함.",
-            "evidence_ids": [
-              "bde0aeb2758f02551a9aeac88565ee7f97de6dc885e96b8a6e1792a095962de6"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "공식 영상은 이벤트 재개와 보상(확률형 아이템 포함)을 명시해 홍보용 일정·내용 발표로 해석됨.",
-            "evidence_ids": [
-              "bde0aeb2758f02551a9aeac88565ee7f97de6dc885e96b8a6e1792a095962de6"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "bde0aeb2758f02551a9aeac88565ee7f97de6dc885e96b8a6e1792a095962de6",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/9jeQDSRLXXs",
-            "published_at": "2026-09-17T18:00:13+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "ea88eece525794cd919fc3f8c97143605eccc4327507900dc10e653a22515d37",
-            "source_type": "OFFICIAL_YOUTUBE"
-          }
-        ]
-      },
-      {
-        "title": "유저 주장: 린엠이 소과금에 유리하다는 의견",
-        "category": "NOTICE",
+        "title": "신섭 초보 무과금 75렙 생존 보고",
+        "category": "CHARACTER",
         "bm_types": [],
         "facts": [],
         "claims": [
           {
-            "text": "게시글에서 '소과금하기에는 리니지M이 시리즈 중 제일 낫다'는 개인 의견을 제시함.",
+            "text": "작성자는 신섭(새 서버)에서 무과금으로 75레벨에 도달했고 초기에는 영속 관련 스킬이 모두 0이었으나 이후 영인3, 영인1(뱀파), 영성1을 획득해 접지 않을 것 같다고 보고했다.",
             "evidence_ids": [
-              "89c40cbf4b346393764bf01748c3da4cfc5ce83e7f6aa5e86ab8155476921d5c"
+              "e18bc9d4f79d7afb42d0639a19c64ef4a1a7f5c20983e7857ecb6db561dc4fef"
+            ]
+          },
+          {
+            "text": "작성자는 기존 가입 혈이 상위권 및 랭커를 다수 보유하자 랭커들이 더 영입되어 라인이 형성되는 것을 목격하고 불안감을 느껴 해당 혈을 탈퇴하고 중립 40위권 혈로 이동해 안정감을 찾았다고 주장했다.",
+            "evidence_ids": [
+              "e18bc9d4f79d7afb42d0639a19c64ef4a1a7f5c20983e7857ecb6db561dc4fef"
+            ]
+          },
+          {
+            "text": "작성자는 무과금 이용자들에게 희망을 주고자 성장 및 생존 소식을 공유했다는 취지로 게시글을 마무리했다.",
+            "evidence_ids": [
+              "e18bc9d4f79d7afb42d0639a19c64ef4a1a7f5c20983e7857ecb6db561dc4fef"
             ]
           }
         ],
         "interpretation": [
           {
-            "text": "해당 주장은 개인 경험·비교에 기반한 이용자 의견으로 해석되며 공식 정책·수수료·확률과는 별개임.",
+            "text": "게시글은 개인 경험의 공유이며 특정 혈의 라인 형성이나 랭커 영입에 따른 불안감이 서버 초기에 일부 무과금 이용자 행동에 영향을 준 사례로 해석될 수 있다.",
             "evidence_ids": [
-              "89c40cbf4b346393764bf01748c3da4cfc5ce83e7f6aa5e86ab8155476921d5c"
+              "e18bc9d4f79d7afb42d0639a19c64ef4a1a7f5c20983e7857ecb6db561dc4fef"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "린엠이 소과금에 '가장' 유리하다는 점은 공식 확인·비교자료가 없어 근거가 없음 (증거: 89c40c...)."
+          "해당 작성자의 경험이 다른 무과금 이용자에게 일반화되는지 여부",
+          "실제 혈의 랭커 영입이 서버 전체 경쟁 구조에 미친 영향",
+          "게시글에 언급된 영속 스킬 획득 경로와 난이도에 대한 객관적 정보"
         ],
         "evidence": [
           {
-            "evidence_id": "89c40cbf4b346393764bf01748c3da4cfc5ce83e7f6aa5e86ab8155476921d5c",
+            "evidence_id": "e18bc9d4f79d7afb42d0639a19c64ef4a1a7f5c20983e7857ecb6db561dc4fef",
             "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/board/view/?id=lineagem&no=401758",
-            "published_at": "2026-09-18T09:02:20+09:00",
-            "collected_at": "2026-09-20T10:03:41.274017+09:00",
-            "content_hash": "b1c1eb7c7a2e63935299c3982649261ced58bfe58efc948ec36739df04b0a485",
+            "url": "https://gall.dcinside.com/board/view/?id=lineagem&no=401910",
+            "published_at": "2026-09-20T23:30:51+09:00",
+            "collected_at": "2026-09-21T10:02:52.040132+09:00",
+            "content_hash": "c67dbe76e38e04d4d7b08c7589b855c082aa2f3134ea439ac364ac301f03c0aa",
             "source_type": "PUBLIC_COMMUNITY"
           }
         ]
@@ -221,287 +58,64 @@
     ],
     "seven-knights-rebirth": [
       {
-        "title": "세븐나이츠 리버스 x 귀멸의 칼날 콜라보 예고(10/1), 사전등록 보상 안내",
-        "category": "COLLAB",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "세븐나이츠 리버스와 귀멸의 칼날 콜라보가 10월 1일 시작된다고 공식 예고했다.",
-            "evidence_ids": [
-              "807213f53c4bd42cedf0ea5e37d0664159632bf14ca582edf58fcc8cf548cfc1",
-              "9ea2b189c8015db47f7b70b31a2953c41ee20e7e2fb05bc54f84dfd7226827df"
-            ]
-          },
-          {
-            "text": "콜라보 사전등록 시 귀멸의 칼날 소환 이용권을 지급한다고 공식 문구로 안내했다.",
-            "evidence_ids": [
-              "807213f53c4bd42cedf0ea5e37d0664159632bf14ca582edf58fcc8cf548cfc1",
-              "9ea2b189c8015db47f7b70b31a2953c41ee20e7e2fb05bc54f84dfd7226827df"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "공식 홍보 영상(숏츠)들이 콜라보 시작일과 사전등록 보상을 반복적으로 노출해 마케팅 전개를 예고한다.",
-            "evidence_ids": [
-              "807213f53c4bd42cedf0ea5e37d0664159632bf14ca582edf58fcc8cf548cfc1",
-              "9ea2b189c8015db47f7b70b31a2953c41ee20e7e2fb05bc54f84dfd7226827df"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "807213f53c4bd42cedf0ea5e37d0664159632bf14ca582edf58fcc8cf548cfc1",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/wMT8mtUpUYs",
-            "published_at": "2026-09-18T18:10:31+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "d9145730adb81ef88fb75bddd0ef554fdd8eee031816a0c828422481cc5a04f3",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "9ea2b189c8015db47f7b70b31a2953c41ee20e7e2fb05bc54f84dfd7226827df",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/GV1vdmeaO0Y",
-            "published_at": "2026-09-18T18:00:20+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "8a11441b94e9abafc71304d3dcb555ff674e5c5894839801f6bb7ca4c8d46b39",
-            "source_type": "OFFICIAL_YOUTUBE"
-          }
-        ]
-      },
-      {
-        "title": "흑월의 마녀 벨리카 각성 공개",
-        "category": "CHARACTER",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "공식 숏츠에서 '흑월의 마녀' 벨리카 각성 사실을 안내했다.",
-            "evidence_ids": [
-              "9f6dc72f595a9ba9f9a1501084750aa5275841e039e582f8a8258a0f5dc1f27a"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "벨리카 각성 관련 짧은 공식 콘텐츠가 게시되어 업데이트·각성 홍보를 진행 중임을 시사한다.",
-            "evidence_ids": [
-              "9f6dc72f595a9ba9f9a1501084750aa5275841e039e582f8a8258a0f5dc1f27a"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "9f6dc72f595a9ba9f9a1501084750aa5275841e039e582f8a8258a0f5dc1f27a",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/ZiWVMjmTr-c",
-            "published_at": "2026-09-18T16:00:39+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "359596626ae5123ebaf5b2ebe4fa035d6977e55679cc09b8a40a0e9a3af36752",
-            "source_type": "OFFICIAL_YOUTUBE"
-          }
-        ]
-      },
-      {
-        "title": "각성 아일린 영웅 PV 공개",
-        "category": "CHARACTER",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "공식 유튜브에 각성 아일린 영웅 PV가 게시되었고 영상 설명에 일부 스킬 설명 제외 문구를 명시했다.",
-            "evidence_ids": [
-              "aaeee4e85f65bed2043fd7d8db2b8ff265a98fcc15a70f0cf59f4e7af55c218b"
-            ]
-          },
-          {
-            "text": "해당 영상 설명에서 다운로드 보상(세븐나이츠 레이첼 & 사황 에이스 100% 지급) 관련 안내를 포함했다.",
-            "evidence_ids": [
-              "aaeee4e85f65bed2043fd7d8db2b8ff265a98fcc15a70f0cf59f4e7af55c218b"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "아일린 각성 PV와 함께 다운로드 보상 안내를 병기해 신규 유입·재참여 유도를 병행하는 홍보 배포로 보인다.",
-            "evidence_ids": [
-              "aaeee4e85f65bed2043fd7d8db2b8ff265a98fcc15a70f0cf59f4e7af55c218b"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "aaeee4e85f65bed2043fd7d8db2b8ff265a98fcc15a70f0cf59f4e7af55c218b",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=poZWQVzQDfM",
-            "published_at": "2026-09-16T16:00:18+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "d4711f5b0ecb5be2c69aa43682e1e4c16b528720e8a41eb807fe58d435158ade",
-            "source_type": "OFFICIAL_YOUTUBE"
-          }
-        ]
-      }
-    ],
-    "epic-seven": [
-      {
-        "title": "에픽세븐 X 손승연 'Revive' MV 공개 및 스트리밍 인증 이벤트",
-        "category": "EVENT",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "공식 음원·MV 'Revive'가 정식 공개되었다.",
-            "evidence_ids": [
-              "2dc6e64b6546f454e6215bd15378407d890f3d2080b3e618b8b40971301cc2ee",
-              "c61c7703b89a321f86bf03683d49c1045aebbda4f415f9db4c4910d014a12125",
-              "d5c27fefafa4fcb6bc527a8042c40aa9a723dd32191b79604eb9684991a27404",
-              "62a7e70cf5357e0d8726cb5061bdba7d56e339d7c02f7f55a26c4b305a403751"
-            ]
-          },
-          {
-            "text": "스트리밍 인증 이벤트 기간은 9/19(토)~9/27(일)이며 우편 보상으로 추첨·참가 보상이 지급된다.",
-            "evidence_ids": [
-              "2dc6e64b6546f454e6215bd15378407d890f3d2080b3e618b8b40971301cc2ee",
-              "c61c7703b89a321f86bf03683d49c1045aebbda4f415f9db4c4910d014a12125",
-              "d5c27fefafa4fcb6bc527a8042c40aa9a723dd32191b79604eb9684991a27404"
-            ]
-          },
-          {
-            "text": "이벤트 보상: 추첨 30명 상급 아티팩트 강화석 3개, 참가상 전원 생명의 잎사귀 3개로 안내되어 있다.",
-            "evidence_ids": [
-              "2dc6e64b6546f454e6215bd15378407d890f3d2080b3e618b8b40971301cc2ee",
-              "c61c7703b89a321f86bf03683d49c1045aebbda4f415f9db4c4910d014a12125",
-              "d5c27fefafa4fcb6bc527a8042c40aa9a723dd32191b79604eb9684991a27404"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "공식 채널들은 MV 공개와 연계해 시청·SNS 공유를 통한 참여를 유도하는 프로모션을 진행하고 있다.",
-            "evidence_ids": [
-              "c61c7703b89a321f86bf03683d49c1045aebbda4f415f9db4c4910d014a12125",
-              "d5c27fefafa4fcb6bc527a8042c40aa9a723dd32191b79604eb9684991a27404",
-              "2dc6e64b6546f454e6215bd15378407d890f3d2080b3e618b8b40971301cc2ee"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "2dc6e64b6546f454e6215bd15378407d890f3d2080b3e618b8b40971301cc2ee",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://page.onstove.com/epicseven/kr/view/14529452",
-            "published_at": "2026-09-19T12:43:22.823000+09:00",
-            "collected_at": "2026-09-20T10:02:35.465536+09:00",
-            "content_hash": "c2922ce6a60ecae9ded6f6be0d22b8e10a0a78355247989485be239b44d79c13",
-            "source_type": "OFFICIAL_COMMUNITY"
-          },
-          {
-            "evidence_id": "62a7e70cf5357e0d8726cb5061bdba7d56e339d7c02f7f55a26c4b305a403751",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/MdX30AToDFY",
-            "published_at": "2026-09-16T18:01:46+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "9f442c8d5aa52c5ffd98891624ee2ec0efd53d59583ec687376223f1a56ba818",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "c61c7703b89a321f86bf03683d49c1045aebbda4f415f9db4c4910d014a12125",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=PIsP-nkoegs",
-            "published_at": "2026-09-19T12:05:16+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "f1117e549498f1e8d4af08ec610422b3f9a3b3a5518cfb1b3a2278a4c4f1ecbd",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "d5c27fefafa4fcb6bc527a8042c40aa9a723dd32191b79604eb9684991a27404",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=OAGeVeMZfS4",
-            "published_at": "2026-09-19T12:08:31+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "fda787b194b4a77651b5401406ec6471e47e8c4668decf2eeafd3bfb6c7f3975",
-            "source_type": "OFFICIAL_YOUTUBE"
-          }
-        ]
-      },
-      {
-        "title": "카오스 제로 나이트메어 콜라보 패치노트 영상 공개",
-        "category": "COLLAB",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "에픽세븐 X 카오스 제로 나이트메어 콜라보 관련 패치노트 1분 요약 영상이 공식 유튜브에 게시되었다.",
-            "evidence_ids": [
-              "4175ecbb2595ca678b22404fbce2b24cad1fc75e7a97586804d9b1ded67d27b0"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "공식 요약 영상은 콜라보 시작 및 패치 내용 안내 목적의 홍보 형식으로 게시되었다.",
-            "evidence_ids": [
-              "4175ecbb2595ca678b22404fbce2b24cad1fc75e7a97586804d9b1ded67d27b0"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "4175ecbb2595ca678b22404fbce2b24cad1fc75e7a97586804d9b1ded67d27b0",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=Bm70bKkHByw",
-            "published_at": "2026-09-16T19:00:21+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "576f55a5073ec2beed61498dba483e54c5936b59a6c6acc1cd5eb476e165e678",
-            "source_type": "OFFICIAL_YOUTUBE"
-          }
-        ]
-      },
-      {
-        "title": "복귀·리세 관련 문의(비공식)",
-        "category": "NOTICE",
+        "title": "비공식 공략 대회(커뮤니티 주최) 게시물 다수 게시",
+        "category": "WEB_EVENT",
         "bm_types": [],
         "facts": [],
         "claims": [
           {
-            "text": "오픈 유저 복귀를 고려 중이며 계정 소재 불명으로 리세 또는 유료 재화 구매를 고민한다는 문의가 있다.",
+            "text": "DC인사이드 커뮤니티에서 이용자 주도의 '제7회 공략대회' 개최 공지(참여방법·기간 등 게시)가 게시되었다.",
             "evidence_ids": [
-              "31b2bb4e53bb853220f1a0af8e7f26a1cedd160be2201b267d767e6e1261a4da"
+              "65d6b6538cde5a14c55a69c35101a30c0c698b66e417d8d3e12b484dfbb8dbc7"
+            ]
+          },
+          {
+            "text": "별도 게시물에서는 유사한 이용자 주도 대회(추천수 기반 순위 집계)와 경품(치킨·버거·커피 등)을 예시로 든 운영 계획이 제시되었다.",
+            "evidence_ids": [
+              "42600acdc5e0e5e5891d929ef26b25c4eeb3cad0e178ce037461d5149c0adeef"
             ]
           }
         ],
         "interpretation": [
           {
-            "text": "해당 글은 개인의 복귀·리세 선택 관련 질문으로, 공개 반응의 일부 표본이다.",
+            "text": "두 게시물은 동일한 성격의 이용자 주도 공략 대회를 안내하나, 주최는 커뮤니티 이용자(비공식)로 보이며 게임사 공식 공지는 확인되지 않는다.",
             "evidence_ids": [
-              "31b2bb4e53bb853220f1a0af8e7f26a1cedd160be2201b267d767e6e1261a4da"
+              "65d6b6538cde5a14c55a69c35101a30c0c698b66e417d8d3e12b484dfbb8dbc7",
+              "42600acdc5e0e5e5891d929ef26b25c4eeb3cad0e178ce037461d5149c0adeef"
             ]
           }
         ],
-        "conflicts": [],
+        "conflicts": [
+          {
+            "text": "기간 및 보상·심사 기준에 대해 두 게시물이 제시하는 세부 내용(기간·경품·심사 방식) 일부가 상이하다.",
+            "evidence_ids": [
+              "65d6b6538cde5a14c55a69c35101a30c0c698b66e417d8d3e12b484dfbb8dbc7",
+              "42600acdc5e0e5e5891d929ef26b25c4eeb3cad0e178ce037461d5149c0adeef"
+            ]
+          }
+        ],
         "unknowns": [
-          "계정 복구 가능 여부나 공식 지원 방침에 대한 언급이 게시글에 포함되어 있지 않다."
+          "해당 대회에 대해 게임사(운영)의 공식 승인 여부 또는 연관성 여부",
+          "최종 경품과 수상자 선정 방식의 확정 여부(게시물마다 내용·보상기준이 상이함)",
+          "대회 진행 중 게임 서버·운영 정책 적용(예: 부정행위 판단·제재) 관련 공식 방침 존재 여부"
         ],
         "evidence": [
           {
-            "evidence_id": "31b2bb4e53bb853220f1a0af8e7f26a1cedd160be2201b267d767e6e1261a4da",
+            "evidence_id": "42600acdc5e0e5e5891d929ef26b25c4eeb3cad0e178ce037461d5149c0adeef",
             "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=epicseven&no=2713240",
-            "published_at": "2026-09-20T10:03:03+09:00",
-            "collected_at": "2026-09-20T10:03:41.274017+09:00",
-            "content_hash": "0e8988c4ba64aa72a63dcd578c3b963af21e5a001f9f359ab11b69cb94b1faed",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1339265",
+            "published_at": "2026-09-17T13:03:52+09:00",
+            "collected_at": "2026-09-21T10:02:52.040132+09:00",
+            "content_hash": "caf3f65cacf746b9088d3442d022d947979796604825f4fc67aa47fde7d76fcb",
+            "source_type": "PUBLIC_COMMUNITY"
+          },
+          {
+            "evidence_id": "65d6b6538cde5a14c55a69c35101a30c0c698b66e417d8d3e12b484dfbb8dbc7",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1340724",
+            "published_at": "2026-09-17T22:14:06+09:00",
+            "collected_at": "2026-09-21T10:02:52.040132+09:00",
+            "content_hash": "8fa60a56e035e0caa3bb736a1116bea9030df3c80c4603519b7c7ddabb30c44f",
             "source_type": "PUBLIC_COMMUNITY"
           }
         ]
@@ -509,29 +123,30 @@
     ],
     "nikke": [
       {
-        "title": "COIN RUSH SHOWDOWN 이벤트 및 PV 공개",
-        "category": "EVENT",
+        "title": "MINIKKE 크라운 편(상/하) 공식 영상 공개",
+        "category": "MARKETING",
         "bm_types": [],
         "facts": [
           {
-            "text": "신규 풀 보이스 스토리 이벤트 'COIN RUSH SHOWDOWN'이 10/8(목) 04:59까지 진행된다고 공식 홍보 영상이 안내합니다.",
+            "text": "공식 유튜브에 '《MINIKKE 작은 동화집》 크라운 편 - 상' 영상이 공개되었습니다.",
             "evidence_ids": [
-              "7c26641c7b8122701c272303e7ca3dc4ac7854c35596abf18e206a48a4b92dcd"
+              "617d5252273e899e1fb0ae3eeecaca94752419639bdf4ee73e8107556d6b9d68"
             ]
           },
           {
-            "text": "공식 PV가 9월 17일 공개되었고, 기존 영상 리소스 문제 확인에 따라 수정 후 재등록했다고 안내했습니다.",
+            "text": "공식 유튜브에 '《MINIKKE 작은 동화집》 크라운 편 - 하' 영상이 공개되었습니다.",
             "evidence_ids": [
-              "c4e1a4d2406d7ee631c805a4e10f0bc77e3d04458f994cb0a3281e53dba0c7f4"
+              "d0d35e03eb6e25cbfda9f519cf6361f182fff5392c276e08efb5349c0b781f2f"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "PV는 홍보용 자료이며 최종 내용은 게임 내에서 확인하라고 명시되어 있습니다.",
+            "text": "상·하 두 편의 공식 영상 공개는 캐릭터 관련 홍보 콘텐츠로 판단되며, 영상 설명에 인앱 구매 안내와 다운로드 링크가 포함되어 있습니다.",
             "evidence_ids": [
-              "c4e1a4d2406d7ee631c805a4e10f0bc77e3d04458f994cb0a3281e53dba0c7f4"
+              "617d5252273e899e1fb0ae3eeecaca94752419639bdf4ee73e8107556d6b9d68",
+              "d0d35e03eb6e25cbfda9f519cf6361f182fff5392c276e08efb5349c0b781f2f"
             ]
           }
         ],
@@ -539,198 +154,59 @@
         "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "7c26641c7b8122701c272303e7ca3dc4ac7854c35596abf18e206a48a4b92dcd",
+            "evidence_id": "617d5252273e899e1fb0ae3eeecaca94752419639bdf4ee73e8107556d6b9d68",
             "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/InsEc5Ni4ko",
-            "published_at": "2026-09-17T19:00:25+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "d2340af0fda5b9368f2690d38957e7f8b49546f7568850b37f8cadd454e98736",
+            "url": "https://www.youtube.com/watch?v=0qri80l6oEA",
+            "published_at": "2026-09-20T20:00:26+09:00",
+            "collected_at": "2026-09-21T10:02:26.287437+09:00",
+            "content_hash": "03cdb26c5b87f7c65694cd36de0f985eae788f59e3d521f6a6999abe637bed82",
             "source_type": "OFFICIAL_YOUTUBE"
           },
           {
-            "evidence_id": "c4e1a4d2406d7ee631c805a4e10f0bc77e3d04458f994cb0a3281e53dba0c7f4",
+            "evidence_id": "d0d35e03eb6e25cbfda9f519cf6361f182fff5392c276e08efb5349c0b781f2f",
             "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=mcvJIxp-0tI",
-            "published_at": "2026-09-17T17:00:10+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "95eec830ed166a1809730b4a2fc243d119bb457d9b904ab9a4001e3e4f2be262",
+            "url": "https://www.youtube.com/watch?v=0VyJpudcbys",
+            "published_at": "2026-09-20T20:00:35+09:00",
+            "collected_at": "2026-09-21T10:02:26.287437+09:00",
+            "content_hash": "fcb82035491080bc43235e3bded249889c39e10c66aa8f5351c69eebf7fc4645",
             "source_type": "OFFICIAL_YOUTUBE"
           }
         ]
       },
       {
-        "title": "슈가 신규 코스튬 '킬러 래빗' 출시 안내",
-        "category": "CHARACTER",
+        "title": "커뮤니티 내 매크로·소속 주장 정정 게시글",
+        "category": "NOTICE",
         "bm_types": [],
-        "facts": [
+        "facts": [],
+        "claims": [
           {
-            "text": "슈가의 신규 코스튬 '킬러 래빗' 인게임 모션을 소개하는 영상이 공개되었습니다.",
+            "text": "작성자가 이전 게시글에서 특정 유저 소속과 매크로 관련 주장을 게시하고, 이후 해당 내용에 대해 정정 및 사과했다고 주장합니다.",
             "evidence_ids": [
-              "559ac4d5cfb5e5d143a37b6eee51428603ec942e8e763a3b2f1a7c416c6ba5d2"
-            ]
-          },
-          {
-            "text": "해당 코스튬은 '코스튬 픽'으로 획득 가능하며 판매 기간은 9/17 점검 후부터 10/8 04:59까지라고 공지했습니다.",
-            "evidence_ids": [
-              "559ac4d5cfb5e5d143a37b6eee51428603ec942e8e763a3b2f1a7c416c6ba5d2"
+              "bdeae694e68410455e4356aae6c20fa082662bdadd96a2ec602294051c131cde"
             ]
           }
         ],
-        "claims": [],
         "interpretation": [
           {
-            "text": "영상은 테스트 환경에서 녹화된 것이라 최종 내용은 인게임을 참고하라고 명시되어 있습니다.",
+            "text": "해당 게시글은 개인 커뮤니티 글에 해당하며, 게시자의 정정·사과 및 제기된 혐의는 공식 확인이 아닌 유저 주장입니다.",
             "evidence_ids": [
-              "559ac4d5cfb5e5d143a37b6eee51428603ec942e8e763a3b2f1a7c416c6ba5d2"
+              "bdeae694e68410455e4356aae6c20fa082662bdadd96a2ec602294051c131cde"
             ]
           }
         ],
         "conflicts": [],
-        "unknowns": [],
+        "unknowns": [
+          "매크로 사용 및 특정 집단 소속 여부에 대해 공식 기관(운영) 확인이나 제재 공지가 있는지 여부는 공개 근거에 없습니다."
+        ],
         "evidence": [
           {
-            "evidence_id": "559ac4d5cfb5e5d143a37b6eee51428603ec942e8e763a3b2f1a7c416c6ba5d2",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=MlSsaPOuU1s",
-            "published_at": "2026-09-19T11:00:22+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "f5852b2e609d01ee89bc9b96fb05141f14794815f695fd0b555b8b879c0c1def",
-            "source_type": "OFFICIAL_YOUTUBE"
-          }
-        ]
-      },
-      {
-        "title": "신규 캐릭터 모션 VIEW: 신·길티 바니 공개",
-        "category": "CHARACTER",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "신 : 스위프트 바니의 모션 및 스킬 소개 영상이 공식 채널에 공개되었습니다.",
-            "evidence_ids": [
-              "106d6e484fd7f985ae03393d53d1eadca9db0d3947c3eddd625add496ef8b76b",
-              "489ea35c618b1bc2143c505ee8e7263638d1999f51af7919f39d735d874985fb"
-            ]
-          },
-          {
-            "text": "길티 : 마이티 바니의 모션 및 스킬 소개 영상이 공식 채널에 공개되었습니다.",
-            "evidence_ids": [
-              "624b74e74d9363ff6c3db69fbeaa635164b14abedc8ffee7ca2063d4230a8d5c",
-              "231a7325ce9f93c65f057f3ac5445d17baab5e819d949db5f7debe17b09ac887"
-            ]
-          },
-          {
-            "text": "각 영상에서 스킬 등 정보는 향후 변경될 수 있음을 표기하고 있습니다.",
-            "evidence_ids": [
-              "106d6e484fd7f985ae03393d53d1eadca9db0d3947c3eddd625add496ef8b76b",
-              "489ea35c618b1bc2143c505ee8e7263638d1999f51af7919f39d735d874985fb",
-              "624b74e74d9363ff6c3db69fbeaa635164b14abedc8ffee7ca2063d4230a8d5c",
-              "231a7325ce9f93c65f057f3ac5445d17baab5e819d949db5f7debe17b09ac887"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "공식 영상들이 모션과 스킬의 홍보 목적임을 밝히고 있으며 실제 성능·세부 수치는 인게임에서 달라질 수 있습니다.",
-            "evidence_ids": [
-              "106d6e484fd7f985ae03393d53d1eadca9db0d3947c3eddd625add496ef8b76b",
-              "489ea35c618b1bc2143c505ee8e7263638d1999f51af7919f39d735d874985fb",
-              "624b74e74d9363ff6c3db69fbeaa635164b14abedc8ffee7ca2063d4230a8d5c",
-              "231a7325ce9f93c65f057f3ac5445d17baab5e819d949db5f7debe17b09ac887"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "106d6e484fd7f985ae03393d53d1eadca9db0d3947c3eddd625add496ef8b76b",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/vo30FdigzDE",
-            "published_at": "2026-09-16T17:00:37+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "0541ec845aa8f4d809411e02d0de11c15bbdc934d3852b00e0b6c24f5d6e2b53",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "231a7325ce9f93c65f057f3ac5445d17baab5e819d949db5f7debe17b09ac887",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=GWcf9TKetXs",
-            "published_at": "2026-09-16T16:00:12+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "6e59d9436aa06d80a46c6a0ab75fc0321b50da422e8de77902709abb9cae33e6",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "489ea35c618b1bc2143c505ee8e7263638d1999f51af7919f39d735d874985fb",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=VkqKza7kAJE",
-            "published_at": "2026-09-16T17:00:34+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "0541ec845aa8f4d809411e02d0de11c15bbdc934d3852b00e0b6c24f5d6e2b53",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "624b74e74d9363ff6c3db69fbeaa635164b14abedc8ffee7ca2063d4230a8d5c",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/VM0lBYflijc",
-            "published_at": "2026-09-16T16:00:28+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "6e59d9436aa06d80a46c6a0ab75fc0321b50da422e8de77902709abb9cae33e6",
-            "source_type": "OFFICIAL_YOUTUBE"
-          }
-        ]
-      }
-    ],
-    "trickcal-revive": [
-      {
-        "title": "3주년 기념 공식 방송(특별 방송·후기) 공개",
-        "category": "EVENT",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "3주년 기념 특별 방송의 녹화 방송 일정 및 퀴즈 카운트다운 안내 영상이 공개되었다.",
-            "evidence_ids": [
-              "efbb8e21fba54887cfb02f48f74b7f99743c7e6f957b94329bafe5912e56c085"
-            ]
-          },
-          {
-            "text": "3주년 공식 방송 후속(후기) 영상이 공개되었고 사전예약 링크를 함께 안내했다.",
-            "evidence_ids": [
-              "bc38bce52d6866aa522d9737f6fc6d4ac432d754f7017d6fc8d636cb3fd6a736"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "공식 영상들은 3주년 관련 홍보(사전예약·이벤트 안내)를 목적으로 제작되어 공개되었다.",
-            "evidence_ids": [
-              "efbb8e21fba54887cfb02f48f74b7f99743c7e6f957b94329bafe5912e56c085",
-              "bc38bce52d6866aa522d9737f6fc6d4ac432d754f7017d6fc8d636cb3fd6a736"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "bc38bce52d6866aa522d9737f6fc6d4ac432d754f7017d6fc8d636cb3fd6a736",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=EBtdwvU32OE",
-            "published_at": "2026-09-19T14:00:21+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "3fa18333c7d7d613461aaae9f4cfa0d851c7e8dbb32af8e7a10e965882e35c59",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "efbb8e21fba54887cfb02f48f74b7f99743c7e6f957b94329bafe5912e56c085",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=BhZuXkTZq9I",
-            "published_at": "2026-09-18T18:53:07+09:00",
-            "collected_at": "2026-09-20T10:03:17.113427+09:00",
-            "content_hash": "a500beb8a5dc5653bb28f314afade96d141365aaa0f4e8055f8482dc2c46d40a",
-            "source_type": "OFFICIAL_YOUTUBE"
+            "evidence_id": "bdeae694e68410455e4356aae6c20fa082662bdadd96a2ec602294051c131cde",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=gov&no=6210805",
+            "published_at": "2026-09-21T09:31:53+09:00",
+            "collected_at": "2026-09-21T10:02:52.040132+09:00",
+            "content_hash": "8037f6208f2b01135bd3af259e5f292ab48a08ed23fcab8f0a0f473b2b19f82b",
+            "source_type": "PUBLIC_COMMUNITY"
           }
         ]
       }
