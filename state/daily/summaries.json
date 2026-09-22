@@ -1,152 +1,110 @@
 {
-  "date": "2026-09-21",
+  "date": "2026-09-22",
   "version": "compact-v1-relevance-v2",
   "games": {
-    "odin-valhalla-rising": [],
     "lineage-m": [
       {
-        "title": "신섭 초보 무과금 75렙 생존 보고",
-        "category": "CHARACTER",
-        "bm_types": [],
-        "facts": [],
-        "claims": [
-          {
-            "text": "작성자는 신섭(새 서버)에서 무과금으로 75레벨에 도달했고 초기에는 영속 관련 스킬이 모두 0이었으나 이후 영인3, 영인1(뱀파), 영성1을 획득해 접지 않을 것 같다고 보고했다.",
-            "evidence_ids": [
-              "e18bc9d4f79d7afb42d0639a19c64ef4a1a7f5c20983e7857ecb6db561dc4fef"
-            ]
-          },
-          {
-            "text": "작성자는 기존 가입 혈이 상위권 및 랭커를 다수 보유하자 랭커들이 더 영입되어 라인이 형성되는 것을 목격하고 불안감을 느껴 해당 혈을 탈퇴하고 중립 40위권 혈로 이동해 안정감을 찾았다고 주장했다.",
-            "evidence_ids": [
-              "e18bc9d4f79d7afb42d0639a19c64ef4a1a7f5c20983e7857ecb6db561dc4fef"
-            ]
-          },
-          {
-            "text": "작성자는 무과금 이용자들에게 희망을 주고자 성장 및 생존 소식을 공유했다는 취지로 게시글을 마무리했다.",
-            "evidence_ids": [
-              "e18bc9d4f79d7afb42d0639a19c64ef4a1a7f5c20983e7857ecb6db561dc4fef"
-            ]
-          }
-        ],
-        "interpretation": [
-          {
-            "text": "게시글은 개인 경험의 공유이며 특정 혈의 라인 형성이나 랭커 영입에 따른 불안감이 서버 초기에 일부 무과금 이용자 행동에 영향을 준 사례로 해석될 수 있다.",
-            "evidence_ids": [
-              "e18bc9d4f79d7afb42d0639a19c64ef4a1a7f5c20983e7857ecb6db561dc4fef"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [
-          "해당 작성자의 경험이 다른 무과금 이용자에게 일반화되는지 여부",
-          "실제 혈의 랭커 영입이 서버 전체 경쟁 구조에 미친 영향",
-          "게시글에 언급된 영속 스킬 획득 경로와 난이도에 대한 객관적 정보"
-        ],
-        "evidence": [
-          {
-            "evidence_id": "e18bc9d4f79d7afb42d0639a19c64ef4a1a7f5c20983e7857ecb6db561dc4fef",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/board/view/?id=lineagem&no=401910",
-            "published_at": "2026-09-20T23:30:51+09:00",
-            "collected_at": "2026-09-21T10:02:52.040132+09:00",
-            "content_hash": "c67dbe76e38e04d4d7b08c7589b855c082aa2f3134ea439ac364ac301f03c0aa",
-            "source_type": "PUBLIC_COMMUNITY"
-          }
-        ]
-      }
-    ],
-    "seven-knights-rebirth": [
-      {
-        "title": "비공식 공략 대회(커뮤니티 주최) 게시물 다수 게시",
-        "category": "WEB_EVENT",
-        "bm_types": [],
-        "facts": [],
-        "claims": [
-          {
-            "text": "DC인사이드 커뮤니티에서 이용자 주도의 '제7회 공략대회' 개최 공지(참여방법·기간 등 게시)가 게시되었다.",
-            "evidence_ids": [
-              "65d6b6538cde5a14c55a69c35101a30c0c698b66e417d8d3e12b484dfbb8dbc7"
-            ]
-          },
-          {
-            "text": "별도 게시물에서는 유사한 이용자 주도 대회(추천수 기반 순위 집계)와 경품(치킨·버거·커피 등)을 예시로 든 운영 계획이 제시되었다.",
-            "evidence_ids": [
-              "42600acdc5e0e5e5891d929ef26b25c4eeb3cad0e178ce037461d5149c0adeef"
-            ]
-          }
-        ],
-        "interpretation": [
-          {
-            "text": "두 게시물은 동일한 성격의 이용자 주도 공략 대회를 안내하나, 주최는 커뮤니티 이용자(비공식)로 보이며 게임사 공식 공지는 확인되지 않는다.",
-            "evidence_ids": [
-              "65d6b6538cde5a14c55a69c35101a30c0c698b66e417d8d3e12b484dfbb8dbc7",
-              "42600acdc5e0e5e5891d929ef26b25c4eeb3cad0e178ce037461d5149c0adeef"
-            ]
-          }
-        ],
-        "conflicts": [
-          {
-            "text": "기간 및 보상·심사 기준에 대해 두 게시물이 제시하는 세부 내용(기간·경품·심사 방식) 일부가 상이하다.",
-            "evidence_ids": [
-              "65d6b6538cde5a14c55a69c35101a30c0c698b66e417d8d3e12b484dfbb8dbc7",
-              "42600acdc5e0e5e5891d929ef26b25c4eeb3cad0e178ce037461d5149c0adeef"
-            ]
-          }
-        ],
-        "unknowns": [
-          "해당 대회에 대해 게임사(운영)의 공식 승인 여부 또는 연관성 여부",
-          "최종 경품과 수상자 선정 방식의 확정 여부(게시물마다 내용·보상기준이 상이함)",
-          "대회 진행 중 게임 서버·운영 정책 적용(예: 부정행위 판단·제재) 관련 공식 방침 존재 여부"
-        ],
-        "evidence": [
-          {
-            "evidence_id": "42600acdc5e0e5e5891d929ef26b25c4eeb3cad0e178ce037461d5149c0adeef",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1339265",
-            "published_at": "2026-09-17T13:03:52+09:00",
-            "collected_at": "2026-09-21T10:02:52.040132+09:00",
-            "content_hash": "caf3f65cacf746b9088d3442d022d947979796604825f4fc67aa47fde7d76fcb",
-            "source_type": "PUBLIC_COMMUNITY"
-          },
-          {
-            "evidence_id": "65d6b6538cde5a14c55a69c35101a30c0c698b66e417d8d3e12b484dfbb8dbc7",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1340724",
-            "published_at": "2026-09-17T22:14:06+09:00",
-            "collected_at": "2026-09-21T10:02:52.040132+09:00",
-            "content_hash": "8fa60a56e035e0caa3bb736a1116bea9030df3c80c4603519b7c7ddabb30c44f",
-            "source_type": "PUBLIC_COMMUNITY"
-          }
-        ]
-      }
-    ],
-    "nikke": [
-      {
-        "title": "MINIKKE 크라운 편(상/하) 공식 영상 공개",
-        "category": "MARKETING",
+        "title": "정기점검 사전 안내(9월 23일 예정)",
+        "category": "MAINTENANCE",
         "bm_types": [],
         "facts": [
           {
-            "text": "공식 유튜브에 '《MINIKKE 작은 동화집》 크라운 편 - 상' 영상이 공개되었습니다.",
+            "text": "리니지M은 2026년 9월 23일(수) 정기점검이 예정되어 있으며 상세 일정 및 업데이트 내용은 9월 22일(화) 중 별도 공지 예정이라고 안내했다.",
             "evidence_ids": [
-              "617d5252273e899e1fb0ae3eeecaca94752419639bdf4ee73e8107556d6b9d68"
-            ]
-          },
-          {
-            "text": "공식 유튜브에 '《MINIKKE 작은 동화집》 크라운 편 - 하' 영상이 공개되었습니다.",
-            "evidence_ids": [
-              "d0d35e03eb6e25cbfda9f519cf6361f182fff5392c276e08efb5349c0b781f2f"
+              "fc1e419d2957e6012c9c6313e0a0eff970f3e98b803880aea5bc8fe6f8812641"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "상·하 두 편의 공식 영상 공개는 캐릭터 관련 홍보 콘텐츠로 판단되며, 영상 설명에 인앱 구매 안내와 다운로드 링크가 포함되어 있습니다.",
+            "text": "공지에는 점검일과 추가 공지 예정일(9/22)만 명시되어 있어 점검 시작·종료 시각과 영향 범위는 추후 공지를 통해 확인해야 한다.",
             "evidence_ids": [
-              "617d5252273e899e1fb0ae3eeecaca94752419639bdf4ee73e8107556d6b9d68",
-              "d0d35e03eb6e25cbfda9f519cf6361f182fff5392c276e08efb5349c0b781f2f"
+              "fc1e419d2957e6012c9c6313e0a0eff970f3e98b803880aea5bc8fe6f8812641"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "정기점검의 정확한 시작·종료 시각 및 점검 중 서비스 영향 범위",
+          "9월 22일 공지에 포함될 구체적 업데이트 항목과 변경점"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "fc1e419d2957e6012c9c6313e0a0eff970f3e98b803880aea5bc8fe6f8812641",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ab10e30fa34c1011d6277f2",
+            "published_at": "2026-09-21T20:00:00.596000+09:00",
+            "collected_at": "2026-09-22T10:34:52.425297+09:00",
+            "content_hash": "f1b8446ca7975ba6c288f86cdc5c0c7a487669f4b891e838e2056711851423a3",
+            "source_type": "OFFICIAL_HOMEPAGE"
+          }
+        ]
+      },
+      {
+        "title": "아우라키아 스킬 쿨타임 초기화 현상 안내",
+        "category": "MAINTENANCE",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "투사 클래스 '아우라키아'의 스킬 '아우라키아의 권능' 발동 후 특정 조건에서 쿨타임이 초기화되는 현상이 확인되어 공지로 안내했다.",
+            "evidence_ids": [
+              "97cfaab2a4d5df18568bbec8459455aa1ba69655e62c39fdbcd05682358df45a"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "운영팀은 해당 현상에 대해 사과하고 최대한 빠른 시일 내 수정을 약속했으며, 수정 완료 시 공지로 안내할 예정이라고 했다.",
+            "evidence_ids": [
+              "97cfaab2a4d5df18568bbec8459455aa1ba69655e62c39fdbcd05682358df45a"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "문제 발생 조건의 구체적 설명(어떤 상황·조합에서 발생하는지)",
+          "임시 완화 조치 또는 보상 계획 여부와 수정 예상 시점"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "97cfaab2a4d5df18568bbec8459455aa1ba69655e62c39fdbcd05682358df45a",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ab0b64ed97eae18cc40e010",
+            "published_at": "2026-09-21T13:45:02.156000+09:00",
+            "collected_at": "2026-09-22T10:34:52.425297+09:00",
+            "content_hash": "db94a92e697ec46666100a25809e7947a71d607f6943436bca2bd2ff20fe6723",
+            "source_type": "OFFICIAL_HOMEPAGE"
+          }
+        ]
+      }
+    ],
+    "seven-knights-rebirth": [
+      {
+        "title": "세븐나이츠 리버스 × 귀멸의 칼날 콜라보 예고",
+        "category": "COLLAB",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "공식 유튜브 쇼트는 콜라보가 10월 1일부터 시작된다고 예고했다.",
+            "evidence_ids": [
+              "3fe554111b7f3155731654f1d27fcf1581fd5b4e8d5d7514ab59a8efa3fd9ceb"
+            ]
+          },
+          {
+            "text": "공식 안내는 사전등록만 해도 '귀멸의 칼날 소환 이용권'을 지급한다고 밝혔다.",
+            "evidence_ids": [
+              "3fe554111b7f3155731654f1d27fcf1581fd5b4e8d5d7514ab59a8efa3fd9ceb"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "사전등록 보상 안내는 출시 전 사용자 유입과 초기 참여를 유도하는 공식 BM(프로모션) 활동으로 해석된다.",
+            "evidence_ids": [
+              "3fe554111b7f3155731654f1d27fcf1581fd5b4e8d5d7514ab59a8efa3fd9ceb"
             ]
           }
         ],
@@ -154,59 +112,117 @@
         "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "617d5252273e899e1fb0ae3eeecaca94752419639bdf4ee73e8107556d6b9d68",
+            "evidence_id": "3fe554111b7f3155731654f1d27fcf1581fd5b4e8d5d7514ab59a8efa3fd9ceb",
             "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=0qri80l6oEA",
-            "published_at": "2026-09-20T20:00:26+09:00",
-            "collected_at": "2026-09-21T10:02:26.287437+09:00",
-            "content_hash": "03cdb26c5b87f7c65694cd36de0f985eae788f59e3d521f6a6999abe637bed82",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "d0d35e03eb6e25cbfda9f519cf6361f182fff5392c276e08efb5349c0b781f2f",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=0VyJpudcbys",
-            "published_at": "2026-09-20T20:00:35+09:00",
-            "collected_at": "2026-09-21T10:02:26.287437+09:00",
-            "content_hash": "fcb82035491080bc43235e3bded249889c39e10c66aa8f5351c69eebf7fc4645",
+            "url": "https://www.youtube.com/shorts/YAn0o6BbkBw",
+            "published_at": "2026-09-21T18:00:26+09:00",
+            "collected_at": "2026-09-22T10:35:29.763600+09:00",
+            "content_hash": "8b3497d82808d101d4b9d69047e5f95357890ffcc9017005b43c0da27e58c315",
             "source_type": "OFFICIAL_YOUTUBE"
           }
         ]
-      },
+      }
+    ],
+    "epic-seven": [
       {
-        "title": "커뮤니티 내 매크로·소속 주장 정정 게시글",
-        "category": "NOTICE",
+        "title": "Steam 신규 월드 공략·팬아트 당첨자 발표",
+        "category": "EVENT",
         "bm_types": [],
-        "facts": [],
-        "claims": [
+        "facts": [
           {
-            "text": "작성자가 이전 게시글에서 특정 유저 소속과 매크로 관련 주장을 게시하고, 이후 해당 내용에 대해 정정 및 사과했다고 주장합니다.",
+            "text": "공식 커뮤니티에 Steam 팬아트 콘테스트 당첨자와 부문별 보상(신규 제작 부문 6명 스팀 기프트카드 5만원권, 최고의 작품 부문 7명 스팀 기프트카드 1만원권)을 발표했다.",
             "evidence_ids": [
-              "bdeae694e68410455e4356aae6c20fa082662bdadd96a2ec602294051c131cde"
+              "bd3bacb827d2b27e4a73ca885d2dac8369065db1b01767a6e02217a9c088d176"
+            ]
+          },
+          {
+            "text": "Steam 신규 월드 공략 선정 목록을 게시하고, 선정 보상으로 하늘석 1,000개를 지급한다고 공지했다.",
+            "evidence_ids": [
+              "bd3bacb827d2b27e4a73ca885d2dac8369065db1b01767a6e02217a9c088d176"
+            ]
+          },
+          {
+            "text": "당첨자 보상 수령 방법과 유의사항을 안내했다(팬아트 당선자는 10/11까지 고객센터 1:1문의로 닉네임/서버/스팀 위시리스트 링크 제출, 보상은 9/22 내 우편 지급·보관기간 7일 등).",
+            "evidence_ids": [
+              "bd3bacb827d2b27e4a73ca885d2dac8369065db1b01767a6e02217a9c088d176"
             ]
           }
         ],
+        "claims": [],
         "interpretation": [
           {
-            "text": "해당 게시글은 개인 커뮤니티 글에 해당하며, 게시자의 정정·사과 및 제기된 혐의는 공식 확인이 아닌 유저 주장입니다.",
+            "text": "공지에 참여 인원 미달로 최종 당첨인원이 조정되었다고 명시되어 있어 일부 부문에서 응모가 목표 미달이었음을 시사한다.",
             "evidence_ids": [
-              "bdeae694e68410455e4356aae6c20fa082662bdadd96a2ec602294051c131cde"
+              "bd3bacb827d2b27e4a73ca885d2dac8369065db1b01767a6e02217a9c088d176"
+            ]
+          },
+          {
+            "text": "보상 지급 방식은 게임 내 우편과 고객센터 1:1 문의를 병행하므로, 당첨자 확인 절차에 고객 응답/계정 정보 제공이 필요함을 의미한다.",
+            "evidence_ids": [
+              "bd3bacb827d2b27e4a73ca885d2dac8369065db1b01767a6e02217a9c088d176"
             ]
           }
         ],
         "conflicts": [],
-        "unknowns": [
-          "매크로 사용 및 특정 집단 소속 여부에 대해 공식 기관(운영) 확인이나 제재 공지가 있는지 여부는 공개 근거에 없습니다."
-        ],
+        "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "bdeae694e68410455e4356aae6c20fa082662bdadd96a2ec602294051c131cde",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=gov&no=6210805",
-            "published_at": "2026-09-21T09:31:53+09:00",
-            "collected_at": "2026-09-21T10:02:52.040132+09:00",
-            "content_hash": "8037f6208f2b01135bd3af259e5f292ab48a08ed23fcab8f0a0f473b2b19f82b",
-            "source_type": "PUBLIC_COMMUNITY"
+            "evidence_id": "bd3bacb827d2b27e4a73ca885d2dac8369065db1b01767a6e02217a9c088d176",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://page.onstove.com/epicseven/kr/view/14536203",
+            "published_at": "2026-09-21T19:00:00.886000+09:00",
+            "collected_at": "2026-09-22T10:34:52.425297+09:00",
+            "content_hash": "8bd09beec1f526c5e40b032577fe1364a17829bd57b84dc7347d865dd47ce20e",
+            "source_type": "OFFICIAL_COMMUNITY"
+          }
+        ]
+      }
+    ],
+    "trickcal-revive": [
+      {
+        "title": "엘리아스 학예회 기대평 이벤트 당첨자 발표",
+        "category": "EVENT",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "공식 커뮤니티에 엘리아스 학예회 기대평 이벤트 당첨자 명단을 게시했다.",
+            "evidence_ids": [
+              "58419b3cd5c502ddc9339572d373f671414d17779de57df399887cf631e3701d"
+            ]
+          },
+          {
+            "text": "VIP 좌석 당첨자는 10월 3일(토) 19:00 회차 17명과 10월 4일(일) 19:00 회차 19명으로 안내되었다.",
+            "evidence_ids": [
+              "58419b3cd5c502ddc9339572d373f671414d17779de57df399887cf631e3701d"
+            ]
+          },
+          {
+            "text": "당첨자 개인정보 수집 기간은 공지 게시 시점(2026-09-21)부터 2026-09-27까지로 명시되었다.",
+            "evidence_ids": [
+              "58419b3cd5c502ddc9339572d373f671414d17779de57df399887cf631e3701d"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "이벤트 공지에서는 당첨자 안내와 개인정보 수집 기간을 공식적으로 알렸으므로 수령·출입 관련 절차가 공지 내 일정에 따라 진행될 가능성이 높다.",
+            "evidence_ids": [
+              "58419b3cd5c502ddc9339572d373f671414d17779de57df399887cf631e3701d"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "58419b3cd5c502ddc9339572d373f671414d17779de57df399887cf631e3701d",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/212764?boardtype=L&menuid=15&referrerAllArticles=false",
+            "published_at": "2026-09-21T17:00:12.660000+09:00",
+            "collected_at": "2026-09-22T10:34:52.425297+09:00",
+            "content_hash": "18faffcd97ba52e05f7f26c4d994e46643b6185eb565bf7d25d3c2ca054be27f",
+            "source_type": "OFFICIAL_COMMUNITY"
           }
         ]
       }
