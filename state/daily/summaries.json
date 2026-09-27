@@ -1,292 +1,79 @@
 {
-  "date": "2026-09-26",
+  "date": "2026-09-27",
   "version": "compact-v1-relevance-v2",
   "games": {
-    "black-desert-mobile": [
+    "seven-knights-rebirth": [
       {
-        "title": "비공식 쿠폰·코드 공유 게시물 확산",
-        "category": "WEB_EVENT",
+        "title": "밤하늘의 보름달 특별 쿠폰 이벤트 안내",
+        "category": "EVENT",
         "bm_types": [],
-        "facts": [],
-        "claims": [
+        "facts": [
           {
-            "text": "커뮤니티 게시글이 검은사막 모바일 최신 쿠폰·파밍 코드 링크(블로그)를 공유하고 있다.",
+            "text": "공식 커뮤니티 공지에서 '특별 쿠폰 이벤트'가 기간 중 매일 공개되는 쿠폰 입력으로 보상을 제공한다고 안내했다.",
             "evidence_ids": [
-              "23746b76bc3c7e3e42be6db04f018fe6e48f8fe5f7759b6809fda889bba31d01"
+              "42b914c9879b965a5ccae55a64567ad3758b11c235aa6f5f56a7dcc2400389f6"
             ]
           }
         ],
+        "claims": [],
         "interpretation": [
           {
-            "text": "공식 확인 없이 배포된 비공식 쿠폰 링크는 코드 유효성, 보안 위험(피싱·악성코드) 또는 사기 가능성을 내포한다.",
+            "text": "공지 제목과 문구는 일별로 공개되는 쿠폰을 통해 이용자에게 반복적 보상 획득 기회를 제공하려는 이벤트임을 시사한다.",
             "evidence_ids": [
-              "23746b76bc3c7e3e42be6db04f018fe6e48f8fe5f7759b6809fda889bba31d01"
-            ]
-          },
-          {
-            "text": "게시물은 외부 블로그로 연결되므로 이용자가 링크 클릭 시 개인정보·기기 보안 위험이 발생할 수 있다.",
-            "evidence_ids": [
-              "23746b76bc3c7e3e42be6db04f018fe6e48f8fe5f7759b6809fda889bba31d01"
+              "42b914c9879b965a5ccae55a64567ad3758b11c235aa6f5f56a7dcc2400389f6"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "해당 블로그나 게시물이 제공하는 쿠폰의 유효성 여부는 공식 발표로 확인되지 않았다.",
-          "링크 접속 시 실제로 악성 행위(피싱·다운로드 등)가 발생하는지 여부는 공개 근거에 없다."
+          "쿠폰별 구체적 보상 목록과 지급 일정의 세부 내용은 공지 본문 전체를 별도 확인해야 함"
         ],
-        "evidence": [
-          {
-            "evidence_id": "23746b76bc3c7e3e42be6db04f018fe6e48f8fe5f7759b6809fda889bba31d01",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/board/view/?id=blackdesertmobile&no=334323",
-            "published_at": "2026-09-26T01:15:18+09:00",
-            "collected_at": "2026-09-26T10:30:08.482745+09:00",
-            "content_hash": "e5a4ef8ed3e41153237f41e10fd27fa844f690fc4f8094aefcd86d54b9eb22e6",
-            "source_type": "PUBLIC_COMMUNITY"
-          }
-        ]
-      }
-    ],
-    "odin-valhalla-rising": [],
-    "seven-knights-rebirth": [
-      {
-        "title": "세븐나이츠 리버스 x 귀멸의 칼날 콜라보 예고",
-        "category": "COLLAB",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "공식 YouTube에서 세븐나이츠 리버스와 귀멸의 칼날 콜라보가 10월 1일 시작된다고 홍보하는 쇼츠를 게시했다.",
-            "evidence_ids": [
-              "c4d9ea5c3c34a9b2b68e00414b115db923348eac8295ef3cad718fe906996c2d"
-            ]
-          },
-          {
-            "text": "개발자 노트에 일부 이미지·영상이 개발 중 화면이며 보상 구성·수치는 최종 업데이트 시 변경될 수 있다고 안내했다.",
-            "evidence_ids": [
-              "2d2b5c6450dc7e858a4ad9d7f10b612b5a7144f9033b7fa997cab92b881bb9c3"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "공식 예고와 개발자 노트는 콜라보 일정과 시각 자료를 공개하되, 보상·수치 등 세부 항목은 변동 가능성을 명시한다.",
-            "evidence_ids": [
-              "c4d9ea5c3c34a9b2b68e00414b115db923348eac8295ef3cad718fe906996c2d",
-              "2d2b5c6450dc7e858a4ad9d7f10b612b5a7144f9033b7fa997cab92b881bb9c3"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "2d2b5c6450dc7e858a4ad9d7f10b612b5a7144f9033b7fa997cab92b881bb9c3",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://forum.netmarble.com/sena_rebirth/view/12/2068",
-            "published_at": "2026-09-25T18:00:01.944000+09:00",
-            "collected_at": "2026-09-26T10:29:12.187735+09:00",
-            "content_hash": "8cbc0b2d9de8c401fb549167cdb5c5c4760642d9a2a1c9f8e8f42fbe914385af",
-            "source_type": "OFFICIAL_COMMUNITY"
-          },
-          {
-            "evidence_id": "c4d9ea5c3c34a9b2b68e00414b115db923348eac8295ef3cad718fe906996c2d",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/TtQXgnsuq3Y",
-            "published_at": "2026-09-25T19:00:56+09:00",
-            "collected_at": "2026-09-26T10:29:42.509958+09:00",
-            "content_hash": "4efb020d5c4b956d925015957fd152120de724e75a15077a1ee9036f5d00f742",
-            "source_type": "OFFICIAL_YOUTUBE"
-          }
-        ]
-      },
-      {
-        "title": "한가위 보름달 특별 쿠폰 이벤트 안내",
-        "category": "EVENT",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "공식 커뮤니티에 보름달 특별 쿠폰 이벤트를 안내하며 기간 중 매일 공개되는 쿠폰 입력으로 보상을 지급한다고 공지했다.",
-            "evidence_ids": [
-              "42b914c9879b965a5ccae55a64567ad3758b11c235aa6f5f56a7dcc2400389f6"
-            ]
-          },
-          {
-            "text": "공식 YouTube 쇼츠에서 보름달 송편 나누기 이벤트 진행을 홍보하며 확인 링크를 안내했다.",
-            "evidence_ids": [
-              "6183881eda883dcf60b06fc6c66099dddb3e9fd067d41d0f55f14b67653c731e"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "이벤트는 기간성 쿠폰 배포 방식이며 공식 채널들이 이벤트 확인을 위한 동일한 안내 링크를 병기하고 있다.",
-            "evidence_ids": [
-              "42b914c9879b965a5ccae55a64567ad3758b11c235aa6f5f56a7dcc2400389f6",
-              "6183881eda883dcf60b06fc6c66099dddb3e9fd067d41d0f55f14b67653c731e"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
         "evidence": [
           {
             "evidence_id": "42b914c9879b965a5ccae55a64567ad3758b11c235aa6f5f56a7dcc2400389f6",
             "classification": "OFFICIAL_FACT",
             "url": "https://forum.netmarble.com/sena_rebirth/view/15/2056",
             "published_at": "2026-09-24T18:00:13.551000+09:00",
-            "collected_at": "2026-09-26T10:29:12.187735+09:00",
+            "collected_at": "2026-09-27T10:22:03.049057+09:00",
             "content_hash": "c07000abc551b12eef61fa6ba7e096ab20fff9e64f0c9177807b6771a8354a61",
             "source_type": "OFFICIAL_COMMUNITY"
-          },
-          {
-            "evidence_id": "6183881eda883dcf60b06fc6c66099dddb3e9fd067d41d0f55f14b67653c731e",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/i8WGNAlTlgY",
-            "published_at": "2026-09-25T16:00:29+09:00",
-            "collected_at": "2026-09-26T10:29:42.509958+09:00",
-            "content_hash": "04cc0eece35ab2d4532d54674fb3d6ab1491fa9fe435694c25276186ece90bf9",
-            "source_type": "OFFICIAL_YOUTUBE"
           }
         ]
-      }
-    ],
-    "epic-seven": [
+      },
       {
-        "title": "9/25 불량이용자(14건) 영구제한 안내",
+        "title": "서버(섭) 개설 현황 관련 이용자 문의",
         "category": "NOTICE",
         "bm_types": [],
-        "facts": [
+        "facts": [],
+        "claims": [
           {
-            "text": "공식 게시물에서 14개 계정이 불법 프로그램 사용 및 버그 악용 등 운영정책 위반으로 영구 제한 처리되었다고 공지했다.",
+            "text": "한 이용자가 현재 서버 번호(몇 섭까지 개설되었는지)를 묻는 글을 게시했다.",
             "evidence_ids": [
-              "d2a322a99be302fa9462756819c865b49b5ddc97cc9830a149c7ad0cbc41c534"
-            ]
-          },
-          {
-            "text": "제재 명단은 첨부 파일로 확인할 수 있으며 제재 대상은 게임 내 비정상적 행위로 분류되었다고 안내했다.",
-            "evidence_ids": [
-              "d2a322a99be302fa9462756819c865b49b5ddc97cc9830a149c7ad0cbc41c534"
-            ]
-          },
-          {
-            "text": "운영 측은 게임 재화는 서버 데이터로 저장되어 있으며 외부 조작으로 보이는 값만 변경될 뿐 실제 사용은 불가능하다고 설명했다.",
-            "evidence_ids": [
-              "d2a322a99be302fa9462756819c865b49b5ddc97cc9830a149c7ad0cbc41c534"
+              "48182393c2c311d635e4ce631c065da2a6bc0d6b206df490a6e7ff08c63ec042"
             ]
           }
         ],
-        "claims": [],
         "interpretation": [
           {
-            "text": "운영진이 지속 모니터링과 강력한 제재 의지를 재확인했으므로 향후 유사 행위에 대해 추가 제재가 이어질 가능성이 있다 (CREATOR_ANALYSIS).",
+            "text": "게시글은 이용자가 신규 계정 생성 시점의 최신 서버 번호를 확인하려는 문의성 글로 분류된다; 공식 확인이 필요하다.",
             "evidence_ids": [
-              "d2a322a99be302fa9462756819c865b49b5ddc97cc9830a149c7ad0cbc41c534"
+              "48182393c2c311d635e4ce631c065da2a6bc0d6b206df490a6e7ff08c63ec042"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "제재 대상 계정의 구체적 위반 행위(사용된 불법 프로그램 종류·버그 악용 방식 등)에 대한 상세 내용은 공개되지 않았다.",
-          "제재에 대한 이의신청 절차·처리 결과 또는 유저별 추가 조치 여부는 게시물에서 언급되지 않았다."
+          "실제 현재 개설된 서버 수(최신 서버 번호)는 공식 출처에서 확인되지 않음"
         ],
         "evidence": [
           {
-            "evidence_id": "d2a322a99be302fa9462756819c865b49b5ddc97cc9830a149c7ad0cbc41c534",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://page.onstove.com/epicseven/kr/view/14541279",
-            "published_at": "2026-09-25T18:00:00.587000+09:00",
-            "collected_at": "2026-09-26T10:29:12.187735+09:00",
-            "content_hash": "c94ee575f03d29e6c40322785f1f7b46199bb89f504305be21f3f5dda5e68ed4",
-            "source_type": "OFFICIAL_COMMUNITY"
-          }
-        ]
-      }
-    ],
-    "nikke": [
-      {
-        "title": "협동작전 이벤트 진행 안내",
-        "category": "EVENT",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "공식 커뮤니티 공지에 따르면 협동작전 이벤트가 9/25 12:00부터 9/27 23:59까지 진행됩니다.",
-            "evidence_ids": [
-              "eee3ceae0117fa596c5b906b925e6fbdc0e29316030ad78f1db2bb0df8a08b9f"
-            ]
-          },
-          {
-            "text": "이벤트 참여는 게임 내 이벤트 메뉴의 '협동작전'에서 가능하다고 공식 안내되었습니다.",
-            "evidence_ids": [
-              "eee3ceae0117fa596c5b906b925e6fbdc0e29316030ad78f1db2bb0df8a08b9f"
-            ]
-          },
-          {
-            "text": "공지에 이벤트 보상으로 부서진 코어 획득과 도전 모드 랭킹에 따른 추가 보상이 안내되어 있습니다.",
-            "evidence_ids": [
-              "eee3ceae0117fa596c5b906b925e6fbdc0e29316030ad78f1db2bb0df8a08b9f"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "단기 기간(3일) 이벤트로, 랭킹 보상과 코어 획득을 통해 특정 재화 획득 기회가 제공됩니다.",
-            "evidence_ids": [
-              "eee3ceae0117fa596c5b906b925e6fbdc0e29316030ad78f1db2bb0df8a08b9f"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "eee3ceae0117fa596c5b906b925e6fbdc0e29316030ad78f1db2bb0df8a08b9f",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://game.naver.com/lounge/nikke/board/detail/8239880",
-            "published_at": "2026-09-25T12:00:49+09:00",
-            "collected_at": "2026-09-26T10:29:12.187735+09:00",
-            "content_hash": "fc8d2b65d9449ea36104bb24c2f15facb9f468838f57410ae57629c408e898dd",
-            "source_type": "OFFICIAL_COMMUNITY"
-          }
-        ]
-      }
-    ],
-    "trickcal-revive": [
-      {
-        "title": "오케스트라 콘서트 PV 공개",
-        "category": "EVENT",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "오케스트라 콘서트 〈엘리아스 학예회〉 PV가 공식 유튜브에 공개되었고 티켓 예매처 링크가 안내되었다.",
-            "evidence_ids": [
-              "7365a4d71eefbed79a2728e85c6767e7ffaa16c193300ef807bb951bff88449d"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "공식 영상은 메인 스토리·테마극장 BGM과 캐릭터송을 새로운 편곡과 오케스트라 사운드로 선보인다고 안내한다.",
-            "evidence_ids": [
-              "7365a4d71eefbed79a2728e85c6767e7ffaa16c193300ef807bb951bff88449d"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "7365a4d71eefbed79a2728e85c6767e7ffaa16c193300ef807bb951bff88449d",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=9rAW_llBulQ",
-            "published_at": "2026-09-25T14:03:30+09:00",
-            "collected_at": "2026-09-26T10:29:42.509958+09:00",
-            "content_hash": "9f14703bd1eecb48d4a1db103b4ab2e58358896f07816ddeceb8210beee2f2b5",
-            "source_type": "OFFICIAL_YOUTUBE"
+            "evidence_id": "48182393c2c311d635e4ce631c065da2a6bc0d6b206df490a6e7ff08c63ec042",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1351472",
+            "published_at": "2026-09-27T10:20:49+09:00",
+            "collected_at": "2026-09-27T10:23:35.984492+09:00",
+            "content_hash": "659b56defca33da9ad34d0d83f6ab674c94cd8e736018d94aee94f0605e30eb2",
+            "source_type": "PUBLIC_COMMUNITY"
           }
         ]
       }
