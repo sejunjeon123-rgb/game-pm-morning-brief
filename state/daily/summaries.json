@@ -1,7 +1,8 @@
 {
-  "date": "2026-09-27",
+  "date": "2026-09-28",
   "version": "compact-v1-relevance-v2",
   "games": {
+    "lineage-m": [],
     "seven-knights-rebirth": [
       {
         "title": "밤하늘의 보름달 특별 쿠폰 이벤트 안내",
@@ -9,7 +10,13 @@
         "bm_types": [],
         "facts": [
           {
-            "text": "공식 커뮤니티 공지에서 '특별 쿠폰 이벤트'가 기간 중 매일 공개되는 쿠폰 입력으로 보상을 제공한다고 안내했다.",
+            "text": "공식 커뮤니티에 '밤하늘의 보름달 특별 쿠폰 이벤트' 개최를 알리는 안내문이 게시되었다.",
+            "evidence_ids": [
+              "42b914c9879b965a5ccae55a64567ad3758b11c235aa6f5f56a7dcc2400389f6"
+            ]
+          },
+          {
+            "text": "안내문은 이벤트 기간 동안 매일 공개되는 특별 쿠폰을 입력하면 보상을 받을 수 있다고 안내한다.",
             "evidence_ids": [
               "42b914c9879b965a5ccae55a64567ad3758b11c235aa6f5f56a7dcc2400389f6"
             ]
@@ -18,7 +25,7 @@
         "claims": [],
         "interpretation": [
           {
-            "text": "공지 제목과 문구는 일별로 공개되는 쿠폰을 통해 이용자에게 반복적 보상 획득 기회를 제공하려는 이벤트임을 시사한다.",
+            "text": "공식 문서에 따라 유저는 매일 공개되는 쿠폰 코드를 입력해 게임 내 보상을 수령할 것으로 보인다.",
             "evidence_ids": [
               "42b914c9879b965a5ccae55a64567ad3758b11c235aa6f5f56a7dcc2400389f6"
             ]
@@ -26,7 +33,8 @@
         ],
         "conflicts": [],
         "unknowns": [
-          "쿠폰별 구체적 보상 목록과 지급 일정의 세부 내용은 공지 본문 전체를 별도 확인해야 함"
+          "개별 쿠폰의 구체적 보상 목록 및 지급 일정은 본 공지에 전문으로 기재되어 있는지 확인 필요",
+          "쿠폰 입력 방법의 상세 절차(인게임 메뉴 혹은 외부 입력 페이지 등)는 공지 본문에서만 확인 가능"
         ],
         "evidence": [
           {
@@ -34,46 +42,100 @@
             "classification": "OFFICIAL_FACT",
             "url": "https://forum.netmarble.com/sena_rebirth/view/15/2056",
             "published_at": "2026-09-24T18:00:13.551000+09:00",
-            "collected_at": "2026-09-27T10:22:03.049057+09:00",
+            "collected_at": "2026-09-28T10:35:45.230048+09:00",
             "content_hash": "c07000abc551b12eef61fa6ba7e096ab20fff9e64f0c9177807b6771a8354a61",
             "source_type": "OFFICIAL_COMMUNITY"
           }
         ]
-      },
+      }
+    ],
+    "epic-seven": [
       {
-        "title": "서버(섭) 개설 현황 관련 이용자 문의",
-        "category": "NOTICE",
+        "title": "유저 요구: 애기나크 출시·카제나 콜라보 중단 요청",
+        "category": "CHARACTER",
         "bm_types": [],
         "facts": [],
         "claims": [
           {
-            "text": "한 이용자가 현재 서버 번호(몇 섭까지 개설되었는지)를 묻는 글을 게시했다.",
+            "text": "커뮤니티 게시글에서 운영자 탁광진에게 애기나크를 즉시 출시하고 카제나 콜라보를 중단하라는 요구가 제기되었다.",
             "evidence_ids": [
-              "48182393c2c311d635e4ce631c065da2a6bc0d6b206df490a6e7ff08c63ec042"
+              "62e8641baff58bfac01c1401003dc9428eb5ef30fea995c2d0d5c8d464edb8a6"
             ]
           }
         ],
+        "interpretation": [],
+        "conflicts": [],
+        "unknowns": [
+          "운영 측의 공식 입장이나 해당 요구에 대한 대응 여부는 공개된 공식 근거에서 확인되지 않음."
+        ],
+        "evidence": [
+          {
+            "evidence_id": "62e8641baff58bfac01c1401003dc9428eb5ef30fea995c2d0d5c8d464edb8a6",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=epicseven&no=2719089",
+            "published_at": "2026-09-28T06:51:41+09:00",
+            "collected_at": "2026-09-28T10:37:04.478306+09:00",
+            "content_hash": "4a8c4868df42b41e1d07a5af5db9e30dfea07949adae7f81f7012945a0e17c8d",
+            "source_type": "PUBLIC_COMMUNITY"
+          }
+        ]
+      }
+    ],
+    "trickcal-revive": [
+      {
+        "title": "3주년 굿즈·오프라인 가이드맵 및 구매 특전 안내",
+        "category": "EVENT",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "공식 커뮤니티는 3주년 기념 구매 특전이 골디 스토어를 포함해 골든 크레마 등 오프라인 매장에서도 동일하게 제공된다고 안내했다.",
+            "evidence_ids": [
+              "366064bca799538abe56677a647c148af0f1bf746515490b29575e6803e4e6ba"
+            ]
+          },
+          {
+            "text": "공식 커뮤니티는 3주년 기념 가이드맵을 공개하며, 거리 곳곳에서 사도들을 만나는 오프라인 프로모션과 굿즈 입점(온라인·오프라인)을 예고했다.",
+            "evidence_ids": [
+              "3c5a32b8334ff4ffdd27062a45f03ab05c1f91e40c6109311a6d2b69bd1b0aba"
+            ]
+          }
+        ],
+        "claims": [],
         "interpretation": [
           {
-            "text": "게시글은 이용자가 신규 계정 생성 시점의 최신 서버 번호를 확인하려는 문의성 글로 분류된다; 공식 확인이 필요하다.",
+            "text": "공식 발표는 굿즈 판매와 프로모션을 온라인·오프라인 병행으로 운영하고 있음을 시사한다.",
             "evidence_ids": [
-              "48182393c2c311d635e4ce631c065da2a6bc0d6b206df490a6e7ff08c63ec042"
+              "366064bca799538abe56677a647c148af0f1bf746515490b29575e6803e4e6ba",
+              "3c5a32b8334ff4ffdd27062a45f03ab05c1f91e40c6109311a6d2b69bd1b0aba"
+            ]
+          },
+          {
+            "text": "가이드맵 공개로 오프라인 방문을 유도하는 현장 프로모션이 함께 진행될 예정임을 공식이 명시했다.",
+            "evidence_ids": [
+              "3c5a32b8334ff4ffdd27062a45f03ab05c1f91e40c6109311a6d2b69bd1b0aba"
             ]
           }
         ],
         "conflicts": [],
-        "unknowns": [
-          "실제 현재 개설된 서버 수(최신 서버 번호)는 공식 출처에서 확인되지 않음"
-        ],
+        "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "48182393c2c311d635e4ce631c065da2a6bc0d6b206df490a6e7ff08c63ec042",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1351472",
-            "published_at": "2026-09-27T10:20:49+09:00",
-            "collected_at": "2026-09-27T10:23:35.984492+09:00",
-            "content_hash": "659b56defca33da9ad34d0d83f6ab674c94cd8e736018d94aee94f0605e30eb2",
-            "source_type": "PUBLIC_COMMUNITY"
+            "evidence_id": "366064bca799538abe56677a647c148af0f1bf746515490b29575e6803e4e6ba",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/214992?boardtype=L&menuid=14&referrerAllArticles=false",
+            "published_at": "2026-09-27T11:52:35.053000+09:00",
+            "collected_at": "2026-09-28T10:35:45.230048+09:00",
+            "content_hash": "98548a0dbec256c5681976e4f86c6f10708e877226b487ffa5b5f55e777e3725",
+            "source_type": "OFFICIAL_COMMUNITY"
+          },
+          {
+            "evidence_id": "3c5a32b8334ff4ffdd27062a45f03ab05c1f91e40c6109311a6d2b69bd1b0aba",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/213104?boardtype=L&menuid=14&referrerAllArticles=false",
+            "published_at": "2026-09-23T18:00:57.800000+09:00",
+            "collected_at": "2026-09-28T10:35:45.230048+09:00",
+            "content_hash": "6f65242186a218059d27c79e8085f1c725493ea1c34beadf9ed290946858ec9f",
+            "source_type": "OFFICIAL_COMMUNITY"
           }
         ]
       }
