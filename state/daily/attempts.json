@@ -1,10 +1,12 @@
 {
-  "date": "2026-09-29",
+  "date": "2026-09-30",
   "games": {
+    "black-desert-mobile": "attempted",
     "odin-valhalla-rising": "attempted",
     "lineage-m": "attempted",
     "seven-knights-rebirth": "attempted",
     "epic-seven": "attempted",
+    "nikke": "attempted",
     "trickcal-revive": "attempted"
   }
 }
