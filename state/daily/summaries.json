@@ -1,297 +1,120 @@
 {
-  "date": "2026-10-03",
+  "date": "2026-10-04",
   "version": "compact-v1-relevance-v2",
   "games": {
-    "mabinogi-mobile": [
+    "mabinogi-mobile": [],
+    "black-desert-mobile": [
       {
-        "title": "유료 드레케인으로 시즌3 성장·접속 저하 우려",
-        "category": "UPDATE",
+        "title": "비공식 쿠폰 게시글 유통 주장(링크 포함)",
+        "category": "MARKETING",
         "bm_types": [],
         "facts": [],
         "claims": [
           {
-            "text": "시즌3의 유료 장비(드레케인)가 고성능화돼 소수 유료 유저만 우위에 서고, 일반 유저의 성장 동기와 파티 플레이 의욕이 저하된다고 주장함.",
+            "text": "커뮤니티 게시글에서 미수령자를 대상으로 '등록하세요'라는 문구와 블로그 링크를 붙여 쿠폰·이벤트 정보를 안내한다는 주장이 제기되었다.",
             "evidence_ids": [
-              "7e1aa40e54c9fb89b0cde54a7feae3a57ee1e3deea9301ba8aa16a3473a9888f"
-            ]
-          },
-          {
-            "text": "작성자는 드레케인이 현재 종결화돼 콘텐츠 클리어 기준을 사실상 배타적으로 만들었고, 이대로면 시즌3·4에서 유저 이탈(접속 저하)로 이어질 것이라 전망함.",
-            "evidence_ids": [
-              "7e1aa40e54c9fb89b0cde54a7feae3a57ee1e3deea9301ba8aa16a3473a9888f"
-            ]
-          },
-          {
-            "text": "해결책으로 인게임 요구치 하향, 드레케인 유통 확대(유료 판매 또는 대량 공급) 등으로 드레케인을 '이쁜 쓰레기'로 만들거나 보유자 수를 늘려야 한다고 제안함.",
-            "evidence_ids": [
-              "7e1aa40e54c9fb89b0cde54a7feae3a57ee1e3deea9301ba8aa16a3473a9888f"
+              "5728f0036b96f1a7869a8dd335b9ea28fd3b83d50dee677b5597be2c07e00d69"
             ]
           }
         ],
         "interpretation": [
           {
-            "text": "플레이어 주장에 따르면 새 성장 요소가 '정배(고급 성장소재)' 성격을 띠어 자본 의존도가 올라간다는 인식이 생겼고, 이는 게임의 '같이 하는' 경험을 약화시킨다고 평가됨.",
+            "text": "게시글은 공식 출처가 아닌 블로그 링크를 안내하므로 쿠폰의 정식 제공 여부와 안전성이 확인되지 않아 사용자 혼선이나 보안 위험이 있을 수 있다.",
             "evidence_ids": [
-              "7e1aa40e54c9fb89b0cde54a7feae3a57ee1e3deea9301ba8aa16a3473a9888f"
-            ]
-          },
-          {
-            "text": "해당 글은 특정 개선안(요구치 조정·유통 확대)을 제시하지만, 이는 작성자 개인의 해결안이며 개발 계획·실효성에 대한 근거는 제시되지 않음 (CREATOR_ANALYSIS 적용).",
-            "evidence_ids": [
-              "7e1aa40e54c9fb89b0cde54a7feae3a57ee1e3deea9301ba8aa16a3473a9888f"
+              "5728f0036b96f1a7869a8dd335b9ea28fd3b83d50dee677b5597be2c07e00d69"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "드레케인 성능이 실제로 전체 콘텐츠 클리어 기준을 배타적으로 변경했는지(공식 수치·밸런스 문서 없음).",
-          "개발사가 드레케인 유통 확대나 요구치 하향 같은 조정을 검토 중인지(공식 발표 없음).",
-          "해당 주장과 유저 다수의 인식이 일치하는지(표본이 단일 게시글임)."
+          "해당 블로그 링크가 공식 쿠폰 제공 여부와 안전성",
+          "해당 게시글을 통해 피해를 본 사용자 수나 구체적 사례"
         ],
         "evidence": [
           {
-            "evidence_id": "7e1aa40e54c9fb89b0cde54a7feae3a57ee1e3deea9301ba8aa16a3473a9888f",
+            "evidence_id": "5728f0036b96f1a7869a8dd335b9ea28fd3b83d50dee677b5597be2c07e00d69",
             "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2179388",
-            "published_at": "2026-10-03T09:17:49+09:00",
-            "collected_at": "2026-10-03T10:54:29.257187+09:00",
-            "content_hash": "08418808d5323b9b5afae90247203f7578ad036be883f419bdfef30a5071ad60",
+            "url": "https://gall.dcinside.com/board/view/?id=blackdesertmobile&no=334347",
+            "published_at": "2026-10-04T02:29:23+09:00",
+            "collected_at": "2026-10-04T11:34:27.434965+09:00",
+            "content_hash": "090e44d0ae0e681c7b65add47d9be2d353b5d3f7812d4541ad1e31a326a58302",
             "source_type": "PUBLIC_COMMUNITY"
           }
         ]
       }
     ],
-    "black-desert-mobile": [
-      {
-        "title": "10월 고객센터 전화 상담 휴무 안내",
-        "category": "NOTICE",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "10월 5일(개천절 대체 공휴일)과 10월 9일(한글날)에 고객센터 전화 상담이 휴무로 예정되어 있습니다.",
-            "evidence_ids": [
-              "56ccee3a18916c12e2e20505adf960055d420547e98c4ed585f2424cd37e8aac"
-            ]
-          },
-          {
-            "text": "휴무 기간에도 1:1 문의 접수는 가능하며, 접수된 문의의 답변은 지연될 수 있다고 안내하고 있습니다.",
-            "evidence_ids": [
-              "56ccee3a18916c12e2e20505adf960055d420547e98c4ed585f2424cd37e8aac"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "공식 공지에 따르면 전화 상담은 휴무지만 고객센터 창구(1:1 문의)는 계속 운영되어 이관 가능한 고객 문의는 접수는 가능하다고 판단됩니다.",
-            "evidence_ids": [
-              "56ccee3a18916c12e2e20505adf960055d420547e98c4ed585f2424cd37e8aac"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "56ccee3a18916c12e2e20505adf960055d420547e98c4ed585f2424cd37e8aac",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=665082&pageNo=1",
-            "published_at": "2026-10-02T00:00:00+09:00",
-            "collected_at": "2026-10-03T10:53:11.628097+09:00",
-            "content_hash": "edee565f9c57da1ec768cca2898a1e3e9d358b6f613b58108cdf10a0aff18333",
-            "source_type": "OFFICIAL_HOMEPAGE"
-          }
-        ]
-      },
-      {
-        "title": "비매너 채팅 누적 위반으로 접속제한 제재 공지(10월)",
-        "category": "NOTICE",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "비매너 채팅을 지속해 채팅 이용제한 기준을 3차 이상 위반한 가문에 대해 접속제한 제재가 적용된 가문을 공지했습니다.",
-            "evidence_ids": [
-              "bf09da774ab1110fc2797c93a3a8f8086bd6e49e5c9d80b7c3fd108a06f12587"
-            ]
-          },
-          {
-            "text": "예시로 '롱' 가문에 대해 4차 위반으로 15일간 기간 접속제한 제재가 적용되었음을 밝히고 있으며, 해당 목록은 매달·사안 확인 시 갱신된다고 안내하고 있습니다.",
-            "evidence_ids": [
-              "bf09da774ab1110fc2797c93a3a8f8086bd6e49e5c9d80b7c3fd108a06f12587"
-            ]
-          },
-          {
-            "text": "제재 이의신청은 제재 후 15일 이내에 고객센터 1:1 문의로 접수할 수 있고, 이의 결과로 제재가 해제되면 공지에서 제외될 수 있다고 안내합니다.",
-            "evidence_ids": [
-              "bf09da774ab1110fc2797c93a3a8f8086bd6e49e5c9d80b7c3fd108a06f12587"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "운영진은 유해 채팅 행위에 대해 정기적으로 제재 현황을 공개해 경각심을 환기하고 재발 억제를 목적으로 하는 것으로 보입니다.",
-            "evidence_ids": [
-              "bf09da774ab1110fc2797c93a3a8f8086bd6e49e5c9d80b7c3fd108a06f12587"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "bf09da774ab1110fc2797c93a3a8f8086bd6e49e5c9d80b7c3fd108a06f12587",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=665087&pageNo=1",
-            "published_at": "2026-10-02T00:00:00+09:00",
-            "collected_at": "2026-10-03T10:53:11.628097+09:00",
-            "content_hash": "5eab23a7a2115bb63e5caf63f08b1d0fd5583f596ac1be17292f432c9179b669",
-            "source_type": "OFFICIAL_HOMEPAGE"
-          }
-        ]
-      }
-    ],
-    "lineage-m": [
-      {
-        "title": "10/3~10/7 데포로쥬의 기사단 지원 상자 판매 안내",
-        "category": "BM",
-        "bm_types": [
-          "GACHA",
-          "CURRENCY",
-          "EQUIPMENT",
-          "CONVENIENCE"
-        ],
-        "facts": [
-          {
-            "text": "판매 기간은 2026-10-03 00:00부터 2026-10-07 정기점검 전까지로 공지됐다.",
-            "evidence_ids": [
-              "1e9d44b576ab0dc84fdf9f8c6697470e32bfdcefebdecad70d15504de25b90d8"
-            ]
-          },
-          {
-            "text": "상품명은 '데포로쥬의 기사단 지원 상자'이며 가격은 1,000다이아로 안내됐다.",
-            "evidence_ids": [
-              "1e9d44b576ab0dc84fdf9f8c6697470e32bfdcefebdecad70d15504de25b90d8"
-            ]
-          },
-          {
-            "text": "구성품으로 세계수의 카드 뽑기팩 제작 티켓(3), 데포로쥬의 증서함(1), 빛나는 장비 보호 주문서(30), 종합 코인 선택 상자(5)가 명시됐다.",
-            "evidence_ids": [
-              "1e9d44b576ab0dc84fdf9f8c6697470e32bfdcefebdecad70d15504de25b90d8"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "공식 안내에 따르면 유료 상자형 상품으로 확률에 따라 기부 증서 등 랜덤 보상이 포함되어 확률형(BG)/재화/장비 관련 BM 특성이 있다.",
-            "evidence_ids": [
-              "1e9d44b576ab0dc84fdf9f8c6697470e32bfdcefebdecad70d15504de25b90d8"
-            ]
-          },
-          {
-            "text": "상품은 계정당 전체 서버 통합 구매 제한 16회가 적용되어 구매 횟수 제한형 판매로 운영된다.",
-            "evidence_ids": [
-              "1e9d44b576ab0dc84fdf9f8c6697470e32bfdcefebdecad70d15504de25b90d8"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "1e9d44b576ab0dc84fdf9f8c6697470e32bfdcefebdecad70d15504de25b90d8",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6abf8eb0eea53f5d6dbcfa30",
-            "published_at": "2026-10-02T20:00:00.001000+09:00",
-            "collected_at": "2026-10-03T10:53:11.628097+09:00",
-            "content_hash": "21190587f71615f3b91c596e591c5f5c459fd7e6b9853f6bbd25970ffb04d7e5",
-            "source_type": "OFFICIAL_HOMEPAGE"
-          }
-        ]
-      }
-    ],
+    "odin-valhalla-rising": [],
     "seven-knights-rebirth": [
       {
-        "title": "10/5·10/9 넷마블 고객센터 전화·방문 상담 휴무 안내",
-        "category": "NOTICE",
+        "title": "플레이어가 소탕(자동전투) 동작 이상(버그) 신고",
+        "category": "MAINTENANCE",
         "bm_types": [],
-        "facts": [
+        "facts": [],
+        "claims": [
           {
-            "text": "넷마블 고객센터가 10월 5일(월)과 10월 9일(금)에 전화 상담 및 방문 상담을 휴무한다고 공지했다.",
+            "text": "게시글 작성자가 소탕 기능의 버그를 신고하며 빠른 수정을 요구함(비속어 포함).",
             "evidence_ids": [
-              "ca567b0461ad67f1b90beaf53c0cb680f808674d9572f54c254fb2562d2b66c4"
-            ]
-          },
-          {
-            "text": "해당 기간 동안 고객센터 1:1 문의 접수는 정상적으로 이용 가능하다고 공지했다.",
-            "evidence_ids": [
-              "ca567b0461ad67f1b90beaf53c0cb680f808674d9572f54c254fb2562d2b66c4"
+              "76cc2f38d517c2a429b8fa26f4c6f01a023ef812ee54cb47635af6c0bc4b9cc8"
             ]
           }
         ],
-        "claims": [],
         "interpretation": [
           {
-            "text": "공식 공지에 따르면 지정일에는 전화·방문 채널이 불가하므로 해당 채널로의 즉시 응대는 제공되지 않는다.",
+            "text": "해당 게시물은 소탕 기능 이상으로 인한 이용 불만과 즉각적인 패치 요구를 보여줌.",
             "evidence_ids": [
-              "ca567b0461ad67f1b90beaf53c0cb680f808674d9572f54c254fb2562d2b66c4"
-            ]
-          },
-          {
-            "text": "공식적으로는 1:1 문의는 유지되므로 지원 요청은 해당 채널로 접수해야 한다.",
-            "evidence_ids": [
-              "ca567b0461ad67f1b90beaf53c0cb680f808674d9572f54c254fb2562d2b66c4"
+              "76cc2f38d517c2a429b8fa26f4c6f01a023ef812ee54cb47635af6c0bc4b9cc8"
             ]
           }
         ],
         "conflicts": [],
-        "unknowns": [],
+        "unknowns": [
+          "이 문제의 발생 범위(다수 이용자 영향 여부)는 확인되지 않음.",
+          "운영팀의 공식 인지·조치 여부는 공개 근거에 없음."
+        ],
         "evidence": [
           {
-            "evidence_id": "ca567b0461ad67f1b90beaf53c0cb680f808674d9572f54c254fb2562d2b66c4",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://forum.netmarble.com/sena_rebirth/view/20/2108",
-            "published_at": "2026-10-02T18:00:05.640000+09:00",
-            "collected_at": "2026-10-03T10:53:11.628097+09:00",
-            "content_hash": "0cb30855fd100f5c8cbcef841881432ed035afd860c2917a1f5995bc41dbe7a2",
-            "source_type": "OFFICIAL_COMMUNITY"
+            "evidence_id": "76cc2f38d517c2a429b8fa26f4c6f01a023ef812ee54cb47635af6c0bc4b9cc8",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1362472",
+            "published_at": "2026-10-04T10:57:29+09:00",
+            "collected_at": "2026-10-04T11:34:27.434965+09:00",
+            "content_hash": "b9304a40e36afd6387d47081c799a0bdae64584e8d8f87432ce26d039ddc9dc0",
+            "source_type": "PUBLIC_COMMUNITY"
           }
         ]
       }
     ],
-    "epic-seven": [],
     "nikke": [
       {
-        "title": "유니온 레이드 시즌 오픈 안내",
-        "category": "EVENT",
+        "title": "사이드 스토리 'GINGERBREAD HOUSE' 10/8 오픈 안내",
+        "category": "UPDATE",
         "bm_types": [],
         "facts": [
           {
-            "text": "유니온 레이드가 10/9(금) 05:00부터 10/15(목) 04:59까지 진행됩니다.",
+            "text": "풀 보이스 사이드 스토리 'GINGERBREAD HOUSE'가 10/8 점검 후 오픈된다.",
             "evidence_ids": [
-              "b786e4184eec76cb9f042b7a82f9efeac11b863f8ec2ac8f1e5fc05514e4ed75"
+              "46722c1ee66c5a629addecd5017c13c5ee24ecc3ad081cd4490eda60457ef0d1"
             ]
           },
           {
-            "text": "유니온 레이드 시즌 동안 유니온 탈퇴 및 멤버 추방이 불가합니다.",
+            "text": "참여 조건은 메인 시나리오 챕터 노멀 6-15 스테이지 클리어이며 진입은 로비→전초기지→커맨드 센터다.",
             "evidence_ids": [
-              "b786e4184eec76cb9f042b7a82f9efeac11b863f8ec2ac8f1e5fc05514e4ed75"
+              "46722c1ee66c5a629addecd5017c13c5ee24ecc3ad081cd4490eda60457ef0d1"
             ]
           },
           {
-            "text": "소속 유니온이 레벨 3 이상일 때만 참여 가능합니다.",
+            "text": "해당 콘텐츠 관련 인앱 구매(확률형 아이템 포함)가 있음을 공지했다.",
             "evidence_ids": [
-              "b786e4184eec76cb9f042b7a82f9efeac11b863f8ec2ac8f1e5fc05514e4ed75"
+              "46722c1ee66c5a629addecd5017c13c5ee24ecc3ad081cd4490eda60457ef0d1"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "시즌 기간 고정 규칙(탈퇴·추방 불가)으로 유니온 단위 참여 고정성이 발생할 것으로 보입니다.",
+            "text": "신규 사이드 스토리 오픈은 콘텐츠 소비 촉진과 플레이 동선 확장을 의도한 업데이트로 보인다.",
             "evidence_ids": [
-              "b786e4184eec76cb9f042b7a82f9efeac11b863f8ec2ac8f1e5fc05514e4ed75"
+              "46722c1ee66c5a629addecd5017c13c5ee24ecc3ad081cd4490eda60457ef0d1"
             ]
           }
         ],
@@ -299,36 +122,46 @@
         "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "b786e4184eec76cb9f042b7a82f9efeac11b863f8ec2ac8f1e5fc05514e4ed75",
+            "evidence_id": "46722c1ee66c5a629addecd5017c13c5ee24ecc3ad081cd4490eda60457ef0d1",
             "classification": "OFFICIAL_FACT",
-            "url": "https://game.naver.com/lounge/nikke/board/detail/8276328",
-            "published_at": "2026-10-02T17:00:43+09:00",
-            "collected_at": "2026-10-03T10:53:11.628097+09:00",
-            "content_hash": "b8252ae57ec369ab2c7f6e76c305b75b11319e3ded2e23fcdb6fd09480df7689",
+            "url": "https://game.naver.com/lounge/nikke/board/detail/8283969",
+            "published_at": "2026-10-04T10:00:35+09:00",
+            "collected_at": "2026-10-04T11:32:39.287713+09:00",
+            "content_hash": "5fced84db75c312ea4efa82473c6757be15db7ed9e97ad36241dfb466a2cbe30",
             "source_type": "OFFICIAL_COMMUNITY"
           }
         ]
       },
       {
-        "title": "벨로타: 펌킨 위치 픽업 모집 안내",
-        "category": "BM",
-        "bm_types": [
-          "GACHA"
-        ],
+        "title": "부정행위 제재 명단 공개 및 검증 결과 안내(10/4)",
+        "category": "NOTICE",
+        "bm_types": [],
         "facts": [
           {
-            "text": "신규 픽업 캐릭터 '벨로타: 펌킨 위치' 픽업 모집이 10/8 점검 종료 후부터 10/28 23:59까지 진행됩니다.",
+            "text": "9/23 이후 지속된 탐지·검증 결과를 바탕으로 부정행위 관련 계정들에 대해 제재를 적용하고 명단을 공지했다.",
             "evidence_ids": [
-              "7940189d78245027888acedcc2f0637308f81a3e9153f68f6aa111dc431a27c2"
+              "0b178f8f8933c0c58745326683882c5be3bac657297427a66fa993d84c50394e"
+            ]
+          },
+          {
+            "text": "솔로 레이드 기록 중 부정행위로 확인된 기록은 말소됐고, 불법 프로그램·매크로·대리 플레이 등 유형별 제재를 포함한다고 밝혔다.",
+            "evidence_ids": [
+              "0b178f8f8933c0c58745326683882c5be3bac657297427a66fa993d84c50394e"
+            ]
+          },
+          {
+            "text": "공개 명단은 검증 및 공개 확정 대상부터 순차 안내하며, 이미 제재된 계정이나 이의신청 중인 대상은 명단에 포함되지 않을 수 있다고 공지했다.",
+            "evidence_ids": [
+              "0b178f8f8933c0c58745326683882c5be3bac657297427a66fa993d84c50394e"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "기간 한정 픽업 형태로 일정 내 유저의 뽑기 참여가 집중될 가능성이 있습니다.",
+            "text": "정기적 제재 공개와 유형별 안내는 공정성 확보와 부정행위 억제를 위한 지속적 모니터링 의지로 해석된다.",
             "evidence_ids": [
-              "7940189d78245027888acedcc2f0637308f81a3e9153f68f6aa111dc431a27c2"
+              "0b178f8f8933c0c58745326683882c5be3bac657297427a66fa993d84c50394e"
             ]
           }
         ],
@@ -336,12 +169,12 @@
         "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "7940189d78245027888acedcc2f0637308f81a3e9153f68f6aa111dc431a27c2",
+            "evidence_id": "0b178f8f8933c0c58745326683882c5be3bac657297427a66fa993d84c50394e",
             "classification": "OFFICIAL_FACT",
-            "url": "https://game.naver.com/lounge/nikke/board/detail/8274097",
-            "published_at": "2026-10-02T10:00:41+09:00",
-            "collected_at": "2026-10-03T10:53:11.628097+09:00",
-            "content_hash": "3942f9c988fb18e6725f97a0e468d60f1f6ff85752931a13e9365c42600beac9",
+            "url": "https://game.naver.com/lounge/nikke/board/detail/8282889",
+            "published_at": "2026-10-04T00:32:11+09:00",
+            "collected_at": "2026-10-04T11:32:39.287713+09:00",
+            "content_hash": "c891bf3e1768db5803f7242bd8752b4e12a97f6f2158eb409a6368b23b27f0b6",
             "source_type": "OFFICIAL_COMMUNITY"
           }
         ]
