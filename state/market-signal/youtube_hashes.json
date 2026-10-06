@@ -1109,7 +1109,7 @@
       "title": "📢9월 업데이트✔️ㅣ검은사막 모바일 Black Desert Mobile",
       "content_hash": "e870f6061b39dc2fc9e89e04d1a2597f8ade78941922048326b1c3f75babc312",
       "first_seen_at": "2026-10-02T11:10:38.108213+09:00",
-      "last_seen_at": "2026-10-02T11:10:38.108213+09:00",
+      "last_seen_at": "2026-10-06T11:55:47.345662+09:00",
       "published_at": "2026-09-30T19:01:14+09:00"
     },
     "https://www.youtube.com/watch?v=mwLMXDP04cE": {
@@ -1151,6 +1151,54 @@
       "first_seen_at": "2026-10-02T11:10:38.108213+09:00",
       "last_seen_at": "2026-10-02T11:10:38.108213+09:00",
       "published_at": "2026-09-30T19:00:16+09:00"
+    },
+    "https://www.youtube.com/shorts/EPFnlZ8cR1g": {
+      "game_id": "odin-valhalla-rising",
+      "title": "[NEW 리포트] 오딘 광장 이달의 키워드 Vol.5",
+      "content_hash": "564826c1ddb4ea915bdfded09442f1922a955a2a9ff566933aac533ad30159bd",
+      "first_seen_at": "2026-10-06T11:55:47.345662+09:00",
+      "last_seen_at": "2026-10-06T11:55:47.345662+09:00",
+      "published_at": "2026-09-30T11:33:34+09:00"
+    },
+    "https://www.youtube.com/shorts/H3Tbg_r1moI": {
+      "game_id": "lineage-m",
+      "title": "[리니지M] 일반 던전에 몬스터가 바글바글!",
+      "content_hash": "7e4c38fd5640adf36075ce815d4177b1956a565154744caf9d56af20b6b8e6f9",
+      "first_seen_at": "2026-10-06T11:55:47.345662+09:00",
+      "last_seen_at": "2026-10-06T11:55:47.345662+09:00",
+      "published_at": "2026-09-30T18:00:15+09:00"
+    },
+    "https://www.youtube.com/watch?v=UIVP1iuaEnc": {
+      "game_id": "trickcal-revive",
+      "title": "[하이라이트] 마음의 들판에 두고 온 기억",
+      "content_hash": "5b448e973a8e259af9ac2c95d7cdd15649b7bb7e49b16e3c0cfc6e62caa4a682",
+      "first_seen_at": "2026-10-06T11:55:47.345662+09:00",
+      "last_seen_at": "2026-10-06T11:55:47.345662+09:00",
+      "published_at": "2026-10-05T17:00:35+09:00"
+    },
+    "https://www.youtube.com/shorts/krDJXT_HjOw": {
+      "game_id": "trickcal-revive",
+      "title": "[주말특집] 신규 꼬까옷 소개 - 피어나는 꽃처럼 #트릭컬 #주말특집",
+      "content_hash": "d09e2d9d7c319c1847a8d2a7066071957ec423179a1d9cd7f2c15c6ae74439f4",
+      "first_seen_at": "2026-10-06T11:55:47.345662+09:00",
+      "last_seen_at": "2026-10-06T11:55:47.345662+09:00",
+      "published_at": "2026-10-03T14:01:28+09:00"
+    },
+    "https://www.youtube.com/watch?v=KBOWx8cBh7I": {
+      "game_id": "trickcal-revive",
+      "title": "[업데이트] 10월 1일(목) 신규 업데이트 내역 안내",
+      "content_hash": "7e4e149422488439b9b139beabc85bcb9e3c1f45e224f690d2c4cc1f19860c01",
+      "first_seen_at": "2026-10-06T11:55:47.345662+09:00",
+      "last_seen_at": "2026-10-06T11:55:47.345662+09:00",
+      "published_at": "2026-10-01T13:00:23+09:00"
+    },
+    "https://www.youtube.com/watch?v=F2KjjnAgCBg": {
+      "game_id": "trickcal-revive",
+      "title": "[특별영상] 트릭컬 글로벌 1주년 기념 PV 「우리의 약속」",
+      "content_hash": "48d3bd695960d4662c889745b14a2cae2253563764789f2df0fa4ea6fd83c964",
+      "first_seen_at": "2026-10-06T11:55:47.345662+09:00",
+      "last_seen_at": "2026-10-06T11:55:47.345662+09:00",
+      "published_at": "2026-09-30T17:05:03+09:00"
     }
   }
 }
