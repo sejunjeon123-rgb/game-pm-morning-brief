@@ -1199,6 +1199,62 @@
       "first_seen_at": "2026-10-06T11:55:47.345662+09:00",
       "last_seen_at": "2026-10-06T11:55:47.345662+09:00",
       "published_at": "2026-09-30T17:05:03+09:00"
+    },
+    "https://www.youtube.com/shorts/h-ynRE1v12c": {
+      "game_id": "nikke",
+      "title": "NIKKE 모션 VIEW - 벨로타 : 펌킨 위치(Belorta: Pumpkin Witch) | 승리의 여신: 니케",
+      "content_hash": "1ca7aac9e0ce2cb34ac812aa5fea17d9cf98597285d124ef7a75b524ff6b079a",
+      "first_seen_at": "2026-10-07T11:19:06.164318+09:00",
+      "last_seen_at": "2026-10-07T11:19:06.164318+09:00",
+      "published_at": "2026-10-07T11:00:30+09:00"
+    },
+    "https://www.youtube.com/watch?v=sXC-uH44brc": {
+      "game_id": "nikke",
+      "title": "NIKKE 모션 VIEW - 벨로타 : 펌킨 위치(Belorta: Pumpkin Witch) | 승리의 여신: 니케",
+      "content_hash": "1ca7aac9e0ce2cb34ac812aa5fea17d9cf98597285d124ef7a75b524ff6b079a",
+      "first_seen_at": "2026-10-07T11:19:06.164318+09:00",
+      "last_seen_at": "2026-10-07T11:19:06.164318+09:00",
+      "published_at": "2026-10-07T11:00:10+09:00"
+    },
+    "https://www.youtube.com/shorts/c-FqIfzJsrw": {
+      "game_id": "nikke",
+      "title": "NIKKE 코스튬 소개 - 신데렐라(Cinderella) | 승리의 여신: 니케",
+      "content_hash": "21715f08d85e3bad760bd2df43530b8a45b79d97ae44da1e92f90f4ff710e598",
+      "first_seen_at": "2026-10-07T11:19:06.164318+09:00",
+      "last_seen_at": "2026-10-07T11:19:06.164318+09:00",
+      "published_at": "2026-10-06T10:00:27+09:00"
+    },
+    "https://www.youtube.com/watch?v=yxwOMk5RRQY": {
+      "game_id": "nikke",
+      "title": "4주년 특별 방송 | 승리의 여신 : 니케",
+      "content_hash": "c18324878d340aa62b9beeeb5154b2648e505bf62805d3a6ac365681f5703177",
+      "first_seen_at": "2026-10-07T11:19:06.164318+09:00",
+      "last_seen_at": "2026-10-07T11:19:06.164318+09:00",
+      "published_at": "2026-10-05T10:57:58+09:00"
+    },
+    "https://www.youtube.com/watch?v=a95cjFgW2NM": {
+      "game_id": "nikke",
+      "title": "《MINIKKE 작은 동화집》 리틀 머메이드 편 - 하 공개 | 승리의 여신: 니케",
+      "content_hash": "1a7a90f7a75aa6587aa87f21545f898eb93cb94e9e4455d5bbc2062f81a2fb3c",
+      "first_seen_at": "2026-10-07T11:19:06.164318+09:00",
+      "last_seen_at": "2026-10-07T11:19:06.164318+09:00",
+      "published_at": "2026-10-04T20:00:09+09:00"
+    },
+    "https://www.youtube.com/watch?v=gNGCGu-LjgE": {
+      "game_id": "nikke",
+      "title": "《MINIKKE 작은 동화집》 리틀 머메이드 편 - 상 공개 | 승리의 여신: 니케",
+      "content_hash": "41f1c5ac28544e68df7a510e037380bbb026c1c23cd8b35e8aa5a755ed80e296",
+      "first_seen_at": "2026-10-07T11:19:06.164318+09:00",
+      "last_seen_at": "2026-10-07T11:19:06.164318+09:00",
+      "published_at": "2026-10-04T20:00:03+09:00"
+    },
+    "https://www.youtube.com/shorts/CVidzzXcVbk": {
+      "game_id": "nikke",
+      "title": "NIKKE 프로필 - ​벨로타 : 펌킨 위치(Belorta: Pumpkin Witch) | 승리의 여신: 니케",
+      "content_hash": "599836eb244b91a0e74e1fde9082cebb2f969c75757b1b2f83b458200a479922",
+      "first_seen_at": "2026-10-07T11:19:06.164318+09:00",
+      "last_seen_at": "2026-10-07T11:19:06.164318+09:00",
+      "published_at": "2026-10-03T12:30:26+09:00"
     }
   }
 }
