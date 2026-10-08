@@ -1,123 +1,90 @@
 {
-  "date": "2026-10-07",
+  "date": "2026-10-08",
   "version": "compact-v1-relevance-v2",
   "games": {
-    "mabinogi-mobile": [],
     "black-desert-mobile": [
       {
-        "title": "비매너 채팅 3차 이상 위반 가문에 접속제한 제재 공지",
+        "title": "다수 계정 이용 금지 행위 및 운영정책 개정 예고",
         "category": "NOTICE",
         "bm_types": [],
         "facts": [
           {
-            "text": "공식 공지(2026-10-02)에서 비매너 채팅으로 채팅 이용제한 기준표를 3차 이상 위반한 가문에 대해 기간 접속제한 조치가 적용되었음을 안내했다.",
+            "text": "운영정책이 개정되어 다수 계정으로 타 이용자 플레이를 저해하거나 부당 이득을 취하는 행위를 금지한다고 안내했다.",
             "evidence_ids": [
-              "bf09da774ab1110fc2797c93a3a8f8086bd6e49e5c9d80b7c3fd108a06f12587"
+              "758f2d1924c76939b70f94da4a7e70b2be78ac33f6dc4fc841a2fb389618c9cb"
             ]
           },
           {
-            "text": "공지에 제시된 제재 대상 예시로 2026/10/02에 4차 위반 가문에 대해 15일 접속제한, 2026/10/06에 3차 위반 가문에 대해 7일 접속제한이 각각 명시되어 있다.",
+            "text": "해당 금지 행위 위반 항목은 2026년 11월 10일 업데이트 점검 이후부터 적용되며 개정 이전 행위에 대한 소급 적용은 불가하다고 밝혔다.",
             "evidence_ids": [
-              "bf09da774ab1110fc2797c93a3a8f8086bd6e49e5c9d80b7c3fd108a06f12587"
-            ]
-          },
-          {
-            "text": "해당 공지는 매달 새로 작성되며, 안내할 내용이 확인될 때마다 목록을 갱신하고 제재 후 15일 이내 이의 신청을 접수받아 검토한다고 표기되어 있다.",
-            "evidence_ids": [
-              "bf09da774ab1110fc2797c93a3a8f8086bd6e49e5c9d80b7c3fd108a06f12587"
+              "758f2d1924c76939b70f94da4a7e70b2be78ac33f6dc4fc841a2fb389618c9cb"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "운영팀은 동일한 운영정책 위반에 대해 정기적으로 명단 공개와 기간형 제재를 병행해 공지하여 재발 방지와 투명성 확보를 의도한 것으로 보인다.",
+            "text": "운영정책 개정으로 다수 계정 관련 제재 근거가 명확해져 신고·모니터링을 통한 제재 가능성이 높아질 것으로 보인다.",
             "evidence_ids": [
-              "bf09da774ab1110fc2797c93a3a8f8086bd6e49e5c9d80b7c3fd108a06f12587"
-            ]
-          },
-          {
-            "text": "공지에 이의 신청 절차와 갱신 책임을 명시해 제재 집행 후 수정 가능성을 열어두고 있음을 확인할 수 있다.",
-            "evidence_ids": [
-              "bf09da774ab1110fc2797c93a3a8f8086bd6e49e5c9d80b7c3fd108a06f12587"
+              "758f2d1924c76939b70f94da4a7e70b2be78ac33f6dc4fc841a2fb389618c9cb"
             ]
           }
         ],
         "conflicts": [],
-        "unknowns": [],
+        "unknowns": [
+          "제재의 구체적 범위(예: 경고, 계정 정지 기간 등)와 판정 기준의 세부 항목은 공개되지 않았다."
+        ],
         "evidence": [
           {
-            "evidence_id": "bf09da774ab1110fc2797c93a3a8f8086bd6e49e5c9d80b7c3fd108a06f12587",
+            "evidence_id": "758f2d1924c76939b70f94da4a7e70b2be78ac33f6dc4fc841a2fb389618c9cb",
             "classification": "OFFICIAL_FACT",
-            "url": "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=665087&pageNo=1",
-            "published_at": "2026-10-02T00:00:00+09:00",
-            "collected_at": "2026-10-07T11:18:28.551352+09:00",
-            "content_hash": "bbd89c63abfe9dfad4c015a925cf8d2feb6050b1a5a6d995021e2131859021a3",
+            "url": "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=665235&pageNo=1",
+            "published_at": "2026-10-07T00:00:00+09:00",
+            "collected_at": "2026-10-08T11:40:25.721964+09:00",
+            "content_hash": "7829db1136834c3d01a3e5fc6ddb39ebc79b26b1618a003ffa129e7ffa8f3c24",
             "source_type": "OFFICIAL_HOMEPAGE"
           }
         ]
-      }
-    ],
-    "odin-valhalla-rising": [
+      },
       {
-        "title": "10/7 업데이트 공지 및 이용자 체감(거래소 침체) 주장",
-        "category": "UPDATE",
+        "title": "10월 6일 업데이트 점검(09:00~11:00) 완료 안내",
+        "category": "MAINTENANCE",
         "bm_types": [],
         "facts": [
           {
-            "text": "오딘 공식 홈페이지에 10/7(수) 업데이트 상세 내역 안내 공지가 게재되었다.",
+            "text": "2026년 10월 6일 09:00~11:00 예정된 업데이트 점검이 완료되었으며 해당 시간 게임 접속이 불가했다고 공지했다.",
             "evidence_ids": [
-              "c84b102df8e5c1be5a8d39cd21d55063799d65480f1ef205cf6a539c3d728774"
+              "09476db91920e530742985bf8636a0359021d304e122265f2961e61989d572fc"
             ]
-          }
-        ],
-        "claims": [
+          },
           {
-            "text": "커뮤니티 글에서 거래소가 사실상 얼어붙어 게임이 죽은 것 같다는 체감이 보고되었다.",
+            "text": "점검 중 공식 홈페이지와 공식 포럼 이용도 중단되었고, 일부 기간제 아이템 시간이 연장되었음을 안내했다.",
             "evidence_ids": [
-              "7e576a628462cda16c0043b17f7b5a6dac51826cd9ae1826362574c7e0f2479c"
+              "09476db91920e530742985bf8636a0359021d304e122265f2961e61989d572fc"
             ]
           }
         ],
+        "claims": [],
         "interpretation": [
           {
-            "text": "공식적으로는 10/7 업데이트가 안내되었으나, 일부 이용자는 업데이트 이후 또는 시점과 무관하게 거래소 활동 저하를 체감하고 있다.",
+            "text": "점검 공지는 접속 제한 시간과 점검 완료를 명시해 이용자 혼선을 최소화하려는 의도로 보인다.",
             "evidence_ids": [
-              "c84b102df8e5c1be5a8d39cd21d55063799d65480f1ef205cf6a539c3d728774",
-              "7e576a628462cda16c0043b17f7b5a6dac51826cd9ae1826362574c7e0f2479c"
+              "09476db91920e530742985bf8636a0359021d304e122265f2961e61989d572fc"
             ]
           }
         ],
-        "conflicts": [
-          {
-            "text": "공식 공지에는 업데이트 안내만 명시되어 있으나, 커뮤니티는 게임·거래소가 '죽었다'고 주장해 공식 설명과 이용자 체감 사이 차이가 있다.",
-            "evidence_ids": [
-              "c84b102df8e5c1be5a8d39cd21d55063799d65480f1ef205cf6a539c3d728774",
-              "7e576a628462cda16c0043b17f7b5a6dac51826cd9ae1826362574c7e0f2479c"
-            ]
-          }
-        ],
+        "conflicts": [],
         "unknowns": [
-          "공식 업데이트 내용이 거래소 활동 저하에 직접적 영향을 줬는지 확인된 근거는 없다.",
-          "거래소 침체 주장에 대한 규모(다수 이용자 재현 여부)와 구체적 원인은 공개 근거로 확인되지 않는다."
+          "점검으로 인한 구체적 콘텐츠 변경 사항과 패치노트 세부 내용은 본 자료에서 확인되지 않는다."
         ],
         "evidence": [
           {
-            "evidence_id": "7e576a628462cda16c0043b17f7b5a6dac51826cd9ae1826362574c7e0f2479c",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=vhr&no=317007",
-            "published_at": "2026-10-07T11:10:12+09:00",
-            "collected_at": "2026-10-07T11:19:46.262979+09:00",
-            "content_hash": "51a0ebcbc326f2b42c141e8450f87cb9758b6486cc279a46dd766569d17e6ff5",
-            "source_type": "PUBLIC_COMMUNITY"
-          },
-          {
-            "evidence_id": "c84b102df8e5c1be5a8d39cd21d55063799d65480f1ef205cf6a539c3d728774",
+            "evidence_id": "09476db91920e530742985bf8636a0359021d304e122265f2961e61989d572fc",
             "classification": "OFFICIAL_FACT",
-            "url": "https://odin.kakaogames.com/odin/",
-            "published_at": "2026-10-07T00:00:00+09:00",
-            "collected_at": "2026-10-07T11:18:28.551352+09:00",
-            "content_hash": "53dcdebaf3ee08c762284274fd6e773c5b96b89530f08f4db2f55a56f756e553",
+            "url": "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=665089&pageNo=1",
+            "published_at": "2026-10-05T00:00:00+09:00",
+            "collected_at": "2026-10-08T11:40:25.721964+09:00",
+            "content_hash": "b999435f6df6f2819a8b25b9886f0c56140a92d53f8e0ee9b7b14677a018673b",
             "source_type": "OFFICIAL_HOMEPAGE"
           }
         ]
@@ -125,150 +92,138 @@
     ],
     "lineage-m": [
       {
-        "title": "아우라키아의 성장 물약 지원 상자 판매 안내",
+        "title": "캐릭터·혈맹 월드이전(Chance) 판매 안내",
         "category": "BM",
         "bm_types": [
-          "GROWTH",
-          "GACHA",
-          "CURRENCY"
+          "CONVENIENCE"
         ],
         "facts": [
           {
-            "text": "판매 기간은 2026-10-07 정기점검 후부터 2026-10-21 정기점검 전까지다.",
+            "text": "캐릭터 월드이전(Chance) 상품이 2026-10-07 18:00부터 10-10 22:59까지 판매되며 가격은 1,200다이아, 계정당 구매 제한 등 상세 조건을 공지했습니다.",
             "evidence_ids": [
-              "a714ee1888dd536ebae5cbba9008f5c9a3833ed5883fb299c01188deeda184c1"
+              "cc48b70ed886a15dcea9eae9b32efaf4dce2373defad6944ac3d861bfa8f9838"
             ]
           },
           {
-            "text": "상자 구성품은 아우라키아의 성장 물약 15개·세계수 카드 뽑기팩 제작 티켓 1개·종합 코인 선택 상자 2개고 계정당 전체 서버 통합 16회 구매 제한이다.",
+            "text": "혈맹 월드이전(Chance)도 동일 기간 판매되며 혈맹명 이전 규정, 동의 절차, 군주·혈맹원 구매 흐름 등 세부 절차를 안내했습니다.",
             "evidence_ids": [
-              "a714ee1888dd536ebae5cbba9008f5c9a3833ed5883fb299c01188deeda184c1"
+              "da86d75d813d2f5e052f1993ceceac36b75904f7859dd1b056c33e30ad80fde1"
             ]
           },
           {
-            "text": "아우라키아의 성장 물약 사용 시 즉시 20,000,000EXP 획득과 1시간 버프(경험치+70% 등) 적용되며 버프 만료 시 명예 주화 15개를 지급한다.",
+            "text": "자주 묻는 질문(Q&A) 공지에서 이전 불가 조건, 켄트·오렌 서버 적용, 성 소유권·세금 처리, 복구 정보 등 이용자 문의 주요 항목을 상세 안내했습니다.",
             "evidence_ids": [
-              "a714ee1888dd536ebae5cbba9008f5c9a3833ed5883fb299c01188deeda184c1"
+              "ac6f11b594abd27758b7bae85e3a9a3bb1c2703cde6e7862534dd94bf873cd46"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "유료 상자에 즉시 경험치와 시간제 버프가 포함되어 있어 성장 가속 화폐성·확률형 구성 요소가 혼재된 BM 상품으로 판단된다.",
+            "text": "유료 서버이전 상품은 캐릭터·혈맹별로 구매 조건과 제한이 복잡하므로 안내된 예외(용병 파견·보관함 아이템·지배석 개수 등)에 따른 구매 불가 상황이 다수 발생할 수 있습니다.",
             "evidence_ids": [
-              "a714ee1888dd536ebae5cbba9008f5c9a3833ed5883fb299c01188deeda184c1"
+              "cc48b70ed886a15dcea9eae9b32efaf4dce2373defad6944ac3d861bfa8f9838",
+              "da86d75d813d2f5e052f1993ceceac36b75904f7859dd1b056c33e30ad80fde1",
+              "ac6f11b594abd27758b7bae85e3a9a3bb1c2703cde6e7862534dd94bf873cd46"
+            ]
+          },
+          {
+            "text": "혈맹 이전은 군주가 최종 서버를 선택하는 구조로 혈맹원은 이전 서버를 사전 확인할 수 없어 동의 기반의 리스크가 존재합니다.",
+            "evidence_ids": [
+              "da86d75d813d2f5e052f1993ceceac36b75904f7859dd1b056c33e30ad80fde1",
+              "ac6f11b594abd27758b7bae85e3a9a3bb1c2703cde6e7862534dd94bf873cd46"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "판매 초기 사용자 반응(불만·호응)과 구매 집중 여부는 공식 근거에 없다."
+          "상품 재판매 빈도 및 향후 동일·유사 상품의 구체적 일정은 공지에 명시되어 있지 않습니다."
         ],
         "evidence": [
           {
-            "evidence_id": "a714ee1888dd536ebae5cbba9008f5c9a3833ed5883fb299c01188deeda184c1",
+            "evidence_id": "ac6f11b594abd27758b7bae85e3a9a3bb1c2703cde6e7862534dd94bf873cd46",
             "classification": "OFFICIAL_FACT",
-            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ac54c386b722c561dc6aa1f",
-            "published_at": "2026-10-07T04:30:00.001000+09:00",
-            "collected_at": "2026-10-07T11:18:28.551352+09:00",
-            "content_hash": "f81ea4d9f3fd83f713e22a27d5c117ef9382bc2a97afab1a5ad208947dd32c75",
+            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ac5edf06b722c561dc6aa72",
+            "published_at": "2026-10-07T16:00:00.089000+09:00",
+            "collected_at": "2026-10-08T11:40:25.721964+09:00",
+            "content_hash": "d87e41a78d775bb2740435b8e7ce7b6128c4d362a77786e50c62f1f267d35d03",
+            "source_type": "OFFICIAL_HOMEPAGE"
+          },
+          {
+            "evidence_id": "cc48b70ed886a15dcea9eae9b32efaf4dce2373defad6944ac3d861bfa8f9838",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ac5edf0fa34c1011d627b39",
+            "published_at": "2026-10-07T16:00:00.374000+09:00",
+            "collected_at": "2026-10-08T11:40:25.721964+09:00",
+            "content_hash": "668327f05bb25ca58fd61c2031b401f48fab81650db13cc0794a97fd1b91b222",
+            "source_type": "OFFICIAL_HOMEPAGE"
+          },
+          {
+            "evidence_id": "da86d75d813d2f5e052f1993ceceac36b75904f7859dd1b056c33e30ad80fde1",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ac5edf06b722c561dc6aa74",
+            "published_at": "2026-10-07T16:00:00.089000+09:00",
+            "collected_at": "2026-10-08T11:40:25.721964+09:00",
+            "content_hash": "fb6c47a74a4adb932f0358c5dfee6f62d2a6d5c465c16d2287db68cebc2f6851",
             "source_type": "OFFICIAL_HOMEPAGE"
           }
         ]
       },
       {
-        "title": "마프르의 신비한 상자 판매 안내",
-        "category": "BM",
-        "bm_types": [
-          "GACHA",
-          "CURRENCY",
-          "GROWTH"
-        ],
-        "facts": [
-          {
-            "text": "판매 기간은 2026-10-07 정기점검 후부터 2026-10-21 정기점검 전까지며 구글 플레이 기준 가격은 11,000원이다.",
-            "evidence_ids": [
-              "f4f92a0e3d1dccb382106f753222c39e8755357ae4fe49f6a9c04a9b8097922c"
-            ]
-          },
-          {
-            "text": "상자 구성품은 세계수 카드 뽑기팩 제작 티켓·마프르의 증표 상자·기사단 기부 증서 등과 명예 코인·드래곤의 다이아몬드가 포함되며 계정당 주간 구매 제한이 적용된다.",
-            "evidence_ids": [
-              "f4f92a0e3d1dccb382106f753222c39e8755357ae4fe49f6a9c04a9b8097922c"
-            ]
-          },
-          {
-            "text": "마프르의 증표 상자는 정해진 확률로 기사단의 증표(다양한 수량)를 획득하는 확률형 보상이다.",
-            "evidence_ids": [
-              "f4f92a0e3d1dccb382106f753222c39e8755357ae4fe49f6a9c04a9b8097922c"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "유료 상자에 확률형(뽑기) 요소와 재화·성장 보상이 혼합되어 있어 재화 획득과 확률형 보상 중심의 BM으로 분류된다.",
-            "evidence_ids": [
-              "f4f92a0e3d1dccb382106f753222c39e8755357ae4fe49f6a9c04a9b8097922c"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [
-          "실제 확률 수치와 사용자별 구매 패턴, 스토어별 가격 차이의 영향은 공지에 구체화되어 있지 않다."
-        ],
-        "evidence": [
-          {
-            "evidence_id": "f4f92a0e3d1dccb382106f753222c39e8755357ae4fe49f6a9c04a9b8097922c",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ac54c386b722c561dc6aa1c",
-            "published_at": "2026-10-07T04:30:00.001000+09:00",
-            "collected_at": "2026-10-07T11:18:28.551352+09:00",
-            "content_hash": "1859019833e05496bf512ef67cb7e0870f977e3923bb21acf43079b7823dd1ea",
-            "source_type": "OFFICIAL_HOMEPAGE"
-          }
-        ]
-      },
-      {
-        "title": "10월 7일 정기점검 완료 안내",
+        "title": "임시점검 완료(보상 지급) 및 황혼 산맥 디펜스 현상 수정",
         "category": "MAINTENANCE",
         "bm_types": [],
         "facts": [
           {
-            "text": "10월 7일 정기점검이 완료되어 현재 정상적으로 게임 접속이 가능하다고 공지되었다.",
+            "text": "10월 7일 임시점검이 완료되어 17:05부터 정상 접속이 가능하다고 안내했습니다.",
             "evidence_ids": [
-              "97fff8b1049df9ea874ce0c0d62bcb1fdc71d00ff0c410c322e43e9bbf8371a5"
+              "c8dd3128fc8b771fe6d1027096766d74a9e5f40e27035882169d7e13196ddd4a"
             ]
           },
           {
-            "text": "점검 공지에는 점검 예정 시간(최초 공지 예시로 04:30~06:20 등)과 점검 중 게임 이용 제한 안내가 포함되어 있었다.",
+            "text": "임시점검 보상으로 드래곤의 고급 다이아몬드 등 아이템을 10월 7일 17:20부터 순차 지급한다고 안내했습니다.",
             "evidence_ids": [
-              "97fff8b1049df9ea874ce0c0d62bcb1fdc71d00ff0c410c322e43e9bbf8371a5"
+              "c8dd3128fc8b771fe6d1027096766d74a9e5f40e27035882169d7e13196ddd4a"
+            ]
+          },
+          {
+            "text": "시즌 던전 황혼 산맥 디펜스에 이전 시즌 콜라보 서포터가 출현하는 현상을 확인하고 수정 완료되었음을 공지했습니다.",
+            "evidence_ids": [
+              "6e846386577c1b6aaa973973068e68763760d1bf17793d67555ec744b2f50ddc",
+              "c8dd3128fc8b771fe6d1027096766d74a9e5f40e27035882169d7e13196ddd4a"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "정기점검 완료 공지는 서비스 정상화 상태를 공식적으로 확인하는 내용이며 점검 시간표가 공지되었음을 의미한다.",
+            "text": "임시점검 관련 보상은 접속 기록 기준 우편으로 지급되며 수령 기한과 아이템 삭제 일자를 공지해 보상 수령 요건이 명확히 설정되었습니다.",
             "evidence_ids": [
-              "97fff8b1049df9ea874ce0c0d62bcb1fdc71d00ff0c410c322e43e9bbf8371a5"
+              "c8dd3128fc8b771fe6d1027096766d74a9e5f40e27035882169d7e13196ddd4a"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "점검 중 발생한 특정 버그·제재·복구 조치 내역은 공지에 상세히 명시되어 있지 않다."
+          "임시점검 원인(발생 근본 원인)에 대한 상세 기술적 설명은 공지에 포함되어 있지 않습니다."
         ],
         "evidence": [
           {
-            "evidence_id": "97fff8b1049df9ea874ce0c0d62bcb1fdc71d00ff0c410c322e43e9bbf8371a5",
+            "evidence_id": "6e846386577c1b6aaa973973068e68763760d1bf17793d67555ec744b2f50ddc",
             "classification": "OFFICIAL_FACT",
-            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ac4d4b06b722c561dc6a9d0",
-            "published_at": "2026-10-06T20:00:00.580000+09:00",
-            "collected_at": "2026-10-07T11:18:28.551352+09:00",
-            "content_hash": "0c03439c45a31314e85011767265ce04cbd7d788b1c1289e93a3805215d4188e",
+            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ac5db5da279104f7d9d6030",
+            "published_at": "2026-10-07T14:40:45.100000+09:00",
+            "collected_at": "2026-10-08T11:40:25.721964+09:00",
+            "content_hash": "c77dd021ca915060f023a74df695e885b645544770ee2b91495f6572e77d53d5",
+            "source_type": "OFFICIAL_HOMEPAGE"
+          },
+          {
+            "evidence_id": "c8dd3128fc8b771fe6d1027096766d74a9e5f40e27035882169d7e13196ddd4a",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ac5edf0fa34c1011d627b68",
+            "published_at": "2026-10-07T15:44:00.001000+09:00",
+            "collected_at": "2026-10-08T11:40:25.721964+09:00",
+            "content_hash": "ae56396b8c19ff52ca070960a52401b517aaf2d1a2c1512720a812b717b594ff",
             "source_type": "OFFICIAL_HOMEPAGE"
           }
         ]
@@ -276,106 +231,228 @@
     ],
     "seven-knights-rebirth": [
       {
-        "title": "10월 6일 서버 순차 및 데이터 패치 안내 완료",
-        "category": "MAINTENANCE",
-        "bm_types": [],
+        "title": "일부 상품 판매 종료 및 일일 상점 누적 보상 변경 안내",
+        "category": "BM",
+        "bm_types": [
+          "CONVENIENCE",
+          "OTHER"
+        ],
         "facts": [
           {
-            "text": "10월 6일 서버 순차 및 데이터 패치가 진행되었으며 패치 중 간헐적 순단이 발생할 수 있고 재접속 시 내용이 반영된다고 안내했다.",
+            "text": "운영 공지: 10월 15일 점검 이후 일부 상품의 판매가 종료되고 일일 상점 내 누적 구매 보상이 변경된다.",
             "evidence_ids": [
-              "d33e844bca359ff0081f178450bf49364e0cd8a32db6da7066e460f391e9ba85"
+              "0a7ff3184e0b4bfc4e6a6b75814806bace1358aca8339bb32e05425b091973ab"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "공식 공지에 따르면 패치 적용 방식과 잠재적 연결 영향이 사전 고지되어 있어 사용자 재접속 안내가 필요하다는 점이 명시되어 있다.",
+            "text": "공지에 따라 판매 종료 및 보상 변경 대상은 점검일(10월 15일) 이후 적용되므로 유저들의 구매 시점과 환불·문의 가능성이 발생할 수 있다.",
             "evidence_ids": [
-              "d33e844bca359ff0081f178450bf49364e0cd8a32db6da7066e460f391e9ba85"
+              "0a7ff3184e0b4bfc4e6a6b75814806bace1358aca8339bb32e05425b091973ab"
+            ]
+          },
+          {
+            "text": "판매 종료 대상 및 누적 보상 변경의 구체적 항목은 공지 본문에서 확인해야 하며, 상세 내용에 따라 유저 반응과 운영 처리 범위가 달라질 수 있다.",
+            "evidence_ids": [
+              "0a7ff3184e0b4bfc4e6a6b75814806bace1358aca8339bb32e05425b091973ab"
             ]
           }
         ],
         "conflicts": [],
-        "unknowns": [],
+        "unknowns": [
+          "판매 종료 대상의 전체 목록과 각 항목별 보상 변경 상세 내용",
+          "보상 변경에 따른 환불 정책 또는 보상 보완 계획 여부"
+        ],
         "evidence": [
           {
-            "evidence_id": "d33e844bca359ff0081f178450bf49364e0cd8a32db6da7066e460f391e9ba85",
+            "evidence_id": "0a7ff3184e0b4bfc4e6a6b75814806bace1358aca8339bb32e05425b091973ab",
             "classification": "OFFICIAL_FACT",
-            "url": "https://forum.netmarble.com/sena_rebirth/view/20/2114",
-            "published_at": "2026-10-06T17:56:32.764000+09:00",
-            "collected_at": "2026-10-07T11:18:28.551352+09:00",
-            "content_hash": "82c78146123a664c5a6a43a5e2713195ac4dd7c3ae4d10d279682d612cbf8fc3",
+            "url": "https://forum.netmarble.com/sena_rebirth/view/20/2118",
+            "published_at": "2026-10-07T18:00:07.952000+09:00",
+            "collected_at": "2026-10-08T11:40:25.721964+09:00",
+            "content_hash": "33d6ca11722363122831873f7ed4957c0a07cb332fe65d390f54c919e06fb59c",
+            "source_type": "OFFICIAL_COMMUNITY"
+          }
+        ]
+      }
+    ],
+    "epic-seven": [
+      {
+        "title": "STEAM 정식 출시 일정·신규 서버 ‘파운드리’·데모 안내",
+        "category": "UPDATE",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "STEAM 정식 론칭 일정은 10/29(목) 점검 후이며 드래프트 아레나·기사단 전쟁·월드 아레나는 순차 오픈 예정이라는 안내가 게시되었습니다.",
+            "evidence_ids": [
+              "a7e8c657e633851fca8bddcfa92891f98063d14cda1d4a05588bd9cf09e73524"
+            ]
+          },
+          {
+            "text": "신규 서버 '파운드리'가 10/29(목) 점검 후 오픈되며 성장 지원 버프, 한정 이벤트·무료 소환 보상 등이 제공된다고 안내되었습니다.",
+            "evidence_ids": [
+              "a7e8c657e633851fca8bddcfa92891f98063d14cda1d4a05588bd9cf09e73524"
+            ]
+          },
+          {
+            "text": "스팀 넥스트 페스트 기간(10/8~10/27) 에픽세븐 데모가 공개되며, 데모 보상 지급 및 데모 데이터는 초기화된다고 공지되었습니다.",
+            "evidence_ids": [
+              "04f3d2b13c2ef9f64c7ffcdab68c5b3598c8c409ed580a8a51ce3135c813d35e"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "스팀 정식 론칭 공지와 데모 공지는 스팀에서의 플레이 전환·신규 서버 진입을 위한 사전 안내와 보상·버프 계획을 포함합니다.",
+            "evidence_ids": [
+              "a7e8c657e633851fca8bddcfa92891f98063d14cda1d4a05588bd9cf09e73524",
+              "04f3d2b13c2ef9f64c7ffcdab68c5b3598c8c409ed580a8a51ce3135c813d35e"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "스팀 정식 론칭 시 기존 플랫폼과의 계정 이관 과정에서 발생할 수 있는 특정 오류 빈도나 사례에 대한 공식 집계는 공개되지 않았습니다."
+        ],
+        "evidence": [
+          {
+            "evidence_id": "04f3d2b13c2ef9f64c7ffcdab68c5b3598c8c409ed580a8a51ce3135c813d35e",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://page.onstove.com/epicseven/kr/view/14571550",
+            "published_at": "2026-10-07T19:30:06.523000+09:00",
+            "collected_at": "2026-10-08T11:40:25.721964+09:00",
+            "content_hash": "bed2443e7257e156a2d438bc79428c369b07bc0bb84f3f0e032de7a8798bb85a",
+            "source_type": "OFFICIAL_COMMUNITY"
+          },
+          {
+            "evidence_id": "a7e8c657e633851fca8bddcfa92891f98063d14cda1d4a05588bd9cf09e73524",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://page.onstove.com/epicseven/kr/view/14571655",
+            "published_at": "2026-10-07T19:30:08.200000+09:00",
+            "collected_at": "2026-10-08T11:40:25.721964+09:00",
+            "content_hash": "a3c466ed8e1163262f32506776b2889d2d2ecee1d3bf2a810e43c47ecc225a96",
             "source_type": "OFFICIAL_COMMUNITY"
           }
         ]
       },
       {
-        "title": "10월 1일 업데이트 상세 안내 및 콜라보 공지",
-        "category": "COLLAB",
+        "title": "신규 영웅 ‘메이린’·한정 아티팩트·콜라보 이벤트 안내",
+        "category": "EVENT",
         "bm_types": [],
         "facts": [
           {
-            "text": "10월 1일 업데이트 상세 내용에 세븐나이츠 리버스 x 귀멸의 칼날 콜라보레이션 진행을 포함한 업데이트 항목들을 안내했다.",
+            "text": "신규 ★5 영웅 '메이린'이 10/8 점검 후 한정 소환으로 등장하며 월드 아레나 E7WC 그룹 스테이지에서 글로벌 금지 대상으로 설정됩니다.",
             "evidence_ids": [
-              "3f24014965ca35b9d8d785439375a03cd2516d5e5f3d710cad238adff8014305"
+              "68f330a606657337e8fe44b8e942f90e1b33278d39444f643bf36172944fd506"
+            ]
+          },
+          {
+            "text": "도적 전용 ★5 아티팩트 '화룡의 보석'이 추가되고 해당 아티팩트는 한정 소환에서만 획득 가능하며 E7WC 그룹 스테이지에서 글로벌 금지 대상으로 설정됩니다.",
+            "evidence_ids": [
+              "68f330a606657337e8fe44b8e942f90e1b33278d39444f643bf36172944fd506"
+            ]
+          },
+          {
+            "text": "『카오스 제로 나이트메어』 콜라보 기념 '메이린과 함께!' 이벤트(10/8 점검 후~10/29)로 티켓 수집·뽑기형 교환소 보상이 안내되었습니다.",
+            "evidence_ids": [
+              "9d69e580af23d87afc698ff413b065f98a65b9bc7a97e5533dbdd6825b3a4f22",
+              "68f330a606657337e8fe44b8e942f90e1b33278d39444f643bf36172944fd506"
             ]
           }
         ],
-        "claims": [],
+        "claims": [
+          {
+            "text": "커뮤니티 게시글에서 콜라보 OST 관련 강한 반감과 부정적 표현이 관찰되었습니다.",
+            "evidence_ids": [
+              "b3be0e14a1e9c7bb5738f19fdd3a22e94735c17f57248fb0384444e4144e15a2"
+            ]
+          }
+        ],
         "interpretation": [
           {
-            "text": "공식 업데이트 공지에 콜라보를 명시해 마케팅·콘텐츠 일정의 공식화가 이루어진 상태임을 확인할 수 있다.",
+            "text": "메이린·화룡의 보석 한정 소환과 콜라보 이벤트는 기간 한정 수급·교환 수단을 통해 플레이어의 접속·소비 유인이 발생할 가능성이 높습니다.",
             "evidence_ids": [
-              "3f24014965ca35b9d8d785439375a03cd2516d5e5f3d710cad238adff8014305"
+              "68f330a606657337e8fe44b8e942f90e1b33278d39444f643bf36172944fd506",
+              "9d69e580af23d87afc698ff413b065f98a65b9bc7a97e5533dbdd6825b3a4f22"
             ]
           }
         ],
         "conflicts": [],
-        "unknowns": [],
+        "unknowns": [
+          "커뮤니티 반응이 콜라보의 특정 요소(예: OST 포함 내용)에 기인한 것인지, 또는 전체적 기획에 대한 반응인지는 공개 근거만으로 판별되지 않습니다."
+        ],
         "evidence": [
           {
-            "evidence_id": "3f24014965ca35b9d8d785439375a03cd2516d5e5f3d710cad238adff8014305",
+            "evidence_id": "68f330a606657337e8fe44b8e942f90e1b33278d39444f643bf36172944fd506",
             "classification": "OFFICIAL_FACT",
-            "url": "https://forum.netmarble.com/sena_rebirth/view/10/2080",
-            "published_at": "2026-09-30T20:00:22.470000+09:00",
-            "collected_at": "2026-10-07T11:18:28.551352+09:00",
-            "content_hash": "fddd08103f7cec49566ca52aa3422a7027e613271c0248543ee84f2269162022",
+            "url": "https://page.onstove.com/epicseven/kr/view/14571019",
+            "published_at": "2026-10-07T19:30:02.662000+09:00",
+            "collected_at": "2026-10-08T11:40:25.721964+09:00",
+            "content_hash": "90c0d1fd6f08abe870f1a7950ce45f10fc6232f6c447533d3e7867d975c6cb51",
             "source_type": "OFFICIAL_COMMUNITY"
+          },
+          {
+            "evidence_id": "9d69e580af23d87afc698ff413b065f98a65b9bc7a97e5533dbdd6825b3a4f22",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://page.onstove.com/epicseven/kr/view/14570890",
+            "published_at": "2026-10-07T19:30:01.263000+09:00",
+            "collected_at": "2026-10-08T11:40:25.721964+09:00",
+            "content_hash": "684ef9330a747ab9e2924909273f08763bb70c431a7fa2debe81d545694126ec",
+            "source_type": "OFFICIAL_COMMUNITY"
+          },
+          {
+            "evidence_id": "b3be0e14a1e9c7bb5738f19fdd3a22e94735c17f57248fb0384444e4144e15a2",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=epicseven&no=2726021",
+            "published_at": "2026-10-08T11:41:07+09:00",
+            "collected_at": "2026-10-08T11:41:47.791061+09:00",
+            "content_hash": "95db3f8d76580f21ab44de70f94d95bb317c5a634741159e1f98e2fba845752e",
+            "source_type": "PUBLIC_COMMUNITY"
           }
         ]
       },
       {
-        "title": "10/1 업데이트 후 확인된 현상 안내(수정 진행 중)",
-        "category": "MAINTENANCE",
+        "title": "대난투 출전 ★5 영웅 소환권 등급별 확률 변경 사전 안내",
+        "category": "UPDATE",
         "bm_types": [],
         "facts": [
           {
-            "text": "10월 1일 업데이트 이후 발생한 확인된 현상들을 안내했으며 원인 확인 및 수정을 진행 중이라고 공지했다.",
+            "text": "10/8(목) 업데이트 이후 대난투 출전 ★5 영웅 소환권의 개별 등급 확률이 콜리·라비·세크레트 각 33.3333%로 갱신된다고 사전 공지되었습니다.",
             "evidence_ids": [
-              "19fb9ebcce3a25a7767c77bb86f2e907b6157a100f769f739770c29aa4a109b4"
+              "ed3a2806e9ee8f27aa6efe4cf029b4db93a66d151195df9b68bee541e1edbdea"
+            ]
+          },
+          {
+            "text": "공개 확률은 소수점 다섯째 자리에서 반올림해 넷째 자리까지 안내되며, 법령에 따라 합산 결과가 100%가 되지 않을 수 있음을 명시했습니다.",
+            "evidence_ids": [
+              "ed3a2806e9ee8f27aa6efe4cf029b4db93a66d151195df9b68bee541e1edbdea"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "공식 문서상 문제 발생을 인정하고 수정 중임을 공지하여 향후 패치나 보상 관련 추가 공지가 예상된다는 점이 드러난다.",
+            "text": "확률 표기는 법규 준수 절차를 따르며, 반올림 방식으로 인해 합계 불일치 가능성을 사전에 고지한 형태입니다.",
             "evidence_ids": [
-              "19fb9ebcce3a25a7767c77bb86f2e907b6157a100f769f739770c29aa4a109b4"
+              "ed3a2806e9ee8f27aa6efe4cf029b4db93a66d151195df9b68bee541e1edbdea"
             ]
           }
         ],
         "conflicts": [],
-        "unknowns": [],
+        "unknowns": [
+          "변경 확률이 실제 인게임 확률 표시에 어떻게 반영되는지(예: UI 표기 방식 및 업데이트 후 유효 시점)에 대한 상세 방식은 추후 인게임 안내를 통해 확인해야 합니다."
+        ],
         "evidence": [
           {
-            "evidence_id": "19fb9ebcce3a25a7767c77bb86f2e907b6157a100f769f739770c29aa4a109b4",
+            "evidence_id": "ed3a2806e9ee8f27aa6efe4cf029b4db93a66d151195df9b68bee541e1edbdea",
             "classification": "OFFICIAL_FACT",
-            "url": "https://forum.netmarble.com/sena_rebirth/view/11/2100",
-            "published_at": "2026-10-01T12:02:31.970000+09:00",
-            "collected_at": "2026-10-07T11:18:28.551352+09:00",
-            "content_hash": "14cb713e3eae40ba75e7e006e1c649f8d724dec1c55db3ceee57d5ea17f43723",
+            "url": "https://page.onstove.com/epicseven/kr/view/14571882",
+            "published_at": "2026-10-07T20:00:00.578000+09:00",
+            "collected_at": "2026-10-08T11:40:25.721964+09:00",
+            "content_hash": "ff6a9f614cf30612e65a6d07054fe3ea76e9f5d6d08c89ceb4de885b2cab2a02",
             "source_type": "OFFICIAL_COMMUNITY"
           }
         ]
@@ -383,265 +460,181 @@
     ],
     "nikke": [
       {
-        "title": "벨로타: 펌킨 위치 모션뷰·프로필 공개",
-        "category": "CHARACTER",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "공식 유튜브에 벨로타: 펌킨 위치 모션 VIEW 영상이 게시되어 캐릭터와 스킬 개요를 안내했다.",
-            "evidence_ids": [
-              "dce57de343ae27aac95a6a0014c5311b4916a68ea2ae31a7305e69f090128f9b",
-              "7b6d714e868b6175bca6773071f5004af6f94a2287cf01e01a41cbe144582f31"
-            ]
-          },
-          {
-            "text": "공식 프로필 영상에서 벨로타의 제조사, 소속 부대, 사용 무기([RL] 캔디 샷)를 안내했다.",
-            "evidence_ids": [
-              "eb9da7d99bb1f34d9513479355ec98753905389b0f38fbf84c09398d5aec44af"
-            ]
-          },
-          {
-            "text": "공식 설명은 벨로타가 아군 공격 능력을 강화하는 지원형 니케이며 버스트 사용 시 추가 강화가 발생한다고 기재한다.",
-            "evidence_ids": [
-              "dce57de343ae27aac95a6a0014c5311b4916a68ea2ae31a7305e69f090128f9b"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "공식 자료는 캐릭터 콘셉트와 역할, 장비 유형을 중심으로 소개하며 스킬 세부 수치는 추후 변경될 수 있음을 명시한다.",
-            "evidence_ids": [
-              "dce57de343ae27aac95a6a0014c5311b4916a68ea2ae31a7305e69f090128f9b"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [
-          "스킬의 수치·세부 동작이 최종 확정인지 여부(공식은 변경 가능성 표기)."
-        ],
-        "evidence": [
-          {
-            "evidence_id": "7b6d714e868b6175bca6773071f5004af6f94a2287cf01e01a41cbe144582f31",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/h-ynRE1v12c",
-            "published_at": "2026-10-07T11:00:30+09:00",
-            "collected_at": "2026-10-07T11:19:06.164318+09:00",
-            "content_hash": "1ca7aac9e0ce2cb34ac812aa5fea17d9cf98597285d124ef7a75b524ff6b079a",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "dce57de343ae27aac95a6a0014c5311b4916a68ea2ae31a7305e69f090128f9b",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=sXC-uH44brc",
-            "published_at": "2026-10-07T11:00:10+09:00",
-            "collected_at": "2026-10-07T11:19:06.164318+09:00",
-            "content_hash": "1ca7aac9e0ce2cb34ac812aa5fea17d9cf98597285d124ef7a75b524ff6b079a",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "eb9da7d99bb1f34d9513479355ec98753905389b0f38fbf84c09398d5aec44af",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/CVidzzXcVbk",
-            "published_at": "2026-10-03T12:30:26+09:00",
-            "collected_at": "2026-10-07T11:19:06.164318+09:00",
-            "content_hash": "599836eb244b91a0e74e1fde9082cebb2f969c75757b1b2f83b458200a479922",
-            "source_type": "OFFICIAL_YOUTUBE"
-          }
-        ]
-      },
-      {
-        "title": "노벨 한정 코스튬 재판매 안내",
+        "title": "10월 8일 점검·업데이트 및 특수 모집(가챠)·한정 코스튬 안내",
         "category": "BM",
         "bm_types": [
-          "COSMETIC"
+          "GACHA",
+          "CHARACTER",
+          "COSMETIC",
+          "CONTENT_ACCESS"
         ],
         "facts": [
           {
-            "text": "공식 라운지에 노벨 코스튬 '디텍티브 너스'가 코스튬 상점에서 재판매된다고 공지했다.",
+            "text": "10월 8일(목) 11:00~15:00 서버 점검이 예정되어 있으며 점검 중 접속 불가 및 보상은 추후 안내 예정이라고 공지되었습니다.",
             "evidence_ids": [
-              "7e6f5871b286961e1c9903f6240e33e4a9f73d9b12d4e083931cdc6f8fe8ed55"
+              "10fcc4a82ca96ddc73fd91de12f6860d34cc2a02df48d72bc27acd581555e531"
             ]
           },
           {
-            "text": "공식 안내에 따르면 판매 기간은 10/8 점검 후부터 10/28 23:59까지로 표기되어 있다.",
+            "text": "SSR 신규 니케 '벨로타 : 펌킨 위치'가 특수 모집에 합류하며 특수 모집 SSR 확률은 4%, 해당 픽업 비율은 2%로 안내되었습니다.",
             "evidence_ids": [
-              "7e6f5871b286961e1c9903f6240e33e4a9f73d9b12d4e083931cdc6f8fe8ed55"
+              "10fcc4a82ca96ddc73fd91de12f6860d34cc2a02df48d72bc27acd581555e531"
+            ]
+          },
+          {
+            "text": "특수 모집 기간은 점검 종료 후~2026-10-28 23:59:59이며 골드 마일리지 티켓(200개)으로 해당 니케 획득 가능하고 기간 종료 후에도 일반 경로로 획득 가능하다고 명시되었습니다.",
+            "evidence_ids": [
+              "10fcc4a82ca96ddc73fd91de12f6860d34cc2a02df48d72bc27acd581555e531"
             ]
           }
         ],
-        "claims": [],
+        "claims": [
+          {
+            "text": "점검 시작 직전 일부 이용자가 점검 전까지 콘텐츠를 빠르게 깨기 위해 달렸다는 게시글이 확인됩니다.",
+            "evidence_ids": [
+              "8e51392a4118722400e1338a32d28a0d880a0c439a0ac550f228e023a832f939"
+            ]
+          }
+        ],
         "interpretation": [
           {
-            "text": "공식 공지는 특정 기간 한정으로 코스튬을 상점에 재진열해 유료 획득 경로를 열어둔다는 점을 명확히 전달한다.",
+            "text": "공식 공지는 점검 시간·픽업·코스튬 판매 등 운영 일정을 포함하므로 점검 보상 세부내역이 미확정인 점은 이용자 문의를 유발할 수 있습니다.",
             "evidence_ids": [
-              "7e6f5871b286961e1c9903f6240e33e4a9f73d9b12d4e083931cdc6f8fe8ed55"
+              "10fcc4a82ca96ddc73fd91de12f6860d34cc2a02df48d72bc27acd581555e531"
+            ]
+          },
+          {
+            "text": "게시글 표본은 점검 직전 플레이어의 '사전 돌파' 행동을 보여주며, 점검 전 플레이 패턴 변동 가능성을 시사합니다.",
+            "evidence_ids": [
+              "8e51392a4118722400e1338a32d28a0d880a0c439a0ac550f228e023a832f939"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "재판매 이후 해당 코스튬의 재판매 빈도나 향후 재출시 계획 여부."
+          "점검 보상(종류·수량) 세부 내용은 공지에서 '추후 안내'로 남아 있어 현재 확인 불가합니다.",
+          "점검 연장 시 보상 기준과 지급 지연에 대한 구체적 절차 및 시점은 공지에 상세 기재되지 않았습니다."
         ],
         "evidence": [
           {
-            "evidence_id": "7e6f5871b286961e1c9903f6240e33e4a9f73d9b12d4e083931cdc6f8fe8ed55",
+            "evidence_id": "10fcc4a82ca96ddc73fd91de12f6860d34cc2a02df48d72bc27acd581555e531",
             "classification": "OFFICIAL_FACT",
-            "url": "https://game.naver.com/lounge/nikke/board/detail/8294018",
-            "published_at": "2026-10-06T18:00:37+09:00",
-            "collected_at": "2026-10-07T11:18:28.551352+09:00",
-            "content_hash": "cfd8bf49364002aa550548af290c7883cf836e41e16258250a5a5a874b022c98",
+            "url": "https://game.naver.com/lounge/nikke/board/detail/8289927",
+            "published_at": "2026-10-05T17:00:53+09:00",
+            "collected_at": "2026-10-08T11:40:25.721964+09:00",
+            "content_hash": "ea95f045c78021d2c37bc23d92ed0bf81ba47f2ae4c441a19ccd1a02f12b325f",
             "source_type": "OFFICIAL_COMMUNITY"
-          }
-        ]
-      },
-      {
-        "title": "4주년 특별 방송 일정 공개",
-        "category": "MARKETING",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "공식 유튜브에서 4주년 기념 특별 방송이 10월 24일 19:00에 진행된다고 안내했다.",
-            "evidence_ids": [
-              "8117f4555de1bc1053e9136296c84dd00159687a1b61a6a8771ba15b004164ea"
-            ]
           },
           {
-            "text": "방송 전 카운트다운 오프닝은 10/24 18:30~19:00로 안내되어 있다.",
-            "evidence_ids": [
-              "8117f4555de1bc1053e9136296c84dd00159687a1b61a6a8771ba15b004164ea"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "공식 채널은 방송 일정과 카운트다운을 통해 기념 행사의 시간적 동선을 사전 안내하고 있다.",
-            "evidence_ids": [
-              "8117f4555de1bc1053e9136296c84dd00159687a1b61a6a8771ba15b004164ea"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [
-          "방송에서 공개될 구체적 콘텐츠(예: 업데이트 세부, 보상, 이벤트 등)에 대한 공식 언급은 현재 없다."
-        ],
-        "evidence": [
-          {
-            "evidence_id": "8117f4555de1bc1053e9136296c84dd00159687a1b61a6a8771ba15b004164ea",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=yxwOMk5RRQY",
-            "published_at": "2026-10-05T10:57:58+09:00",
-            "collected_at": "2026-10-07T11:19:06.164318+09:00",
-            "content_hash": "c18324878d340aa62b9beeeb5154b2648e505bf62805d3a6ac365681f5703177",
-            "source_type": "OFFICIAL_YOUTUBE"
+            "evidence_id": "8e51392a4118722400e1338a32d28a0d880a0c439a0ac550f228e023a832f939",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=gov&no=6288622",
+            "published_at": "2026-10-08T11:30:37+09:00",
+            "collected_at": "2026-10-08T11:41:47.791061+09:00",
+            "content_hash": "0b049609f20d92b75fd9dedf2d4bc38a6abe5aa6e6ce8fe42961f10757c47900",
+            "source_type": "PUBLIC_COMMUNITY"
           }
         ]
       }
     ],
     "trickcal-revive": [
       {
-        "title": "신규 픽업 엘다인 사도 모집 안내(에르핀·우이)",
-        "category": "BM",
-        "bm_types": [
-          "GACHA",
-          "CHARACTER"
-        ],
+        "title": "10월 8일 정기점검 및 예정된 업데이트 안내",
+        "category": "MAINTENANCE",
+        "bm_types": [],
         "facts": [
           {
-            "text": "공식 공지: 신규 사도 비비(신성)·우이(기억)와 함께 엘다인 사도 에르핀(왕도) 픽업 모집이 10/08 정기점검 이후부터 진행된다고 안내했습니다.",
+            "text": "10월 8일(목) 정기점검이 11:00~16:00에 진행되며 점검 중 게임 접속이 불가합니다.",
             "evidence_ids": [
-              "8570ed5b7f43e332f16bf6b80861ca21f514e811e4d8909c996f58db3b4f143e"
+              "6b5ce3a8ffdac70e40888d771570c042fc24342b5b54ce88e030fbb9f9f24f42"
             ]
           },
           {
-            "text": "공식 공지: 동일 기간에 우이 픽업 모집이 10/08 정기점검 이후 ~ 10/22 10:59까지 진행된다고 안내했습니다.",
+            "text": "10월 8일 업데이트 예정 목록과 종료 예정 콘텐츠(사전 안내)가 공지되었습니다.",
             "evidence_ids": [
-              "959de3e2914c537615f6f7a9eca59a4430b6b8322639222c5655e468c2460a39"
+              "ff7b344c1108a17122c740a2cc41cf5fb83afa6d1649b348912fa8c1d3276ac2"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "두 공지는 동일한 픽업 유형을 안내하나 픽업 대상(에르핀·우이)과 종료일(한쪽은 ~10/15, 다른쪽은 ~10/22)이 달라 사용자 혼동 가능성이 있습니다.",
+            "text": "정기점검은 업데이트 적용을 위한 일정이며 점검 시간은 변동 가능하다고 공지되었습니다.",
             "evidence_ids": [
-              "8570ed5b7f43e332f16bf6b80861ca21f514e811e4d8909c996f58db3b4f143e",
-              "959de3e2914c537615f6f7a9eca59a4430b6b8322639222c5655e468c2460a39"
+              "6b5ce3a8ffdac70e40888d771570c042fc24342b5b54ce88e030fbb9f9f24f42"
             ]
-          }
-        ],
-        "conflicts": [
+          },
           {
-            "text": "두 공지의 픽업 종료일과 픽업 대상(에르핀 한 건, 우이 한 건)이 상이하여 동일 이벤트로 볼지 여부에 차이가 있습니다.",
+            "text": "일부 콘텐츠의 종료 및 업데이트 항목이 사전 안내되어 있어 이용자 준비성이 요구됩니다.",
             "evidence_ids": [
-              "8570ed5b7f43e332f16bf6b80861ca21f514e811e4d8909c996f58db3b4f143e",
-              "959de3e2914c537615f6f7a9eca59a4430b6b8322639222c5655e468c2460a39"
+              "ff7b344c1108a17122c740a2cc41cf5fb83afa6d1649b348912fa8c1d3276ac2"
             ]
           }
         ],
-        "unknowns": [],
+        "conflicts": [],
+        "unknowns": [
+          "실제 업데이트 적용 후 변경될 수 있는 세부 항목과 최종 확정 내용"
+        ],
         "evidence": [
           {
-            "evidence_id": "8570ed5b7f43e332f16bf6b80861ca21f514e811e4d8909c996f58db3b4f143e",
+            "evidence_id": "6b5ce3a8ffdac70e40888d771570c042fc24342b5b54ce88e030fbb9f9f24f42",
             "classification": "OFFICIAL_FACT",
-            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/217964?boardtype=L&menuid=14&referrerAllArticles=false",
-            "published_at": "2026-10-06T17:02:27.607000+09:00",
-            "collected_at": "2026-10-07T11:18:28.551352+09:00",
-            "content_hash": "e294c9e2895e6baa888bbe62f24c7a8e9a1a58a571b94b50822d6bd926cfb643",
+            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/218207?boardtype=L&menuid=66&referrerAllArticles=false",
+            "published_at": "2026-10-07T17:01:13.933000+09:00",
+            "collected_at": "2026-10-08T11:40:25.721964+09:00",
+            "content_hash": "8aa1d6fc64aa4eb4dac1aacde35ffbb3bd5d72622658b43b696e6c95a4bd1ce4",
             "source_type": "OFFICIAL_COMMUNITY"
           },
           {
-            "evidence_id": "959de3e2914c537615f6f7a9eca59a4430b6b8322639222c5655e468c2460a39",
+            "evidence_id": "ff7b344c1108a17122c740a2cc41cf5fb83afa6d1649b348912fa8c1d3276ac2",
             "classification": "OFFICIAL_FACT",
-            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/217963?boardtype=L&menuid=14&referrerAllArticles=false",
-            "published_at": "2026-10-06T17:02:07.990000+09:00",
-            "collected_at": "2026-10-07T11:18:28.551352+09:00",
-            "content_hash": "bf376878028c53cce9bea186f7fa6251d077cb45fb5877bbc58769d2f24204e5",
+            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/218208?boardtype=L&menuid=67&referrerAllArticles=false",
+            "published_at": "2026-10-07T17:01:28.450000+09:00",
+            "collected_at": "2026-10-08T11:40:25.721964+09:00",
+            "content_hash": "6677d569ffaf3abd178a0c34f42a95bac47a29eb97e34fac14d338fa489a57dc",
             "source_type": "OFFICIAL_COMMUNITY"
           }
         ]
       },
       {
-        "title": "신규 스펙타클 카드 뽑기 예고",
-        "category": "BM",
-        "bm_types": [
-          "GACHA",
-          "COSMETIC"
-        ],
+        "title": "주말 콘텐츠 '놀이터' 정규 시즌 오픈 공지",
+        "category": "EVENT",
+        "bm_types": [],
         "facts": [
           {
-            "text": "공식 공지: [파스텔빛 소풍] 스펙타클 카드 뽑기 종료 후 신규 스펙타클 카드 뽑기가 10/08 정기점검 이후 ~ 10/22 10:59 기간으로 진행된다고 안내했습니다.",
+            "text": "주말 콘텐츠 '놀이터'의 정규 시즌이 10/09(금) 12:00부터 10/12(월) 03:59까지 진행됩니다.",
             "evidence_ids": [
-              "85a92f2c6235d65a2129a4600c7805efdec2d7b6a0972ad23b637002c0e62781"
+              "695956d09f6c969f4a6f388e79e14cbff06af244c3c8ae8351375d38c58ece53"
             ]
           },
           {
-            "text": "공식 공지: 이벤트 기간 중 카드 10회 뽑기 시 지정된 스펙타클 카드 중 1종을 확정 획득할 수 있다고 명시했습니다.",
+            "text": "공지문에는 규칙 변경 및 테스트 환경에서 촬영된 이미지가 포함되며 실제 적용 시 연출이 달라질 수 있다고 명시되어 있습니다.",
             "evidence_ids": [
-              "85a92f2c6235d65a2129a4600c7805efdec2d7b6a0972ad23b637002c0e62781"
+              "695956d09f6c969f4a6f388e79e14cbff06af244c3c8ae8351375d38c58ece53"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "확정 획득 보상 안내는 유저 기대에 영향을 줄 수 있으므로 보상 획득 조건(10회 뽑기)이 명확히 공지된 점은 전달력이 높습니다.",
+            "text": "정규 시즌 기간과 규칙 변경 예고로 인해 이용자들의 이벤트 참여 계획이 영향을 받을 가능성이 있습니다.",
             "evidence_ids": [
-              "85a92f2c6235d65a2129a4600c7805efdec2d7b6a0972ad23b637002c0e62781"
+              "695956d09f6c969f4a6f388e79e14cbff06af244c3c8ae8351375d38c58ece53"
             ]
           }
         ],
         "conflicts": [],
-        "unknowns": [],
+        "unknowns": [
+          "정규 시즌 규칙의 구체적 변경 내용과 실제 업데이트 적용 시의 최종 연출 차이"
+        ],
         "evidence": [
           {
-            "evidence_id": "85a92f2c6235d65a2129a4600c7805efdec2d7b6a0972ad23b637002c0e62781",
+            "evidence_id": "695956d09f6c969f4a6f388e79e14cbff06af244c3c8ae8351375d38c58ece53",
             "classification": "OFFICIAL_FACT",
-            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/217965?boardtype=L&menuid=14&referrerAllArticles=false",
-            "published_at": "2026-10-06T17:02:38.440000+09:00",
-            "collected_at": "2026-10-07T11:18:28.551352+09:00",
-            "content_hash": "9324bc1c13e1a9660619e0970023c5fd2b3672be28008b1d38601381d0d63900",
+            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/218209?boardtype=L&menuid=67&referrerAllArticles=false",
+            "published_at": "2026-10-07T17:01:40.127000+09:00",
+            "collected_at": "2026-10-08T11:40:25.721964+09:00",
+            "content_hash": "6dd75f9a945af9520fd2e5dadfd0b55f450385997a534191a49eb47248b22701",
             "source_type": "OFFICIAL_COMMUNITY"
           }
         ]
