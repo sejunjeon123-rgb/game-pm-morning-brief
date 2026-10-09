@@ -1173,7 +1173,7 @@
       "title": "[하이라이트] 마음의 들판에 두고 온 기억",
       "content_hash": "5b448e973a8e259af9ac2c95d7cdd15649b7bb7e49b16e3c0cfc6e62caa4a682",
       "first_seen_at": "2026-10-06T11:55:47.345662+09:00",
-      "last_seen_at": "2026-10-06T11:55:47.345662+09:00",
+      "last_seen_at": "2026-10-09T11:55:33.076514+09:00",
       "published_at": "2026-10-05T17:00:35+09:00"
     },
     "https://www.youtube.com/shorts/krDJXT_HjOw": {
@@ -1181,7 +1181,7 @@
       "title": "[주말특집] 신규 꼬까옷 소개 - 피어나는 꽃처럼 #트릭컬 #주말특집",
       "content_hash": "d09e2d9d7c319c1847a8d2a7066071957ec423179a1d9cd7f2c15c6ae74439f4",
       "first_seen_at": "2026-10-06T11:55:47.345662+09:00",
-      "last_seen_at": "2026-10-06T11:55:47.345662+09:00",
+      "last_seen_at": "2026-10-09T11:55:33.076514+09:00",
       "published_at": "2026-10-03T14:01:28+09:00"
     },
     "https://www.youtube.com/watch?v=KBOWx8cBh7I": {
@@ -1255,6 +1255,46 @@
       "first_seen_at": "2026-10-07T11:19:06.164318+09:00",
       "last_seen_at": "2026-10-07T11:19:06.164318+09:00",
       "published_at": "2026-10-03T12:30:26+09:00"
+    },
+    "https://www.youtube.com/watch?v=ikqy4U7UnUk": {
+      "game_id": "epic-seven",
+      "title": "WELCOME TO E7WC2026",
+      "content_hash": "d67f894083a3c095af933bb0c265345887a2cecfef7506c865835160ebd0fca4",
+      "first_seen_at": "2026-10-09T11:55:33.076514+09:00",
+      "last_seen_at": "2026-10-09T11:55:33.076514+09:00",
+      "published_at": "2026-10-08T20:00:24+09:00"
+    },
+    "https://www.youtube.com/watch?v=QRppbngSnjM": {
+      "game_id": "epic-seven",
+      "title": "Steam 10/29 정식 런칭 #에픽세븐",
+      "content_hash": "a6a8099155bbeb285bdcfefa7b8778fd7908b8b3fc2cc272b30b5872937c5207",
+      "first_seen_at": "2026-10-09T11:55:33.076514+09:00",
+      "last_seen_at": "2026-10-09T11:55:33.076514+09:00",
+      "published_at": "2026-10-07T19:32:40+09:00"
+    },
+    "https://www.youtube.com/watch?v=9o6tl6SJjoY": {
+      "game_id": "epic-seven",
+      "title": "받아라... 초속23미터의 985 헥토파스칼 킥! | 패치노트 1분 요약",
+      "content_hash": "b935815f878b48ddbb9d837d37185ee2489bf58df7bc61368d209ffd151e7aa6",
+      "first_seen_at": "2026-10-09T11:55:33.076514+09:00",
+      "last_seen_at": "2026-10-09T11:55:33.076514+09:00",
+      "published_at": "2026-10-07T19:00:32+09:00"
+    },
+    "https://www.youtube.com/watch?v=nY33MUGdSVY": {
+      "game_id": "trickcal-revive",
+      "title": "[업데이트] 10월 8일(목) 신규 업데이트 내역 안내",
+      "content_hash": "544c9048d3307dd530550fa8cc66e856f27919d14e49d8689d79889db3bcb1e7",
+      "first_seen_at": "2026-10-09T11:55:33.076514+09:00",
+      "last_seen_at": "2026-10-09T11:55:33.076514+09:00",
+      "published_at": "2026-10-08T13:01:33+09:00"
+    },
+    "https://www.youtube.com/watch?v=FRlDXZLdCqc": {
+      "game_id": "trickcal-revive",
+      "title": "[트릭컬 리바이브 🎬 재개봉] 맺혀 떨어진 기억의 연못 PV",
+      "content_hash": "c7ba301353a2895075ce21bb5bea6b02b60b6db88e8d566d825300f8065563d1",
+      "first_seen_at": "2026-10-09T11:55:33.076514+09:00",
+      "last_seen_at": "2026-10-09T11:55:33.076514+09:00",
+      "published_at": "2026-10-06T17:04:39+09:00"
     }
   }
 }
