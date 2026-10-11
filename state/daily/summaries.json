@@ -1,318 +1,91 @@
 {
-  "date": "2026-10-10",
+  "date": "2026-10-11",
   "version": "compact-v1-relevance-v2",
   "games": {
-    "odin-valhalla-rising": [],
-    "lineage-m": [
+    "black-desert-mobile": [
       {
-        "title": "시련의 주화 지원 패키지 판매 안내",
-        "category": "BM",
-        "bm_types": [
-          "GACHA",
-          "CURRENCY",
-          "GROWTH"
-        ],
-        "facts": [
-          {
-            "text": "판매 기간은 2026-10-10 00:00부터 2026-10-14 정기점검 전까지다.",
-            "evidence_ids": [
-              "153d13e5cd22093dfd522e384c284597868ec05c90ac3bbcb4fec6790a79e036"
-            ]
-          },
-          {
-            "text": "800다이아 패키지(시련의 주화 지원 패키지)는 카드 티켓 선택상자 3개, 시련의 주화 상자(기간) 3개, 종합 코인 선택 상자 5개로 구성된다.",
-            "evidence_ids": [
-              "153d13e5cd22093dfd522e384c284597868ec05c90ac3bbcb4fec6790a79e036"
-            ]
-          },
-          {
-            "text": "구매 제한은 전체 서버 통합 계정 기준으로 해당 패키지 20회이며, 20회 구매 후 계정 당 보상 1회가 지급된다.",
-            "evidence_ids": [
-              "153d13e5cd22093dfd522e384c284597868ec05c90ac3bbcb4fec6790a79e036"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "기간 한정 판매와 다회수 구매 제한·보상 구조로 유료 재화 소모 및 코인·뽑기형 보상 노출이 결합된 상업적 상품 구성이다.",
-            "evidence_ids": [
-              "153d13e5cd22093dfd522e384c284597868ec05c90ac3bbcb4fec6790a79e036"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "153d13e5cd22093dfd522e384c284597868ec05c90ac3bbcb4fec6790a79e036",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ac8c930fa34c1011d627b79",
-            "published_at": "2026-10-09T20:00:00.001000+09:00",
-            "collected_at": "2026-10-10T11:16:35.071400+09:00",
-            "content_hash": "e2e9385196b720859de11d81928756357e57ed0f0f2d2b2abc8f14eaec4e786a",
-            "source_type": "OFFICIAL_HOMEPAGE"
-          }
-        ]
-      }
-    ],
-    "seven-knights-rebirth": [
-      {
-        "title": "도우마가 레이드 보스로 등장",
-        "category": "COLLAB",
+        "title": "비공식 블로그 기반 연말 쿠폰 정보 공유 게시글 확산",
+        "category": "EVENT",
         "bm_types": [],
-        "facts": [
+        "facts": [],
+        "claims": [
           {
-            "text": "공식 영상에서 도우마가 레이드 보스로 등장한다고 알렸다.",
+            "text": "사용자 게시글은 연말 혜자 쿠폰 배포 정보를 미리 등록했다고 주장하며 블로그 링크를 공유했다.",
             "evidence_ids": [
-              "f3a0b2d0443574dbb40984aad7ef53b22899c951d82c27721c45728859d4803e"
+              "cbc3071a4f86226a13b9078ef1b6ca255d70de0260e238efe0968ac137dc2c2a"
             ]
           }
         ],
-        "claims": [],
         "interpretation": [
           {
-            "text": "레이드 보스 추가는 협업 기간 동안 PvE 전투 콘텐츠 집중도를 높이는 이벤트 설계로 해석된다.",
+            "text": "공식 확인 없이 블로그 링크로 쿠폰·이벤트 정보를 공유하는 사례로, 실제 유효성·출처는 확인되지 않았다.",
             "evidence_ids": [
-              "f3a0b2d0443574dbb40984aad7ef53b22899c951d82c27721c45728859d4803e"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "f3a0b2d0443574dbb40984aad7ef53b22899c951d82c27721c45728859d4803e",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/bTTrG9OCRSM",
-            "published_at": "2026-10-09T18:00:22+09:00",
-            "collected_at": "2026-10-10T11:17:15.710522+09:00",
-            "content_hash": "2d9bece946309cad5dfdbf1d83e2eac2dd01cce6e033004557461c6a668174d7",
-            "source_type": "OFFICIAL_YOUTUBE"
-          }
-        ]
-      }
-    ],
-    "epic-seven": [
-      {
-        "title": "iOS 실행 중 앱 종료 현상에 대한 10/9(금) 패치 배포",
-        "category": "MAINTENANCE",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "공식 커뮤니티 공지로 10/9(금) 13:00에 일부 iOS 환경에서 앱 실행 시 종료되는 현상 관련 앱 업데이트가 배포되었다고 안내되었다.",
-            "evidence_ids": [
-              "af52572bac19430e2592e2f5bfe4f9786dc8c30cca685ab2998188edbe0b22eb"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "공식 공지에는 문제 발생 범위가 '일부 iOS 환경'으로 표현되어 구체적 기종·OS 범위는 명시되지 않았다.",
-            "evidence_ids": [
-              "af52572bac19430e2592e2f5bfe4f9786dc8c30cca685ab2998188edbe0b22eb"
+              "cbc3071a4f86226a13b9078ef1b6ca255d70de0260e238efe0968ac137dc2c2a"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "영향을 받은 정확한 기종·OS 버전 목록과 발생 비율은 공지에 포함되어 있지 않다."
+          "해당 블로그에 게재된 쿠폰의 공식 유효성 여부",
+          "게임사(공식 채널)에서 해당 쿠폰이나 연말 배포 계획을 발표했는지 여부",
+          "공유된 링크가 악성 코드·피싱 등 보안 위협을 포함하는지 여부"
         ],
         "evidence": [
           {
-            "evidence_id": "af52572bac19430e2592e2f5bfe4f9786dc8c30cca685ab2998188edbe0b22eb",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://page.onstove.com/epicseven/kr/view/14573793",
-            "published_at": "2026-10-09T13:00:00.576000+09:00",
-            "collected_at": "2026-10-10T11:16:35.071400+09:00",
-            "content_hash": "589a1a97dd07c9928758b6255564f9bd3ac9a344c6cff567b65adf3755ce6632",
-            "source_type": "OFFICIAL_COMMUNITY"
-          }
-        ]
-      },
-      {
-        "title": "E7WC 2026 그룹 스테이지 A·B조 공식 경기 영상 공개",
-        "category": "EVENT",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "공식 유튜브 채널에 'E7WC 2026 그룹 스테이지 A&B조' 영상이 공개되었다는 제목의 게시물이 등록되었다.",
-            "evidence_ids": [
-              "e46251588405fa868de44bb785b8e11cb20d5334588278cd21196d37fe22c2ed"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "영상 설명에는 브랜드 사이트·공식 커뮤니티·공식 소셜 링크가 함께 안내되어 있어 공식 루트를 통한 추가 정보 접근이 가능하다.",
-            "evidence_ids": [
-              "e46251588405fa868de44bb785b8e11cb20d5334588278cd21196d37fe22c2ed"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "e46251588405fa868de44bb785b8e11cb20d5334588278cd21196d37fe22c2ed",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=P5XyAGZjITE",
-            "published_at": "2026-10-09T13:08:38+09:00",
-            "collected_at": "2026-10-10T11:17:15.710522+09:00",
-            "content_hash": "1df8f662f5437dcc6bf5af9a3e8f077d9a09463037194241a6b27e3c196686fb",
-            "source_type": "OFFICIAL_YOUTUBE"
+            "evidence_id": "cbc3071a4f86226a13b9078ef1b6ca255d70de0260e238efe0968ac137dc2c2a",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/board/view/?id=blackdesertmobile&no=334355",
+            "published_at": "2026-10-10T19:45:54+09:00",
+            "collected_at": "2026-10-11T10:50:21.754635+09:00",
+            "content_hash": "12a29092f5b9c642cd8e8c6c3427e6cc0a2a329547bba48cce00a6a753264c06",
+            "source_type": "PUBLIC_COMMUNITY"
           }
         ]
       }
     ],
-    "nikke": [
+    "lineage-m": [
       {
-        "title": "솔로 레이드 시즌 42 오픈 예정(앨트루이아)",
-        "category": "EVENT",
+        "title": "서버별 통제 길드 존재로 플레이 눈치 필요",
+        "category": "NOTICE",
         "bm_types": [],
-        "facts": [
+        "facts": [],
+        "claims": [
           {
-            "text": "솔로 레이드 시즌 42가 10/15 12:00부터 10/22 04:59까지 진행될 예정이며 등장 랩쳐는 '앨트루이아'로 안내되었다.",
+            "text": "서버마다 통제 길드가 있어 중립 플레이어가 보스 도전 시 공격당해 콘텐츠 이용에 제약이 생긴다.",
             "evidence_ids": [
-              "52d9378c3497001f249258cc9b6d795f4a19f3744b0575481a745607ff0a5fc5"
+              "3e643abe392010e89c043a748058b3c4ab9ce9f8d3e18a5ab90f67b0c05e0686"
             ]
           }
         ],
-        "claims": [],
         "interpretation": [
           {
-            "text": "공식 안내에 진행 기간과 등장 랩쳐가 명시되어 있어 일정·콘텐츠 공개로 분류된다.",
+            "text": "제보자는 길드 권력으로 인해 특정 콘텐츠 참여가 사실상 통제된다고 인식하고 있다.",
             "evidence_ids": [
-              "52d9378c3497001f249258cc9b6d795f4a19f3744b0575481a745607ff0a5fc5"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "52d9378c3497001f249258cc9b6d795f4a19f3744b0575481a745607ff0a5fc5",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://game.naver.com/lounge/nikke/board/detail/8306665",
-            "published_at": "2026-10-09T17:00:35+09:00",
-            "collected_at": "2026-10-10T11:16:35.071400+09:00",
-            "content_hash": "ed71a623b7ee527c5b5fe83fe1124aa5bb6999d8269a6342b80e5fd677ded142",
-            "source_type": "OFFICIAL_COMMUNITY"
-          }
-        ]
-      },
-      {
-        "title": "신규 스토리 이벤트 'LITTLE WITCH TRICK' 진행 안내",
-        "category": "EVENT",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "신규 스토리 이벤트 'LITTLE WITCH TRICK'이 진행 중이며 이벤트 기간은 10/28 23:59까지로 안내되었다.",
-            "evidence_ids": [
-              "16731175349c1c8b041ade2aed27af757e32978135faf1b1cbc139ea919bcad9"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "공식 유튜브 숏은 이벤트명과 종료일을 표기하고 있어 이벤트 일정 공지로 확인된다.",
-            "evidence_ids": [
-              "16731175349c1c8b041ade2aed27af757e32978135faf1b1cbc139ea919bcad9"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "16731175349c1c8b041ade2aed27af757e32978135faf1b1cbc139ea919bcad9",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/RryUozHkaSQ",
-            "published_at": "2026-10-08T16:00:34+09:00",
-            "collected_at": "2026-10-10T11:17:15.710522+09:00",
-            "content_hash": "36eed3090dc379e48d322e9d85fe9f771fc64d95e329b45e89e372dcaf870b76",
-            "source_type": "OFFICIAL_YOUTUBE"
-          }
-        ]
-      },
-      {
-        "title": "코스튬 '오컬티스트' 판매(오컬티스트 패스)",
-        "category": "EVENT",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "코스튬 '오컬티스트'가 OCCULTIST PASS로 획득 가능하며 판매 기간은 10/8 점검 종료 후부터 10/28 23:59까지로 안내되었다.",
-            "evidence_ids": [
-              "fc992b1dcbb32533bb1ae785656c554743d373dc7fd23306eeadc67ebcb03aa5"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "공식 코스튬 소개 영상에 획득 방법과 판매 기간이 명시되어 있어 유료·기간성 코스튬 판매 안내로 분류된다.",
-            "evidence_ids": [
-              "fc992b1dcbb32533bb1ae785656c554743d373dc7fd23306eeadc67ebcb03aa5"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "fc992b1dcbb32533bb1ae785656c554743d373dc7fd23306eeadc67ebcb03aa5",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/hVn6vZKpq28",
-            "published_at": "2026-10-07T18:00:24+09:00",
-            "collected_at": "2026-10-10T11:17:15.710522+09:00",
-            "content_hash": "92ec21afab4b52a85eac5c0b5c2696c6104d6fbe13b70064e85eb5c26461e020",
-            "source_type": "OFFICIAL_YOUTUBE"
-          }
-        ]
-      }
-    ],
-    "trickcal-revive": [
-      {
-        "title": "한글날 기념 사도 별명 짓기 이벤트 안내",
-        "category": "EVENT",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "공식 커뮤니티에 10월 9일 게시된 공지에서 한글날 기념 '사도 별명 짓기' 이벤트를 10/09 공지 이후부터 10/22 10:59까지 진행한다고 안내했다.",
-            "evidence_ids": [
-              "e2ec9797eb31a62e92146cda996d3468b029fc154a5602f40faf63b6d6c4cf75"
+              "3e643abe392010e89c043a748058b3c4ab9ce9f8d3e18a5ab90f67b0c05e0686"
             ]
           },
           {
-            "text": "참여 방법으로 플레이어가 좋아하는 사도를 골라 순우리말 별명을 짓고 그 이유를 게시글 댓글에 작성하도록 안내했다.",
+            "text": "해당 주장은 공개 커뮤니티 게시글에 근거한 개인 경험·인식이며 공식 확인이나 운영측 발표는 포함되어 있지 않다.",
             "evidence_ids": [
-              "e2ec9797eb31a62e92146cda996d3468b029fc154a5602f40faf63b6d6c4cf75"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "공식 커뮤니티 공지문으로서 이벤트 기간과 기본 참여 절차(사도 선택·별명 작성·댓글 게시)를 공식 안내한 사례이다.",
-            "evidence_ids": [
-              "e2ec9797eb31a62e92146cda996d3468b029fc154a5602f40faf63b6d6c4cf75"
+              "3e643abe392010e89c043a748058b3c4ab9ce9f8d3e18a5ab90f67b0c05e0686"
             ]
           }
         ],
         "conflicts": [],
-        "unknowns": [],
+        "unknowns": [
+          "길드 통제의 구체적 범위(서버 전체 또는 일부 지역 등)",
+          "주장된 공격 사례의 수와 시점",
+          "운영진의 조사 또는 제재 여부"
+        ],
         "evidence": [
           {
-            "evidence_id": "e2ec9797eb31a62e92146cda996d3468b029fc154a5602f40faf63b6d6c4cf75",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/218607?boardtype=L&menuid=14&referrerAllArticles=false",
-            "published_at": "2026-10-09T12:01:28.837000+09:00",
-            "collected_at": "2026-10-10T11:16:35.071400+09:00",
-            "content_hash": "eca7d9da6b6b837cda5d925290124c9808abd3078c2b2e7e78e18b1819900599",
-            "source_type": "OFFICIAL_COMMUNITY"
+            "evidence_id": "3e643abe392010e89c043a748058b3c4ab9ce9f8d3e18a5ab90f67b0c05e0686",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/board/view/?id=lineagem&no=403090",
+            "published_at": "2026-10-11T10:19:51+09:00",
+            "collected_at": "2026-10-11T10:50:21.754635+09:00",
+            "content_hash": "9edf566302232d43c949bfea57f82ef0589f6b76e397785a06b77d94a675a74d",
+            "source_type": "PUBLIC_COMMUNITY"
           }
         ]
       }
