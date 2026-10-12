@@ -1,90 +1,193 @@
 {
-  "date": "2026-10-11",
+  "date": "2026-10-12",
   "version": "compact-v1-relevance-v2",
   "games": {
     "black-desert-mobile": [
       {
-        "title": "비공식 블로그 기반 연말 쿠폰 정보 공유 게시글 확산",
+        "title": "하이델 피크닉 '검사모 라이프' 참가 신청 공지(10/6~10/11)",
         "category": "EVENT",
         "bm_types": [],
-        "facts": [],
-        "claims": [
+        "facts": [
           {
-            "text": "사용자 게시글은 연말 혜자 쿠폰 배포 정보를 미리 등록했다고 주장하며 블로그 링크를 공유했다.",
+            "text": "펄어비스가 비정기 행사 '하이델 피크닉'의 '검은사막 모바일 라이프' 편 참가 신청을 2026-10-06부터 10-11 23:59까지 접수한다고 공지했다.",
             "evidence_ids": [
-              "cbc3071a4f86226a13b9078ef1b6ca255d70de0260e238efe0968ac137dc2c2a"
+              "551571849d2b297972104ee3bd43fb65c55efde99fbbbcda42a53c45391b4035"
+            ]
+          },
+          {
+            "text": "선정 인원은 최대 20명이며, 선정자에게는 2026-10-17(토) 12:00~15:30에 경기도 과천 펄어비스 홈 원 방문 일정이 안내된다.",
+            "evidence_ids": [
+              "551571849d2b297972104ee3bd43fb65c55efde99fbbbcda42a53c45391b4035"
+            ]
+          },
+          {
+            "text": "선정자에게는 소정의 교통비와 선물 제공 예정이며, 참여 시 개인 확인 및 초상권 사용 동의 등 제출을 요구할 수 있다고 안내되었다.",
+            "evidence_ids": [
+              "551571849d2b297972104ee3bd43fb65c55efde99fbbbcda42a53c45391b4035"
             ]
           }
         ],
+        "claims": [],
         "interpretation": [
           {
-            "text": "공식 확인 없이 블로그 링크로 쿠폰·이벤트 정보를 공유하는 사례로, 실제 유효성·출처는 확인되지 않았다.",
+            "text": "공식 홈페이지에 행사 현장 모습과 이야기가 소개될 수 있다고 명시되어 있어, 향후 공식 채널 홍보 연계 가능성이 있다.",
             "evidence_ids": [
-              "cbc3071a4f86226a13b9078ef1b6ca255d70de0260e238efe0968ac137dc2c2a"
+              "551571849d2b297972104ee3bd43fb65c55efde99fbbbcda42a53c45391b4035"
             ]
           }
         ],
         "conflicts": [],
-        "unknowns": [
-          "해당 블로그에 게재된 쿠폰의 공식 유효성 여부",
-          "게임사(공식 채널)에서 해당 쿠폰이나 연말 배포 계획을 발표했는지 여부",
-          "공유된 링크가 악성 코드·피싱 등 보안 위협을 포함하는지 여부"
-        ],
+        "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "cbc3071a4f86226a13b9078ef1b6ca255d70de0260e238efe0968ac137dc2c2a",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/board/view/?id=blackdesertmobile&no=334355",
-            "published_at": "2026-10-10T19:45:54+09:00",
-            "collected_at": "2026-10-11T10:50:21.754635+09:00",
-            "content_hash": "12a29092f5b9c642cd8e8c6c3427e6cc0a2a329547bba48cce00a6a753264c06",
-            "source_type": "PUBLIC_COMMUNITY"
+            "evidence_id": "551571849d2b297972104ee3bd43fb65c55efde99fbbbcda42a53c45391b4035",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=662956&pageNo=1",
+            "published_at": "2026-10-06T00:00:00+09:00",
+            "collected_at": "2026-10-12T11:18:47.887529+09:00",
+            "content_hash": "22533324758432d1391fdb8e33086c7d4cff6a44e77f1892a2455f8cd017141f",
+            "source_type": "OFFICIAL_HOMEPAGE"
           }
         ]
       }
     ],
     "lineage-m": [
       {
-        "title": "서버별 통제 길드 존재로 플레이 눈치 필요",
-        "category": "NOTICE",
-        "bm_types": [],
+        "title": "플레이어 주장: 영웅 인형 '아누비스' 획득 및 1% 확률",
+        "category": "BM",
+        "bm_types": [
+          "GACHA"
+        ],
         "facts": [],
         "claims": [
           {
-            "text": "서버마다 통제 길드가 있어 중립 플레이어가 보스 도전 시 공격당해 콘텐츠 이용에 제약이 생긴다.",
+            "text": "플레이어가 인형 교환 3상자에서 영웅 인형 '아누비스'를 획득했다고 주장함.",
             "evidence_ids": [
-              "3e643abe392010e89c043a748058b3c4ab9ce9f8d3e18a5ab90f67b0c05e0686"
+              "5606556f5f628903b8ea4163a3b9a22d5a98cfb3ca7027846d1bb378bd00d891"
+            ]
+          },
+          {
+            "text": "동 플레이어는 획득 확률을 '1%'라고 진술함.",
+            "evidence_ids": [
+              "5606556f5f628903b8ea4163a3b9a22d5a98cfb3ca7027846d1bb378bd00d891"
             ]
           }
         ],
         "interpretation": [
           {
-            "text": "제보자는 길드 권력으로 인해 특정 콘텐츠 참여가 사실상 통제된다고 인식하고 있다.",
+            "text": "단일 이용자 주장만으로는 실제 확률을 확정할 수 없으며, 공식 확률 공개 여부 확인이 필요함.",
             "evidence_ids": [
-              "3e643abe392010e89c043a748058b3c4ab9ce9f8d3e18a5ab90f67b0c05e0686"
-            ]
-          },
-          {
-            "text": "해당 주장은 공개 커뮤니티 게시글에 근거한 개인 경험·인식이며 공식 확인이나 운영측 발표는 포함되어 있지 않다.",
-            "evidence_ids": [
-              "3e643abe392010e89c043a748058b3c4ab9ce9f8d3e18a5ab90f67b0c05e0686"
+              "5606556f5f628903b8ea4163a3b9a22d5a98cfb3ca7027846d1bb378bd00d891"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "길드 통제의 구체적 범위(서버 전체 또는 일부 지역 등)",
-          "주장된 공격 사례의 수와 시점",
-          "운영진의 조사 또는 제재 여부"
+          "공식 획득 확률(운영 공지 여부) 및 해당 이벤트의 구체적 교환·뽑기 메커니즘",
+          "해당 사례가 통계적 표본을 대표하는지 여부(단건 주장임)"
         ],
         "evidence": [
           {
-            "evidence_id": "3e643abe392010e89c043a748058b3c4ab9ce9f8d3e18a5ab90f67b0c05e0686",
+            "evidence_id": "5606556f5f628903b8ea4163a3b9a22d5a98cfb3ca7027846d1bb378bd00d891",
             "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/board/view/?id=lineagem&no=403090",
-            "published_at": "2026-10-11T10:19:51+09:00",
-            "collected_at": "2026-10-11T10:50:21.754635+09:00",
-            "content_hash": "9edf566302232d43c949bfea57f82ef0589f6b76e397785a06b77d94a675a74d",
+            "url": "https://gall.dcinside.com/board/view/?id=lineagem&no=403122",
+            "published_at": "2026-10-12T11:18:27+09:00",
+            "collected_at": "2026-10-12T11:20:07.187231+09:00",
+            "content_hash": "baad965e855196fb8568381b606a21d24c5e2bf8c99c32afab99b7778900a91b",
+            "source_type": "PUBLIC_COMMUNITY"
+          }
+        ]
+      }
+    ],
+    "seven-knights-rebirth": [
+      {
+        "title": "결투장 보상 3배 수령 주장 게시글",
+        "category": "EVENT",
+        "bm_types": [],
+        "facts": [],
+        "claims": [
+          {
+            "text": "게시글 작성자는 결투장 보상을 3배로 받았고, 일괄수령을 하지 않은 채 수령 버튼을 반복 클릭해 추가 보상을 받았다고 주장한다.",
+            "evidence_ids": [
+              "4a20f01b513a43992f93687a2ab9a463faa06c3fd50a0079380921214c15e428"
+            ]
+          }
+        ],
+        "interpretation": [
+          {
+            "text": "이 내용은 이용자 게시글에 따른 주장(PLAYER_CLAIM)으로, 공식 발표나 로그 확인 없이 사실로 확정할 수 없다.",
+            "evidence_ids": [
+              "4a20f01b513a43992f93687a2ab9a463faa06c3fd50a0079380921214c15e428"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "보상 3배 지급이 실제 서버 로직이나 운영 정책에 근거한 것인지 여부",
+          "수령 버튼 반복 클릭으로 보상이 중복 지급되는 기술적 취약점 여부",
+          "해당 사례에 대한 운영 조사·조치(수정·환수·제재)가 있었는지 여부"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "4a20f01b513a43992f93687a2ab9a463faa06c3fd50a0079380921214c15e428",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1370640",
+            "published_at": "2026-10-12T10:30:25+09:00",
+            "collected_at": "2026-10-12T11:20:07.187231+09:00",
+            "content_hash": "fe5a8169cda29d4888953338c28fa1ba79c97d53b1acdf144e2cb7eff0e678db",
+            "source_type": "PUBLIC_COMMUNITY"
+          }
+        ]
+      }
+    ],
+    "epic-seven": [
+      {
+        "title": "유산 입장 보상 '기사단 상자' 관련 유저 공략",
+        "category": "NOTICE",
+        "bm_types": [],
+        "facts": [],
+        "claims": [
+          {
+            "text": "게시글 작성자는 유산에 먼저 입장한 유저에게만 지급되는 '기사단 상자'가 있어 먼저 입장하라고 권장하고 있다.",
+            "evidence_ids": [
+              "b75aad4828aa5f872aa0604927832bfd77b36d2eba6e8722304a9d6c64f52473"
+            ]
+          },
+          {
+            "text": "작성자는 유산 내부 보상과 지도(외부 링크)를 참고해 특정 몬스터 처치로 보스 게이지를 올리고 보스를 처치해 층을 내려가라고 설명한다.",
+            "evidence_ids": [
+              "b75aad4828aa5f872aa0604927832bfd77b36d2eba6e8722304a9d6c64f52473"
+            ]
+          }
+        ],
+        "interpretation": [
+          {
+            "text": "해당 글은 '먼저 입장한 유저에게만 지급되는 상자'를 근거로 빠르게 입장해 보상을 독점하려는 사용자 행동을 조장할 가능성이 있다.",
+            "evidence_ids": [
+              "b75aad4828aa5f872aa0604927832bfd77b36d2eba6e8722304a9d6c64f52473"
+            ]
+          },
+          {
+            "text": "유저 설명은 플레이어 간 조율(입장 우선권 경쟁)을 유발할 수 있어 운영 공정성 또는 경험 관련 민원으로 연결될 여지가 있다.",
+            "evidence_ids": [
+              "b75aad4828aa5f872aa0604927832bfd77b36d2eba6e8722304a9d6c64f52473"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "해당 '기사단 상자' 지급 조건이 공식 문서에 명시돼 있는지 여부",
+          "운영 측에서 의도한 설계인지 아니면 버그·오작동인지 여부",
+          "이 게시글의 행동이 실제로 대규모 문제(민원·악용)로 이어지고 있는지 여부"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "b75aad4828aa5f872aa0604927832bfd77b36d2eba6e8722304a9d6c64f52473",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=epicseven&no=2729718",
+            "published_at": "2026-10-12T04:48:08+09:00",
+            "collected_at": "2026-10-12T11:20:07.187231+09:00",
+            "content_hash": "12b70037187c616196786e94f9e66f89899166f9862889680bdbbaf3dfbd0657",
             "source_type": "PUBLIC_COMMUNITY"
           }
         ]
