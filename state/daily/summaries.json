@@ -1,38 +1,97 @@
 {
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "version": "compact-v1-relevance-v2",
   "games": {
+    "mabinogi-mobile": [
+      {
+        "title": "공식 커뮤니티 운영진 권한 남용·신규 차단 주장",
+        "category": "NOTICE",
+        "bm_types": [],
+        "facts": [],
+        "claims": [
+          {
+            "text": "한 이용자가 특정 갤러리 운영진이 신규 유입을 의도적으로 차단한다고 주장했다.",
+            "evidence_ids": [
+              "adcf16d41e7241436c8595aa05a30e30258c3c7c08f8b4cf55b26a2713564124"
+            ]
+          },
+          {
+            "text": "운영진이 관리자 권한을 이용해 반대 의견을 억압하고 갤러리 여론을 획일화한다고 보고되었다.",
+            "evidence_ids": [
+              "adcf16d41e7241436c8595aa05a30e30258c3c7c08f8b4cf55b26a2713564124"
+            ]
+          },
+          {
+            "text": "매크로 공유 등 문제가 되는 게시물을 의도적으로 삭제하지 않고 방치해 유포에 가담한다고 주장되었다.",
+            "evidence_ids": [
+              "adcf16d41e7241436c8595aa05a30e30258c3c7c08f8b4cf55b26a2713564124"
+            ]
+          }
+        ],
+        "interpretation": [
+          {
+            "text": "커뮤니티 운영 논란은 공식 확인 전까지는 이용자 주장 성격으로 분류해야 한다.",
+            "evidence_ids": [
+              "adcf16d41e7241436c8595aa05a30e30258c3c7c08f8b4cf55b26a2713564124"
+            ]
+          },
+          {
+            "text": "운영진 관련 불만은 커뮤니티 건전성·신규 유입에 대한 이용자 체감에 영향을 줄 가능성이 있다.",
+            "evidence_ids": [
+              "adcf16d41e7241436c8595aa05a30e30258c3c7c08f8b4cf55b26a2713564124"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "운영진의 행위가 공식 운영 지침·정책 위반인지 여부",
+          "제기된 주장에 대해 커뮤니티 관리자가 내부적으로 처리하거나 대응했는지 여부",
+          "매크로 유포 등 게시물의 실제 확산 범위와 영향도"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "adcf16d41e7241436c8595aa05a30e30258c3c7c08f8b4cf55b26a2713564124",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2179525",
+            "published_at": "2026-10-12T19:13:47+09:00",
+            "collected_at": "2026-10-13T12:31:45.305285+09:00",
+            "content_hash": "24e95c5e6e41d470abbac005bd91ce4c08d3028e5665be1eb5ba94623b69c40a",
+            "source_type": "PUBLIC_COMMUNITY"
+          }
+        ]
+      }
+    ],
     "black-desert-mobile": [
       {
-        "title": "하이델 피크닉 '검사모 라이프' 참가 신청 공지(10/6~10/11)",
+        "title": "BDM 길드 대항전 2026 개최 안내",
         "category": "EVENT",
         "bm_types": [],
         "facts": [
           {
-            "text": "펄어비스가 비정기 행사 '하이델 피크닉'의 '검은사막 모바일 라이프' 편 참가 신청을 2026-10-06부터 10-11 23:59까지 접수한다고 공지했다.",
+            "text": "개최 일정·방식·참가 조건 및 보상 등 길드 대항전 2026 공식 안내가 게시되었다.",
             "evidence_ids": [
-              "551571849d2b297972104ee3bd43fb65c55efde99fbbbcda42a53c45391b4035"
+              "c45a4c519d5bbbc9d7d1feacd271a8a29ef581289e346eb72a9fcf2f14ae23a7"
             ]
           },
           {
-            "text": "선정 인원은 최대 20명이며, 선정자에게는 2026-10-17(토) 12:00~15:30에 경기도 과천 펄어비스 홈 원 방문 일정이 안내된다.",
+            "text": "참가 신청은 10월 18일 23:59까지이며 예선은 10월 28~30일, 본선·결승은 10월 31일에 생중계된다.",
             "evidence_ids": [
-              "551571849d2b297972104ee3bd43fb65c55efde99fbbbcda42a53c45391b4035"
+              "c45a4c519d5bbbc9d7d1feacd271a8a29ef581289e346eb72a9fcf2f14ae23a7"
             ]
           },
           {
-            "text": "선정자에게는 소정의 교통비와 선물 제공 예정이며, 참여 시 개인 확인 및 초상권 사용 동의 등 제출을 요구할 수 있다고 안내되었다.",
+            "text": "경기 방식은 길드 리그·라모네스 전장·무신제 대련 3종목 중 2종목 승리 시 매치 승리 규정이다.",
             "evidence_ids": [
-              "551571849d2b297972104ee3bd43fb65c55efde99fbbbcda42a53c45391b4035"
+              "c45a4c519d5bbbc9d7d1feacd271a8a29ef581289e346eb72a9fcf2f14ae23a7"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "공식 홈페이지에 행사 현장 모습과 이야기가 소개될 수 있다고 명시되어 있어, 향후 공식 채널 홍보 연계 가능성이 있다.",
+            "text": "공식문서가 경기 규칙·일정·보상까지 상세히 안내해 운영·중계 준비가 완료된 대회임을 시사한다.",
             "evidence_ids": [
-              "551571849d2b297972104ee3bd43fb65c55efde99fbbbcda42a53c45391b4035"
+              "c45a4c519d5bbbc9d7d1feacd271a8a29ef581289e346eb72a9fcf2f14ae23a7"
             ]
           }
         ],
@@ -40,12 +99,106 @@
         "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "551571849d2b297972104ee3bd43fb65c55efde99fbbbcda42a53c45391b4035",
+            "evidence_id": "c45a4c519d5bbbc9d7d1feacd271a8a29ef581289e346eb72a9fcf2f14ae23a7",
             "classification": "OFFICIAL_FACT",
-            "url": "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=662956&pageNo=1",
-            "published_at": "2026-10-06T00:00:00+09:00",
-            "collected_at": "2026-10-12T11:18:47.887529+09:00",
-            "content_hash": "22533324758432d1391fdb8e33086c7d4cff6a44e77f1892a2455f8cd017141f",
+            "url": "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=665069&pageNo=1",
+            "published_at": "2026-10-13T00:00:00+09:00",
+            "collected_at": "2026-10-13T12:30:25.346247+09:00",
+            "content_hash": "22a7a8cbe1c08ed6b1cc11c32864219d4fcf01bfb16bfd39120252b86484aaa3",
+            "source_type": "OFFICIAL_HOMEPAGE"
+          }
+        ]
+      },
+      {
+        "title": "가을 이벤트 '기분 좋은 가을 축제' 진행",
+        "category": "EVENT",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "10월 13일 점검 후부터 주차별로 진행되는 가을 이벤트와 각종 임무·교환소 보상이 안내되었다.",
+            "evidence_ids": [
+              "2e924262c82ced32ce0fc670c7a7ad9e3f59654e358f0c22d52d79d6cb83fde8"
+            ]
+          },
+          {
+            "text": "이벤트 기간 다수의 일간·주간 임무로 '풍요의 증표·주머니'를 획득해 교환소 보상과 교환할 수 있다.",
+            "evidence_ids": [
+              "2e924262c82ced32ce0fc670c7a7ad9e3f59654e358f0c22d52d79d6cb83fde8"
+            ]
+          },
+          {
+            "text": "특정 기간에는 호박 펜던트 돌파 등 별도 진행 이벤트와 영지 꾸미기 참여 보상 안내가 포함되어 있다.",
+            "evidence_ids": [
+              "2e924262c82ced32ce0fc670c7a7ad9e3f59654e358f0c22d52d79d6cb83fde8"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "다양한 접속·플레이 보상으로 이용자 활동을 유도하는 시즌성 이벤트 구성으로 보인다.",
+            "evidence_ids": [
+              "2e924262c82ced32ce0fc670c7a7ad9e3f59654e358f0c22d52d79d6cb83fde8"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "2e924262c82ced32ce0fc670c7a7ad9e3f59654e358f0c22d52d79d6cb83fde8",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=665375&pageNo=1",
+            "published_at": "2026-10-13T00:00:00+09:00",
+            "collected_at": "2026-10-13T12:30:25.346247+09:00",
+            "content_hash": "9df88441cd80cac59a472a991b68845fa28ba810297103b3657b198df67405c9",
+            "source_type": "OFFICIAL_HOMEPAGE"
+          }
+        ]
+      },
+      {
+        "title": "10월 13일 업데이트 점검 및 강제 업데이트 보상 안내",
+        "category": "MAINTENANCE",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "10월 13일 09:00~12:30 업데이트 점검이 진행되었고 점검 완료 안내가 게시되었다.",
+            "evidence_ids": [
+              "0cc308e4076922b1dcea53282c0f059667ca3a0098216a5794b6463d076ccecb"
+            ]
+          },
+          {
+            "text": "강제 업데이트 보상(기간제 아이템 연장 등)이 안내되었으며 보상 수령 기한과 조건이 명시되었다.",
+            "evidence_ids": [
+              "0cc308e4076922b1dcea53282c0f059667ca3a0098216a5794b6463d076ccecb"
+            ]
+          },
+          {
+            "text": "점검 중 일부 아이템 사용과 콘텐츠 입장이 사전 제한되며 세부 패치노트는 점검 종료 후 제공된다.",
+            "evidence_ids": [
+              "0cc308e4076922b1dcea53282c0f059667ca3a0098216a5794b6463d076ccecb"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "공식 점검 공지가 보상·제한 항목을 포함해 이용자 불편 최소화와 안내 체계 유지를 목적으로 한다.",
+            "evidence_ids": [
+              "0cc308e4076922b1dcea53282c0f059667ca3a0098216a5794b6463d076ccecb"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "0cc308e4076922b1dcea53282c0f059667ca3a0098216a5794b6463d076ccecb",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=665364&pageNo=1",
+            "published_at": "2026-10-12T00:00:00+09:00",
+            "collected_at": "2026-10-13T12:30:25.346247+09:00",
+            "content_hash": "342978a96a55286c037a1d9219ff09cd7dfe163562681867a66319117d8a317f",
             "source_type": "OFFICIAL_HOMEPAGE"
           }
         ]
@@ -53,142 +206,128 @@
     ],
     "lineage-m": [
       {
-        "title": "플레이어 주장: 영웅 인형 '아누비스' 획득 및 1% 확률",
-        "category": "BM",
-        "bm_types": [
-          "GACHA"
-        ],
-        "facts": [],
-        "claims": [
+        "title": "리니지M 정기점검 사전안내 (10/14 예정)",
+        "category": "MAINTENANCE",
+        "bm_types": [],
+        "facts": [
           {
-            "text": "플레이어가 인형 교환 3상자에서 영웅 인형 '아누비스'를 획득했다고 주장함.",
+            "text": "2026년 10월 14일(수) 리니지M 정기점검이 예정되어 있으며, 상세 일정 및 업데이트 내용은 10월 13일 중 별도 공지로 안내될 예정이라고 밝혔다.",
             "evidence_ids": [
-              "5606556f5f628903b8ea4163a3b9a22d5a98cfb3ca7027846d1bb378bd00d891"
-            ]
-          },
-          {
-            "text": "동 플레이어는 획득 확률을 '1%'라고 진술함.",
-            "evidence_ids": [
-              "5606556f5f628903b8ea4163a3b9a22d5a98cfb3ca7027846d1bb378bd00d891"
+              "b34de3af0e14be6fdc009e432d8d4a38e54368bf4cc06023840353a55a511c15"
             ]
           }
         ],
+        "claims": [],
         "interpretation": [
           {
-            "text": "단일 이용자 주장만으로는 실제 확률을 확정할 수 없으며, 공식 확률 공개 여부 확인이 필요함.",
+            "text": "운영 측은 점검 일시와 업데이트 세부내용을 사전 예고했으나 구체적 시간과 패치 내용을 10월 13일 공지로 따로 안내하겠다고 명시했다.",
             "evidence_ids": [
-              "5606556f5f628903b8ea4163a3b9a22d5a98cfb3ca7027846d1bb378bd00d891"
+              "b34de3af0e14be6fdc009e432d8d4a38e54368bf4cc06023840353a55a511c15"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "공식 획득 확률(운영 공지 여부) 및 해당 이벤트의 구체적 교환·뽑기 메커니즘",
-          "해당 사례가 통계적 표본을 대표하는지 여부(단건 주장임)"
+          "점검의 정확한 시작·종료 시각과 개별 업데이트 항목의 상세 내용 여부",
+          "점검으로 인한 보상·임시 서비스 변경 등 운영 보완 조치의 존재 여부"
         ],
         "evidence": [
           {
-            "evidence_id": "5606556f5f628903b8ea4163a3b9a22d5a98cfb3ca7027846d1bb378bd00d891",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/board/view/?id=lineagem&no=403122",
-            "published_at": "2026-10-12T11:18:27+09:00",
-            "collected_at": "2026-10-12T11:20:07.187231+09:00",
-            "content_hash": "baad965e855196fb8568381b606a21d24c5e2bf8c99c32afab99b7778900a91b",
-            "source_type": "PUBLIC_COMMUNITY"
+            "evidence_id": "b34de3af0e14be6fdc009e432d8d4a38e54368bf4cc06023840353a55a511c15",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6accbdb06b722c561dc6aaf0",
+            "published_at": "2026-10-12T20:00:00.782000+09:00",
+            "collected_at": "2026-10-13T12:30:25.346247+09:00",
+            "content_hash": "307b222983f244b684ca914fd7c56a2fa13539e842d3610a1bd5c7016095c9d1",
+            "source_type": "OFFICIAL_HOMEPAGE"
           }
         ]
       }
     ],
-    "seven-knights-rebirth": [
+    "trickcal-revive": [
       {
-        "title": "결투장 보상 3배 수령 주장 게시글",
-        "category": "EVENT",
+        "title": "10월 12일 확인된 문제 현상 안내",
+        "category": "MAINTENANCE",
         "bm_types": [],
-        "facts": [],
-        "claims": [
+        "facts": [
           {
-            "text": "게시글 작성자는 결투장 보상을 3배로 받았고, 일괄수령을 하지 않은 채 수령 버튼을 반복 클릭해 추가 보상을 받았다고 주장한다.",
+            "text": "공식 커뮤니티 공지에 따르면 보드 가이드의 트릭컬 노트 진입 시 일부 기기에서 비정상적으로 노출되는 현상을 확인 중이라고 안내했다.",
             "evidence_ids": [
-              "4a20f01b513a43992f93687a2ab9a463faa06c3fd50a0079380921214c15e428"
+              "3437500555ab2b1d7d7e5a74c372654577e445ba241e163f56abb7733ef86424"
+            ]
+          },
+          {
+            "text": "같은 공지에서 마음의 정원 화면에서 최애 사도 선택 모집 진입 불가 현상은 수정 완료되었다고 밝혔다.",
+            "evidence_ids": [
+              "3437500555ab2b1d7d7e5a74c372654577e445ba241e163f56abb7733ef86424"
             ]
           }
         ],
+        "claims": [],
         "interpretation": [
           {
-            "text": "이 내용은 이용자 게시글에 따른 주장(PLAYER_CLAIM)으로, 공식 발표나 로그 확인 없이 사실로 확정할 수 없다.",
+            "text": "공지상 일부 현상은 조사 중으로 수정까지 시간이 소요될 수 있어 이용자 불편이 간헐적일 가능성이 있다.",
             "evidence_ids": [
-              "4a20f01b513a43992f93687a2ab9a463faa06c3fd50a0079380921214c15e428"
+              "3437500555ab2b1d7d7e5a74c372654577e445ba241e163f56abb7733ef86424"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "보상 3배 지급이 실제 서버 로직이나 운영 정책에 근거한 것인지 여부",
-          "수령 버튼 반복 클릭으로 보상이 중복 지급되는 기술적 취약점 여부",
-          "해당 사례에 대한 운영 조사·조치(수정·환수·제재)가 있었는지 여부"
+          "트릭컬 노트 비정상 노출이 영향을 미치는 기기 모델·OS 범위와 발생 빈도"
         ],
         "evidence": [
           {
-            "evidence_id": "4a20f01b513a43992f93687a2ab9a463faa06c3fd50a0079380921214c15e428",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1370640",
-            "published_at": "2026-10-12T10:30:25+09:00",
-            "collected_at": "2026-10-12T11:20:07.187231+09:00",
-            "content_hash": "fe5a8169cda29d4888953338c28fa1ba79c97d53b1acdf144e2cb7eff0e678db",
-            "source_type": "PUBLIC_COMMUNITY"
+            "evidence_id": "3437500555ab2b1d7d7e5a74c372654577e445ba241e163f56abb7733ef86424",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/219154?boardtype=L&menuid=66&referrerAllArticles=false",
+            "published_at": "2026-10-12T14:32:57.160000+09:00",
+            "collected_at": "2026-10-13T12:30:25.346247+09:00",
+            "content_hash": "54d07466b0201a12464a9d17b246297797d57e027be587ea12eff88ed5109119",
+            "source_type": "OFFICIAL_COMMUNITY"
           }
         ]
-      }
-    ],
-    "epic-seven": [
+      },
       {
-        "title": "유산 입장 보상 '기사단 상자' 관련 유저 공략",
-        "category": "NOTICE",
+        "title": "3주년 굿즈 2차 입고 및 예약 판매 안내",
+        "category": "MARKETING",
         "bm_types": [],
-        "facts": [],
-        "claims": [
+        "facts": [
           {
-            "text": "게시글 작성자는 유산에 먼저 입장한 유저에게만 지급되는 '기사단 상자'가 있어 먼저 입장하라고 권장하고 있다.",
+            "text": "공식 커뮤니티 공지에서 트릭컬 리바이브 3주년 굿즈 2차 입고 일정과 예약 판매 일정, 신규 굿즈 포함 사실을 안내했다.",
             "evidence_ids": [
-              "b75aad4828aa5f872aa0604927832bfd77b36d2eba6e8722304a9d6c64f52473"
+              "4f9036d0d9cfc1dfa2048cbc4e8e4a64783c6e3520ca64c9953be30f48fa1ec5"
             ]
           },
           {
-            "text": "작성자는 유산 내부 보상과 지도(외부 링크)를 참고해 특정 몬스터 처치로 보스 게이지를 올리고 보스를 처치해 층을 내려가라고 설명한다.",
+            "text": "공지에는 오프라인 매장별 오픈 시간이 상이하므로 매장별 안내를 확인하라고 명시되어 있다.",
             "evidence_ids": [
-              "b75aad4828aa5f872aa0604927832bfd77b36d2eba6e8722304a9d6c64f52473"
+              "4f9036d0d9cfc1dfa2048cbc4e8e4a64783c6e3520ca64c9953be30f48fa1ec5"
             ]
           }
         ],
+        "claims": [],
         "interpretation": [
           {
-            "text": "해당 글은 '먼저 입장한 유저에게만 지급되는 상자'를 근거로 빠르게 입장해 보상을 독점하려는 사용자 행동을 조장할 가능성이 있다.",
+            "text": "공지 문구는 온라인·오프라인 판매 채널 확장을 알리며 매장별 운영 시간이 달라 이용자 안내가 필요함을 시사한다.",
             "evidence_ids": [
-              "b75aad4828aa5f872aa0604927832bfd77b36d2eba6e8722304a9d6c64f52473"
-            ]
-          },
-          {
-            "text": "유저 설명은 플레이어 간 조율(입장 우선권 경쟁)을 유발할 수 있어 운영 공정성 또는 경험 관련 민원으로 연결될 여지가 있다.",
-            "evidence_ids": [
-              "b75aad4828aa5f872aa0604927832bfd77b36d2eba6e8722304a9d6c64f52473"
+              "4f9036d0d9cfc1dfa2048cbc4e8e4a64783c6e3520ca64c9953be30f48fa1ec5"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "해당 '기사단 상자' 지급 조건이 공식 문서에 명시돼 있는지 여부",
-          "운영 측에서 의도한 설계인지 아니면 버그·오작동인지 여부",
-          "이 게시글의 행동이 실제로 대규모 문제(민원·악용)로 이어지고 있는지 여부"
+          "각 매장별 구체적 입고일·예약 판매 시작일과 온라인 판매 가능 시점"
         ],
         "evidence": [
           {
-            "evidence_id": "b75aad4828aa5f872aa0604927832bfd77b36d2eba6e8722304a9d6c64f52473",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=epicseven&no=2729718",
-            "published_at": "2026-10-12T04:48:08+09:00",
-            "collected_at": "2026-10-12T11:20:07.187231+09:00",
-            "content_hash": "12b70037187c616196786e94f9e66f89899166f9862889680bdbbaf3dfbd0657",
-            "source_type": "PUBLIC_COMMUNITY"
+            "evidence_id": "4f9036d0d9cfc1dfa2048cbc4e8e4a64783c6e3520ca64c9953be30f48fa1ec5",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/218405?boardtype=L&menuid=14&referrerAllArticles=false",
+            "published_at": "2026-10-08T17:00:08.433000+09:00",
+            "collected_at": "2026-10-13T12:30:25.346247+09:00",
+            "content_hash": "61425dcb24718d551357dae89f44200ad7023b9e11253b92e6c1cc3a9da18a1a",
+            "source_type": "OFFICIAL_COMMUNITY"
           }
         ]
       }
