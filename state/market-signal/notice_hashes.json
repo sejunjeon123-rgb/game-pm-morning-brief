@@ -26,13 +26,13 @@
     },
     "https://odin.kakaogames.com/odin/": {
       "game_id": "odin-valhalla-rising",
-      "title": "10/7(수) 업데이트 상세 내역 안내",
-      "content_hash": "53dcdebaf3ee08c762284274fd6e773c5b96b89530f08f4db2f55a56f756e553",
+      "title": "10/14(수) 업데이트 상세 내역 안내",
+      "content_hash": "62997c9c9c68341aa6652076c3e56e8fa1f77b50428dfb33d3aef3ef031aa4c3",
       "first_seen_at": "2026-08-30T16:17:21.854834+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
-      "published_at": "2026-10-07T00:00:00+09:00",
-      "modified_at": "2026-10-07T11:18:28.551352+09:00",
-      "previous_content_hash": "b20cececf31968faeb23b76c7befe0439f1fbf2c609d7b3c6eb9c47424e78ef5"
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "published_at": "2026-10-14T00:00:00+09:00",
+      "modified_at": "2026-10-14T10:50:19.218343+09:00",
+      "previous_content_hash": "53dcdebaf3ee08c762284274fd6e773c5b96b89530f08f4db2f55a56f756e553"
     },
     "https://lineagem.plaync.com/board/notice/view?articleId=6a916a306b722c561dc6a2ca": {
       "game_id": "lineage-m",
@@ -3021,7 +3021,7 @@
       "title": "10월 15일(목) 판매 종료 예정 상품 및 [일일 상점] 누적 구매 보상 변경 안내",
       "content_hash": "33d6ca11722363122831873f7ed4957c0a07cb332fe65d390f54c919e06fb59c",
       "first_seen_at": "2026-10-08T11:40:25.721964+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-07T18:00:07.952000+09:00"
     },
     "https://page.onstove.com/epicseven/kr/view/14571882": {
@@ -3029,7 +3029,7 @@
       "title": "10/8(목) 일부 콘텐츠 확률 변경 사전 안내",
       "content_hash": "ff6a9f614cf30612e65a6d07054fe3ea76e9f5d6d08c89ceb4de885b2cab2a02",
       "first_seen_at": "2026-10-08T11:40:25.721964+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-07T20:00:00.578000+09:00"
     },
     "https://page.onstove.com/epicseven/kr/view/14571655": {
@@ -3095,7 +3095,7 @@
       "title": "주말 콘텐츠 「놀이터」 정규 시즌 오픈 안내",
       "content_hash": "6dd75f9a945af9520fd2e5dadfd0b55f450385997a534191a49eb47248b22701",
       "first_seen_at": "2026-10-08T11:40:25.721964+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-07T17:01:40.127000+09:00"
     },
     "https://cafe.naver.com/f-e/cafes/30131231/articles/218208?boardtype=L&menuid=67&referrerAllArticles=false": {
@@ -3103,7 +3103,7 @@
       "title": "10월 8일(목) 업데이트 예정 내역 안내",
       "content_hash": "6677d569ffaf3abd178a0c34f42a95bac47a29eb97e34fac14d338fa489a57dc",
       "first_seen_at": "2026-10-08T11:40:25.721964+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-07T17:01:28.450000+09:00"
     },
     "https://cafe.naver.com/f-e/cafes/30131231/articles/218207?boardtype=L&menuid=66&referrerAllArticles=false": {
@@ -3111,23 +3111,25 @@
       "title": "10월 8일(목) 정기점검 예정 안내(완료)",
       "content_hash": "8aa1d6fc64aa4eb4dac1aacde35ffbb3bd5d72622658b43b696e6c95a4bd1ce4",
       "first_seen_at": "2026-10-08T11:40:25.721964+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-07T17:01:13.933000+09:00"
     },
     "https://lineagem.plaync.com/board/notice/view?articleId=6ac7ccafeea53f5d6dbcfbbd": {
       "game_id": "lineage-m",
-      "title": "[안내] 10월 9일(금) 알려진 현상 안내",
-      "content_hash": "f5bc6a70bfe6149fce72d4889e04b930b71ea798cac3a556b1dabaaae385f15c",
+      "title": "[안내][정상화] 10월 9일(금) 알려진 현상 안내",
+      "content_hash": "3009f2a38f8b3f47d105159a3b01816eb391a4b747a1894178ac35b8f3985f2a",
       "first_seen_at": "2026-10-09T11:54:56.275150+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
-      "published_at": "2026-10-09T02:10:40.001000+09:00"
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "published_at": "2026-10-09T02:10:40.001000+09:00",
+      "modified_at": "2026-10-14T10:50:19.218343+09:00",
+      "previous_content_hash": "f5bc6a70bfe6149fce72d4889e04b930b71ea798cac3a556b1dabaaae385f15c"
     },
     "https://lineagem.plaync.com/board/notice/view?articleId=6ac75488d97eae18cc40e38a": {
       "game_id": "lineage-m",
       "title": "[안내] 알비노 분지 밸런스 개선 및 특별 푸시 지급 안내",
       "content_hash": "31e4166c481b4ff608db1cd80e97f61dfe2805e04b2e7abcb37cae3968ee8dd8",
       "first_seen_at": "2026-10-09T11:54:56.275150+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-08T17:30:00.056000+09:00"
     },
     "https://lineagem.plaync.com/board/notice/view?articleId=6ac7197f6b722c561dc6aaa8": {
@@ -3143,7 +3145,7 @@
       "title": "특정 기간 신규/복귀 모험가 신바람 감사제 셀렉션 소환 미노출 현상 관련 안내",
       "content_hash": "da3c2777f87ccf36b0ca9a41953945bff7b6b772eed0c141461d8110236a4f44",
       "first_seen_at": "2026-10-09T11:54:56.275150+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-08T19:37:01.847000+09:00"
     },
     "https://page.onstove.com/epicseven/kr/view/14573910": {
@@ -3151,7 +3153,7 @@
       "title": "iOS 환경 접속 불가 현상 수정 관련 진행 상황 안내",
       "content_hash": "30f5a151005d88890318d25447516858e25496c1f39206e119e0a4ed8d9e495a",
       "first_seen_at": "2026-10-09T11:54:56.275150+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-08T21:20:13.433000+09:00"
     },
     "https://page.onstove.com/epicseven/kr/view/14568990": {
@@ -3159,7 +3161,7 @@
       "title": "E7WC 2026 그룹 스테이지 대진표 공개 및 중계진 방송 관련 상세 안내 (수정)",
       "content_hash": "181500ecdb94736f2ce55ca944033a91cac9d604b4a8145523efbe892d025e05",
       "first_seen_at": "2026-10-09T11:54:56.275150+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-08T20:00:00.604000+09:00"
     },
     "https://page.onstove.com/epicseven/kr/view/14571118": {
@@ -3167,7 +3169,7 @@
       "title": "한글날 기념! 오르비스에 날아온 편지 속 빈 칸 맞히기 퀴즈",
       "content_hash": "beb093fe56db2e6b7f591e06609783242c8bee83abee80e8ee1f8910f88f2549",
       "first_seen_at": "2026-10-09T11:54:56.275150+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-08T19:00:00.582000+09:00"
     },
     "https://page.onstove.com/epicseven/kr/view/14573543": {
@@ -3175,7 +3177,7 @@
       "title": "10/8(목) 현재 확인된 문제점 안내 (18:25 추가)",
       "content_hash": "aa70e55230819ecb30c2a01d90de143f20c70e1995cd1e96e58b8c8389e02b3f",
       "first_seen_at": "2026-10-09T11:54:56.275150+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-08T16:16:55.850000+09:00"
     },
     "https://game.naver.com/lounge/nikke/board/detail/8302987": {
@@ -3183,7 +3185,7 @@
       "title": "NIKKE 4주년 정보 사이트 오픈",
       "content_hash": "2c67dc53b7f7de04752e8adba0a8d5f70317e51452f49b567c2591a1eee597af",
       "first_seen_at": "2026-10-09T11:54:56.275150+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-08T19:15:11+09:00"
     },
     "https://game.naver.com/lounge/nikke/board/detail/8301896": {
@@ -3191,7 +3193,7 @@
       "title": "협동작전 오픈 사전 안내",
       "content_hash": "4c2c269c2c213f2dc764b5e653f39075ed16513d1f48ea30c8eba8fc1715c32b",
       "first_seen_at": "2026-10-09T11:54:56.275150+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-08T15:30:23+09:00"
     },
     "https://game.naver.com/lounge/nikke/board/detail/8301821": {
@@ -3199,7 +3201,7 @@
       "title": "📢 Pick Up 모집 기간 안내 - 「벨로타 : 펌킨 위치」",
       "content_hash": "64f32db8477ee80c72aa1c6de88ccc936ab4a4621d74ed31c9b41b5c45da524a",
       "first_seen_at": "2026-10-09T11:54:56.275150+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-08T15:06:21+09:00"
     },
     "https://cafe.naver.com/f-e/cafes/30131231/articles/218405?boardtype=L&menuid=14&referrerAllArticles=false": {
@@ -3207,7 +3209,7 @@
       "title": "골디의 굿즈 양품점 굿즈 2차 입고 & 예약 판매 진행 예정 안내(온라인 매장 추가)",
       "content_hash": "61425dcb24718d551357dae89f44200ad7023b9e11253b92e6c1cc3a9da18a1a",
       "first_seen_at": "2026-10-09T11:54:56.275150+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-08T17:00:08.433000+09:00",
       "modified_at": "2026-10-13T12:30:25.346247+09:00",
       "previous_content_hash": "c91b3b124ce593114c14e46a97e946276cf874d5b5cc18ce69af2adec6c84318"
@@ -3217,7 +3219,7 @@
       "title": "[안내] 10월 10일(토) 시련의 주화 지원 패키지 상품 안내",
       "content_hash": "e2e9385196b720859de11d81928756357e57ed0f0f2d2b2abc8f14eaec4e786a",
       "first_seen_at": "2026-10-10T11:16:35.071400+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-09T20:00:00.001000+09:00"
     },
     "https://page.onstove.com/epicseven/kr/view/14573793": {
@@ -3225,7 +3227,7 @@
       "title": "10/9(금) 앱 업데이트 배포 안내",
       "content_hash": "589a1a97dd07c9928758b6255564f9bd3ac9a344c6cff567b65adf3755ce6632",
       "first_seen_at": "2026-10-10T11:16:35.071400+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-09T13:00:00.576000+09:00"
     },
     "https://game.naver.com/lounge/nikke/board/detail/8306665": {
@@ -3233,7 +3235,7 @@
       "title": "솔로 레이드 오픈 예정",
       "content_hash": "ed71a623b7ee527c5b5fe83fe1124aa5bb6999d8269a6342b80e5fd677ded142",
       "first_seen_at": "2026-10-10T11:16:35.071400+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-09T17:00:35+09:00"
     },
     "https://cafe.naver.com/f-e/cafes/30131231/articles/218607?boardtype=L&menuid=14&referrerAllArticles=false": {
@@ -3241,39 +3243,43 @@
       "title": "한글날 기념 사도 별명 짓기 이벤트 진행 안내(~10월 22일)",
       "content_hash": "eca7d9da6b6b837cda5d925290124c9808abd3078c2b2e7e78e18b1819900599",
       "first_seen_at": "2026-10-10T11:16:35.071400+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-09T12:01:28.837000+09:00"
     },
     "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=665069&pageNo=1": {
       "game_id": "black-desert-mobile",
       "title": "전체공지",
-      "content_hash": "22a7a8cbe1c08ed6b1cc11c32864219d4fcf01bfb16bfd39120252b86484aaa3",
+      "content_hash": "bf5038573b5932045e1190602ed1d21fb9beb5b057a4d63d569dd2d67d266597",
       "first_seen_at": "2026-10-13T12:30:25.346247+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
-      "published_at": "2026-10-13T00:00:00+09:00"
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "published_at": "2026-10-13T00:00:00+09:00",
+      "modified_at": "2026-10-14T10:50:19.218343+09:00",
+      "previous_content_hash": "22a7a8cbe1c08ed6b1cc11c32864219d4fcf01bfb16bfd39120252b86484aaa3"
     },
     "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=665375&pageNo=1": {
       "game_id": "black-desert-mobile",
       "title": "전체공지",
       "content_hash": "9df88441cd80cac59a472a991b68845fa28ba810297103b3657b198df67405c9",
       "first_seen_at": "2026-10-13T12:30:25.346247+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-13T00:00:00+09:00"
     },
     "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=665364&pageNo=1": {
       "game_id": "black-desert-mobile",
-      "title": "전체공지",
-      "content_hash": "342978a96a55286c037a1d9219ff09cd7dfe163562681867a66319117d8a317f",
+      "title": "[점검] 10월 13일(화) 업데이트 점검 안내 (12:30, 점검 완료)",
+      "content_hash": "f76eabc177febbcb67ec21e90c6a39fca718229111a4a43d7c87964373fc334d",
       "first_seen_at": "2026-10-13T12:30:25.346247+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
-      "published_at": "2026-10-12T00:00:00+09:00"
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "published_at": "2026-10-12T00:00:00+09:00",
+      "modified_at": "2026-10-14T10:50:19.218343+09:00",
+      "previous_content_hash": "342978a96a55286c037a1d9219ff09cd7dfe163562681867a66319117d8a317f"
     },
     "https://lineagem.plaync.com/board/notice/view?articleId=6accbdb06b722c561dc6aaf0": {
       "game_id": "lineage-m",
       "title": "[안내] 리니지M 정기점검 사전안내",
       "content_hash": "307b222983f244b684ca914fd7c56a2fa13539e842d3610a1bd5c7016095c9d1",
       "first_seen_at": "2026-10-13T12:30:25.346247+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-12T20:00:00.782000+09:00"
     },
     "https://cafe.naver.com/f-e/cafes/30131231/articles/219154?boardtype=L&menuid=66&referrerAllArticles=false": {
@@ -3281,8 +3287,96 @@
       "title": "10월 12일(월) 확인된 문제 현상 안내",
       "content_hash": "54d07466b0201a12464a9d17b246297797d57e027be587ea12eff88ed5109119",
       "first_seen_at": "2026-10-13T12:30:25.346247+09:00",
-      "last_seen_at": "2026-10-13T12:30:25.346247+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
       "published_at": "2026-10-12T14:32:57.160000+09:00"
+    },
+    "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=665378&pageNo=1": {
+      "game_id": "black-desert-mobile",
+      "title": "[안내] 갤럭시 스토어 검수 지연 및 점검 진행 상황 안내 (정상화, 15:37)",
+      "content_hash": "c86bbc1afe45a62a44bfbecf53e339e0bf5cb81e489ddff402281d5a12133aa7",
+      "first_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "published_at": "2026-10-13T00:00:00+09:00"
+    },
+    "https://lineagem.plaync.com/board/notice/view?articleId=6ace86b828c7452635072b44": {
+      "game_id": "lineage-m",
+      "title": "[안내] 10월 14일(수) 라라의 신비한 상자 상품 안내",
+      "content_hash": "a568e289b0b65c80fa764513e794f6c817eb81da1ac5e7d795b0fb10b495dac9",
+      "first_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "published_at": "2026-10-14T04:30:00.001000+09:00"
+    },
+    "https://lineagem.plaync.com/board/notice/view?articleId=6ace86b828c7452635072b42": {
+      "game_id": "lineage-m",
+      "title": "[안내] 10월 14일(수) 상급 마법인형 픽업 뽑기팩(골든 나이트) 상품 안내",
+      "content_hash": "b895ca18305e2776ec72fcfa5811734b724ae212fd2238246aa4dcbb99ea7236",
+      "first_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "published_at": "2026-10-14T04:30:00.001000+09:00"
+    },
+    "https://lineagem.plaync.com/board/notice/view?articleId=6ace86b828c7452635072b40": {
+      "game_id": "lineage-m",
+      "title": "[안내] 10월 14일(수) 하딘의 티켓 보급 상자 상품 안내",
+      "content_hash": "d656d76af1e3b96219917723e692f31be5f1b006c7927603848e9d0340679bb5",
+      "first_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "published_at": "2026-10-14T04:30:00.001000+09:00"
+    },
+    "https://lineagem.plaync.com/board/notice/view?articleId=6ace0f3007b77e214688a71f": {
+      "game_id": "lineage-m",
+      "title": "[안내][완료] 10월 14일(수) 리니지M 정기점검 안내",
+      "content_hash": "f3863ed9369924f4f2b92b1ca7cae8603bb52bc823b9442dfba1de1495a4a753",
+      "first_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "published_at": "2026-10-13T20:00:00.219000+09:00"
+    },
+    "https://forum.netmarble.com/sena_rebirth/view/20/2128": {
+      "game_id": "seven-knights-rebirth",
+      "title": "세븐나이츠 리버스 전 세계 누적 가입자 500만 달성 기념 감사 보상 안내",
+      "content_hash": "956a9a28e7c840b1895388b3d4c8c4e59a0d01cfebc264eac4c5511b1992b6a0",
+      "first_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "published_at": "2026-10-13T18:00:47.288000+09:00"
+    },
+    "https://forum.netmarble.com/sena_rebirth/view/20/2127": {
+      "game_id": "seven-knights-rebirth",
+      "title": "10월 15일(목) 점검 안내",
+      "content_hash": "1ecee71c70fd2467df978c439874b9aaf0f1cd7c1d92c3a0a53df23d82e39569",
+      "first_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "published_at": "2026-10-13T18:00:04.536000+09:00"
+    },
+    "https://forum.netmarble.com/sena_rebirth/view/20/2125": {
+      "game_id": "seven-knights-rebirth",
+      "title": "세븐나이츠 리버스 게임 운영 정책 개정 사전 안내",
+      "content_hash": "9a5b1b6294aa88bd68ea9e41d7d857625affed6aa0c617bbd16c4494fc504434",
+      "first_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "published_at": "2026-10-13T16:00:05.664000+09:00"
+    },
+    "https://page.onstove.com/epicseven/kr/view/14581643": {
+      "game_id": "epic-seven",
+      "title": "스팀 데모 버전 이용 시 게임 내 계정 탈퇴 관련 주의사항 안내",
+      "content_hash": "37a619f80bb089e2ed2948b962146a31409902da134c7f8308f7b27382319a7c",
+      "first_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "published_at": "2026-10-13T20:30:00.584000+09:00"
+    },
+    "https://page.onstove.com/epicseven/kr/view/14580958": {
+      "game_id": "epic-seven",
+      "title": "PC 클라이언트 결제 불가 사전 안내 (10/14 06:00 ~ 08:20)",
+      "content_hash": "5a0d9845e12ad5a5250c63759dc58c50ab5b88919ef8364c8bc6f059bed3d161",
+      "first_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "published_at": "2026-10-13T17:00:01.555000+09:00"
+    },
+    "https://cafe.naver.com/f-e/cafes/30131231/articles/219340?boardtype=L&menuid=14&referrerAllArticles=false": {
+      "game_id": "trickcal-revive",
+      "title": "[테마 사복] 5종 할인&특별 픽업 사도 모집 진행 안내(~10월 22일)",
+      "content_hash": "903b98c559cdbfe8dfa100f76b9f16a834358edbd213b932a0068d951b562e82",
+      "first_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "last_seen_at": "2026-10-14T10:50:19.218343+09:00",
+      "published_at": "2026-10-13T17:00:11.693000+09:00"
     }
   }
 }
