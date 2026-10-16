@@ -1351,6 +1351,54 @@
       "first_seen_at": "2026-10-10T11:17:15.710522+09:00",
       "last_seen_at": "2026-10-10T11:17:15.710522+09:00",
       "published_at": "2026-10-07T18:00:24+09:00"
+    },
+    "https://www.youtube.com/shorts/CkWY3EtJRJs": {
+      "game_id": "mabinogi-mobile",
+      "title": "프리미엄 펫 럭키박스 '수달' | 마비노기 모바일",
+      "content_hash": "73bbfc6a2a478b5bbb5fa64e73dcf62faeff7680796aa6664f32d22fd8fbebbc",
+      "first_seen_at": "2026-10-16T10:15:57.826309+09:00",
+      "last_seen_at": "2026-10-16T10:15:57.826309+09:00",
+      "published_at": "2026-10-15T11:00:28+09:00"
+    },
+    "https://www.youtube.com/watch?v=aGw6ZW3-ZGU": {
+      "game_id": "mabinogi-mobile",
+      "title": "[마비노기 모바일] 콩! 콩! 에린을 찾아온 으스스한 할로윈",
+      "content_hash": "45c68ebb01a2846522b142cde4048b7ad72b364b44da4738ca58268e939c96e2",
+      "first_seen_at": "2026-10-16T10:15:57.826309+09:00",
+      "last_seen_at": "2026-10-16T10:15:57.826309+09:00",
+      "published_at": "2026-10-15T11:00:13+09:00"
+    },
+    "https://www.youtube.com/shorts/QnmxyvJJfT4": {
+      "game_id": "mabinogi-mobile",
+      "title": "[마비노기 모바일] 10월 업데이트 신규 패션 장비 미리보기",
+      "content_hash": "d01197c1af2731f69ce87e7d5e49a550828b199085409e2936b5745258e4f0b5",
+      "first_seen_at": "2026-10-16T10:15:57.826309+09:00",
+      "last_seen_at": "2026-10-16T10:15:57.826309+09:00",
+      "published_at": "2026-10-14T19:22:34+09:00"
+    },
+    "https://www.youtube.com/watch?v=Z7jIlrNlqj0": {
+      "game_id": "trickcal-revive",
+      "title": "[업데이트] 10월 15일(목) 신규 업데이트 내역 안내",
+      "content_hash": "adf7844d556e404faef898cb018f4bded9e2df80405cce001687ba715a012e4a",
+      "first_seen_at": "2026-10-16T10:15:57.826309+09:00",
+      "last_seen_at": "2026-10-16T10:15:57.826309+09:00",
+      "published_at": "2026-10-15T13:31:47+09:00"
+    },
+    "https://www.youtube.com/watch?v=AgUwgT02AoM": {
+      "game_id": "trickcal-revive",
+      "title": "[신규사복] 신규 사복 업데이트 안내 PV - 촛불 하나! 비명 속 괴담 파티!",
+      "content_hash": "fbc06e9d8fd307c92fce377609ae7a44d68e138f64755d6645922291943a3073",
+      "first_seen_at": "2026-10-16T10:15:57.826309+09:00",
+      "last_seen_at": "2026-10-16T10:15:57.826309+09:00",
+      "published_at": "2026-10-13T17:07:27+09:00"
+    },
+    "https://www.youtube.com/shorts/_kNMgQMM8Y0": {
+      "game_id": "trickcal-revive",
+      "title": "[주말특집] 복구 #트릭컬 #주말특집",
+      "content_hash": "1ba9c0b2e4ec1b2470ccf5ea446d67043c7c7524472630e6d682e21a19351f98",
+      "first_seen_at": "2026-10-16T10:15:57.826309+09:00",
+      "last_seen_at": "2026-10-16T10:15:57.826309+09:00",
+      "published_at": "2026-10-10T14:01:52+09:00"
     }
   }
 }
