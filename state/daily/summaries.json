@@ -1,313 +1,65 @@
 {
-  "date": "2026-10-17",
+  "date": "2026-10-18",
   "version": "compact-v1-relevance-v2",
   "games": {
-    "lineage-m": [
+    "mabinogi-mobile": [
       {
-        "title": "하딘의 스페셜 카드 보급 상자(10/17~10/21) 판매 안내",
-        "category": "BM",
-        "bm_types": [
-          "GACHA",
-          "CURRENCY",
-          "GROWTH",
-          "CONVENIENCE"
-        ],
-        "facts": [
-          {
-            "text": "판매 기간은 2026-10-17 00시부터 2026-10-21 정기점검 전까지이며, 상품은 2,000다이아의 '하딘의 스페셜 카드 보급 상자' 등 복수 패키지를 포함한다.",
-            "evidence_ids": [
-              "d53c02b00899a31a33c08b82988229c30acf130bfcd605ad01db309084834d2c"
-            ]
-          },
-          {
-            "text": "상자 구성품은 변신·마법인형·성물 뽑기팩, 하딘 카드 티켓 선택상자, 성장 지원품 선택상자, 드래곤의 다이아몬드 등이며 일부 아이템은 삭제(사용기한) 일자가 표기되어 있다.",
-            "evidence_ids": [
-              "d53c02b00899a31a33c08b82988229c30acf130bfcd605ad01db309084834d2c"
-            ]
-          },
-          {
-            "text": "계정별 구매 제한이 있으며 레거시·리부트 월드 등 그룹별 조건과 특정 서버(기란·하이네 제외) 적용 예외가 명시되어 있다.",
-            "evidence_ids": [
-              "d53c02b00899a31a33c08b82988229c30acf130bfcd605ad01db309084834d2c"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "단가 2,000다이아 기반의 기간 한정 패키지로, 뽑기팩 중심 구성과 계정당 구매횟수 제한이 포함된 상업적 BM 안내이다.",
-            "evidence_ids": [
-              "d53c02b00899a31a33c08b82988229c30acf130bfcd605ad01db309084834d2c"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "d53c02b00899a31a33c08b82988229c30acf130bfcd605ad01db309084834d2c",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ad203b0263e537d356d1178",
-            "published_at": "2026-10-16T20:00:00.001000+09:00",
-            "collected_at": "2026-10-17T10:15:41.872366+09:00",
-            "content_hash": "8885129e36476a407515a312f7fdd6f2c4604060b47207ddb74079fa787c371f",
-            "source_type": "OFFICIAL_HOMEPAGE"
-          }
-        ]
-      },
-      {
-        "title": "데포로쥬의 찬란한 보급 상자(10/17~10/21) 판매 안내",
-        "category": "BM",
-        "bm_types": [
-          "GACHA",
-          "CURRENCY",
-          "GROWTH",
-          "OTHER"
-        ],
-        "facts": [
-          {
-            "text": "판매 기간은 2026-10-17 00시부터 2026-10-21 정기점검 전까지이며, '데포로쥬의 찬란한 보급 상자'는 4,000다이아로 판매된다.",
-            "evidence_ids": [
-              "fde62e78a1cd9487bb1cf89642a3ed6a3e6f199448200bfd95560c7b9d002152"
-            ]
-          },
-          {
-            "text": "상자 구성품은 데포로쥬 영웅 카드 선택 상자, 명예 코인 700,000개, 퓨어 엘릭서 100개, 판도라의 컬렉션 조각 24개 등이다.",
-            "evidence_ids": [
-              "fde62e78a1cd9487bb1cf89642a3ed6a3e6f199448200bfd95560c7b9d002152"
-            ]
-          },
-          {
-            "text": "구매 제한은 기란·하이네 서버 통합 계정 기준 계정당 2회로 명시되어 있으며, 유사 상품의 향후 재판매 가능성이 고지되어 있다.",
-            "evidence_ids": [
-              "fde62e78a1cd9487bb1cf89642a3ed6a3e6f199448200bfd95560c7b9d002152"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "고가(4,000다이아) 패키지로서 영웅 등급 카드 선택권과 대량 재화 제공을 통해 즉시 성장을 겨냥한 BM 구성이다.",
-            "evidence_ids": [
-              "fde62e78a1cd9487bb1cf89642a3ed6a3e6f199448200bfd95560c7b9d002152"
-            ]
-          }
-        ],
-        "conflicts": [
-          {
-            "text": "두 공지의 구매 제한·적용 대상 서버와 가격·구성 차이가 있어 대상 플레이어군 및 가성비 측면에서 상이하다.",
-            "evidence_ids": [
-              "d53c02b00899a31a33c08b82988229c30acf130bfcd605ad01db309084834d2c",
-              "fde62e78a1cd9487bb1cf89642a3ed6a3e6f199448200bfd95560c7b9d002152"
-            ]
-          }
-        ],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "d53c02b00899a31a33c08b82988229c30acf130bfcd605ad01db309084834d2c",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ad203b0263e537d356d1178",
-            "published_at": "2026-10-16T20:00:00.001000+09:00",
-            "collected_at": "2026-10-17T10:15:41.872366+09:00",
-            "content_hash": "8885129e36476a407515a312f7fdd6f2c4604060b47207ddb74079fa787c371f",
-            "source_type": "OFFICIAL_HOMEPAGE"
-          },
-          {
-            "evidence_id": "fde62e78a1cd9487bb1cf89642a3ed6a3e6f199448200bfd95560c7b9d002152",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ad203b0263e537d356d1176",
-            "published_at": "2026-10-16T20:00:00.001000+09:00",
-            "collected_at": "2026-10-17T10:15:41.872366+09:00",
-            "content_hash": "42b33b2b890caf09f5d4d7dedb28eb317e9d01099744f81274bdd5021c3c70d6",
-            "source_type": "OFFICIAL_HOMEPAGE"
-          }
-        ]
-      }
-    ],
-    "seven-knights-rebirth": [
-      {
-        "title": "10월 16일 서버 순차 패치 안내",
-        "category": "MAINTENANCE",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "10월 16일 순차 패치가 진행되며, 현재 발생 중인 현상 조치를 위해 패치가 이루어집니다.",
-            "evidence_ids": [
-              "68fc75ef0974c8ca3ad99c51b889aadcc72e8da2fc35c449ee941b2d94afd06a"
-            ]
-          },
-          {
-            "text": "패치 중 간헐적인 순단(일시적 접속단절) 현상이 발생할 수 있고, 패치 내용은 재접속 시 반영됩니다.",
-            "evidence_ids": [
-              "68fc75ef0974c8ca3ad99c51b889aadcc72e8da2fc35c449ee941b2d94afd06a"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "운영 측이 문제 조치용 순차 패치를 공지했으므로 해당 시간대에 접속 불안정과 재접속 필요성이 발생할 가능성이 높습니다.",
-            "evidence_ids": [
-              "68fc75ef0974c8ca3ad99c51b889aadcc72e8da2fc35c449ee941b2d94afd06a"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "68fc75ef0974c8ca3ad99c51b889aadcc72e8da2fc35c449ee941b2d94afd06a",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://forum.netmarble.com/sena_rebirth/view/20/2152",
-            "published_at": "2026-10-16T21:50:08.899000+09:00",
-            "collected_at": "2026-10-17T10:15:41.872366+09:00",
-            "content_hash": "f45329069cba894f11ed11209764d95273dfcd97b26bedfd59b4505d9e4ce027",
-            "source_type": "OFFICIAL_COMMUNITY"
-          }
-        ]
-      },
-      {
-        "title": "결투장 리그 분리 개선 및 점수 초기화 안내",
+        "title": "커뮤니티: 보상 교환·어비스 보상 변경 주장",
         "category": "UPDATE",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "10월 29일 업데이트로 결투장 리그 분리 개선이 진행될 예정입니다.",
-            "evidence_ids": [
-              "27fb9e4c72f836aab8400b36b8dd98c50bc785f534fdbd168cebe35ac543bdac"
-            ]
-          },
-          {
-            "text": "업데이트 시 기존 결투장 점수가 초기화되며 종료 시점이 변경될 예정이라는 사전 안내가 포함되어 있습니다.",
-            "evidence_ids": [
-              "27fb9e4c72f836aab8400b36b8dd98c50bc785f534fdbd168cebe35ac543bdac"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "운영 공지에 따라 유저들의 결투장 랭킹·점수는 업데이트 시점에 초기화되며 시즌 종료 기준도 변경됩니다.",
-            "evidence_ids": [
-              "27fb9e4c72f836aab8400b36b8dd98c50bc785f534fdbd168cebe35ac543bdac"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "27fb9e4c72f836aab8400b36b8dd98c50bc785f534fdbd168cebe35ac543bdac",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://forum.netmarble.com/sena_rebirth/view/20/2150",
-            "published_at": "2026-10-16T17:00:07.496000+09:00",
-            "collected_at": "2026-10-17T10:15:41.872366+09:00",
-            "content_hash": "ebbb6079a4ce7c2454e0a24235857284a5b7129427f9f84ebddc8c369ee4988f",
-            "source_type": "OFFICIAL_COMMUNITY"
-          }
-        ]
-      }
-    ],
-    "epic-seven": [
-      {
-        "title": "외부 프로그램 통한 프로필 카드 복제·거래 공지",
-        "category": "NOTICE",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "운영은 외부 프로그램을 이용해 타인의 프로필 카드를 무단 복제·거래하는 사례가 확인되었으며, 확인 시 운영정책에 따라 게임 이용 제한 등의 조치가 이루어질 수 있다고 안내했다.",
-            "evidence_ids": [
-              "499140e74c3ab2d05c3b1ff6826a98f09486a5f4869d40408de6f5d91d97d653"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "운영은 해당 행위에 대해 지속적인 모니터링과 필요 시 조치를 하겠다고 밝히며 단속 의지를 표명했다.",
-            "evidence_ids": [
-              "499140e74c3ab2d05c3b1ff6826a98f09486a5f4869d40408de6f5d91d97d653"
-            ]
-          },
-          {
-            "text": "공지에서 이용자들에게 외부 프로그램을 통한 무단 복제·거래에 각별히 유의할 것을 요청했다.",
-            "evidence_ids": [
-              "499140e74c3ab2d05c3b1ff6826a98f09486a5f4869d40408de6f5d91d97d653"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [
-          "해당 행위 적발의 구체적 기준과 처분의 세부 기준은 공지에 명시되지 않음",
-          "복제에 사용된 외부 프로그램의 명칭 및 유통 경로에 대한 정보는 공개되지 않음",
-          "이미 복제·거래된 프로필 카드에 대한 소급 조치 여부는 공지에 언급되지 않음"
-        ],
-        "evidence": [
-          {
-            "evidence_id": "499140e74c3ab2d05c3b1ff6826a98f09486a5f4869d40408de6f5d91d97d653",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://page.onstove.com/epicseven/kr/view/14586586",
-            "published_at": "2026-10-16T14:00:01.151000+09:00",
-            "collected_at": "2026-10-17T10:15:41.872366+09:00",
-            "content_hash": "aa97b5792c45d26412b3276bcf490e1718b54e86f9067e1ca27e1192453fa2c0",
-            "source_type": "OFFICIAL_COMMUNITY"
-          }
-        ]
-      }
-    ],
-    "nikke": [
-      {
-        "title": "기록 말살·제재 원인 추정 관련 이용자 주장",
-        "category": "NOTICE",
         "bm_types": [],
         "facts": [],
         "claims": [
           {
-            "text": "일부 이용자가 기록 말소·제재 대상의 원인을 특정 집단(유니온)으로 추정하고 있다.",
+            "text": "마물증표 100개를 영혼석 1개(거불)로 교환 가능하다는 주장이 게시되었다.",
             "evidence_ids": [
-              "ddd4b97d689619b98cc9034330c735da99300e3f28e977575c846efd38efc506"
+              "6ea294c7456d114bfe351ee2c3ef2dc00d9ac1fd5d05f9d6387fe4282d801de5"
             ]
           },
           {
-            "text": "해당 게시글 작성자는 제재 대상자들이 매크로나 핵 사용 여부와 관계없이 부정행위가 없어도 부당하게 제재되었다고 주장한다.",
+            "text": "마물증표 1000개를 마력석 1개(거불)로 교환 가능하다는 주장이 게시되었다.",
             "evidence_ids": [
-              "ddd4b97d689619b98cc9034330c735da99300e3f28e977575c846efd38efc506"
+              "6ea294c7456d114bfe351ee2c3ef2dc00d9ac1fd5d05f9d6387fe4282d801de5"
+            ]
+          },
+          {
+            "text": "주간 어비스 보상에 해연 제작 레시피 상자(매어 기준 각 어비스당 3개, 최대 9개)가 추가된다는 주장이 게시되었다.",
+            "evidence_ids": [
+              "6ea294c7456d114bfe351ee2c3ef2dc00d9ac1fd5d05f9d6387fe4282d801de5"
             ]
           }
         ],
         "interpretation": [
           {
-            "text": "공식 근거 없이 특정 집단을 제재 원인으로 지목하는 게시글이 있어 운영의 설명 요구 가능성이 있다.",
+            "text": "게시글은 공개 커뮤니티 사용자 주장이며 공식 홈페이지·공식 커뮤니티·공식 유튜브에서 확인된 공지는 첨부되지 않았다.",
             "evidence_ids": [
-              "ddd4b97d689619b98cc9034330c735da99300e3f28e977575c846efd38efc506"
+              "6ea294c7456d114bfe351ee2c3ef2dc00d9ac1fd5d05f9d6387fe4282d801de5"
             ]
           },
           {
-            "text": "이용자 불만은 제재 절차의 투명성 및 설명 요청으로 연결될 수 있다.",
+            "text": "만약 해당 교환 비율과 어비스 보상 변경이 실제 적용된다면 게임 내 자원 획득 구조와 희소성에 영향을 줄 가능성이 있으나, 이는 공식 확인 전 가정에 불과하다.",
             "evidence_ids": [
-              "ddd4b97d689619b98cc9034330c735da99300e3f28e977575c846efd38efc506"
+              "6ea294c7456d114bfe351ee2c3ef2dc00d9ac1fd5d05f9d6387fe4282d801de5"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "제재의 실제 원인이 매크로·핵·운영상 판단 착오 중 어느 것인지 공식 확인이 없다.",
-          "운영 측의 내부 조사 결과나 공지 여부는 공개 근거에 포함되어 있지 않다."
+          "해당 주장(교환 비율 및 어비스 보상 추가)의 공식 발표 여부",
+          "실제 적용 시점·대상(서버·계정)·세부 조건",
+          "게시글에 제시된 수치의 정확성(오타·과장 가능성)"
         ],
         "evidence": [
           {
-            "evidence_id": "ddd4b97d689619b98cc9034330c735da99300e3f28e977575c846efd38efc506",
+            "evidence_id": "6ea294c7456d114bfe351ee2c3ef2dc00d9ac1fd5d05f9d6387fe4282d801de5",
             "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=gov&no=6324022",
-            "published_at": "2026-10-17T10:16:33+09:00",
-            "collected_at": "2026-10-17T10:17:01.994012+09:00",
-            "content_hash": "698105cf844c559f31ff9eadcc0df4af5e871e88ace24739af7e9e0df2c507b8",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2179658",
+            "published_at": "2026-10-17T23:46:12+09:00",
+            "collected_at": "2026-10-18T09:58:28.911847+09:00",
+            "content_hash": "2049b1c5d3afe668165845c118807770c0a1ca6d303f4913187d4563b5f8e28f",
             "source_type": "PUBLIC_COMMUNITY"
           }
         ]
       }
-    ],
-    "trickcal-revive": []
+    ]
   }
 }
