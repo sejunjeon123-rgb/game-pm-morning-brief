@@ -1,61 +1,232 @@
 {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "version": "compact-v1-relevance-v2",
   "games": {
     "mabinogi-mobile": [
       {
-        "title": "커뮤니티: 보상 교환·어비스 보상 변경 주장",
-        "category": "UPDATE",
+        "title": "9월 모험가의 기록 당선자 발표 및 10월 이벤트 안내",
+        "category": "EVENT",
         "bm_types": [],
-        "facts": [],
-        "claims": [
+        "facts": [
           {
-            "text": "마물증표 100개를 영혼석 1개(거불)로 교환 가능하다는 주장이 게시되었다.",
+            "text": "9월 모험가의 기록 이벤트(9/1~9/30) 선정자를 소개했다.",
             "evidence_ids": [
-              "6ea294c7456d114bfe351ee2c3ef2dc00d9ac1fd5d05f9d6387fe4282d801de5"
+              "f932f68c97ea2e98c1c759d3c08900b576b7731201f1ada131dc934e1392fb9c"
             ]
           },
           {
-            "text": "마물증표 1000개를 마력석 1개(거불)로 교환 가능하다는 주장이 게시되었다.",
+            "text": "10월에는 기존과 동일하게 '모험가의 기록 상시 이벤트' 주제로 진행된다고 안내했다.",
             "evidence_ids": [
-              "6ea294c7456d114bfe351ee2c3ef2dc00d9ac1fd5d05f9d6387fe4282d801de5"
-            ]
-          },
-          {
-            "text": "주간 어비스 보상에 해연 제작 레시피 상자(매어 기준 각 어비스당 3개, 최대 9개)가 추가된다는 주장이 게시되었다.",
-            "evidence_ids": [
-              "6ea294c7456d114bfe351ee2c3ef2dc00d9ac1fd5d05f9d6387fe4282d801de5"
+              "f932f68c97ea2e98c1c759d3c08900b576b7731201f1ada131dc934e1392fb9c"
             ]
           }
         ],
+        "claims": [],
         "interpretation": [
           {
-            "text": "게시글은 공개 커뮤니티 사용자 주장이며 공식 홈페이지·공식 커뮤니티·공식 유튜브에서 확인된 공지는 첨부되지 않았다.",
+            "text": "공식 유튜브 공지로 당선자 공개 및 10월 이벤트 지속을 안내했으므로 이벤트 홍보·참여 창구가 활성화된 상태로 보인다.",
             "evidence_ids": [
-              "6ea294c7456d114bfe351ee2c3ef2dc00d9ac1fd5d05f9d6387fe4282d801de5"
-            ]
-          },
-          {
-            "text": "만약 해당 교환 비율과 어비스 보상 변경이 실제 적용된다면 게임 내 자원 획득 구조와 희소성에 영향을 줄 가능성이 있으나, 이는 공식 확인 전 가정에 불과하다.",
-            "evidence_ids": [
-              "6ea294c7456d114bfe351ee2c3ef2dc00d9ac1fd5d05f9d6387fe4282d801de5"
+              "f932f68c97ea2e98c1c759d3c08900b576b7731201f1ada131dc934e1392fb9c"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "해당 주장(교환 비율 및 어비스 보상 추가)의 공식 발표 여부",
-          "실제 적용 시점·대상(서버·계정)·세부 조건",
-          "게시글에 제시된 수치의 정확성(오타·과장 가능성)"
+          "당선자 발표에 대한 이용자 반응(만족도·이의 제기 등)은 본 자료에 포함되지 않았다."
         ],
         "evidence": [
           {
-            "evidence_id": "6ea294c7456d114bfe351ee2c3ef2dc00d9ac1fd5d05f9d6387fe4282d801de5",
+            "evidence_id": "f932f68c97ea2e98c1c759d3c08900b576b7731201f1ada131dc934e1392fb9c",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/watch?v=7mc9CEZJ0n4",
+            "published_at": "2026-10-16T13:34:29+09:00",
+            "collected_at": "2026-10-19T10:09:31.029492+09:00",
+            "content_hash": "8a7703a325216684150b0f184bc052c5c5cdbd20d667a171edfd3c0fd123010f",
+            "source_type": "OFFICIAL_YOUTUBE"
+          }
+        ]
+      },
+      {
+        "title": "전투·보상 연출로 채팅 가림 발생 주장",
+        "category": "MAINTENANCE",
+        "bm_types": [],
+        "facts": [],
+        "claims": [
+          {
+            "text": "전투 보스 연출과 보상 연출이 채팅 화면을 가려 길챗 등 대화에 불편을 겪는다고 제기했다.",
+            "evidence_ids": [
+              "7c41e0f4015b530a7194ba19ac1eccce8ed01be3cee4a207672901a3adc0514c"
+            ]
+          }
+        ],
+        "interpretation": [
+          {
+            "text": "해당 주장은 공개 커뮤니티 게시글 표본에 기반한 이용자 의견이며, 공식 고지나 문제 해결 안내는 확인되지 않았다.",
+            "evidence_ids": [
+              "7c41e0f4015b530a7194ba19ac1eccce8ed01be3cee4a207672901a3adc0514c"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "문제가 특정 환경(기기·OS·버전)에서만 발생하는지, 재현성 및 영향 범위(소수 의견인지 다수인지)는 확인되지 않았다.",
+          "운영팀의 공식 확인·패치 계획 여부는 본 자료에 포함된 근거에 없다."
+        ],
+        "evidence": [
+          {
+            "evidence_id": "7c41e0f4015b530a7194ba19ac1eccce8ed01be3cee4a207672901a3adc0514c",
             "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2179658",
-            "published_at": "2026-10-17T23:46:12+09:00",
-            "collected_at": "2026-10-18T09:58:28.911847+09:00",
-            "content_hash": "2049b1c5d3afe668165845c118807770c0a1ca6d303f4913187d4563b5f8e28f",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2179534",
+            "published_at": "2026-10-13T00:08:05+09:00",
+            "collected_at": "2026-10-19T10:10:16.498359+09:00",
+            "content_hash": "060b694f4574fec31fd8eaed98817eb28dae3402d2fa068e9dcd8fd05cc51f78",
+            "source_type": "PUBLIC_COMMUNITY"
+          }
+        ]
+      }
+    ],
+    "black-desert-mobile": [
+      {
+        "title": "무기 9강 필요 재화 문의",
+        "category": "NOTICE",
+        "bm_types": [],
+        "facts": [],
+        "claims": [
+          {
+            "text": "무기 9강에 필요한 재화량을 묻는 게시글이 올라왔다.",
+            "evidence_ids": [
+              "ec60cdc5cf9858b75aa8af5abe7873a934146439bb92f264ea784a37e217373d"
+            ]
+          },
+          {
+            "text": "작성자는 안전하게 강화하고 싶으나 실패 시 하락 우려로 걱정하고 있다.",
+            "evidence_ids": [
+              "ec60cdc5cf9858b75aa8af5abe7873a934146439bb92f264ea784a37e217373d"
+            ]
+          }
+        ],
+        "interpretation": [
+          {
+            "text": "게시글은 구체적 수치가 아닌 개인적 문의 형태로, 공식 성공률·재화 소모량 등은 제시하지 않았다.",
+            "evidence_ids": [
+              "ec60cdc5cf9858b75aa8af5abe7873a934146439bb92f264ea784a37e217373d"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "공식 강화 성공률, 하락 규정, 및 평균 재화 소모량은 해당 게시글 내에서 확인되지 않음."
+        ],
+        "evidence": [
+          {
+            "evidence_id": "ec60cdc5cf9858b75aa8af5abe7873a934146439bb92f264ea784a37e217373d",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/board/view/?id=blackdesertmobile&no=334372",
+            "published_at": "2026-10-18T17:26:05+09:00",
+            "collected_at": "2026-10-19T10:10:16.498359+09:00",
+            "content_hash": "ce4df1e38e83714ae5dc88e1fd57d0825b78fbfafcfe65b78a070356b8578e03",
+            "source_type": "PUBLIC_COMMUNITY"
+          }
+        ]
+      }
+    ],
+    "nikke": [
+      {
+        "title": "4주년 기념 특별 방송 카운트다운(10/24 방송 예고)",
+        "category": "EVENT",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "공식 커뮤니티에 4주년 기념 특별 방송이 10월 24일(토) 19:00에 진행된다고 공지되었다(방송 예약 링크 포함).",
+            "evidence_ids": [
+              "0f23ea6f83bf3cebe68fbe17d971b9962acf20ef6ff5350e9bcc791e18c883dd"
+            ]
+          },
+          {
+            "text": "공식 커뮤니티에 이벤트 카운트다운 문구(전원 집결, 전 스쿼드 집결까지 D-6)가 게시되었다.",
+            "evidence_ids": [
+              "073814dcaea2684f0864cafd9544c927348c335f43428f7d4fa2083e2bf86bef"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "공식 공지들은 4주년 관련 이벤트·특별 방송을 예고하며 인앱 구매(확률형 아이템 포함)를 언급하고 있다.",
+            "evidence_ids": [
+              "0f23ea6f83bf3cebe68fbe17d971b9962acf20ef6ff5350e9bcc791e18c883dd",
+              "073814dcaea2684f0864cafd9544c927348c335f43428f7d4fa2083e2bf86bef"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "특별 방송·카운트다운과 연계된 구체적 유료 상품(가챠·패키지 등) 구성은 공식 공지에서 명시되지 않았다."
+        ],
+        "evidence": [
+          {
+            "evidence_id": "073814dcaea2684f0864cafd9544c927348c335f43428f7d4fa2083e2bf86bef",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://game.naver.com/lounge/nikke/board/detail/8337809",
+            "published_at": "2026-10-18T18:00:35+09:00",
+            "collected_at": "2026-10-19T10:08:54.744273+09:00",
+            "content_hash": "067eb9fbfd9dffc537382faf97493c82d3ff62791a0eefb23fd15cb0ac511805",
+            "source_type": "OFFICIAL_COMMUNITY"
+          },
+          {
+            "evidence_id": "0f23ea6f83bf3cebe68fbe17d971b9962acf20ef6ff5350e9bcc791e18c883dd",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://game.naver.com/lounge/nikke/board/detail/8335015",
+            "published_at": "2026-10-17T18:00:35+09:00",
+            "collected_at": "2026-10-19T10:08:54.744273+09:00",
+            "content_hash": "2a7a559bfe5896a6300cb39140ade38503266ba2f69c877858c1025b094b8775",
+            "source_type": "OFFICIAL_COMMUNITY"
+          }
+        ]
+      }
+    ],
+    "trickcal-revive": [
+      {
+        "title": "스파인 뷰어·로컬 캐시·국내 서버 이전으로 로딩 개선 주장",
+        "category": "UPDATE",
+        "bm_types": [],
+        "facts": [],
+        "claims": [
+          {
+            "text": "플레이어가 스파인 뷰어 관련 업데이트로 해외 서버에서 국내 서버로 이전해 로딩이 빨라졌다고 보고했다.",
+            "evidence_ids": [
+              "bdf5c84f0894af0ace7e90a68801946fc527be5bdb1da90b98512dd41964add7"
+            ]
+          },
+          {
+            "text": "같은 게시글에서 리소스(다운로드한 파일)를 로컬에 캐시하도록 변경했고, 일부 브라우저에서는 동작하지 않는 경우가 있다고 주장했다.",
+            "evidence_ids": [
+              "bdf5c84f0894af0ace7e90a68801946fc527be5bdb1da90b98512dd41964add7"
+            ]
+          }
+        ],
+        "interpretation": [
+          {
+            "text": "플레이어 게시글은 기술적 변경(서버 이전·로컬 캐시·뷰어 동작 변경)을 체감으로 설명하고 있으나 공식 발표 확인이 필요하다.",
+            "evidence_ids": [
+              "bdf5c84f0894af0ace7e90a68801946fc527be5bdb1da90b98512dd41964add7"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "해당 변경 사항의 공식 발표 또는 배포 대상(전체/일부 서버 여부)은 확인되지 않음",
+          "공식 패치노트·운영 공지에서 동일한 수정 내용이 있는지 불명",
+          "브라우저별 미지원 현상의 재현 조건·영향 범위가 불명"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "bdf5c84f0894af0ace7e90a68801946fc527be5bdb1da90b98512dd41964add7",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=rollthechess&no=3856616",
+            "published_at": "2026-10-19T09:10:19+09:00",
+            "collected_at": "2026-10-19T10:10:16.498359+09:00",
+            "content_hash": "cb7e66fc858bd37fdbe62da2e10ca4d0bd60e6738006392435a699153bcae630",
             "source_type": "PUBLIC_COMMUNITY"
           }
         ]

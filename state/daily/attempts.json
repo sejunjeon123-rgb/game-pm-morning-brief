@@ -1,9 +1,10 @@
 {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "games": {
     "mabinogi-mobile": "attempted",
+    "black-desert-mobile": "attempted",
     "odin-valhalla-rising": "attempted",
-    "epic-seven": "attempted",
-    "nikke": "attempted"
+    "nikke": "attempted",
+    "trickcal-revive": "attempted"
   }
 }

@@ -1357,7 +1357,7 @@
       "title": "프리미엄 펫 럭키박스 '수달' | 마비노기 모바일",
       "content_hash": "73bbfc6a2a478b5bbb5fa64e73dcf62faeff7680796aa6664f32d22fd8fbebbc",
       "first_seen_at": "2026-10-16T10:15:57.826309+09:00",
-      "last_seen_at": "2026-10-16T10:15:57.826309+09:00",
+      "last_seen_at": "2026-10-19T10:09:31.029492+09:00",
       "published_at": "2026-10-15T11:00:28+09:00"
     },
     "https://www.youtube.com/watch?v=aGw6ZW3-ZGU": {
@@ -1365,7 +1365,7 @@
       "title": "[마비노기 모바일] 콩! 콩! 에린을 찾아온 으스스한 할로윈",
       "content_hash": "45c68ebb01a2846522b142cde4048b7ad72b364b44da4738ca58268e939c96e2",
       "first_seen_at": "2026-10-16T10:15:57.826309+09:00",
-      "last_seen_at": "2026-10-16T10:15:57.826309+09:00",
+      "last_seen_at": "2026-10-19T10:09:31.029492+09:00",
       "published_at": "2026-10-15T11:00:13+09:00"
     },
     "https://www.youtube.com/shorts/QnmxyvJJfT4": {
@@ -1373,7 +1373,7 @@
       "title": "[마비노기 모바일] 10월 업데이트 신규 패션 장비 미리보기",
       "content_hash": "d01197c1af2731f69ce87e7d5e49a550828b199085409e2936b5745258e4f0b5",
       "first_seen_at": "2026-10-16T10:15:57.826309+09:00",
-      "last_seen_at": "2026-10-16T10:15:57.826309+09:00",
+      "last_seen_at": "2026-10-19T10:09:31.029492+09:00",
       "published_at": "2026-10-14T19:22:34+09:00"
     },
     "https://www.youtube.com/watch?v=Z7jIlrNlqj0": {
@@ -1399,6 +1399,14 @@
       "first_seen_at": "2026-10-16T10:15:57.826309+09:00",
       "last_seen_at": "2026-10-16T10:15:57.826309+09:00",
       "published_at": "2026-10-10T14:01:52+09:00"
+    },
+    "https://www.youtube.com/watch?v=7mc9CEZJ0n4": {
+      "game_id": "mabinogi-mobile",
+      "title": "[마비노기 모바일] 모험가의 기록 | 2026년 9월호",
+      "content_hash": "8a7703a325216684150b0f184bc052c5c5cdbd20d667a171edfd3c0fd123010f",
+      "first_seen_at": "2026-10-19T10:09:31.029492+09:00",
+      "last_seen_at": "2026-10-19T10:09:31.029492+09:00",
+      "published_at": "2026-10-16T13:34:29+09:00"
     }
   }
 }
