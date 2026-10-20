@@ -1,185 +1,209 @@
 {
-  "date": "2026-10-19",
+  "date": "2026-10-20",
   "version": "compact-v1-relevance-v2",
   "games": {
     "mabinogi-mobile": [
       {
-        "title": "9월 모험가의 기록 당선자 발표 및 10월 이벤트 안내",
-        "category": "EVENT",
-        "bm_types": [],
-        "facts": [
+        "title": "개발 순서·과금 설계로 인한 성장·공정성 불만",
+        "category": "BM",
+        "bm_types": [
+          "GROWTH"
+        ],
+        "facts": [],
+        "claims": [
           {
-            "text": "9월 모험가의 기록 이벤트(9/1~9/30) 선정자를 소개했다.",
+            "text": "유저는 개발진이 먼저 '뻥투'(전투력 인플레이션)를 불러일으킨 뒤, 이후에 이를 보완하는 장비(마저 상승 등)를 추가해 순서가 잘못됐다고 주장한다.",
             "evidence_ids": [
-              "f932f68c97ea2e98c1c759d3c08900b576b7731201f1ada131dc934e1392fb9c"
+              "f8f605776dc1129a706afabf78ab3296da4ade8db990d0355061d19b6f7bee73"
             ]
           },
           {
-            "text": "10월에는 기존과 동일하게 '모험가의 기록 상시 이벤트' 주제로 진행된다고 안내했다.",
+            "text": "해당 순서로 인해 일반 유저는 성취감이 없고 일부는 매크로를 사용하게 되었으며, 상위 유저는 새 콘텐츠의 마저 컷만 올려 보상 없이 과금만 유도된다고 주장한다.",
             "evidence_ids": [
-              "f932f68c97ea2e98c1c759d3c08900b576b7731201f1ada131dc934e1392fb9c"
+              "f8f605776dc1129a706afabf78ab3296da4ade8db990d0355061d19b6f7bee73"
+            ]
+          },
+          {
+            "text": "결과적으로 일반 유저 이탈과 상위 유저의 흥미 감소(고래 유저의 과금 만족도 저하)를 초래했다고 평가한다.",
+            "evidence_ids": [
+              "f8f605776dc1129a706afabf78ab3296da4ade8db990d0355061d19b6f7bee73"
             ]
           }
         ],
-        "claims": [],
         "interpretation": [
           {
-            "text": "공식 유튜브 공지로 당선자 공개 및 10월 이벤트 지속을 안내했으므로 이벤트 홍보·참여 창구가 활성화된 상태로 보인다.",
+            "text": "플레이어 반응은 개발·BM 순서(성장 요소 배치)에 대한 불만과 공정성 문제 제기로 요약된다; 이는 커뮤니티에서 반복적으로 제기되는 유형의 불만이다.",
             "evidence_ids": [
-              "f932f68c97ea2e98c1c759d3c08900b576b7731201f1ada131dc934e1392fb9c"
+              "f8f605776dc1129a706afabf78ab3296da4ade8db990d0355061d19b6f7bee73"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "당선자 발표에 대한 이용자 반응(만족도·이의 제기 등)은 본 자료에 포함되지 않았다."
+          "개발진이 의도적으로 해당 순서를 선택했는지에 대한 공식 확인 여부",
+          "실제 게임 내 전투력·장비 밸런스 수치 변화와 그 영향 범위",
+          "매크로 사용 확산 정도와 운영(제재) 대응 현황"
         ],
         "evidence": [
           {
-            "evidence_id": "f932f68c97ea2e98c1c759d3c08900b576b7731201f1ada131dc934e1392fb9c",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=7mc9CEZJ0n4",
-            "published_at": "2026-10-16T13:34:29+09:00",
-            "collected_at": "2026-10-19T10:09:31.029492+09:00",
-            "content_hash": "8a7703a325216684150b0f184bc052c5c5cdbd20d667a171edfd3c0fd123010f",
-            "source_type": "OFFICIAL_YOUTUBE"
+            "evidence_id": "f8f605776dc1129a706afabf78ab3296da4ade8db990d0355061d19b6f7bee73",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2179685",
+            "published_at": "2026-10-20T10:25:44+09:00",
+            "collected_at": "2026-10-20T10:46:20.692179+09:00",
+            "content_hash": "34dc3f39c606d8ea51363a31543a72bf9ff9a560a3f9da2143c25063139ef9d1",
+            "source_type": "PUBLIC_COMMUNITY"
           }
         ]
-      },
+      }
+    ],
+    "odin-valhalla-rising": [
       {
-        "title": "전투·보상 연출로 채팅 가림 발생 주장",
+        "title": "AI 모드 24시간 자동 플레이에 대한 부정적 이용자 반응",
+        "category": "UPDATE",
+        "bm_types": [],
+        "facts": [],
+        "claims": [
+          {
+            "text": "이용자는 제우스 플레이를 계획했다가 24시간 AI 모드 때문에 오딘으로 마음을 돌렸다고 주장함.",
+            "evidence_ids": [
+              "7fec5f847460e81fbe0aa475cae95bba3cc913f2e79a2f495c41bdeb1d66de56"
+            ]
+          },
+          {
+            "text": "해당 이용자는 24시간 AI 모드가 '숙제하고 그냥 24시간 돌리고 끄는' 방식이라 플레이 동기와 몰입을 떨어뜨린다고 평가함.",
+            "evidence_ids": [
+              "7fec5f847460e81fbe0aa475cae95bba3cc913f2e79a2f495c41bdeb1d66de56"
+            ]
+          },
+          {
+            "text": "직장인 관점에서 최대 권장 플레이시간을 12~16시간으로 보고, 24시간 자동화는 '손해를 보는 기분'을 준다고 주장함.",
+            "evidence_ids": [
+              "7fec5f847460e81fbe0aa475cae95bba3cc913f2e79a2f495c41bdeb1d66de56"
+            ]
+          }
+        ],
+        "interpretation": [
+          {
+            "text": "단일 게시글 표본상 AI 모드의 완전 자동화는 일부 이용자에게 수동적 이용을 초래해 게임 몰입과 체류 동기 저하로 인식될 수 있다.",
+            "evidence_ids": [
+              "7fec5f847460e81fbe0aa475cae95bba3cc913f2e79a2f495c41bdeb1d66de56"
+            ]
+          },
+          {
+            "text": "이용자는 자동화가 과금 유저·비과금 유저 사이의 경험 균형을 해칠 수 있다고 느끼며, 이 관점은 운영·BM 설계 관련 고려사항과 연결될 가능성이 있다.",
+            "evidence_ids": [
+              "7fec5f847460e81fbe0aa475cae95bba3cc913f2e79a2f495c41bdeb1d66de56"
+            ]
+          },
+          {
+            "text": "게시글에는 'AI' 표기 필터 문제에 대한 불만도 있어, 용어 필터링 관련 UX·커뮤니케이션 영향이 있을 수 있다.",
+            "evidence_ids": [
+              "7fec5f847460e81fbe0aa475cae95bba3cc913f2e79a2f495c41bdeb1d66de56"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "동일한 불만을 가진 이용자 비율이나 다수 여론 여부",
+          "개발팀이 의도한 AI 모드 설계 목표(예: 완전 자동화 의도 여부) 및 공식 입장",
+          "AI 표기 필터의 범위와 의도적 적용 여부"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "7fec5f847460e81fbe0aa475cae95bba3cc913f2e79a2f495c41bdeb1d66de56",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=vhr&no=317142",
+            "published_at": "2026-10-18T23:15:33+09:00",
+            "collected_at": "2026-10-20T10:46:20.692179+09:00",
+            "content_hash": "54f95bab89aa4e6a401cddb1e452f6f5547fc23aed88791299b0ade0babee702",
+            "source_type": "PUBLIC_COMMUNITY"
+          }
+        ]
+      }
+    ],
+    "lineage-m": [
+      {
+        "title": "리니지M 정기점검 예정(10월21일)",
         "category": "MAINTENANCE",
         "bm_types": [],
-        "facts": [],
-        "claims": [
-          {
-            "text": "전투 보스 연출과 보상 연출이 채팅 화면을 가려 길챗 등 대화에 불편을 겪는다고 제기했다.",
-            "evidence_ids": [
-              "7c41e0f4015b530a7194ba19ac1eccce8ed01be3cee4a207672901a3adc0514c"
-            ]
-          }
-        ],
-        "interpretation": [
-          {
-            "text": "해당 주장은 공개 커뮤니티 게시글 표본에 기반한 이용자 의견이며, 공식 고지나 문제 해결 안내는 확인되지 않았다.",
-            "evidence_ids": [
-              "7c41e0f4015b530a7194ba19ac1eccce8ed01be3cee4a207672901a3adc0514c"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [
-          "문제가 특정 환경(기기·OS·버전)에서만 발생하는지, 재현성 및 영향 범위(소수 의견인지 다수인지)는 확인되지 않았다.",
-          "운영팀의 공식 확인·패치 계획 여부는 본 자료에 포함된 근거에 없다."
-        ],
-        "evidence": [
-          {
-            "evidence_id": "7c41e0f4015b530a7194ba19ac1eccce8ed01be3cee4a207672901a3adc0514c",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2179534",
-            "published_at": "2026-10-13T00:08:05+09:00",
-            "collected_at": "2026-10-19T10:10:16.498359+09:00",
-            "content_hash": "060b694f4574fec31fd8eaed98817eb28dae3402d2fa068e9dcd8fd05cc51f78",
-            "source_type": "PUBLIC_COMMUNITY"
-          }
-        ]
-      }
-    ],
-    "black-desert-mobile": [
-      {
-        "title": "무기 9강 필요 재화 문의",
-        "category": "NOTICE",
-        "bm_types": [],
-        "facts": [],
-        "claims": [
-          {
-            "text": "무기 9강에 필요한 재화량을 묻는 게시글이 올라왔다.",
-            "evidence_ids": [
-              "ec60cdc5cf9858b75aa8af5abe7873a934146439bb92f264ea784a37e217373d"
-            ]
-          },
-          {
-            "text": "작성자는 안전하게 강화하고 싶으나 실패 시 하락 우려로 걱정하고 있다.",
-            "evidence_ids": [
-              "ec60cdc5cf9858b75aa8af5abe7873a934146439bb92f264ea784a37e217373d"
-            ]
-          }
-        ],
-        "interpretation": [
-          {
-            "text": "게시글은 구체적 수치가 아닌 개인적 문의 형태로, 공식 성공률·재화 소모량 등은 제시하지 않았다.",
-            "evidence_ids": [
-              "ec60cdc5cf9858b75aa8af5abe7873a934146439bb92f264ea784a37e217373d"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [
-          "공식 강화 성공률, 하락 규정, 및 평균 재화 소모량은 해당 게시글 내에서 확인되지 않음."
-        ],
-        "evidence": [
-          {
-            "evidence_id": "ec60cdc5cf9858b75aa8af5abe7873a934146439bb92f264ea784a37e217373d",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/board/view/?id=blackdesertmobile&no=334372",
-            "published_at": "2026-10-18T17:26:05+09:00",
-            "collected_at": "2026-10-19T10:10:16.498359+09:00",
-            "content_hash": "ce4df1e38e83714ae5dc88e1fd57d0825b78fbfafcfe65b78a070356b8578e03",
-            "source_type": "PUBLIC_COMMUNITY"
-          }
-        ]
-      }
-    ],
-    "nikke": [
-      {
-        "title": "4주년 기념 특별 방송 카운트다운(10/24 방송 예고)",
-        "category": "EVENT",
-        "bm_types": [],
         "facts": [
           {
-            "text": "공식 커뮤니티에 4주년 기념 특별 방송이 10월 24일(토) 19:00에 진행된다고 공지되었다(방송 예약 링크 포함).",
+            "text": "리니지M 정기점검이 2026년 10월 21일(수)에 예정되어 있다는 공식 안내가 게시되었다.",
             "evidence_ids": [
-              "0f23ea6f83bf3cebe68fbe17d971b9962acf20ef6ff5350e9bcc791e18c883dd"
+              "998124c953c279652a787c77cd81b43ce9fe0196c4a9dbefebe6aa1a3a7191f5"
             ]
           },
           {
-            "text": "공식 커뮤니티에 이벤트 카운트다운 문구(전원 집결, 전 스쿼드 집결까지 D-6)가 게시되었다.",
+            "text": "공식은 상세 점검 일정 및 업데이트 내용은 10월 20일(화) 중 별도 공지로 추가 안내하겠다고 명시했다.",
             "evidence_ids": [
-              "073814dcaea2684f0864cafd9544c927348c335f43428f7d4fa2083e2bf86bef"
+              "998124c953c279652a787c77cd81b43ce9fe0196c4a9dbefebe6aa1a3a7191f5"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "공식 공지들은 4주년 관련 이벤트·특별 방송을 예고하며 인앱 구매(확률형 아이템 포함)를 언급하고 있다.",
+            "text": "현재 게시된 공식 공지에서는 점검 예정일과 별도 공지 예정일만 명시되어 있어 구체적 점검 시간과 업데이트 항목은 아직 공식 발표되지 않았다.",
             "evidence_ids": [
-              "0f23ea6f83bf3cebe68fbe17d971b9962acf20ef6ff5350e9bcc791e18c883dd",
-              "073814dcaea2684f0864cafd9544c927348c335f43428f7d4fa2083e2bf86bef"
+              "998124c953c279652a787c77cd81b43ce9fe0196c4a9dbefebe6aa1a3a7191f5"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "특별 방송·카운트다운과 연계된 구체적 유료 상품(가챠·패키지 등) 구성은 공식 공지에서 명시되지 않았다."
+          "점검의 정확한 시작·종료 시각",
+          "점검 중 적용될 구체적 업데이트 항목과 영향 범위(콘텐츠·보상 등)",
+          "점검으로 인한 이용자 보상 유무 및 지급 방식"
         ],
         "evidence": [
           {
-            "evidence_id": "073814dcaea2684f0864cafd9544c927348c335f43428f7d4fa2083e2bf86bef",
+            "evidence_id": "998124c953c279652a787c77cd81b43ce9fe0196c4a9dbefebe6aa1a3a7191f5",
             "classification": "OFFICIAL_FACT",
-            "url": "https://game.naver.com/lounge/nikke/board/detail/8337809",
-            "published_at": "2026-10-18T18:00:35+09:00",
-            "collected_at": "2026-10-19T10:08:54.744273+09:00",
-            "content_hash": "067eb9fbfd9dffc537382faf97493c82d3ff62791a0eefb23fd15cb0ac511805",
-            "source_type": "OFFICIAL_COMMUNITY"
-          },
+            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ad5f8306cfe4756db5b8dfc",
+            "published_at": "2026-10-19T20:00:00.194000+09:00",
+            "collected_at": "2026-10-20T10:45:04.357583+09:00",
+            "content_hash": "ca965ac86168ed55b2cebe15bfc92a53c8056bc3155061be3128c7cce8cc05d4",
+            "source_type": "OFFICIAL_HOMEPAGE"
+          }
+        ]
+      }
+    ],
+    "epic-seven": [],
+    "nikke": [
+      {
+        "title": "승리의 여신 집결 이벤트 카운트다운 D-5",
+        "category": "EVENT",
+        "bm_types": [],
+        "facts": [
           {
-            "evidence_id": "0f23ea6f83bf3cebe68fbe17d971b9962acf20ef6ff5350e9bcc791e18c883dd",
+            "text": "공식 공지에 '승리의 여신 집결' 이벤트의 카운트다운이 D-5임이 안내되어 있음.",
+            "evidence_ids": [
+              "1082ba77f6812877d5b1b133b639e942302e4a890d6c6ba733eaeb871a6b0773"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "공지에 인앱 구매(확률형 아이템 포함) 관련 문구가 명시되어 있어 이벤트 관련 유료 콘텐츠 제공이 예상됨.",
+            "evidence_ids": [
+              "1082ba77f6812877d5b1b133b639e942302e4a890d6c6ba733eaeb871a6b0773"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "이벤트의 상세 일정(시작/종료 시각) 및 보상 목록, 등장 캐릭터 정보는 본 공지에서 확인되지 않음"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "1082ba77f6812877d5b1b133b639e942302e4a890d6c6ba733eaeb871a6b0773",
             "classification": "OFFICIAL_FACT",
-            "url": "https://game.naver.com/lounge/nikke/board/detail/8335015",
-            "published_at": "2026-10-17T18:00:35+09:00",
-            "collected_at": "2026-10-19T10:08:54.744273+09:00",
-            "content_hash": "2a7a559bfe5896a6300cb39140ade38503266ba2f69c877858c1025b094b8775",
+            "url": "https://game.naver.com/lounge/nikke/board/detail/8340548",
+            "published_at": "2026-10-19T17:14:25+09:00",
+            "collected_at": "2026-10-20T10:45:04.357583+09:00",
+            "content_hash": "df4add0685cd9cb86e56e2f9dbd93de375737fb9fb32da4338b9b9ac6b017bec",
             "source_type": "OFFICIAL_COMMUNITY"
           }
         ]
@@ -187,47 +211,46 @@
     ],
     "trickcal-revive": [
       {
-        "title": "스파인 뷰어·로컬 캐시·국내 서버 이전으로 로딩 개선 주장",
-        "category": "UPDATE",
+        "title": "엘리아스 학예회 관람 인증 이벤트 당첨자·개인정보 수집 안내",
+        "category": "EVENT",
         "bm_types": [],
-        "facts": [],
-        "claims": [
+        "facts": [
           {
-            "text": "플레이어가 스파인 뷰어 관련 업데이트로 해외 서버에서 국내 서버로 이전해 로딩이 빨라졌다고 보고했다.",
+            "text": "공식 커뮤니티에 엘리아스 학예회 관람 인증 이벤트 당첨자 명단과 경품 구성이 안내되었다(프라모델 키링 4종 랜덤, 40명).",
             "evidence_ids": [
-              "bdf5c84f0894af0ace7e90a68801946fc527be5bdb1da90b98512dd41964add7"
+              "e39fcff24e270abf2f5b151ca85facc580d710db0452700660f8dcf30889eff2"
             ]
           },
           {
-            "text": "같은 게시글에서 리소스(다운로드한 파일)를 로컬에 캐시하도록 변경했고, 일부 브라우저에서는 동작하지 않는 경우가 있다고 주장했다.",
+            "text": "당첨자 개인정보 수집 기간은 공지 게시 시점부터 2026-11-02 23:59까지이며, 수집 목적은 경품 배송을 위함으로 안내되었다.",
             "evidence_ids": [
-              "bdf5c84f0894af0ace7e90a68801946fc527be5bdb1da90b98512dd41964add7"
+              "e39fcff24e270abf2f5b151ca85facc580d710db0452700660f8dcf30889eff2"
             ]
           }
         ],
+        "claims": [],
         "interpretation": [
           {
-            "text": "플레이어 게시글은 기술적 변경(서버 이전·로컬 캐시·뷰어 동작 변경)을 체감으로 설명하고 있으나 공식 발표 확인이 필요하다.",
+            "text": "운영 측은 당첨자에게만 개인정보를 수집해 경품을 배송하려는 절차를 공지한 상태다.",
             "evidence_ids": [
-              "bdf5c84f0894af0ace7e90a68801946fc527be5bdb1da90b98512dd41964add7"
+              "e39fcff24e270abf2f5b151ca85facc580d710db0452700660f8dcf30889eff2"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "해당 변경 사항의 공식 발표 또는 배포 대상(전체/일부 서버 여부)은 확인되지 않음",
-          "공식 패치노트·운영 공지에서 동일한 수정 내용이 있는지 불명",
-          "브라우저별 미지원 현상의 재현 조건·영향 범위가 불명"
+          "당첨자 선발 방식(추첨 방식 등)에 대한 세부 절차는 공지에서 명시되어 있지 않다.",
+          "경품 배송 일정 및 배송 방식(택배사, 해외 배송 여부 등)은 공지에 구체적으로 기재되어 있지 않다."
         ],
         "evidence": [
           {
-            "evidence_id": "bdf5c84f0894af0ace7e90a68801946fc527be5bdb1da90b98512dd41964add7",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=rollthechess&no=3856616",
-            "published_at": "2026-10-19T09:10:19+09:00",
-            "collected_at": "2026-10-19T10:10:16.498359+09:00",
-            "content_hash": "cb7e66fc858bd37fdbe62da2e10ca4d0bd60e6738006392435a699153bcae630",
-            "source_type": "PUBLIC_COMMUNITY"
+            "evidence_id": "e39fcff24e270abf2f5b151ca85facc580d710db0452700660f8dcf30889eff2",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/220207?boardtype=L&menuid=15&referrerAllArticles=false",
+            "published_at": "2026-10-19T17:00:13.600000+09:00",
+            "collected_at": "2026-10-20T10:45:04.357583+09:00",
+            "content_hash": "413e860dfcca9d3a71c77bba0e794ffb2c895e4e92b2597ceb9440b3abbee794",
+            "source_type": "OFFICIAL_COMMUNITY"
           }
         ]
       }
