@@ -1,255 +1,542 @@
 {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "version": "compact-v1-relevance-v2",
   "games": {
-    "mabinogi-mobile": [
+    "black-desert-mobile": [
       {
-        "title": "개발 순서·과금 설계로 인한 성장·공정성 불만",
-        "category": "BM",
-        "bm_types": [
-          "GROWTH"
-        ],
-        "facts": [],
-        "claims": [
+        "title": "10월 20일(화) 업데이트 점검 안내 및 완료",
+        "category": "MAINTENANCE",
+        "bm_types": [],
+        "facts": [
           {
-            "text": "유저는 개발진이 먼저 '뻥투'(전투력 인플레이션)를 불러일으킨 뒤, 이후에 이를 보완하는 장비(마저 상승 등)를 추가해 순서가 잘못됐다고 주장한다.",
+            "text": "업데이트 점검 일시가 10월 20일(화) 09:00~12:30로 안내되었고, 12:30에 점검이 완료되었다고 공지되었다.",
             "evidence_ids": [
-              "f8f605776dc1129a706afabf78ab3296da4ade8db990d0355061d19b6f7bee73"
+              "e82aedc310893ca25963e5e41cb407a03b35c3bc90868391ad431d6270803cba"
             ]
           },
           {
-            "text": "해당 순서로 인해 일반 유저는 성취감이 없고 일부는 매크로를 사용하게 되었으며, 상위 유저는 새 콘텐츠의 마저 컷만 올려 보상 없이 과금만 유도된다고 주장한다.",
+            "text": "점검 영향으로 게임 접속 및 공식 홈페이지·공식 포럼 이용이 중단된다고 안내되었다.",
             "evidence_ids": [
-              "f8f605776dc1129a706afabf78ab3296da4ade8db990d0355061d19b6f7bee73"
+              "e82aedc310893ca25963e5e41cb407a03b35c3bc90868391ad431d6270803cba"
             ]
           },
           {
-            "text": "결과적으로 일반 유저 이탈과 상위 유저의 흥미 감소(고래 유저의 과금 만족도 저하)를 초래했다고 평가한다.",
+            "text": "강제 업데이트 보상 목록과 지급 조건이 공지되었으며, 보상은 11월 1일(일) 23:59까지 수령 가능하고 우편은 발송 당시 생성된 가문만 수령할 수 있다.",
             "evidence_ids": [
-              "f8f605776dc1129a706afabf78ab3296da4ade8db990d0355061d19b6f7bee73"
+              "e82aedc310893ca25963e5e41cb407a03b35c3bc90868391ad431d6270803cba"
             ]
           }
         ],
+        "claims": [],
         "interpretation": [
           {
-            "text": "플레이어 반응은 개발·BM 순서(성장 요소 배치)에 대한 불만과 공정성 문제 제기로 요약된다; 이는 커뮤니티에서 반복적으로 제기되는 유형의 불만이다.",
+            "text": "모험가는 강제 업데이트 보상을 11월 1일 23:59 이전에 수령해야 하며, 우편 수령 조건(발송 시점 가문 생성)을 확인할 필요가 있다.",
             "evidence_ids": [
-              "f8f605776dc1129a706afabf78ab3296da4ade8db990d0355061d19b6f7bee73"
+              "e82aedc310893ca25963e5e41cb407a03b35c3bc90868391ad431d6270803cba"
+            ]
+          },
+          {
+            "text": "안정적 점검 진행을 위해 점검 30분 전부터 일부 아이템 사용 및 콘텐츠 입장이 제한된다고 공지되었다.",
+            "evidence_ids": [
+              "e82aedc310893ca25963e5e41cb407a03b35c3bc90868391ad431d6270803cba"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "개발진이 의도적으로 해당 순서를 선택했는지에 대한 공식 확인 여부",
-          "실제 게임 내 전투력·장비 밸런스 수치 변화와 그 영향 범위",
-          "매크로 사용 확산 정도와 운영(제재) 대응 현황"
+          "점검 후 공개될 패치노트의 세부 업데이트 항목과 변경 내용"
         ],
         "evidence": [
           {
-            "evidence_id": "f8f605776dc1129a706afabf78ab3296da4ade8db990d0355061d19b6f7bee73",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2179685",
-            "published_at": "2026-10-20T10:25:44+09:00",
-            "collected_at": "2026-10-20T10:46:20.692179+09:00",
-            "content_hash": "34dc3f39c606d8ea51363a31543a72bf9ff9a560a3f9da2143c25063139ef9d1",
-            "source_type": "PUBLIC_COMMUNITY"
+            "evidence_id": "e82aedc310893ca25963e5e41cb407a03b35c3bc90868391ad431d6270803cba",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=666663&pageNo=1",
+            "published_at": "2026-10-19T00:00:00+09:00",
+            "collected_at": "2026-10-21T10:30:02.451960+09:00",
+            "content_hash": "8f65c4a987bf33594fc5194b6807789043460085a5cfc5b6ccb9799fc318e48c",
+            "source_type": "OFFICIAL_HOMEPAGE"
           }
         ]
       }
     ],
     "odin-valhalla-rising": [
       {
-        "title": "AI 모드 24시간 자동 플레이에 대한 부정적 이용자 반응",
+        "title": "10/21 업데이트 상세 내역 안내 게시",
         "category": "UPDATE",
         "bm_types": [],
+        "facts": [
+          {
+            "text": "오딘 공식 홈페이지에 10/21(수) 업데이트 상세 내역 안내 제목의 공지가 게시되었다.",
+            "evidence_ids": [
+              "c84b102df8e5c1be5a8d39cd21d55063799d65480f1ef205cf6a539c3d728774"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [],
+        "conflicts": [],
+        "unknowns": [
+          "공식 공지의 본문 내용이나 변경 세부사항은 본 증거에서 확인할 수 없다."
+        ],
+        "evidence": [
+          {
+            "evidence_id": "c84b102df8e5c1be5a8d39cd21d55063799d65480f1ef205cf6a539c3d728774",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://odin.kakaogames.com/odin/",
+            "published_at": "2026-10-21T00:00:00+09:00",
+            "collected_at": "2026-10-21T10:30:02.451960+09:00",
+            "content_hash": "fc3c2933b0257ed8d69eb0e923527c3c7f5a0106b91a00cbad5230d19679ab0d",
+            "source_type": "OFFICIAL_HOMEPAGE"
+          }
+        ]
+      },
+      {
+        "title": "업데이트 관련 과금·광고 불만 제기",
+        "category": "BM",
+        "bm_types": [
+          "GACHA",
+          "OTHER"
+        ],
         "facts": [],
         "claims": [
           {
-            "text": "이용자는 제우스 플레이를 계획했다가 24시간 AI 모드 때문에 오딘으로 마음을 돌렸다고 주장함.",
+            "text": "커뮤니티 게시글에서 업데이트 관련 배너 광고가 보기 싫고 과금 수단이 '4종 뽑기' 등으로 과다하다는 불만이 제기되었다.",
             "evidence_ids": [
-              "7fec5f847460e81fbe0aa475cae95bba3cc913f2e79a2f495c41bdeb1d66de56"
-            ]
-          },
-          {
-            "text": "해당 이용자는 24시간 AI 모드가 '숙제하고 그냥 24시간 돌리고 끄는' 방식이라 플레이 동기와 몰입을 떨어뜨린다고 평가함.",
-            "evidence_ids": [
-              "7fec5f847460e81fbe0aa475cae95bba3cc913f2e79a2f495c41bdeb1d66de56"
-            ]
-          },
-          {
-            "text": "직장인 관점에서 최대 권장 플레이시간을 12~16시간으로 보고, 24시간 자동화는 '손해를 보는 기분'을 준다고 주장함.",
-            "evidence_ids": [
-              "7fec5f847460e81fbe0aa475cae95bba3cc913f2e79a2f495c41bdeb1d66de56"
+              "8164e91fd1f5d769ef693dea8a3447ba923fc80587d0487e17bb59f21a93b191"
             ]
           }
         ],
         "interpretation": [
           {
-            "text": "단일 게시글 표본상 AI 모드의 완전 자동화는 일부 이용자에게 수동적 이용을 초래해 게임 몰입과 체류 동기 저하로 인식될 수 있다.",
+            "text": "해당 이용자는 업데이트 노출 배너와 다수의 뽑기 방식이 과금 중심으로 보인다는 인식을 표현했다.",
             "evidence_ids": [
-              "7fec5f847460e81fbe0aa475cae95bba3cc913f2e79a2f495c41bdeb1d66de56"
-            ]
-          },
-          {
-            "text": "이용자는 자동화가 과금 유저·비과금 유저 사이의 경험 균형을 해칠 수 있다고 느끼며, 이 관점은 운영·BM 설계 관련 고려사항과 연결될 가능성이 있다.",
-            "evidence_ids": [
-              "7fec5f847460e81fbe0aa475cae95bba3cc913f2e79a2f495c41bdeb1d66de56"
-            ]
-          },
-          {
-            "text": "게시글에는 'AI' 표기 필터 문제에 대한 불만도 있어, 용어 필터링 관련 UX·커뮤니케이션 영향이 있을 수 있다.",
-            "evidence_ids": [
-              "7fec5f847460e81fbe0aa475cae95bba3cc913f2e79a2f495c41bdeb1d66de56"
+              "8164e91fd1f5d769ef693dea8a3447ba923fc80587d0487e17bb59f21a93b191"
             ]
           }
         ],
-        "conflicts": [],
+        "conflicts": [
+          {
+            "text": "공식 홈페이지 공지는 '업데이트 상세 내역 안내' 제목만 제공되어 과금·광고 변경 여부와 커뮤니티의 불만 사이에 확인된 불일치가 존재한다.",
+            "evidence_ids": [
+              "c84b102df8e5c1be5a8d39cd21d55063799d65480f1ef205cf6a539c3d728774",
+              "8164e91fd1f5d769ef693dea8a3447ba923fc80587d0487e17bb59f21a93b191"
+            ]
+          }
+        ],
         "unknowns": [
-          "동일한 불만을 가진 이용자 비율이나 다수 여론 여부",
-          "개발팀이 의도한 AI 모드 설계 목표(예: 완전 자동화 의도 여부) 및 공식 입장",
-          "AI 표기 필터의 범위와 의도적 적용 여부"
+          "공식 공지에서 실제로 광고 배너가 추가되었는지 또는 뽑기 종류가 늘었는지는 확인되지 않는다."
         ],
         "evidence": [
           {
-            "evidence_id": "7fec5f847460e81fbe0aa475cae95bba3cc913f2e79a2f495c41bdeb1d66de56",
+            "evidence_id": "8164e91fd1f5d769ef693dea8a3447ba923fc80587d0487e17bb59f21a93b191",
             "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=vhr&no=317142",
-            "published_at": "2026-10-18T23:15:33+09:00",
-            "collected_at": "2026-10-20T10:46:20.692179+09:00",
-            "content_hash": "54f95bab89aa4e6a401cddb1e452f6f5547fc23aed88791299b0ade0babee702",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=vhr&no=317163",
+            "published_at": "2026-10-21T03:14:19+09:00",
+            "collected_at": "2026-10-21T10:31:15.820225+09:00",
+            "content_hash": "0ee1300a0b7cf790a0df096ff27fbc64489293e334bd2512ba4c22c05ce24316",
             "source_type": "PUBLIC_COMMUNITY"
+          },
+          {
+            "evidence_id": "c84b102df8e5c1be5a8d39cd21d55063799d65480f1ef205cf6a539c3d728774",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://odin.kakaogames.com/odin/",
+            "published_at": "2026-10-21T00:00:00+09:00",
+            "collected_at": "2026-10-21T10:30:02.451960+09:00",
+            "content_hash": "fc3c2933b0257ed8d69eb0e923527c3c7f5a0106b91a00cbad5230d19679ab0d",
+            "source_type": "OFFICIAL_HOMEPAGE"
           }
         ]
       }
     ],
     "lineage-m": [
       {
-        "title": "리니지M 정기점검 예정(10월21일)",
-        "category": "MAINTENANCE",
-        "bm_types": [],
+        "title": "10월 21일 판매 상품(게렝·실렌·아덴성 상인) 안내",
+        "category": "BM",
+        "bm_types": [
+          "GACHA",
+          "CURRENCY",
+          "OTHER"
+        ],
         "facts": [
           {
-            "text": "리니지M 정기점검이 2026년 10월 21일(수)에 예정되어 있다는 공식 안내가 게시되었다.",
+            "text": "게렝의 지원 상자는 10월 21일 정기점검 후부터 11월 4일 정기점검 전까지 판매되며 계정당 주간 구매 제한이 적용됩니다.",
             "evidence_ids": [
-              "998124c953c279652a787c77cd81b43ce9fe0196c4a9dbefebe6aa1a3a7191f5"
+              "0bea95569e55bbb5a78fb2e4247e498d213d8dc28969bc924080633999b4dedb"
             ]
           },
           {
-            "text": "공식은 상세 점검 일정 및 업데이트 내용은 10월 20일(화) 중 별도 공지로 추가 안내하겠다고 명시했다.",
+            "text": "실렌의 최상급 재화 보급 상자는 10월 21일 정기점검 후부터 11월 4일 정기점검 전까지 다이아로 판매되며 계정당 8회 제한이 명시되어 있습니다.",
             "evidence_ids": [
-              "998124c953c279652a787c77cd81b43ce9fe0196c4a9dbefebe6aa1a3a7191f5"
+              "4ae73a4c047be5fea52a7ac8dd2bb7c58c38cbaaf8c6572da91a9bfbc8acadd6"
+            ]
+          },
+          {
+            "text": "아덴성 상인의 교역품은 10월 21일 정기점검 후부터 11월 11일 정기점검 전까지 판매되며 계정당 주간 구매 횟수 제한과 구성품 삭제 예정일이 안내되어 있습니다.",
+            "evidence_ids": [
+              "7e18ecc8d2f19642ab61c8e3a3ba8d8993e26e698e2524e2460433cd73da4a0f"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "현재 게시된 공식 공지에서는 점검 예정일과 별도 공지 예정일만 명시되어 있어 구체적 점검 시간과 업데이트 항목은 아직 공식 발표되지 않았다.",
+            "text": "공식 공지들은 각 상품의 판매 기간·구성품·구매 제한과 아이템 삭제 예정일을 상세히 명시하고 있습니다.",
             "evidence_ids": [
-              "998124c953c279652a787c77cd81b43ce9fe0196c4a9dbefebe6aa1a3a7191f5"
+              "0bea95569e55bbb5a78fb2e4247e498d213d8dc28969bc924080633999b4dedb",
+              "4ae73a4c047be5fea52a7ac8dd2bb7c58c38cbaaf8c6572da91a9bfbc8acadd6",
+              "7e18ecc8d2f19642ab61c8e3a3ba8d8993e26e698e2524e2460433cd73da4a0f"
             ]
           }
         ],
         "conflicts": [],
-        "unknowns": [
-          "점검의 정확한 시작·종료 시각",
-          "점검 중 적용될 구체적 업데이트 항목과 영향 범위(콘텐츠·보상 등)",
-          "점검으로 인한 이용자 보상 유무 및 지급 방식"
-        ],
+        "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "998124c953c279652a787c77cd81b43ce9fe0196c4a9dbefebe6aa1a3a7191f5",
+            "evidence_id": "0bea95569e55bbb5a78fb2e4247e498d213d8dc28969bc924080633999b4dedb",
             "classification": "OFFICIAL_FACT",
-            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ad5f8306cfe4756db5b8dfc",
-            "published_at": "2026-10-19T20:00:00.194000+09:00",
-            "collected_at": "2026-10-20T10:45:04.357583+09:00",
-            "content_hash": "ca965ac86168ed55b2cebe15bfc92a53c8056bc3155061be3128c7cce8cc05d4",
+            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ad7c1386cfe4756db5b8e6b",
+            "published_at": "2026-10-21T04:30:00.001000+09:00",
+            "collected_at": "2026-10-21T10:30:02.451960+09:00",
+            "content_hash": "b9b5816bc4608e3fd27dd14f3a4e598285ed4241b0f9271351f051b7a110c66c",
+            "source_type": "OFFICIAL_HOMEPAGE"
+          },
+          {
+            "evidence_id": "4ae73a4c047be5fea52a7ac8dd2bb7c58c38cbaaf8c6572da91a9bfbc8acadd6",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ad7c1386cfe4756db5b8e6d",
+            "published_at": "2026-10-21T04:30:00.001000+09:00",
+            "collected_at": "2026-10-21T10:30:02.451960+09:00",
+            "content_hash": "30bc74fe5aabb0cce201d61ec3e75beaae81bf3425ebc796d7881be1675cb7d9",
+            "source_type": "OFFICIAL_HOMEPAGE"
+          },
+          {
+            "evidence_id": "7e18ecc8d2f19642ab61c8e3a3ba8d8993e26e698e2524e2460433cd73da4a0f",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ad7c1386cfe4756db5b8e6f",
+            "published_at": "2026-10-21T04:30:00.001000+09:00",
+            "collected_at": "2026-10-21T10:30:02.451960+09:00",
+            "content_hash": "8eae3b33cf88b532e646d3170f3158bbd687c5ac942802675c7607036b820c3b",
+            "source_type": "OFFICIAL_HOMEPAGE"
+          }
+        ]
+      },
+      {
+        "title": "10월 21일 [시즌 패스]·[프리미엄 시즌 패스] GOLDEN 안내",
+        "category": "BM",
+        "bm_types": [
+          "GROWTH",
+          "CURRENCY",
+          "CONVENIENCE"
+        ],
+        "facts": [
+          {
+            "text": "[시즌 패스] GOLDEN은 10월 21일 정기점검 후부터 12월 23일 정기점검 전까지 진행되며 레거시·리부트 각 그룹별 계정당 1회 구매가 가능합니다.",
+            "evidence_ids": [
+              "26d7f3a98ba4cdb0ecef82d1effe47e1fc15f36bd8b48335ab2efd3b8f8ff75b"
+            ]
+          },
+          {
+            "text": "[프리미엄 시즌 패스] GOLDEN은 동일 기간 중 제공되며 단계별 미션 수행으로 패스 경험치를 획득해 최대 30단계 보상을 얻는 방식이라고 공지되어 있습니다.",
+            "evidence_ids": [
+              "26d7f3a98ba4cdb0ecef82d1effe47e1fc15f36bd8b48335ab2efd3b8f8ff75b"
+            ]
+          },
+          {
+            "text": "패스 미션은 매일 1회, 시즌 미션은 시즌 기간 동안 1회 수행 가능하며 각 미션별 획득 경험치와 대표 보상이 공지되어 있습니다.",
+            "evidence_ids": [
+              "26d7f3a98ba4cdb0ecef82d1effe47e1fc15f36bd8b48335ab2efd3b8f8ff75b"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "공식 공지에는 가격·구매 제한·미션별 보상 구조와 종료 시점 등이 구체적으로 기재되어 있어 이용자 안내 목적입니다.",
+            "evidence_ids": [
+              "26d7f3a98ba4cdb0ecef82d1effe47e1fc15f36bd8b48335ab2efd3b8f8ff75b"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "26d7f3a98ba4cdb0ecef82d1effe47e1fc15f36bd8b48335ab2efd3b8f8ff75b",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ad7c1386cfe4756db5b8e69",
+            "published_at": "2026-10-21T04:30:00.001000+09:00",
+            "collected_at": "2026-10-21T10:30:02.451960+09:00",
+            "content_hash": "c9489cb45717cfa9c64ec639f4102295fb9a9881118ed5cc2d136e14b99ed9bd",
+            "source_type": "OFFICIAL_HOMEPAGE"
+          }
+        ]
+      },
+      {
+        "title": "10월 21일 정기점검 완료 안내(수정)",
+        "category": "MAINTENANCE",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "공식 점검 공지에 따르면 10월 21일 정기점검이 완료되어 06시 40분부터 정상 접속 가능하다고 안내했습니다.",
+            "evidence_ids": [
+              "2ff36948bf7b2f3cef792557f926b692e7bfe9c2341747c50406ca5a541e3bb2"
+            ]
+          },
+          {
+            "text": "원래 점검 예정 시간은 04:30~06:20(예정)이며 점검은 업데이트 목적이라고 공지되었습니다.",
+            "evidence_ids": [
+              "2ff36948bf7b2f3cef792557f926b692e7bfe9c2341747c50406ca5a541e3bb2"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "공지에는 점검 완료 시각과 점검 중 영향(게임 이용 불가)을 공식적으로 안내하고 있습니다.",
+            "evidence_ids": [
+              "2ff36948bf7b2f3cef792557f926b692e7bfe9c2341747c50406ca5a541e3bb2"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "2ff36948bf7b2f3cef792557f926b692e7bfe9c2341747c50406ca5a541e3bb2",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ad749b0263e537d356d11de",
+            "published_at": "2026-10-20T20:00:00.138000+09:00",
+            "collected_at": "2026-10-21T10:30:02.451960+09:00",
+            "content_hash": "eaea75e964464bf883871ced28ba7901ea676dd08d94a0a5d33da6911676c233",
             "source_type": "OFFICIAL_HOMEPAGE"
           }
         ]
       }
     ],
-    "epic-seven": [],
     "nikke": [
       {
-        "title": "승리의 여신 집결 이벤트 카운트다운 D-5",
+        "title": "4주년 행사 '승리의 여신 집결' 카운트다운 D-4",
         "category": "EVENT",
         "bm_types": [],
         "facts": [
           {
-            "text": "공식 공지에 '승리의 여신 집결' 이벤트의 카운트다운이 D-5임이 안내되어 있음.",
+            "text": "공식 라운지에 4주년 행사 '승리의 여신 집결' 카운트다운 D-4 안내가 게시되었으며 인앱 구매 문구가 포함되어 있다.",
             "evidence_ids": [
-              "1082ba77f6812877d5b1b133b639e942302e4a890d6c6ba733eaeb871a6b0773"
+              "668b712b28e1bb628c9da1e12df61c2773b0182ad647db1d4f0227b66de939ba"
+            ]
+          },
+          {
+            "text": "공식 유튜브에서 4주년 정보 사이트 링크를 안내하며 총집편 영상 업데이트 사실을 안내했다.",
+            "evidence_ids": [
+              "95b9fde5594cc7771c9b024d7c9c407437d25b999043953e04684e56978845a9"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "공지에 인앱 구매(확률형 아이템 포함) 관련 문구가 명시되어 있어 이벤트 관련 유료 콘텐츠 제공이 예상됨.",
+            "text": "공식 채널에서 4주년 관련 콘텐츠와 정보 사이트 공개를 예고하고 있어 일정 기반 행사 전개가 예정되어 있다.",
             "evidence_ids": [
-              "1082ba77f6812877d5b1b133b639e942302e4a890d6c6ba733eaeb871a6b0773"
+              "668b712b28e1bb628c9da1e12df61c2773b0182ad647db1d4f0227b66de939ba",
+              "95b9fde5594cc7771c9b024d7c9c407437d25b999043953e04684e56978845a9"
             ]
           }
         ],
         "conflicts": [],
-        "unknowns": [
-          "이벤트의 상세 일정(시작/종료 시각) 및 보상 목록, 등장 캐릭터 정보는 본 공지에서 확인되지 않음"
-        ],
+        "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "1082ba77f6812877d5b1b133b639e942302e4a890d6c6ba733eaeb871a6b0773",
+            "evidence_id": "668b712b28e1bb628c9da1e12df61c2773b0182ad647db1d4f0227b66de939ba",
             "classification": "OFFICIAL_FACT",
-            "url": "https://game.naver.com/lounge/nikke/board/detail/8340548",
-            "published_at": "2026-10-19T17:14:25+09:00",
-            "collected_at": "2026-10-20T10:45:04.357583+09:00",
-            "content_hash": "df4add0685cd9cb86e56e2f9dbd93de375737fb9fb32da4338b9b9ac6b017bec",
+            "url": "https://game.naver.com/lounge/nikke/board/detail/8343876",
+            "published_at": "2026-10-20T18:00:35+09:00",
+            "collected_at": "2026-10-21T10:30:02.451960+09:00",
+            "content_hash": "e81dfaeed139377316a30b394664279e91c17e697d61fe806940032d6720abce",
             "source_type": "OFFICIAL_COMMUNITY"
+          },
+          {
+            "evidence_id": "95b9fde5594cc7771c9b024d7c9c407437d25b999043953e04684e56978845a9",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/watch?v=UndDTAe55sY",
+            "published_at": "2026-10-19T19:17:27+09:00",
+            "collected_at": "2026-10-21T10:30:34.275151+09:00",
+            "content_hash": "be7f7f06df054f908fd3fdc727b618e819087e8440bbcb4c109e257d611e8a6f",
+            "source_type": "OFFICIAL_YOUTUBE"
+          }
+        ]
+      },
+      {
+        "title": "공식 유튜브에 'NIKKE 총집편' 시리즈 공개",
+        "category": "UPDATE",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "공식 유튜브에 'NIKKE 총집편 - 희망의 불꽃 편' 영상이 게시되어 4주년 정보 사이트로 연결하고 있다.",
+            "evidence_ids": [
+              "95b9fde5594cc7771c9b024d7c9c407437d25b999043953e04684e56978845a9"
+            ]
+          },
+          {
+            "text": "공식 유튜브에 'NIKKE 총집편 - 필그림 편' 영상이 게시되어 영상 내 스토리를 게임 내 아카이브에서 확인할 수 있다고 안내했다.",
+            "evidence_ids": [
+              "32621b9ff72bb720d3acde94eb30c4a590adbe835ded449b622a7b49e98d3b2b"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "총집편 영상 시리즈는 4주년 홍보의 일부로 보이며, 게임 내 아카이브 연계 안내가 포함되어 있다.",
+            "evidence_ids": [
+              "95b9fde5594cc7771c9b024d7c9c407437d25b999043953e04684e56978845a9",
+              "32621b9ff72bb720d3acde94eb30c4a590adbe835ded449b622a7b49e98d3b2b"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "32621b9ff72bb720d3acde94eb30c4a590adbe835ded449b622a7b49e98d3b2b",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/watch?v=ZucaW6fMHNA",
+            "published_at": "2026-10-16T15:00:07+09:00",
+            "collected_at": "2026-10-21T10:30:34.275151+09:00",
+            "content_hash": "313a4b3416f3239e3f5f00dd63df527473f2359c400f9dc666df3e5e6d0d9dff",
+            "source_type": "OFFICIAL_YOUTUBE"
+          },
+          {
+            "evidence_id": "95b9fde5594cc7771c9b024d7c9c407437d25b999043953e04684e56978845a9",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/watch?v=UndDTAe55sY",
+            "published_at": "2026-10-19T19:17:27+09:00",
+            "collected_at": "2026-10-21T10:30:34.275151+09:00",
+            "content_hash": "be7f7f06df054f908fd3fdc727b618e819087e8440bbcb4c109e257d611e8a6f",
+            "source_type": "OFFICIAL_YOUTUBE"
+          }
+        ]
+      },
+      {
+        "title": "스토리 이벤트 BGM 'LITTLE WITCH TRICK' 풀버전 공개",
+        "category": "UPDATE",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "공식 유튜브에 스토리 이벤트 BGM 'LITTLE WITCH TRICK' 풀 버전 영상이 게시되었다.",
+            "evidence_ids": [
+              "b7b9ed9195d5660be38bc9b066a6c2ab7148c8f818280b2ad82b629a0a057625"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "스토리 이벤트 관련 BGM 공개는 이벤트 홍보 및 콘텐츠 노출 확대 목적의 공식 업데이트로 해석된다.",
+            "evidence_ids": [
+              "b7b9ed9195d5660be38bc9b066a6c2ab7148c8f818280b2ad82b629a0a057625"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "b7b9ed9195d5660be38bc9b066a6c2ab7148c8f818280b2ad82b629a0a057625",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/watch?v=b-_VPRIp6Hk",
+            "published_at": "2026-10-17T11:00:21+09:00",
+            "collected_at": "2026-10-21T10:30:34.275151+09:00",
+            "content_hash": "e7caf0e9a2586d6b9c3187378a867adf66570a25d95e74f390b4b4aefa42d631",
+            "source_type": "OFFICIAL_YOUTUBE"
           }
         ]
       }
     ],
     "trickcal-revive": [
       {
-        "title": "엘리아스 학예회 관람 인증 이벤트 당첨자·개인정보 수집 안내",
-        "category": "EVENT",
-        "bm_types": [],
+        "title": "신규 스펙타클 카드 뽑기 예정 안내",
+        "category": "BM",
+        "bm_types": [
+          "GACHA",
+          "COSMETIC"
+        ],
         "facts": [
           {
-            "text": "공식 커뮤니티에 엘리아스 학예회 관람 인증 이벤트 당첨자 명단과 경품 구성이 안내되었다(프라모델 키링 4종 랜덤, 40명).",
+            "text": "이벤트 기간은 10/22 정기점검 이후부터 11/05 10:59까지로 안내되어 있습니다.",
             "evidence_ids": [
-              "e39fcff24e270abf2f5b151ca85facc580d710db0452700660f8dcf30889eff2"
+              "4ffc33dfe4bc0aae6e040ea76f01037ae0411b2ee6a0b1042602ec6ec613d90a"
             ]
           },
           {
-            "text": "당첨자 개인정보 수집 기간은 공지 게시 시점부터 2026-11-02 23:59까지이며, 수집 목적은 경품 배송을 위함으로 안내되었다.",
+            "text": "카드 10회 뽑기 시 지정된 스펙타클 카드 중 1종을 확정 획득할 수 있다고 안내되어 있습니다.",
             "evidence_ids": [
-              "e39fcff24e270abf2f5b151ca85facc580d710db0452700660f8dcf30889eff2"
+              "4ffc33dfe4bc0aae6e040ea76f01037ae0411b2ee6a0b1042602ec6ec613d90a"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "운영 측은 당첨자에게만 개인정보를 수집해 경품을 배송하려는 절차를 공지한 상태다.",
+            "text": "기간한정 10연 확정 방식은 유저의 단기간 구매 유도를 의도한 BM 구성으로 해석됩니다.",
             "evidence_ids": [
-              "e39fcff24e270abf2f5b151ca85facc580d710db0452700660f8dcf30889eff2"
+              "4ffc33dfe4bc0aae6e040ea76f01037ae0411b2ee6a0b1042602ec6ec613d90a"
             ]
           }
         ],
         "conflicts": [],
-        "unknowns": [
-          "당첨자 선발 방식(추첨 방식 등)에 대한 세부 절차는 공지에서 명시되어 있지 않다.",
-          "경품 배송 일정 및 배송 방식(택배사, 해외 배송 여부 등)은 공지에 구체적으로 기재되어 있지 않다."
-        ],
+        "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "e39fcff24e270abf2f5b151ca85facc580d710db0452700660f8dcf30889eff2",
+            "evidence_id": "4ffc33dfe4bc0aae6e040ea76f01037ae0411b2ee6a0b1042602ec6ec613d90a",
             "classification": "OFFICIAL_FACT",
-            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/220207?boardtype=L&menuid=15&referrerAllArticles=false",
-            "published_at": "2026-10-19T17:00:13.600000+09:00",
-            "collected_at": "2026-10-20T10:45:04.357583+09:00",
-            "content_hash": "413e860dfcca9d3a71c77bba0e794ffb2c895e4e92b2597ceb9440b3abbee794",
+            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/220326?boardtype=L&menuid=14&referrerAllArticles=false",
+            "published_at": "2026-10-20T17:01:49+09:00",
+            "collected_at": "2026-10-21T10:30:02.451960+09:00",
+            "content_hash": "32f4e6fec7a658d424d5b70ce5e014e5c13997a701a376f396b3389a043ca7ee",
+            "source_type": "OFFICIAL_COMMUNITY"
+          }
+        ]
+      },
+      {
+        "title": "신규 픽업 사도 '코페' 픽업 모집 안내",
+        "category": "BM",
+        "bm_types": [
+          "GACHA",
+          "CHARACTER"
+        ],
+        "facts": [
+          {
+            "text": "픽업 대상인 '코페'의 출현 확률이 기간 중 상향된다고 공지되어 있습니다.",
+            "evidence_ids": [
+              "cf6e8111fc61109f9f9246b2b79aeb22969daf118b8abae0186b517a92577e6f"
+            ]
+          },
+          {
+            "text": "픽업 모집 기간은 10/22 정기점검 이후부터 11/05까지로 안내되어 있습니다.",
+            "evidence_ids": [
+              "cf6e8111fc61109f9f9246b2b79aeb22969daf118b8abae0186b517a92577e6f"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "신규 사도 픽업 기간 설정은 특정 캐릭터 획득 집중을 통한 유입·지출 증가를 노린 BM 운영으로 보입니다.",
+            "evidence_ids": [
+              "cf6e8111fc61109f9f9246b2b79aeb22969daf118b8abae0186b517a92577e6f"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "cf6e8111fc61109f9f9246b2b79aeb22969daf118b8abae0186b517a92577e6f",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/220325?boardtype=L&menuid=14&referrerAllArticles=false",
+            "published_at": "2026-10-20T17:01:31.087000+09:00",
+            "collected_at": "2026-10-21T10:30:02.451960+09:00",
+            "content_hash": "f7a17485ad57bc4223ba4a130babe2f3c73929c99222b77dd983795c1a70a6fe",
             "source_type": "OFFICIAL_COMMUNITY"
           }
         ]

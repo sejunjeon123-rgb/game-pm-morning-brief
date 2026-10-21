@@ -1407,6 +1407,30 @@
       "first_seen_at": "2026-10-19T10:09:31.029492+09:00",
       "last_seen_at": "2026-10-19T10:09:31.029492+09:00",
       "published_at": "2026-10-16T13:34:29+09:00"
+    },
+    "https://www.youtube.com/watch?v=UndDTAe55sY": {
+      "game_id": "nikke",
+      "title": "【스포일러 주의】 NIKKE 총집편 - 희망의 불꽃 편 | 승리의 여신: 니케",
+      "content_hash": "be7f7f06df054f908fd3fdc727b618e819087e8440bbcb4c109e257d611e8a6f",
+      "first_seen_at": "2026-10-21T10:30:34.275151+09:00",
+      "last_seen_at": "2026-10-21T10:30:34.275151+09:00",
+      "published_at": "2026-10-19T19:17:27+09:00"
+    },
+    "https://www.youtube.com/watch?v=b-_VPRIp6Hk": {
+      "game_id": "nikke",
+      "title": "LITTLE WITCH TRICK 스토리 이벤트 BGM - LITTLE WITCH TRICK | 승리의 여신: 니케",
+      "content_hash": "e7caf0e9a2586d6b9c3187378a867adf66570a25d95e74f390b4b4aefa42d631",
+      "first_seen_at": "2026-10-21T10:30:34.275151+09:00",
+      "last_seen_at": "2026-10-21T10:30:34.275151+09:00",
+      "published_at": "2026-10-17T11:00:21+09:00"
+    },
+    "https://www.youtube.com/watch?v=ZucaW6fMHNA": {
+      "game_id": "nikke",
+      "title": "【스포일러 주의】 NIKKE 총집편 - 필그림 편 | 승리의 여신: 니케",
+      "content_hash": "313a4b3416f3239e3f5f00dd63df527473f2359c400f9dc666df3e5e6d0d9dff",
+      "first_seen_at": "2026-10-21T10:30:34.275151+09:00",
+      "last_seen_at": "2026-10-21T10:30:34.275151+09:00",
+      "published_at": "2026-10-16T15:00:07+09:00"
     }
   }
 }
