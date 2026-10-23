@@ -1405,7 +1405,7 @@
       "title": "[마비노기 모바일] 모험가의 기록 | 2026년 9월호",
       "content_hash": "8a7703a325216684150b0f184bc052c5c5cdbd20d667a171edfd3c0fd123010f",
       "first_seen_at": "2026-10-19T10:09:31.029492+09:00",
-      "last_seen_at": "2026-10-19T10:09:31.029492+09:00",
+      "last_seen_at": "2026-10-23T10:26:51.775133+09:00",
       "published_at": "2026-10-16T13:34:29+09:00"
     },
     "https://www.youtube.com/watch?v=UndDTAe55sY": {
@@ -1439,6 +1439,30 @@
       "first_seen_at": "2026-10-22T10:27:42.914500+09:00",
       "last_seen_at": "2026-10-22T10:27:42.914500+09:00",
       "published_at": "2026-10-21T18:22:35+09:00"
+    },
+    "https://www.youtube.com/shorts/md4ZOoWZo3o": {
+      "game_id": "mabinogi-mobile",
+      "title": "[주술회전 X 마비노기 모바일] 11월 5일 COMING SOON",
+      "content_hash": "c9dc8e75a35c77fa9e391363b800a4fe1d8f8dc7388fe4b78060028d9d54e02e",
+      "first_seen_at": "2026-10-23T10:26:51.775133+09:00",
+      "last_seen_at": "2026-10-23T10:26:51.775133+09:00",
+      "published_at": "2026-10-21T10:30:21+09:00"
+    },
+    "https://www.youtube.com/watch?v=ckHkOdavUNs": {
+      "game_id": "mabinogi-mobile",
+      "title": "[주술회전 X 마비노기 모바일] 11월 5일 COMING SOON",
+      "content_hash": "c9dc8e75a35c77fa9e391363b800a4fe1d8f8dc7388fe4b78060028d9d54e02e",
+      "first_seen_at": "2026-10-23T10:26:51.775133+09:00",
+      "last_seen_at": "2026-10-23T10:26:51.775133+09:00",
+      "published_at": "2026-10-21T10:30:02+09:00"
+    },
+    "https://www.youtube.com/shorts/Ec5B71QHhow": {
+      "game_id": "mabinogi-mobile",
+      "title": "[마비노기 모바일] 으스스한 모자와 함께하는 할로윈",
+      "content_hash": "1480645842b4fd0e2feef9348a83d3e0afac297179066231e3a2f35acf87e441",
+      "first_seen_at": "2026-10-23T10:26:51.775133+09:00",
+      "last_seen_at": "2026-10-23T10:26:51.775133+09:00",
+      "published_at": "2026-10-19T14:00:36+09:00"
     }
   }
 }

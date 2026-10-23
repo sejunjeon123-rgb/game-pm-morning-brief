@@ -10158,7 +10158,7 @@
       "title": "원래 두개 씩 돌리다가",
       "content_hash": "9cf29cf7538fec53012357fdc2a9c5bdf14b48a700393f846b23ec7f8ba65e2a",
       "first_seen_at": "2026-10-17T10:17:01.994012+09:00",
-      "last_seen_at": "2026-10-22T10:28:25.147821+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
       "published_at": "2026-10-16T12:48:49+09:00"
     },
     "https://gall.dcinside.com/mgallery/board/view/?id=vhr&no=317130": {
@@ -10329,7 +10329,7 @@
       "title": "다들 흑정령모드 안해?",
       "content_hash": "df828678e2e4bb69f5046bb3becaf7c59ca1d7011d958d119166a0923ddae27f",
       "first_seen_at": "2026-10-18T09:58:28.911847+09:00",
-      "last_seen_at": "2026-10-22T10:28:25.147821+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
       "published_at": "2026-10-17T18:42:36+09:00"
     },
     "https://gall.dcinside.com/mgallery/board/view/?id=vhr&no=317135": {
@@ -10536,7 +10536,7 @@
       "title": "제우스 해볼려다가 오딘으로 틀었다",
       "content_hash": "54f95bab89aa4e6a401cddb1e452f6f5547fc23aed88791299b0ade0babee702",
       "first_seen_at": "2026-10-19T10:10:16.498359+09:00",
-      "last_seen_at": "2026-10-22T10:28:25.147821+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
       "published_at": "2026-10-18T23:15:33+09:00"
     },
     "https://gall.dcinside.com/board/view/?id=lineagem&no=403339": {
@@ -10707,7 +10707,7 @@
       "title": "앵간하면 옆갤은 가지마라 ㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
       "content_hash": "dc93c2b53d54525bf78dc9d039ea21769c87683ff02886e6b73068305912e05b",
       "first_seen_at": "2026-10-20T10:46:20.692179+09:00",
-      "last_seen_at": "2026-10-22T10:28:25.147821+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
       "published_at": "2026-10-19T01:37:29+09:00"
     },
     "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2179545": {
@@ -10743,7 +10743,7 @@
       "title": "오딘갤 희대의 명언",
       "content_hash": "23bf2d98e4b1614cedf69ce58d771927ed689b2c900ec27130a5cd1e853a9d37",
       "first_seen_at": "2026-10-20T10:46:20.692179+09:00",
-      "last_seen_at": "2026-10-22T10:28:25.147821+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
       "published_at": "2026-10-19T12:35:38+09:00"
     },
     "https://gall.dcinside.com/board/view/?id=lineagem&no=403374": {
@@ -11139,7 +11139,7 @@
       "title": "바이럴 패턴 분석 완료",
       "content_hash": "ff4224ffaf1d41b04993622148014ea755a0b3dfeed4d0c491b2de5f92dd7902",
       "first_seen_at": "2026-10-22T10:28:25.147821+09:00",
-      "last_seen_at": "2026-10-22T10:28:25.147821+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
       "published_at": "2026-10-21T21:22:01+09:00"
     },
     "https://gall.dcinside.com/board/view/?id=lineagem&no=403433": {
@@ -11148,7 +11148,7 @@
       "title": "좆병신 같은 바이럴글 왜올리는거냐?",
       "content_hash": "b8d47dfc60c959353ee2ec3aeaa98d84399f75285245cd5d8f19bd192ac28cab",
       "first_seen_at": "2026-10-22T10:28:25.147821+09:00",
-      "last_seen_at": "2026-10-22T10:28:25.147821+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
       "published_at": "2026-10-21T16:44:32+09:00"
     },
     "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1384336": {
@@ -11276,6 +11276,195 @@
       "first_seen_at": "2026-10-22T10:28:25.147821+09:00",
       "last_seen_at": "2026-10-22T10:28:25.147821+09:00",
       "published_at": "2026-10-18T20:53:27+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2179749": {
+      "game_id": "mabinogi-mobile",
+      "source_id": "mabinogi-mobile-dcinside",
+      "title": "데이안 핑테힐러 본계 닉 삽니다",
+      "content_hash": "b7f063ba2b976473dbb17f91c909742052bede83f536a60c7dabd8ed8be8f25a",
+      "first_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "published_at": "2026-10-23T10:00:15+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2179733": {
+      "game_id": "mabinogi-mobile",
+      "source_id": "mabinogi-mobile-dcinside",
+      "title": "에반갤은 딱 이거임",
+      "content_hash": "7df87754f8316640d9bb9186899b37fd549f86f26f8417b46fa2250675573da3",
+      "first_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "published_at": "2026-10-22T12:10:00+09:00"
+    },
+    "https://gall.dcinside.com/board/view/?id=blackdesertmobile&no=334385": {
+      "game_id": "black-desert-mobile",
+      "source_id": "black-desert-mobile-dcinside",
+      "title": "갤스 30퍼 친추쿠폰 드가즈앗!",
+      "content_hash": "28afdd6d651b433e2b44faa6c60bea58df7d5d7b1a411d097d4564cd8b284b8a",
+      "first_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "published_at": "2026-10-22T20:10:39+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=vhr&no=317182": {
+      "game_id": "odin-valhalla-rising",
+      "source_id": "odin-valhalla-rising-dcinside",
+      "title": "제우스 넘어 갔다는 놈들 웃김 ㅋㅋ",
+      "content_hash": "a0b42b90be7d9d1e6f3a1c83a7d6b3f1edb45b47dbeda7361a69370697771585",
+      "first_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "published_at": "2026-10-23T09:46:11+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=vhr&no=317181": {
+      "game_id": "odin-valhalla-rising",
+      "source_id": "odin-valhalla-rising-dcinside",
+      "title": "오딘은 그냥 애증겜이지",
+      "content_hash": "447b25fdcc059f9b73cb93285420b979bb530e40375a220ebd29e2e8ffaff304",
+      "first_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "published_at": "2026-10-23T09:43:16+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=vhr&no=317167": {
+      "game_id": "odin-valhalla-rising",
+      "source_id": "odin-valhalla-rising-dcinside",
+      "title": "넘어간 사람 많나",
+      "content_hash": "f42fa1c36993906f9088d40bdc610885d52b4159f68a49470735632f8f797567",
+      "first_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "published_at": "2026-10-21T21:04:46+09:00"
+    },
+    "https://gall.dcinside.com/board/view/?id=lineagem&no=403491": {
+      "game_id": "lineage-m",
+      "source_id": "lineage-m-dcinside",
+      "title": "마족검은 안쓰는 무기인가요?",
+      "content_hash": "2dfc65c5f63abde878d3032cbe6865018ba1177d3e122eff18dff0ff076c2307",
+      "first_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "published_at": "2026-10-23T10:03:12+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1385104": {
+      "game_id": "seven-knights-rebirth",
+      "source_id": "seven-knights-rebirth-dcinside",
+      "title": "ㅆㅣㅂ룐",
+      "content_hash": "dff08e4a2f9b138c5b12a0e9fa5ed0fccbedd0fdc73da7b235a10078bf4525a1",
+      "first_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "published_at": "2026-10-23T10:23:05+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1385100": {
+      "game_id": "seven-knights-rebirth",
+      "source_id": "seven-knights-rebirth-dcinside",
+      "title": "ai 딸깍으로 만든 방덱용 그래프인데 쓸 사람 있으면 써보셈",
+      "content_hash": "92622ee6c5daace7b2d11584de73fdd228a39163898fc965643a0f01c981d9da",
+      "first_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "published_at": "2026-10-23T10:08:57+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1385089": {
+      "game_id": "seven-knights-rebirth",
+      "source_id": "seven-knights-rebirth-dcinside",
+      "title": "와 씨발 소환권을 무슨 20개나 주네???",
+      "content_hash": "8c33cfd1bf5ddadd9db3ade8e61c4b44c80065e368f26aca944b4d322109be74",
+      "first_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "published_at": "2026-10-23T09:48:34+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=epicseven&no=2737248": {
+      "game_id": "epic-seven",
+      "source_id": "epic-seven-dcinside",
+      "title": "불에릭 기각 다 채웠다",
+      "content_hash": "5427d3c0e68bf3ffc6fd6ed7760f30b1965fb72443f1cd72cb36ae4bc159587f",
+      "first_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "published_at": "2026-10-23T10:26:53+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=epicseven&no=2737247": {
+      "game_id": "epic-seven",
+      "source_id": "epic-seven-dcinside",
+      "title": "일레나 통계 볼 수 있는 곳 없음 ?",
+      "content_hash": "f2ec138f896f6549bd50b7427d55254287aee7511130955d57eb609d6682555d",
+      "first_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "published_at": "2026-10-23T10:26:51+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=epicseven&no=2737225": {
+      "game_id": "epic-seven",
+      "source_id": "epic-seven-dcinside",
+      "title": "에르발렌, 진로, 밤릴",
+      "content_hash": "2672d18bab83c63770a3324055c94acde9c9e01acae3ca3d8f76fcc4326b10c9",
+      "first_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "published_at": "2026-10-23T09:32:13+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=epicseven&no=2737180": {
+      "game_id": "epic-seven",
+      "source_id": "epic-seven-dcinside",
+      "title": "진짜날씨 존나춥네",
+      "content_hash": "26fc2a6da5b5ed9399ca9fb1ec96184ac1e582fc1aaba13a57ef29788efcebfb",
+      "first_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "published_at": "2026-10-23T06:59:29+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=gov&no=6347782": {
+      "game_id": "nikke",
+      "source_id": "nikke-dcinside",
+      "title": "1버 2버는 자리가 없어서 1퍼캐 내기 존나어렵겠다",
+      "content_hash": "e4b9dee9111b3a95b7932d23df27f62046c1b4c58b76cf5cb4985c7c5bd014aa",
+      "first_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "published_at": "2026-10-23T10:27:18+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=gov&no=6347781": {
+      "game_id": "nikke",
+      "source_id": "nikke-dcinside",
+      "title": "다음 크리스마스는 자칼 이격",
+      "content_hash": "f6ffbd2a84f8bf0679c5d122277ac5655a03d6d8e788c097ba31b1ae3dd1da31",
+      "first_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "published_at": "2026-10-23T10:26:54+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=gov&no=6347740": {
+      "game_id": "nikke",
+      "source_id": "nikke-dcinside",
+      "title": "한섭 15위 갤길 '전초기지' 인원 모집",
+      "content_hash": "94a0b369fe92edf47f37b797d0a638a35a20478bfd9055ca3d8fba01320685ce",
+      "first_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "published_at": "2026-10-23T10:10:33+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=gov&no=6347736": {
+      "game_id": "nikke",
+      "source_id": "nikke-dcinside",
+      "title": "니힐리스타 협왕 이벤트 안내",
+      "content_hash": "1e0953fccc4012e57eaae2c414baf5c08c12130e8259ed4c4e8492a039c54362",
+      "first_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "published_at": "2026-10-23T10:04:41+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=rollthechess&no=3871050": {
+      "game_id": "trickcal-revive",
+      "source_id": "trickcal-revive-dcinside",
+      "title": "반사",
+      "content_hash": "5b03c872ca4143c5534093424e212fad7e61296fc5b543c4269d4d869f0c56ba",
+      "first_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "published_at": "2026-10-23T10:27:15+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=rollthechess&no=3870976": {
+      "game_id": "trickcal-revive",
+      "source_id": "trickcal-revive-dcinside",
+      "title": "UFC) 거란비아 만들지 마세요",
+      "content_hash": "df83591799752993b4f63dc9e9a34f2b2edcef4eceda3d5db91e1a7b3ceaab8e",
+      "first_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "published_at": "2026-10-23T09:39:42+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=rollthechess&no=3870963": {
+      "game_id": "trickcal-revive",
+      "source_id": "trickcal-revive-dcinside",
+      "title": "교망(교주 요망)",
+      "content_hash": "90b72c6c649958b7230654de0a9756edf79f662c3b1381deafaae4823fca9a2b",
+      "first_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "last_seen_at": "2026-10-23T10:27:32.122128+09:00",
+      "published_at": "2026-10-23T09:30:47+09:00"
     }
   }
 }
