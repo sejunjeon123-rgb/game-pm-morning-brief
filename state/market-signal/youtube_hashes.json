@@ -1469,7 +1469,7 @@
       "title": "[오딘: 발할라 라이징] 함께해서 빛난 정모✨프라이빗 길드룸 이벤트 현장 스케치",
       "content_hash": "3e5fa2b0cb4417a5f0189f72e26fa66774726cc8e2db4a739306e5d8b729cf83",
       "first_seen_at": "2026-10-26T10:06:47.386774+09:00",
-      "last_seen_at": "2026-10-26T10:06:47.386774+09:00",
+      "last_seen_at": "2026-10-27T11:00:54.274259+09:00",
       "published_at": "2026-10-22T11:00:17+09:00"
     },
     "https://www.youtube.com/shorts/Fd6xSM78CjI": {
@@ -1663,6 +1663,30 @@
       "first_seen_at": "2026-10-26T10:06:47.386774+09:00",
       "last_seen_at": "2026-10-26T10:06:47.386774+09:00",
       "published_at": "2026-10-20T17:04:44+09:00"
+    },
+    "https://www.youtube.com/watch?v=PJsFnXKtmxs": {
+      "game_id": "seven-knights-rebirth",
+      "title": "【공식】[세븐나이츠 리버스] 세기의 종점, 쥬다스",
+      "content_hash": "3bdecdb78e53f14fefc57d1d9c82c784b14a1b3302a709db0aa513641b9844ad",
+      "first_seen_at": "2026-10-27T11:00:54.274259+09:00",
+      "last_seen_at": "2026-10-27T11:00:54.274259+09:00",
+      "published_at": "2026-10-26T19:40:24+09:00"
+    },
+    "https://www.youtube.com/shorts/o5KhKm1DoB8": {
+      "game_id": "seven-knights-rebirth",
+      "title": "【공식】[세븐나이츠 리버스] 순수한 궁금증 #shorts #숏츠 #sevenknights #세븐나이츠 #네컷만화 #게임 #세나리 #사황 #린 #카르마",
+      "content_hash": "6bb17dc7baf1ee517cfac01583c0fa4ea905d9d3f33a62a62fb60359d22d54fc",
+      "first_seen_at": "2026-10-27T11:00:54.274259+09:00",
+      "last_seen_at": "2026-10-27T11:00:54.274259+09:00",
+      "published_at": "2026-10-23T16:00:23+09:00"
+    },
+    "https://www.youtube.com/shorts/BpZ25GheAdo": {
+      "game_id": "seven-knights-rebirth",
+      "title": "「세기의 종점」- 쥬다스",
+      "content_hash": "eaf1b6c011ca0efb29f34579ab75599cd0688cb72c80dbccfe627d41b183532b",
+      "first_seen_at": "2026-10-27T11:00:54.274259+09:00",
+      "last_seen_at": "2026-10-27T11:00:54.274259+09:00",
+      "published_at": "2026-10-23T15:00:23+09:00"
     }
   }
 }

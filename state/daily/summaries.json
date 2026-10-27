@@ -1,165 +1,113 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-10-27",
   "version": "compact-v1-relevance-v2",
   "games": {
-    "mabinogi-mobile": [],
-    "odin-valhalla-rising": [
+    "lineage-m": [
       {
-        "title": "프라이빗 길드룸 정모 현장 스케치 영상 공개",
-        "category": "EVENT",
+        "title": "10/28 정기점검 사전안내",
+        "category": "MAINTENANCE",
         "bm_types": [],
         "facts": [
           {
-            "text": "공식 유튜브에 프라이빗 길드룸 정모 현장 스케치 영상을 게시했다.",
+            "text": "리니지M은 2026년 10월 28일(수) 정기점검이 예정되어 있으며, 상세 일정 및 업데이트 내용은 10월 27일 중 별도 공지하겠다고 안내했다.",
             "evidence_ids": [
-              "f0b688b4f1217d9bd2dfe5c326889b1d35e2c8e95f816b6ce19c140573a5913c"
-            ]
-          },
-          {
-            "text": "영상에서 시청자 대상 특별 선물을 준비했으니 끝까지 시청하라는 안내가 포함되어 있다.",
-            "evidence_ids": [
-              "f0b688b4f1217d9bd2dfe5c326889b1d35e2c8e95f816b6ce19c140573a5913c"
+              "f9c231a58009ccb9fce6216f5311dc8ece5c95567add880a3b043fb5ddf0ca0a"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "공식 채널을 통해 길드 대상 오프라인·온라인 행사 홍보 및 시청 보상 안내로 유저 참여 유도를 시도한 것으로 해석된다.",
+            "text": "운영 측은 점검 전날 추가 공지를 통해 점검 시간과 세부 업데이트를 공개할 예정이라고 명시했다.",
             "evidence_ids": [
-              "f0b688b4f1217d9bd2dfe5c326889b1d35e2c8e95f816b6ce19c140573a5913c"
+              "f9c231a58009ccb9fce6216f5311dc8ece5c95567add880a3b043fb5ddf0ca0a"
             ]
           }
         ],
         "conflicts": [],
-        "unknowns": [
-          "시청자 선물의 구체적 내용·지급 조건·지급 일정은 공지에 명시되어 있지 않다.",
-          "길드 정모의 대상 범위(초대 기준·참가 인원·지역 등)와 추가 후속 일정은 공개되지 않았다."
-        ],
+        "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "f0b688b4f1217d9bd2dfe5c326889b1d35e2c8e95f816b6ce19c140573a5913c",
+            "evidence_id": "f9c231a58009ccb9fce6216f5311dc8ece5c95567add880a3b043fb5ddf0ca0a",
             "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=_91yvrDWgzk",
-            "published_at": "2026-10-22T11:00:17+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "3e5fa2b0cb4417a5f0189f72e26fa66774726cc8e2db4a739306e5d8b729cf83",
-            "source_type": "OFFICIAL_YOUTUBE"
+            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6adf32b06cfe4756db5b8f2a",
+            "published_at": "2026-10-26T20:00:00.170000+09:00",
+            "collected_at": "2026-10-27T11:00:31.393474+09:00",
+            "content_hash": "a785cbbfebcbd66776be7ab4cfc77af7a30767118e04138db8c72722a61e0294",
+            "source_type": "OFFICIAL_HOMEPAGE"
+          }
+        ]
+      },
+      {
+        "title": "Plaync 마이페이지 결제 접속 장애 및 정상화 안내",
+        "category": "MAINTENANCE",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "Plaync 홈페이지의 마이페이지 내 결제 메뉴 접속이 간헐적으로 불가한 현상이 발생했으며 운영진이 확인 중이라고 공지했다.",
+            "evidence_ids": [
+              "6a98ee07a97ebe88d418b91fe1fb3b08989847fd1acd3afa2184eace0b8f23ba"
+            ]
+          },
+          {
+            "text": "해당 현상은 조치 완료되어 정상적으로 이용 가능함을 운영진이 재공지하고 사과를 표명했다.",
+            "evidence_ids": [
+              "6a98ee07a97ebe88d418b91fe1fb3b08989847fd1acd3afa2184eace0b8f23ba"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "운영진은 초기 공지에서 문제 확인 및 조치 중임을 알렸고, 이후 정상화 완료를 별도 공지로 알린 형태로 처리되었다.",
+            "evidence_ids": [
+              "6a98ee07a97ebe88d418b91fe1fb3b08989847fd1acd3afa2184eace0b8f23ba"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "6a98ee07a97ebe88d418b91fe1fb3b08989847fd1acd3afa2184eace0b8f23ba",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6add4eb4263e537d356d12e4",
+            "published_at": "2026-10-25T09:35:00.001000+09:00",
+            "collected_at": "2026-10-27T11:00:31.393474+09:00",
+            "content_hash": "eb42debaacb21e9be2965f60602b814a898ba5ab2966e949af5b3fafab0f1208",
+            "source_type": "OFFICIAL_HOMEPAGE"
           }
         ]
       }
     ],
     "seven-knights-rebirth": [
       {
-        "title": "신규 캐릭터·콜라보 연속 출시와 밸런스 불만",
-        "category": "UPDATE",
-        "bm_types": [],
-        "facts": [],
-        "claims": [
-          {
-            "text": "최근 12주 동안 오리지널 신캐와 귀칼 콜라보 등 신캐 중심의 연속 출시에 불만이 있다.",
-            "evidence_ids": [
-              "c764636b72e9af5c3edddeae212b7d6202bd77202c026335f403c10935a5b8fb"
-            ]
-          },
-          {
-            "text": "유저는 기존 캐릭터·각성·재출시가 부족해 플레이 만족도가 낮아졌다고 주장한다.",
-            "evidence_ids": [
-              "c764636b72e9af5c3edddeae212b7d6202bd77202c026335f403c10935a5b8fb"
-            ]
-          },
-          {
-            "text": "해당 및 최근 신캐들의 성능이 '밸런싱 미흡'으로 체감된다고 주장한다.",
-            "evidence_ids": [
-              "c764636b72e9af5c3edddeae212b7d6202bd77202c026335f403c10935a5b8fb"
-            ]
-          }
-        ],
-        "interpretation": [
-          {
-            "text": "CREATOR_ANALYSIS: 공개 반응은 연이은 신캐·콜라보 출시가 기존 유저의 체감 밸런스·콘텐츠 다양성 불만으로 연결될 수 있음을 시사한다.",
-            "evidence_ids": [
-              "c764636b72e9af5c3edddeae212b7d6202bd77202c026335f403c10935a5b8fb"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [
-          "공식 발표에서 제시한 신캐 출시 의도·주기와 실제 유저 체감 간 차이의 구체적 원인",
-          "해당 신캐들의 실제 성능 수치나 내부 밸런스 검토 결과"
-        ],
-        "evidence": [
-          {
-            "evidence_id": "c764636b72e9af5c3edddeae212b7d6202bd77202c026335f403c10935a5b8fb",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1387995",
-            "published_at": "2026-10-26T10:03:15+09:00",
-            "collected_at": "2026-10-26T10:07:09.724401+09:00",
-            "content_hash": "768648662e4dc3e7021611b4d362793b72b208a40d2702a0fadedad705cc7d33",
-            "source_type": "PUBLIC_COMMUNITY"
-          }
-        ]
-      },
-      {
-        "title": "가챠 결과·확률 체감 불만 및 강한 욕설 반응",
-        "category": "BM",
-        "bm_types": [
-          "GACHA"
-        ],
-        "facts": [],
-        "claims": [
-          {
-            "text": "무과금 유저가 가챠 시도에서 연속 실패·낮은 성공률로 큰 손해를 봤다고 주장하며 강한 분노를 표출했다.",
-            "evidence_ids": [
-              "161483f552cb1d4cbe197a8a0a3767e0e2071248cfdee56630ca291fbce062c7"
-            ]
-          }
-        ],
-        "interpretation": [
-          {
-            "text": "CREATOR_ANALYSIS: 공개 게시글은 가챠 실패 경험이 운영·확률·공정성 이슈에 대한 격한 유저 반응으로 이어질 수 있음을 보여준다.",
-            "evidence_ids": [
-              "161483f552cb1d4cbe197a8a0a3767e0e2071248cfdee56630ca291fbce062c7"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [
-          "게시자가 주장하는 구체적 획득 시도 횟수·확률 표본과 실제 서버 로그의 일치 여부",
-          "공식 확률 공시와 게시자 체감 불일치의 원인"
-        ],
-        "evidence": [
-          {
-            "evidence_id": "161483f552cb1d4cbe197a8a0a3767e0e2071248cfdee56630ca291fbce062c7",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1387974",
-            "published_at": "2026-10-26T09:26:46+09:00",
-            "collected_at": "2026-10-26T10:07:09.724401+09:00",
-            "content_hash": "d3e1c986952de3dd5b85eab5080243e5504e71fd25b067b2104e2184f04db86e",
-            "source_type": "PUBLIC_COMMUNITY"
-          }
-        ]
-      }
-    ],
-    "epic-seven": [
-      {
-        "title": "신규 영웅 '바니걸 명탐정 모로' 예고(출시일 포함)",
+        "title": "신규 캐릭터 '쥬다스' 공개 영상 공개",
         "category": "CHARACTER",
         "bm_types": [],
         "facts": [
           {
-            "text": "공식 유튜브에서 '바니걸 명탐정 모로' 신규 영웅이 10월 29일부터 신비 소환으로 만나볼 수 있다고 안내함.",
+            "text": "공식 유튜브에서 '세기의 종점, 쥬다스' 영상이 게시되어 쥬다스의 봉인 해제와 재림 설정을 소개했다.",
             "evidence_ids": [
-              "5801b03d1c8f6501b69cacab580733a6f3e63cbc50396cf611c5ec636f4fa3a0"
+              "cdd6e1b228717bbd44a59bc183e32a40a82bd7699c5256e9c12585d542250fba"
+            ]
+          },
+          {
+            "text": "단편 숏츠 영상들에서도 '세기의 종점' 콘셉트와 쥬다스 연관 문구가 반복 게시되었다.",
+            "evidence_ids": [
+              "5202c51205b71cc35294951c5fd049785fe720f4ed3bd02a3fa9fbe1c01512ca",
+              "5924dcd40f72c504aeff28c2fa8142c24c4721a3bcbb30ef14737313c1cf1753"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "공식 발표로 출시일과 소환 방식(신비 소환)이 명시되어 있어 관련 일정·콘텐츠 준비 필요성이 확인됨.",
+            "text": "공식 영상들이 동일한 캐릭터 출시 메시지를 일관되게 전달하므로 마케팅 기조는 캐릭터 중심 홍보로 판단된다.",
             "evidence_ids": [
-              "5801b03d1c8f6501b69cacab580733a6f3e63cbc50396cf611c5ec636f4fa3a0"
+              "cdd6e1b228717bbd44a59bc183e32a40a82bd7699c5256e9c12585d542250fba",
+              "5202c51205b71cc35294951c5fd049785fe720f4ed3bd02a3fa9fbe1c01512ca",
+              "5924dcd40f72c504aeff28c2fa8142c24c4721a3bcbb30ef14737313c1cf1753"
             ]
           }
         ],
@@ -167,530 +115,173 @@
         "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "5801b03d1c8f6501b69cacab580733a6f3e63cbc50396cf611c5ec636f4fa3a0",
+            "evidence_id": "5202c51205b71cc35294951c5fd049785fe720f4ed3bd02a3fa9fbe1c01512ca",
             "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/_O2CfkFab8k",
-            "published_at": "2026-10-21T18:00:09+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "c8871e5a0ec0e02cb8b2cf86f91cb5a9e02248f878d033949fd7017c0de200bc",
+            "url": "https://www.youtube.com/shorts/BpZ25GheAdo",
+            "published_at": "2026-10-23T15:00:23+09:00",
+            "collected_at": "2026-10-27T11:00:54.274259+09:00",
+            "content_hash": "eaf1b6c011ca0efb29f34579ab75599cd0688cb72c80dbccfe627d41b183532b",
+            "source_type": "OFFICIAL_YOUTUBE"
+          },
+          {
+            "evidence_id": "5924dcd40f72c504aeff28c2fa8142c24c4721a3bcbb30ef14737313c1cf1753",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/shorts/o5KhKm1DoB8",
+            "published_at": "2026-10-23T16:00:23+09:00",
+            "collected_at": "2026-10-27T11:00:54.274259+09:00",
+            "content_hash": "6bb17dc7baf1ee517cfac01583c0fa4ea905d9d3f33a62a62fb60359d22d54fc",
+            "source_type": "OFFICIAL_YOUTUBE"
+          },
+          {
+            "evidence_id": "cdd6e1b228717bbd44a59bc183e32a40a82bd7699c5256e9c12585d542250fba",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/watch?v=PJsFnXKtmxs",
+            "published_at": "2026-10-26T19:40:24+09:00",
+            "collected_at": "2026-10-27T11:00:54.274259+09:00",
+            "content_hash": "3bdecdb78e53f14fefc57d1d9c82c784b14a1b3302a709db0aa513641b9844ad",
             "source_type": "OFFICIAL_YOUTUBE"
           }
         ]
       },
       {
-        "title": "신규 스킨 '만상의 종막 – 백색 일편고월 벨로나' 공개",
-        "category": "UPDATE",
+        "title": "매칭·과금 불공정성에 대한 커뮤니티 불만 제기",
+        "category": "MAINTENANCE",
         "bm_types": [],
-        "facts": [
+        "facts": [],
+        "claims": [
           {
-            "text": "공식 유튜브에 '만상의 종막 – 백색 일편고월 벨로나' 신규 스킨 영상이 공개됨.",
+            "text": "한 이용자가 레벨 167의 계정이 고레벨 과금 유저를 제치고 매칭 유리로 총력전 1등을 해 불만을 제기했다.",
             "evidence_ids": [
-              "816051043c254c8e51df1e6792cdf5cccf2b0f0b53f71e3ca8692f777a569feb"
+              "e441b4b1fe20f30edb401c0c3e2b32f61f9b70c555b346e9c036c073322ba1b4"
+            ]
+          },
+          {
+            "text": "해당 게시글은 매칭 운(매칭빨)과 과금 효율 차이에 따른 불공정성을 문제 삼는 표현을 포함하고 있다.",
+            "evidence_ids": [
+              "e441b4b1fe20f30edb401c0c3e2b32f61f9b70c555b346e9c036c073322ba1b4"
             ]
           }
         ],
-        "claims": [],
         "interpretation": [
           {
-            "text": "공식 노출로 스킨 출시 또는 판매 연계 가능성이 있으므로 출시·가격·노출 계획과 연동한 준비 검토가 필요함.",
+            "text": "사용자 불만은 매칭 품질과 과금-성장 균형에 대한 인식 문제로, 커뮤니티 반응이 운영·공정성 이슈로 연결될 가능성이 있다.",
             "evidence_ids": [
-              "816051043c254c8e51df1e6792cdf5cccf2b0f0b53f71e3ca8692f777a569feb"
+              "e441b4b1fe20f30edb401c0c3e2b32f61f9b70c555b346e9c036c073322ba1b4"
             ]
           }
         ],
         "conflicts": [],
-        "unknowns": [],
+        "unknowns": [
+          "게시글에 제기된 매칭 불공정성의 빈도나 규모는 공개 근거에서 확인되지 않는다.",
+          "해당 사례가 시스템적 문제인지 단일 매칭 사례인지 공식 확인은 없다."
+        ],
         "evidence": [
           {
-            "evidence_id": "816051043c254c8e51df1e6792cdf5cccf2b0f0b53f71e3ca8692f777a569feb",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=XDI9ogCbWcQ",
-            "published_at": "2026-10-22T19:00:25+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "16eceeb0a5a8591eca45ed5505d7aeececbadecc5fad802338fbb463ec49d106",
-            "source_type": "OFFICIAL_YOUTUBE"
-          }
-        ]
-      },
-      {
-        "title": "E7WC 2026 녹아웃 스테이지 공식 중계(여러 영상)",
-        "category": "EVENT",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "공식 유튜브에서 E7WC 2026 녹아웃 스테이지 1일차·2일차 및 관련 쇼츠 영상들이 공개됨.",
-            "evidence_ids": [
-              "7553128424a8702ec5188995afffaadf94a3c2fb69505a8465f9125ae7acf2dc",
-              "d417ab2df9bf893b39f553e1086baf120333931d4325a7b672714345a30dd285",
-              "3868161cff386298224852a577125be262c8501c121335618091868012f0b9f9",
-              "27432ec5c546267b7ed972060a243a40c7002398b500afe6d0e3127f333726cf",
-              "5801b03d1c8f6501b69cacab580733a6f3e63cbc50396cf611c5ec636f4fa3a0",
-              "986beccc36053f4f2e0ed5830945a1c7199b7f10a0500b0eea23cc3d4d983401",
-              "1997fefcc0ae497c00d3e9dd2982271f4537e46e8ddc84af0b33776148658ee9"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "대회 중계 관련 공식 영상 노출이 다수 확인되어 대회 일정·홍보 노선이 활성화된 상태임.",
-            "evidence_ids": [
-              "7553128424a8702ec5188995afffaadf94a3c2fb69505a8465f9125ae7acf2dc",
-              "d417ab2df9bf893b39f553e1086baf120333931d4325a7b672714345a30dd285"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "1997fefcc0ae497c00d3e9dd2982271f4537e46e8ddc84af0b33776148658ee9",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/inDsNKEgR0E",
-            "published_at": "2026-10-20T21:00:19+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "5c305712e2506664684d58eef6ffbbbd02fa0d28391b578b59069c98243799b2",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "27432ec5c546267b7ed972060a243a40c7002398b500afe6d0e3127f333726cf",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/Kfq28F1QokM",
-            "published_at": "2026-10-22T12:00:32+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "56b79585ad0f8a25ff202c9c97e7885682ea8784ac12a98008ecc1d01efa72fd",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "3868161cff386298224852a577125be262c8501c121335618091868012f0b9f9",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/_U-72IUU9h8",
-            "published_at": "2026-10-22T18:00:21+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "52ee77b60e226c0eb8f630ee4e23a3093b2a7a41651dec4e3408b5e0b084537a",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "5801b03d1c8f6501b69cacab580733a6f3e63cbc50396cf611c5ec636f4fa3a0",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/_O2CfkFab8k",
-            "published_at": "2026-10-21T18:00:09+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "c8871e5a0ec0e02cb8b2cf86f91cb5a9e02248f878d033949fd7017c0de200bc",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "7553128424a8702ec5188995afffaadf94a3c2fb69505a8465f9125ae7acf2dc",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=LdglCmRL1To",
-            "published_at": "2026-10-24T16:15:52+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "351a03b6fc78b4ed28a27704e936cc5a816efc9fe7964682c3ef11589b27057c",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "986beccc36053f4f2e0ed5830945a1c7199b7f10a0500b0eea23cc3d4d983401",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/3g9OAxY6UJo",
-            "published_at": "2026-10-21T12:00:30+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "75e53294b1e6dbc443f149dbb1c089b803f14e90fd6b0eadb93423ebbba07ebf",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "d417ab2df9bf893b39f553e1086baf120333931d4325a7b672714345a30dd285",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=dASIFqnGUMI",
-            "published_at": "2026-10-25T16:26:11+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "b730e1067cdaef62ce6eff3e0fc801719dcf1967d88bf87ecbe895a1782e9f27",
-            "source_type": "OFFICIAL_YOUTUBE"
+            "evidence_id": "e441b4b1fe20f30edb401c0c3e2b32f61f9b70c555b346e9c036c073322ba1b4",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1388951",
+            "published_at": "2026-10-27T09:46:13+09:00",
+            "collected_at": "2026-10-27T11:01:42.761692+09:00",
+            "content_hash": "674defda48305bf1631ca4a17bcf39280da8e542bc7a45842dd5f9e7c6daf372",
+            "source_type": "PUBLIC_COMMUNITY"
           }
         ]
       }
     ],
     "nikke": [
       {
-        "title": "4주년 업데이트·스토리 이벤트 및 신규 캐릭터 모집 일정 공개",
-        "category": "UPDATE",
+        "title": "무신사 콜라보 팝업스토어 사전 예약 안내(10/27 18:00 오픈)",
+        "category": "COLLAB",
         "bm_types": [],
         "facts": [
           {
-            "text": "10월 29일(목) 4주년 풀 보이스 스토리 이벤트 'MARIA-n' 및 마리안: 퀸 모집 오픈이 예고되었습니다.",
+            "text": "무신사 콜라보 팝업스토어의 사전 예약이 10월 27일 18:00부터 시작된다고 안내되었습니다.",
             "evidence_ids": [
-              "85b1d0a08619b70cb4c0d25785b1a80377ab55453615254ddc52b5b382e9b33d"
+              "f6beaaff92c0a0a06725a0e43578b90613ceef45dcd2135e0278108614333442"
             ]
           },
           {
-            "text": "신규 메인 시나리오(49장 '모든 것을 건 [결전]'·50장 '우리는 위로 올라간다')가 10월 29일 업데이트됩니다.",
+            "text": "사전 예약은 카카오 로그인 후 카카오 예약 페이지에서 진행되며, 관람 안전을 위해 사전 예약으로 운영된다고 명시되었습니다.",
             "evidence_ids": [
-              "3b5103d25f168aae20563bc723f88e257e941d6c44e4aa6bfab2c9be85d0fe43"
-            ]
-          },
-          {
-            "text": "홍련: 신살의 모집이 11월 5일(목) 시작된다고 공식 PV에서 안내되었습니다.",
-            "evidence_ids": [
-              "b39b08a8a90d4d221bf6570eed68902793a5ab6f157149aa1290e59973184b0c"
+              "f6beaaff92c0a0a06725a0e43578b90613ceef45dcd2135e0278108614333442"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "공식 PV와 업데이트 안내는 4주년을 축으로 스토리 업데이트, 신규 캐릭터 모집(마리안, 홍련) 및 관련 콘텐츠 동시 공개를 지향합니다.",
+            "text": "사전 예약 방식과 플랫폼(kakao) 안내로 현장 방문 전 예약 및 로그인 절차를 안내할 필요가 있습니다.",
             "evidence_ids": [
-              "85b1d0a08619b70cb4c0d25785b1a80377ab55453615254ddc52b5b382e9b33d",
-              "3b5103d25f168aae20563bc723f88e257e941d6c44e4aa6bfab2c9be85d0fe43",
-              "b39b08a8a90d4d221bf6570eed68902793a5ab6f157149aa1290e59973184b0c"
-            ]
-          },
-          {
-            "text": "개발팀 스페셜 코멘터리 영상에서 스토리·사운드·보스·미니게임 등 다방면 업데이트를 예고해 광범위한 콘텐츠 동시 배포를 암시합니다.",
-            "evidence_ids": [
-              "35bdab36e5058027f6c9bc5f03eb5bba13e52d5f872735f49e8008d5e2eb7012"
+              "f6beaaff92c0a0a06725a0e43578b90613ceef45dcd2135e0278108614333442"
             ]
           }
         ],
         "conflicts": [],
-        "unknowns": [],
+        "unknowns": [
+          "사전 예약 인원 제한 및 추가 재오픈 여부 등은 공지에 재안내되지 않아 확정 정보가 없습니다."
+        ],
         "evidence": [
           {
-            "evidence_id": "35bdab36e5058027f6c9bc5f03eb5bba13e52d5f872735f49e8008d5e2eb7012",
+            "evidence_id": "f6beaaff92c0a0a06725a0e43578b90613ceef45dcd2135e0278108614333442",
             "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=gcsPOmJc29g",
-            "published_at": "2026-10-24T20:52:12+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "da7d662daa9f91800260081804c42be76a545995180ee954d83eddf13e298b60",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "3b5103d25f168aae20563bc723f88e257e941d6c44e4aa6bfab2c9be85d0fe43",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=lwjuHJAjRlI",
-            "published_at": "2026-10-24T19:17:45+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "91b6b0155219f52e2e0858d219f05b46af999921dd7fd1c54ef047342eed712b",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "85b1d0a08619b70cb4c0d25785b1a80377ab55453615254ddc52b5b382e9b33d",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=XYhqqT2N7SM",
-            "published_at": "2026-10-24T20:13:40+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "8e7847a8fc6ba1df117a81c664ac6216a3729c85b0290e2bec96755abd4b876b",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "b39b08a8a90d4d221bf6570eed68902793a5ab6f157149aa1290e59973184b0c",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=T3QNLlKnKCM",
-            "published_at": "2026-10-24T19:47:18+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "524220418f8032b686c5641e2f0049d70d396912fc034578adfd79000868edda",
-            "source_type": "OFFICIAL_YOUTUBE"
-          }
-        ]
-      },
-      {
-        "title": "4주년 특별 방송 예고 및 광고·이벤트 일정 안내",
-        "category": "MARKETING",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "4주년 특별 방송은 10월 24일(토) 19:00에 진행되었고, 사전 예고와 누적 조회수 보상 안내가 있었습니다.",
-            "evidence_ids": [
-              "8117f4555de1bc1053e9136296c84dd00159687a1b61a6a8771ba15b004164ea",
-              "8fc49d9dea10d79244c3f486429b902a03cc1f14749148f06b8d59064dd3f016"
-            ]
-          },
-          {
-            "text": "4주년 기념 특별 옥외 광고 'MARIAN: WHITE & BLACK IN 용산' 사전 예약이 10/26(월) 14:00부터 열리며, 스탬프 랠리는 사전 예약제로 운영됩니다.",
-            "evidence_ids": [
-              "a614aabb30953a3ba2cff929fb487f4f878f7179ce1d889de8bac002bc838ec0"
-            ]
-          },
-          {
-            "text": "PV·쇼츠 등 홍보 영상이 다수 공개되어 4주년 관련 마케팅 전개(캐릭터 프로필·PV·예고편)를 병행합니다.",
-            "evidence_ids": [
-              "3cd123c15d0fd67f2ad05ad53754086da7dcb391be529b2b458314a2fc885479",
-              "a02d43422e0efd4f4e6a24c69a51c4c0b4d0caeeda7d024d564a5d023bbf289c",
-              "9eeca55819512a0ed7d493863d77353e28bc52b2923af47df04a874ab451a81f"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "온·오프라인(방송·유튜브·현장 광고·스탬프 이벤트)을 결합한 행사로 유저 접점 확대와 이벤트 참여 유도에 초점을 둡니다.",
-            "evidence_ids": [
-              "8117f4555de1bc1053e9136296c84dd00159687a1b61a6a8771ba15b004164ea",
-              "a614aabb30953a3ba2cff929fb487f4f878f7179ce1d889de8bac002bc838ec0",
-              "85b1d0a08619b70cb4c0d25785b1a80377ab55453615254ddc52b5b382e9b33d"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "3cd123c15d0fd67f2ad05ad53754086da7dcb391be529b2b458314a2fc885479",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/JTbaXUc1Hws",
-            "published_at": "2026-10-25T11:00:21+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "53891fdadb143cdada672c8b86a401401441f7105f753dcd8be9321d3083df1d",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "8117f4555de1bc1053e9136296c84dd00159687a1b61a6a8771ba15b004164ea",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=yxwOMk5RRQY",
-            "published_at": "2026-10-24T20:40:11+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "c18324878d340aa62b9beeeb5154b2648e505bf62805d3a6ac365681f5703177",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "85b1d0a08619b70cb4c0d25785b1a80377ab55453615254ddc52b5b382e9b33d",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=XYhqqT2N7SM",
-            "published_at": "2026-10-24T20:13:40+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "8e7847a8fc6ba1df117a81c664ac6216a3729c85b0290e2bec96755abd4b876b",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "8fc49d9dea10d79244c3f486429b902a03cc1f14749148f06b8d59064dd3f016",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=C_eTKD8qS44",
-            "published_at": "2026-10-23T11:00:18+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "1639f1c086f58a2e7808e3d4a35420841b5785766e9a2266b58a72f815a02c57",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "9eeca55819512a0ed7d493863d77353e28bc52b2923af47df04a874ab451a81f",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/EGsd5_Bv-W0",
-            "published_at": "2026-10-25T17:00:11+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "7b6eac9737c1797776485e9b39dafb2045f94e9100a680eb4c17cdc0b6727a6a",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "a02d43422e0efd4f4e6a24c69a51c4c0b4d0caeeda7d024d564a5d023bbf289c",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/shorts/60xMNkuO0Yw",
-            "published_at": "2026-10-25T12:30:31+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "49dbbc0d2471e60767df438a00bbcb8157bc7dd544fb7d3789095edcfe782b1b",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "a614aabb30953a3ba2cff929fb487f4f878f7179ce1d889de8bac002bc838ec0",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://game.naver.com/lounge/nikke/board/detail/8367454",
-            "published_at": "2026-10-26T09:45:09+09:00",
-            "collected_at": "2026-10-26T10:06:13.267341+09:00",
-            "content_hash": "2970cda4f0db59141252685451184f8a6a99356bb6b66921dfa4f4c602b57d74",
+            "url": "https://game.naver.com/lounge/nikke/board/detail/8371932",
+            "published_at": "2026-10-27T10:00:35+09:00",
+            "collected_at": "2026-10-27T11:00:31.393474+09:00",
+            "content_hash": "022244fc549ddd780af43bd379334e497d08b2624f72588edc04465b6c743b82",
             "source_type": "OFFICIAL_COMMUNITY"
           }
         ]
       },
       {
-        "title": "요격전 +1 한달 수급량에 대한 이용자 계산(주장)",
-        "category": "NOTICE",
-        "bm_types": [],
-        "facts": [],
-        "claims": [
-          {
-            "text": "요격전 +1 추가 횟수의 월간 수급(예상치): 모듈 약 50개, 김 488장, 락키 213개로 한 부위 3줄작·오버5강에 필요한 재화량에 해당한다고 주장합니다.",
-            "evidence_ids": [
-              "e821665ab9a2f6a24380760084590e825ade74e857c3beb1eb1ce38d99e92194"
-            ]
-          }
-        ],
-        "interpretation": [
-          {
-            "text": "해당 계산은 이용자(공개 커뮤니티) 산출치이며 공식 수치나 운영 의도 확인 없이 제시된 추정값입니다.",
-            "evidence_ids": [
-              "e821665ab9a2f6a24380760084590e825ade74e857c3beb1eb1ce38d99e92194"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [
-          "해당 계산에 사용된 전제(일일 요격전 횟수, 기간 가정, 보너스 적용 방식)가 공식 확인인지 여부",
-          "공식 밸런스나 미래 변경 계획이 계산 결과에 미치는 영향"
-        ],
-        "evidence": [
-          {
-            "evidence_id": "e821665ab9a2f6a24380760084590e825ade74e857c3beb1eb1ce38d99e92194",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=gov&no=6374128",
-            "published_at": "2026-10-26T09:55:18+09:00",
-            "collected_at": "2026-10-26T10:07:09.724401+09:00",
-            "content_hash": "3a1e6d4eb39bc3a5831ff6e74884c12481c544a53473fd6c5e689c6f153fc73e",
-            "source_type": "PUBLIC_COMMUNITY"
-          }
-        ]
-      }
-    ],
-    "trickcal-revive": [
-      {
-        "title": "3주년 특별 영상 '죄와 볼' 공개",
-        "category": "WEB_EVENT",
+        "title": "4주년 특별 방송 누적 조회수 달성 보상 지급 안내",
+        "category": "EVENT",
         "bm_types": [],
         "facts": [
           {
-            "text": "3주년 기념 특별 영상 '죄와 볼' 본편이 2026-10-24 18:30에 공개되었다.",
+            "text": "4주년 특별 방송 누적 조회수 10만 회 달성으로 보상(고급 모집 티켓 10장)을 10/29 점검 완료 후 지급한다고 안내되었습니다.",
             "evidence_ids": [
-              "d5b2f1fdfbb4982d86c51f0114da504708fc1b4e70802e3a28fd62b4b4996b68"
+              "2d3d4a8647f420d31e52530f18c2c081b3309d015aafc0189c96bb58b8629b18"
             ]
           },
           {
-            "text": "해당 영상은 개발 비화와 비하인드 스토리, 여러 안건 구성을 예고·소개한다.",
+            "text": "보상 수령 기간은 점검 완료 후~11월 20일 03:00까지로 명시되었습니다.",
             "evidence_ids": [
-              "d5b2f1fdfbb4982d86c51f0114da504708fc1b4e70802e3a28fd62b4b4996b68"
-            ]
-          },
-          {
-            "text": "본편 예고편은 같은 날 14:22에 공개되어 본편 공개 시간을 안내했다.",
-            "evidence_ids": [
-              "68e3936ea230020458ecc126e09e5b85cb27a1989aa1edc73abedc78755c13c9"
+              "2d3d4a8647f420d31e52530f18c2c081b3309d015aafc0189c96bb58b8629b18"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "공식 채널에서 3주년 관련 영상 콘텐츠를 순차 공개해 기념 캠페인·커뮤니케이션을 진행한 것으로 보인다.",
+            "text": "보상은 점검 완료 시 일괄지급 예정으로 점검 연장 시 지급 시점 지연 가능성을 안내할 필요가 있습니다.",
             "evidence_ids": [
-              "d5b2f1fdfbb4982d86c51f0114da504708fc1b4e70802e3a28fd62b4b4996b68",
-              "68e3936ea230020458ecc126e09e5b85cb27a1989aa1edc73abedc78755c13c9"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "68e3936ea230020458ecc126e09e5b85cb27a1989aa1edc73abedc78755c13c9",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=1oOHZughI3g",
-            "published_at": "2026-10-24T14:22:51+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "a8e2b75ef8414de0257ddd753558d17236cfd2a2008b3e7b4f8d84ea590ea337",
-            "source_type": "OFFICIAL_YOUTUBE"
-          },
-          {
-            "evidence_id": "d5b2f1fdfbb4982d86c51f0114da504708fc1b4e70802e3a28fd62b4b4996b68",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=KxufjThWZ4Q",
-            "published_at": "2026-10-24T18:30:06+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "2647a42e1b0d9babe13d9ade6e049b023c57a873381ad7c95cad2b4397629b8e",
-            "source_type": "OFFICIAL_YOUTUBE"
-          }
-        ]
-      },
-      {
-        "title": "10월 22일 정기 업데이트 안내",
-        "category": "UPDATE",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "10월 22일 정기점검을 통해 신규 사복·신규 펫 추가 등이 포함된 업데이트가 진행되었다고 안내되었다.",
-            "evidence_ids": [
-              "0abe20c424a63ec7c708257b801f1c2649480c90027536e10ef5a7bec42f1437"
-            ]
-          },
-          {
-            "text": "시온 꼬까옷 [다크 넷 거너] 이펙트 개선과 '예술의 쩐당 : 셀리네의 발칙한 초대' 이벤트가 영상으로 소개되었다.",
-            "evidence_ids": [
-              "0abe20c424a63ec7c708257b801f1c2649480c90027536e10ef5a7bec42f1437"
-            ]
-          },
-          {
-            "text": "업데이트 상세 내용은 공식 커뮤니티 공지에서 확인하라는 안내가 포함되었다.",
-            "evidence_ids": [
-              "0abe20c424a63ec7c708257b801f1c2649480c90027536e10ef5a7bec42f1437"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "공식 영상과 커뮤니티 공지로 업데이트 요소를 안내해 이용자 접근 경로를 명시했다.",
-            "evidence_ids": [
-              "0abe20c424a63ec7c708257b801f1c2649480c90027536e10ef5a7bec42f1437"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [],
-        "evidence": [
-          {
-            "evidence_id": "0abe20c424a63ec7c708257b801f1c2649480c90027536e10ef5a7bec42f1437",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=N_TeeZAUtIk",
-            "published_at": "2026-10-22T13:10:53+09:00",
-            "collected_at": "2026-10-26T10:06:47.386774+09:00",
-            "content_hash": "deeef44131fa83c86896eca1c4cd3b9001ea1df2cda5510804274d13d3a81a8e",
-            "source_type": "OFFICIAL_YOUTUBE"
-          }
-        ]
-      },
-      {
-        "title": "커뮤니티: 월간 상점 및 패키지 초기화 안내",
-        "category": "BM",
-        "bm_types": [
-          "CURRENCY",
-          "CONVENIENCE"
-        ],
-        "facts": [],
-        "claims": [
-          {
-            "text": "월간 잡화 상점의 황크·보크·럭키 모집권 및 월간 엘다인 증명서가 11/1 03:59에 초기화된다고 안내되었다.",
-            "evidence_ids": [
-              "acabe2ffaf13e91e98b08757db03e6076f073c895fd7d4669dacf64fa37e4689"
-            ]
-          },
-          {
-            "text": "작성자는 엘리프 교환 패키지와 일일 유엘 왕사탕 패키지의 효율을 비교해 구매 고려를 권했다.",
-            "evidence_ids": [
-              "acabe2ffaf13e91e98b08757db03e6076f073c895fd7d4669dacf64fa37e4689"
-            ]
-          },
-          {
-            "text": "트릭컬 패스 초기화 시각(01:59)을 언급하며 사전 구매를 권유하는 문구가 포함되었다.",
-            "evidence_ids": [
-              "acabe2ffaf13e91e98b08757db03e6076f073c895fd7d4669dacf64fa37e4689"
-            ]
-          }
-        ],
-        "interpretation": [
-          {
-            "text": "커뮤니티 게시글은 상점 초기화 시점을 공지하고 구매 우선순위에 대해 개인적 권고를 제공하고 있다.",
-            "evidence_ids": [
-              "acabe2ffaf13e91e98b08757db03e6076f073c895fd7d4669dacf64fa37e4689"
+              "2d3d4a8647f420d31e52530f18c2c081b3309d015aafc0189c96bb58b8629b18",
+              "b352e6f575ecd74f1e3c378dae38d79890b57a68f6473fdd0234325047e1dbf5"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "해당 게시글이 공식 운영 공지인지 아니면 이용자 개인 의견인지 명확하지 않음."
+          "지급 지연 발생 시 구체 지연 사유나 보상 추가 여부에 대한 안내는 별도 공지가 필요합니다."
         ],
         "evidence": [
           {
-            "evidence_id": "acabe2ffaf13e91e98b08757db03e6076f073c895fd7d4669dacf64fa37e4689",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=rollthechess&no=3879312",
-            "published_at": "2026-10-26T00:57:15+09:00",
-            "collected_at": "2026-10-26T10:07:09.724401+09:00",
-            "content_hash": "e92112c044eb18ce676fc0ffb2088153aa8b0d1ad8dc6b0183af86d3ba8e8e54",
-            "source_type": "PUBLIC_COMMUNITY"
+            "evidence_id": "2d3d4a8647f420d31e52530f18c2c081b3309d015aafc0189c96bb58b8629b18",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://game.naver.com/lounge/nikke/board/detail/8367949",
+            "published_at": "2026-10-26T11:50:22+09:00",
+            "collected_at": "2026-10-27T11:00:31.393474+09:00",
+            "content_hash": "e20924c93dafae6c559afc842ab7c8b61b6ae8b446b343054179f3d54534ec12",
+            "source_type": "OFFICIAL_COMMUNITY"
+          },
+          {
+            "evidence_id": "b352e6f575ecd74f1e3c378dae38d79890b57a68f6473fdd0234325047e1dbf5",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://game.naver.com/lounge/nikke/board/detail/8369216",
+            "published_at": "2026-10-26T17:26:48+09:00",
+            "collected_at": "2026-10-27T11:00:31.393474+09:00",
+            "content_hash": "92010b3afbb49aeb9bafccb94b2b7337bbf3e7434ea4723442b2e061d7377b18",
+            "source_type": "OFFICIAL_COMMUNITY"
           }
         ]
       }
