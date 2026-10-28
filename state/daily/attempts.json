@@ -1,8 +1,12 @@
 {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "games": {
+    "mabinogi-mobile": "attempted",
+    "black-desert-mobile": "attempted",
+    "odin-valhalla-rising": "attempted",
     "lineage-m": "attempted",
     "seven-knights-rebirth": "attempted",
-    "nikke": "attempted"
+    "nikke": "attempted",
+    "trickcal-revive": "attempted"
   }
 }
