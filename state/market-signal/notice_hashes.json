@@ -29,7 +29,7 @@
       "title": "10/28(수) 업데이트 상세 내역 안내",
       "content_hash": "93593a92b87b576a3a2d4dc356890d91bad18be056ef215ff26d048298449805",
       "first_seen_at": "2026-08-30T16:17:21.854834+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-28T00:00:00+09:00",
       "modified_at": "2026-10-28T11:08:51.702265+09:00",
       "previous_content_hash": "fc3c2933b0257ed8d69eb0e923527c3c7f5a0106b91a00cbad5230d19679ab0d"
@@ -3947,7 +3947,7 @@
       "title": "트릭컬 리바이브 숏애니 시청 인증 이벤트 당첨자 안내",
       "content_hash": "8dcfcc1fc03e1f0ec791f20cced62f59a956a92b8facfd8edc3695e98ee7a5a1",
       "first_seen_at": "2026-10-24T10:31:44.588089+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-23T17:01:46.873000+09:00"
     },
     "https://cafe.naver.com/f-e/cafes/30131231/articles/220861?boardtype=L&menuid=15&referrerAllArticles=false": {
@@ -4077,7 +4077,7 @@
       "title": "전체공지",
       "content_hash": "1430f836fe371ffe53a61a404ff5b01649acaed040e7be9db97261c7b3ae65ef",
       "first_seen_at": "2026-10-28T11:08:51.702265+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-27T00:00:00+09:00"
     },
     "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=667101&pageNo=1": {
@@ -4085,23 +4085,25 @@
       "title": "전체공지",
       "content_hash": "1e0aa64a88b01c44001feaa0ddd91f6ebc1dea813a44284919e262e1d4a77746",
       "first_seen_at": "2026-10-28T11:08:51.702265+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-27T00:00:00+09:00"
     },
     "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=667138&pageNo=1": {
       "game_id": "black-desert-mobile",
-      "title": "[안내] 숨겨진 외성터 보상 아이템 임시 사용 제한 안내",
-      "content_hash": "119e05edf9892835238977f72d339d8cabc0007044062bc9d3d40b269b41ed7e",
+      "title": "[안내] 숨겨진 외성터 보상 아이템 임시 사용 제한 안내 (내용 추가, 10/29 13:14)",
+      "content_hash": "de6e11746d4dece8187a09988e7941284597aab2d74012c9afa4237933ee888b",
       "first_seen_at": "2026-10-28T11:08:51.702265+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "published_at": "2026-10-27T00:00:00+09:00"
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "published_at": "2026-10-27T00:00:00+09:00",
+      "modified_at": "2026-10-30T11:33:23.893900+09:00",
+      "previous_content_hash": "119e05edf9892835238977f72d339d8cabc0007044062bc9d3d40b269b41ed7e"
     },
     "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=667087&pageNo=1": {
       "game_id": "black-desert-mobile",
       "title": "[점검] 10월 27일(화) 업데이트 점검 안내 (13:00, 점검 완료)",
       "content_hash": "74fe28812fe395b3c5c153f18aef1e664fc92bad8d3ed8487a835abef6bc946a",
       "first_seen_at": "2026-10-28T11:08:51.702265+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-26T00:00:00+09:00"
     },
     "https://lineagem.plaync.com/board/notice/view?articleId=6adfaa38263e537d356d1373": {
@@ -4109,7 +4111,7 @@
       "title": "[안내] 10월 28일(수) 보랏빛 티켓 꾸러미 상품 안내",
       "content_hash": "d965678c02cece5d9bdb01521d77b2a8f21481db29b37dfb1568c2bcec2855c6",
       "first_seen_at": "2026-10-28T11:08:51.702265+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-28T04:30:00.001000+09:00"
     },
     "https://lineagem.plaync.com/board/notice/view?articleId=6adfaa38263e537d356d1371": {
@@ -4117,7 +4119,7 @@
       "title": "[안내] 10월 28일(수) 보랏빛 코인 선택 상자 상품 안내",
       "content_hash": "cc888286ef164cf84192f6091cf66ee5b16352003795d5909ec04dc4ee1be991",
       "first_seen_at": "2026-10-28T11:08:51.702265+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-28T04:30:00.001000+09:00"
     },
     "https://lineagem.plaync.com/board/notice/view?articleId=6adfaa38263e537d356d136f": {
@@ -4125,7 +4127,7 @@
       "title": "[안내] 10월 28일(수) 보랏빛 성장 재화 지원 상자 상품 안내",
       "content_hash": "be58b84c71e0d13efa15c1fe36fb3bb863ae921ab7924c5d1916ed22b47dec7b",
       "first_seen_at": "2026-10-28T11:08:51.702265+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-28T04:30:00.001000+09:00"
     },
     "https://lineagem.plaync.com/board/notice/view?articleId=6adfaa38263e537d356d136d": {
@@ -4133,7 +4135,7 @@
       "title": "[안내] 10월 28일(수) 보랏빛 고속 성장 지원 상자 상품 안내",
       "content_hash": "0c2f1598e930e88ba6275a2e492b1f8c24399612960eda0ec9b5860223a82af9",
       "first_seen_at": "2026-10-28T11:08:51.702265+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-28T04:30:00.001000+09:00"
     },
     "https://lineagem.plaync.com/board/notice/view?articleId=6adfaa38263e537d356d136b": {
@@ -4141,7 +4143,7 @@
       "title": "[안내] 10월 28일(수) 인나드릴 상인의 신비한 교역품 상품 안내",
       "content_hash": "8dfaf871e6b732ce5d8a0a9e700cc1d48d792e7e35ff3d90f75cc79de766ea4b",
       "first_seen_at": "2026-10-28T11:08:51.702265+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-28T04:30:00.001000+09:00"
     },
     "https://lineagem.plaync.com/board/notice/view?articleId=6adfaa38263e537d356d1369": {
@@ -4197,7 +4199,7 @@
       "title": "결제 어뷰징 행위 제재 조치 예정 안내 (16차)",
       "content_hash": "5eeabc6142dea6890cc58dbb3a963a974ef3245d427a99040a57b25c1e6ea083",
       "first_seen_at": "2026-10-28T11:08:51.702265+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-27T17:01:39.713000+09:00"
     },
     "https://cafe.naver.com/f-e/cafes/30131231/articles/221265?boardtype=L&menuid=14&referrerAllArticles=false": {
@@ -4205,7 +4207,7 @@
       "title": "11월 출석 이벤트 진행 예정 안내(~12월 1일)",
       "content_hash": "8551926c90892b97cf12137e977bd170d7cde78dd7eb22e2fdbbab012f344953",
       "first_seen_at": "2026-10-28T11:08:51.702265+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-27T17:01:26.050000+09:00"
     },
     "https://cafe.naver.com/f-e/cafes/30131231/articles/221264?boardtype=L&menuid=14&referrerAllArticles=false": {
@@ -4213,23 +4215,25 @@
       "title": "신규 픽업 사도 모집 진행 예정 안내(~11월 5일)",
       "content_hash": "c3ee2b65866cf5cd1bd9b8f96e7a2a97e8253342ab8db93b1add4f1ca63f866e",
       "first_seen_at": "2026-10-28T11:08:51.702265+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-27T17:01:13.677000+09:00"
     },
     "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=667185&pageNo=1": {
       "game_id": "black-desert-mobile",
-      "title": "[안내] 특정 상황에서 칼페온 성 점령이 해제되는 현상 안내",
-      "content_hash": "bbccb28579ced47ae9279031c15696b9cf0cf60b6d6fc6541c738e39df37f1f9",
+      "title": "[안내] 특정 상황에서 칼페온 성 점령이 해제되는 현상 안내 (10/29 16:00, 최신화)",
+      "content_hash": "bb455238d9a1f875284c83373cb1179a391cec114c82ca2b5c9c728e645ca125",
       "first_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "published_at": "2026-10-28T00:00:00+09:00"
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "published_at": "2026-10-28T00:00:00+09:00",
+      "modified_at": "2026-10-30T11:33:23.893900+09:00",
+      "previous_content_hash": "bbccb28579ced47ae9279031c15696b9cf0cf60b6d6fc6541c738e39df37f1f9"
     },
     "https://lineagem.plaync.com/board/notice/view?articleId=6ae2e0e0263e537d356d13cf": {
       "game_id": "lineage-m",
       "title": "[안내] 시련의 탑 중복 입장 현상 관련 운영정책 위반 계정들에 대한 게임 이용제한 안내",
       "content_hash": "263bd3b1dcd58c85478b411c0bad57bb29a7bf82bcf2e11397cc0d40fde444cc",
       "first_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-28T15:00:00.001000+09:00"
     },
     "https://forum.netmarble.com/sena_rebirth/view/15/2179": {
@@ -4237,7 +4241,7 @@
       "title": "🎁1.5주년 전야제 미션 이벤트 안내🎁",
       "content_hash": "0c541e5aad6ae0c52354888a220a207e3bb62b4da5e590bc8e71d01939b4cb91",
       "first_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-28T19:01:21.006000+09:00"
     },
     "https://forum.netmarble.com/sena_rebirth/view/15/2178": {
@@ -4245,7 +4249,7 @@
       "title": "시나리오 이벤트 [심연의 사도 - 버려진 자들의 묵시록] 안내 [10/28 22:17 수정]",
       "content_hash": "907fe119b5b29888dec2f5f8afd010f5d42f21c8339cff44481c990dc9073ad1",
       "first_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-28T19:01:00.957000+09:00"
     },
     "https://forum.netmarble.com/sena_rebirth/view/15/2177": {
@@ -4253,7 +4257,7 @@
       "title": "쥬다스 픽업 소환 및 영웅 성장 이벤트 안내",
       "content_hash": "0315aa9bf947e6e3b9dc12e510c63e26e3499cc4ec35736d095b228d642abe8c",
       "first_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-28T19:01:00.880000+09:00"
     },
     "https://forum.netmarble.com/sena_rebirth/view/20/2176": {
@@ -4261,15 +4265,15 @@
       "title": "10월 29일(목) 확률 업데이트 안내",
       "content_hash": "d164bc9009243ce8157e0385e7ffa7157210d41148ce62c9da1a98730e6bf47e",
       "first_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-28T19:00:40.564000+09:00"
     },
     "https://forum.netmarble.com/sena_rebirth/view/10/2175": {
       "game_id": "seven-knights-rebirth",
-      "title": "10월 29일(목) 업데이트 상세 안내 (10/29 09:30 수정)",
+      "title": "10월 29일(목) 업데이트 상세 안내 (10/29 14:45 수정)",
       "content_hash": "9e6f8fc55f8d9f24684ade2c52eb9b90b6fc40c785af2b457f3c142975df31aa",
       "first_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-28T19:00:18.525000+09:00"
     },
     "https://forum.netmarble.com/sena_rebirth/view/15/2174": {
@@ -4277,40 +4281,46 @@
       "title": "영웅 밸런스 조정 우선순위 투표 이벤트 안내 (10/28 17:15 수정)",
       "content_hash": "412e110f0ba5cddbb09254ac46dd054573d5c71f3833417d7eb280b8859f7b67",
       "first_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-28T17:00:16.584000+09:00"
     },
     "https://page.onstove.com/epicseven/kr/view/14606223": {
       "game_id": "epic-seven",
-      "title": "10/29(목) 업데이트 점검 안내",
-      "content_hash": "79a6da29ae4c371578dc29f09b6e654ad6426d440bff3c1fc275deb7a235fb46",
+      "title": "10/29(목) 업데이트 점검 안내 (완료)",
+      "content_hash": "2c151629b613bc5e5e130798ef958156ae64a176403e29f5b022b18d7389ea23",
       "first_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "published_at": "2026-10-28T19:30:10.668000+09:00"
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "published_at": "2026-10-28T19:30:10.668000+09:00",
+      "modified_at": "2026-10-30T11:33:23.893900+09:00",
+      "previous_content_hash": "79a6da29ae4c371578dc29f09b6e654ad6426d440bff3c1fc275deb7a235fb46"
     },
     "https://page.onstove.com/epicseven/kr/view/14606214": {
       "game_id": "epic-seven",
       "title": "10월 5주차 8.7버전 1차 업데이트 안내 (10/28 수정)",
-      "content_hash": "2711c4faf001bd7117fd9b784306dd746b54e1fdf2f7a9b4e2c1e8176ce881f7",
+      "content_hash": "3a81dec3dac126d39474573544df0b581bda811973e339d2795177fafffa7661",
       "first_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "published_at": "2026-10-28T19:30:07.523000+09:00"
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "published_at": "2026-10-28T19:30:07.523000+09:00",
+      "modified_at": "2026-10-30T11:33:23.893900+09:00",
+      "previous_content_hash": "2711c4faf001bd7117fd9b784306dd746b54e1fdf2f7a9b4e2c1e8176ce881f7"
     },
     "https://page.onstove.com/epicseven/kr/view/14606132": {
       "game_id": "epic-seven",
       "title": "명조수 알렌시아의 사건 수첩 이벤트",
       "content_hash": "ef16b01fdaeffb6ed7c4495ee015de9a87e54768a0369b532ce80d89bea7279c",
       "first_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-28T19:30:07.108000+09:00"
     },
     "https://page.onstove.com/epicseven/kr/view/14606113": {
       "game_id": "epic-seven",
-      "title": "에픽세븐 신규 서버 '파운드리' 오픈! (10/29 09:59 수정)",
-      "content_hash": "f6b9a42542c180866e327ea60166666ad31a03a74f7a00201966819826d97627",
+      "title": "에픽세븐 신규 서버 '파운드리' 오픈! (10/29 13:21 수정)",
+      "content_hash": "2500cfa418e6940efb45464fb40fdad6f6071c64195e764c3dc67d51b6c749f1",
       "first_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "published_at": "2026-10-28T19:30:06.433000+09:00"
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "published_at": "2026-10-28T19:30:06.433000+09:00",
+      "modified_at": "2026-10-30T11:33:23.893900+09:00",
+      "previous_content_hash": "f6b9a42542c180866e327ea60166666ad31a03a74f7a00201966819826d97627"
     },
     "https://page.onstove.com/epicseven/kr/view/14606092": {
       "game_id": "epic-seven",
@@ -4349,7 +4359,7 @@
       "title": "10/29(목) 긴급 무점검 업데이트 안내",
       "content_hash": "98740360c01b86dd52bdceb17d39a45b6f8a36a21da3656974a95a964c9cc520",
       "first_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-29T09:45:26+09:00"
     },
     "https://game.naver.com/lounge/nikke/board/detail/8380692": {
@@ -4357,7 +4367,7 @@
       "title": "4주년 치지직 드롭스 이벤트 안내",
       "content_hash": "f4eb6ac6b89368314a1abd3773292ed9d078c15546bc304fb4dc559b184e12c0",
       "first_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-29T09:00:35+09:00"
     },
     "https://game.naver.com/lounge/nikke/board/detail/8380388": {
@@ -4365,16 +4375,18 @@
       "title": "📢 Pick Up 모집 기간 안내 - 「마리안 : 퀸」",
       "content_hash": "037773c83cf3ef2fbb60d47f5534d4bf89a352bc95f6549ee1b01c6d1050865a",
       "first_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-29T07:15:25+09:00"
     },
     "https://game.naver.com/lounge/nikke/board/detail/8380358": {
       "game_id": "nikke",
       "title": "10월 29일(목) 알려진 이슈 안내(10/29 내용 추가)",
-      "content_hash": "01792699bb4a9bb59ca78eecda0e3b6b16fef439b590eeabd18ce9c37ad629da",
+      "content_hash": "94a02f2e99ddc6d9e3c27fd7be380e0e5114d857ea11752869778fd0497e3556",
       "first_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "published_at": "2026-10-29T07:01:45+09:00"
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "published_at": "2026-10-29T07:01:45+09:00",
+      "modified_at": "2026-10-30T11:33:23.893900+09:00",
+      "previous_content_hash": "01792699bb4a9bb59ca78eecda0e3b6b16fef439b590eeabd18ce9c37ad629da"
     },
     "https://game.naver.com/lounge/nikke/board/detail/8380354": {
       "game_id": "nikke",
@@ -4405,7 +4417,7 @@
       "title": "신규 상품 [버터] 사복 패스 판매 상세 안내",
       "content_hash": "4183c4cae2c7f3daa692674c35c067270829dbba851d2202fa5ea51743c9c3aa",
       "first_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-28T17:01:40.713000+09:00"
     },
     "https://cafe.naver.com/f-e/cafes/30131231/articles/221387?boardtype=L&menuid=67&referrerAllArticles=false": {
@@ -4413,16 +4425,136 @@
       "title": "10월 29일(목) 업데이트 예정 내역 안내",
       "content_hash": "6d11d949cde03920e9fb4aecc1feaab703f809aed2bd283fcf85cb04689ea2be",
       "first_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-28T17:01:27.433000+09:00"
     },
     "https://cafe.naver.com/f-e/cafes/30131231/articles/221386?boardtype=L&menuid=66&referrerAllArticles=false": {
       "game_id": "trickcal-revive",
-      "title": "10월 29일(목) 정기점검 예정 안내",
+      "title": "10월 29일(목) 정기점검 예정 안내(완료)",
       "content_hash": "d79d793231b065e57cfbc579618784fef7542f632d662e6a2fbbdb74797aacbe",
       "first_seen_at": "2026-10-29T11:22:25.376632+09:00",
-      "last_seen_at": "2026-10-29T11:22:25.376632+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
       "published_at": "2026-10-28T17:01:16.003000+09:00"
+    },
+    "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=667214&pageNo=1": {
+      "game_id": "black-desert-mobile",
+      "title": "전체공지",
+      "content_hash": "08c8902470671d669bf9204fc236897a95894a7b13b2c5b850bcdb4c0cead30d",
+      "first_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "published_at": "2026-10-29T00:00:00+09:00"
+    },
+    "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=667197&pageNo=1": {
+      "game_id": "black-desert-mobile",
+      "title": "[점검] 10월 29일(목) 임시 점검 안내 (16:00, 점검 완료)",
+      "content_hash": "150a369a93d27cfb762706a235f2503384436a80fa3609beb1282b9338a0a335",
+      "first_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "published_at": "2026-10-29T00:00:00+09:00"
+    },
+    "https://lineagem.plaync.com/board/notice/view?articleId=6ae3ec1028c7452635072e36": {
+      "game_id": "lineage-m",
+      "title": "[안내] 2026년 11월 일반 신용카드 무이자 할부 이벤트",
+      "content_hash": "5657b77bb23a1b7259b37f058e87a5c6aec3ffc429bb72613e992e101da57396",
+      "first_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "published_at": "2026-10-30T10:00:00.111000+09:00"
+    },
+    "https://lineagem.plaync.com/board/notice/view?articleId=6ae2d30328c7452635072e1b": {
+      "game_id": "lineage-m",
+      "title": "[안내] 10월 29일(목) 알려진 현상 안내",
+      "content_hash": "1ef0a2f658f223efc59b267f17f46dc56516c4ce980664ae86174eced2f4bb49",
+      "first_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "published_at": "2026-10-29T14:00:51.326000+09:00"
+    },
+    "https://forum.netmarble.com/sena_rebirth/view/11/2182": {
+      "game_id": "seven-knights-rebirth",
+      "title": "10/29(목) 업데이트 후 확인된 현상 안내",
+      "content_hash": "14cb713e3eae40ba75e7e006e1c649f8d724dec1c55db3ceee57d5ea17f43723",
+      "first_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "published_at": "2026-10-29T12:02:49.861000+09:00"
+    },
+    "https://forum.netmarble.com/sena_rebirth/view/15/2181": {
+      "game_id": "seven-knights-rebirth",
+      "title": "[1.5주년 전야제] 기념 만약에! 밸런스 게임 이벤트 안내",
+      "content_hash": "eb6f4db1627ff803dc9edeca771059627b3cd3d3b45fb5f79a843678726ed65c",
+      "first_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "published_at": "2026-10-29T12:02:49.831000+09:00"
+    },
+    "https://page.onstove.com/epicseven/kr/view/14608392": {
+      "game_id": "epic-seven",
+      "title": "10/29(목) 무점검 패치 진행 안내",
+      "content_hash": "7a026321d008cf4ad9295b2cd8a8b4ba852664249929453f09c239a7930dfa4d",
+      "first_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "published_at": "2026-10-29T22:10:00.595000+09:00"
+    },
+    "https://page.onstove.com/epicseven/kr/view/14608028": {
+      "game_id": "epic-seven",
+      "title": "바니걸 모로의 명탐정 데뷔전! 사라진 알키를 찾아서",
+      "content_hash": "d583f3a6ffb784542e474d922e30b1691671a4c385b59897726500e592f9f61a",
+      "first_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "published_at": "2026-10-29T19:00:00.585000+09:00"
+    },
+    "https://page.onstove.com/epicseven/kr/view/14607998": {
+      "game_id": "epic-seven",
+      "title": "에픽세븐 운영 정책 개정 안내",
+      "content_hash": "431f5e8baa31c53315aaed4ff2c7f0efa0bc35c4de38a33ada395f54dfb3c5f3",
+      "first_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "published_at": "2026-10-29T18:00:02.802000+09:00"
+    },
+    "https://page.onstove.com/epicseven/kr/view/14608117": {
+      "game_id": "epic-seven",
+      "title": "10/29(목) 현재 확인된 문제점 안내 (18:15 추가)",
+      "content_hash": "454f5db84fe6d510949870454ceb5355d17c3adef8c6c131ef8ff4fe0d866199",
+      "first_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "published_at": "2026-10-29T17:56:32.335000+09:00"
+    },
+    "https://game.naver.com/lounge/nikke/board/detail/8385414": {
+      "game_id": "nikke",
+      "title": "📢 < 승리의 여신: 니케> 무신사 콜라보 팝업스토어 코스프레 이벤트 안내",
+      "content_hash": "87da11602a8965a1e2f3f84626c38e8fe26e805d42f9bdfb66cccfe6d334444e",
+      "first_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "published_at": "2026-10-30T10:00:58+09:00"
+    },
+    "https://game.naver.com/lounge/nikke/board/detail/8384128": {
+      "game_id": "nikke",
+      "title": "10/29(목) 긴급 무점검 업데이트 안내",
+      "content_hash": "b232e961bedaf9aea93163f612d17d0412705394152caf125f081fdb430640a8",
+      "first_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "published_at": "2026-10-29T22:53:57+09:00"
+    },
+    "https://game.naver.com/lounge/nikke/board/detail/8383497": {
+      "game_id": "nikke",
+      "title": "🎉 애플 앱스토어 매출 1위 기념 보상 안내 🎉",
+      "content_hash": "1f9d4da895cab74ad67046e1441d88a5801a6ab9e89719334b048ab7ca8c343a",
+      "first_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "published_at": "2026-10-29T20:02:48+09:00"
+    },
+    "https://game.naver.com/lounge/nikke/board/detail/8383046": {
+      "game_id": "nikke",
+      "title": "4주년 보상 한눈에 보기​",
+      "content_hash": "17220b0124a5b0d367bea6efe444d60581af983547f6e09afdb5c2afd3b8cdf5",
+      "first_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "published_at": "2026-10-29T18:07:37+09:00"
+    },
+    "https://cafe.naver.com/f-e/cafes/30131231/articles/221545?boardtype=L&menuid=66&referrerAllArticles=false": {
+      "game_id": "trickcal-revive",
+      "title": "10월 29일(목) 확인된 문제 현상 안내",
+      "content_hash": "5cba18e1bbc50b6c70a81ce6128ca8f7af6044fbc6b7d8bf94bacd3ce019ee20",
+      "first_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "last_seen_at": "2026-10-30T11:33:23.893900+09:00",
+      "published_at": "2026-10-29T18:53:14.887000+09:00"
     }
   }
 }
