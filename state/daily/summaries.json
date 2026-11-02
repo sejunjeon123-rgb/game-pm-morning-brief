@@ -1,175 +1,138 @@
 {
-  "date": "2026-11-01",
+  "date": "2026-11-02",
   "version": "compact-v1-relevance-v2",
   "games": {
-    "black-desert-mobile": [
+    "odin-valhalla-rising": [
       {
-        "title": "2026 길드 대항전 결과·보상 안내 및 생방송 정보",
-        "category": "EVENT",
+        "title": "펫 관련 신규 시스템으로 투력 상승 가능성 문의",
+        "category": "UPDATE",
         "bm_types": [],
-        "facts": [
-          {
-            "text": "공식 발표에서 2026 길드 대항전 우승 길드는 '청플' 등 순위와 본선 참가자·준우승·3~4위 등 보상 내역을 공개했다.",
-            "evidence_ids": [
-              "f299cc4e686c5c2183386d82d6d4c1744291db764b00b3ec7fa2f7c36ccce40f"
-            ]
-          },
-          {
-            "text": "공식 공지에 따르면 본선 참가 길드원·4강 이상 참여자 등에게 블랙펄, 칭호, 신규 채팅 아이콘·이모티콘 등 보상이 지급되며 지급 시점(11월 3일 점검 등)을 명시했다.",
-            "evidence_ids": [
-              "f299cc4e686c5c2183386d82d6d4c1744291db764b00b3ec7fa2f7c36ccce40f"
-            ]
-          },
-          {
-            "text": "공식 안내에서 10월 31일 길드 대항전 본선 및 결승 생방송을 치지직과 유튜브 채널에서 진행하고 시청 이벤트·드롭스(시청 시간 보상) 참여 방법을 안내했다.",
-            "evidence_ids": [
-              "d17ba009bcf42ad2964651007951e4197b757a5a64f9ab2a6dbbaed8dcafd194"
-            ]
-          }
-        ],
+        "facts": [],
         "claims": [
           {
-            "text": "커뮤니티 게시글에서 최신 쿠폰 정리·이벤트 정보를 정리한 외부 블로그 링크를 공유한다는 주장이 제기되었다.",
+            "text": "펫 경험치·펫 공방(신규 시스템)으로 무과금 기준 투력을 수백~천 단위로 올릴 수 있는지 질문·추정함.",
             "evidence_ids": [
-              "59c1cd0d6ae5ad002529cd82fc9acf696820022981e0b1a62fc3e9642605b39e"
+              "efc695e60a18d9fb8bc98d591c95bcb913c8b5d7567524e211846c969b9368c2"
             ]
           }
         ],
         "interpretation": [
           {
-            "text": "공식 공지들은 대회 결과·보상과 생방송 보상 수령 절차를 분리해 안내하므로 운영상 보상 지급 일정과 시청 보상 절차를 각각 확인해야 한다.",
+            "text": "유저는 신규 펫 시스템이 전투력(투력) 상승에 미치는 영향과 보스 도전 가능성 변화를 기대하거나 불확실해함.",
             "evidence_ids": [
-              "f299cc4e686c5c2183386d82d6d4c1744291db764b00b3ec7fa2f7c36ccce40f",
-              "d17ba009bcf42ad2964651007951e4197b757a5a64f9ab2a6dbbaed8dcafd194"
+              "efc695e60a18d9fb8bc98d591c95bcb913c8b5d7567524e211846c969b9368c2"
             ]
           },
           {
-            "text": "커뮤니티의 외부 링크 공유는 공식 쿠폰 공지와 별개이며, 외부 쿠폰 정보의 유효성·안전성은 공식 확인이 필요하다.",
+            "text": "공식 확인 없이 수치·효과를 단정하는 게시글이 있어 혼선·과대기대 소지가 있음.",
             "evidence_ids": [
-              "59c1cd0d6ae5ad002529cd82fc9acf696820022981e0b1a62fc3e9642605b39e",
-              "d17ba009bcf42ad2964651007951e4197b757a5a64f9ab2a6dbbaed8dcafd194"
+              "efc695e60a18d9fb8bc98d591c95bcb913c8b5d7567524e211846c969b9368c2"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "공유된 외부 블로그 쿠폰의 유효성·출처 신뢰도는 공식 근거가 없어 확인되지 않았다.",
-          "일부 보상(예: 신규 채팅 아이콘)의 수급 유지 기간이 '최대 1년'이라 안내되나 세부 조건의 적용 범위 일부는 공지에서만 확인 가능하다."
+          "펫 신규 시스템의 실제 전투력(투력) 증가량과 적용 방식에 대한 공식 수치·설명 여부"
         ],
         "evidence": [
           {
-            "evidence_id": "59c1cd0d6ae5ad002529cd82fc9acf696820022981e0b1a62fc3e9642605b39e",
+            "evidence_id": "efc695e60a18d9fb8bc98d591c95bcb913c8b5d7567524e211846c969b9368c2",
             "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/board/view/?id=blackdesertmobile&no=334393",
-            "published_at": "2026-10-31T19:59:00+09:00",
-            "collected_at": "2026-11-01T11:09:16.015848+09:00",
-            "content_hash": "9d4a686f7776d28ecb84dfb7e9d88bd19f16d6f46193e4b89836a1ecad4c4801",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=vhr&no=317245",
+            "published_at": "2026-11-02T09:58:44+09:00",
+            "collected_at": "2026-11-02T11:26:14.699028+09:00",
+            "content_hash": "eff5fec65684b7df06760374bf4de060082f7f303e72c057f84cf6c2a12f3dda",
             "source_type": "PUBLIC_COMMUNITY"
+          }
+        ]
+      },
+      {
+        "title": "길드 던전(협동토벌전) 난이도·요구 투력 관련 플레이팁 공유",
+        "category": "UPDATE",
+        "bm_types": [],
+        "facts": [],
+        "claims": [
+          {
+            "text": "협동토벌전 2단에서 보스에 데미지 1이라도 넣으면 보상 획득, 생존 인원 조건과 보스·중보 등장 체력 구간 등 공략 팁을 게시함.",
+            "evidence_ids": [
+              "8d7539584ecb5105a5b6eb8e0706691db2006b72717fd44a2dd1fd28457cfa2b"
+            ]
           },
           {
-            "evidence_id": "d17ba009bcf42ad2964651007951e4197b757a5a64f9ab2a6dbbaed8dcafd194",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=667233&pageNo=1",
-            "published_at": "2026-10-30T00:00:00+09:00",
-            "collected_at": "2026-11-01T11:07:59.918512+09:00",
-            "content_hash": "93875f6f018ec29d35de4a47369e6f9ad87c581a3c05a503fcbaddccdee12310",
-            "source_type": "OFFICIAL_HOMEPAGE"
+            "text": "최소 통과 기준으로 투력 4.7 이상(힐러 3 포함 4인팟 + 어글 담당 1인) 등 수치 기반 권고를 제시함.",
+            "evidence_ids": [
+              "8d7539584ecb5105a5b6eb8e0706691db2006b72717fd44a2dd1fd28457cfa2b"
+            ]
+          }
+        ],
+        "interpretation": [
+          {
+            "text": "플레이어 커뮤니티에서 보스 행동·중보 등장 타이밍·생존 기준 등 세부 운영 지식이 공유되고 있음.",
+            "evidence_ids": [
+              "8d7539584ecb5105a5b6eb8e0706691db2006b72717fd44a2dd1fd28457cfa2b"
+            ]
           },
           {
-            "evidence_id": "f299cc4e686c5c2183386d82d6d4c1744291db764b00b3ec7fa2f7c36ccce40f",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=667262&pageNo=1",
-            "published_at": "2026-10-31T00:00:00+09:00",
-            "collected_at": "2026-11-01T11:07:59.918512+09:00",
-            "content_hash": "f1393d4d7ca40f04b00b13fd3c79e77540aa7d4a575c940c887c83ff5f643257",
-            "source_type": "OFFICIAL_HOMEPAGE"
+            "text": "공략에 제시된 투력·파티 구성 수치는 플레이어 경험 기반이며 공식 난이도·요구 수치와 차이가 있을 수 있음.",
+            "evidence_ids": [
+              "8d7539584ecb5105a5b6eb8e0706691db2006b72717fd44a2dd1fd28457cfa2b"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "공식 문서나 패치노트에서 제시한 협동토벌전의 권장 투력·파티 구성·중보 등장 조건의 유무"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "8d7539584ecb5105a5b6eb8e0706691db2006b72717fd44a2dd1fd28457cfa2b",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=vhr&no=317244",
+            "published_at": "2026-11-02T06:51:30+09:00",
+            "collected_at": "2026-11-02T11:26:14.699028+09:00",
+            "content_hash": "d03f0b124c2f79ce3a85adfe426c32a9626cb9d656c1e1d831c0fa99b55e514c",
+            "source_type": "PUBLIC_COMMUNITY"
           }
         ]
       }
     ],
     "lineage-m": [
       {
-        "title": "리부트 서버 각성 드슬 선물받기 가능한 가격 문의",
-        "category": "CHARACTER",
-        "bm_types": [],
-        "facts": [],
-        "claims": [
-          {
-            "text": "리부트 서버에서 각성 드슬(각성 드래곤 슬레이어)을 얼마를 제시하면 선물 받기가 가능한지 묻는 게시글이다.",
-            "evidence_ids": [
-              "ee55abfa255cc9269524d02e7678ecd2ccb08cba13de68d9b35baad7726e9f89"
-            ]
-          }
-        ],
-        "interpretation": [
-          {
-            "text": "게시글 제목만을 근거로 사용했으며 유저가 특정 아이템에 대한 선물·거래 기대 가격을 묻는 개인적 질문으로 해석된다.",
-            "evidence_ids": [
-              "ee55abfa255cc9269524d02e7678ecd2ccb08cba13de68d9b35baad7726e9f89"
-            ]
-          },
-          {
-            "text": "공식 발표나 시스템 정책을 제시하는 근거는 포함되지 않아 이 내용은 이용자 의견·문의에 해당한다.",
-            "evidence_ids": [
-              "ee55abfa255cc9269524d02e7678ecd2ccb08cba13de68d9b35baad7726e9f89"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [
-          "공식적으로 선물 수락 기준이나 평균 제안 가격에 관한 정보가 게시글에 포함되어 있지 않다."
-        ],
-        "evidence": [
-          {
-            "evidence_id": "ee55abfa255cc9269524d02e7678ecd2ccb08cba13de68d9b35baad7726e9f89",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/board/view/?id=lineagem&no=403802",
-            "published_at": "2026-11-01T00:37:24+09:00",
-            "collected_at": "2026-11-01T11:09:16.015848+09:00",
-            "content_hash": "b525b0ab25025da0a36e5eba17cbd1c7ce9e25cbbeb5dfbb4ff22a1dbae620e8",
-            "source_type": "PUBLIC_COMMUNITY"
-          }
-        ]
-      }
-    ],
-    "epic-seven": [],
-    "nikke": [
-      {
-        "title": "4주년 ‘MARIAN: WHITE & BLACK IN 용산’ DAY 2 오픈",
-        "category": "EVENT",
+        "title": "신화 마법인형 최초 획득 및 전월드 보상 지급 안내",
+        "category": "NOTICE",
         "bm_types": [],
         "facts": [
           {
-            "text": "공식 커뮤니티는 4주년 기념 옥외 광고 이벤트 'MARIAN: WHITE & BLACK IN 용산'의 DAY 2 오픈을 안내했다.",
+            "text": "리니지M 측은 2026-11-01 기란·하이네 월드에서 최초로 신화 마법인형 카드 획득자가 확인되었으며 이를 기념해 전체 월드에 푸시 보상을 지급한다고 공지했다.",
             "evidence_ids": [
-              "896f2a721cb429bc7ba9ba659805e1f005c78ee04acb44a3d0df57eeca233472"
+              "865d691c88513300956f3bcacff4a4b378457fc5a9de066379c7209d66cb4bbc"
             ]
           },
           {
-            "text": "행사는 2026-10-30부터 2026-11-01까지 총 3일간 진행되며(관람은 행사 기간 중 자유 관람), 운영 시간을 공지했다.",
+            "text": "지급 시점은 2026-11-01 18시이며 레거시 월드에는 '최상급 마법인형 뽑기팩(이벤트)' 7개, 리부트 월드에는 '신비한 마법인형 뽑기팩(이벤트)' 7개가 지급된다.",
             "evidence_ids": [
-              "896f2a721cb429bc7ba9ba659805e1f005c78ee04acb44a3d0df57eeca233472"
+              "865d691c88513300956f3bcacff4a4b378457fc5a9de066379c7209d66cb4bbc"
             ]
           },
           {
-            "text": "주요 전시물로 낮·밤 각기 다른 연출의 대형 마리안 조형물과 야간 조명이 소개되었다.",
+            "text": "우편 수령 조건은 계정당 45레벨 이상 및 최근 15일 내 접속 기록이 있는 계정이고, 우편 수령 가능 기한은 2026-11-08 23:59까지며 지급 아이템은 2026-12-30 05시에 삭제된다고 안내했다.",
             "evidence_ids": [
-              "896f2a721cb429bc7ba9ba659805e1f005c78ee04acb44a3d0df57eeca233472"
+              "865d691c88513300956f3bcacff4a4b378457fc5a9de066379c7209d66cb4bbc"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "공식 안내에 따르면 이번 행사는 오프라인 옥외 광고·조형물을 통한 브랜드 홍보 목적의 단기 전시성 이벤트로 보인다.",
+            "text": "공식 공지는 최초 획득자 등장 자체와 그에 따른 전월드 보상 지급(푸시·우편)을 알리는 사례로, 보상 수령 조건과 기간을 명시해 수령 대상 범위를 제한하고 있다.",
             "evidence_ids": [
-              "896f2a721cb429bc7ba9ba659805e1f005c78ee04acb44a3d0df57eeca233472"
+              "865d691c88513300956f3bcacff4a4b378457fc5a9de066379c7209d66cb4bbc"
             ]
           },
           {
-            "text": "야간 조명 연출 안내는 현장 방문 시 사진 촬영·야간 관람 수요를 염두에 둔 기획으로 해석될 수 있다.",
+            "text": "우편 만료 및 아이템 삭제 일시가 명시되어 있어, 대상 유저들의 수령 가능 기간 관리가 필요하며 해당 기한 이후에는 회수·복구 관련 문의가 발생할 수 있다.",
             "evidence_ids": [
-              "896f2a721cb429bc7ba9ba659805e1f005c78ee04acb44a3d0df57eeca233472"
+              "865d691c88513300956f3bcacff4a4b378457fc5a9de066379c7209d66cb4bbc"
             ]
           }
         ],
@@ -177,66 +140,166 @@
         "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "896f2a721cb429bc7ba9ba659805e1f005c78ee04acb44a3d0df57eeca233472",
+            "evidence_id": "865d691c88513300956f3bcacff4a4b378457fc5a9de066379c7209d66cb4bbc",
             "classification": "OFFICIAL_FACT",
-            "url": "https://game.naver.com/lounge/nikke/board/detail/8391869",
-            "published_at": "2026-10-31T18:42:31+09:00",
-            "collected_at": "2026-11-01T11:07:59.918512+09:00",
-            "content_hash": "929af641d12ecd3f9ff3ad588f8b920af8a2e7e09f299e81650d4561db1fbec3",
-            "source_type": "OFFICIAL_COMMUNITY"
+            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6ae6ff906cfe4756db5b9084",
+            "published_at": "2026-11-01T17:55:00.001000+09:00",
+            "collected_at": "2026-11-02T11:24:37.496168+09:00",
+            "content_hash": "0b03328e44407c9bc6e5647b7a59fd152c3797cb461d44f7f5b841017e58f0c3",
+            "source_type": "OFFICIAL_HOMEPAGE"
           }
         ]
       }
     ],
-    "trickcal-revive": [
+    "epic-seven": [
       {
-        "title": "커뮤니티 주장: 신규 픽업 사도 모집 예정 안내",
-        "category": "EVENT",
+        "title": "Steam 계정 전환 및 임시 계정 유의사항 안내",
+        "category": "UPDATE",
         "bm_types": [],
-        "facts": [],
-        "claims": [
+        "facts": [
           {
-            "text": "커뮤니티 글은 리워크 픽업 엘다인 사도 '시온 더 다크불릿'과 '베니(...)' 픽업 기간이 2045년 11월 2일 정기점검 이후부터 11월 16일 10:59까지라고 주장한다.",
+            "text": "공식 안내에서 Steam 최초 플레이 시 생성되는 임시 계정은 보존을 원하면 반드시 스토브 계정으로 연동해야 한다고 알렸습니다.",
             "evidence_ids": [
-              "eeea45d8bec31e7fa8057b304ee4bf174a364f62e2e71192f760014da2b928d2"
+              "ca3944ce4d8dca9ac7a2ec6f116721ddcf65a39194b59a04a47e73feda8fb4d9"
             ]
           },
           {
-            "text": "같은 글은 픽업 기간 중 '베니(...)'의 출현 확률이 상향된다고 주장한다.",
+            "text": "공식 안내에 따라 스팀 임시 계정이 이미 생성된 경우 해당 임시 계정을 가입 후 탈퇴해야 기존 계정으로 전환할 수 있다고 명시되어 있습니다.",
             "evidence_ids": [
-              "eeea45d8bec31e7fa8057b304ee4bf174a364f62e2e71192f760014da2b928d2"
+              "ca3944ce4d8dca9ac7a2ec6f116721ddcf65a39194b59a04a47e73feda8fb4d9"
+            ]
+          },
+          {
+            "text": "공식 안내는 최근 3개월 이내 계정 전환 이력이 있으면 재전환 대기(3개월)가 필요하다고 안내하고 고객센터 지원 절차를 제시했습니다.",
+            "evidence_ids": [
+              "ca3944ce4d8dca9ac7a2ec6f116721ddcf65a39194b59a04a47e73feda8fb4d9"
             ]
           }
         ],
+        "claims": [],
         "interpretation": [
           {
-            "text": "게시글은 커뮤니티 이용자(비공식)가 작성한 안내성 공지로, 공식 홈페이지나 개발사 발표와의 교차 확인이 필요하다.",
+            "text": "공식 문구는 사용자가 계정 전환 절차를 선행하도록 유도하며, 임시 계정 존재 여부가 전환 가능성에 직접적 영향을 준다고 안내합니다.",
             "evidence_ids": [
-              "eeea45d8bec31e7fa8057b304ee4bf174a364f62e2e71192f760014da2b928d2"
-            ]
-          },
-          {
-            "text": "게시글에 이벤트 기간과 확률 상향 정보가 포함되어 있어 유저 기대가 형성될 수 있으나, 출처가 비공식이므로 운영 조치나 일정 변동 가능성이 존재한다.",
-            "evidence_ids": [
-              "eeea45d8bec31e7fa8057b304ee4bf174a364f62e2e71192f760014da2b928d2"
+              "ca3944ce4d8dca9ac7a2ec6f116721ddcf65a39194b59a04a47e73feda8fb4d9"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "해당 픽업 일정과 확률 상향 여부가 공식 발표로 확인되었는지 여부",
-          "상향된 출현 확률의 구체적 수치",
-          "게시글의 이미지·모션이 실제와 다른지 여부(게시글에 테스트 환경 촬영 표기만 있음)"
+          "임시 계정 관련 예외 처리(복구 가능성 등)의 구체적 범위와 실제 고객센터 처리 절차 세부 내용은 공지 본문에 상세히 서술되지 않았습니다."
         ],
         "evidence": [
           {
-            "evidence_id": "eeea45d8bec31e7fa8057b304ee4bf174a364f62e2e71192f760014da2b928d2",
+            "evidence_id": "ca3944ce4d8dca9ac7a2ec6f116721ddcf65a39194b59a04a47e73feda8fb4d9",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://page.onstove.com/epicseven/kr/view/14609695",
+            "published_at": "2026-10-30T19:00:02.432000+09:00",
+            "collected_at": "2026-11-02T11:24:37.496168+09:00",
+            "content_hash": "02b19ccee43fb8374222f7daddc2d71cb8ddfe70a072e1078b5fed04b43078ec",
+            "source_type": "OFFICIAL_COMMUNITY"
+          }
+        ]
+      },
+      {
+        "title": "유저 불만 표본: 밸런스 조정 관련 비판",
+        "category": "NOTICE",
+        "bm_types": [],
+        "facts": [],
+        "claims": [
+          {
+            "text": "게시글 작성자는 최근 밸런스 조정으로 일부 상위 캐릭터들이 다른 캐릭터를 압도해 게임 플레이 경험이 왜곡되었다고 주장했습니다.",
+            "evidence_ids": [
+              "988cb08123bae2eb1c6df29cfb20f6e52fb58e4d4426da384272152428b10cb2"
+            ]
+          },
+          {
+            "text": "작성자는 개발진의 밸런스 정책이 수익 목적에 기울어져 성능이 낮은 캐릭터에 대한 지원이 부족하다고 비판했습니다.",
+            "evidence_ids": [
+              "988cb08123bae2eb1c6df29cfb20f6e52fb58e4d4426da384272152428b10cb2"
+            ]
+          }
+        ],
+        "interpretation": [
+          {
+            "text": "샘플 게시글은 일부 이용자의 강한 불만을 보여주나, 해당 주장이 전체 여론을 대변하는지 여부와 사실관계는 공식 확인이 필요합니다.",
+            "evidence_ids": [
+              "988cb08123bae2eb1c6df29cfb20f6e52fb58e4d4426da384272152428b10cb2",
+              "877f4176d86d57473f056a19195d1b6fcb13883a72691a97ecf0238c80969fcd"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "밸런스 변경의 구체적 수치·패치 내역과, 제기된 문제(특정 캐릭터의 과도한 우위)에 대한 공식 입장은 해당 공개자료에 포함되어 있지 않습니다."
+        ],
+        "evidence": [
+          {
+            "evidence_id": "877f4176d86d57473f056a19195d1b6fcb13883a72691a97ecf0238c80969fcd",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://page.onstove.com/epicseven/kr/view/14608117",
+            "published_at": "2026-10-29T17:56:32.335000+09:00",
+            "collected_at": "2026-11-02T11:24:37.496168+09:00",
+            "content_hash": "132af3d07d23972a80e6dde1e413da32a7a542e125f54b3d976f8e2bc23ae265",
+            "source_type": "OFFICIAL_COMMUNITY"
+          },
+          {
+            "evidence_id": "988cb08123bae2eb1c6df29cfb20f6e52fb58e4d4426da384272152428b10cb2",
             "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=rollthechess&no=3897059",
-            "published_at": "2026-11-01T10:29:24+09:00",
-            "collected_at": "2026-11-01T11:09:16.015848+09:00",
-            "content_hash": "f3a0dfae28d1ae6e19203b04e79d92333c2251d67f199685b490477523c9e24f",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=epicseven&no=2746633",
+            "published_at": "2026-11-02T10:14:14+09:00",
+            "collected_at": "2026-11-02T11:26:14.699028+09:00",
+            "content_hash": "087d94dce1d0adead8310532cc1dd81733da0b200408b9693af977608cd61539",
             "source_type": "PUBLIC_COMMUNITY"
+          }
+        ]
+      }
+    ],
+    "nikke": [
+      {
+        "title": "DAY 3 오픈 및 이벤트 교환 코드 공개",
+        "category": "EVENT",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "공식 커뮤니티에 10/30~11/1 진행한 'MARIAN: WHITE & BLACK IN 용산' 옥외 광고 이벤트가 마무리되었다고 안내되었다.",
+            "evidence_ids": [
+              "959d1b0570a84938a4b7feca0e9dc99a97595eff88737dc5141114775ea8f2be"
+            ]
+          },
+          {
+            "text": "공식은 이벤트 기념 전원 증정 교환 코드를 'NIKKE4thYongsan'으로 공개했다.",
+            "evidence_ids": [
+              "959d1b0570a84938a4b7feca0e9dc99a97595eff88737dc5141114775ea8f2be"
+            ]
+          },
+          {
+            "text": "교환 보상 목록(모듈 하이 부스트 20, 배틀 데이터 셋 케이스(1H) 1, 코어 더스트 케이스(1H) 1, 크레디트 케이스(1H) 1)과 교환 기간(11/18 23:59)·교환 방법을 공지했다.",
+            "evidence_ids": [
+              "959d1b0570a84938a4b7feca0e9dc99a97595eff88737dc5141114775ea8f2be"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "공식 공지에서 옥외 광고 행사 종료를 알리고 보상 교환 코드를 배포해 이벤트 연계 보상 제공을 안내한 것으로 보인다.",
+            "evidence_ids": [
+              "959d1b0570a84938a4b7feca0e9dc99a97595eff88737dc5141114775ea8f2be"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "959d1b0570a84938a4b7feca0e9dc99a97595eff88737dc5141114775ea8f2be",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://game.naver.com/lounge/nikke/board/detail/8397665",
+            "published_at": "2026-11-01T20:45:24+09:00",
+            "collected_at": "2026-11-02T11:24:37.496168+09:00",
+            "content_hash": "cb6a5892cd6d0191a2e4d826750fe5c32929fd5b034c715122873c23be41c36b",
+            "source_type": "OFFICIAL_COMMUNITY"
           }
         ]
       }
