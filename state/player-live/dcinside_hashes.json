@@ -12201,7 +12201,7 @@
       "title": "검사모 유저는 딱 두부류임.",
       "content_hash": "a38eb45c4656ed4feca3ccaa3cc2588f0941eea19c581e0428bca4e35ff1057f",
       "first_seen_at": "2026-10-28T11:10:14.320096+09:00",
-      "last_seen_at": "2026-11-02T11:26:14.699028+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
       "published_at": "2026-10-28T01:42:47+09:00"
     },
     "https://gall.dcinside.com/mgallery/board/view/?id=vhr&no=317209": {
@@ -12390,7 +12390,7 @@
       "title": "사람 취향 참 안변함",
       "content_hash": "aa1668394c287137356a0cf42ae1acbaeea88debd404d1b877527f9c6b8ba01a",
       "first_seen_at": "2026-10-29T11:23:54.395750+09:00",
-      "last_seen_at": "2026-11-02T11:26:14.699028+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
       "published_at": "2026-10-29T10:32:46+09:00"
     },
     "https://gall.dcinside.com/mgallery/board/view/?id=vhr&no=317219": {
@@ -12570,7 +12570,7 @@
       "title": "뉴비 지금 접근해도됨?",
       "content_hash": "21b3177ab65c48b2527987b619cfff7c21bf743b4b0caaf65005cd28aed61f69",
       "first_seen_at": "2026-10-30T11:34:56.844539+09:00",
-      "last_seen_at": "2026-11-02T11:26:14.699028+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
       "published_at": "2026-10-30T07:18:17+09:00"
     },
     "https://gall.dcinside.com/mgallery/board/view/?id=vhr&no=317224": {
@@ -12768,7 +12768,7 @@
       "title": "이진훈 저번 라방 극딜당해 삐져서 운영안해 시전한거.",
       "content_hash": "7de70f084208033ca900ffdc47453db1252465a31f94b395056dbb831d2cad82",
       "first_seen_at": "2026-10-31T11:18:49.575989+09:00",
-      "last_seen_at": "2026-11-02T11:26:14.699028+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
       "published_at": "2026-10-28T18:04:45+09:00"
     },
     "https://gall.dcinside.com/mgallery/board/view/?id=vhr&no=317233": {
@@ -12957,7 +12957,7 @@
       "title": "에반갤 불만제기 좆목지적해도 바로 염불탭 박네 ㅋㅋㅋ",
       "content_hash": "0ef019417fba7462bf8f59c5f7680061a9480d843e7fe42961f9d2c2458494c0",
       "first_seen_at": "2026-11-01T11:09:16.015848+09:00",
-      "last_seen_at": "2026-11-02T11:26:14.699028+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
       "published_at": "2026-10-31T11:47:50+09:00"
     },
     "https://gall.dcinside.com/board/view/?id=blackdesertmobile&no=334393": {
@@ -13164,7 +13164,7 @@
       "title": "돌고 돌아 오딘인듯",
       "content_hash": "580c9627ef5c345c99033ba930bafddd96e4dd9516f17d6e80e6641d0140ee47",
       "first_seen_at": "2026-11-02T11:26:14.699028+09:00",
-      "last_seen_at": "2026-11-02T11:26:14.699028+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
       "published_at": "2026-10-29T16:19:34+09:00"
     },
     "https://gall.dcinside.com/board/view/?id=lineagem&no=403844": {
@@ -13301,6 +13301,204 @@
       "first_seen_at": "2026-11-02T11:26:14.699028+09:00",
       "last_seen_at": "2026-11-02T11:26:14.699028+09:00",
       "published_at": "2026-11-02T10:21:22+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2179835": {
+      "game_id": "mabinogi-mobile",
+      "source_id": "mabinogi-mobile-dcinside",
+      "title": "난 이떄가 내 마음속의 전성기라 생각함.",
+      "content_hash": "925579b1773d61c2cff4f63971599749d93c6a419e89f74f7d8593e133f53c95",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-11-02T22:38:01+09:00"
+    },
+    "https://gall.dcinside.com/board/view/?id=blackdesertmobile&no=334395": {
+      "game_id": "black-desert-mobile",
+      "source_id": "black-desert-mobile-dcinside",
+      "title": "서버는 바람 길드는 가모스",
+      "content_hash": "56aaccbbacf10ed79c8337a20cf1b755e49cb1f4fa33260f6ba5bfef5536d171",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-11-02T12:31:05+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=vhr&no=317255": {
+      "game_id": "odin-valhalla-rising",
+      "source_id": "odin-valhalla-rising-dcinside",
+      "title": "에라이",
+      "content_hash": "0a505a1db0739a0ee3c0dfe0af25c0f92233f84f146faa8b3c41fb38de5c1b12",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-11-03T11:50:00+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=vhr&no=317254": {
+      "game_id": "odin-valhalla-rising",
+      "source_id": "odin-valhalla-rising-dcinside",
+      "title": "2강 공맥 나겔링이랑 스카디팔찌 얼마에 팔아야 돼",
+      "content_hash": "d8b12893b53b1175b2393d89fbb8ef60848c077584bf3124e94d55f2ec58a8d8",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-11-03T11:49:32+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=vhr&no=317238": {
+      "game_id": "odin-valhalla-rising",
+      "source_id": "odin-valhalla-rising-dcinside",
+      "title": "5나겔링 재감3퍼 7발목 재감3퍼 각 얼마임?",
+      "content_hash": "1e8dd2c541c3439a0a1c2532f7342a41564074011efb8a81bb335a72c48f48ae",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-10-31T18:21:20+09:00"
+    },
+    "https://gall.dcinside.com/board/view/?id=lineagem&no=403888": {
+      "game_id": "lineage-m",
+      "source_id": "lineage-m-dcinside",
+      "title": "거지같고 거짓같은 투기장 대기시간 12시간",
+      "content_hash": "41ea92f42d51369444c5b30a00196f312ccc3d497f6cafa6c9b1d54314f2ef06",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-11-03T12:36:56+09:00"
+    },
+    "https://gall.dcinside.com/board/view/?id=lineagem&no=403862": {
+      "game_id": "lineage-m",
+      "source_id": "lineage-m-dcinside",
+      "title": "신섭 악세 졸업이다 티만남았다 ㅋㅋ",
+      "content_hash": "4f1a8384d448465077f987f49a8b7a3a3c669e3ae41c537faa7789d26d5d4b7e",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-11-02T22:01:43+09:00"
+    },
+    "https://gall.dcinside.com/board/view/?id=lineagem&no=403847": {
+      "game_id": "lineage-m",
+      "source_id": "lineage-m-dcinside",
+      "title": "안녕하세요 올만입니다 ㅋ",
+      "content_hash": "377966ffd43b5f29dfe69ba7033c659a779a545ad620afb77e05e65583c5dc35",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-11-02T12:44:36+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1397481": {
+      "game_id": "seven-knights-rebirth",
+      "source_id": "seven-knights-rebirth-dcinside",
+      "title": "근데 일욜 아침까지만해도 공덱은 죽었다고 하지않았어?",
+      "content_hash": "eb80f80ecf402202c5c0a439527992cc1484eefe309b53c7fc31f64749f622c7",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-11-03T12:55:37+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1397456": {
+      "game_id": "seven-knights-rebirth",
+      "source_id": "seven-knights-rebirth-dcinside",
+      "title": "무과금단 2명 구인",
+      "content_hash": "7416881bb5a405dafb1325fc2a6004b1cb4a2373998e4843fae9ff866e40f7b9",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-11-03T12:13:01+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1397391": {
+      "game_id": "seven-knights-rebirth",
+      "source_id": "seven-knights-rebirth-dcinside",
+      "title": "반복전투 2배럭은 대체 언제들어오는데",
+      "content_hash": "40216c574bbee8742d8c48b775b6650a679efce3313ade8d8d99ea5706684355",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-11-03T10:59:10+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=epicseven&no=2747704": {
+      "game_id": "epic-seven",
+      "source_id": "epic-seven-dcinside",
+      "title": "오브덱 달또미가 막지않음?",
+      "content_hash": "1be6c3ee9da9697b4f80fe30f7d329351ba521b037def645ae93018c9c10e599",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-11-03T12:55:36+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=epicseven&no=2747703": {
+      "game_id": "epic-seven",
+      "source_id": "epic-seven-dcinside",
+      "title": "얘네들은 오프라인 티켓 판매가 왜 이리 늦냐?",
+      "content_hash": "6c4239d8d08feb223ad980f14e93b9ee3ed19d8c2a9bdfe33eba7865ed0a0d8e",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-11-03T12:55:30+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=epicseven&no=2747686": {
+      "game_id": "epic-seven",
+      "source_id": "epic-seven-dcinside",
+      "title": "진짜씨발 개지랄을해라",
+      "content_hash": "cfa4c7969b8968710611cbe6a5842047fb2b425b68995195583e64d94f6c371e",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-11-03T12:27:21+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=epicseven&no=2746096": {
+      "game_id": "epic-seven",
+      "source_id": "epic-seven-dcinside",
+      "title": "한정 제외 성약 티어표(광휘 및 위시) [26/11/02]",
+      "content_hash": "61e298da394ad1479281ad207a1bfc7504ecfdbb157425e4192774958b53d4a6",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-11-01T17:31:35+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=gov&no=6433724": {
+      "game_id": "nikke",
+      "source_id": "nikke-dcinside",
+      "title": "시너지 차이가 존나 크긴 하더라",
+      "content_hash": "538cc112aa5df93c9de52272071c90543001b79ac918b24b6e40273a35aaae7d",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-11-03T12:56:10+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=gov&no=6433723": {
+      "game_id": "nikke",
+      "source_id": "nikke-dcinside",
+      "title": "스포) 2부에서 나와야 하는 전개",
+      "content_hash": "e565b7f869d1428e901f52cffd908384f2914f9db6c05a87728acf9b35e32e43",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-11-03T12:56:04+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=gov&no=6433694": {
+      "game_id": "nikke",
+      "source_id": "nikke-dcinside",
+      "title": "유니온칩이 남길래",
+      "content_hash": "5f0efd0a265dc286a121dae2cbb4e7576f476ac727c546ddf4d7e046daa13ddd",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-11-03T12:49:25+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=gov&no=6433672": {
+      "game_id": "nikke",
+      "source_id": "nikke-dcinside",
+      "title": "리버 그림",
+      "content_hash": "8c0962f161d70a0cbfb52a77acbd8ceb131ef9411225e71a8530386901e2f54a",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-11-03T12:46:12+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=rollthechess&no=3904799": {
+      "game_id": "trickcal-revive",
+      "source_id": "trickcal-revive-dcinside",
+      "title": "교주는 성직자라 애들 볼희롱 안한거래",
+      "content_hash": "74a3da86941280a52c6d00725135e66eb49b8123c8f4fd81a286d895a1c16d84",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-11-03T12:56:10+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=rollthechess&no=3903899": {
+      "game_id": "trickcal-revive",
+      "source_id": "trickcal-revive-dcinside",
+      "title": "트릭컬 사도 가이드 - 운용 정보탭 신설(고학년, 어사, 아티 정보 등)",
+      "content_hash": "f019c45f4e33cdeab911827ef9581a85a27e3c65603f0dde7e10324ae3b7c081",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-11-03T02:16:47+09:00"
+    },
+    "https://gall.dcinside.com/mgallery/board/view/?id=rollthechess&no=3900277": {
+      "game_id": "trickcal-revive",
+      "source_id": "trickcal-revive-dcinside",
+      "title": "26년 11월 1주차 마감 항목 안내 (~11/5 10:59)",
+      "content_hash": "7062a9d385b7282395f0b2873e5bcd90b95d07ce82c7594d99ade39ba4fa61dd",
+      "first_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "last_seen_at": "2026-11-03T12:56:12.162030+09:00",
+      "published_at": "2026-11-02T16:55:36+09:00"
     }
   }
 }

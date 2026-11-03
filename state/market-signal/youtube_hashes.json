@@ -1831,6 +1831,78 @@
       "first_seen_at": "2026-10-31T11:18:07.193182+09:00",
       "last_seen_at": "2026-10-31T11:18:07.193182+09:00",
       "published_at": "2026-10-27T17:01:01+09:00"
+    },
+    "https://www.youtube.com/watch?v=k7yyP-SP0pM": {
+      "game_id": "epic-seven",
+      "title": "[에픽세븐] E7WC 2026 녹아웃 스테이지 4일차",
+      "content_hash": "31bb5175423efa9bfa71c9427b81ec171e6231b3cd18658543593a6635b3783e",
+      "first_seen_at": "2026-11-03T12:55:29.730559+09:00",
+      "last_seen_at": "2026-11-03T12:55:29.730559+09:00",
+      "published_at": "2026-11-01T16:16:10+09:00"
+    },
+    "https://www.youtube.com/watch?v=lA0LVdDSLJ4": {
+      "game_id": "epic-seven",
+      "title": "[에픽세븐] E7WC 2026 녹아웃 스테이지 3일차",
+      "content_hash": "d98f970907c2cc3c9c50394ba3e042563676951465ae3ef452bf091942ba56dd",
+      "first_seen_at": "2026-11-03T12:55:29.730559+09:00",
+      "last_seen_at": "2026-11-03T12:55:29.730559+09:00",
+      "published_at": "2026-10-31T16:07:36+09:00"
+    },
+    "https://www.youtube.com/shorts/JjKyAVWYtNc": {
+      "game_id": "epic-seven",
+      "title": "종이 한 장 차이 #에픽세븐 #e7wc2026",
+      "content_hash": "353db8a72bea1531c4ce9900a8a456e713abe8c002ef79a20f5f12a97cf90c24",
+      "first_seen_at": "2026-11-03T12:55:29.730559+09:00",
+      "last_seen_at": "2026-11-03T12:55:29.730559+09:00",
+      "published_at": "2026-10-30T12:00:32+09:00"
+    },
+    "https://www.youtube.com/shorts/ojs-TOHlMBg": {
+      "game_id": "epic-seven",
+      "title": "따라 올 수 있겠나? #에픽세븐 #e7wc2026",
+      "content_hash": "054ef6d1debf4e4b10d8ffb5a7428c9af2e80bae352d418396bc86b26793e359",
+      "first_seen_at": "2026-11-03T12:55:29.730559+09:00",
+      "last_seen_at": "2026-11-03T12:55:29.730559+09:00",
+      "published_at": "2026-10-29T18:00:04+09:00"
+    },
+    "https://www.youtube.com/shorts/iSvIN6aRm3s": {
+      "game_id": "epic-seven",
+      "title": "반격의 군주 이세리아 #에픽세븐 #e7wc2026",
+      "content_hash": "54b552e36209f2af44039b38be41e94e1b041331e7b1e9de4764501f283d1472",
+      "first_seen_at": "2026-11-03T12:55:29.730559+09:00",
+      "last_seen_at": "2026-11-03T12:55:29.730559+09:00",
+      "published_at": "2026-10-29T12:00:21+09:00"
+    },
+    "https://www.youtube.com/watch?v=2l0pZtd9Lxc": {
+      "game_id": "epic-seven",
+      "title": "바니걸 마피아 유피네 | 신규 영웅 프리뷰",
+      "content_hash": "2e0c91e382fe07a60dcfe874dea975fb496263ea966f9f0b49511e14ae69560f",
+      "first_seen_at": "2026-11-03T12:55:29.730559+09:00",
+      "last_seen_at": "2026-11-03T12:55:29.730559+09:00",
+      "published_at": "2026-10-28T19:00:28+09:00"
+    },
+    "https://www.youtube.com/shorts/bgnE5YHHieo": {
+      "game_id": "epic-seven",
+      "title": "파도는 두 번 친다 #에픽세븐 #e7wc2026",
+      "content_hash": "24b66dbcb8a7d75be81176e865e29f32417d2b27049377cf98100e85cb644833",
+      "first_seen_at": "2026-11-03T12:55:29.730559+09:00",
+      "last_seen_at": "2026-11-03T12:55:29.730559+09:00",
+      "published_at": "2026-10-28T18:00:03+09:00"
+    },
+    "https://www.youtube.com/shorts/kF9cEepAARw": {
+      "game_id": "epic-seven",
+      "title": "금방 구워주마! #에픽세븐 #e7wc2026",
+      "content_hash": "dbdedaf1efee66a24bb558eaf322a1b7aef814ecde6fb7988ccc2bf3cf150cd1",
+      "first_seen_at": "2026-11-03T12:55:29.730559+09:00",
+      "last_seen_at": "2026-11-03T12:55:29.730559+09:00",
+      "published_at": "2026-10-28T12:00:20+09:00"
+    },
+    "https://www.youtube.com/shorts/e9WplnOP_IU": {
+      "game_id": "epic-seven",
+      "title": "남았어요, 182! #에픽세븐 #e7wc2026",
+      "content_hash": "6b88f01af8f8a3d0adf34b29db6144bf32289ce579373813f4774237f47fef4f",
+      "first_seen_at": "2026-11-03T12:55:29.730559+09:00",
+      "last_seen_at": "2026-11-03T12:55:29.730559+09:00",
+      "published_at": "2026-10-27T18:00:13+09:00"
     }
   }
 }
