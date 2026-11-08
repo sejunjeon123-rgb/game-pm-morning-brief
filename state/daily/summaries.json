@@ -1,33 +1,169 @@
 {
-  "date": "2026-11-07",
+  "date": "2026-11-08",
   "version": "compact-v1-relevance-v2",
   "games": {
+    "mabinogi-mobile": [],
+    "odin-valhalla-rising": [
+      {
+        "title": "서버이전이 같은 서버군 내에서만 가능하다는 주장",
+        "category": "MAINTENANCE",
+        "bm_types": [],
+        "facts": [],
+        "claims": [
+          {
+            "text": "작성자는 서버이전이 같은 서버군 내에서만 가능하다고 주장하며 이로 인해 게임을 그만둘 의사를 표함.",
+            "evidence_ids": [
+              "553ca671199153c1af3c7b195d7bba4c98875095f048ec752244066f59a4ad80"
+            ]
+          }
+        ],
+        "interpretation": [
+          {
+            "text": "해당 게시글은 서버이전 범위가 제한적이라는 이용자 불만을 보여주고 있다.",
+            "evidence_ids": [
+              "553ca671199153c1af3c7b195d7bba4c98875095f048ec752244066f59a4ad80"
+            ]
+          },
+          {
+            "text": "게시글만으로는 회사의 공식 서버이전 정책이나 실제 적용 범위를 확인할 수 없어 사실 여부는 불명확하다.",
+            "evidence_ids": [
+              "553ca671199153c1af3c7b195d7bba4c98875095f048ec752244066f59a4ad80"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "서버이전 정책의 공식 문구와 실제 적용 범위(같은 서버군의 정의 포함)",
+          "해당 이용자가 경험한 상황이 일반적인 정책에 따른 것인지 여부"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "553ca671199153c1af3c7b195d7bba4c98875095f048ec752244066f59a4ad80",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=vhr&no=317280",
+            "published_at": "2026-11-08T01:15:14+09:00",
+            "collected_at": "2026-11-08T11:23:29.292948+09:00",
+            "content_hash": "5029ae89b7cb9fae2792f9356770a0e49ad25e587774280028bc8019e6877264",
+            "source_type": "PUBLIC_COMMUNITY"
+          }
+        ]
+      }
+    ],
     "lineage-m": [
       {
-        "title": "데포로쥬의 기사단 지원 상자 판매 안내",
+        "title": "계정 판매 후 구글락·이메일 변경 관련 문의",
+        "category": "NOTICE",
+        "bm_types": [],
+        "facts": [],
+        "claims": [
+          {
+            "text": "판매자가 복구 전화번호는 변경했으나 복구 이메일은 바꾸지 않았고, 구매자가 비밀번호 변경 시 7일 잠금이 걸렸으며 현재 크롬과 게임 접속은 유지되는 상태라는 문의.",
+            "evidence_ids": [
+              "975c9c5da1ca443987c18579282e928118f22d59cf1907340501a4991b281dec"
+            ]
+          },
+          {
+            "text": "작성자는 7일 뒤 판매자가 복구 이메일 및 2차인증을 대신 설정하면 되는지 여부를 질문함.",
+            "evidence_ids": [
+              "975c9c5da1ca443987c18579282e928118f22d59cf1907340501a4991b281dec"
+            ]
+          }
+        ],
+        "interpretation": [
+          {
+            "text": "해당 게시글은 계정 양도·판매 상황에서 복구 수단과 7일 잠금 관련 이용자 불안 및 계정 소유권 분쟁 가능성을 시사한다.",
+            "evidence_ids": [
+              "975c9c5da1ca443987c18579282e928118f22d59cf1907340501a4991b281dec"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "공식적으로 계정 양도·판매가 서비스 약관상 허용되는지 여부(OFFICIAL_FACT 없음).",
+          "판매자가 실제로 복구 이메일 또는 2차인증 접근 권한을 보유하는지 여부(증거 없음).",
+          "7일 잠금 이후 어떤 조치가 계정 접근성과 소유권에 영향을 미치는지에 대한 공식 절차(OFFICIAL_FACT 없음)."
+        ],
+        "evidence": [
+          {
+            "evidence_id": "975c9c5da1ca443987c18579282e928118f22d59cf1907340501a4991b281dec",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/board/view/?id=lineagem&no=404051",
+            "published_at": "2026-11-08T09:16:37+09:00",
+            "collected_at": "2026-11-08T11:23:29.292948+09:00",
+            "content_hash": "ea6cc3c19d39fccdd59e69119d1f963ea2a1099e96c0e7d176e73e22497992ee",
+            "source_type": "PUBLIC_COMMUNITY"
+          }
+        ]
+      }
+    ],
+    "seven-knights-rebirth": [
+      {
+        "title": "무과금 유저 이탈 가능성 제기",
         "category": "BM",
         "bm_types": [
-          "GACHA",
-          "CURRENCY",
-          "EQUIPMENT"
+          "GROWTH"
         ],
+        "facts": [],
+        "claims": [
+          {
+            "text": "게시물 제목은 '무과금 신빵단 가나요'로 무과금(신규·저과금) 유저 이탈 가능성을 묻고 있다.",
+            "evidence_ids": [
+              "68bfe39a54f9792521d8c6bb4f15c093389f1c0fb8154a3b2e6b873891c2bb52"
+            ]
+          }
+        ],
+        "interpretation": [
+          {
+            "text": "제목만 제공된 게시글이므로 해당 글은 이용자 일부의 우려를 제기하는 것으로 보이나 원인·규모·정확한 맥락은 확인되지 않는다.",
+            "evidence_ids": [
+              "68bfe39a54f9792521d8c6bb4f15c093389f1c0fb8154a3b2e6b873891c2bb52"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "해당 게시글이 대표적 사용자 반응을 의미하는지 여부",
+          "이탈이 실제 발생했는지, 발생했다면 원인과 규모",
+          "운영 측의 공식 입장이나 관련 공지 존재 여부"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "68bfe39a54f9792521d8c6bb4f15c093389f1c0fb8154a3b2e6b873891c2bb52",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1402150",
+            "published_at": "2026-11-08T11:22:01+09:00",
+            "collected_at": "2026-11-08T11:23:29.292948+09:00",
+            "content_hash": "c2d719ebe166f34281b9fa9bb500c28dee9b16fedcf547bb918d670dfcda7fb1",
+            "source_type": "PUBLIC_COMMUNITY"
+          }
+        ]
+      }
+    ],
+    "epic-seven": [],
+    "nikke": [
+      {
+        "title": "4주년 특집 성우 토크쇼 공개(본편·예고편)",
+        "category": "EVENT",
+        "bm_types": [],
         "facts": [
           {
-            "text": "판매 기간은 2026-11-07 00:00부터 2026-11-11 정기점검 전까지다.",
+            "text": "공식 유튜브에 4주년 특집 성우 토크쇼 본편이 2026-11-02 20:10에 공개되었음을 안내한다.",
             "evidence_ids": [
-              "3bc53b78a86541b1e8829bcd24dc2dcd171b0c2b827ae3e26fa7698e88d909f4"
+              "425ca12804e19ea82440d97c507d02de9da976875d16d8619d1253d5cfc8b7fb"
             ]
           },
           {
-            "text": "상품 가격은 1,000다이아며 계정 당 전체 서버 통합 구매 제한은 16회다.",
+            "text": "예고편(시리즈)이 사전 공개되었으며 본편 공개 일정과 출연진(성우 7명·시나리오팀 게스트)을 함께 안내한다.",
             "evidence_ids": [
-              "3bc53b78a86541b1e8829bcd24dc2dcd171b0c2b827ae3e26fa7698e88d909f4"
+              "e98215cf4dfb2f238b6399ed6445b8cbb51c5bd7baad8b341233843c8274ed67",
+              "425ca12804e19ea82440d97c507d02de9da976875d16d8619d1253d5cfc8b7fb"
             ]
           },
           {
-            "text": "상자 구성품으로 세계수의 카드 뽑기팩 제작 티켓 3개, 데포로쥬의 증서함 1개, 빛나는 장비 보호 주문서 30개, 종합 코인 선택 상자 5개가 포함된다.",
+            "text": "공식 라운지 연계 4주년 기념 이벤트를 안내하며, 단체·개인 사인지와 커스텀 기프트 박스 등 경품을 제공한다고 명시한다(이벤트 기간: ~2026-11-15 23:59).",
             "evidence_ids": [
-              "3bc53b78a86541b1e8829bcd24dc2dcd171b0c2b827ae3e26fa7698e88d909f4"
+              "425ca12804e19ea82440d97c507d02de9da976875d16d8619d1253d5cfc8b7fb",
+              "e98215cf4dfb2f238b6399ed6445b8cbb51c5bd7baad8b341233843c8274ed67"
             ]
           }
         ],
@@ -37,91 +173,97 @@
         "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "3bc53b78a86541b1e8829bcd24dc2dcd171b0c2b827ae3e26fa7698e88d909f4",
+            "evidence_id": "425ca12804e19ea82440d97c507d02de9da976875d16d8619d1253d5cfc8b7fb",
             "classification": "OFFICIAL_FACT",
-            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6aedb330263e537d356d1547",
-            "published_at": "2026-11-06T20:00:00.944000+09:00",
-            "collected_at": "2026-11-07T11:44:10.995398+09:00",
-            "content_hash": "ed10c10afb52fc81a5b49c65a0e80a2db9bb103dc03b676e1f2e3519535c1e65",
-            "source_type": "OFFICIAL_HOMEPAGE"
-          }
-        ]
-      }
-    ],
-    "epic-seven": [
-      {
-        "title": "11/19 밸런스 조정 사전 안내",
-        "category": "UPDATE",
-        "bm_types": [],
-        "facts": [
-          {
-            "text": "11월 19일 정기 업데이트로 영웅 7종에 대한 밸런스 조정이 예정되어 있다고 사전 안내했습니다.",
-            "evidence_ids": [
-              "3b1f07ae7d94ea1022e2da2506578872501e276020b5e98bf1ab0b819131c4c7"
-            ]
+            "url": "https://www.youtube.com/watch?v=i8vqxhiSqBI",
+            "published_at": "2026-11-02T20:10:36+09:00",
+            "collected_at": "2026-11-08T11:22:46.545133+09:00",
+            "content_hash": "5924a3e2c4f00af84558612e267188774e6d5753cc016d942ad004fc463a4595",
+            "source_type": "OFFICIAL_YOUTUBE"
           },
           {
-            "text": "조정 대상은 월광·성약 등 일부 ★5·★4 영웅으로, 스킬 수치 및 별자리 변경 등 구체 항목을 예시로 제시했습니다.",
-            "evidence_ids": [
-              "3b1f07ae7d94ea1022e2da2506578872501e276020b5e98bf1ab0b819131c4c7"
-            ]
-          },
-          {
-            "text": "안내문에 기재된 수치와 설명은 실제 업데이트 시 변동될 수 있다고 명시했습니다.",
-            "evidence_ids": [
-              "3b1f07ae7d94ea1022e2da2506578872501e276020b5e98bf1ab0b819131c4c7"
-            ]
-          }
-        ],
-        "claims": [],
-        "interpretation": [
-          {
-            "text": "사전 안내는 적용 범위와 주요 변경 방향(예: 수면·맹독 유지 개선, 별자리 변경)을 제시해 커뮤니케이션 목적을 가집니다.",
-            "evidence_ids": [
-              "3b1f07ae7d94ea1022e2da2506578872501e276020b5e98bf1ab0b819131c4c7"
-            ]
-          }
-        ],
-        "conflicts": [],
-        "unknowns": [
-          "사전 안내에 언급된 수치·효과의 최종 확정 여부 및 패치 후 실제 게임내 영향(밸런스 체감)은 공식 업데이트 시점 이전까지 불확실합니다."
-        ],
-        "evidence": [
-          {
-            "evidence_id": "3b1f07ae7d94ea1022e2da2506578872501e276020b5e98bf1ab0b819131c4c7",
+            "evidence_id": "e98215cf4dfb2f238b6399ed6445b8cbb51c5bd7baad8b341233843c8274ed67",
             "classification": "OFFICIAL_FACT",
-            "url": "https://page.onstove.com/epicseven/kr/view/14617089",
-            "published_at": "2026-11-06T18:00:00.580000+09:00",
-            "collected_at": "2026-11-07T11:44:10.995398+09:00",
-            "content_hash": "5db291ce93c46b63de418a5f04735d6bc6c4bebdd866af5ef65992c90aeddd39",
-            "source_type": "OFFICIAL_COMMUNITY"
+            "url": "https://www.youtube.com/shorts/GLPvcMbcZtQ",
+            "published_at": "2026-11-01T17:00:32+09:00",
+            "collected_at": "2026-11-08T11:22:46.545133+09:00",
+            "content_hash": "63f7915f230f390ee796f5e373602e23a460499de8acb1b0b005cc3b94e955f7",
+            "source_type": "OFFICIAL_YOUTUBE"
           }
         ]
       },
       {
-        "title": "E7WC 2026 베스트 쇼츠 투표 이벤트 안내",
+        "title": "스노우 화이트: 헤비암즈 코스튬 '라크리모사' 모션 공개",
         "category": "EVENT",
         "bm_types": [],
         "facts": [
           {
-            "text": "E7WC 2026 베스트 쇼츠를 뽑는 커뮤니티 이벤트를 11/6~11/12 기간에 진행하며 참여자 전원에게 보상을 지급한다고 공지했습니다.",
+            "text": "공식 유튜브에 스노우 화이트: 헤비암즈 신규 코스튬 '라크리모사'의 인게임 모션을 소개하는 모션 VIEW 영상이 공개되었다.",
             "evidence_ids": [
-              "4caee272b979e8790fd8a846a1d31e3b4e52e34ba1cfce9f4e8d1f1099c15e7f"
+              "ae267085a00dbb85540d9e8e229e3d0dece1f09d629c2b184f391e73c75eaaa6"
             ]
           },
           {
-            "text": "이벤트는 댓글 양식(닉네임/서버명/베스트 쇼츠 번호)을 준수해야 하며, 보상은 11/13 우편으로 지급된다고 명시했습니다.",
+            "text": "공식 안내에 따르면 해당 코스튬 획득 방법은 '코스튬 픽'이며 판매 기간은 점검 완료 후 10/29부터 11/19 04:59까지로 표기되어 있다.",
             "evidence_ids": [
-              "4caee272b979e8790fd8a846a1d31e3b4e52e34ba1cfce9f4e8d1f1099c15e7f"
+              "ae267085a00dbb85540d9e8e229e3d0dece1f09d629c2b184f391e73c75eaaa6"
+            ]
+          },
+          {
+            "text": "영상에 '테스트 환경에서 녹화된 영상으로 최종 내용은 인게임을 참고'하라는 문구가 포함되어 있다.",
+            "evidence_ids": [
+              "ae267085a00dbb85540d9e8e229e3d0dece1f09d629c2b184f391e73c75eaaa6"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "ae267085a00dbb85540d9e8e229e3d0dece1f09d629c2b184f391e73c75eaaa6",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/watch?v=BeMzXfmbXRs",
+            "published_at": "2026-11-02T16:00:16+09:00",
+            "collected_at": "2026-11-08T11:22:46.545133+09:00",
+            "content_hash": "5c0044a07fdc841404dd2853db31adfa49eb92cc5f873aa241333010d2d5c880",
+            "source_type": "OFFICIAL_YOUTUBE"
+          }
+        ]
+      }
+    ],
+    "trickcal-revive": [
+      {
+        "title": "11월 5일 정기점검·신규 업데이트 안내",
+        "category": "UPDATE",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "공식 유튜브 및 공지에서 11월 5일 정기점검을 통해 신규 사복 및 신규 펫 추가가 예정되어 있음을 안내했습니다.",
+            "evidence_ids": [
+              "27d8489ade99bb742fa5eb653b5b65b3f2230e6f14f7e80c7cd9541aafeb1054"
+            ]
+          },
+          {
+            "text": "같은 안내에서 농장 상점 개선, 펫 심부름 개선, 신규 베개 4종 추가 등 주요 업데이트 항목을 예고했습니다.",
+            "evidence_ids": [
+              "27d8489ade99bb742fa5eb653b5b65b3f2230e6f14f7e80c7cd9541aafeb1054"
+            ]
+          },
+          {
+            "text": "업데이트 상세 내용은 공식 커뮤니티 공지를 참고하라는 안내가 포함되어 있습니다.",
+            "evidence_ids": [
+              "27d8489ade99bb742fa5eb653b5b65b3f2230e6f14f7e80c7cd9541aafeb1054"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "공식 커뮤니티 이벤트로 참여 형식·보상·지급 일시를 명확히 안내해 운영상 고객응대와 보상 지급 기준을 관리하려는 의도입니다.",
+            "text": "정기점검을 통한 콘텐츠·편의성 변경이 포함되어 있어 이용성 변화 관련 추가 공지가 있을 수 있습니다.",
             "evidence_ids": [
-              "4caee272b979e8790fd8a846a1d31e3b4e52e34ba1cfce9f4e8d1f1099c15e7f"
+              "27d8489ade99bb742fa5eb653b5b65b3f2230e6f14f7e80c7cd9541aafeb1054"
             ]
           }
         ],
@@ -129,50 +271,90 @@
         "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "4caee272b979e8790fd8a846a1d31e3b4e52e34ba1cfce9f4e8d1f1099c15e7f",
+            "evidence_id": "27d8489ade99bb742fa5eb653b5b65b3f2230e6f14f7e80c7cd9541aafeb1054",
             "classification": "OFFICIAL_FACT",
-            "url": "https://page.onstove.com/epicseven/kr/view/14620289",
-            "published_at": "2026-11-06T19:00:01.608000+09:00",
-            "collected_at": "2026-11-07T11:44:10.995398+09:00",
-            "content_hash": "faca0425681a168f556aa85c67552b6f1ae922a2d0e68833241a2dc0b716130e",
-            "source_type": "OFFICIAL_COMMUNITY"
+            "url": "https://www.youtube.com/watch?v=N8I6ELlP3Nk",
+            "published_at": "2026-11-05T13:00:25+09:00",
+            "collected_at": "2026-11-08T11:22:46.545133+09:00",
+            "content_hash": "d87876c40a59b2e04b1555d86d1974953803eeec0f83d4f695b24db07c125966",
+            "source_type": "OFFICIAL_YOUTUBE"
           }
         ]
       },
       {
-        "title": "계정 생성일이 패키지 구매에 영향 있다는 주장",
-        "category": "NOTICE",
+        "title": "공식 유튜브: 테마극장·티저·MV 공개",
+        "category": "MARKETING",
         "bm_types": [],
-        "facts": [],
-        "claims": [
+        "facts": [
           {
-            "text": "사용자가 계정(리세계) 생성일이 특정 패키지(예: 페네, 영셀) 구매 가능성에 영향을 미치는지 질문하며 관련성을 제기했습니다.",
+            "text": "공식 유튜브에 '트릭컬 리바이브 🎬 테마극장: 공룡 대침공! 대폭망의 도시!' 영상이 공개되었고 11월 5일 개봉임을 안내했습니다.",
             "evidence_ids": [
-              "8e42f160b643ebd73c942e678b4f2680cc83ce51c1a59e0dce52303e1c169216"
+              "fe27f8b3ef5187490d3e51ac1524a58152557f68aa69d36cdb0cafec191b4ac9"
+            ]
+          },
+          {
+            "text": "공식 채널에 '엘리아스 프론티어 - \"죽음\" TEASER PV'가 게시되었으며 PV 본편은 11월 11일 공개 예정이라고 표기했습니다.",
+            "evidence_ids": [
+              "8af90c2c43a0702190dacb9f6e8e6b327870fe8cf3eef43b9befcb9258949b9e"
+            ]
+          },
+          {
+            "text": "3주년 기념 MV '마음 닿은 봄(Full ver.)' 특별영상이 공식 유튜브에 공개되어 MV 가사·제작진 정보를 포함해 게시되었습니다.",
+            "evidence_ids": [
+              "0496ed8d0859683afa0d1e871d34069a54aa272a2f4c46ccb55eed5e6e29e6a9"
             ]
           }
         ],
+        "claims": [],
         "interpretation": [
           {
-            "text": "해당 주장은 플레이어의 관측·추측에 기반한 문의로, 공식 확인 없이 사실로 단정할 수 없습니다.",
+            "text": "여러 형식의 공식 영상(티저·테마극장·MV)이 동시다발적으로 공개되어 홍보·콘텐츠 노출이 확대된 상태입니다.",
             "evidence_ids": [
-              "8e42f160b643ebd73c942e678b4f2680cc83ce51c1a59e0dce52303e1c169216"
+              "fe27f8b3ef5187490d3e51ac1524a58152557f68aa69d36cdb0cafec191b4ac9",
+              "8af90c2c43a0702190dacb9f6e8e6b327870fe8cf3eef43b9befcb9258949b9e",
+              "0496ed8d0859683afa0d1e871d34069a54aa272a2f4c46ccb55eed5e6e29e6a9",
+              "5fa40cd1a3b063e3c5db7e2835398a71c2ebee68c1661a23679d4b12dc38d257"
             ]
           }
         ],
         "conflicts": [],
-        "unknowns": [
-          "계정 생성일이 패키지 판매 대상·구매 가능성에 실제로 영향을 주는지에 대해 공식 문서나 공지로 확인된 근거는 제공되지 않았습니다."
-        ],
+        "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "8e42f160b643ebd73c942e678b4f2680cc83ce51c1a59e0dce52303e1c169216",
-            "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=epicseven&no=2751571",
-            "published_at": "2026-11-07T11:44:22+09:00",
-            "collected_at": "2026-11-07T11:45:33.081939+09:00",
-            "content_hash": "0bd2c9ce4eded1a4e89b893acd5da1f919e930cda0161f99d36b02cab305cb9c",
-            "source_type": "PUBLIC_COMMUNITY"
+            "evidence_id": "0496ed8d0859683afa0d1e871d34069a54aa272a2f4c46ccb55eed5e6e29e6a9",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/watch?v=x8EPh2fdSKs",
+            "published_at": "2026-11-01T14:00:03+09:00",
+            "collected_at": "2026-11-08T11:22:46.545133+09:00",
+            "content_hash": "46dec9ab6ef4cbf9fcfeaff6ffe2b6468acc8f5ba0327f41ac94800bac892f58",
+            "source_type": "OFFICIAL_YOUTUBE"
+          },
+          {
+            "evidence_id": "5fa40cd1a3b063e3c5db7e2835398a71c2ebee68c1661a23679d4b12dc38d257",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/shorts/SsSkuhuahpM",
+            "published_at": "2026-11-07T14:17:48+09:00",
+            "collected_at": "2026-11-08T11:22:46.545133+09:00",
+            "content_hash": "e8dfff72d9a517e1a1fecfafa9a1a3972edbb8df9d961d7685b2e3ba7a709be7",
+            "source_type": "OFFICIAL_YOUTUBE"
+          },
+          {
+            "evidence_id": "8af90c2c43a0702190dacb9f6e8e6b327870fe8cf3eef43b9befcb9258949b9e",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/watch?v=Ujyg-nPcvvk",
+            "published_at": "2026-11-02T16:59:57+09:00",
+            "collected_at": "2026-11-08T11:22:46.545133+09:00",
+            "content_hash": "992b7e157038c3132a0b33d884827517151e5a26a00200c8c528afcdc1aa2bb6",
+            "source_type": "OFFICIAL_YOUTUBE"
+          },
+          {
+            "evidence_id": "fe27f8b3ef5187490d3e51ac1524a58152557f68aa69d36cdb0cafec191b4ac9",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/watch?v=AKQ0d37XvhQ",
+            "published_at": "2026-11-03T17:05:21+09:00",
+            "collected_at": "2026-11-08T11:22:46.545133+09:00",
+            "content_hash": "6825b5a2dc6ea2a386f265745f8324719fda40ee2fa3e4de91c0a623bff261e6",
+            "source_type": "OFFICIAL_YOUTUBE"
           }
         ]
       }
