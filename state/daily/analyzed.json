@@ -1,26 +1,6 @@
 {
   "version": "compact-v1-relevance-v2",
   "records": {
-    "efc695e60a18d9fb8bc98d591c95bcb913c8b5d7567524e211846c969b9368c2": {
-      "fingerprint": "7259c4635a7b833a2e2df86f1fec46ee62288b8ef6b6020e09117a77ab6bfe09",
-      "published_at": "2026-11-02T09:58:44+09:00"
-    },
-    "8d7539584ecb5105a5b6eb8e0706691db2006b72717fd44a2dd1fd28457cfa2b": {
-      "fingerprint": "26ddd3e86e05a180d356280c9061348fb2e2723f476f72f43d282363833647ef",
-      "published_at": "2026-11-02T06:51:30+09:00"
-    },
-    "865d691c88513300956f3bcacff4a4b378457fc5a9de066379c7209d66cb4bbc": {
-      "fingerprint": "bd55f1ec69b161c96b0741036579cf268ba6687ed449ded038b50af705216cfa",
-      "published_at": "2026-11-01T17:55:00.001000+09:00"
-    },
-    "988cb08123bae2eb1c6df29cfb20f6e52fb58e4d4426da384272152428b10cb2": {
-      "fingerprint": "20236e660a445fd05df9842f84773421880fa4824102ba56732ad61911d9dd2b",
-      "published_at": "2026-11-02T10:14:14+09:00"
-    },
-    "959d1b0570a84938a4b7feca0e9dc99a97595eff88737dc5141114775ea8f2be": {
-      "fingerprint": "2893d18ea6a09d655ab98813f864afa64ba930e428e6a84392251261f136c3f7",
-      "published_at": "2026-11-01T20:45:24+09:00"
-    },
     "bd15ed546f11688177ea17de3d8e30387e0001cebb3704d25a173ab4650bbc43": {
       "fingerprint": "0fb279140f8d32cbd1f393afa27ddcf321664306a5e1504dbba7acb6cde6e8f3",
       "published_at": "2026-11-03T00:00:00+09:00"
@@ -28,14 +8,6 @@
     "b2fc169486146ffd3a614d2eb730a2199b756568b83d0a9e82715036e60c0c0e": {
       "fingerprint": "ee90abf8a2bc7ab025339300b8cc76493ace9a8731ecb849e41e98f5428cd4e7",
       "published_at": "2026-11-03T00:00:00+09:00"
-    },
-    "091618cab744364ff1a11bfcb9b86bcc4725f4a9292dedc6a5d32cb1fa77b56f": {
-      "fingerprint": "3b709ba4bdea56e1dc9536b897b362024ddc5df2e9694123440d0f785b2e7c33",
-      "published_at": "2026-11-02T00:00:00+09:00"
-    },
-    "ef010f23e03deb4fe12fa9a3443112ce13e6eb2f5965d26a1419274d0cc0d325": {
-      "fingerprint": "f4d959d62a4c357b648fa23ef2191d02b4f53f6938af9c688513b1b72702a4dd",
-      "published_at": "2026-11-02T00:00:00+09:00"
     },
     "8e46424dec112522ec452f98d41ded103ffd9740fd874fec4839ad328057ba0b": {
       "fingerprint": "c22c15d8113778dc8b0074a5d512f56375e46fbf78049447122265e6c7b23669",
@@ -56,10 +28,6 @@
     "8788039ec055ebfc4ddfdbb4078058dcc58f4f9fc3aafd854c250e7961213ad0": {
       "fingerprint": "468a5d5f7260fc30ca5214ff694155b0957fabb35fa69b040297b2209649eac6",
       "published_at": "2026-11-03T12:13:01+09:00"
-    },
-    "59b46a41ec3e20f678c771cac454179785d9d6b43fca1cd11c4b326de088ee1d": {
-      "fingerprint": "ca04e4ca986a578741ed2ec12365ea8eba781b4c0c553ca19e27d5c995e42885",
-      "published_at": "2026-11-01T16:16:10+09:00"
     },
     "48d2f494487b8ed60ccaa0d040e793fa8c1313ef1e4fe18dec071145ad1d3a52": {
       "fingerprint": "721704575cad53eb1516f2b1978b66646c9b2a6b535674763f6adbcbb3f046b1",
@@ -321,10 +289,6 @@
       "fingerprint": "97d9348f9b25919673844b9f16921ecbb498a6b3afbdb0470efe6b07558745a6",
       "published_at": "2026-11-02T16:00:16+09:00"
     },
-    "e98215cf4dfb2f238b6399ed6445b8cbb51c5bd7baad8b341233843c8274ed67": {
-      "fingerprint": "0cb89a78ff5ae38587fa378134a4077d633daee0267e5af8aba28d8173f99fe6",
-      "published_at": "2026-11-01T17:00:32+09:00"
-    },
     "5fa40cd1a3b063e3c5db7e2835398a71c2ebee68c1661a23679d4b12dc38d257": {
       "fingerprint": "6337e576c82584ec8fa64f5c62f76149c1da9a7c1fe5b5ae410e87ce0a0f060c",
       "published_at": "2026-11-07T14:17:48+09:00"
@@ -345,9 +309,9 @@
       "fingerprint": "43369f83bcf048c8d167276b3923c25dfb60e0e60ca6ff095b507ed53504f43d",
       "published_at": "2026-11-02T16:59:57+09:00"
     },
-    "0496ed8d0859683afa0d1e871d34069a54aa272a2f4c46ccb55eed5e6e29e6a9": {
-      "fingerprint": "21ddd518fd81616608af50b6febcab869353e5ec8e7a1daea142ce98749cfa82",
-      "published_at": "2026-11-01T14:00:03+09:00"
+    "3116a0bcb7b18bcfa5d7866599ae7cd4c9e492b0669acb22b9c7082dde7daef7": {
+      "fingerprint": "4dcde16a5c9bc5d1259dcf13b79570e773711b8b7bfc93388f9d713a063d8032",
+      "published_at": "2026-11-09T07:59:04+09:00"
     }
   }
 }
