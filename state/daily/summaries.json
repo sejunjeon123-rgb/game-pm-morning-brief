@@ -1,7 +1,545 @@
 {
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "version": "compact-v1-relevance-v2",
   "games": {
-    "epic-seven": []
+    "mabinogi-mobile": [
+      {
+        "title": "신규 4인 레이드 '적월의 스카스' 업데이트",
+        "category": "UPDATE",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "신규 4인 레이드 '적월의 스카스'가 업데이트되었다는 공식 안내가 게시됐다.",
+            "evidence_ids": [
+              "2a7b56fffd3cbee2c0eea640a6023fc3814d550bcc278543fa56c954b91c902a"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "공식 영상은 해당 레이드를 '신마의 잔영' 관련 신규 콘텐츠로 소개하고 있다.",
+            "evidence_ids": [
+              "2a7b56fffd3cbee2c0eea640a6023fc3814d550bcc278543fa56c954b91c902a"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "레이드 난이도, 보상 구성, 입장 조건 등 구체적 운영 상세는 공식 영상의 짧은 소개로는 확인되지 않는다."
+        ],
+        "evidence": [
+          {
+            "evidence_id": "2a7b56fffd3cbee2c0eea640a6023fc3814d550bcc278543fa56c954b91c902a",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/watch?v=yAR812iEKqk",
+            "published_at": "2026-11-05T13:00:39+09:00",
+            "collected_at": "2026-11-10T13:36:05.597148+09:00",
+            "content_hash": "32f29d735da4135ba7c3bf85a95324033fec879d4e0db68d3317b05823f95227",
+            "source_type": "OFFICIAL_YOUTUBE"
+          }
+        ]
+      }
+    ],
+    "black-desert-mobile": [
+      {
+        "title": "2026 칼페온 연회 오프라인 참가 신청 안내 공개",
+        "category": "EVENT",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "2026 칼페온 연회 오프라인 행사는 12월 13일 수원 메쎄에서 개최되며, 게임 내 이벤트 배너를 통해 신청받아 추첨으로 100명을 초청합니다.",
+            "evidence_ids": [
+              "96bbb5c9b3914630089c9f6773e419e24c281dc09df3d114b0cea8ce6a365faf"
+            ]
+          },
+          {
+            "text": "신청 시 휴대폰 번호 입력과 개인정보 수집·이용 동의가 필요하며, 당첨자에겐 11월 26일부터 입력된 연락처로 개별 연락이 진행됩니다.",
+            "evidence_ids": [
+              "96bbb5c9b3914630089c9f6773e419e24c281dc09df3d114b0cea8ce6a365faf"
+            ]
+          },
+          {
+            "text": "연속 참가자, 최근 접속제한 이력자, 전투력 미달자 등 일부 조건에 해당하면 추첨 대상에서 제외됩니다.",
+            "evidence_ids": [
+              "96bbb5c9b3914630089c9f6773e419e24c281dc09df3d114b0cea8ce6a365faf"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "오프라인 초청은 현장 수용 인원 제한과 개인정보 수집을 전제로 한 선발 방식으로 운영될 예정입니다.",
+            "evidence_ids": [
+              "96bbb5c9b3914630089c9f6773e419e24c281dc09df3d114b0cea8ce6a365faf"
+            ]
+          },
+          {
+            "text": "당첨자 연락 및 본인 확인 절차가 공지되어 있어 참가 확정 이후에도 추가 검증이 요구됩니다.",
+            "evidence_ids": [
+              "96bbb5c9b3914630089c9f6773e419e24c281dc09df3d114b0cea8ce6a365faf"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "96bbb5c9b3914630089c9f6773e419e24c281dc09df3d114b0cea8ce6a365faf",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=666950&pageNo=1",
+            "published_at": "2026-11-10T00:00:00+09:00",
+            "collected_at": "2026-11-10T13:35:31.970288+09:00",
+            "content_hash": "d55233f6d3c5a9713e1c51faf3e174eb0454c64c549133ad573272834e0d801c",
+            "source_type": "OFFICIAL_HOMEPAGE"
+          }
+        ]
+      },
+      {
+        "title": "쿠툼 서버의 로닌 서버 일괄 이전 안내(11/17)",
+        "category": "UPDATE",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "쿠툼 서버의 모든 이용자는 11월 17일 업데이트 점검 시점에 별도 신청 없이 로닌 서버로 일괄 이전됩니다.",
+            "evidence_ids": [
+              "c6b899a9efab9c8543b3af145d1c7089effb37d548cf1336b29e498f9edab48b"
+            ]
+          },
+          {
+            "text": "서버 이전 시 길드·친구 등 대부분 데이터는 유지되지만 소속 서버 순위는 초기화되고 공성전·요새 점령 거점은 해방됩니다.",
+            "evidence_ids": [
+              "c6b899a9efab9c8543b3af145d1c7089effb37d548cf1336b29e498f9edab48b"
+            ]
+          },
+          {
+            "text": "일부 보상 수령 기간 및 떠돌이 상인 발견 정보 등 콘텐츠별로 이전 전후 수령·적용 방식이 상이하게 안내되어 있으니 공지 확인을 권장합니다.",
+            "evidence_ids": [
+              "c6b899a9efab9c8543b3af145d1c7089effb37d548cf1336b29e498f9edab48b"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "서버 이전은 데이터 유지 범위와 초기화되는 항목이 혼재되어 있어 이용자별로 영향 범위가 상이할 것으로 보입니다.",
+            "evidence_ids": [
+              "c6b899a9efab9c8543b3af145d1c7089effb37d548cf1336b29e498f9edab48b"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "서버 이전 후 세부 보상 복구 또는 연장 관련 추가 조치 여부(공지 외)는 명시되어 있지 않습니다."
+        ],
+        "evidence": [
+          {
+            "evidence_id": "c6b899a9efab9c8543b3af145d1c7089effb37d548cf1336b29e498f9edab48b",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=667456&pageNo=1",
+            "published_at": "2026-11-10T00:00:00+09:00",
+            "collected_at": "2026-11-10T13:35:31.970288+09:00",
+            "content_hash": "e36da058c76a3525a7609281cee1bc8fa2bf5a070457273757fda2c5a535f710",
+            "source_type": "OFFICIAL_HOMEPAGE"
+          }
+        ]
+      },
+      {
+        "title": "11월 10일 업데이트 점검 완료 및 강제 업데이트 보상 안내",
+        "category": "MAINTENANCE",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "11월 10일 09:00~12:30 업데이트 점검이 완료되었고, 점검 영향으로 게임 접속이 불가했습니다.",
+            "evidence_ids": [
+              "8621cd097af7a3097cfa15dfe9dfb200a0ce5f68a6569f66199b21aac4785822"
+            ]
+          },
+          {
+            "text": "강제 업데이트 보상으로 영지 관리인(아이린, 3일) 등 다양한 기간제 아이템과 일일 펄 혜택이 우편으로 지급되며 수령 기한이 안내되었습니다.",
+            "evidence_ids": [
+              "8621cd097af7a3097cfa15dfe9dfb200a0ce5f68a6569f66199b21aac4785822"
+            ]
+          },
+          {
+            "text": "점검 중 공식 홈페이지·포럼·고객센터 이용도 중단되었으며, 점검 30분 전부터 일부 아이템 사용 및 콘텐츠 입장이 제한되었습니다.",
+            "evidence_ids": [
+              "8621cd097af7a3097cfa15dfe9dfb200a0ce5f68a6569f66199b21aac4785822"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "강제 업데이트 보상과 이용 제한 사전 안내로 점검으로 인한 이용 불편을 보완하려는 조치가 포함되었습니다.",
+            "evidence_ids": [
+              "8621cd097af7a3097cfa15dfe9dfb200a0ce5f68a6569f66199b21aac4785822"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "8621cd097af7a3097cfa15dfe9dfb200a0ce5f68a6569f66199b21aac4785822",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=667444&pageNo=1",
+            "published_at": "2026-11-09T00:00:00+09:00",
+            "collected_at": "2026-11-10T13:35:31.970288+09:00",
+            "content_hash": "703708847edec83eb1b2e1c68f75eecad2e6ab0e632116a2a98c4d37eb12373e",
+            "source_type": "OFFICIAL_HOMEPAGE"
+          }
+        ]
+      }
+    ],
+    "lineage-m": [
+      {
+        "title": "11월 11일 리니지M 정기점검 사전안내",
+        "category": "MAINTENANCE",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "리니지M 측은 2026년 11월 11일(수) 정기점검이 예정되어 있으며, 상세 일정 및 업데이트 내용은 11월 10일 중 별도 공지하겠다고 안내했다.",
+            "evidence_ids": [
+              "60c2677a9aae8e09c7e5d7fdcd342768da8739452f5c16163e084e985f0c229a"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "공식 문서에서는 점검 일시와 업데이트 세부내용을 11월 10일 추가 공지하겠다고 명시해, 현재로서는 구체적 일정과 영향 범위가 공식 확인 전이다.",
+            "evidence_ids": [
+              "60c2677a9aae8e09c7e5d7fdcd342768da8739452f5c16163e084e985f0c229a"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "정기점검의 정확한 시작·종료 시각과 점검 중 적용될 업데이트 세부항목은 11월 10일 공지 전에는 확인 불가하다."
+        ],
+        "evidence": [
+          {
+            "evidence_id": "60c2677a9aae8e09c7e5d7fdcd342768da8739452f5c16163e084e985f0c229a",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6af1a7b0577e8c01355e03da",
+            "published_at": "2026-11-09T20:00:00.286000+09:00",
+            "collected_at": "2026-11-10T13:35:31.970288+09:00",
+            "content_hash": "2ef5669eb9f1976cdd97f7c9c0094a400ee7f2b3921584ea2cd339ffd1f1dae1",
+            "source_type": "OFFICIAL_HOMEPAGE"
+          }
+        ]
+      },
+      {
+        "title": "혈맹 아지트 이벤트(황금빛 소나무 막대) 안내",
+        "category": "EVENT",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "공식 유튜브 쇼츠에서 '혈맹 아지트에서 황금빛 소나무 막대를' 얻는 이벤트를 소개하며, 안내문에 확률형 아이템 포함을 표기했다.",
+            "evidence_ids": [
+              "7fac9ddf25cc68bbb0d745417c7520e9348fcb66c31d42608111ae81ae16da9a"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "공식 영상 제목·설명에 이벤트와 확률형 아이템 포함 안내가 있어, 해당 보상은 확률 요소가 적용될 가능성이 공식 채널에서 제시되었다.",
+            "evidence_ids": [
+              "7fac9ddf25cc68bbb0d745417c7520e9348fcb66c31d42608111ae81ae16da9a"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "이벤트 기간, 획득 확률, 보상 상세 및 참여 조건 등 구체적 내용은 영상 설명 외 공식 공지의 추가 정보가 필요하다."
+        ],
+        "evidence": [
+          {
+            "evidence_id": "7fac9ddf25cc68bbb0d745417c7520e9348fcb66c31d42608111ae81ae16da9a",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/shorts/B9ERzQC8F-o",
+            "published_at": "2026-11-04T18:00:34+09:00",
+            "collected_at": "2026-11-10T13:36:05.597148+09:00",
+            "content_hash": "a452adc714a7805693403be535a5d4dd504d8d04954db0abe7234300aa3365a3",
+            "source_type": "OFFICIAL_YOUTUBE"
+          }
+        ]
+      }
+    ],
+    "seven-knights-rebirth": [
+      {
+        "title": "1.5주년 기념 라이브 방송(11월 10일 19:00) 안내",
+        "category": "EVENT",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "세븐나이츠 리버스는 11월 10일(화) 19:00(UTC+9)에 공식 유튜브에서 1.5주년 기념 라이브 방송 '세나리 라이브 : Re:Birth Day'를 진행한다고 공지했다.",
+            "evidence_ids": [
+              "629eb56755c81f0db3e7797bfc2fe7fcbabbc93889d64fc9d551ef10a2e5fad2"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "공식 안내에 따르면 이번 라이브에서 향후 업데이트와 신규 영웅 관련 주요 내용이 공개될 예정으로 보인다.",
+            "evidence_ids": [
+              "629eb56755c81f0db3e7797bfc2fe7fcbabbc93889d64fc9d551ef10a2e5fad2"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "629eb56755c81f0db3e7797bfc2fe7fcbabbc93889d64fc9d551ef10a2e5fad2",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://forum.netmarble.com/sena_rebirth/view/20/2201",
+            "published_at": "2026-11-10T12:00:15.125000+09:00",
+            "collected_at": "2026-11-10T13:35:31.970288+09:00",
+            "content_hash": "939d264c10a63506ab8db1f18d9f8e824b04e73ed9ad242d97952fe78aed37c1",
+            "source_type": "OFFICIAL_COMMUNITY"
+          }
+        ]
+      },
+      {
+        "title": "심연의 사도 '쥬다스' 픽업 홍보(shorts 게시)",
+        "category": "BM",
+        "bm_types": [
+          "GACHA"
+        ],
+        "facts": [
+          {
+            "text": "공식 짧은 영상(Shorts)에서 '심연의 사도 쥬다스' 픽업이 진행 중임을 안내했다.",
+            "evidence_ids": [
+              "36705f2cce9df8ffec138e80c5cbd763f01d56b49fe8c41bbb021927dc63ad68"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "공식 Shorts 게시로 유저 대상으로 픽업 가챠 홍보를 병행하고 있음을 확인할 수 있다.",
+            "evidence_ids": [
+              "36705f2cce9df8ffec138e80c5cbd763f01d56b49fe8c41bbb021927dc63ad68"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "36705f2cce9df8ffec138e80c5cbd763f01d56b49fe8c41bbb021927dc63ad68",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/shorts/b0oEHhxB1RY",
+            "published_at": "2026-11-06T16:00:24+09:00",
+            "collected_at": "2026-11-10T13:36:05.597148+09:00",
+            "content_hash": "7ddf55c9f87c5edb52962913ca22edc6adcec3060f5942c4bbefb99e13601dd2",
+            "source_type": "OFFICIAL_YOUTUBE"
+          }
+        ]
+      },
+      {
+        "title": "캐릭터 영상 '이브' 트레일러 공개(Shorts)",
+        "category": "CHARACTER",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "공식 유튜브 Shorts에 '낙원 회귀의 비원 - 이브' 영상이 게시되어 캐릭터 관련 홍보를 진행하고 있다.",
+            "evidence_ids": [
+              "e10893a4ca642bd223054375ce6ef70372162fae5b455bd9a660ba02046b0698"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "짧은 영상은 캐릭터 설정이나 콘셉트 노출을 목적으로 한 공식 홍보물로 판단된다.",
+            "evidence_ids": [
+              "e10893a4ca642bd223054375ce6ef70372162fae5b455bd9a660ba02046b0698"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "e10893a4ca642bd223054375ce6ef70372162fae5b455bd9a660ba02046b0698",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/shorts/K9jf7jAoRHQ",
+            "published_at": "2026-11-04T18:00:13+09:00",
+            "collected_at": "2026-11-10T13:36:05.597148+09:00",
+            "content_hash": "7ca7d90e58dfbd3c443aadd625ed5675281cc9ba50b86877b58ced74e6087c63",
+            "source_type": "OFFICIAL_YOUTUBE"
+          }
+        ]
+      }
+    ],
+    "epic-seven": [
+      {
+        "title": "E7WC 2026 녹아웃 스테이지 영상·숏츠 공개",
+        "category": "EVENT",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "공식 유튜브 채널에 E7WC 2026 녹아웃 스테이지 관련 풀 영상(5·6일차)과 다수 숏츠가 게시되었다.",
+            "evidence_ids": [
+              "1805ef49b8236724ff3ab72c88780917dd636d69fa41a4ee32a0f809f643996f",
+              "31d502b281e393a1a242f95af0ab871d555356c4e5286bda509a216bd39cf0df",
+              "e905fe0c4ce24cfea1a8acdae6422fa8c8895fc9129787a91f4d63effbe4b19b",
+              "9350ffa6f4d35a015aa4c337fe8cce891b3ef797dee034c3a61bd5d8ca360790",
+              "3d13b1f595a542b8e737cef0929cfe3daa40d2d05d1057eae292b28deda8146d",
+              "f3e6e6af26649a780ed3e37fbe8dc03fa42b77fa120f0abfe34181f1ed37a585",
+              "74e6e301531ab812a54c0d9e5552b531c4b2b586beeec2d0e8bad422f1e367cc",
+              "0170eee0f717cc6fc328762c85d650d62197cc766efca30404da36e3b0ae366b"
+            ]
+          },
+          {
+            "text": "공개된 영상 설명에는 ‘확률형 아이템 포함’ 문구와 다운로드 광고 URL, 브랜드 사이트·공식 커뮤니티·SNS 링크가 포함되어 있다.",
+            "evidence_ids": [
+              "1805ef49b8236724ff3ab72c88780917dd636d69fa41a4ee32a0f809f643996f",
+              "31d502b281e393a1a242f95af0ab871d555356c4e5286bda509a216bd39cf0df"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "공식 채널이 대회 경기 영상과 짧은 클립을 연속적으로 게시하며 이벤트 노출을 확대하고 있다.",
+            "evidence_ids": [
+              "1805ef49b8236724ff3ab72c88780917dd636d69fa41a4ee32a0f809f643996f",
+              "31d502b281e393a1a242f95af0ab871d555356c4e5286bda509a216bd39cf0df",
+              "e905fe0c4ce24cfea1a8acdae6422fa8c8895fc9129787a91f4d63effbe4b19b"
+            ]
+          },
+          {
+            "text": "영상 설명의 광고·다운로드 링크와 ‘확률형 아이템 포함’ 표기는 게임 내 유료 요소와 외부 유입 동선을 함께 안내하는 구성으로 보인다.",
+            "evidence_ids": [
+              "31d502b281e393a1a242f95af0ab871d555356c4e5286bda509a216bd39cf0df",
+              "1805ef49b8236724ff3ab72c88780917dd636d69fa41a4ee32a0f809f643996f"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "0170eee0f717cc6fc328762c85d650d62197cc766efca30404da36e3b0ae366b",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/shorts/n9HKxlPqLt4",
+            "published_at": "2026-11-03T18:00:26+09:00",
+            "collected_at": "2026-11-10T13:36:05.597148+09:00",
+            "content_hash": "c924353cc30a99d85c417b3a58d145c1dd50217b85dc786dcd454fac3896c1cf",
+            "source_type": "OFFICIAL_YOUTUBE"
+          },
+          {
+            "evidence_id": "1805ef49b8236724ff3ab72c88780917dd636d69fa41a4ee32a0f809f643996f",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/watch?v=C0pSXdjIarU",
+            "published_at": "2026-11-07T17:41:27+09:00",
+            "collected_at": "2026-11-10T13:36:05.597148+09:00",
+            "content_hash": "955d302b8d93937f2644ac2564840b04c4b5cc2b60664ab3cc403f1e6a268995",
+            "source_type": "OFFICIAL_YOUTUBE"
+          },
+          {
+            "evidence_id": "31d502b281e393a1a242f95af0ab871d555356c4e5286bda509a216bd39cf0df",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/watch?v=AFGboMkccAg",
+            "published_at": "2026-11-08T14:50:43+09:00",
+            "collected_at": "2026-11-10T13:36:05.597148+09:00",
+            "content_hash": "65c7feecf6eadb3a90ad286627b6198ad3575d279b897d874a2c9938a0f21385",
+            "source_type": "OFFICIAL_YOUTUBE"
+          },
+          {
+            "evidence_id": "3d13b1f595a542b8e737cef0929cfe3daa40d2d05d1057eae292b28deda8146d",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/shorts/R76U4kul2to",
+            "published_at": "2026-11-04T19:00:28+09:00",
+            "collected_at": "2026-11-10T13:36:05.597148+09:00",
+            "content_hash": "54689ac6a2a87a93041879dfc24f872033eed6b966e8d7a71c8773b1f4653ab8",
+            "source_type": "OFFICIAL_YOUTUBE"
+          },
+          {
+            "evidence_id": "74e6e301531ab812a54c0d9e5552b531c4b2b586beeec2d0e8bad422f1e367cc",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/shorts/neV97BLpfF8",
+            "published_at": "2026-11-04T12:00:26+09:00",
+            "collected_at": "2026-11-10T13:36:05.597148+09:00",
+            "content_hash": "83f3c7328efcb6b92017b8fa8a7a7ba2b4d9e3dde61bbcac99badb61d74f3807",
+            "source_type": "OFFICIAL_YOUTUBE"
+          },
+          {
+            "evidence_id": "9350ffa6f4d35a015aa4c337fe8cce891b3ef797dee034c3a61bd5d8ca360790",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/shorts/Tua5IwMNK5U",
+            "published_at": "2026-11-05T12:00:13+09:00",
+            "collected_at": "2026-11-10T13:36:05.597148+09:00",
+            "content_hash": "4ab30a9aea14dc692ec6bd08a1499a19efc55b631b6590e1b3ec5aca3e29ddd2",
+            "source_type": "OFFICIAL_YOUTUBE"
+          },
+          {
+            "evidence_id": "e905fe0c4ce24cfea1a8acdae6422fa8c8895fc9129787a91f4d63effbe4b19b",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/shorts/Va8eTbO-oxE",
+            "published_at": "2026-11-05T18:00:39+09:00",
+            "collected_at": "2026-11-10T13:36:05.597148+09:00",
+            "content_hash": "2850b289f503f91fa0e4383cb8d83c3c3d324b33ab237e38946c1e358d85d587",
+            "source_type": "OFFICIAL_YOUTUBE"
+          },
+          {
+            "evidence_id": "f3e6e6af26649a780ed3e37fbe8dc03fa42b77fa120f0abfe34181f1ed37a585",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/shorts/Nsmtq1Ntmzo",
+            "published_at": "2026-11-04T18:00:37+09:00",
+            "collected_at": "2026-11-10T13:36:05.597148+09:00",
+            "content_hash": "5c81882d89431bae9f69715a8a1946d884c8dde531bafb5fb81cb9901e2bc8a6",
+            "source_type": "OFFICIAL_YOUTUBE"
+          }
+        ]
+      }
+    ],
+    "nikke": [
+      {
+        "title": "49·50 영지 관련 이벤트 성격 및 요구 투력 문의 확산",
+        "category": "EVENT",
+        "bm_types": [],
+        "facts": [],
+        "claims": [
+          {
+            "text": "49.50 영지 마는 이벤트가 스토리(연출)인지 여부와, 스토리라면 필요한 투력 수준을 묻는 게시글이 게시됨.",
+            "evidence_ids": [
+              "c5f046e3d0f286f29f67bf62b741397e89565b49731d6d07b1087de8aa5d832e"
+            ]
+          }
+        ],
+        "interpretation": [
+          {
+            "text": "게임 내 특정 레벨 구간(49·50) 관련 이벤트의 성격(스토리 여부)과 요구 전투력에 대한 플레이어 문의가 확인되어, 공식 안내 부재 시 유저 혼선이 발생할 가능성이 있음.",
+            "evidence_ids": [
+              "c5f046e3d0f286f29f67bf62b741397e89565b49731d6d07b1087de8aa5d832e"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "해당 이벤트가 공식적으로 '스토리 연출'인지 여부(OFFICIAL_FACT 미제공).",
+          "해당 콘텐츠를 완료하는 데 필요한 권장 투력 수치(OFFICIAL_FACT 미제공).",
+          "운영 공지나 홈페이지·공식 채널에서 관련 안내가 이미 발표되었는지 여부(OFFICIAL_FACT 미제공)."
+        ],
+        "evidence": [
+          {
+            "evidence_id": "c5f046e3d0f286f29f67bf62b741397e89565b49731d6d07b1087de8aa5d832e",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=gov&no=6505051",
+            "published_at": "2026-11-10T13:36:08+09:00",
+            "collected_at": "2026-11-10T13:36:26.889134+09:00",
+            "content_hash": "d1144b8ec826154a87ce213c0e8c03f4859c77c266678e44dd9fc26ba271400e",
+            "source_type": "PUBLIC_COMMUNITY"
+          }
+        ]
+      }
+    ]
   }
 }
