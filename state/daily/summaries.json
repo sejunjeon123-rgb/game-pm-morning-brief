@@ -1,66 +1,186 @@
 {
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "version": "compact-v1-relevance-v2",
   "games": {
-    "mabinogi-mobile": [
+    "odin-valhalla-rising": [],
+    "seven-knights-rebirth": [
       {
-        "title": "마도저항(내실) 시스템에 대한 강한 불만 제기",
-        "category": "CHARACTER",
+        "title": "1.5주년 리버스데이 푸시 이벤트 공지",
+        "category": "EVENT",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "1.5주년을 기념해 기간 중 매일 접속 보상을 제공하는 푸시 이벤트를 안내했다.",
+            "evidence_ids": [
+              "5f40d6badfb7330910a6e5f58b172ae591080c425ec55a1d522c7d7f9d3d5ca6"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "공지문은 감사 표시로 매일 접속 보상 지급을 안내하고 있어 이벤트 참여를 통해 보상을 받을 수 있음을 표방한다.",
+            "evidence_ids": [
+              "5f40d6badfb7330910a6e5f58b172ae591080c425ec55a1d522c7d7f9d3d5ca6"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "5f40d6badfb7330910a6e5f58b172ae591080c425ec55a1d522c7d7f9d3d5ca6",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://forum.netmarble.com/sena_rebirth/view/15/2209",
+            "published_at": "2026-11-15T12:00:16.082000+09:00",
+            "collected_at": "2026-11-16T11:41:31.831163+09:00",
+            "content_hash": "68faeb6af2a5d0507ed5932d0eec503c357bb40c6a2d73c2b9ffa2d8b6da80cc",
+            "source_type": "OFFICIAL_COMMUNITY"
+          }
+        ]
+      }
+    ],
+    "epic-seven": [
+      {
+        "title": "E7WC 2026 파이널 오프라인 결승 관람 및 멤버십 선예매 안내",
+        "category": "EVENT",
         "bm_types": [],
         "facts": [],
         "claims": [
           {
-            "text": "마도저항을 올리는 방식이 재미없고 직관적이지 않아 불편하다는 주장.",
+            "text": "커뮤니티 게시글에 E7WC 2026 파이널 오프라인 결승 관람과 현장 이벤트 안내가 게시되었다.",
             "evidence_ids": [
-              "8a05a6a73b78ad29e819b580918c88fe23f97050ff1ff09ad3e0125a1b7e7c1f"
+              "145861c9d79a941dcf57281d4d7171f3e5395c3deb53d53b9c707ea9776370fb"
             ]
           },
           {
-            "text": "마도저항을 올리지 않으면 다른 성장 요소(신화 등)가 무효화된다고 느낀다는 주장.",
+            "text": "게시글은 티켓링크 예매 페이지와 '에픽세븐 멤버십 인증'을 통한 선예매 절차(사전 인증 시작 11/13 18:00)를 안내하고 있다.",
             "evidence_ids": [
-              "8a05a6a73b78ad29e819b580918c88fe23f97050ff1ff09ad3e0125a1b7e7c1f"
-            ]
-          },
-          {
-            "text": "해당 시스템이 소액유저에게 불리하고 핵과금(고비용 유저)을 겨냥해 설계된 것처럼 보인다는 주장.",
-            "evidence_ids": [
-              "8a05a6a73b78ad29e819b580918c88fe23f97050ff1ff09ad3e0125a1b7e7c1f"
+              "145861c9d79a941dcf57281d4d7171f3e5395c3deb53d53b9c707ea9776370fb"
             ]
           }
         ],
         "interpretation": [
           {
-            "text": "해당 글은 마도저항(내실) 시스템이 게임 경험의 핵심 장애로 인식되고 있으며, 적어도 일부 유저에게 강한 불만과 좌절을 유발하고 있음을 시사한다.",
+            "text": "해당 근거는 플레이어 커뮤니티 게시글로, 안내 내용은 이벤트 참여를 위한 예매·인증 절차를 설명하는 사용자 게시물 정보로 해석된다.",
             "evidence_ids": [
-              "8a05a6a73b78ad29e819b580918c88fe23f97050ff1ff09ad3e0125a1b7e7c1f"
-            ]
-          },
-          {
-            "text": "유저는 시스템을 '숨겨진 필수 요소'로 인식하고 있어 공개 안내·설계 의도와 유저 기대 사이에 괴리가 있음을 암시한다.",
-            "evidence_ids": [
-              "8a05a6a73b78ad29e819b580918c88fe23f97050ff1ff09ad3e0125a1b7e7c1f"
+              "145861c9d79a941dcf57281d4d7171f3e5395c3deb53d53b9c707ea9776370fb"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "공식적으로 해당 시스템의 설계 의도나 밸런스 변경 계획이 발표되었는지 여부",
-          "이 불만이 소수 의견인지 다수의 공통적 반응인지에 대한 범위",
-          "게시자가 언급한 구체적 수치(예: 시즌3 유지, 7.2천장 제한 등)의 정확성 및 맥락"
+          "해당 안내가 공식 홈페이지 또는 주최 측의 공식 공지와 동일한지 여부는 제공된 근거에서 확인되지 않는다.",
+          "현장 이벤트의 구체적 내용(진행 방식·배포물 등)은 게시글 전문에서 상세히 확인되지 않는다."
         ],
         "evidence": [
           {
-            "evidence_id": "8a05a6a73b78ad29e819b580918c88fe23f97050ff1ff09ad3e0125a1b7e7c1f",
+            "evidence_id": "145861c9d79a941dcf57281d4d7171f3e5395c3deb53d53b9c707ea9776370fb",
             "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/mgallery/board/view/?id=mabinogimobile&no=2180011",
-            "published_at": "2026-11-14T22:38:20+09:00",
-            "collected_at": "2026-11-15T11:36:47.354417+09:00",
-            "content_hash": "66132b5446a05bc6687626052a5ee7e6257825256a755a289b531d85a428bbbe",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=epicseven&no=2756904",
+            "published_at": "2026-11-14T00:25:14+09:00",
+            "collected_at": "2026-11-16T11:42:47.045203+09:00",
+            "content_hash": "11ad29612d1adc8919afffe72bf990fdbc27c5c3420ac4fe1ed22e397ba61dfb",
             "source_type": "PUBLIC_COMMUNITY"
           }
         ]
       }
     ],
-    "odin-valhalla-rising": []
+    "nikke": [
+      {
+        "title": "3차 지상 탈환전 특별 이벤트 보상 지급 안내",
+        "category": "EVENT",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "운영 측은 3차 지상 탈환전 특별 이벤트 기념으로 한정 기념 프로필 테두리를 지급한다고 공지했다.",
+            "evidence_ids": [
+              "e71cfcf10c6ebdc016b4e8fcba966ffa598ca3fb9d14b40c7d0e807dc563da54"
+            ]
+          },
+          {
+            "text": "특별 이벤트는 계속 진행되며 참여 시 모집 티켓, 커스텀 모듈, 한정 칭호 등 보상을 획득할 수 있고 이벤트 기간은 11월 18일 23:59까지라고 안내했다.",
+            "evidence_ids": [
+              "e71cfcf10c6ebdc016b4e8fcba966ffa598ca3fb9d14b40c7d0e807dc563da54"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "유저들은 지급된 한정 프로필 테두리를 게임 내 우편함에서 수령하면 될 것으로 보인다.",
+            "evidence_ids": [
+              "e71cfcf10c6ebdc016b4e8fcba966ffa598ca3fb9d14b40c7d0e807dc563da54"
+            ]
+          },
+          {
+            "text": "이벤트가 11월 18일 종료로 공지된 만큼 해당 기간 내 이벤트 참여를 통해 기재된 보상 획득 기회를 제공하는 일정이다.",
+            "evidence_ids": [
+              "e71cfcf10c6ebdc016b4e8fcba966ffa598ca3fb9d14b40c7d0e807dc563da54"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "e71cfcf10c6ebdc016b4e8fcba966ffa598ca3fb9d14b40c7d0e807dc563da54",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://game.naver.com/lounge/nikke/board/detail/8469903",
+            "published_at": "2026-11-16T11:02:13+09:00",
+            "collected_at": "2026-11-16T11:41:31.831163+09:00",
+            "content_hash": "01e7b6e0acffd6f978b16bc51f1b60fa318ed52e235a1b653e7d3440d8787948",
+            "source_type": "OFFICIAL_COMMUNITY"
+          }
+        ]
+      },
+      {
+        "title": "SKY ON THE ROCK 이벤트 일정 안내",
+        "category": "EVENT",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "운영 측은 'SKY ON THE ROCK' 이벤트의 줄거리 개요를 공지했다.",
+            "evidence_ids": [
+              "3685549e95897c98b321a32cb9b7f84767f5cbdfdfe0c80a4ba974254fc94d61"
+            ]
+          },
+          {
+            "text": "해당 이벤트 기간은 11월 19일 점검 완료 후부터 12월 3일 04:59까지로 안내되었다.",
+            "evidence_ids": [
+              "3685549e95897c98b321a32cb9b7f84767f5cbdfdfe0c80a4ba974254fc94d61"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "이벤트가 한시적으로 열리며 안내된 기간 내에만 진행되는 이벤트임을 의미한다.",
+            "evidence_ids": [
+              "3685549e95897c98b321a32cb9b7f84767f5cbdfdfe0c80a4ba974254fc94d61"
+            ]
+          },
+          {
+            "text": "공식 공지에 인앱 구매(확률형 아이템 포함) 관련 문구가 있어 유료 상품 연계 가능성이 제시되었다.",
+            "evidence_ids": [
+              "3685549e95897c98b321a32cb9b7f84767f5cbdfdfe0c80a4ba974254fc94d61"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "3685549e95897c98b321a32cb9b7f84767f5cbdfdfe0c80a4ba974254fc94d61",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://game.naver.com/lounge/nikke/board/detail/8469690",
+            "published_at": "2026-11-16T10:00:36+09:00",
+            "collected_at": "2026-11-16T11:41:31.831163+09:00",
+            "content_hash": "9590bcafd08fa28f6cb88e837d816ee2bce52bfce4798091d3d5c44a9276e4c4",
+            "source_type": "OFFICIAL_COMMUNITY"
+          }
+        ]
+      }
+    ]
   }
 }
