@@ -1,26 +1,6 @@
 {
   "version": "compact-v1-relevance-v2",
   "records": {
-    "96bbb5c9b3914630089c9f6773e419e24c281dc09df3d114b0cea8ce6a365faf": {
-      "fingerprint": "9ae8cfa4472ed05acf0192cfa23a759a679b9ced452512e046d9bf57d8063ec3",
-      "published_at": "2026-11-10T00:00:00+09:00"
-    },
-    "c6b899a9efab9c8543b3af145d1c7089effb37d548cf1336b29e498f9edab48b": {
-      "fingerprint": "88e8bc6e7fec71453793152e6f4561179fa74ae635962bd9094233368cbbad4e",
-      "published_at": "2026-11-10T00:00:00+09:00"
-    },
-    "60c2677a9aae8e09c7e5d7fdcd342768da8739452f5c16163e084e985f0c229a": {
-      "fingerprint": "f0c5154b2c21d271f7f54e10ddb07119afa6143a47c7b702de7acea25c425ca2",
-      "published_at": "2026-11-09T20:00:00.286000+09:00"
-    },
-    "629eb56755c81f0db3e7797bfc2fe7fcbabbc93889d64fc9d551ef10a2e5fad2": {
-      "fingerprint": "ea35424c3a4ef1858a0fdcb18b5b79d44573d32d938d568699b8563dd2ad3068",
-      "published_at": "2026-11-10T12:00:15.125000+09:00"
-    },
-    "c5f046e3d0f286f29f67bf62b741397e89565b49731d6d07b1087de8aa5d832e": {
-      "fingerprint": "57fae1ac6df0b994245d1b5e78726302b6e63297ee3e2feabfe97c200a2a8dff",
-      "published_at": "2026-11-10T13:36:08+09:00"
-    },
     "c84b102df8e5c1be5a8d39cd21d55063799d65480f1ef205cf6a539c3d728774": {
       "fingerprint": "8814df424a9f859a75e64926d68c3141a65a6911db58885d493f7bc0829346ca",
       "published_at": "2026-11-11T00:00:00+09:00"
@@ -45,10 +25,6 @@
       "fingerprint": "e452cab183ea6208b74c1b6177fbdfc227f1724c6f194485d09ec61889d2936e",
       "published_at": "2026-11-10T20:00:00.001000+09:00"
     },
-    "45c76a491a20c4190f74d91415e8202619ee6310a5b344ef2125798112f34347": {
-      "fingerprint": "dad24263f4f01517ee79261f2e21f56e3a1c40577d554f8205c3788b1f99ba7b",
-      "published_at": "2026-11-09T17:34:31+09:00"
-    },
     "086924408f9e28d8b1104460f28c46977764282ba5b545c05f7954a66ac8a64f": {
       "fingerprint": "ba1047995a81a98ebc7d76fb695741154a5282dd1b655f4f4c45342c2e7902c2",
       "published_at": "2026-11-11T11:44:21+09:00"
@@ -68,10 +44,6 @@
     "9d925d387def05ad35266836ba33c53b1c5c0fae5e99dc5bb16bf907278deff2": {
       "fingerprint": "0385b3c5937f71c04acd7e97647c5743182bc8253a39b32f7b0eb8e7e6117553",
       "published_at": "2026-11-10T19:00:35+09:00"
-    },
-    "6aeeab3f04b0c0760a1a4b523c4ab8a791722772ae2e78742aa95309b1e2170c": {
-      "fingerprint": "dd1a0de7abde68d9948b3a6b1af50d2e7a4abcd7fd440e13b61faeacced429e4",
-      "published_at": "2026-11-09T21:22:20+09:00"
     },
     "4d7be5292d6eefc4f09f738986cdbe876d6d69a7dc682fed556213d9f9a1739b": {
       "fingerprint": "bddecba5d5879b49e17c0922d77313960b9833eb293bd1fa238dabd4f6daa891",
@@ -288,6 +260,154 @@
     "3685549e95897c98b321a32cb9b7f84767f5cbdfdfe0c80a4ba974254fc94d61": {
       "fingerprint": "401a195c14e7bf6e3cb191943fe730c9d2eb8fe3c005f1ab5ed4e10827358457",
       "published_at": "2026-11-16T10:00:36+09:00"
+    },
+    "c657afeca83a034e2bcc98933d68dc03f9350a75f35a9219dd58494c40116954": {
+      "fingerprint": "6bc7129bf052c0c1c3392ebb604fd77d9982b0ca33da87efd951eafdff6dc5cf",
+      "published_at": "2026-11-11T18:59:29+09:00"
+    },
+    "edf639ba3ef9ed889331a59ed64f43e243f6eda0cdb3e5e6fda07f6d313fd32f": {
+      "fingerprint": "a21dfb166537aaf2dc55cd030c021ff95a3254f555580b574ec97623bb8e6fa1",
+      "published_at": "2026-11-16T00:00:00+09:00"
+    },
+    "18d40fea44dbc73b82dcb8bdf00ddf98817be0eedbc0c4c869b0ad935d78bd87": {
+      "fingerprint": "7eb07aa2d30955e8b407b54550865b9efdba04eecef957d05b1764ecb4bc82c1",
+      "published_at": "2026-11-17T11:09:56+09:00"
+    },
+    "eb14c9e39c475b86ee79576a1e6ff811d3b09aa95716c6ff0adcd22bea4cb621": {
+      "fingerprint": "f019a934a0aa62b495e69891db24f99cc22f2d6d3e4eabc825ddd99581d8df6a",
+      "published_at": "2026-11-16T20:00:00.609000+09:00"
+    },
+    "0496bbe3303812833b0f6707c9c2cfda9fcfe0364b459e99f98d84b9bf8abf4d": {
+      "fingerprint": "8c6aecd3d4aaabaa5936c1ec01f2deb676da4488e65eb3fdb9b0f238b4e8eda1",
+      "published_at": "2026-11-16T17:17:00.001000+09:00"
+    },
+    "c55d5bb8168ddcd384013f095386494bd7eefaf3d0d20352dd26aef9ae7b91ab": {
+      "fingerprint": "2241756bbd87a0e892f45d552c0c9a71d0970b0fd0e51122de3bfb0d6119bf63",
+      "published_at": "2026-11-11T10:00:14+09:00"
+    },
+    "7f12ad27a662dbe0cf36523c2b32e0174213ad1ed1a41ddbec8a78762fe3b660": {
+      "fingerprint": "5e01da991c50a64ed4904a39cf19b1075f11691db115657e69b9c8786b4a1056",
+      "published_at": "2026-11-16T14:00:22.241000+09:00"
+    },
+    "3b0ac5c4da499ca2dfddbebb39b9c2103b6b4832478451993bc8563ecea4970d": {
+      "fingerprint": "86cb90fe59a55bc346605443808c149b2c68244108f98e4609ae02097ed304e8",
+      "published_at": "2026-11-13T16:00:34+09:00"
+    },
+    "3ef01f96246120b0bc54bb15382fdce6a420f12d4acb99a5b16a44747ae83ce3": {
+      "fingerprint": "932b1689c21cb10d8347b47bbb2b2394aec24453cc395f6cc002d94dd4bcc236",
+      "published_at": "2026-11-11T15:00:08+09:00"
+    },
+    "53f91908aa5a6666cb6c59febf4689cc47e6d9dd23d76ad0c9060028535038f4": {
+      "fingerprint": "9d5ba7d823029e84d7e72ce06ad9336e5799d577f7cce2f89d04b0d05a825919",
+      "published_at": "2026-11-10T20:56:40+09:00"
+    },
+    "34b967098f764c2d1f8c8929225026caf09c170741c1c4b1f44d365b1b3a96ba": {
+      "fingerprint": "a7b82851e9edff04e5de7c0f32d1a3bf9b4b54cc2f3811b3fb818ebbe062ff3e",
+      "published_at": "2026-11-10T20:50:38+09:00"
+    },
+    "554497ec9d454f2865d73164f24bc60b60260cfb7e6122a1b71ddee1b981434c": {
+      "fingerprint": "a1a963a31e3c9757debb198b588e79d20b92210b6bb7304ea5d3522c1ccbd81f",
+      "published_at": "2026-11-17T12:00:01.129000+09:00"
+    },
+    "2d6bf0971642894c9c5cfd550fc25da1011cf7b61f2f0dd9a2990f7a456c6c84": {
+      "fingerprint": "479f192b152a710afa6c9a3d4c34fc42a0d56b53d6398ce18902ab9badfa7f2a",
+      "published_at": "2026-11-16T19:00:00.587000+09:00"
+    },
+    "7545a65c6faca7234b43349c5915e61ee55cfc2c84a75a6a8555f0a8a25a5b12": {
+      "fingerprint": "870859d4a64a65d642523cfcfc0fa3e1e8e1ecf4bf0a7a229b8b934290ac90eb",
+      "published_at": "2026-11-15T13:06:09+09:00"
+    },
+    "d287db3bfdb56e7419a8c868c882bcda8f0f39f388d0153e37de44cd2d075cec": {
+      "fingerprint": "08ead16d7bfa16cf07d05afbfcc059e8007228308d888be1659b3e29fbfcd3a1",
+      "published_at": "2026-11-14T17:24:59+09:00"
+    },
+    "49e0f0116e7ac80b29b03a0bf7aa02e97d05c51b2ed87f898c0522060a4c69aa": {
+      "fingerprint": "7a4b3dd0480ea35ebd969478bf61dbae8d898810b1cda35ef4da59e0a3a9ecf3",
+      "published_at": "2026-11-13T18:00:27+09:00"
+    },
+    "2ad1f41350e860aac2fd66bad72dbf1e33c9ac95d590c4d4cf9667f77ad8a60e": {
+      "fingerprint": "50c0303d665b991111f0040e57bfadc82487799620e064528343ef1971b1b29d",
+      "published_at": "2026-11-12T18:00:21+09:00"
+    },
+    "86f75913944a64b61e0ec2421f8eff4c4debb9f3f0620a3185358d1394f30b42": {
+      "fingerprint": "251aaa63dd4daeaa89bd030f7bb9130a17c0c0a0e68281f3f8f983a8758a7683",
+      "published_at": "2026-11-11T18:00:02+09:00"
+    },
+    "c414520eb6d81f305d50ba2df47fa9a8f50faf588a40f87285d86ea665cb357d": {
+      "fingerprint": "dc6705453e5f33c2e93e4416d8166caef21e4f2e1f87ee540cfc5437a31d1468",
+      "published_at": "2026-11-10T21:52:16+09:00"
+    },
+    "a6c35a17f74df98d40a1667d7afddfebb70dc408697f9f89bb4314f30fc4a890": {
+      "fingerprint": "ca287ecbe606634e5d4952b4befc3e0f2dbbd67a4b35a613d3c0f1430cd2ba60",
+      "published_at": "2026-11-17T12:00:35+09:00"
+    },
+    "a1dbed13b875034999441b7a1d816564c57718f96e040c78520b72821cf19691": {
+      "fingerprint": "92de5e4bd0a2fb2dc580c2c45d5c8176a84d571ef26bf1bc5cdc0897d4237add",
+      "published_at": "2026-11-17T11:00:36+09:00"
+    },
+    "a7d095fb48186a5785331d3024f6243984699d62b891df418b17fdbc62f7474d": {
+      "fingerprint": "c00d1c84d0a07b0ebb703a5156c617bcd4291aac1d5daf802573974aa16060df",
+      "published_at": "2026-11-16T17:11:12+09:00"
+    },
+    "bb53c4eca79325e92d58f7822599b277141579187d977b85e9914fc40ad2a52f": {
+      "fingerprint": "050edb433615827bb9be600c8630f7ead1aad2c45b3057a9119dcd070e131ea6",
+      "published_at": "2026-11-15T18:00:36+09:00"
+    },
+    "776a5a0d28d352e8568727807117d7fb2a013bb1081d0cb81d4a3bae772f425a": {
+      "fingerprint": "768de5cf217e2c8f129f604d9ba4919be4612d84d7591b13766f7bc54bc1a89c",
+      "published_at": "2026-11-15T16:00:13+09:00"
+    },
+    "6bc2382c9b84758a79fac7525dc2360625fc2f88a6e72d374998575fdccaa31b": {
+      "fingerprint": "7cd9dffaf4ffcdd1935b937c2c39e061d0bc16f048f7a57f468cbfcb3d3cccc0",
+      "published_at": "2026-11-15T11:00:10+09:00"
+    },
+    "33b29d6edba98d504f7340583d1f111dced15089ba7d46da311a01f46bf77bea": {
+      "fingerprint": "e1145e94b7dcc5510bb09c2b7184732d9153a72b53ab82ae046286dc5ebf2048",
+      "published_at": "2026-11-12T16:02:47+09:00"
+    },
+    "208244a4f1a5e5e948a4b92ebb0987f55488210cbd36dc00d3806d0547e8dce8": {
+      "fingerprint": "46c8539c5ef5c8e6bc5963f955d4de97ccb0e3209f1a3cceb4204dc9122ee95a",
+      "published_at": "2026-11-11T20:15:04+09:00"
+    },
+    "8973cad8fc54adb1bc8442a282b8fb35681d2d1b08d10937ce3d827693b062b9": {
+      "fingerprint": "a9f9931b54d7e83dc59a07bc2f1c1ce78a51559ce75c2bd6784c712e15bd3fc4",
+      "published_at": "2026-11-11T19:30:09+09:00"
+    },
+    "3dcd0e22c86503eada4f50f1d80ae04848a065d08964cf952cb80fb459f8b5fa": {
+      "fingerprint": "5715ae080a53bcccf06cc35225570e71572d9374a6b1b807a3ba6d131ff728a4",
+      "published_at": "2026-11-11T18:00:13+09:00"
+    },
+    "242e4500fd7b6d126813659cc9d79d62cb7fb20d0770d40286e8710d3181dab4": {
+      "fingerprint": "e1e2bca74a7322950e4a337d2f184f5a00a6e7ec200d1bb569db9f4411b3c60f",
+      "published_at": "2026-11-10T19:00:22+09:00"
+    },
+    "5392519fb728d1e81200bed1004d77d5bafc983117e1beb1790a03f98a016bd7": {
+      "fingerprint": "75e80047bb650392f317e89fdd185775d019fd44051fd0ffb3e14aed281ae666",
+      "published_at": "2026-11-15T17:00:12+09:00"
+    },
+    "72d2a50f4684ea95909ac7ebea872244cdf706554fbb9ae0e6f723b115bbfd14": {
+      "fingerprint": "ed25637fa286588b3038c69bd7b47b7aa4c5140f9e90efe1c7d93caa7e403f50",
+      "published_at": "2026-11-15T14:00:42+09:00"
+    },
+    "b4638ec5b887621179e29353d3ca946f25c834f31b6305db8e9ae76895828af4": {
+      "fingerprint": "755760c9f9176fc38fb93742c8f0ec7ab9eb0bed96b2faa435609fa981e184ed",
+      "published_at": "2026-11-14T17:00:52+09:00"
+    },
+    "7b2896ce9d5271bd922df4386b2f9559a21a9ffccb4c5a3d1724e1c49566f47b": {
+      "fingerprint": "5b9d7d15b6ca827bffeda7032bba3e5a3c3c946665d3f4d518211898bf356c41",
+      "published_at": "2026-11-14T14:02:34+09:00"
+    },
+    "c2d117edfe37ad4dbf45c18816b0dd4ab8da66ef87abca7c5541f261b97f8547": {
+      "fingerprint": "becc44d416de33d3bebe56e3e176bb9802a7ba6bd8d0858101f35d9cbfdcd2e1",
+      "published_at": "2026-11-12T13:04:46+09:00"
+    },
+    "c39bc153e551a8c9c08b90258ff55ebb65b2eebdab89167c5749b1c8f676fdc1": {
+      "fingerprint": "64b682786ce91ca9e446854c6c7e71682159029bd5b2d40aa80545c6f920a531",
+      "published_at": "2026-11-11T17:05:05+09:00"
+    },
+    "f282a91789660f00bb3ba801762a168f9487b82fc3289fe3991250704f9fa371": {
+      "fingerprint": "66dae4e5071233ac83a122078dd165e9eb7f0c6907cedb964e5c2709a3be6a54",
+      "published_at": "2026-11-10T17:04:21+09:00"
     }
   }
 }
