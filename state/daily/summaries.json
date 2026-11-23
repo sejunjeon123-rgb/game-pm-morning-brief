@@ -1,100 +1,260 @@
 {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "version": "compact-v1-relevance-v2",
   "games": {
-    "black-desert-mobile": [],
-    "nikke": [
+    "black-desert-mobile": [
       {
-        "title": "오케스트라 콘서트 PV 공개 및 일정 안내",
-        "category": "EVENT",
+        "title": "쿠폰 사용 후 '보급형' 미지급 주장 보고",
+        "category": "WEB_EVENT",
         "bm_types": [],
+        "facts": [],
+        "claims": [
+          {
+            "text": "게시글 작성자는 쿠폰 관련 페이지를 공유하며 '보급형' 아이템을 받지 못했다고 주장하고 있다.",
+            "evidence_ids": [
+              "79bd22e5e332f9eef1776e9dcde87a9481db8fb2a9475cee0c999dcba94e3bdf"
+            ]
+          }
+        ],
+        "interpretation": [
+          {
+            "text": "공개 게시글 표본은 특정 쿠폰(블로그 링크) 이용 후 보상 미지급 사례를 주장하므로, 쿠폰 유효성·배포 절차·수령 처리에 대한 사용자 불만을 시사한다.",
+            "evidence_ids": [
+              "79bd22e5e332f9eef1776e9dcde87a9481db8fb2a9475cee0c999dcba94e3bdf"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "해당 주장이 단발성인지 다수 사용자에 해당하는지(규모)",
+          "공유된 블로그 쿠폰의 진위 및 원본 출처(공식 쿠폰인지 여부)",
+          "게임 내에서의 쿠폰 적용 여부나 공식 배포 기록(공식 확인 미제공)"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "79bd22e5e332f9eef1776e9dcde87a9481db8fb2a9475cee0c999dcba94e3bdf",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/board/view/?id=blackdesertmobile&no=334426",
+            "published_at": "2026-11-23T01:10:21+09:00",
+            "collected_at": "2026-11-23T12:41:39.533337+09:00",
+            "content_hash": "65510630cbf055c482bed551a20ddafd51e52aa7ed9f553517c647ea0fbaa44a",
+            "source_type": "PUBLIC_COMMUNITY"
+          }
+        ]
+      }
+    ],
+    "lineage-m": [
+      {
+        "title": "마검사 클래스 생성비율·밸런스 관련 유저 불만 제기",
+        "category": "CHARACTER",
+        "bm_types": [],
+        "facts": [],
+        "claims": [
+          {
+            "text": "특정(신규) 서버에서 마검사 캐릭터 생성 비중이 크게 높았고, 과거보다 유리한 환경이라서 유저들이 불만을 제기한다.",
+            "evidence_ids": [
+              "3f3ba3d5d63b2fc1aa2cc66cf7f2a6226bc8303018bd94935257149a01750891"
+            ]
+          },
+          {
+            "text": "작성자는 과거(약 2년 전)에 비해 마검사 생성 비중이 더 높았다고 주장하며 다른 강력한 캐릭터는 몇 안 된다고 언급한다.",
+            "evidence_ids": [
+              "3f3ba3d5d63b2fc1aa2cc66cf7f2a6226bc8303018bd94935257149a01750891"
+            ]
+          }
+        ],
+        "interpretation": [
+          {
+            "text": "게시글은 이용자 관찰 기반의 불만 표명으로, 클래스 생성 비중·밸런스와 관련한 체감 변화가 존재한다고 주장하고 있다.",
+            "evidence_ids": [
+              "3f3ba3d5d63b2fc1aa2cc66cf7f2a6226bc8303018bd94935257149a01750891"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "공식 클래스 생성 통계(서버별·기간별) 여부 및 개발사 입장(밸런스·패치 영향)에 대한 자료가 공개되어 있지 않음",
+          "해당 게시글이 대표적인 여론을 대변하는지, 표본의 크기와 편향성 여부"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "3f3ba3d5d63b2fc1aa2cc66cf7f2a6226bc8303018bd94935257149a01750891",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/board/view/?id=lineagem&no=404584",
+            "published_at": "2026-11-23T12:39:50+09:00",
+            "collected_at": "2026-11-23T12:41:39.533337+09:00",
+            "content_hash": "48abc638aa754b506c75cd796d9df2b645a0cc26119241664b9f53481a82416e",
+            "source_type": "PUBLIC_COMMUNITY"
+          }
+        ]
+      }
+    ],
+    "epic-seven": [
+      {
+        "title": "반격의 여신 : 설화 유튜브 영상 공개 (확률형 아이템 포함)",
+        "category": "BM",
+        "bm_types": [
+          "GACHA"
+        ],
         "facts": [
           {
-            "text": "공식 유튜브에 '오케스트라 콘서트 「Echoes of Eternity」 풀 버전 PV'가 공개되었다.",
+            "text": "공식 유튜브 영상 제목 '반격의 여신 : 설화'에 '확률형 아이템 포함' 문구가 포함되어 게시되었다.",
             "evidence_ids": [
-              "c78c1a71342903139eaedf39a3f8c9dfdd0f7311ba474726b3f6fd8bc2ebfa9e"
+              "5a8d0a1a4492497771bcd0780236baefca495e7e5a8fe41830615e55da9775e7"
             ]
           },
           {
-            "text": "공연 일정은 2027/3/20(토)~3/21(일), 장소는 고양아람누리 아람극장으로 안내되었다.",
+            "text": "영상 설명에 게임 다운로드 링크와 브랜드 사이트·공식 커뮤니티·공식 SNS 안내가 포함되어 있다.",
             "evidence_ids": [
-              "c78c1a71342903139eaedf39a3f8c9dfdd0f7311ba474726b3f6fd8bc2ebfa9e"
-            ]
-          },
-          {
-            "text": "공식 설명에 게임 다운로드 및 공식 라운지 링크와 인앱 구매 관련 문구가 포함되어 있다.",
-            "evidence_ids": [
-              "c78c1a71342903139eaedf39a3f8c9dfdd0f7311ba474726b3f6fd8bc2ebfa9e"
+              "5a8d0a1a4492497771bcd0780236baefca495e7e5a8fe41830615e55da9775e7"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "공식 PV는 콘서트 개최와 관련한 주요 일정·장소 정보를 공지하는 역할을 한다고 판단된다.",
+            "text": "해당 영상은 마케팅 목적의 공식 홍보물로, 확률형 아이템을 포함한 유료 요소를 노출하는 광고성 콘텐츠로 판단된다.",
             "evidence_ids": [
-              "c78c1a71342903139eaedf39a3f8c9dfdd0f7311ba474726b3f6fd8bc2ebfa9e"
-            ]
-          },
-          {
-            "text": "설명에 게임 관련 링크와 인앱 구매 문구가 병기되어 있어, 홍보 채널로서의 기능을 겸하고 있다.",
-            "evidence_ids": [
-              "c78c1a71342903139eaedf39a3f8c9dfdd0f7311ba474726b3f6fd8bc2ebfa9e"
+              "5a8d0a1a4492497771bcd0780236baefca495e7e5a8fe41830615e55da9775e7"
             ]
           }
         ],
         "conflicts": [],
-        "unknowns": [
-          "티켓 판매 시작일·가격·접수 방식 등 세부 운영 정보는 본 PV 설명에 명시되지 않았다."
-        ],
+        "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "c78c1a71342903139eaedf39a3f8c9dfdd0f7311ba474726b3f6fd8bc2ebfa9e",
+            "evidence_id": "5a8d0a1a4492497771bcd0780236baefca495e7e5a8fe41830615e55da9775e7",
             "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=TLh_PAH9IBM",
-            "published_at": "2026-11-21T15:00:24+09:00",
-            "collected_at": "2026-11-22T12:03:36.457410+09:00",
-            "content_hash": "7ad522e63426fb7a71e2ab608d6ba6500ddc0043b9eb822e6705e48150bb95c3",
+            "url": "https://www.youtube.com/shorts/NncRv-DJVHM",
+            "published_at": "2026-11-21T18:00:33+09:00",
+            "collected_at": "2026-11-23T12:41:16.317230+09:00",
+            "content_hash": "3a1a3a7cb1c00152c3638afca18107f91656650e213687af488a395ff697cf65",
             "source_type": "OFFICIAL_YOUTUBE"
           }
         ]
       }
     ],
-    "trickcal-revive": [
+    "nikke": [
       {
-        "title": "주말특집 유튜브 영상 공개: 우당탕탕 농장 체험 알바",
-        "category": "MARKETING",
+        "title": "PC 런처 보안 관련 사과와 후속 조치 예정",
+        "category": "MAINTENANCE",
         "bm_types": [],
         "facts": [
           {
-            "text": "공식 유튜브에 '[주말특집] 우당탕탕 농장 체험 알바!' 영상이 2026-11-21에 게시됨.",
+            "text": "디렉터가 최근 PC 런처 보안 관련 이슈로 이용자 우려를 초래한 점에 대해 사과했고 후속 조치를 진행하겠다고 밝혔다.",
             "evidence_ids": [
-              "ba3d31f081fdaa979b005151ade53b65b3551d28108dc5090f32fdb7d3792bc2"
+              "7ae8beaf1caae1b9e2ca4a1bc2b9e4c36a5e7a5416a7285b856369a0485f15b7"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "제목 기준으로 해당 영상은 주말 특집 형식의 홍보·프로모션성 콘텐츠로 판단됨.",
+            "text": "운영팀이 PC 런처 보안 문제를 인지하고 우선적으로 안정화 및 보안 대응을 계획 중임을 공식적으로 표명했다.",
             "evidence_ids": [
-              "ba3d31f081fdaa979b005151ade53b65b3551d28108dc5090f32fdb7d3792bc2"
+              "7ae8beaf1caae1b9e2ca4a1bc2b9e4c36a5e7a5416a7285b856369a0485f15b7"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "제목 외 본문·영상의 상세 내용이나 게임 내 적용 여부는 공개 근거에 포함되어 있지 않음."
+          "구체적 보안 조치 항목과 적용 일정, 이용자 대상 통지 범위 및 보상 여부는 명시되지 않았다."
         ],
         "evidence": [
           {
-            "evidence_id": "ba3d31f081fdaa979b005151ade53b65b3551d28108dc5090f32fdb7d3792bc2",
+            "evidence_id": "7ae8beaf1caae1b9e2ca4a1bc2b9e4c36a5e7a5416a7285b856369a0485f15b7",
             "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=8KDJuBAny68",
-            "published_at": "2026-11-21T14:06:01+09:00",
-            "collected_at": "2026-11-22T12:03:36.457410+09:00",
-            "content_hash": "379f410888994b9bb81a3d87807d6f04317630a1ee8dca8c0c8094a22ac9b44f",
+            "url": "https://game.naver.com/lounge/nikke/board/detail/8499185",
+            "published_at": "2026-11-23T11:01:04+09:00",
+            "collected_at": "2026-11-23T12:40:48.696036+09:00",
+            "content_hash": "177c181ed4d4f699193bdfd1586c579a3ba9dcbaa7361848322495219347af7b",
+            "source_type": "OFFICIAL_COMMUNITY"
+          }
+        ]
+      },
+      {
+        "title": "메인 시나리오 49·50챕터 공개 PV 게시",
+        "category": "UPDATE",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "공식 PV가 공개되었으며 메인 시나리오 49·50챕터가 공개 중이라고 안내했다.",
+            "evidence_ids": [
+              "b25997ac4f1a0bf2d09209f4aabec0191dd74f7bb0631cb07d7d5cf4083b3bf5"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "새로운 시나리오 챕터 공개는 콘텐츠 업데이트의 일환으로 홍보용 PV로 안내되고 있다.",
+            "evidence_ids": [
+              "b25997ac4f1a0bf2d09209f4aabec0191dd74f7bb0631cb07d7d5cf4083b3bf5"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "챕터 세부 내용·난이도·보상 변경 사항 등은 PV 문구만으로는 확인되지 않는다."
+        ],
+        "evidence": [
+          {
+            "evidence_id": "b25997ac4f1a0bf2d09209f4aabec0191dd74f7bb0631cb07d7d5cf4083b3bf5",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://www.youtube.com/watch?v=AVcUVXXoHIw",
+            "published_at": "2026-11-23T12:01:30+09:00",
+            "collected_at": "2026-11-23T12:41:16.317230+09:00",
+            "content_hash": "a33f7bab4328c44b9e24a924e9a24a0a6ba21b090e30bab255c72c961ce7a55a",
             "source_type": "OFFICIAL_YOUTUBE"
+          }
+        ]
+      },
+      {
+        "title": "개발자노트: 생일 축하 이벤트·립싱크 시범·프로필 꾸미기 개선 예고",
+        "category": "UPDATE",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "지휘관 생일에 카운터스 스쿼드 보이스 포함 축하 및 선물 지급 이벤트를 2027년 1월 1일부터 시작한다고 공지했다.",
+            "evidence_ids": [
+              "7ae8beaf1caae1b9e2ca4a1bc2b9e4c36a5e7a5416a7285b856369a0485f15b7"
+            ]
+          },
+          {
+            "text": "립싱크 음성 동기화 기능을 시범 제공해 이용자 선호를 조사하겠다고 안내했다.",
+            "evidence_ids": [
+              "7ae8beaf1caae1b9e2ca4a1bc2b9e4c36a5e7a5416a7285b856369a0485f15b7"
+            ]
+          },
+          {
+            "text": "12월 말 업데이트에서 프로필 카드 꾸미기 공간 확대 및 편의성 개선을 예고했다.",
+            "evidence_ids": [
+              "7ae8beaf1caae1b9e2ca4a1bc2b9e4c36a5e7a5416a7285b856369a0485f15b7"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "여러 소규모 UX·콘텐츠 개선을 통해 이용자 참여와 개인화 기능을 확장하려는 계획으로 보인다.",
+            "evidence_ids": [
+              "7ae8beaf1caae1b9e2ca4a1bc2b9e4c36a5e7a5416a7285b856369a0485f15b7"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "생일 이벤트의 대상 등록 방식 세부 절차, 립싱크 시범의 수집 기간·설문 방식, 프로필 개선의 구체 기능 목록은 미기재이다."
+        ],
+        "evidence": [
+          {
+            "evidence_id": "7ae8beaf1caae1b9e2ca4a1bc2b9e4c36a5e7a5416a7285b856369a0485f15b7",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://game.naver.com/lounge/nikke/board/detail/8499185",
+            "published_at": "2026-11-23T11:01:04+09:00",
+            "collected_at": "2026-11-23T12:40:48.696036+09:00",
+            "content_hash": "177c181ed4d4f699193bdfd1586c579a3ba9dcbaa7361848322495219347af7b",
+            "source_type": "OFFICIAL_COMMUNITY"
           }
         ]
       }
