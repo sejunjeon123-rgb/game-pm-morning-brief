@@ -1,44 +1,32 @@
 {
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "version": "compact-v1-relevance-v2",
   "games": {
-    "black-desert-mobile": [
+    "seven-knights-rebirth": [
       {
-        "title": "서버 이전 신청 방법 및 일정 안내(가모스/라이텐/로닌)",
-        "category": "UPDATE",
+        "title": "1.5주년 리버스데이·바엘 픽업 안내(공식)",
+        "category": "EVENT",
         "bm_types": [],
         "facts": [
           {
-            "text": "서버 이전 신청 기간은 11월 27일 12:00부터 12월 1일 업데이트 점검 전까지이며, 이전은 12월 1일 업데이트 점검 시 적용됩니다.",
+            "text": "공식 유튜브 쇼츠에서 세븐나이츠 리버스 1.5주년 리버스데이 대축제와 구세나 '파이' 각성, 심연의 사도 '바엘' 픽업을 안내했다.",
             "evidence_ids": [
-              "64d8baf1b7b194549400c1f7d2ee3846daed670c7a2cbc67dcd5157f8ceddee6"
+              "f937832066e6c9643e6f3ad0e694a29e7334507d45818a98caacbc474fb09b82"
             ]
           },
           {
-            "text": "서버 이전권은 가문당 1회 구매 가능하며, 구매 시 즉시 이전 신청이 완료되어 취소가 불가합니다.",
+            "text": "영상 설명에 게임 다운로드 링크와 네이버 라운지 커뮤니티 연결을 포함했다.",
             "evidence_ids": [
-              "64d8baf1b7b194549400c1f7d2ee3846daed670c7a2cbc67dcd5157f8ceddee6"
-            ]
-          },
-          {
-            "text": "서버 이전권 가격은 2,000 펄(블랙펄)이며, 이전 신청 조건(친구 목록·의형제·길드 비가입 등)을 모두 만족해야 구매할 수 있습니다.",
-            "evidence_ids": [
-              "64d8baf1b7b194549400c1f7d2ee3846daed670c7a2cbc67dcd5157f8ceddee6"
+              "f937832066e6c9643e6f3ad0e694a29e7334507d45818a98caacbc474fb09b82"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "이전권 구매 즉시 신청이 완료되므로 이용자는 구매 전 조건과 대상 서버 존재 여부를 반드시 확인해야 합니다.",
+            "text": "공식 유튜브를 통해 이벤트·픽업 홍보를 진행해 외부 채널로 트래픽 유도 활동을 하고 있다.",
             "evidence_ids": [
-              "64d8baf1b7b194549400c1f7d2ee3846daed670c7a2cbc67dcd5157f8ceddee6"
-            ]
-          },
-          {
-            "text": "특정 서버로 신청이 집중될 경우 이전권 판매 조기 종료 및 신청 제한이 가능하므로, 일부 서버는 신청 재개가 없을 수 있습니다.",
-            "evidence_ids": [
-              "64d8baf1b7b194549400c1f7d2ee3846daed670c7a2cbc67dcd5157f8ceddee6"
+              "f937832066e6c9643e6f3ad0e694a29e7334507d45818a98caacbc474fb09b82"
             ]
           }
         ],
@@ -46,85 +34,51 @@
         "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "64d8baf1b7b194549400c1f7d2ee3846daed670c7a2cbc67dcd5157f8ceddee6",
+            "evidence_id": "f937832066e6c9643e6f3ad0e694a29e7334507d45818a98caacbc474fb09b82",
             "classification": "OFFICIAL_FACT",
-            "url": "https://forum.blackdesertm.com/Board/Detail?boardNo=6&contentNo=667801&pageNo=1",
-            "published_at": "2026-11-24T00:00:00+09:00",
-            "collected_at": "2026-11-27T13:57:25.599710+09:00",
-            "content_hash": "e2ca9df5db2da6a4fb48e4335e5725e1275635b8b666b5eafb5809d4b91d0728",
-            "source_type": "OFFICIAL_HOMEPAGE"
+            "url": "https://www.youtube.com/shorts/WDCqR-5GcNE",
+            "published_at": "2026-11-27T16:00:37+09:00",
+            "collected_at": "2026-11-28T13:42:44.992632+09:00",
+            "content_hash": "95f0820712a4fc3a31adc785b2630215b7f494f452fa97b8c61acd7929357743",
+            "source_type": "OFFICIAL_YOUTUBE"
           }
         ]
-      }
-    ],
-    "lineage-m": [
+      },
       {
-        "title": "블랙 프라이데이 패키지 6종 판매 안내",
+        "title": "유저 요청: 열쇠 30000개 패키지 제안",
         "category": "BM",
         "bm_types": [
-          "GACHA",
-          "CURRENCY",
-          "COSMETIC"
+          "CURRENCY"
         ],
-        "facts": [
-          {
-            "text": "판매 기간은 2026-11-27 0시부터 2026-12-02 정기점검 전까지이며 패키지별로 레거시·리부트 계정 통합 당 1회 구매 제한이 적용됩니다.",
-            "evidence_ids": [
-              "6159d5418624a2fe1b8a02ce1795a90d7ecf08fe23e050d149f38cf20b99fabb"
-            ]
-          },
-          {
-            "text": "각 패키지는 최상급/신비한 변신·마법인형·성물 뽑기팩(기간) 30개, 제작 코인 300,000개, 카드 제작서·종합 카드 주문서 선택 상자 등 구성품과 드래곤의 다이아몬드 3,000개를 포함합니다.",
-            "evidence_ids": [
-              "6159d5418624a2fe1b8a02ce1795a90d7ecf08fe23e050d149f38cf20b99fabb"
-            ]
-          }
-        ],
+        "facts": [],
         "claims": [
           {
-            "text": "신섭 유저가 블랙 프라이데이 패키지 구매를 고민하고 있다는 게시글이 확인됩니다.",
+            "text": "커뮤니티 게시글에서 일부 유저가 열쇠 30000개 묶음 패키지 제공을 요구했다.",
             "evidence_ids": [
-              "cbd104b6bbdd3f9388a2d8cc3c28eb9f7098024a88350dda2139f8ddc1c71aaa"
-            ]
-          },
-          {
-            "text": "게시글 작성자는 패키지의 '최상급' 표기가 체감 성능과 일치하는지, 월 과금 한도를 고려해 구매 여부를 문의했습니다.",
-            "evidence_ids": [
-              "cbd104b6bbdd3f9388a2d8cc3c28eb9f7098024a88350dda2139f8ddc1c71aaa"
+              "de76eb38ac7c9c62de98e50e02995133b9b07d5fbac5bc04907ec3a9eadd430d"
             ]
           }
         ],
         "interpretation": [
           {
-            "text": "공식 안내는 상품 구성·기간·계정별 구매 제한을 명시해 BM 출시를 확정적으로 알리며(OFFICIAL_HOMEPAGE), 일부 신규 서버 유저는 가성비와 성능 표기 관련 정보 부족으로 구매 결정을 망설이는 것으로 보입니다.",
+            "text": "해당 게시글은 특정 패키지(열쇠 대량 묶음)에 대한 구매·구성 요구를 표명한 사례로 판단된다.",
             "evidence_ids": [
-              "6159d5418624a2fe1b8a02ce1795a90d7ecf08fe23e050d149f38cf20b99fabb",
-              "cbd104b6bbdd3f9388a2d8cc3c28eb9f7098024a88350dda2139f8ddc1c71aaa"
+              "de76eb38ac7c9c62de98e50e02995133b9b07d5fbac5bc04907ec3a9eadd430d"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "공식 안내에는 패키지의 실제 확률·획득 기대치나 성능 비교 정보가 포함되어 있지 않습니다.",
-          "공개 커뮤니티 표본은 일부 유저 의견에 해당하며 전체 구매율이나 여론을 대표하지 않습니다."
+          "공식적으로 해당 패키지 출시 여부나 운영 방침에 대한 발표는 확인되지 않는다."
         ],
         "evidence": [
           {
-            "evidence_id": "6159d5418624a2fe1b8a02ce1795a90d7ecf08fe23e050d149f38cf20b99fabb",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://lineagem.plaync.com/board/notice/view?articleId=6b0811304d404d0c1542092f",
-            "published_at": "2026-11-26T20:00:00.795000+09:00",
-            "collected_at": "2026-11-27T13:57:25.599710+09:00",
-            "content_hash": "a1101b9eb4867bb1ae51ef4ae556b2f183cc7245f50c5aaf5bb05d537fc39d71",
-            "source_type": "OFFICIAL_HOMEPAGE"
-          },
-          {
-            "evidence_id": "cbd104b6bbdd3f9388a2d8cc3c28eb9f7098024a88350dda2139f8ddc1c71aaa",
+            "evidence_id": "de76eb38ac7c9c62de98e50e02995133b9b07d5fbac5bc04907ec3a9eadd430d",
             "classification": "PLAYER_CLAIM",
-            "url": "https://gall.dcinside.com/board/view/?id=lineagem&no=404755",
-            "published_at": "2026-11-27T12:58:18+09:00",
-            "collected_at": "2026-11-27T13:58:25.319473+09:00",
-            "content_hash": "108c7743c9d3bd974604475a59663e40246e6bcbfec2c17647569b5438b2ea29",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1423309",
+            "published_at": "2026-11-28T13:42:31+09:00",
+            "collected_at": "2026-11-28T13:43:06.172603+09:00",
+            "content_hash": "cd1f3f34f1cdad355c8a0d23372eeb3393b0818df8b8390172153c662f112a8a",
             "source_type": "PUBLIC_COMMUNITY"
           }
         ]
@@ -132,145 +86,127 @@
     ],
     "epic-seven": [
       {
-        "title": "E7WC 2026 그랜드 파이널 응원 이벤트 안내",
-        "category": "EVENT",
+        "title": "11/27 불량이용자 37,419건 영구 제재 안내",
+        "category": "NOTICE",
         "bm_types": [],
         "facts": [
           {
-            "text": "공식 커뮤니티 공지에 E7WC 2026 그랜드 파이널 응원 이벤트가 11/26~11/28 18:00(한국시간)까지 진행되며 시청 인증과 응원 메시지로 보상을 지급한다고 안내했다.",
+            "text": "운영 측은 불법 프로그램 사용 및 버그 악용 등으로 판정된 계정 37,419개에 대해 영구 제한 조치를 실시했다고 공지했다.",
             "evidence_ids": [
-              "1c223ca6e5ad91d1cd595e6ac735e0f83f8e8fbc9609a187dfa469d16c7b1d2b"
+              "d7b782d3df5ec979467156ad801a895a0eea68d864716c6ada083faa665918cb"
             ]
           },
           {
-            "text": "공식 유튜브에 11월 28일 12시에 E7WC 2026 우승 발표 방송 관련 안내 영상을 게시했다.",
+            "text": "공식 공지에 따르면 게임 재화는 서버에 저장된 데이터이며 외부 조작은 표시만 변경될 뿐 실제 사용은 불가능하다고 명시되었다.",
             "evidence_ids": [
-              "9c4d4a2c664409b7e9847af29b0c6eadde72fb7efa1fc2ce42177b65c2fa327e"
+              "d7b782d3df5ec979467156ad801a895a0eea68d864716c6ada083faa665918cb"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "공식 채널들은 11/28 개최 방송 시청을 중심으로 이벤트 참여를 유도하며 참여 보상과 인증 방식(닉네임·서버·인증샷 기재)을 명시했다.",
+            "text": "운영은 대규모 계정 제재를 진행해 부정행위 모니터링과 제재 집행을 계속하고 있음을 공식적으로 알렸다.",
             "evidence_ids": [
-              "1c223ca6e5ad91d1cd595e6ac735e0f83f8e8fbc9609a187dfa469d16c7b1d2b"
-            ]
-          },
-          {
-            "text": "유튜브 영상 업로드로 그랜드 파이널 방송 홍보를 병행해 공식 방송 시점에 사용자 유입을 기대하는 홍보 흐름을 보인다.",
-            "evidence_ids": [
-              "9c4d4a2c664409b7e9847af29b0c6eadde72fb7efa1fc2ce42177b65c2fa327e"
+              "d7b782d3df5ec979467156ad801a895a0eea68d864716c6ada083faa665918cb"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "이벤트에 대한 실제 참여자 수·접속률 및 보상 수령률에 관한 공식 수치는 공개되지 않았다.",
-          "그랜드 파이널 방송의 송출 플랫폼과 실시간 시청 통계(동시접속자 등)는 공지에 명시되어 있지 않다."
+          "제재 명단의 공개 형식 및 이용자 이의신청 절차에 대한 상세 내용(공지에 첨부파일은 있으나 본문에 절차 설명 미기재)"
         ],
         "evidence": [
           {
-            "evidence_id": "1c223ca6e5ad91d1cd595e6ac735e0f83f8e8fbc9609a187dfa469d16c7b1d2b",
+            "evidence_id": "d7b782d3df5ec979467156ad801a895a0eea68d864716c6ada083faa665918cb",
             "classification": "OFFICIAL_FACT",
-            "url": "https://page.onstove.com/epicseven/kr/view/14650452",
-            "published_at": "2026-11-26T19:00:01.781000+09:00",
-            "collected_at": "2026-11-27T13:57:25.599710+09:00",
-            "content_hash": "b9015f0685de90a63b03bed3aa28cc761a532a7844df95c952bdd21128465293",
+            "url": "https://page.onstove.com/epicseven/kr/view/14652783",
+            "published_at": "2026-11-27T18:00:01.696000+09:00",
+            "collected_at": "2026-11-28T13:42:08.667704+09:00",
+            "content_hash": "b2fd77856a7121aeaf1efee2c8f47c95c50d271cdaac77b3919e7dc0198e7ca3",
             "source_type": "OFFICIAL_COMMUNITY"
-          },
-          {
-            "evidence_id": "9c4d4a2c664409b7e9847af29b0c6eadde72fb7efa1fc2ce42177b65c2fa327e",
-            "classification": "OFFICIAL_FACT",
-            "url": "https://www.youtube.com/watch?v=npdMo5R5dLA",
-            "published_at": "2026-11-26T19:30:03+09:00",
-            "collected_at": "2026-11-27T13:58:02.744885+09:00",
-            "content_hash": "554a5deb92c8d2bad9b4404c13495eb493b9775b1cd301dbda4c9a204a3d7d6e",
-            "source_type": "OFFICIAL_YOUTUBE"
           }
         ]
       },
       {
-        "title": "웹상점 블랙프라이데이 패키지 판매 안내",
-        "category": "BM",
-        "bm_types": [
-          "CURRENCY"
-        ],
+        "title": "E7WC2026 그랜드파이널 티저 영상 공개(확률형 아이템 표기)",
+        "category": "MARKETING",
+        "bm_types": [],
         "facts": [
           {
-            "text": "공식 커뮤니티에 웹상점 블랙프라이데이 기념 패키지 판매가 11/26 14:00부터 12/17 11:59(한국시간)까지 진행된다고 공지했다.",
+            "text": "공식 유튜브에 E7WC2026 그랜드파이널 티저 영상이 게시되었으며 영상 설명에 '확률형 아이템 포함' 문구가 표시되어 있다.",
             "evidence_ids": [
-              "a8535398ae61e3ba38f33fbc401ed8215ad2f1832603efd6fb43448a6523bc1d"
+              "feb5d13c9ca25a7db3b8b1ccba1f4b8d66158400db132aa37991e3db522d7706"
             ]
           },
           {
-            "text": "공식 공지에 각 패키지별 기원석(기본·보너스) 및 성약의 책갈피 등 구성과 패키지별 구매 횟수 제한(판매기간 내 1회 등)을 안내했다.",
+            "text": "티저 영상 설명에는 브랜드 사이트 및 공식 커뮤니티·SNS(브랜드 사이트, 공식 커뮤니티, 페이스북, 트위터) 연결 링크가 포함되어 있다.",
             "evidence_ids": [
-              "a8535398ae61e3ba38f33fbc401ed8215ad2f1832603efd6fb43448a6523bc1d"
+              "feb5d13c9ca25a7db3b8b1ccba1f4b8d66158400db132aa37991e3db522d7706"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "공식 안내는 특정 기간 내 고액 및 중가 기원석 패키지 판매를 통해 결제 유도와 보너스 보상을 병행하는 상시·이벤트형 상품 운영 전략을 명시하고 있다.",
+            "text": "공식 티저는 이벤트 홍보와 더불어 관련 정보 접근을 위해 브랜드 사이트와 공식 채널로 연결을 유도하고 있음을 확인할 수 있다.",
             "evidence_ids": [
-              "a8535398ae61e3ba38f33fbc401ed8215ad2f1832603efd6fb43448a6523bc1d"
+              "feb5d13c9ca25a7db3b8b1ccba1f4b8d66158400db132aa37991e3db522d7706"
             ]
           }
         ],
         "conflicts": [],
         "unknowns": [
-          "각 패키지의 실제 판매량·구매자 분포와 매출 영향에 대한 공식 데이터는 공개되지 않았다.",
-          "해외 결제·간편결제별 이용률이나 결제 실패·환불 발생 비율 등 운영 이슈는 공지에 언급되지 않았다."
+          "티저 영상 본문·자막의 구체적 발언 내용(제공된 근거는 영상 설명 텍스트만 해당됨)"
         ],
         "evidence": [
           {
-            "evidence_id": "a8535398ae61e3ba38f33fbc401ed8215ad2f1832603efd6fb43448a6523bc1d",
+            "evidence_id": "feb5d13c9ca25a7db3b8b1ccba1f4b8d66158400db132aa37991e3db522d7706",
             "classification": "OFFICIAL_FACT",
-            "url": "https://page.onstove.com/epicseven/kr/view/14651560",
-            "published_at": "2026-11-26T14:00:02.166000+09:00",
-            "collected_at": "2026-11-27T13:57:25.599710+09:00",
-            "content_hash": "26360e06834c64eb96aff48f0fc9e3fec70f24393f9c87aa15748cdca13893b4",
-            "source_type": "OFFICIAL_COMMUNITY"
+            "url": "https://www.youtube.com/watch?v=NF888rZ3Zy4",
+            "published_at": "2026-11-28T12:00:28+09:00",
+            "collected_at": "2026-11-28T13:42:44.992632+09:00",
+            "content_hash": "c1d485818795cfa3d34f93d61a9723ccf499d0dc123eb03090d2b0b09b440121",
+            "source_type": "OFFICIAL_YOUTUBE"
           }
         ]
       }
     ],
     "nikke": [
       {
-        "title": "PC 런처 보안 강화 업데이트로 인한 접속 문제 수정 안내",
-        "category": "MAINTENANCE",
-        "bm_types": [],
+        "title": "기간 한정 Pick Up 모집 안내(브래디·키리)",
+        "category": "BM",
+        "bm_types": [
+          "GACHA"
+        ],
         "facts": [
           {
-            "text": "2026년 11월 26일 PC 런처에 보안 검사 도구와 권한·네트워크 검증 등 보안 강화 업데이트가 배포되었다.",
+            "text": "SSR 니케 「브래디 : 산타 슈톨렌」 기간 한정 Pick Up 모집이 12/3 점검 후 ~ 12/24 04:59에 진행된다고 공지했습니다.",
             "evidence_ids": [
-              "a8ac7ebce57d9b63e717546f113ce661798b4767e11723e3e58ff49f19782a77"
+              "5b1dd937ec10abb6e8b57948ecf69e943d2696fdb354e9d64e361c9dcc12a468"
             ]
           },
           {
-            "text": "업데이트 이후 일부 이용자에게 게임을 정상 이용할 수 없는 현상이 확인되어 운영팀이 원인 확인 및 수정 중이라고 공지했다.",
+            "text": "SSR 니케 「키리 : 블라인드 루돌프」 기간 한정 Pick Up 모집이 12/10 05:00 ~ 12/31 23:59에 진행된다고 공지했습니다.",
             "evidence_ids": [
-              "14db2633b24c4bf64ffe5bc84eab3535d800d7bc70ca26bb91a1082e0b62ea41"
+              "f3f21b2aa909d288e819273fcfc316e2f6e12506eb4a332e2cb12d7c62f520b1"
             ]
           },
           {
-            "text": "문제가 수정되어 현재 PC 런처로 정상적으로 게임 이용이 가능하며, 지속 팝업 발생 시 안내에 따라 해당 파일을 삭제해 달라고 안내하고 인게임 보상을 지급한다고 밝혔다.",
+            "text": "두 공지 모두 기간 한정 캐릭터는 해당 Pick Up 기간 종료 후 일반 모집·신규 지휘관 전용 모집·소셜 포인트 등으로 획득할 수 없다고 안내했습니다.",
             "evidence_ids": [
-              "9f5b86e8ee8a0a63135034f7d8d4a86011bc5c13052ece76d0eb8629dc2c3ef2",
-              "a8ac7ebce57d9b63e717546f113ce661798b4767e11723e3e58ff49f19782a77"
+              "5b1dd937ec10abb6e8b57948ecf69e943d2696fdb354e9d64e361c9dcc12a468",
+              "f3f21b2aa909d288e819273fcfc316e2f6e12506eb4a332e2cb12d7c62f520b1"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "공식 공지에 따르면 보안 강화 기능 도입이 원인으로 확인되었고, 운영팀이 수정·보상 조치를 명시적으로 완료했다고 보고되었다.",
+            "text": "서로 다른 시기에 시작되는 두 건의 기간 한정 Pick Up 모집으로 연말 기간에 걸친 신규/복각 가챠 일정이 예정되어 있습니다.",
             "evidence_ids": [
-              "a8ac7ebce57d9b63e717546f113ce661798b4767e11723e3e58ff49f19782a77",
-              "9f5b86e8ee8a0a63135034f7d8d4a86011bc5c13052ece76d0eb8629dc2c3ef2",
-              "14db2633b24c4bf64ffe5bc84eab3535d800d7bc70ca26bb91a1082e0b62ea41"
+              "5b1dd937ec10abb6e8b57948ecf69e943d2696fdb354e9d64e361c9dcc12a468",
+              "f3f21b2aa909d288e819273fcfc316e2f6e12506eb4a332e2cb12d7c62f520b1"
             ]
           }
         ],
@@ -278,30 +214,62 @@
         "unknowns": [],
         "evidence": [
           {
-            "evidence_id": "14db2633b24c4bf64ffe5bc84eab3535d800d7bc70ca26bb91a1082e0b62ea41",
+            "evidence_id": "5b1dd937ec10abb6e8b57948ecf69e943d2696fdb354e9d64e361c9dcc12a468",
             "classification": "OFFICIAL_FACT",
-            "url": "https://game.naver.com/lounge/nikke/board/detail/8513486",
-            "published_at": "2026-11-26T22:38:48+09:00",
-            "collected_at": "2026-11-27T13:57:25.599710+09:00",
-            "content_hash": "2b8d6beb66685cff759e1fe077d5a859b79f792f559e518691cb6aba0cbcb270",
+            "url": "https://game.naver.com/lounge/nikke/board/detail/8518597",
+            "published_at": "2026-11-28T10:00:33+09:00",
+            "collected_at": "2026-11-28T13:42:08.667704+09:00",
+            "content_hash": "692f60c3ce7a8bf00efcb0fe33adb03deb5ef04141620821f4403aae5d26bfd1",
             "source_type": "OFFICIAL_COMMUNITY"
           },
           {
-            "evidence_id": "9f5b86e8ee8a0a63135034f7d8d4a86011bc5c13052ece76d0eb8629dc2c3ef2",
+            "evidence_id": "f3f21b2aa909d288e819273fcfc316e2f6e12506eb4a332e2cb12d7c62f520b1",
             "classification": "OFFICIAL_FACT",
-            "url": "https://game.naver.com/lounge/nikke/board/detail/8514067",
-            "published_at": "2026-11-27T02:30:56+09:00",
-            "collected_at": "2026-11-27T13:57:25.599710+09:00",
-            "content_hash": "60b07c202a921aa0d503e2c2603a89c5a58a40b0f0682fb2b6611a3be2d98fdf",
+            "url": "https://game.naver.com/lounge/nikke/board/detail/8518799",
+            "published_at": "2026-11-28T11:00:40+09:00",
+            "collected_at": "2026-11-28T13:42:08.667704+09:00",
+            "content_hash": "8f08ed7e2241b362c4cfcefbdd10dddb35c007dd2381d49470a2fb96e891f9d0",
             "source_type": "OFFICIAL_COMMUNITY"
+          }
+        ]
+      },
+      {
+        "title": "유니온 레이드 오픈 일정 안내",
+        "category": "UPDATE",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "유니온 레이드가 12/4 05:00에 오픈되어 시즌은 12/4 05:00 ~ 12/10 04:59로 안내되었습니다.",
+            "evidence_ids": [
+              "879be43506298d64142b0064fd7441c33282098522996d5ebf6b4be420fd4a74"
+            ]
           },
           {
-            "evidence_id": "a8ac7ebce57d9b63e717546f113ce661798b4767e11723e3e58ff49f19782a77",
+            "text": "유니온 레이드 시즌 동안에는 유니온 탈퇴 및 멤버 추방이 불가하며, 참여 조건은 소속 유니온 레벨 3 이상이라고 안내했습니다.",
+            "evidence_ids": [
+              "879be43506298d64142b0064fd7441c33282098522996d5ebf6b4be420fd4a74"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "시즌 기간 중 탈퇴·추방 제한과 레벨 조건은 참여 제약 요소로, 유니온 운영 관련 행동이 일시적으로 제한됩니다.",
+            "evidence_ids": [
+              "879be43506298d64142b0064fd7441c33282098522996d5ebf6b4be420fd4a74"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [],
+        "evidence": [
+          {
+            "evidence_id": "879be43506298d64142b0064fd7441c33282098522996d5ebf6b4be420fd4a74",
             "classification": "OFFICIAL_FACT",
-            "url": "https://game.naver.com/lounge/nikke/board/detail/8512990",
-            "published_at": "2026-11-26T20:45:15+09:00",
-            "collected_at": "2026-11-27T13:57:25.599710+09:00",
-            "content_hash": "bea6fcea6a371ee52c356a04e1bf512aeb9cf08b4eff912a63bbc4994555ff04",
+            "url": "https://game.naver.com/lounge/nikke/board/detail/8516119",
+            "published_at": "2026-11-27T17:00:40+09:00",
+            "collected_at": "2026-11-28T13:42:08.667704+09:00",
+            "content_hash": "bb749f10aaab1441b56fd24a74b5d6fd3606d9ab4ac4aa68987ef9972fe77292",
             "source_type": "OFFICIAL_COMMUNITY"
           }
         ]
@@ -309,49 +277,125 @@
     ],
     "trickcal-revive": [
       {
-        "title": "11월 26일 정기점검(11:00~16:00 16:30) 안내(완료)",
-        "category": "MAINTENANCE",
+        "title": "AGF 2026 참여 — 직원 주도 비공식 부스",
+        "category": "EVENT",
         "bm_types": [],
         "facts": [
           {
-            "text": "정기점검 일시가 11월 26일(목) 11:00~16:00 16:30로 공지되었으며 업데이트 적용을 위한 점검이라고 안내되었다.",
+            "text": "직원들이 주도하는 '에피드게임즈의 공식 입장이 아닙니다' 부스가 AGF 2026에 참가한다고 안내되었다.",
             "evidence_ids": [
-              "01caeda9c5ac1129d4649338f67add6c1fd4d1ac9409ec325bb728334e3d2c97"
+              "567a97e312a56313926a35c19b6096d2865e285a7d94420e249bc87219ae8477"
             ]
           },
           {
-            "text": "점검 시간 동안 게임 접속 및 이용이 불가하다고 공지되었고, 진행 상황에 따라 조기 종료 또는 연장 가능성을 언급했다.",
+            "text": "해당 부스는 회사 공식 입장이 아닌, 사내 복지 제도 '행복한 서브컬처 생활'을 통해 제작된 직원 굿즈 중심으로 운영된다고 명시되었다.",
             "evidence_ids": [
-              "01caeda9c5ac1129d4649338f67add6c1fd4d1ac9409ec325bb728334e3d2c97"
-            ]
-          },
-          {
-            "text": "업데이트 상세 내용은 추후 별도 공지로 안내될 예정이라고 명시되었다.",
-            "evidence_ids": [
-              "01caeda9c5ac1129d4649338f67add6c1fd4d1ac9409ec325bb728334e3d2c97"
+              "567a97e312a56313926a35c19b6096d2865e285a7d94420e249bc87219ae8477"
             ]
           }
         ],
         "claims": [],
         "interpretation": [
           {
-            "text": "공식 공지에 따르면 해당 시간대는 서비스 불가로 사용자 접속 차단 및 점검 관련 고객 문의가 증가할 가능성이 있다.",
+            "text": "공식 게시물 자체에서 '공식 입장이 아님'을 명확히 밝히므로 회사 공식 홍보·판매 행사로 보기 어렵다.",
             "evidence_ids": [
-              "01caeda9c5ac1129d4649338f67add6c1fd4d1ac9409ec325bb728334e3d2c97"
+              "567a97e312a56313926a35c19b6096d2865e285a7d94420e249bc87219ae8477"
             ]
           }
         ],
         "conflicts": [],
-        "unknowns": [],
+        "unknowns": [
+          "회사 차원의 추가 지원·예산 제공 여부는 공지에 언급되지 않았다."
+        ],
         "evidence": [
           {
-            "evidence_id": "01caeda9c5ac1129d4649338f67add6c1fd4d1ac9409ec325bb728334e3d2c97",
+            "evidence_id": "567a97e312a56313926a35c19b6096d2865e285a7d94420e249bc87219ae8477",
             "classification": "OFFICIAL_FACT",
-            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/224824?boardtype=L&menuid=66&referrerAllArticles=false",
-            "published_at": "2026-11-25T17:01:58.093000+09:00",
-            "collected_at": "2026-11-27T13:57:25.599710+09:00",
-            "content_hash": "f5b78bdcac52b468bc5ac716e9280221b7f94b74f0c3631cc27cc648cd16d0d9",
+            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/225122?boardtype=L&menuid=66&referrerAllArticles=false",
+            "published_at": "2026-11-27T18:00:06.873000+09:00",
+            "collected_at": "2026-11-28T13:42:08.667704+09:00",
+            "content_hash": "64b4d6daac10493c292af417ee9021100b6034e3f82ddece11ca98d7045ff1b3",
             "source_type": "OFFICIAL_COMMUNITY"
+          }
+        ]
+      },
+      {
+        "title": "웹툰 '족제비와토끼' 1주 휴재 안내",
+        "category": "NOTICE",
+        "bm_types": [],
+        "facts": [
+          {
+            "text": "작가 개인 사유로 인해 '족제비와토끼' 웹툰이 1주 휴재된다고 공식 커뮤니티에 공지되었다.",
+            "evidence_ids": [
+              "6b03723aa529373d22fa4452d42420a253a54cdb2a19e5219596c5dc95b06364"
+            ]
+          }
+        ],
+        "claims": [],
+        "interpretation": [
+          {
+            "text": "공지문은 제작 일정의 일시적 연기에 대한 안내로, 향후 업로드 재개 시점은 별도 안내를 예고하고 있다.",
+            "evidence_ids": [
+              "6b03723aa529373d22fa4452d42420a253a54cdb2a19e5219596c5dc95b06364"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "정확한 재개 예정일과 향후 업데이트 일정에 대한 구체적 정보는 공지에 없다."
+        ],
+        "evidence": [
+          {
+            "evidence_id": "6b03723aa529373d22fa4452d42420a253a54cdb2a19e5219596c5dc95b06364",
+            "classification": "OFFICIAL_FACT",
+            "url": "https://cafe.naver.com/f-e/cafes/30131231/articles/225112?boardtype=L&menuid=66&referrerAllArticles=false",
+            "published_at": "2026-11-27T16:13:46.233000+09:00",
+            "collected_at": "2026-11-28T13:42:08.667704+09:00",
+            "content_hash": "56919d625c6f15e6d3607c6db1b2a2f66851999200c9281e6975681bf30a10a9",
+            "source_type": "OFFICIAL_COMMUNITY"
+          }
+        ]
+      },
+      {
+        "title": "비공식 팬게임·그림대회 개최 안내 (팬 주장)",
+        "category": "EVENT",
+        "bm_types": [],
+        "facts": [],
+        "claims": [
+          {
+            "text": "비공식 팬게임 '트릭컬 볼피아 그림왕 대회'가 11월 23일~12월 23일 기간으로 개최되며 상품으로 외부 교환권 등이 제시된다는 게시글이 있다.",
+            "evidence_ids": [
+              "7f488bf313d5299b853f47e6121c265c47a6bf233eba0c911e6497043eb6d25e"
+            ]
+          },
+          {
+            "text": "게시글은 비공식 팬사이트·팬게임 링크와 참가 방법을 안내하고 있다.",
+            "evidence_ids": [
+              "7f488bf313d5299b853f47e6121c265c47a6bf233eba0c911e6497043eb6d25e"
+            ]
+          }
+        ],
+        "interpretation": [
+          {
+            "text": "게시글 내용은 팬 주도의 비공식 이벤트로 보이며, 공식 승인·협력 여부는 게시글에서 확인되지 않는다.",
+            "evidence_ids": [
+              "7f488bf313d5299b853f47e6121c265c47a6bf233eba0c911e6497043eb6d25e"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "unknowns": [
+          "해당 팬행사에 대한 회사의 공식 승인·연계 여부는 공개된 근거에 없다."
+        ],
+        "evidence": [
+          {
+            "evidence_id": "7f488bf313d5299b853f47e6121c265c47a6bf233eba0c911e6497043eb6d25e",
+            "classification": "PLAYER_CLAIM",
+            "url": "https://gall.dcinside.com/mgallery/board/view/?id=rollthechess&no=3960171",
+            "published_at": "2026-11-23T20:44:27+09:00",
+            "collected_at": "2026-11-28T13:43:06.172603+09:00",
+            "content_hash": "b2dfe7d4076aa69a1d94092ff5110ffb9731dcfb1ad10e5c8b51d1d9882743cb",
+            "source_type": "PUBLIC_COMMUNITY"
           }
         ]
       }
